@@ -1,7 +1,5 @@
 ## Sumatoris
 
-# Exercicis: 1, 5, 8
-
 > **NOTA — Fórmula del sumatori**
 > ```
 >    n
