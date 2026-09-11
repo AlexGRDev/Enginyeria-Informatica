@@ -31,6 +31,7 @@ jobs:
           JUTGE_PASSWORD: ${{ secrets.JUTGE_PASSWORD }}
         run: |
           CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^PRO1/' || true)
+          
           if [ -z "$CHANGED_FILES" ]; then
             echo "No s'han detectat canvis a la carpeta PRO1."
             exit 0
@@ -40,9 +41,11 @@ jobs:
             if [[ "$FILEPATH" == *.cpp ]]; then
               FILENAME=$(basename "$FILEPATH")
               PROBLEM_ID="${FILENAME%.*}"
+              
               echo "--------------------------------------------------"
               echo "Processing: $FILEPATH (Problem ID: ${PROBLEM_ID}_ca)"
               echo "--------------------------------------------------"
+              
               cat << 'EOF' > run_submit.py
 import os
 import sys
@@ -95,6 +98,7 @@ if veredict != "AC":
 else:
     print("✅ Success! Accepted!")
 EOF
+              
               python run_submit.py "$FILEPATH" "$PROBLEM_ID"
             fi
           done
