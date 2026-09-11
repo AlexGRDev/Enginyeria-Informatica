@@ -2,8 +2,13 @@ name: "🤖 JutgeBot: AC Hunter (PRO1)"
 
 on:
   push:
+    branches:
+      - test
     paths:
       - '1r/Q1/PRO1/ejercicios/**'
+
+permissions:
+  contents: write
 
 jobs:
   submit:
@@ -13,7 +18,8 @@ jobs:
       - name: 📥 Baixar el codi del repositori
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
+          ref: test
 
       - name: 🐍 Configurar Python
         uses: actions/setup-python@v5
@@ -23,82 +29,101 @@ jobs:
       - name: 📦 Instal·lar dependències
         run: |
           python -m pip install --upgrade pip
-          pip install jutge-api-client || echo "Si dona error, assegura't que el mòdul s'instal·la via pip"
+          pip install jutge-api-client
 
-      - name: 🚀 Detectar fitxers i enviar al Jutge
+      - name: 🔧 Configurar git
+        run: |
+          git config user.name "JutgeBot"
+          git config user.email "jutgebot@users.noreply.github.com"
+
+      - name: 🚀 Enviar al Jutge i recollir veredictes
+        id: jutge
         env:
           JUTGE_EMAIL: ${{ secrets.JUTGE_EMAIL }}
           JUTGE_PASSWORD: ${{ secrets.JUTGE_PASSWORD }}
         run: |
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^1r/Q1/PRO1/ejercicios/' || true)
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^1r/Q1/PRO1/ejercicios/' | grep '\.cpp$' || true)
 
           if [ -z "$CHANGED_FILES" ]; then
-            echo "No s'han detectat canvis a la carpeta PRO1."
+            echo "No s'han detectat canvis a PRO1/ejercicios."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
 
-          for FILEPATH in $CHANGED_FILES; do
-            if [[ "$FILEPATH" == *.cpp ]]; then
-              FILENAME=$(basename "$FILEPATH")
-              PROBLEM_ID="${FILENAME%.*}"
-
-              echo "--------------------------------------------------"
-              echo "Processing: $FILEPATH (Problem ID: ${PROBLEM_ID}_ca)"
-              echo "--------------------------------------------------"
-
-              cat << 'EOF' > run_submit.py
+          cat << 'PYEOF' > submit_all.py
           import os
           import sys
           import time
+          import json
           from datetime import datetime
           from jutge_api_client import JutgeApiClient
 
-          if len(sys.argv) < 3:
-              print("Error: Falten arguments.")
-              sys.exit(1)
-
-          filepath = sys.argv[1]
-          problem_id = sys.argv[2] + "_ca"
+          filepaths = sys.argv[1:]
 
           jutge = JutgeApiClient()
           email = os.environ.get("JUTGE_EMAIL")
           password = os.environ.get("JUTGE_PASSWORD")
 
           if not email or not password:
-              print("Error: No s'han trobat les credencials als Secrets de GitHub.")
+              print("Error: falten credencials.")
               sys.exit(1)
 
           jutge.login(email, password)
 
-          with open(filepath, "r") as file:
+          results = []
+          all_ac = True
+
+          for filepath in filepaths:
+              filename = os.path.basename(filepath)
+              problem_id = os.path.splitext(filename)[0] + "_ca"
               nowDate = datetime.today().strftime("%d/%m/%Y")
               nowTime = datetime.today().strftime("%H:%M:%S")
-              submitted_data = {
-                  "compiler_id": "P1++",
-                  "problem_id": problem_id,
-                  "annotation": f"Sent through JutgeBot (GitHub Actions) on {nowDate} at {nowTime}",
-              }
 
-              submission = jutge.student.submissions.submit(submitted_data, file)
+              with open(filepath, "r") as file:
+                  submitted_data = {
+                      "compiler_id": "P1++",
+                      "problem_id": problem_id,
+                      "annotation": f"Sent through JutgeBot (GitHub Actions) on {nowDate} at {nowTime}",
+                  }
+                  submission = jutge.student.submissions.submit(submitted_data, file)
 
-          print(f"Submission sent! ID: {submission.submission_id}. Waiting for verdict...")
+              veredict = None
+              while veredict is None:
+                  time.sleep(2)
+                  state = jutge.student.submissions.get(problem_id, submission.submission_id)
+                  if state.state == "done":
+                      veredict = state.veredict
 
-          veredict = None
-          while veredict is None:
-              time.sleep(2)
-              state = jutge.student.submissions.get(problem_id, submission.submission_id)
-              if state.state == "done":
-                  veredict = state.veredict
+              print(f"» {filepath} ({problem_id}): {veredict}")
+              results.append({"file": filepath, "problem_id": problem_id, "veredict": veredict})
+              if veredict != "AC":
+                  all_ac = False
 
-          print(f"» Verdict for {problem_id}: {veredict}")
+          with open("jutge_results.json", "w") as f:
+              json.dump({"all_ac": all_ac, "results": results}, f)
+          PYEOF
 
-          if veredict != "AC":
-              print(f"❌ Failed with verdict: {veredict}")
-              sys.exit(1)
-          else:
-              print("✅ Success! Accepted!")
-          EOF
+          python submit_all.py $CHANGED_FILES
 
-              python run_submit.py "$FILEPATH" "$PROBLEM_ID"
-            fi
-          done
+      - name: 📊 Processar resultat i actuar
+        if: steps.jutge.outputs.skip != 'true'
+        run: |
+          ALL_AC=$(python3 -c "import json; print(json.load(open('jutge_results.json'))['all_ac'])")
+          SUMMARY=$(python3 -c "
+          import json
+          data = json.load(open('jutge_results.json'))
+          lines = [f\"{r['problem_id']}: {r['veredict']}\" for r in data['results']]
+          print(' | '.join(lines))
+          ")
+
+          if [ "$ALL_AC" == "True" ]; then
+            echo "✅ Tots els exercicis són AC. Fent merge a main."
+            git checkout main
+            git merge test --no-ff -m "OK: $SUMMARY"
+            git push origin main
+          else
+            echo "❌ Algun exercici ha fallat. Quedant-nos a test."
+            git commit --allow-empty -m "KO: $SUMMARY"
+            git push origin test
+          fi
