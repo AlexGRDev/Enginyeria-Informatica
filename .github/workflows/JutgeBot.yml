@@ -3,7 +3,7 @@ name: 🤖 JutgeBot: AC Hunter (PRO1)
 on:
   push:
     paths:
-      - 'PRO1/**'
+      - '../../1r/Q1/PRO1/ejercicios/**'
 
 jobs:
   submit:
@@ -47,59 +47,58 @@ jobs:
               echo "--------------------------------------------------"
               
               cat << 'EOF' > run_submit.py
-import os
-import sys
-import time
-from datetime import datetime
-from jutge_api_client import JutgeApiClient
+          import os
+          import sys
+          import time
+          from datetime import datetime
+          from jutge_api_client import JutgeApiClient
 
-if len(sys.argv) < 3:
-    print("Error: Falten arguments.")
-    sys.exit(1)
+          if len(sys.argv) < 3:
+              print("Error: Falten arguments.")
+              sys.exit(1)
 
-filepath = sys.argv[1]
-problem_id = sys.argv[2] + "_ca"
+          filepath = sys.argv[1]
+          problem_id = sys.argv[2] + "_ca"
 
-jutge = JutgeApiClient()
-email = os.environ.get("JUTGE_EMAIL")
-password = os.environ.get("JUTGE_PASSWORD")
+          jutge = JutgeApiClient()
+          email = os.environ.get("JUTGE_EMAIL")
+          password = os.environ.get("JUTGE_PASSWORD")
 
-if not email or not password:
-    print("Error: No s'han trobat les credencials als Secrets de GitHub.")
-    sys.exit(1)
+          if not email or not password:
+              print("Error: No s'han trobat les credencials als Secrets de GitHub.")
+              sys.exit(1)
 
-jutge.login(email, password)
+          jutge.login(email, password)
 
-with open(filepath, "r") as file:
-    nowDate = datetime.today().strftime("%d/%m/%Y")
-    nowTime = datetime.today().strftime("%H:%M:%S")
-    submitted_data = {
-        "compiler_id": "P1++",
-        "problem_id": problem_id,
-        "annotation": f"Sent through JutgeBot (GitHub Actions) on {nowDate} at {nowTime}",
-    }
+          with open(filepath, "r") as file:
+              nowDate = datetime.today().strftime("%d/%m/%Y")
+              nowTime = datetime.today().strftime("%H:%M:%S")
+              submitted_data = {
+                  "compiler_id": "P1++",
+                  "problem_id": problem_id,
+                  "annotation": f"Sent through JutgeBot (GitHub Actions) on {nowDate} at {nowTime}",
+              }
 
-    submission = jutge.student.submissions.submit(submitted_data, file)
+              submission = jutge.student.submissions.submit(submitted_data, file)
 
-print(f"Submission sent! ID: {submission.submission_id}. Waiting for verdict...")
+          print(f"Submission sent! ID: {submission.submission_id}. Waiting for verdict...")
 
-veredict = None
-while veredict is None:
-    time.sleep(2)
-    state = jutge.student.submissions.get(problem_id, submission.submission_id)
-    if state.state == "done":
-        veredict = state.veredict
+          veredict = None
+          while veredict is None:
+              time.sleep(2)
+              state = jutge.student.submissions.get(problem_id, submission.submission_id)
+              if state.state == "done":
+                  veredict = state.veredict
 
-print(f"» Verdict for {problem_id}: {veredict}")
+          print(f"» Verdict for {problem_id}: {veredict}")
 
-if veredict != "AC":
-    print(f"❌ Failed with verdict: {veredict}")
-    sys.exit(1)
-else:
-    print("✅ Success! Accepted!")
-EOF
+          if veredict != "AC":
+              print(f"❌ Failed with verdict: {veredict}")
+              sys.exit(1)
+          else:
+              print("✅ Success! Accepted!")
+          EOF
               
               python run_submit.py "$FILEPATH" "$PROBLEM_ID"
             fi
           done
-
