@@ -1,4 +1,4 @@
-name: "🤖 JutgeBot: AC Hunter (PRO1)"
+name: JutgeBot - PRO1
 
 on:
   push:
@@ -10,22 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Baixar el codi del repositori
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      - name: 🐍 Configurar Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: 📦 Instal·lar dependències
+      - name: instalar dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install jutge-api-client || echo "Si dona error, assegura't que el mòdul s'instal·la via pip"
+          pip install jutge-api-client
 
-      - name: 🚀 Detectar fitxers i enviar al Jutge
+      - name: enviar al jutge
         env:
           JUTGE_EMAIL: ${{ secrets.JUTGE_EMAIL }}
           JUTGE_PASSWORD: ${{ secrets.JUTGE_PASSWORD }}
@@ -33,7 +31,7 @@ jobs:
           CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^1r/Q1/PRO1/ejercicios/' || true)
 
           if [ -z "$CHANGED_FILES" ]; then
-            echo "No s'han detectat canvis a la carpeta PRO1."
+            echo "res a fer, no hi ha canvis a PRO1"
             exit 0
           fi
 
@@ -42,9 +40,7 @@ jobs:
               FILENAME=$(basename "$FILEPATH")
               PROBLEM_ID="${FILENAME%.*}"
 
-              echo "--------------------------------------------------"
-              echo "Processing: $FILEPATH (Problem ID: ${PROBLEM_ID}_ca)"
-              echo "--------------------------------------------------"
+              echo "enviant $FILEPATH -> ${PROBLEM_ID}_ca"
 
               cat << 'EOF' > run_submit.py
           import os
@@ -54,7 +50,6 @@ jobs:
           from jutge_api_client import JutgeApiClient
 
           if len(sys.argv) < 3:
-              print("Error: Falten arguments.")
               sys.exit(1)
 
           filepath = sys.argv[1]
@@ -65,23 +60,22 @@ jobs:
           password = os.environ.get("JUTGE_PASSWORD")
 
           if not email or not password:
-              print("Error: No s'han trobat les credencials als Secrets de GitHub.")
+              print("falten credencials")
               sys.exit(1)
 
           jutge.login(email, password)
 
           with open(filepath, "r") as file:
-              nowDate = datetime.today().strftime("%d/%m/%Y")
-              nowTime = datetime.today().strftime("%H:%M:%S")
+              now_date = datetime.today().strftime("%d/%m/%Y")
+              now_time = datetime.today().strftime("%H:%M:%S")
               submitted_data = {
                   "compiler_id": "P1++",
                   "problem_id": problem_id,
-                  "annotation": f"Sent through JutgeBot (GitHub Actions) on {nowDate} at {nowTime}",
+                  "annotation": f"auto submit {now_date} {now_time}",
               }
-
               submission = jutge.student.submissions.submit(submitted_data, file)
 
-          print(f"Submission sent! ID: {submission.submission_id}. Waiting for verdict...")
+          print(f"enviat, id {submission.submission_id}, esperant veredicte...")
 
           veredict = None
           while veredict is None:
@@ -90,13 +84,10 @@ jobs:
               if state.state == "done":
                   veredict = state.veredict
 
-          print(f"» Verdict for {problem_id}: {veredict}")
+          print(f"{problem_id}: {veredict}")
 
           if veredict != "AC":
-              print(f"❌ Failed with verdict: {veredict}")
               sys.exit(1)
-          else:
-              print("✅ Success! Accepted!")
           EOF
 
               python run_submit.py "$FILEPATH" "$PROBLEM_ID"
