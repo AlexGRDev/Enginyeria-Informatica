@@ -6,7 +6,7 @@
 /*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 13:45:24 by agarcia2          #+#    #+#             */
-/*   Updated: 2026/09/11 14:39:04 by agarcia2         ###   ########.fr       */
+/*   Updated: 2026/09/11 14:46:16 by agarcia2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	ft_chrclasifion(char *c)
 
 	alphaLower = "abcdefghijklmnopqrstuvwxyz";
 	alphaUper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	vowel = "aeiou";
+	vowel = "aeiouAEIOU";
 	if (ft_strchr(alphaLower, *c))
 		std::cout << "lowercase" << std::endl;
 	else if (ft_strchr(alphaUper, *c))
