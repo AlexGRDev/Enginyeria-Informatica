@@ -6,7 +6,7 @@
 /*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 13:45:24 by agarcia2          #+#    #+#             */
-/*   Updated: 2026/09/11 13:59:33 by agarcia2         ###   ########.fr       */
+/*   Updated: 2026/09/11 14:39:04 by agarcia2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ char	*ft_strchr(const char *s, int c)
 	ptrs = &s;
 	while (*(*ptrs))
 	{
-		if (*(*ptrs)== (char )c)
-			return ((char *)s);
-		ptrs++;
+		if (*(*ptrs) == (char)c)
+			return ((char *)*ptrs);
+		(*ptrs)++;
 	}
 	if ((char)c == '\0')
-		return ((char *)s);
+		return ((char *)*ptrs);
 	return (NULL);
 }
 
@@ -49,9 +49,14 @@ void	ft_chrclasifion(char *c)
 
 int	main(void)
 {
-	char	c;
+	char	*a;
 
-	if (std::cin >> c)
-		ft_chrclasifion(&c);
+	a = (char *)malloc(sizeof(char));
+	if (std::cin >> *a)
+	{
+		ft_chrclasifion(a);
+		free(a);
+		a = nullptr;
+	}
 	return (0);
 }
