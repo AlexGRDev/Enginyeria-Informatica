@@ -51,7 +51,7 @@ int	main(void)
 {
 	char	*a;
 
-	a = (char *)malloc(sizeof(char));
+	a = (char *)malloc(sizeof(std::string) + 1);
 	if (std::cin >> *a)
 	{
 		ft_chrclasifion(a);
