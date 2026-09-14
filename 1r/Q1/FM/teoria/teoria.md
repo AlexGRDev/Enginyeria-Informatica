@@ -245,11 +245,6 @@ Per avaluar una fórmula de LPO calen dues coses:
 > - `∃x(φ∧ψ)` ≢ `∃xφ∧∃xψ`
 >
 > *Contraejemplo clásico (dominio ℕ):* `∀x∃y (x<y)` es cierta pero `∃y∀x (x<y)` es falsa.
-
-
->NOTA: algunas equivalencias inportantes:
-1, distributiva:
-2. de Morgan: primite meter un not dentro de un paentecis, si pasamos los operadores logicos dentro del perntesis se inveierten
 ---
 
 ### Notes de color (convenis)
