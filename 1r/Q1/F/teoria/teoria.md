@@ -46,19 +46,40 @@ potencial elèctrica `Ep`:
 
 $$W_{A \to B} = -\Delta E_p = E_p(A) - E_p(B)$$
 
-**Potencial elèctric** `V` (energia potencial per unitat de càrrega):
+**Potencial elèctric** `V` (energia potencial per unitat de càrrega): es defineix prenent com a
+referència el potencial nul a l'infinit, com el treball que faria el camp portant una càrrega
+unitat des del punt `r` fins a l'infinit:
 
-$$V = \frac{E_p}{q} \qquad [V] = \text{V (volt)} = \text{J/C}$$
+$$V(r) = \frac{U(r)}{q} = \int_r^{\infty} \vec{E} \cdot d\vec{l} \qquad [V] = \text{V (volt)} = \text{J/C}$$
 
 Per a una càrrega puntual `Q`:
 
 $$V(r) = k\,\frac{Q}{r}$$
 
-**Diferència de potencial** entre dos punts, i relació amb el treball:
+**Diferència de potencial** entre dos punts `r1`, `r2` — coincideix amb el treball que fa el camp
+sobre una càrrega unitat en anar de `r1` a `r2`:
+
+$$V_1 - V_2 = \int_{r_1}^{r_2} \vec{E} \cdot d\vec{l}$$
+
+i relació general amb el treball sobre una càrrega `q` qualsevol:
 
 $$V_A - V_B = \frac{W_{A \to B}}{q} \qquad \Rightarrow \qquad W_{A \to B} = q\,(V_A - V_B)$$
 
-**Relació local entre `E` i `V`** (el camp és menys el gradient del potencial; en 1D):
+**Relació lineal entre `E` i la diferència de potencial** (per a un desplaçament del punt `A` al
+punt `B`):
+
+$$V_A - V_B = -\vec{E} \cdot (\vec{r}_B - \vec{r}_A)$$
+
+**Projecció del camp** sobre la recta `AB` (mòdul, útil quan només interessa la component al
+llarg del desplaçament):
+
+$$|\vec{E}_{\text{proj}}| = \frac{|V_A - V_B|}{d_{AB}}, \qquad d_{AB} = \|\vec{r}_B - \vec{r}_A\|$$
+
+**Condició d'exactitud** d'aquesta relació simplificada `|E| = |ΔV|/d`: és exacta si es dona
+almenys una d'aquestes dues situacions:
+1. El camp `E` és constant al llarg de tot el trajecte entre `A` i `B`.
+2. La distància `d_AB` és molt petita (`Δr → 0`), de manera que el camp es pot considerar
+   localment uniforme — cas límit que dona la forma diferencial ja vista:
 
 $$\vec{E} = -\nabla V \qquad \text{(en 1D: } E_x = -\dfrac{dV}{dx}\text{)}$$
 
@@ -138,5 +159,3 @@ descripció microscòpica del corrent (`J = n q v_d`) vista abans.
 | Conductivitat | `σ` | S/m (= (Ω·m)⁻¹) | `1/ρ` |
 | Llei d'Ohm (macro) | — | — | `V = I R` |
 | Llei d'Ohm (local) | — | — | `J = σ E` |
-
-
