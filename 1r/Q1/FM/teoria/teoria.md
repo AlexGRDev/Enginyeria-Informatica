@@ -74,7 +74,12 @@
 > | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 > | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
 
-A `φ→ψ`: φ=**antecedent**, ψ=**conseqüent**.
+A `φ→ψ`: φ=**antecedent** (hipòtesi, premissa), ψ=**conseqüent** (tesi).
+
+> **NOTA — Maneres d'escriure `p→q`** (totes diuen el mateix, surten sovint als enunciats):
+> Si p, aleshores q · q si p · p implica q · q es dedueix de p · una condició necessària per a p és q
+>
+> *Idea:* `p→q` és fals **només** quan `p` és cert i `q` és fals (com una promesa que només es trenca si es dona la condició i no es compleix el que es promet).
 
 **Exemple resolt** — `¬(p→¬r) ↔ (p∨¬q)`:
 
@@ -124,6 +129,20 @@ A `φ→ψ`: φ=**antecedent**, ψ=**conseqüent**.
 p∧(p∨q) ≡[Neut] (p∧(p∨q))∧1 ≡[Compl] (p∧(p∨q))∧(p∨¬p) ≡[Ass,Distr]
 p∧(p∨(q∧¬p)) ≡[Distr,Idem] p∨(p∧(¬p∧q)) ≡[Ass,Compl] p∨(0∧q) ≡[Elem.Abs,Neut] p
 ```
+
+---
+
+## 1.2 Lògica de Predicats
+
+Enunciats amb variables (`x>3`, `x=y+3`) no són certs ni falsos fins que no s'assigna valor a la variable. `P(x)`: `P` és el predicat (propietat), `x` la variable/subjecte — un cop assignat un valor a `x`, `P(x)` passa a ser una proposició amb valor de veritat.
+
+**Aritat:** nombre d'individus que relaciona un predicat.
+
+| Aritat | Exemples (domini ℤ) | Exemples (domini: alumnes de l'aula) |
+|---|---|---|
+| 1 | "ser parell", "ser múltiple de 4" | "ser alt", "portar ulleres" |
+| 2 (binària, la més habitual en matemàtiques) | "ser menor que", "ser igual que" | "seure al costat de" |
+| 3 | "x està entre y i z" | — |
 
 ---
 
