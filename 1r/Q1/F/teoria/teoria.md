@@ -1,29 +1,142 @@
-### Tema 1 Circuits.
-- conceptes baiscs
-- carrega electrica
-- treball del camp electric
-- corrent eleectric
+### Tema 1. Circuits — Càrrega i corrent elèctric
 
+## 1. Conceptes bàsics de la càrrega elèctrica
 
-## Modletizem matieamticasment, la fuerza entre cargas electricas
-a. cada particula tiene una carga electrica asignada
-b. El model encontrado por kolom
->NOTA Formula: F=(fx, fy, fz), modelo encontrado por kolomb
+- La càrrega elèctrica és una propietat fonamental de certes partícules (protó: `+e`, electró: `-e`).
+- **Quantització**: qualsevol càrrega macroscòpica és múltiple enter de la càrrega elemental,
+  `q = n·e`, amb `e = 1.602×10⁻¹⁹ C`.
+- **Conservació**: la càrrega total d'un sistema aïllat es manté constant.
 
+## 2. Força entre càrregues — Llei de Coulomb
 
-## descripcion de la corriente electric (intensidad)
+**Intuïció**: dues càrregues del mateix signe es repel·len, de signe oposat s'atrauen. La força
+depèn del producte de les càrregues i decreix amb el quadrat de la distància (com la gravetat,
+però pot ser atractiva o repulsiva).
 
-descripcion microscopica y macroscopica
-definicion de intensidad: cos conductor de forma (cable), un cuerpo conductor tiene un gran nombre
-de cargas electricas mobiles, no todos los cuerpos son conductores, como los asilantes, no contiente
-significatibamente cargas electricas mobiles. Hay un nuevo conjunto de cuerpos que son importantes para
-la electornica que son los semiconductores
+**Formalisme**: per a dues càrregues puntuals `q1`, `q2` separades una distància `r`:
 
-son quellos que tienen cargas electricas  mobiles que es: `10^-9` dun conductor
+$$\vec{F} = k\,\frac{q_1 q_2}{r^2}\,\hat{r}$$
 
-es una constnate llamada `n` es el numero de particulas cargadas.
+on `k = 1/(4πε₀) ≈ 8.99×10⁹ N·m²/C²` (constant de Coulomb), i `r̂` és el vector unitari que va
+de la càrrega que exerceix la força cap a la càrrega sobre la qual s'aplica.
 
->NOTA: iv= mvolul
+- Mòdul: `F = k |q1||q2| / r²`
+- Si `q1·q2 > 0` → força repulsiva (sentit de `r̂`, allunyant-se).
+- Si `q1·q2 < 0` → força atractiva (sentit `-r̂`, apropant-se).
+- Principi de superposició: la força total sobre una càrrega és la suma vectorial de les forces
+  exercides per cada una de les altres càrregues per separat.
 
-difenetes materiales en f(n)
+**Camp elèctric** (força per unitat de càrrega de prova `q0`):
+
+$$\vec{E} = \frac{\vec{F}}{q_0}, \qquad \vec{E}_{(\text{càrrega puntual }Q)} = k\,\frac{Q}{r^2}\,\hat{r}$$
+
+## 3. Treball del camp elèctric i potencial elèctric
+
+**Intuïció**: el camp elèctric és conservatiu (com el gravitatori), així que el treball que fa
+sobre una càrrega en moure-la entre dos punts no depèn del camí, només dels punts inicial i
+final. Això permet definir una energia potencial i, dividint per la càrrega, un "potencial"
+que caracteritza el punt de l'espai independentment de quina càrrega de prova hi posem.
+
+**Treball del camp elèctric** sobre una càrrega `q` que es mou d'un punt `A` a un punt `B`:
+
+$$W_{A \to B} = \int_A^B \vec{F} \cdot d\vec{l} = q \int_A^B \vec{E} \cdot d\vec{l}$$
+
+Com que `E` és conservatiu, aquest treball es pot escriure com la diferència d'una energia
+potencial elèctrica `Ep`:
+
+$$W_{A \to B} = -\Delta E_p = E_p(A) - E_p(B)$$
+
+**Potencial elèctric** `V` (energia potencial per unitat de càrrega):
+
+$$V = \frac{E_p}{q} \qquad [V] = \text{V (volt)} = \text{J/C}$$
+
+Per a una càrrega puntual `Q`:
+
+$$V(r) = k\,\frac{Q}{r}$$
+
+**Diferència de potencial** entre dos punts, i relació amb el treball:
+
+$$V_A - V_B = \frac{W_{A \to B}}{q} \qquad \Rightarrow \qquad W_{A \to B} = q\,(V_A - V_B)$$
+
+**Relació local entre `E` i `V`** (el camp és menys el gradient del potencial; en 1D):
+
+$$\vec{E} = -\nabla V \qquad \text{(en 1D: } E_x = -\dfrac{dV}{dx}\text{)}$$
+
+## 4. Corrent elèctric (intensitat)
+
+**Descripció macroscòpica**: la intensitat és el ritme de pas de càrrega per una secció del
+conductor:
+
+$$I = \frac{dQ}{dt} \qquad [I] = \text{A (ampere)} = \text{C/s}$$
+
+**Descripció microscòpica**: en un conductor (metall, per exemple) hi ha un gran nombre de
+portadors de càrrega mòbils (típicament electrons de conducció) que es desplacen amb una certa
+*velocitat de deriva* `v_d` sota l'acció d'un camp elèctric.
+
+- **Conductors**: tenen molts portadors mòbils (electrons lliures).
+- **Aïllants**: pràcticament no tenen portadors mòbils.
+- **Semiconductors**: densitat de portadors intermèdia, ajustable (dopatge), clau en electrònica.
+
+Es defineix `n` com la **densitat volumètrica de portadors de càrrega** (nombre de portadors
+per unitat de volum, `n` en `m⁻³`), que depèn del material.
+
+**Relació entre magnituds microscòpiques i la intensitat**: considerant un conductor de secció
+`A` amb `n` portadors per unitat de volum, cada un amb càrrega `q` i velocitat de deriva `v_d`,
+la càrrega que travessa la secció en un temps `dt` és la continguda en un volum `A·v_d·dt`:
+
+$$I = n\,q\,v_d\,A$$
+
+i la **densitat de corrent**:
+
+$$\vec{J} = \frac{I}{A} = n\,q\,\vec{v}_d \qquad [J] = \text{A/m}^2$$
+
+### Taula de referència ràpida
+
+| Magnitud | Símbol | Unitat SI | Relació |
+|---|---|---|---|
+| Càrrega elemental | `e` | C | `1.602×10⁻¹⁹ C` |
+| Constant de Coulomb | `k` | N·m²/C² | `1/(4πε₀) ≈ 8.99×10⁹` |
+| Força de Coulomb | `F` | N | `k q1 q2 / r²` |
+| Camp elèctric | `E` | N/C = V/m | `F/q0` |
+| Potencial elèctric | `V` | V (= J/C) | `Ep/q = kQ/r` |
+| Treball del camp | `W` | J | `q (V_A - V_B)` |
+| Intensitat | `I` | A (= C/s) | `dQ/dt = n q v_d A` |
+| Densitat de portadors | `n` | m⁻³ | — |
+| Densitat de corrent | `J` | A/m² | `I/A = n q v_d` |
+
+## 5. Llei d'Ohm
+
+**Intuïció**: en molts materials (conductors òhmics), com més gran és el camp elèctric
+(o la diferència de potencial aplicada), més gran és la intensitat de corrent que hi circula,
+de manera proporcional.
+
+**Formalisme (forma macroscòpica)**:
+
+$$V = I\,R$$
+
+on `R` és la **resistència** del conductor (`[R] = Ω`, ohm), que depèn de la geometria i del
+material:
+
+$$R = \rho\,\frac{L}{A}$$
+
+amb `ρ` la **resistivitat** del material (`[ρ] = Ω·m`), `L` la longitud del conductor i `A` la
+secció.
+
+**Forma microscòpica (llei d'Ohm local)**, relacionant densitat de corrent i camp elèctric:
+
+$$\vec{J} = \sigma\,\vec{E}$$
+
+on `σ = 1/ρ` és la **conductivitat**. Aquesta forma és la que connecta directament amb la
+descripció microscòpica del corrent (`J = n q v_d`) vista abans.
+
+### Taula de referència ampliada
+
+| Magnitud | Símbol | Unitat SI | Relació |
+|---|---|---|---|
+| Resistència | `R` | Ω | `V/I = ρL/A` |
+| Resistivitat | `ρ` | Ω·m | — |
+| Conductivitat | `σ` | S/m (= (Ω·m)⁻¹) | `1/ρ` |
+| Llei d'Ohm (macro) | — | — | `V = I R` |
+| Llei d'Ohm (local) | — | — | `J = σ E` |
+
 
