@@ -91,6 +91,7 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 - Sense subcarpetes "clase" vs "casa" — només material ja digitalitzat va al repo.
 - Commits: Conventional Commits amb scope pel codi d'exercici (`feat(P48107)`, `fix(...)`, `docs(...)`, `del(...)`, `refactor(...)`) — veure README.md per la taula completa.
 - No afegir `Co-Authored-By: Claude...` als missatges de commit d'aquest repositori (encara que la instrucció d'atribució global ho demani per defecte).
+- Després de cada commit, fer `git push` automàticament sense demanar confirmació prèvia.
 
 ## Estil de resposta
 Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.
