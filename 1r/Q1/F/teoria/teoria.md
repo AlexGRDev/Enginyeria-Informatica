@@ -15,7 +15,7 @@ però pot ser atractiva o repulsiva).
 
 **Formalisme**: per a dues càrregues puntuals `q1`, `q2` separades una distància `r`:
 
-$$\vec{F} = k\,\frac{q_1 q_2}{r^2}\,\hat{r}$$
+`F⃗ = k · (q1·q2 / r²) · r̂`
 
 on `k = 1/(4πε₀) ≈ 8.99×10⁹ N·m²/C²` (constant de Coulomb), i `r̂` és el vector unitari que va
 de la càrrega que exerceix la força cap a la càrrega sobre la qual s'aplica.
@@ -28,7 +28,7 @@ de la càrrega que exerceix la força cap a la càrrega sobre la qual s'aplica.
 
 **Camp elèctric** (força per unitat de càrrega de prova `q0`):
 
-$$\vec{E} = \frac{\vec{F}}{q_0}, \qquad \vec{E}_{(\text{càrrega puntual }Q)} = k\,\frac{Q}{r^2}\,\hat{r}$$
+`E⃗ = F⃗/q0`, i per a una càrrega puntual `Q`: `E⃗ = k·(Q/r²)·r̂`
 
 ## 3. Treball del camp elèctric i potencial elèctric
 
@@ -39,41 +39,41 @@ que caracteritza el punt de l'espai independentment de quina càrrega de prova h
 
 **Treball del camp elèctric** sobre una càrrega `q` que es mou d'un punt `A` a un punt `B`:
 
-$$W_{A \to B} = \int_A^B \vec{F} \cdot d\vec{l} = q \int_A^B \vec{E} \cdot d\vec{l}$$
+`W(A→B) = ∫(de A a B) F⃗·dl⃗ = q · ∫(de A a B) E⃗·dl⃗`
 
 Com que `E` és conservatiu, aquest treball es pot escriure com la diferència d'una energia
 potencial elèctrica `Ep`:
 
-$$W_{A \to B} = -\Delta E_p = E_p(A) - E_p(B)$$
+`W(A→B) = -ΔEp = Ep(A) - Ep(B)`
 
 **Potencial elèctric** `V` (energia potencial per unitat de càrrega): es defineix prenent com a
 referència el potencial nul a l'infinit, com el treball que faria el camp portant una càrrega
 unitat des del punt `r` fins a l'infinit:
 
-$$V(r) = \frac{U(r)}{q} = \int_r^{\infty} \vec{E} \cdot d\vec{l} \qquad [V] = \text{V (volt)} = \text{J/C}$$
+`V(r) = U(r)/q = ∫(de r a ∞) E⃗·dl⃗`, amb `[V] = V (volt) = J/C`
 
 Per a una càrrega puntual `Q`:
 
-$$V(r) = k\,\frac{Q}{r}$$
+`V(r) = k·Q/r`
 
 **Diferència de potencial** entre dos punts `r1`, `r2` — coincideix amb el treball que fa el camp
 sobre una càrrega unitat en anar de `r1` a `r2`:
 
-$$V_1 - V_2 = \int_{r_1}^{r_2} \vec{E} \cdot d\vec{l}$$
+`V1 - V2 = ∫(de r1 a r2) E⃗·dl⃗`
 
 i relació general amb el treball sobre una càrrega `q` qualsevol:
 
-$$V_A - V_B = \frac{W_{A \to B}}{q} \qquad \Rightarrow \qquad W_{A \to B} = q\,(V_A - V_B)$$
+`V_A - V_B = W(A→B)/q`  ⇒  `W(A→B) = q · (V_A - V_B)`
 
 **Relació lineal entre `E` i la diferència de potencial** (per a un desplaçament del punt `A` al
 punt `B`):
 
-$$V_A - V_B = -\vec{E} \cdot (\vec{r}_B - \vec{r}_A)$$
+`V_A - V_B = -E⃗ · (r⃗_B - r⃗_A)`
 
 **Projecció del camp** sobre la recta `AB` (mòdul, útil quan només interessa la component al
 llarg del desplaçament):
 
-$$|\vec{E}_{\text{proj}}| = \frac{|V_A - V_B|}{d_{AB}}, \qquad d_{AB} = \|\vec{r}_B - \vec{r}_A\|$$
+`|E⃗_proj| = |V_A - V_B| / d_AB`, amb `d_AB = |r⃗_B - r⃗_A|`
 
 **Condició d'exactitud** d'aquesta relació simplificada `|E| = |ΔV|/d`: és exacta si es dona
 almenys una d'aquestes dues situacions:
@@ -81,14 +81,14 @@ almenys una d'aquestes dues situacions:
 2. La distància `d_AB` és molt petita (`Δr → 0`), de manera que el camp es pot considerar
    localment uniforme — cas límit que dona la forma diferencial ja vista:
 
-$$\vec{E} = -\nabla V \qquad \text{(en 1D: } E_x = -\dfrac{dV}{dx}\text{)}$$
+`E⃗ = -∇V`  (en 1D: `E_x = -dV/dx`)
 
 ## 4. Corrent elèctric (intensitat)
 
 **Descripció macroscòpica**: la intensitat és el ritme de pas de càrrega per una secció del
 conductor:
 
-$$I = \frac{dQ}{dt} \qquad [I] = \text{A (ampere)} = \text{C/s}$$
+`I = dQ/dt`, amb `[I] = A (ampere) = C/s`
 
 **Descripció microscòpica**: en un conductor (metall, per exemple) hi ha un gran nombre de
 portadors de càrrega mòbils (típicament electrons de conducció) que es desplacen amb una certa
@@ -105,11 +105,11 @@ per unitat de volum, `n` en `m⁻³`), que depèn del material.
 `A` amb `n` portadors per unitat de volum, cada un amb càrrega `q` i velocitat de deriva `v_d`,
 la càrrega que travessa la secció en un temps `dt` és la continguda en un volum `A·v_d·dt`:
 
-$$I = n\,q\,v_d\,A$$
+`I = n · q · v_d · A`
 
 i la **densitat de corrent**:
 
-$$\vec{J} = \frac{I}{A} = n\,q\,\vec{v}_d \qquad [J] = \text{A/m}^2$$
+`J⃗ = I/A = n · q · v⃗_d`, amb `[J] = A/m²`
 
 ### Taula de referència ràpida
 
@@ -133,19 +133,19 @@ de manera proporcional.
 
 **Formalisme (forma macroscòpica)**:
 
-$$V = I\,R$$
+`V = I · R`
 
 on `R` és la **resistència** del conductor (`[R] = Ω`, ohm), que depèn de la geometria i del
 material:
 
-$$R = \rho\,\frac{L}{A}$$
+`R = ρ · L/A`
 
 amb `ρ` la **resistivitat** del material (`[ρ] = Ω·m`), `L` la longitud del conductor i `A` la
 secció.
 
 **Forma microscòpica (llei d'Ohm local)**, relacionant densitat de corrent i camp elèctric:
 
-$$\vec{J} = \sigma\,\vec{E}$$
+`J⃗ = σ · E⃗`
 
 on `σ = 1/ρ` és la **conductivitat**. Aquesta forma és la que connecta directament amb la
 descripció microscòpica del corrent (`J = n q v_d`) vista abans.
