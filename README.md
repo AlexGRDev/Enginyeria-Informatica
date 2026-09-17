@@ -1,6 +1,6 @@
 # 🎓 Enginyeria Informàtica
 
-Anuari i repositori central amb tots els exercicis, pràctiques, apunts i projectes desenvolupats al llarg del Grau en Enginyeria Informàtica.
+Anuari i repositori central amb tots els exercicis, pràctiques, apunts i projectes desenvolupats al llarg del Grau en Enginyeria Informàtica (GEI, FIB-UPC).
 
 ---
 
@@ -11,26 +11,46 @@ El repositori està organitzat per cursos i quadrimestres per facilitar la naveg
 ```text
 .
 ├── 1r/
-│   ├── Q1/                 # Primer Quadrimestre
-│   │   ├── PRO1/           # Programació 1 (Exercicis Jutge.org, P_, X_)
-│   │   ├── F/              # Física
-│   │   ├── FM/             # Fonaments Matematics
-│   │   └── IC/             # Introducion als Computadors
+│   └── Q1/                     # Primer Quadrimestre
+│       ├── PRO1/                # Programació 1 (Exercicis Jutge.org: P_, X_)
+│       ├── F/                   # Física
+│       ├── FM/                  # Fonaments Matemàtics
+│       └── IC/                  # Introducció als Computadors
 │
-├── Admin/                  # Configuracions generals i scripts utilitaris
+├── Admin/                       # Horari i configuracions generals
+├── CLAUDE.md                    # Guia de treball per a Claude Code en aquest repo
+├── LICENSE.md
 └── README.md
 ```
+
+Cada carpeta d'assignatura (`PRO1/`, `F/`, `FM/`, `IC/`) segueix el patró `{ejercicios,material,teoria}` i conté 3 arxius canario a la seva arrel:
+
+| Arxiu | Contingut | Freqüència d'actualització |
+| :--- | :--- | :--- |
+| `CONTEXT.md` | Temari, convencions d'estil/codi, regles del jutge (Jutge.org, SISA), dates clau | Només si canvia el temari o les regles oficials |
+| `STATE.md` | Què s'ha donat a classe, exercicis resolts vs pendents, proper examen | Cada sessió de treball |
+| `PITFALLS.md` | Taula d'errors recurrents (data, exercici, error, correcció) | Cada sessió de treball |
 
 ---
 ## 📊 Estat del Progrés
 
 | Curs | Quadrimestre | Assignatura | Codi | Estat | Tecnologies |
 | :---: | :---: | :--- | :---: | :---: | :---: |
-| **1r** | Q1 | Programació 1 | `PRO1` | 🔄 En curs | `C++` `Clang++17` |
-| **1r** | Q1 | Física | `F` | 🔄 En curs | `TeX` |
-| **1r** | Q1 | fundaments Matematics | `FM` | 🔄 En curs | `MATLAB` |
-| **1r** | Q1 | Introducio als Computadors | `IC` | 🔄 En curs | `Assembly` `C` |
+| **1r** | Q1 | Programació 1 | `PRO1` | 🔄 En curs — 16 exercicis resolts (P_/X_) | `C++` `Clang++17` |
+| **1r** | Q1 | Física | `F` | 🔄 En curs — teoria (Corrent Continu) | `TeX` |
+| **1r** | Q1 | Fonaments Matemàtics | `FM` | 🔄 En curs — Lògica i Demostracions, Sumatoris (3/9) | `MATLAB` |
+| **1r** | Q1 | Introducció als Computadors | `IC` | 🔄 En curs — teoria (Representació de Naturals, Combinacionals) | `Assembly` `C` |
 
+Detall actualitzat per assignatura a cada `STATE.md` (veure taula d'estructura).
+
+### Exàmens (curs 2026-2027, horari oficial racó FIB)
+
+| Assignatura | Parcial | Final | Recuperació |
+| :--- | :--- | :--- | :--- |
+| PRO1 | 29/10/2026 | 08/01/2027 | 06/02/2027 |
+| IC | 30/10/2026 i 21/12/2026 | 12/01/2027 | 06/02/2027 |
+| FM | 04/11/2026 i 22/12/2026 | 14/01/2027 | 06/02/2027 |
+| F | 03/11/2026 i 23/12/2026 | 18/01/2027 | — |
 
 ---
 
@@ -73,5 +93,4 @@ diff my_output.txt my_expected.txt
 
 ## 📜 Llicència
 
-Aquest repositori s'ha creat amb finalitats estrictament acadèmiques i de seguiment personal. S'agraeix respectar l'honestedat acadèmica de la universitat a l'hora de consultar les solucions dels exercicis.
-
+Aquest repositori es publica sota una llicència d'ús personal i acadèmic — veure [LICENSE.md](LICENSE.md). En resum: contingut de seguiment personal, sense cap garantia, i es demana respectar l'honestedat acadèmica de la universitat a l'hora de consultar les solucions dels exercicis.
