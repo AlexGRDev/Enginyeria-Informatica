@@ -19,4 +19,9 @@ Estructura de carpetas: `ejercicios/` (prácticas) y `material/` (PDFs de teorí
 - Convención de nombres de archivo para código SISA/C de las prácticas (equivalente a `<CODI>.cpp` en PRO1).
 
 ## Fechas clave
-Pendiente de confirmar (no hay fecha de examen/entrega registrada para IC en el repo).
+Fuente: horari oficial a raco.fib.upc.edu (curs 2026-2027).
+
+- Parcial 1: 30/10/2026 13:00-15:00.
+- Parcial 2: 21/12/2026 11:00-13:00.
+- Final: 12/01/2027 15:00-20:00.
+- Recuperació: 06/02/2027 10:00-13:00.

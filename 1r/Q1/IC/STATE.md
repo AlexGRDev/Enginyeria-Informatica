@@ -12,4 +12,4 @@
 - Resto de temario (SISA, secuenciales, etc.): pendiente de confirmar qué se dará a continuación.
 
 ## Próximo examen/entrega
-Pendiente de confirmar.
+Parcial 1: 30/10/2026 (en ~6 semanas desde la última actualización).
