@@ -159,3 +159,45 @@ descripció microscòpica del corrent (`J = n q v_d`) vista abans.
 | Conductivitat | `σ` | S/m (= (Ω·m)⁻¹) | `1/ρ` |
 | Llei d'Ohm (macro) | — | — | `V = I R` |
 | Llei d'Ohm (local) | — | — | `J = σ E` |
+
+## Oscil·loscopi — resum
+
+**Què és**: instrument que mostra com varia una tensió elèctrica en funció del temps.
+Un feix d'electrons es desvia verticalment segons el senyal d'entrada `v(t)` i
+horitzontalment segons una base de temps, de manera que la pantalla dibuixa:
+
+`y(t) = K · v(t)`
+
+**Tub de raigs catòdics (CRT)**: canó d'electrons + plaques de desviació vertical i
+horitzontal + pantalla fluorescent. El feix impacta la pantalla i produeix un punt
+lluminós; les plaques el desplacen amunt/avall (vertical) i esquerra/dreta (horitzontal).
+
+**Camí del senyal (canal vertical)**:
+
+`v(t) → atenuador (V/div) → amplificador vertical → plaques verticals → feix d'electrons`
+
+- **V/div** (coeficient de deflexió): volts que representa cada divisió vertical de la
+  reticula. Divisions visibles = `amplitud (V) / escala (V/div)`.
+- **TIME/DIV** (base de temps): temps que representa cada divisió horitzontal; genera
+  internament una tensió en dent de serra `v_H(t)` que mou el feix d'esquerra a dreta a
+  ritme constant i el retorna ràpid en arribar al final.
+- **Acoblament del canal**: `DC` deixa passar tot el senyal; `AC` filtra la component
+  contínua amb un condensador (només es veu la part variable); `GND` connecta el canal a
+  massa (línia horitzontal) per fixar el nivell de referència a la pantalla.
+- **Trigger (activació/sincronització)**: fixa l'instant en què comença cada escombratge
+  horitzontal, normalment quan el senyal creua un nivell (`LEVEL`) amb un cert pendent
+  (`SLOPE`). Sense un trigger ben ajustat la imatge no és estable i "es mou" horitzontalment.
+
+**Exemple (del PDF, secció "Control V/div")**: amb escala `0.5 V/div` i un senyal
+d'amplitud `1.5 V`, la traça ocupa:
+
+`1.5 V / 0.5 V/div = 3 divisions`
+
+**Mesures típiques a partir de la reticula**:
+- Amplitud: `divisions verticals × V/div`.
+- Període `T`: `divisions horitzontals × TIME/DIV`.
+- Freqüència: `f = 1/T`.
+
+**Nota** (detall intern, `Intro_oscilloscopi.pdf`): l'amplificador vertical té més etapes
+(preamplificador diferencial, línia de retard, amplificador de sortida) que generen dues
+tensions oposades `±(G/2)·v(t)` per a les dues plaques; no cal per l'ús bàsic de l'aparell.

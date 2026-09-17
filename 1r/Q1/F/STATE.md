@@ -10,6 +10,12 @@
 - Corrent elèctric: descripció macroscòpica (`I = dQ/dt`) i microscòpica (`I = n·q·v_d·A`, densitat de corrent `J`).
 - Llei d'Ohm (forma macroscòpica `V=IR` i microscòpica/local `J=σE`).
 
+**Oscil·loscopi — resum** (basat en `material/Intro_oscilloscopi.pdf`, inclou apèndix C
+del `apunts_Part1_tema1.pdf`): funcionament CRT, camí del senyal vertical
+(atenuador→amplificador→plaques), controls V/div i TIME/DIV, acoblament AC/DC/GND,
+trigger (nivell/pendent), exemple numèric del PDF (0.5 V/div, 1.5 V → 3 divisions),
+mesures d'amplitud/període/freqüència a partir de la reticula.
+
 Ningún ejercicio resuelto todavía (no hay carpeta `ejercicios/`, solo teoría).
 
 ## Pendiente
