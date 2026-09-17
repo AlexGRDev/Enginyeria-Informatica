@@ -3,14 +3,34 @@ name: Auto-accept and merge PRs
 on:
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
+  push:
+    branches-ignore:
+      - main
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
+  crear-pr-si-cal:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Crear i aprovar/mergejar la PR si no existia
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EXISTING=$(gh pr list --head "${{ github.ref_name }}" --base main --state open --json url --jq '.[0].url')
+          if [ -z "$EXISTING" ]; then
+            URL=$(gh pr create --base main --head "${{ github.ref_name }}" --fill)
+            gh pr review "$URL" --approve
+            gh pr merge "$URL" --merge
+          fi
+
   auto-merge:
-    if: github.event.pull_request.draft == false
+    if: github.event_name == 'pull_request' && github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
       - name: Aprovar la PR
