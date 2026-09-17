@@ -10,6 +10,7 @@
 
 ## Pendiente
 - Sumatoris: ejercicios 4-9 de `sumatoris.md` (incluyen signos alternos con potencias y fracciones).
+- Formalització: problemes 30 i 31 del pdf oficial (pàgina 22), anotats a `teoria.md`, pendents de resoldre.
 - Bloques del examen aún no trabajados en el repo: Inducció, Conjunts i Relacions, Divisibilitat, Congruències, Funcions — punto débil declarado (inducció, conjunts, relacions).
 
 ## Próximo examen/entrega
