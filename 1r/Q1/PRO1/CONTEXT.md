@@ -19,4 +19,8 @@ Pendiente de confirmar: no se dispone del temari oficial de l'assignatura (no ha
 - Commits: Conventional Commits con scope el código del ejercicio (`feat(P48107)`, `fix(...)`, `docs(...)`, `del(...)`, `refactor(...)`). Sin `Co-Authored-By: Claude...` en este repo.
 
 ## Fechas clave
-Pendiente de confirmar (no hay fecha de examen/entrega registrada para PRO1 en el repo).
+Fuente: horari oficial a raco.fib.upc.edu (curs 2026-2027).
+
+- Parcial: 29/10/2026 — Torn 1 15:30-17:30, Torn 2 18:00-20:00 (aules laboratori).
+- Final: 08/01/2027 — Torn 1 08:00-11:00, Torn 2 11:30-14:30 (aules laboratori).
+- Recuperació: 06/02/2027 10:00-13:00 (Grup 10 i Grup 20, aules laboratori).

@@ -27,4 +27,4 @@ Exámenes/ejercicios extra resueltos (`X_`):
 No hay lista de ejercicios pendientes confirmada (no existe hoja de ruta oficial de la asignatura). Los ejercicios se añaden según se asignan/resuelven.
 
 ## Próximo examen/entrega
-Pendiente de confirmar.
+Parcial: 29/10/2026 (en ~6 semanas desde la última actualización).
