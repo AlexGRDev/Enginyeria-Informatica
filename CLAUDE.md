@@ -82,6 +82,7 @@ Cada carpeta de asignatura (`PRO1/`, `IC/`, `FM/`, `F/`, y cualquier futura) deb
 3. Antes de dar por buena una solución en PRO1/IC (Jutge, SISA), auditar contra `PITFALLS.md`: si se detecta el mismo patrón de overengineering u otro error ya registrado, decirlo explícitamente antes de continuar.
 4. Al cerrar la sesión de trabajo en una asignatura, actualizar `STATE.md` y, si hubo error nuevo, añadir fila a `PITFALLS.md`. Nunca tocar `CONTEXT.md` salvo cambio real confirmado de temario o reglas.
 5. No inventar contenido de `CONTEXT.md` — si falta información (temario, reglas del juez), preguntar en vez de asumir.
+6. Si en cualquier apunte de una asignatura (`teoria.md`, `.md` de tema, etc.) aparece un bloque `[!WARNING]` (alerta GFM), añadir de inmediato una entrada en la sección `Pendiente` del `STATE.md` de esa asignatura, referenciando de qué trata (tema/apartado + resumen breve), para que quede como recordatorio explícito de repasarlo en casa. No basta con dejarlo solo en el propio apunte: sin la entrada en `STATE.md` se puede pasar por alto.
 
 La información ya recogida en las secciones "Assignatures" de este archivo (temario FM, convenciones PRO1, etc.) es la base a migrar a cada `CONTEXT.md` la primera vez que se cree; no la dupliques de nuevo en `CONTEXT.md` si ya está aquí sin verificar que sigue vigente.
 
@@ -148,6 +149,41 @@ Cuando el usuario quiera trabajar en una materia (PRO1, IC, FM, Fisica...):
 4. Si el lanzamiento falla con un error de remote control, no reintentes en
    bucle: dile al usuario que revise `allow_remote_control` en su
    kitty.conf.
+
+## Precisión técnica y anti-alucinación
+
+### Verificación antes de escribir
+- Antes de usar una función, método, campo o dependencia en el código
+  propuesto, confírmala de verdad (Read/Grep/Glob en el repo, o
+  WebFetch si hace falta documentación externa). No asumas firmas ni
+  comportamiento por similitud con otra librería que conozcas.
+- Si falta información para confirmar algo (versión real de una
+  dependencia, comportamiento de una función de terceros, estado
+  actual de un archivo), para y pregunta. No rellenes el hueco con la
+  opción más plausible.
+- Nunca inventes una función, flag o parámetro que "debería existir".
+  Si no lo has visto en el repo o en documentación verificada, no
+  existe para ti.
+
+### Ediciones quirúrgicas, no reescrituras
+- Para modificar un archivo existente, usa Edit con el fragmento
+  exacto a cambiar. No uses Write para reescribir un archivo completo
+  salvo que sea nuevo o el cambio afecte a la mayoría de sus líneas.
+- Si una tarea toca varios archivos, edítalos uno a uno con cambios
+  puntuales — no regeneres el árbol entero.
+
+### Salud del contexto
+- Si el historial de esta sesión se acerca a ~300k tokens (verifícalo
+  con /context si tienes dudas), avísame en una línea al final de tu
+  respuesta y sugiere /compact o /clear. No lo ejecutes tú por tu
+  cuenta, solo avisa.
+
+### Uso del razonamiento
+- Antes de dar código, usa tu razonamiento interno para simular
+  mentalmente la ejecución con casos límite reales (no solo el caso
+  feliz), revisar consistencia de tipos, y comprobar que no rompe algo
+  que ya exista en el repo. Si detectas un efecto secundario, dilo
+  explícitamente en la respuesta — no lo dejes solo en el pensamiento.
 
 ## Estil de resposta
 Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.

@@ -13,10 +13,11 @@ Material de curso en `material/` (extraído de los propios PDFs, libro "Introduc
 ## Convenciones (estilo, juez, flags de compilación)
 Estructura de carpetas: `ejercicios/` (prácticas) y `material/` (PDFs de teoría, p.ej. `Cap.2.RepresentacionNaturales-2014-07.pdf`, `Cap.3-Combinacionales-2010-09.pdf`). Primera práctica presente: `ejercicios/Practica0/Practica0-IP-2023.pdf`.
 
+Entrega y corrección de prácticas: en **Atenea** (entrega y tests automáticos en la misma plataforma).
+
 **Pendiente de confirmar:**
 - Herramienta/simulador SISA usado (nombre del ensamblador/simulador, flags de ensamblado y ejecución).
-- Si hay una plataforma tipo Jutge para entregar prácticas de IC, o si la corrección es manual/entrega en RACO.
-- Convención de nombres de archivo para código SISA/C de las prácticas (equivalente a `<CODI>.cpp` en PRO1).
+- Convención de nombres de archivo para código SISA/C de las prácticas (equivalente a `<CODI>.cpp` en PRO1). Nota: `Practica0-IP-2023.pdf` no lo especifica: es un laboratorio de LogicWorks/circuitos combinacionales (informe en papel), sin entregables de código; hay que confirmarlo con una práctica posterior que sí incluya código SISA/C.
 
 ## Fechas clave
 Fuente: horari oficial a raco.fib.upc.edu (curs 2026-2027).
