@@ -105,6 +105,50 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 - Els commits i el `git push` són responsabilitat EXCLUSIVA de Main. Els
   subagents mai executen `git commit` ni `git push`, sota cap circumstància.
 
+## Tareas repetitivas de subagentes
+
+Cuando una tarea sobre una rama/worktree deba repetirse periódicamente
+(revisar si CONTEXT.md cambió, resincronizar docs, comprobaciones
+recurrentes), Main no espera a que el usuario lo pida cada vez: usa
+
+  /loop <intervalo> <prompt que lanza al subagente branch-worker
+  correspondiente a esa rama>
+
+en vez de relanzar el subagente manualmente. El intervalo lo decide
+según la naturaleza de la tarea (revisiones ligeras: minutos;
+comprobaciones pesadas: más espaciado).
+
+Recuerda: /loop vive mientras esta sesión de Main esté abierta. Si se
+cierra la pestaña o el Mac se apaga, el loop muere con ella. Si el
+usuario pide algo que tiene que sobrevivir a eso, dile que /loop no
+sirve para ese caso y que hace falta Scheduled Tasks en su lugar —
+no lo intentes resolver con /loop.
+
+## Lanzar sesiones de materia en pestañas separadas
+
+Cuando el usuario quiera trabajar en una materia (PRO1, IC, FM, Fisica...):
+
+1. Main nunca cambia su propio directorio de trabajo para esto.
+2. Main abre una pestaña kitty nueva (en la misma ventana, como Cmd+T),
+   sin bloquear esta sesión, con cwd en el worktree de esa materia,
+   resumiendo la sesión con ese nombre:
+
+   kitty @ launch --type=tab --tab-title="<materia>" \
+     --cwd=.claude/worktrees/<materia> -- claude --resume "<materia>"
+
+3. Si falla porque todavía no existe sesión con ese nombre en ese
+   worktree (primera vez), lánzala sin --resume:
+
+   kitty @ launch --type=tab --tab-title="<materia>" \
+     --cwd=.claude/worktrees/<materia> -- claude
+
+   y avisa al usuario que la primera vez tiene que ejecutar `/rename <materia>`
+   dentro de esa pestaña nueva, para que en adelante `--resume "<materia>"`
+   sí la encuentre.
+4. Si el lanzamiento falla con un error de remote control, no reintentes en
+   bucle: dile al usuario que revise `allow_remote_control` en su
+   kitty.conf.
+
 ## Estil de resposta
 Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.
 No usar la raya/guión largo (—) como muletilla o "marca de agua" estilística en texto generado (respuestas, commits, documentación de este repo) — solo cuando el propio usuario lo haya puesto explícitamente para marcar algo.
