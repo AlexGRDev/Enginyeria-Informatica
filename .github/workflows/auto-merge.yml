@@ -22,7 +22,8 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           EXISTING=$(gh pr list --head "${{ github.ref_name }}" --base main --state open --json url --jq '.[0].url')
-          if [ -z "$EXISTING" ]; then
+          AHEAD=$(gh api "repos/${{ github.repository }}/compare/main...${{ github.ref_name }}" --jq '.ahead_by')
+          if [ -z "$EXISTING" ] && [ "$AHEAD" -gt 0 ]; then
             URL=$(gh pr create --base main --head "${{ github.ref_name }}" --title "${{ github.ref_name }}" --body "PR automàtica creada pel workflow en fer push a ${{ github.ref_name }}.")
             gh pr merge "$URL" --merge
           fi
