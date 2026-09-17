@@ -8,7 +8,7 @@
 ## Convenciones (estilo, juez, flags de compilación)
 - Estructura: `teoria/teoria.md`, organizada por temas numerados (Tema 1. Circuits, ...). No hay `ejercicios/` todavía.
 - No aplica juez/compilación (asignatura sin componente de programación en el repo).
-- Notación con fórmulas LaTeX (`$$...$$`) y tablas de referencia rápida (magnitud / símbolo / unidad SI / relación), estilo consistente con `teoria.md` ya escrito.
+- Notación de fórmulas: **no** usar bloques LaTeX `$$...$$`. Fórmulas en Markdown plano entre backticks, con unicode (`F⃗` para vectores, `r̂` para versor, `∇` para nabla, `/` para fracciones, `∫(de A a B)` para integrales definidas, `·` para producto) — convención adoptada el 2026-09-17, ya aplicada a todo `teoria.md`. Tablas de referencia rápida (magnitud / símbolo / unidad SI / relación) se mantienen igual.
 
 ## Fechas clave
 Fuente: horari oficial a raco.fib.upc.edu (curs 2026-2027).
