@@ -24,7 +24,6 @@ jobs:
           EXISTING=$(gh pr list --head "${{ github.ref_name }}" --base main --state open --json url --jq '.[0].url')
           if [ -z "$EXISTING" ]; then
             URL=$(gh pr create --base main --head "${{ github.ref_name }}" --title "${{ github.ref_name }}" --body "PR automàtica creada pel workflow en fer push a ${{ github.ref_name }}.")
-            gh pr review "$URL" --approve
             gh pr merge "$URL" --merge
           fi
 
