@@ -6,12 +6,14 @@
 
 Abans de poder demostrar res formalment, necessitem un llenguatge on els enunciats matemàtics es puguin combinar i avaluar sense ambigüitat. Això és la **lògica proposicional**.
 
-**Enunciat (proposició):** frase susceptible de ser certa o falsa, però no alhora. `2+3`, preguntes o ordres NO són enunciats (no afirmen res); `x+1=2` tampoc ho és mentre `x` no tingui un valor assignat.
+**Enunciat (proposició):** frase susceptible de ser certa o falsa, però no alhora. $2+3$, preguntes o ordres NO són enunciats (no afirmen res); $x+1=2$ tampoc ho és mentre `x` no tingui un valor assignat.
 
 **Fórmula:** una manera formal d'escriure enunciats combinats. S'hi construeix amb:
 - **Àtoms** `p, q, r...` (proposicions simples, indivisibles)
 - **Connectives binàries** $\land \lor \rightarrow \leftrightarrow$ i la **connectiva unària** $\neg$
 - **Parèntesis** `( )`, només per evitar ambigüitat
+
+> **Fórmula atòmica:** un àtom (`p, q, r...`) tot sol, sense combinar amb cap connectiva, és el cas base de la definició recursiva següent i el bloc més elemental amb què es construeix qualsevol fórmula de lògica proposicional.
 
 > Definició recursiva: els àtoms són fórmules; si $\varphi$ és fórmula, $\neg\varphi$ també; si $\varphi,\psi$ són fórmules i $*$ és una connectiva binària, $(\varphi * \psi)$ també ho és.
 
@@ -101,9 +103,9 @@ p∧(p∨(q∧¬p)) ≡[Distr,Idem] p∨(p∧(¬p∧q)) ≡[Ass,Compl] p∨(0∧
 
 ## 1.2 Lògica de Predicats
 
-La lògica proposicional no pot expressar enunciats amb variables com `x>3` o `x=y+3`: mentre no s'assigni un valor a `x` i `y`, no són ni certs ni falsos. La **lògica de predicats** (o de primer ordre, LPO) resol això.
+La lògica proposicional no pot expressar enunciats amb variables com $x>3$ o $x=y+3$: mentre no s'assigni un valor a `x` i `y`, no són ni certs ni falsos. La **lògica de predicats** (o de primer ordre, LPO) resol això.
 
-`P(x)`: `P` és el **predicat** (la propietat), `x` és la variable/subjecte. Un cop s'assigna un valor a `x`, `P(x)` esdevé una proposició amb valor de veritat.
+$P(x)$: `P` és el **predicat** (la propietat), `x` és la variable/subjecte. Un cop s'assigna un valor a `x`, $P(x)$ esdevé una proposició amb valor de veritat.
 
 Cada predicat té una **aritat**: quants individus relaciona.
 
@@ -117,7 +119,7 @@ Cada predicat té una **aritat**: quants individus relaciona.
 
 ### Fórmules atòmiques
 
-> **Definició:** sigui `R` un símbol de relació d'aritat `n`, i `x1...xn` les `n` variables. Llavors `R(x1,...,xn)` és una **fórmula atòmica** — el bloc més bàsic amb què es construeixen les fórmules de LPO.
+> **Definició:** sigui `R` un símbol de relació d'aritat `n`, i $x_1,\ldots,x_n$ les `n` variables. Llavors $R(x_1,\ldots,x_n)$ és una **fórmula atòmica** — el bloc més bàsic amb què es construeixen les fórmules de LPO.
 
 **Exemples** (`P` aritat 1, `Q` i `<` aritat 2, `R` aritat 3):
 ```
@@ -125,7 +127,7 @@ Aritat 1 → P(x)          Aritat 2 → Q(x,y)  ,  x<y          Aritat 3 → R(x
 ```
 
 > **Observacions:**
-> 1. A les relacions binàries habituals s'usa notació **infixa**: `R(x,y)` s'escriu `xRy`  ·  `<(x,y)` s'escriu `x<y`  ·  `=(x,y)` s'escriu `x=y`
+> 1. A les relacions binàries habituals s'usa notació **infixa**: $R(x,y)$ s'escriu $xRy$  ·  $<(x,y)$ s'escriu $x<y$  ·  $=(x,y)$ s'escriu $x=y$
 > 2. En lloc de variables soltes hi poden aparèixer expressions més complicades ("termes"): $y^2+2 < 4$ també és una fórmula atòmica vàlida.
 
 ---
@@ -153,7 +155,7 @@ Un quantificador està **niat** quan es troba dins de l'abast (rang d'aplicació
 
 **Exemple** (domini $\mathbb{R}$):
 - $\forall x \forall y\,(x+y=y+x)$ afirma la **commutativa de la suma** a $\mathbb{R}$
-- $\forall x \exists y\,(x+y=0)$ "per a tot $x \in \mathbb{R}$, existeix un $y \in \mathbb{R}$ tal que `x+y=0`" (l'existència de l'oposat)
+- $\forall x \exists y\,(x+y=0)$ "per a tot $x \in \mathbb{R}$, existeix un $y \in \mathbb{R}$ tal que $x+y=0$" (l'existència de l'oposat)
 
 Quan els dos quantificadors són **iguals**, es poden intercanviar lliurement:
 
