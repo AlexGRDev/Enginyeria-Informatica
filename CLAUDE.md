@@ -93,6 +93,18 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 - No afegir `Co-Authored-By: Claude...` als missatges de commit d'aquest repositori (encara que la instrucció d'atribució global ho demani per defecte).
 - Després de cada commit, fer `git push` automàticament sense demanar confirmació prèvia.
 
+## Reglas de Main
+
+- Main (la sessió principal) mai edita arxius del repo directament, amb una
+  única excepció: aquest mateix `CLAUDE.md`.
+- Qualsevol canvi al repo (codi, docs, config, el que sigui) es delega SEMPRE
+  a un subagent, sense excepció.
+- Abans de llançar el subagent, Main entra primer al worktree existent
+  corresponent a la branca afectada (sota `.claude/worktrees/<branca>`) i
+  llança el subagent des d'allà.
+- Els commits i el `git push` són responsabilitat EXCLUSIVA de Main. Els
+  subagents mai executen `git commit` ni `git push`, sota cap circumstància.
+
 ## Estil de resposta
 Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.
 No usar la raya/guión largo (—) como muletilla o "marca de agua" estilística en texto generado (respuestas, commits, documentación de este repo) — solo cuando el propio usuario lo haya puesto explícitamente para marcar algo.
