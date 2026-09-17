@@ -15,9 +15,9 @@ Abans de poder demostrar res formalment, necessitem un llenguatge on els enuncia
 
 > **Fórmula atòmica:** un àtom (`p, q, r...`) tot sol, sense combinar amb cap connectiva, és el cas base de la definició recursiva següent i el bloc més elemental amb què es construeix qualsevol fórmula de lògica proposicional.
 
-> Definició recursiva: els àtoms són fórmules; si `φ` és fórmula, `¬φ` també; si `φ,ψ` són fórmules i `∗` és una connectiva binària, `(φ∗ψ)` també ho és.
+> Definició recursiva: els àtoms són fórmules; si `φ` és fórmula, $\neg\varphi$ també; si `φ,ψ` són fórmules i `∗` és una connectiva binària, `(φ∗ψ)` també ho és.
 
-**Convenis d'escriptura:** mai es posen parèntesis a la negació (`¬p`, no `(¬p)`); el parèntesi exterior sempre se suprimeix.
+**Convenis d'escriptura:** mai es posen parèntesis a la negació ($\neg p$, no $(\neg p)$); el parèntesi exterior sempre se suprimeix.
 
 ---
 
@@ -37,14 +37,14 @@ Una taula de veritat mostra el valor de veritat d'una fórmula per a **totes** l
 > | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 > | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
 
-A `φ→ψ`: φ és l'**antecedent** (hipòtesi, premissa), ψ és el **conseqüent** (tesi).
+A $\varphi \to \psi$: φ és l'**antecedent** (hipòtesi, premissa), ψ és el **conseqüent** (tesi).
 
-> **Maneres d'escriure `p→q`** (totes diuen el mateix, i surten sovint redactades així als enunciats):
+> **Maneres d'escriure $p \to q$** (totes diuen el mateix, i surten sovint redactades així als enunciats):
 > Si p, aleshores q · q si p · p implica q · q es dedueix de p · una condició necessària per a p és q
 >
-> *Intuïció:* `p→q` és fals **només** quan `p` és cert i `q` és fals — com una promesa que només es trenca si es dona la condició i no es compleix el que es promet.
+> *Intuïció:* $p \to q$ és fals **només** quan `p` és cert i `q` és fals — com una promesa que només es trenca si es dona la condició i no es compleix el que es promet.
 
-**Exemple resolt** — construïm pas a pas la taula de `¬(p→¬r) ↔ (p∨¬q)`. Primer les columnes auxiliars (`¬r`, `p→¬r`...), i al final la fórmula sencera:
+**Exemple resolt** — construïm pas a pas la taula de $\neg(p \to \neg r) \leftrightarrow (p \vee \neg q)$. Primer les columnes auxiliars ($\neg r$, $p \to \neg r$...), i al final la fórmula sencera:
 
 | p | q | r | ¬r | p→¬r | ¬(p→¬r) | ¬q | p∨¬q | resultat |
 |---|---|---|---|---|---|---|---|---|
@@ -66,7 +66,7 @@ Segons com surt la columna final, una fórmula es classifica en:
 
 ### Equivalència de fórmules
 
-Dues fórmules diferents poden "voler dir el mateix". Formalment, `φ≡ψ` quan tenen exactament la mateixa taula de veritat (mateix valor per a cada combinació d'àtoms). Com a conseqüència, totes les tautologies són equivalents entre si (es representen per `1`), i totes les contradiccions també ho són (`0`).
+Dues fórmules diferents poden "voler dir el mateix". Formalment, $\varphi \equiv \psi$ quan tenen exactament la mateixa taula de veritat (mateix valor per a cada combinació d'àtoms). Com a conseqüència, totes les tautologies són equivalents entre si (es representen per `1`), i totes les contradiccions també ho són (`0`).
 
 Comprovar-ho amb una taula de veritat sempre funciona, però es fa molt llarg amb moltes variables. Per això interessa poder-ho demostrar **sintàcticament**, encadenant propietats conegudes.
 
@@ -74,18 +74,18 @@ Comprovar-ho amb una taula de veritat sempre funciona, però es fa molt llarg am
 
 | Nom | φ | Dual |
 |---|---|---|
-| Distributiva | `φ∧(ψ∨θ)≡(φ∧ψ)∨(φ∧θ)` | `φ∨(ψ∧θ)≡(φ∨ψ)∧(φ∨θ)` |
-| De Morgan | `¬(φ∧ψ)≡¬φ∨¬ψ` | `¬(φ∨ψ)≡¬φ∧¬ψ` |
-| Absorció | `φ∧(φ∨ψ)≡φ` | `φ∨(φ∧ψ)≡φ` |
-| Idempotència | `φ∧φ≡φ` | `φ∨φ≡φ` |
+| Distributiva | $\varphi\wedge(\psi\vee\theta)\equiv(\varphi\wedge\psi)\vee(\varphi\wedge\theta)$ | $\varphi\vee(\psi\wedge\theta)\equiv(\varphi\vee\psi)\wedge(\varphi\vee\theta)$ |
+| De Morgan | $\neg(\varphi\wedge\psi)\equiv\neg\varphi\vee\neg\psi$ | $\neg(\varphi\vee\psi)\equiv\neg\varphi\wedge\neg\psi$ |
+| Absorció | $\varphi\wedge(\varphi\vee\psi)\equiv\varphi$ | $\varphi\vee(\varphi\wedge\psi)\equiv\varphi$ |
+| Idempotència | $\varphi\wedge\varphi\equiv\varphi$ | $\varphi\vee\varphi\equiv\varphi$ |
 | Commutativa/Associativa | estàndard | estàndard |
-| Neutre | `φ∧1≡φ` | `φ∨0≡φ` |
-| Elem. absorbent | `φ∨1≡1` | `φ∧0≡0` |
-| Complementari | `φ∨¬φ≡1` | `φ∧¬φ≡0` |
-| Doble negació | `¬¬φ≡φ` | — |
+| Neutre | $\varphi\wedge1\equiv\varphi$ | $\varphi\vee0\equiv\varphi$ |
+| Elem. absorbent | $\varphi\vee1\equiv1$ | $\varphi\wedge0\equiv0$ |
+| Complementari | $\varphi\vee\neg\varphi\equiv1$ | $\varphi\wedge\neg\varphi\equiv0$ |
+| Doble negació | $\neg\neg\varphi\equiv\varphi$ | — |
 
 **Traducció** (per eliminar `→` i `↔` abans d'operar):
-`φ→ψ ≡ ¬φ∨ψ`  ·  `φ↔ψ ≡ (φ→ψ)∧(ψ→φ) ≡ (φ∧ψ)∨(¬φ∧¬ψ)`
+$\varphi \to \psi \equiv \neg\varphi \vee \psi$  ·  $\varphi \leftrightarrow \psi \equiv (\varphi \to \psi)\wedge(\psi \to \varphi) \equiv (\varphi\wedge\psi)\vee(\neg\varphi\wedge\neg\psi)$
 
 **Recepta per demostrar una equivalència sintàcticament** (sense taula de veritat):
 1. Substitueix `→` i `↔` per la seva traducció (taula anterior)
@@ -127,8 +127,8 @@ Aritat 1 → P(x)          Aritat 2 → Q(x,y)  ,  x<y          Aritat 3 → R(x
 ```
 
 > **Observacions:**
-> 1. A les relacions binàries habituals s'usa notació **infixa**: `R(x,y)` s'escriu `xRy`  ·  `<(x,y)` s'escriu `x<y`  ·  `=(x,y)` s'escriu `x=y`
-> 2. En lloc de variables soltes hi poden aparèixer expressions més complicades ("termes"): `y²+2 < 4` també és una fórmula atòmica vàlida.
+> 1. A les relacions binàries habituals s'usa notació **infixa**: $R(x,y)$ s'escriu $xRy$  ·  $<(x,y)$ s'escriu $x<y$  ·  $=(x,y)$ s'escriu $x=y$
+> 2. En lloc de variables soltes hi poden aparèixer expressions més complicades ("termes"): $y^2+2 < 4$ també és una fórmula atòmica vàlida.
 
 ---
 
@@ -136,10 +136,10 @@ Aritat 1 → P(x)          Aritat 2 → Q(x,y)  ,  x<y          Aritat 3 → R(x
 
 Les fórmules de LPO es formen combinant les atòmiques amb `∧ ∨ → ↔ ¬` (igual que abans) i, a més, amb dos **quantificadors** nous:
 
-- **`∀`** (universal): `∀xP(x)` — la proposició `P(x)` és certa per a **tots** els valors `x` del domini
-- **`∃`** (existencial): `∃xP(x)` — **existeix (almenys) un** element `x` del domini pel qual `P(x)` és cert
+- **`∀`** (universal): $\forall x\, P(x)$ — la proposició $P(x)$ és certa per a **tots** els valors `x` del domini
+- **`∃`** (existencial): $\exists x\, P(x)$ — **existeix (almenys) un** element `x` del domini pel qual $P(x)$ és cert
 
-> Si `φ` és una fórmula i `x` una variable, `∀xφ` i `∃xφ` també són fórmules.
+> Si `φ` és una fórmula i `x` una variable, $\forall x\varphi$ i $\exists x\varphi$ també són fórmules.
 
 **Negar un quantificador el converteix en l'altre** (i la negació passa cap a dins):
 ```
@@ -154,8 +154,8 @@ Les fórmules de LPO es formen combinant les atòmiques amb `∧ ∨ → ↔ ¬`
 Un quantificador està **niat** quan es troba dins de l'abast (rang d'aplicació) d'un altre quantificador — és a dir, quan una fórmula en té més d'un, un darrere l'altre.
 
 **Exemple** (domini ℝ):
-- `∀x∀y(x+y=y+x)` afirma la **commutativa de la suma** a ℝ
-- `∀x∃y(x+y=0)` "per a tot `x∈ℝ`, existeix un `y∈ℝ` tal que `x+y=0`" (l'existència de l'oposat)
+- $\forall x\,\forall y\,(x+y=y+x)$ afirma la **commutativa de la suma** a ℝ
+- $\forall x\,\exists y\,(x+y=0)$ "per a tot $x\in\mathbb{R}$, existeix un $y\in\mathbb{R}$ tal que $x+y=0$" (l'existència de l'oposat)
 
 Quan els dos quantificadors són **iguals**, es poden intercanviar lliurement:
 ```
@@ -166,10 +166,10 @@ Quan els dos quantificadors són **iguals**, es poden intercanviar lliurement:
 > 1. Per negar una frase amb quantificadors niats, s'aplica la negació **d'un en un**, de fora cap a dins (cada `∀` es converteix en `∃` i viceversa).
 > 2. És habitual trobar sentències amb diverses variables i diversos quantificadors combinats.
 >
-> ⚠️ **Quan els quantificadors són diferents, l'ordre importa:** `∀x∃yφ ≢ ∃y∀xφ` en general.
-> *Contraexemple (domini ℕ):* `∀x∃y(x<y)` és certa ("per a tot número n'hi ha un de més gran"), però `∃y∀x(x<y)` és falsa ("hi ha un número més gran que tots" — no existeix).
+> ⚠️ **Quan els quantificadors són diferents, l'ordre importa:** $\forall x\exists y\varphi \not\equiv \exists y\forall x\varphi$ en general.
+> *Contraexemple (domini ℕ):* $\forall x\exists y(x<y)$ és certa ("per a tot número n'hi ha un de més gran"), però $\exists y\forall x(x<y)$ és falsa ("hi ha un número més gran que tots" — no existeix).
 >
-> Per la mateixa raó, un quantificador **no distribueix** sobre qualsevol connectiva: `∀x(φ∨ψ) ≢ ∀xφ∨∀xψ`  ·  `∃x(φ∧ψ) ≢ ∃xφ∧∃xψ`. Sí que ho fa quan coincideixen (`∀` amb `∧`, `∃` amb `∨`): `∀x(φ∧ψ)≡∀xφ∧∀xψ`  ·  `∃x(φ∨ψ)≡∃xφ∨∃xψ`.
+> Per la mateixa raó, un quantificador **no distribueix** sobre qualsevol connectiva: $\forall x(\varphi\vee\psi) \not\equiv \forall x\varphi\vee\forall x\psi$  ·  $\exists x(\varphi\wedge\psi) \not\equiv \exists x\varphi\wedge\exists x\psi$. Sí que ho fa quan coincideixen (`∀` amb `∧`, `∃` amb `∨`): $\forall x(\varphi\wedge\psi)\equiv\forall x\varphi\wedge\forall x\psi$  ·  $\exists x(\varphi\vee\psi)\equiv\exists x\varphi\vee\exists x\psi$.
 
 ---
 
