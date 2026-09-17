@@ -170,5 +170,7 @@ $$\forall x \forall y\, \varphi \equiv \forall y \forall x\, \varphi \qquad \exi
 
 ---
 
+## Formalització
+problemes 30 y 31 (pdf, pagina: 22)
 ### Notes de color
 Negre=Teoria · Blau=LAB · Verd=resolt a Exercicis Resolts · `(R)`=recomanat
