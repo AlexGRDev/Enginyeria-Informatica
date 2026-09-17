@@ -12,6 +12,7 @@ Estructura estable del examen parcial (6 años de exámenes): 3 bloques — Demo
 - Secuencia pedagógica: intuición → procedimiento → formalismo → ejemplos → ejercicios → examen. Las analogías con programación ayudan pero nunca sustituyen el rigor matemático.
 - Los `.cpp` de FM (cuando se usan como apoyo, p.ej. Sumatoris) llevan la misma cabecera ASCII de 42 que PRO1, con iteración por punteros puros.
 - Punto débil identificado: inducción, conjuntos, relaciones — reforzar especialmente estos bloques.
+- Notación de fórmulas lógicas: LaTeX inline `$...$` (comandos \wedge, \vee, \neg, \to, \leftrightarrow, \forall, \exists, \equiv...) en vez de unicode entre backticks — convención adoptada el 2026-09-17 tras instalar `render-latex.nvim` en Neovim. Las tablas de valores de verdad (0/1) y el bloque de demostración con ```código``` quedan igual, sin LaTeX.
 
 ## Fechas clave
 - Parcial: 22/09/2026.
