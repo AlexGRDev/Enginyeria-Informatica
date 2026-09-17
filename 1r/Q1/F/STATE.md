@@ -22,6 +22,7 @@ Ningún ejercicio resuelto todavía (no hay carpeta `ejercicios/`, solo teoría)
 - Resto del bloc Corrent Continu no reflejado aún en `teoria.md` (si lo hay).
 - Bloques Corrent Altern, Electrònica i portes lògiques, Ones — sin empezar en el repo.
 - Material PDF ya disponible en `material/` para los bloques Corrent Altern (`P2_CorrentAltern.pdf`), Electrònica i portes lògiques (`P3_Electronica.pdf`) y Ones (`P4_Ones.pdf`) — pendiente de revisar cuando se empiecen esos bloques en clase.
+- Verificar en la próxima sesión que `render-latex.nvim` renderiza correctamente los bloques `$$...$$` de `teoria.md` (Tema 1 y Oscil·loscopi) en Neovim.
 
 ## Próximo examen/entrega
 Parcial: 03/11/2026 (en ~7 semanas desde la última actualización).
