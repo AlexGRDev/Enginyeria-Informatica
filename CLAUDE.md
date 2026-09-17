@@ -149,6 +149,41 @@ Cuando el usuario quiera trabajar en una materia (PRO1, IC, FM, Fisica...):
    bucle: dile al usuario que revise `allow_remote_control` en su
    kitty.conf.
 
+## Precisión técnica y anti-alucinación
+
+### Verificación antes de escribir
+- Antes de usar una función, método, campo o dependencia en el código
+  propuesto, confírmala de verdad (Read/Grep/Glob en el repo, o
+  WebFetch si hace falta documentación externa). No asumas firmas ni
+  comportamiento por similitud con otra librería que conozcas.
+- Si falta información para confirmar algo (versión real de una
+  dependencia, comportamiento de una función de terceros, estado
+  actual de un archivo), para y pregunta. No rellenes el hueco con la
+  opción más plausible.
+- Nunca inventes una función, flag o parámetro que "debería existir".
+  Si no lo has visto en el repo o en documentación verificada, no
+  existe para ti.
+
+### Ediciones quirúrgicas, no reescrituras
+- Para modificar un archivo existente, usa Edit con el fragmento
+  exacto a cambiar. No uses Write para reescribir un archivo completo
+  salvo que sea nuevo o el cambio afecte a la mayoría de sus líneas.
+- Si una tarea toca varios archivos, edítalos uno a uno con cambios
+  puntuales — no regeneres el árbol entero.
+
+### Salud del contexto
+- Si el historial de esta sesión se acerca a ~300k tokens (verifícalo
+  con /context si tienes dudas), avísame en una línea al final de tu
+  respuesta y sugiere /compact o /clear. No lo ejecutes tú por tu
+  cuenta, solo avisa.
+
+### Uso del razonamiento
+- Antes de dar código, usa tu razonamiento interno para simular
+  mentalmente la ejecución con casos límite reales (no solo el caso
+  feliz), revisar consistencia de tipos, y comprobar que no rompe algo
+  que ya exista en el repo. Si detectas un efecto secundario, dilo
+  explícitamente en la respuesta — no lo dejes solo en el pensamiento.
+
 ## Estil de resposta
 Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.
 No usar la raya/guión largo (—) como muletilla o "marca de agua" estilística en texto generado (respuestas, commits, documentación de este repo) — solo cuando el propio usuario lo haya puesto explícitamente para marcar algo.
