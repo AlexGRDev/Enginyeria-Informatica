@@ -95,3 +95,4 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 
 ## Estil de resposta
 Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.
+No usar la raya/guión largo (—) como muletilla o "marca de agua" estilística en texto generado (respuestas, commits, documentación de este repo) — solo cuando el propio usuario lo haya puesto explícitamente para marcar algo.
