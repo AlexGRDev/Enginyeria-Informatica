@@ -16,15 +16,14 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
       - name: Crear i aprovar/mergejar la PR si no existia
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
         run: |
           EXISTING=$(gh pr list --head "${{ github.ref_name }}" --base main --state open --json url --jq '.[0].url')
           if [ -z "$EXISTING" ]; then
-            URL=$(gh pr create --base main --head "${{ github.ref_name }}" --fill)
+            URL=$(gh pr create --base main --head "${{ github.ref_name }}" --title "${{ github.ref_name }}" --body "PR automàtica creada pel workflow en fer push a ${{ github.ref_name }}.")
             gh pr review "$URL" --approve
             gh pr merge "$URL" --merge
           fi
