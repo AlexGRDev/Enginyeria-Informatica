@@ -190,8 +190,8 @@ Ecuaciones de las señales del circuito $C\text{-}P0$:
 * $b = \overline{y}$
 * $c = a + b = \overline{x} + \overline{y}$
 * $d = b \cdot x = \overline{y} \cdot x$
-* $e = c \cdot y = (\overline{x} + y) \cdot y = \overline{x}\cdot y + y\cdot y = \overline{x}y + y = y$
-* $w = d + e = \overline{y}x + y$
+* $e = c \cdot y = (\overline{x} + \overline{y}) \cdot y = \overline{x}\cdot y + \overline{y}\cdot y = \overline{x}y + 0 = \overline{x}y$
+* $w = d + e = \overline{y}x + \overline{x}y$
 
 #### a) Tabla de valores intermedios del circuito
 
@@ -211,14 +211,14 @@ $$
 #### Justificación paso a paso por filas:
 * **Fila 1 ($x=0, y=0$):**
   * $a = \overline{0} = 1$, $b = \overline{0} = 1$
-  * $c = a + y = 1 + 0 = 1$
+  * $c = a + b = 1 + 1 = 1$
   * $d = b \cdot x = 1 \cdot 0 = 0$
   * $e = c \cdot y = 1 \cdot 0 = 0$
   * $w = d + e = 0 + 0 = 0$
 
 * **Fila 2 ($x=0, y=1$):**
   * $a = \overline{0} = 1$, $b = \overline{1} = 0$
-  * $c = a + y = 1 + 1 = 1$
+  * $c = a + b = 1 + 0 = 1$
   * $d = b \cdot x = 0 \cdot 0 = 0$
   * $e = c \cdot y = 1 \cdot 1 = 1$
   * $w = d + e = 0 + 1 = 1$
