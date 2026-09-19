@@ -24,8 +24,7 @@ Tots els `.cpp` (PRO1 i FM) duen la capçalera ASCII estàndard de 42 (bloc amb 
 
 ### PRO1 — Programació 1 (C++, Jutge.org)
 - Nivell d'entrada alt (ve de 42), pot avançar ràpid en fonaments.
-- Prioritat: correctitud > enunciat > casos límit > complexitat raonable > simplicitat > compatibilitat amb el jutge > AC.
-- Prohibit en exercicis plans: abstraccions, helpers innecessaris, hash tables, optimització prematura. Assenyalar explícitament si hi ha sobreenginyeria.
+- Criteri de prioritat i regla anti-sobreenginyeria: veure CLAUDE.md global.
 
 ### IC — Introducció als Computadors
 - SISA (assemblador), arquitectura, lògica digital.
@@ -165,13 +164,6 @@ Cuando el usuario quiera trabajar en una materia (PRO1, IC, FM, Fisica...):
   Si no lo has visto en el repo o en documentación verificada, no
   existe para ti.
 
-### Ediciones quirúrgicas, no reescrituras
-- Para modificar un archivo existente, usa Edit con el fragmento
-  exacto a cambiar. No uses Write para reescribir un archivo completo
-  salvo que sea nuevo o el cambio afecte a la mayoría de sus líneas.
-- Si una tarea toca varios archivos, edítalos uno a uno con cambios
-  puntuales — no regeneres el árbol entero.
-
 ### Salud del contexto
 - Si el historial de esta sesión se acerca a ~300k tokens (verifícalo
   con /context si tienes dudas), avísame en una línea al final de tu
@@ -186,5 +178,4 @@ Cuando el usuario quiera trabajar en una materia (PRO1, IC, FM, Fisica...):
   explícitamente en la respuesta — no lo dejes solo en el pensamiento.
 
 ## Estil de resposta
-Español, directo, sin preámbulos. No repetir fundamentos ya dominados salvo laguna real. En C: punteros puros (`*p`, `p++`, `while(*p)`), nunca índices.
-No usar la raya/guión largo (—) como muletilla o "marca de agua" estilística en texto generado (respuestas, commits, documentación de este repo) — solo cuando el propio usuario lo haya puesto explícitamente para marcar algo.
+Veure CLAUDE.md global (estil, punters purs, raya llarga).
