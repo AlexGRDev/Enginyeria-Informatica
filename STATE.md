@@ -1,6 +1,6 @@
 # Estado: Enginyeria Informàtica
 
-## Última actualización: 2026-09-19
+## Última actualización: 2026-09-21
 
 Para el avance por asignatura, ver el `STATE.md` de cada una en su carpeta del
 repo. Fuente de verdad, no se duplica aquí.
@@ -15,6 +15,12 @@ Commit `aa62068` en `main`, propagado por fast-forward a `Fisica`, `FM`, `IC` y
 
 Los worktrees `agent-*` siguen con la versión antigua: son efímeros, se limpian
 con `git worktree remove` cuando sobren.
+
+## CI: auto-merge
+Corregida hoy en `main` una condición de carrera en `.github/workflows/auto-merge.yml`
+que dejaba huérfana la PR automática de una rama cuando dos ramas hacían push
+casi a la vez (pasó con `FM` y `Fisica`, PR #12 atascada ~40 min). Detalle en
+`PITFALLS.md`.
 
 ## Fechas clave
 Parcial de FM: 22/09/2026. Parcial de Física el mismo día, alcance sin confirmar.

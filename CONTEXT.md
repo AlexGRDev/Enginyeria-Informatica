@@ -26,6 +26,9 @@ Horario semanal en `Admin/horari.md`.
   `ejercicios/`.
 - Subagente de proyecto `branch-worker` en `.claude/agents/`: trabaja dentro de un
   worktree, solo toca `.md`, sin Bash ni git.
+- `.github/workflows/auto-merge.yml`: crea automáticamente la PR de cada rama de
+  asignatura hacia `main` en cada push y la mergea (con reintentos si `main` se
+  mueve por una carrera con otra rama), y aprueba/mergea las PRs abiertas a mano.
 
 Criterio académico: ver CLAUDE.md global.
 
