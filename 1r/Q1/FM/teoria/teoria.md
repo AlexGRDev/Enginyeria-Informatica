@@ -78,7 +78,8 @@ Comprovar-ho amb una taula de veritat sempre funciona, però es fa molt llarg am
 | De Morgan | `¬(φ∧ψ) ≡ ¬φ∨¬ψ` | `¬(φ∨ψ) ≡ ¬φ∧¬ψ` |
 | Absorció | `φ∧(φ∨ψ) ≡ φ` | `φ∨(φ∧ψ) ≡ φ` |
 | Idempotència | `φ∧φ ≡ φ` | `φ∨φ ≡ φ` |
-| Commutativa/Associativa | estàndard | estàndard |
+| Commutativa | `φ∧ψ ≡ ψ∧φ` | `φ∨ψ ≡ ψ∨φ` |
+| Associativa | `(φ∧ψ)∧θ ≡ φ∧(ψ∧θ)` | `(φ∨ψ)∨θ ≡ φ∨(ψ∨θ)` |
 | Neutre | `φ∧1 ≡ φ` | `φ∨0 ≡ φ` |
 | Elem. absorbent | `φ∨1 ≡ 1` | `φ∧0 ≡ 0` |
 | Complementari | `φ∨¬φ ≡ 1` | `φ∧¬φ ≡ 0` |
