@@ -19,3 +19,10 @@ ex[0-9][0-9]
 
 # Transcripciones de sesion: no se publican
 sessions/
+
+# Binarios compilados de ejercicios (mismo nombre que su carpeta, sin extension).
+# Tres niveles: ejercicios/<P_|X_>/<CODI>/<CODI>; la carpeta <CODI> esta a dos
+# niveles, asi que el patron no la toca. Se usa ? y no una clase [PX]: con git
+# 2.55 una clase al principio del ultimo componente no matchea (comprobado).
+1r/Q1/PRO1/ejercicios/*/*/P?????
+1r/Q1/PRO1/ejercicios/*/*/X?????
