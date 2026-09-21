@@ -25,8 +25,24 @@ jobs:
           AHEAD=$(gh api "repos/${{ github.repository }}/compare/main...${{ github.ref_name }}" --jq '.ahead_by')
           if [ -z "$EXISTING" ] && [ "$AHEAD" -gt 0 ]; then
             URL=$(gh pr create --base main --head "${{ github.ref_name }}" --title "${{ github.ref_name }}" --body "PR automàtica creada pel workflow en fer push a ${{ github.ref_name }}.")
-            gh pr merge "$URL" --merge
+          elif [ -n "$EXISTING" ]; then
+            URL="$EXISTING"
+          else
+            exit 0
           fi
+
+          # Reintenta el merge per absorbir la carrera amb altres pushos que
+          # mouen main entre mig (error "Base branch was modified").
+          for intent in 1 2 3 4 5; do
+            if gh pr merge "$URL" --merge; then
+              exit 0
+            fi
+            echo "Intent $intent de mergejar $URL ha fallat, reintentant..."
+            sleep 5
+          done
+
+          echo "No s'ha pogut mergejar $URL després de 5 intents." >&2
+          exit 1
 
   auto-merge:
     if: github.event_name == 'pull_request' && github.event.pull_request.draft == false && github.event.pull_request.user.login != 'github-actions[bot]'
