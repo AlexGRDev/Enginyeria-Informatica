@@ -98,7 +98,13 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 - Main (la sessió principal) mai edita arxius del repo directament, amb una
   única excepció: aquest mateix `CLAUDE.md`.
 - Qualsevol canvi al repo (codi, docs, config, el que sigui) es delega SEMPRE
-  a un subagent, sense excepció.
+  a un subagent, sense excepció. Quin subagent depen del que es toca:
+
+  | Que es toca | Subagent |
+  |---|---|
+  | Apunts i documentacio `.md` (`CONTEXT`, `STATE`, `PITFALLS`, teoria) | `branch-worker` |
+  | Codi (`.cpp`, exercicis) amb canvi mecanic i literal: rename, substitucio exacta | `mechanic` |
+  | Codi que exigeix criteri: implementar, corregir un bug, reestructurar | `developer` |
 - Abans de llançar el subagent, Main entra primer al worktree existent
   corresponent a la branca afectada (sota `.claude/worktrees/<branca>`) i
   llança el subagent des d'allà.
