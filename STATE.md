@@ -1,8 +1,15 @@
 ---
 project: enginyeria-informatica
 type: state
-tags: [academico, gei, estado]
-aliases: ["Enginyeria estado"]
+tags:
+  - academico
+  - gei
+  - estado
+  - PITFALLS
+  - CONTEXT
+  - MEMORY
+aliases:
+  - Enginyeria estado
 ---
 
 # Estado: Enginyeria Informàtica
