@@ -102,6 +102,17 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 - Abans de llançar el subagent, Main entra primer al worktree existent
   corresponent a la branca afectada (sota `.claude/worktrees/<branca>`) i
   llança el subagent des d'allà.
+- En delegar, Main SEMPRE passa a `branch-worker` la ruta ABSOLUTA del
+  `CONTEXT.md` de l'assignatura: `<worktree>/1r/Q1/<carpeta>/CONTEXT.md`.
+  Sense aquesta ruta el subagent para i la demana. Compte amb el mapatge
+  branca -> carpeta, que no és 1:1:
+
+  | Branca / worktree | Carpeta |
+  |---|---|
+  | `PRO1`   | `1r/Q1/PRO1` |
+  | `IC`     | `1r/Q1/IC`   |
+  | `FM`     | `1r/Q1/FM`   |
+  | `Fisica` | `1r/Q1/F`    |
 - Els commits i el `git push` són responsabilitat EXCLUSIVA de Main. Els
   subagents mai executen `git commit` ni `git push`, sota cap circumstància.
 
