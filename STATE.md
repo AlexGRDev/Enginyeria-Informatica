@@ -1,17 +1,3 @@
----
-project: enginyeria-informatica
-type: state
-tags:
-  - academico
-  - gei
-  - estado
-  - PITFALLS
-  - CONTEXT
-  - MEMORY
-aliases:
-  - Enginyeria estado
----
-
 # Estado: Enginyeria Informàtica
 
 ## Última actualización: 2026-09-19
@@ -33,4 +19,4 @@ con `git worktree remove` cuando sobren.
 ## Fechas clave
 Parcial de FM: 22/09/2026. Parcial de Física el mismo día, alcance sin confirmar.
 
-← [[projects/enginyeria-informatica/CONTEXT]]
+← [CONTEXT.md](CONTEXT.md)

@@ -1,10 +1,3 @@
----
-project: enginyeria-informatica
-type: pitfalls
-tags: [academico, gei, pitfalls]
-aliases: ["Enginyeria pitfalls"]
----
-
 # Pitfalls: Enginyeria Informàtica
 
 Cada asignatura tiene su `PITFALLS.md` en su carpeta del repo
@@ -38,4 +31,4 @@ Frontmatter YAML inválido en `.claude/agents/` = el agente desaparece del roste
 sin error. Descriptions con `:` van en escalar de bloque (`>-`). Tras editar
 agentes, comprobar roster en sesión nueva.
 
-← [[projects/enginyeria-informatica/CONTEXT]]
+← [CONTEXT.md](CONTEXT.md)

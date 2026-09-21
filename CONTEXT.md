@@ -1,10 +1,3 @@
----
-project: enginyeria-informatica
-type: context
-tags: [academico, gei]
-aliases: ["Enginyeria contexto"]
----
-
 # Enginyeria Informàtica: GEI, FIB-UPC
 
 **Ruta:** `~/Documents/Enginyeria-Informatica`
@@ -38,5 +31,5 @@ Criterio académico: ver CLAUDE.md global.
 
 ## Notas de este proyecto
 
-- [[projects/enginyeria-informatica/STATE]]
-- [[projects/enginyeria-informatica/PITFALLS]]
+- [STATE.md](STATE.md)
+- [PITFALLS.md](PITFALLS.md)
