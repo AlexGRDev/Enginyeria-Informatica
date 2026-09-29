@@ -6,53 +6,66 @@
 /*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 11:54:44 by agarcia2          #+#    #+#             */
-/*   Updated: 2026/09/21 12:59:25 by agarcia2         ###   ########.fr       */
+/*   Updated: 2026/09/23 16:14:10 by agarcia2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cstdlib>
 #include <iostream>
+#include <cstdlib>
+
+int	ft_addOnSecond(int **satrt, int **pos)
+{
+	if (**pos == 60)
+	{
+		**pos = 0;
+		return (1);
+	}
+	else if (*pos == *satrt && **pos == 24)
+		**pos = 0;
+	return (0);
+}
+
+void	ft_printTime(int *arry, int *pArry)
+{
+	arry = pArry;
+	while (pArry < arry + 3)
+	{
+		if (*pArry < 10)
+			std::cout << "0";
+		std::cout << *pArry;
+		if (pArry < arry + 2)
+			std::cout << ":";
+		else
+			std::cout << std::endl;
+		pArry++;
+	}
+}
 
 int	main(void)
 {
-	int	*a;
-	int	*ptr;
-	int	*end;
+	int	*arry;
+	int	*pArry;
 
-	a = (int *)malloc(sizeof(int) * 3);
-	if (std::cin >> a[0] >> a[1] >> a[2])
+	arry = (int *)malloc(sizeof(*arry) * 3);
+	if (!arry)
+		return (1);
+	if (std::cin >> arry[0] >> arry[1] >> arry[2])
 	{
-		a[2]++;
-		if (a[2] == 60)
+		pArry = arry;
+		pArry[2]++;
+		arry = pArry + 3;
+		while (arry > pArry)
 		{
-			a[2] = 0;
-			a[1]++;
-			if (a[1] == 60)
-			{
-				a[1] = 0;
-				a[0]++;
-				if (a[0] == 24)
-				{
-					a[0] = 0;
-				}
-			}
-		}
-		ptr = a;
-		end = a + 3;
-		while (ptr < end)
-		{
-			if (*ptr < 10)
-				std::cout << "0";
-			std::cout << *ptr;
-			if (ptr < end - 1)
-				std::cout << ":";
+			arry--;
+			if (ft_addOnSecond(&pArry, &arry) && arry > pArry)
+				(*(arry - 1))++;
 			else
-				std::cout << std::endl;
-
-			ptr++;
+				break ;
 		}
+		arry = pArry;
+		ft_printTime(arry, pArry);
 	}
-	free(a);
-	a = nullptr;
+	free(arry);
+	arry = nullptr;
 	return (0);
 }
