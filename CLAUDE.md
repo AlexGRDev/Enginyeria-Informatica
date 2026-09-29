@@ -93,6 +93,14 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
 - No afegir `Co-Authored-By: Claude...` als missatges de commit d'aquest repositori (encara que la instrucció d'atribució global ho demani per defecte).
 - Després de cada commit, fer `git push` automàticament sense demanar confirmació prèvia.
 
+## Ramas, worktrees i CI
+
+Cada assignatura viu en la seva pròpia branca (`PRO1`, `IC`, `FM`, `Fisica`) amb
+worktree a `.claude/worktrees/<branca>`; detall complet i mapatge branca→carpeta
+a `CONTEXT.md` arrel. `.github/workflows/auto-merge.yml` crea i mergeja
+automàticament la PR de cada branca cap a `main` en cada push (amb reintents si
+hi ha carrera entre branques).
+
 ## Reglas de Main
 
 - Main (la sessió principal) mai edita arxius del repo directament, amb una
@@ -105,6 +113,11 @@ La información ya recogida en las secciones "Assignatures" de este archivo (tem
   | Apunts i documentacio `.md` (`CONTEXT`, `STATE`, `PITFALLS`, teoria) | `branch-worker` |
   | Codi (`.cpp`, exercicis) amb canvi mecanic i literal: rename, substitucio exacta | `mechanic` |
   | Codi que exigeix criteri: implementar, corregir un bug, reestructurar | `developer` |
+- La restricció de `branch-worker` a només `.md` dins del seu worktree no és
+  només convenció: un hook (`.claude/hooks/branch-worker-guard.sh`) la
+  bloqueja a nivell d'eina. El guard s'edita sempre des del checkout arrel
+  (referenciat per ruta absoluta al frontmatter de l'agent, s'aplica als cinc
+  checkouts a l'instant); les còpies versionades a cada worktree no.
 - Abans de llançar el subagent, Main entra primer al worktree existent
   corresponent a la branca afectada (sota `.claude/worktrees/<branca>`) i
   llança el subagent des d'allà.
