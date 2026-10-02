@@ -43,12 +43,11 @@ void	ft_printTime(int *arry, int *pArry)
 
 int	main(void)
 {
+	int	arr[3];
 	int	*arry;
 	int	*pArry;
 
-	arry = (int *)malloc(sizeof(*arry) * 3);
-	if (!arry)
-		return (1);
+	arry = arr;
 	if (std::cin >> arry[0] >> arry[1] >> arry[2])
 	{
 		pArry = arry;
@@ -65,7 +64,5 @@ int	main(void)
 		arry = pArry;
 		ft_printTime(arry, pArry);
 	}
-	free(arry);
-	arry = nullptr;
 	return (0);
 }
