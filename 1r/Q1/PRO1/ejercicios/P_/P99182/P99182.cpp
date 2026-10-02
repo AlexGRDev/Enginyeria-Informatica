@@ -12,12 +12,11 @@
 
 #include <iostream>
 
-float	*ft_average(int *a, int *b)
+float	ft_average(int *a, int *b)
 {
-	float	*res;
+	float	res;
 
-	res = (float *)malloc(sizeof(float));
-	*res = (float)(*a + *b) / 2.0f;
+	res = (float)(*a + *b) / 2.0f;
 	return (res);
 }
 
@@ -25,14 +24,12 @@ int	main(void)
 {
 	int	n;
 	int	m;
-	float	*reesult;
+	float	reesult;
 
 	if (std::cin >> n >> m)
 	{
 		reesult = ft_average(&n, &m);
-		std::cout << *reesult << std::endl;
-		free(reesult);
-		reesult = nullptr;
+		std::cout << reesult << std::endl;
 	}
 	return (0);
 }
