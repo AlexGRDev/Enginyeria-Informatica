@@ -17,8 +17,10 @@ Entrega y corrección de prácticas: en **Atenea** (entrega y tests automáticos
 
 Convención de nombre de archivo de entrega: `practica#-subgrup#-nom_cognoms.pdf` (ej. `3-84-John_Smith.pdf`). Subgrupo de Alex: **51**.
 
+Simulador de circuitos de laboratorio: LogicWorks 4.0 (software completo en `material/LogicWorks 4.0/`; librerías y circuitos `.clf`/`.cct` por práctica en `ejercicios/PRAC<N>/`).
+
 **Pendiente de confirmar:**
-- Herramienta/simulador SISA usado (nombre del ensamblador/simulador, flags de ensamblado y ejecución).
+- Herramienta/simulador SISA usado (nombre del ensamblador/simulador, flags de ensamblado y ejecución) — distinto de LogicWorks, que es solo para los circuitos combinacionales/secuenciales de laboratorio.
 - Convención de nombres de archivo para código SISA/C de las prácticas (equivalente a `<CODI>.cpp` en PRO1). Nota: `Practica0-IP-2023.pdf` no lo especifica: es un laboratorio de LogicWorks/circuitos combinacionales (informe en papel), sin entregables de código; hay que confirmarlo con una práctica posterior que sí incluya código SISA/C.
 
 ## Fechas clave
