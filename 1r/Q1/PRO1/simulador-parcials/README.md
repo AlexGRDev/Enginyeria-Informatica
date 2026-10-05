@@ -63,21 +63,22 @@ real, igual de fiel al examen oficial como sea posible:
    la sesión. Pide confirmación (`y/n`) antes de arrancar nada.
 3. Animación de "conexión" (puramente estética).
 4. Elige un parcial al azar entre los disponibles en cache, crea
-   `intentos/<timestamp>-<parcial>/` con un `.cpp` vacío por problema
-   (cabecera ASCII estándar de 42 ya puesta, nombrado `<CODIGO>.cpp`), y
-   pide pulsar una tecla para comenzar. **El cronómetro arranca de verdad en
-   ese momento**, no antes.
-5. Muestra de golpe los enunciados de todos los problemas (como el examen
-   real, no de uno en uno) y entra en el prompt interactivo `examshell>`,
-   que se queda esperando comandos hasta que termines o se acabe el tiempo:
+   `intentos/<timestamp>-<parcial>/` y pide pulsar una tecla para comenzar.
+   **El cronómetro arranca de verdad en ese momento**, no antes.
+5. Los problemas se ven **uno a uno, por niveles** (como el modo Maestro42 de
+   42): solo se crea el `.cpp` del primer problema (cabecera ASCII estándar
+   de 42 ya puesta, nombrado `<CODIGO>.cpp`); el resto no existen todavía.
+   Entra en el prompt interactivo `examshell>`, que se queda esperando
+   comandos hasta que termines o se acabe el tiempo:
 
    | Comando | Qué hace |
    |---|---|
    | `help` | Lista de comandos. |
-   | `status` | Tiempo restante real, parcial actual y estado de compilación de cada problema. |
-   | `enunciado` (alias `subject`) | Vuelve a imprimir los enunciados completos. |
-   | `grademe` | Compila, ejecuta (interactivo) y compara cada `.cpp` con la solución de referencia — ver detalle abajo. |
-   | `finish` | Pide confirmación (`yes`) y muestra el resumen final (tiempo usado, estado de cada problema) antes de salir. |
+   | `status` | Tiempo restante real, en qué problema estás (p.ej. "2 de 4") y estado de compilación de los problemas ya desbloqueados. |
+   | `enunciado` (alias `subject`) | Vuelve a imprimir el enunciado del problema ACTUAL, solo ese — nunca los demás. |
+   | `siguiente` (alias `next`) | Pide confirmación (`yes`) y pasa al siguiente problema: crea su `.cpp` y muestra su enunciado. **Progresión unidireccional: una vez confirmado no hay vuelta atrás** al problema anterior. En el último problema, avisa que ya estás en el último y no avanza más. |
+   | `grademe` | Compila, ejecuta (interactivo) y compara cada `.cpp` ya desbloqueado con la solución de referencia — ver detalle abajo. |
+   | `finish` | Pide confirmación (`yes`) y muestra el resumen final (tiempo usado, estado de los problemas que llegaste a desbloquear) antes de salir. |
 
    Si el tiempo ya se acabó cuando ejecutas cualquier comando, la sesión lo
    avisa ("SE ACABÓ EL TIEMPO") y fuerza el cierre con resumen, no deja
@@ -91,8 +92,9 @@ comando interno para invocarla sin salir de la sesión; `make grade` sigue
 disponible como atajo standalone para repasar después de que la sesión ya
 haya terminado:
 
-- Compila cada `.cpp` del intento con los mismos flags que el resto del repo
-  (`clang++ -Wall -Wextra -fsanitize=address,undefined -O0`).
+- Compila cada `.cpp` que exista físicamente en el intento (es decir, solo
+  los problemas ya desbloqueados con `siguiente`) con los mismos flags que
+  el resto del repo (`clang++ -Wall -Wextra -fsanitize=address,undefined -O0`).
 - Ejecuta tu binario de forma **interactiva**: tú introduces tu propia
   entrada de prueba (no hay casos de test oficiales para estos exámenes).
 - Justo después muestra la solución de referencia para que compares a ojo.
@@ -107,7 +109,8 @@ simulador-parcials/
 ├── Makefile
 ├── .gitignore          # excluye .cache/ y los binarios de intentos/
 ├── scripts/
-│   ├── common.sh            # config compartida (lista de parciales, slug())
+│   ├── common.sh            # config compartida (lista de parciales, slug(),
+│   │                         #   crear_cpp_problema(), guardar_estado())
 │   ├── fetch_examenes.sh    # descarga y separa enunciado/solución por problema
 │   ├── iniciar_examen.sh    # disclaimer, confirmación, elige parcial, crea intento, arranca cronómetro
 │   ├── sesion_examen.sh     # bucle interactivo examshell> (status/enunciado/grademe/finish)

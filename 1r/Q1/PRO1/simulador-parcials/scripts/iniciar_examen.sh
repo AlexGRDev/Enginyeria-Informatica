@@ -24,10 +24,16 @@ de verdad y entraras en una sesion interactiva (examshell>) con estos
 comandos disponibles durante el examen:
 
   help       Lista de comandos.
-  status     Tiempo restante, parcial actual y estado de cada problema.
-  enunciado  Vuelve a mostrar los enunciados completos del parcial.
+  status     Tiempo restante, problema actual y estado de lo desbloqueado.
+  enunciado  Vuelve a mostrar el enunciado del problema actual (solo ese).
+  siguiente  Pasa al siguiente problema (alias: next). PIDE CONFIRMACION Y
+             NO SE PUEDE VOLVER ATRAS: hasta entonces no ves los demas.
   grademe    Compila, ejecuta y compara con la solucion de referencia.
   finish     Termina la sesion (pide confirmacion) y muestra el resumen.
+
+Los problemas del parcial se van viendo UNO A UNO, como en Maestro42: no
+se te ensenan todos de golpe, y una vez avanzas con 'siguiente' no hay
+vuelta atras al problema anterior.
 
 No hay pass/fail automatico (PRO1 no tiene jutge con casos de test
 para estos examenes): 'grademe' solo ayuda a la autocorreccion manual.
@@ -79,51 +85,43 @@ sleep 0.2
 type_out "Sesion establecida."
 echo
 
-# --- creacion del intento: un .cpp con cabecera 42 por problema ---
+# --- creacion del intento: solo el .cpp del PRIMER problema por ahora ---
+# Los problemas se ven de uno en uno (como Maestro42): el resto de .cpp se
+# va creando mas adelante, en sesion_examen.sh, al usar 'siguiente'.
 problemas=("$pdir"/*/)
 timestamp=$(date +%Y%m%d-%H%M%S)
 intento_dir="$INTENTOS_DIR/${timestamp}-${pslug}"
 mkdir -p "$intento_dir"
 echo "$parcial" > "$intento_dir/.parcial"
 
+PROBLEMS=""
 for probdir in "${problemas[@]}"; do
 	code=$(basename "$probdir")
-	filename="${code}.cpp"
-	dest="$intento_dir/$filename"
-	fecha=$(date +"%Y/%m/%d %H:%M:%S")
-	# Delimitador '#' en vez de '/': la fecha "YYYY/MM/DD HH:MM:SS" contiene
-	# barras, y con '/' como delimitador el sed de BSD (macOS) rompe.
-	sed -e "s#XXXXXXXXXX#${filename}#" -e "s#YYYY/MM/DD HH:MM:SS#${fecha}#g" \
-		"$DIR/header_template.cpp" > "$dest"
-	cat >> "$dest" <<'CPPEOF'
-
-#include <iostream>
-
-int	main(void)
-{
-	return (0);
-}
-CPPEOF
+	PROBLEMS="$PROBLEMS $code"
 done
+PROBLEMS="${PROBLEMS# }"
+read -ra PROBLEMS_ARR <<< "$PROBLEMS"
+CURRENT_IDX=0
+
+crear_cpp_problema "${PROBLEMS_ARR[0]}" "$intento_dir"
 
 echo "=================================================================="
 echo " Vas a empezar el parcial: $parcial"
 echo " Modo REAL: tendras $EXAM_MINUTES minutos en cuanto pulses una tecla."
+echo " Tiene ${#PROBLEMS_ARR[@]} problema(s). Se veran UNO A UNO: hasta que"
+echo " no escribas 'siguiente' (confirmando, y SIN posibilidad de volver"
+echo " atras) no veras el siguiente problema."
 echo " Intento creado en: $intento_dir"
 read -e -n1 -p "Pulsa una tecla para comenzar... " tecla
 echo
 echo
 
 # --- arranque real del cronometro: a partir de aqui el tiempo cuenta ---
-start_time=$(date +%s)
-end_time=$((start_time + EXAM_MINUTES * 60))
-
-cat > "$intento_dir/.estado" <<EOF2
 PARCIAL="$parcial"
 PARCIAL_SLUG="$pslug"
-START_TIME=$start_time
-END_TIME=$end_time
-EXAM_MINUTES=$EXAM_MINUTES
-EOF2
+START_TIME=$(date +%s)
+END_TIME=$((START_TIME + EXAM_MINUTES * 60))
+
+guardar_estado "$intento_dir/.estado"
 
 exec bash "$DIR/sesion_examen.sh" "$CACHE_DIR" "$INTENTOS_DIR" "$intento_dir"
