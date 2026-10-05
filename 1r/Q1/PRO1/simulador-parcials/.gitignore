@@ -4,3 +4,7 @@
 
 # Binarios compilados en make grade (quedan dentro de cada carpeta de intento).
 intentos/*/*.bin
+
+# Estado de la sesion interactiva (cronometro: start/end time). Es runtime,
+# no forma parte del intento en si (el .cpp del usuario si se conserva).
+intentos/*/.estado
