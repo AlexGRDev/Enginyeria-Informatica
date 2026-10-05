@@ -20,6 +20,7 @@ if [ ! -f "$ESTADO" ]; then
 	exit 1
 fi
 source "$ESTADO"
+read -ra PROBLEMS_ARR <<< "$PROBLEMS"
 
 PDIR="$CACHE_DIR/$PARCIAL_SLUG"
 
@@ -41,21 +42,20 @@ fmt_mmss() {
 	printf "%02d:%02d" $(($1 / 60)) $(($1 % 60))
 }
 
-mostrar_enunciados() {
-	for probdir in "$PDIR"/*/; do
-		code=$(basename "$probdir")
-		echo "------------------------------------------------------------------"
-		echo " Problema $code"
-		echo "------------------------------------------------------------------"
-		if [ -s "$probdir/enunciado.txt" ]; then
-			cat "$probdir/enunciado.txt"
-		else
-			echo "(Este fichero fuente no trae un enunciado capturable como"
-			echo " comentario inicial; revisa el .cc original en el repo de"
-			echo " referencia si necesitas el enunciado completo.)"
-		fi
-		echo
-	done
+mostrar_enunciado_actual() {
+	local code="${PROBLEMS_ARR[$CURRENT_IDX]}"
+	local probdir="$PDIR/$code"
+	echo "------------------------------------------------------------------"
+	echo " Problema $code"
+	echo "------------------------------------------------------------------"
+	if [ -s "$probdir/enunciado.txt" ]; then
+		cat "$probdir/enunciado.txt"
+	else
+		echo "(Este fichero fuente no trae un enunciado capturable como"
+		echo " comentario inicial; revisa el .cc original en el repo de"
+		echo " referencia si necesitas el enunciado completo.)"
+	fi
+	echo
 }
 
 estado_compilacion() {
@@ -77,8 +77,11 @@ mostrar_help() {
 	cat <<'EOF'
 Comandos disponibles:
   help       Esta ayuda.
-  status     Tiempo restante, parcial actual y estado de cada problema.
-  enunciado  Vuelve a mostrar los enunciados completos del parcial (alias: subject).
+  status     Tiempo restante, problema actual y estado de lo desbloqueado.
+  enunciado  Vuelve a mostrar el enunciado del problema actual, solo ese
+             (alias: subject).
+  siguiente  Pasa al siguiente problema (alias: next). Pide confirmacion
+             'yes' y NO se puede volver atras una vez confirmado.
   grademe    Compila, ejecuta (interactivo) y compara cada .cpp con la
              solucion de referencia. NO es correccion automatica pass/fail.
   finish     Termina la sesion (pide confirmacion 'yes') y muestra el resumen.
@@ -86,14 +89,36 @@ EOF
 }
 
 mostrar_status() {
-	local restante
+	local restante total bloqueados
 	restante=$(tiempo_restante)
+	total=${#PROBLEMS_ARR[@]}
 	echo "Parcial: $PARCIAL"
+	echo "Problema $((CURRENT_IDX + 1)) de $total: ${PROBLEMS_ARR[$CURRENT_IDX]}"
 	echo "Tiempo restante: $(fmt_mmss "$restante") de $EXAM_MINUTES min"
-	echo "Enunciados en: $PDIR/*/enunciado.txt"
 	echo "Tus .cpp en:    $INTENTO_DIR/"
-	echo "Estado de los problemas:"
+	echo "Estado de los problemas desbloqueados:"
 	estado_compilacion
+	bloqueados=$((total - CURRENT_IDX - 1))
+	if [ "$bloqueados" -gt 0 ]; then
+		echo "Quedan $bloqueados problema(s) bloqueado(s)."
+	fi
+}
+
+siguiente() {
+	local last=$((${#PROBLEMS_ARR[@]} - 1))
+	if [ "$CURRENT_IDX" -ge "$last" ]; then
+		echo "Ya estas en el ultimo problema ($((CURRENT_IDX + 1)) de $((last + 1))). Cuando termines, usa 'finish'."
+		return
+	fi
+	read -e -p "Escribe 'yes' para pasar al siguiente problema. No podras volver a este: " conf
+	if [ "$conf" != "yes" ]; then
+		echo "Cancelado, sigues en el problema actual."
+		return
+	fi
+	CURRENT_IDX=$((CURRENT_IDX + 1))
+	crear_cpp_problema "${PROBLEMS_ARR[$CURRENT_IDX]}" "$INTENTO_DIR"
+	guardar_estado "$ESTADO"
+	mostrar_enunciado_actual
 }
 
 resumen_final() {
@@ -107,7 +132,7 @@ resumen_final() {
 	echo "=================================================================="
 	echo " Parcial: $PARCIAL"
 	echo " Tiempo usado: $(fmt_mmss "$usado") de $EXAM_MINUTES min"
-	echo " Estado final de los problemas:"
+	echo " Estado final de los problemas vistos (desbloqueados):"
 	estado_compilacion
 	echo "=================================================================="
 }
@@ -147,7 +172,7 @@ echo "=================================================================="
 echo " Parcial: $PARCIAL -- tienes $EXAM_MINUTES minutos. examshell>"
 echo " Escribe 'help' para ver los comandos disponibles."
 echo "=================================================================="
-mostrar_enunciados
+mostrar_enunciado_actual
 
 while true; do
 	if tiempo_agotado; then
@@ -165,7 +190,8 @@ while true; do
 	case "$cmd" in
 		help) mostrar_help ;;
 		status) mostrar_status ;;
-		enunciado | subject) mostrar_enunciados ;;
+		enunciado | subject) mostrar_enunciado_actual ;;
+		siguiente | next) siguiente ;;
 		grademe) bash "$DIR/grade.sh" "$CACHE_DIR" "$INTENTOS_DIR" "$INTENTO_DIR" ;;
 		finish) finish manual || true ;;
 		"") ;;
