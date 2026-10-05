@@ -38,10 +38,8 @@ en el repo original.
 ## Uso
 
 ```bash
-make            # = make start: descarga cache si falta, elige parcial al azar,
-                # muestra enunciados, crea intento nuevo, arranca cronómetro
-make grade      # compila y ejecuta (interactivo) el último intento, y muestra
-                # la solución de referencia de cada problema para comparar
+make            # = make start: arranca una sesión de examen en MODO REAL
+make grade      # atajo FUERA de sesión: corrige el último intento (ver abajo)
 make clean      # borra cache y binarios compilados (NO toca intentos/)
 make help       # lista de comandos
 ```
@@ -54,17 +52,45 @@ Variables:
 - `ATTEMPT` — ruta del intento a corregir con `make grade` (por defecto, el
   más reciente en `intentos/`).
 
-Al ejecutar `make`/`make start`:
-1. Si no hay cache local de los 7 parciales, los descarga.
-2. Elige uno al azar entre los disponibles en cache.
-3. Muestra de golpe los enunciados de todos sus problemas (como el examen
-   real, no de uno en uno).
-4. Crea `intentos/<timestamp>-<parcial>/` con un `.cpp` vacío por problema
-   (cabecera ASCII estándar de 42 ya puesta, nombrado `<CODIGO>.cpp`).
-5. Arranca el cronómetro en terminal. Ctrl+C para pararlo cuando acabes (o
-   déjalo llegar a 0).
+### `make` / `make start`: sesión en modo REAL
 
-Al ejecutar `make grade`:
+Inspirado en el modo "real" de Maestro42 (examshell de 42): no es un script
+de un solo disparo, es una **sesión interactiva persistente** con cronómetro
+real, igual de fiel al examen oficial como sea posible:
+
+1. Si no hay cache local de los 7 parciales, la descarga.
+2. Disclaimer: qué es esto, qué no es, qué comandos hay disponibles durante
+   la sesión. Pide confirmación (`y/n`) antes de arrancar nada.
+3. Animación de "conexión" (puramente estética).
+4. Elige un parcial al azar entre los disponibles en cache, crea
+   `intentos/<timestamp>-<parcial>/` con un `.cpp` vacío por problema
+   (cabecera ASCII estándar de 42 ya puesta, nombrado `<CODIGO>.cpp`), y
+   pide pulsar una tecla para comenzar. **El cronómetro arranca de verdad en
+   ese momento**, no antes.
+5. Muestra de golpe los enunciados de todos los problemas (como el examen
+   real, no de uno en uno) y entra en el prompt interactivo `examshell>`,
+   que se queda esperando comandos hasta que termines o se acabe el tiempo:
+
+   | Comando | Qué hace |
+   |---|---|
+   | `help` | Lista de comandos. |
+   | `status` | Tiempo restante real, parcial actual y estado de compilación de cada problema. |
+   | `enunciado` (alias `subject`) | Vuelve a imprimir los enunciados completos. |
+   | `grademe` | Compila, ejecuta (interactivo) y compara cada `.cpp` con la solución de referencia — ver detalle abajo. |
+   | `finish` | Pide confirmación (`yes`) y muestra el resumen final (tiempo usado, estado de cada problema) antes de salir. |
+
+   Si el tiempo ya se acabó cuando ejecutas cualquier comando, la sesión lo
+   avisa ("SE ACABÓ EL TIEMPO") y fuerza el cierre con resumen, no deja
+   seguir trabajando como si nada. Ctrl+C / Ctrl+D también cierran la
+   sesión de forma limpia (resumen incluido), sin pedir confirmación.
+
+### `grademe` (dentro de sesión) / `make grade` (fuera de sesión)
+
+Misma lógica de corrección en los dos casos — `grademe` es simplemente el
+comando interno para invocarla sin salir de la sesión; `make grade` sigue
+disponible como atajo standalone para repasar después de que la sesión ya
+haya terminado:
+
 - Compila cada `.cpp` del intento con los mismos flags que el resto del repo
   (`clang++ -Wall -Wextra -fsanitize=address,undefined -O0`).
 - Ejecuta tu binario de forma **interactiva**: tú introduces tu propia
@@ -83,8 +109,9 @@ simulador-parcials/
 ├── scripts/
 │   ├── common.sh            # config compartida (lista de parciales, slug())
 │   ├── fetch_examenes.sh    # descarga y separa enunciado/solución por problema
-│   ├── iniciar_examen.sh    # elige parcial, muestra enunciados, crea intento, cronómetro
-│   ├── grade.sh             # compila, ejecuta y muestra solución de referencia
+│   ├── iniciar_examen.sh    # disclaimer, confirmación, elige parcial, crea intento, arranca cronómetro
+│   ├── sesion_examen.sh     # bucle interactivo examshell> (status/enunciado/grademe/finish)
+│   ├── grade.sh             # compila, ejecuta y muestra solución de referencia (grademe / make grade)
 │   └── header_template.cpp  # plantilla de la cabecera 42 (placeholders de nombre/fecha)
 ├── .cache/              # (generado, gitignored) enunciados y soluciones descargados
 └── intentos/            # (generado, SÍ trackeado) tus .cpp de cada intento
