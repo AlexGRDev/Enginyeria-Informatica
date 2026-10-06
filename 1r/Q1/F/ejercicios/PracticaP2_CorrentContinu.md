@@ -143,3 +143,130 @@ Combinant amb `V_C + V_D = ε`: `V_C = V_D = ε/2`.
 - Valors de resistències nominals (sense soroll de DNI); la part de simulació
   amb LTspice/CircuitLab i valors ajustats pel DNI es fa a part per l'usuari i
   no forma part d'aquesta entrega en paper.
+
+---
+
+## Valors de simulació (2.1, 2.2, 2.3) — resistències amb soroll del DNI
+
+> **Avís important**: els valors d'aquesta secció NO són una captura real
+> d'una simulació executada a LTspice o CircuitLab. Són valors calculats
+> analíticament (llei d'Ohm + lleis de Kirchhoff), resolent les mateixes
+> equacions que resoldria el simulador per a un circuit resistiu en DC.
+> Serveixen per **comparar/verificar** la simulació real que encara cal fer,
+> no per substituir-la. Segueix pendent, per a cada apartat (2.1, 2.2, 2.3):
+> muntar el circuit de debò a LTspice o CircuitLab i fer la seva pròpia
+> captura de pantalla — és una entrega obligatòria a part (l'enunciat demana
+> explícitament "Captura de pantalla del circuit implementat amb una eina de
+> simulació" a cada apartat).
+
+### DNI utilitzat i mètode de soroll
+
+DNI: `26613172X` → dígits (sense la lletra): `n1=2, n2=6, n3=6, n4=1, n5=3,
+n6=1, n7=7, n8=2`.
+
+Mètode de l'enunciat: `Ri* = Ri + nᵢ - 5`.
+
+**Supòsit de numeració adoptat** (l'enunciat és ambigu en això): cada circuit
+reinicia el comptador de dígits a `n1` en generar les seves pròpies
+resistències R1, R2..., EXCEPTE el circuit de 2.3, que reutilitza exactament
+les mateixes R1-R4 ja generades a 2.2 (perquè l'enunciat diu literalment
+"Modifiqueu el circuit de l'apartat 2.2 afegint una resistència R5") i
+simplement continua el comptador de dígits en `n5` per a la R5 nova.
+**Si el professor va voler una altra interpretació** (dígits consumits de
+forma contínua a través de tots els circuits sense reiniciar), els valors
+numèrics canviarien.
+
+---
+
+### 2.1 — Divisor de tensió (resistències amb soroll)
+
+Dígits usats: `n1=2` (per R1), `n2=6` (per R2).
+
+- `R1* = 100 + 2 - 5 = 97 Ω`
+- `R2* = 200 + 6 - 5 = 201 Ω`
+- `I = ε/(R1*+R2*) = 5/(97+201) = 5/298 ≈ 0,01678 A ≈ 16,78 mA`
+- `VAB (caiguda a R1*, el connectat a terra) = I·R1* ≈ 1,628 V`
+- `VBC (caiguda a R2*) = I·R2* ≈ 3,372 V`
+- Comprovació: `1,628 + 3,372 = 5,000 V = ε` ✓
+
+| Magnitud | te (nominal) | ex (amb soroll DNI) |
+|---|---|---|
+| I | 16,7 mA | 16,78 mA |
+| VAB | 1,67 V | 1,628 V |
+| VBC | 3,33 V | 3,372 V |
+
+---
+
+### 2.2 — Resistència equivalent, Circuit 1 (resistències amb soroll)
+
+Dígits usats: `n1=2` (R1), `n2=6` (R2), `n3=6` (R3), `n4=1` (R4). Mapeig de
+nusos (igual que a l'apartat 1.4): camí A-C-B = R1 (A-C) + R3 (C-B); camí
+A-D-B = R2 (A-D) + R4 (D-B).
+
+- `R1* = 100+2-5 = 97 Ω` ; `R2* = 100+6-5 = 101 Ω` ; `R3* = 100+6-5 = 101 Ω` ; `R4* = 100+1-5 = 96 Ω`
+- Camí A-C-B: `R1*+R3* = 97+101 = 198 Ω` → `I1 = ε/198 = 1/198 ≈ 0,00505 A ≈ 5,05 mA`
+- Camí A-D-B: `R2*+R4* = 101+96 = 197 Ω` → `I2 = ε/197 = 1/197 ≈ 0,00508 A ≈ 5,08 mA`
+- `Iε = I1+I2 ≈ 10,13 mA`
+- `Req = ε/Iε = 1/0,01013 ≈ 98,75 Ω` (equivalentment: `(198×197)/(198+197) ≈ 98,75 Ω`)
+- `VC = ε - I1·R1* = 1 - 0,00505×97 ≈ 0,510 V`
+- `VD = ε - I2·R2* = 1 - 0,00508×101 ≈ 0,487 V`
+
+| Magnitud | te (nominal) | ex (amb soroll DNI) |
+|---|---|---|
+| VC | 0,5 V | 0,510 V |
+| VD | 0,5 V | 0,487 V |
+| I1 | 5 mA | 5,05 mA |
+| I2 | 5 mA | 5,08 mA |
+| Iε | 10 mA | 10,13 mA |
+| Req | 100 Ω | 98,75 Ω |
+
+---
+
+### 2.3 — Resistència equivalent, Circuit 2 (mateix circuit + R5 amb soroll)
+
+Mateixes R1*-R4* que a 2.2 (97, 101, 101, 96 Ω). Dígit següent `n5=3` per R5:
+`R5* = 100+3-5 = 98 Ω`.
+
+Com els valors de R1*-R4* ja no són exactament iguals (97, 101, 101, 96 en
+lloc de tots 100), el pont deixa d'estar perfectament equilibrat → SÍ
+circula una petita intensitat per R5* (a diferència de l'apartat teòric 1.5,
+on amb valors nominals iguals el pont estava equilibrat i `I_R5 = 0`).
+
+Resolent per les lleis de Kirchhoff als nusos C i D (mateix mètode que a 1.5
+però amb els valors amb soroll, sense poder simplificar per simetria):
+
+- `VC ≈ 0,504 V`
+- `VD ≈ 0,493 V`
+- `I1 (= I_AC = (VA-VC)/R1*) ≈ 5,11 mA`
+- `I5 (= (VC-VD)/R5*) ≈ 0,11 mA` (circula de C cap a D)
+- `Iε ≈ 10,13 mA`
+- `Req = ε/Iε ≈ 98,73 Ω` (pràcticament igual que a 2.2, perquè R5 amb el pont
+  quasi equilibrat té un efecte de segon ordre sobre la resistència
+  equivalent)
+
+| Magnitud | te (nominal) | ex (amb soroll DNI) |
+|---|---|---|
+| VC | 0,5 V | 0,504 V |
+| VD | 0,5 V | 0,493 V |
+| I1 | 5 mA | 5,11 mA |
+| I5 | 0 mA | 0,11 mA |
+| Iε | 10 mA | 10,13 mA |
+| Req | 100 Ω | 98,73 Ω |
+
+---
+
+### Resum de resistències generades (DNI: 26613172X)
+
+Valors a proporcionar a l'informe, junt amb el número de DNI (segons demana
+l'enunciat: "Proporcioneu els valors obtinguts de les resistències R1, R2,
+..., R6 a l'informe, junt amb el vostre número de DNI"):
+
+| Resistència | Apartat | Dígit DNI | Valor nominal | Valor amb soroll (Ri* = Ri + nᵢ - 5) |
+|---|---|---|---|---|
+| R1 | 2.1 | n1=2 | 100 Ω | 97 Ω |
+| R2 | 2.1 | n2=6 | 200 Ω | 201 Ω |
+| R1 | 2.2 / 2.3 | n1=2 | 100 Ω | 97 Ω |
+| R2 | 2.2 / 2.3 | n2=6 | 100 Ω | 101 Ω |
+| R3 | 2.2 / 2.3 | n3=6 | 100 Ω | 101 Ω |
+| R4 | 2.2 / 2.3 | n4=1 | 100 Ω | 96 Ω |
+| R5 | 2.3 | n5=3 | 100 Ω | 98 Ω |

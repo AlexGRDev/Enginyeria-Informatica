@@ -1,6 +1,6 @@
 # Estado — F
 
-## Última actualización: 2026-10-05
+## Última actualización: 2026-10-06
 
 ## Cubierto
 **2026-10-05**: Pràctica 2 (Simulació de circuits de corrent continu) —
@@ -10,6 +10,17 @@ de tensió (1.3: I≈16,7mA, V_R1≈1,67V, V_R2≈3,33V), resistència equivalen
 circuit en rombe (1.4: R_eq=100Ω, I_ε=10mA) i el mateix circuit amb pont de
 Wheatstone equilibrat demostrat per lleis de Kirchhoff (1.5: R_eq=100Ω,
 I_ε=10mA, I_R5=0A).
+
+**2026-10-06**: afegits a `ejercicios/PracticaP2_CorrentContinu.md` els
+valors dels apartats **2.1, 2.2 i 2.3** amb resistències "amb soroll" del DNI
+(26613172X), calculats analíticament (NO és una simulació real executada a
+LTspice/CircuitLab — veure avís al document). Inclou divisor de tensió (2.1:
+I≈16,78mA), circuit en rombe (2.2: Req≈98,75Ω, I1≈5,05mA, I2≈5,08mA) i el
+mateix circuit + R5 (2.3: amb el pont ja no exactament equilibrat pel soroll,
+I5≈0,11mA, Req≈98,73Ω). Adoptat el supòsit que cada circuit reinicia el
+comptador de dígits del DNI excepte 2.3, que continua des de 2.2 (afegeix
+R5); queda explícit al document que el professor podria haver volgut l'altra
+interpretació (comptador continu sense reiniciar).
 
 **2026-09-21**: revertida la convención de notación de fórmulas fijada el 2026-09-17
 (bloques LaTeX `$$...$$` con `render-latex.nvim`) de vuelta a unicode/texto plano.
@@ -46,7 +57,15 @@ corregida).
 - Material PDF ya disponible en `material/` para los bloques Corrent Altern (`P2_CorrentAltern.pdf`), Electrònica i portes lògiques (`P3_Electronica.pdf`) y Ones (`P4_Ones.pdf`) — pendiente de revisar cuando se empiecen esos bloques en clase.
 - Revisar la resolució de `ejercicios/PracticaOscilloscopi.md` (1.2 i 2.1) contra la correcció real del professor de laboratori — feta sota pressió de temps, sense segona verificació humana.
 - Falta fer/lliurar la resta de la pràctica 1 (1.3, 2.2 i la taula de mesures) al laboratori amb dades reals (no és feina de despatx, és al lab).
-- Pràctica 2: falta la part de simulació (apartats 2.1-2.3 amb LTspice/CircuitLab i valors de resistències ajustats pel DNI, no nominals) i rellenar/lliurar la plantilla `subgrup_P2_cognom_nom.odt` del Racó — és feina manual de l'usuari, no es pot fer aquí.
+- Pràctica 2: els valors numèrics de 2.1-2.3 (amb soroll del DNI) ja estan
+  calculats a `ejercicios/PracticaP2_CorrentContinu.md`, però segueix
+  pendent, i és feina manual de l'usuari que no es pot fer aquí: (a) muntar
+  els 3 circuits de debò a LTspice o CircuitLab i fer les captures de
+  pantalla reals (entrega obligatòria a part); (b) aconseguir i omplir la
+  plantilla oficial `subgrup_P2_cognom_nom.odt` del Racó (no la tenim al
+  repo); (c) pujar l'entrega al Racó — termini sense confirmar: hi ha
+  indicis contradictoris de si és avui 2026-10-05 23:59 o si es va ampliar,
+  cal confirmar-ho amb l'usuari abans de donar-ho per bo.
 
 ## Próximo examen/entrega
 Parcial: 03/11/2026 (en ~7 semanas desde la última actualización).
