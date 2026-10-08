@@ -18,8 +18,8 @@ Entrega y corrección de prácticas: en **Atenea** (entrega y tests automáticos
 Convención de nombre de archivo de entrega: `practica#-subgrup#-nom_cognoms.pdf` (ej. `3-84-John_Smith.pdf`). Subgrupo de Alex: **51**.
 
 Simulador de circuitos de laboratorio: LogicWorks 4.0 (Windows), ejecutado en macOS con CrossOver dentro de la botella `Steam` (`~/Library/Application Support/CrossOver/Bottles/Steam`).
-- El ejecutable no está instalado en la botella: vive en el repo, `material/LogicWorks 4.0/Program/LogicWorks.exe`. Se lanza con el acceso directo `LogicWorks.lnk` del menú Inicio de la botella, que apunta a `Y:\Documents\Enginyeria-Informatica\1r\Q1\IC\material\LogicWorks 4.0\Program\LogicWorks.exe` (`Y:` = `~`), es decir, al checkout raíz (`main`), no al worktree `IC`.
-- Librerías y circuitos `.clf`/`.cct` por práctica en `ejercicios/PRAC<N>/`. Al abrirlos desde LogicWorks, abrir la copia del worktree `IC` (`Y:\Documents\Enginyeria-Informatica\.claude\worktrees\IC\...`), no la del checkout raíz.
+- El ejecutable no está instalado en la botella: vive en el repo, `material/LogicWorks 4.0/Program/LogicWorks.exe`. Se lanza con la app `~/Applications/CrossOver/LogicWorks.app` (o el acceso directo `LogicWorks.lnk` del menú Inicio de la botella), que desde el 2026-10-08 apunta al worktree `IC`: `Y:\Documents\Enginyeria-Informatica\.claude\worktrees\IC\1r\Q1\IC\material\LogicWorks 4.0\Program\LogicWorks.exe` (`Y:` = `~`), con directorio de trabajo `...\worktrees\IC\1r\Q1\IC\ejercicios`.
+- Librerías y circuitos `.clf`/`.cct` por práctica en `ejercicios/PRAC<N>/`. Abrir siempre la copia del worktree `IC`, no la del checkout raíz (`main`): guardar sobre la de `main` fue la causa probable del `.clf` truncado de PRAC3 (ver `PITFALLS.md`).
 
 **Pendiente de confirmar:**
 - Herramienta/simulador SISA usado (nombre del ensamblador/simulador, flags de ensamblado y ejecución) — distinto de LogicWorks, que es solo para los circuitos combinacionales/secuenciales de laboratorio.
