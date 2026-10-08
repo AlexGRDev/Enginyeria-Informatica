@@ -32,7 +32,7 @@ Tots els `.cpp` (PRO1 i FM) duen la capçalera ASCII estàndard de 42 (bloc amb 
 
 ### FM — Fonaments Matemàtics
 - Professor: Rafel Farré. Temes: Sumatoris, Lògica i Demostracions, Inducció, Conjunts i Relacions, Funcions, Divisibilitat, Congruències.
-- Parcial: 22/09/2026. Estructura estable (6 anys d'exàmens): 3 blocs — Demostracions, Inducció, Conjunts i Relacions. Lògica i Sumatoris són eines de suport, no blocs propis.
+- Parcials: 04/11/2026 i 22/12/2026 (final 14/01/2027). Estructura estable (6 anys d'exàmens): 3 blocs — Demostracions, Inducció, Conjunts i Relacions. Lògica i Sumatoris són eines de suport, no blocs propis.
 - Punt feble: inducció, conjunts, relacions.
 - Seqüència: intuïció → procediment → formalisme → exemples → exercicis → examen. Analogies amb programació ajuden però mai substitueixen el rigor matemàtic.
 - En transcriure exercicis del PDF oficial: mateixos números i enunciats exactes, sense alterar.
@@ -40,7 +40,7 @@ Tots els `.cpp` (PRO1 i FM) duen la capçalera ASCII estàndard de 42 (bloc amb 
 
 ### F — Física
 - 4 blocs: Corrent Continu, Corrent Altern, Electrònica i portes lògiques, Ones.
-- Abast del parcial del 22/09 sense confirmar encara.
+- Parcials: 03/11/2026 i 23/12/2026 (final 18/01/2027). Abast sense confirmar encara.
 
 ## Archivos canario por asignatura
 
