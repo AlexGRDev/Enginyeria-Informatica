@@ -1,6 +1,6 @@
 # Estado — F
 
-## Última actualización: 2026-10-06
+## Última actualización: 2026-10-08
 
 ## Cubierto
 **2026-10-05**: Pràctica 2 (Simulació de circuits de corrent continu) —
@@ -14,7 +14,7 @@ I_ε=10mA, I_R5=0A).
 **2026-10-06**: afegits a `ejercicios/PracticaP2_CorrentContinu.md` els
 valors dels apartats **2.1, 2.2 i 2.3** amb resistències "amb soroll" del DNI
 (26613172X), calculats analíticament (NO és una simulació real executada a
-LTspice/CircuitLab — veure avís al document). Inclou divisor de tensió (2.1:
+LTspice — veure avís al document). Inclou divisor de tensió (2.1:
 I≈16,78mA), circuit en rombe (2.2: Req≈98,75Ω, I1≈5,05mA, I2≈5,08mA) i el
 mateix circuit + R5 (2.3: amb el pont ja no exactament equilibrat pel soroll,
 I5≈0,11mA, Req≈98,73Ω). Adoptat el supòsit que cada circuit reinicia el
@@ -60,7 +60,7 @@ corregida).
 - Pràctica 2: els valors numèrics de 2.1-2.3 (amb soroll del DNI) ja estan
   calculats a `ejercicios/PracticaP2_CorrentContinu.md`, però segueix
   pendent, i és feina manual de l'usuari que no es pot fer aquí: (a) muntar
-  els 3 circuits de debò a LTspice o CircuitLab i fer les captures de
+  els 3 circuits de debò a LTspice i fer les captures de
   pantalla reals (entrega obligatòria a part); (b) aconseguir i omplir la
   plantilla oficial `subgrup_P2_cognom_nom.odt` del Racó (no la tenim al
   repo); (c) pujar l'entrega al Racó — termini sense confirmar: hi ha
