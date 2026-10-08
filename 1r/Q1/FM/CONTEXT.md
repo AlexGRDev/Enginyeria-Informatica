@@ -15,4 +15,4 @@ Estructura estable del examen parcial (6 años de exámenes): 3 bloques — Demo
 - Notación de fórmulas lógicas: unicode/texto plano entre backticks (∀, ∃, ∈, ∧, ∨, ¬, →, ↔, ≡, ≢, ∑, ∏, ⊆, ⊂, ∪, ∩...), no LaTeX inline. Convención adoptada originalmente, sustituida el 2026-09-17 por LaTeX inline (`$...$`, `\wedge`, `\vee`, `\neg`, `\to`, `\forall`, `\exists`, `\equiv`...) tras instalar `render-latex.nvim`, y revertida a unicode/texto plano el 2026-09-21 por decisión del usuario. Las tablas de valores de verdad (0/1) y el bloque de demostración con ```código``` quedan igual, sin LaTeX.
 
 ## Fechas clave
-- Parcial: 22/09/2026.
+- Parcials: 04/11/2026 i 22/12/2026. Final: 14/01/2027. Recuperació: 06/02/2027.
