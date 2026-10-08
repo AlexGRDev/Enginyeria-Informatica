@@ -10,6 +10,9 @@
 - No aplica juez/compilación (asignatura sin componente de programación en el repo).
 - Notación de fórmulas: unicode/texto plano. Variables y expresiones simples inline entre backticks (`Vpp = A·H`, `R = ρL/A`); ecuaciones principales también en unicode/texto plano, sin bloques LaTeX, usando símbolos como √, ·, Ω, →, ∫, ∇ y subíndices/superíndices en notación de texto (`V_pp`, `E_x`, `q1`, `r²`). Tablas de referencia rápida (magnitud / símbolo / unidad SI / relación) se mantienen igual. Revertido el 2026-09-21 el intento de adoptar bloques LaTeX `$$...$$` (con `\frac`, `\vec`, `\int`, etc.) que se había decidido el 2026-09-17 tras instalar `render-latex.nvim`: se descarta esa convención y se vuelve al estilo unicode/texto plano ya usado en `PracticaOscilloscopi.md`.
 
+## Simulador
+LTspice 26.1.0 (Analog Devices, Windows), ejecutado en macOS con CrossOver dentro de la botella `Steam` (`~/Library/Application Support/CrossOver/Bottles/Steam`). Instalado en `C:\Program Files\ADI\LTspice\LTspice.exe` de la botella, con acceso directo `LTspice.lnk` en su escritorio. Es el simulador de las pràctiques de circuits (p. ej. Pràctica 2, corrent continu).
+
 ## Fechas clave
 Fuente: horari oficial a raco.fib.upc.edu (curs 2026-2027).
 
