@@ -54,4 +54,19 @@ Cómo se detectó: la PR #12 de `FM` quedó abierta ~40 minutos sin mergear tras
 un push casi simultáneo con `Fisica`, mientras la de `Fisica` sí se mergeó sin
 problema.
 
+## Trabajo hecho en el checkout raíz en vez de en el worktree
+
+Fecha: 2026-10-08.
+
+Se crearon ejercicios de PRO1, un PDF de IC y un dibujo de FM directamente en
+el checkout de `main` (`~/Documents/Enginyeria-Informatica`) en vez de en
+`.claude/worktrees/<rama>`. Quedaron sin trackear varios días y mezclados entre
+asignaturas.
+
+Corrección: abrir siempre la sesión de la materia en su worktree (pestaña kitty
+con cwd en `.claude/worktrees/<materia>`). Si ocurre, mover con `mv` al
+worktree, commit en la rama y dejar que el auto-merge lo lleve a `main`.
+
+Cómo se detectó: `git status` en `main` el 2026-10-08.
+
 ← [CONTEXT.md](CONTEXT.md)
