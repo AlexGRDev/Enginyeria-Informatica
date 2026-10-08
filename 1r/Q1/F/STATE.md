@@ -68,5 +68,5 @@ corregida).
   cal confirmar-ho amb l'usuari abans de donar-ho per bo.
 
 ## Próximo examen/entrega
-Parcial: 03/11/2026 (en ~7 semanas desde la última actualización).
+Parcials: 03/11/2026 i 23/12/2026. Final: 18/01/2027.
 Pràctica 1 laboratori (oscil·loscopi/polímetre): entrega en paper dels exercicis previs 2026-09-18.
