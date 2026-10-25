@@ -1,0 +1,47 @@
+{
+  "creado" : "2026-10-25T10:17:55Z",
+  "modoTutor" : "guiar",
+  "notaObjetivo" : 10,
+  "temas" : [
+    {
+      "enExamen" : true,
+      "nombre" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+      "peso" : 0.25
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
+      "peso" : 0.2
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Síntesis de combinacionales (suma de minterms, ROM)",
+      "peso" : 0.25
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+      "peso" : 0.2
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Circuitos secuenciales",
+      "peso" : 0.03
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "SISA (ensamblador)",
+      "peso" : 0.03
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Arquitectura del computador",
+      "peso" : 0.02
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "LogicWorks (simulador de laboratorio)",
+      "peso" : 0.02
+    }
+  ]
+}

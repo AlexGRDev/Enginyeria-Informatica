@@ -1,5 +1,24 @@
 # Estado — IC
 
+<!-- kiwi-gei:estat:inici -->
+## Nota si el examen fuera hoy
+
+Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**. Próximo examen: Parcial 1 IC, 2026-10-30 (en 5 días).
+
+**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+
+| Tema | Peso | Dominio | Evaluaciones | Última |
+|---|---|---|---|---|
+| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 25 % | sin evaluar | 0 | - |
+| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 20 % | sin evaluar | 0 | - |
+| Síntesis de combinacionales (suma de minterms, ROM) | 25 % | sin evaluar | 0 | - |
+| Modelo temporal (tiempos de propagación, caminos críticos) | 20 % | sin evaluar | 0 | - |
+| Circuitos secuenciales (fuera del examen) | 3 % | sin evaluar | 0 | - |
+| SISA (ensamblador) (fuera del examen) | 3 % | sin evaluar | 0 | - |
+| Arquitectura del computador (fuera del examen) | 2 % | sin evaluar | 0 | - |
+| LogicWorks (simulador de laboratorio) (fuera del examen) | 2 % | sin evaluar | 0 | - |
+<!-- kiwi-gei:estat:fi -->
+
 ## Última actualización: 2026-10-08
 
 ## Cubierto
