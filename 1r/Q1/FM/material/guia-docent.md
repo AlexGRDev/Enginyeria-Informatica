@@ -806,9 +806,9 @@ To understand that we cannot prove that a certain property is valid for infinite
 
 #### Competencies
 
+- G9.1
 - CT1.2A
 - CT1.2C
-- G9.1
 
 #### Valor
 
@@ -816,9 +816,9 @@ To understand the properties of the divisibility of integers, to calculate the g
 
 #### Competencies
 
+- G9.1
 - CT1.2A
 - CT1.2C
-- G9.1
 
 #### Valor
 
