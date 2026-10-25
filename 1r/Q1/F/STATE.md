@@ -1,5 +1,26 @@
 # Estado — F
 
+<!-- kiwi-gei:estat:inici -->
+## Nota si el examen fuera hoy
+
+Generado por Kiwi GEI el 2026-10-25. Objetivo: **8,0**. Próximo examen: Parcial 1 F, 2026-11-03 (en 9 días).
+
+**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+
+| Tema | Peso | Dominio | Evaluaciones | Última |
+|---|---|---|---|---|
+| Càrrega elèctrica i llei de Coulomb | 8 % | sin evaluar | 0 | - |
+| Camp elèctric i potencial (E = -∇V) | 10 % | sin evaluar | 0 | - |
+| Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | 8 % | sin evaluar | 0 | - |
+| Llei d'Ohm (V = IR, J = σE) i resistència | 10 % | sin evaluar | 0 | - |
+| Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 14 % | sin evaluar | 0 | - |
+| Corrent Altern | 15 % | sin evaluar | 0 | - |
+| Electrònica i portes lògiques (fuera del examen) | 15 % | sin evaluar | 0 | - |
+| Ones (fuera del examen) | 15 % | sin evaluar | 0 | - |
+| Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f) | 3 % | sin evaluar | 0 | - |
+| Simulació amb LTspice (fuera del examen) | 2 % | sin evaluar | 0 | - |
+<!-- kiwi-gei:estat:fi -->
+
 ## Última actualización: 2026-10-08
 
 ## Cubierto
