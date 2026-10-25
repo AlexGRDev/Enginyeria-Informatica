@@ -1,0 +1,59 @@
+{
+  "temas" : {
+    "Conjunts i Relacions" : {
+      "dominio" : 0.5,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
+          "fecha" : "2026-10-25T17:46:45Z",
+          "fuente" : "diagnostico",
+          "nota" : 0.5
+        }
+      ]
+    },
+    "Demostracions" : {
+      "dominio" : 1,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
+          "fecha" : "2026-10-25T17:46:45Z",
+          "fuente" : "diagnostico",
+          "nota" : 1
+        }
+      ]
+    },
+    "Inducció" : {
+      "dominio" : 1,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
+          "fecha" : "2026-10-25T17:46:45Z",
+          "fuente" : "diagnostico",
+          "nota" : 1
+        }
+      ]
+    },
+    "Lògica" : {
+      "dominio" : 6,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
+          "fecha" : "2026-10-25T17:46:45Z",
+          "fuente" : "diagnostico",
+          "nota" : 6
+        }
+      ]
+    },
+    "Sumatoris" : {
+      "dominio" : 2,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
+          "fecha" : "2026-10-25T17:46:45Z",
+          "fuente" : "diagnostico",
+          "nota" : 2
+        }
+      ]
+    }
+  }
+}

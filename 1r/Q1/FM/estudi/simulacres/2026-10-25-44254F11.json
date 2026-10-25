@@ -1,4 +1,101 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 6,
+        "tema" : "Lògica"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Inducció"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Sumatoris"
+      },
+      {
+        "nota" : 0.5,
+        "tema" : "Conjunts i Relacions"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Demostracions"
+      }
+    ],
+    "notaTotal" : 2,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Dona la resposta correcta sense citar les regles de negació de quantificadors ni De Morgan.",
+            "patron" : "no justifica las reglas aplicadas",
+            "refuerzo" : "Escriu sempre la cadena `¬∀x∃y φ ≡ ∃x∀y ¬φ` i el pas de De Morgan, encara que només sigui en una línia.",
+            "tema" : "Lògica"
+          }
+        ],
+        "feedback" : "Marques B, que és correcta (1,5 p). No escrius les dues regles que demana l'enunciat, la negació de quantificadors (`¬∀ ≡ ∃¬`, `¬∃ ≡ ∀¬`) i De Morgan (`¬(φ ∧ ψ) ≡ ¬φ ∨ ¬ψ`), i per això perds 0,5 p. Al parcial una resposta sense justificar puntua parcialment.",
+        "id" : "P1",
+        "puntosObtenidos" : 1.5
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "La H.I. no és cap proposició ('n+1') i la T.I. no correspon a l'enunciat per a n.",
+            "patron" : "H.I. y T.I. mal formuladas",
+            "refuerzo" : "Plantilla: H.I. = l'enunciat amb n−1 al lloc de n; T.I. = l'enunciat amb n; especifica sempre n > 1.",
+            "tema" : "Inducció"
+          },
+          {
+            "descripcion" : "Al pas inductiu substitueix valors concrets (n=3, k=2) en lloc de raonar per a un n genèric.",
+            "patron" : "comprueba casos concretos en vez de demostrar",
+            "refuerzo" : "El pas inductiu treballa amb n genèric: ∑_{k=1}^{n} = ∑_{k=1}^{n−1} + últim terme, i després aplica la H.I.",
+            "tema" : "Inducció"
+          },
+          {
+            "descripcion" : "Interpreta ∑_{k=1}^{n} 1\/k² com a potències del tipus 'k^(n+1)' i escriu 'Σ k = 1' com si fos un valor.",
+            "patron" : "lectura errónea de la notación de sumatorio",
+            "refuerzo" : "Desplega a mà ∑_{k=1}^{3} 1\/k² = 1 + 1\/4 + 1\/9 per fixar què fan l'índex i els límits.",
+            "tema" : "Sumatoris"
+          },
+          {
+            "descripcion" : "Escriu cadenes d'igualtats falses: 2^4 = 1\/2 i 2 − 1\/4 = −1.",
+            "patron" : "errores aritméticos básicos",
+            "refuerzo" : "Revisa cada igualtat abans de passar a la línia següent.",
+            "tema" : "Inducció"
+          }
+        ],
+        "feedback" : "Pas base: arribes a `1 ≤ 1`, però amb la notació del sumatori desfeta (escrius 'Σ k=1^2 · 1\/1²' i 'Σ k = 1'). Has d'escriure `∑_{k=1}^{1} 1\/k² = 1` i `2 − 1\/1 = 1`. Et dono 0,5 de 0,75. H.I.: escrius 'n+1', que no és cap afirmació. La H.I. és `∑_{k=1}^{n−1} 1\/k² ≤ 2 − 1\/(n−1)`, amb n > 1. T.I.: escrius 'k^(n+1) = 1\/k ≤ 2 − 1\/(n+1)'. Has confós el sumatori amb una potència i has perdut el sumatori del costat esquerre. Després prens k=2, n=3 i escrius '16 = 1\/2 ≤ 2 − 1\/4 = −1'. Això són igualtats falses (16 ≠ 1\/2, 2 − 1\/4 = 7\/4 ≠ −1) i, a més, comprovar un cas concret no demostra res. Falten la separació de l'últim sumand, l'ús de la H.I. i la desigualtat `1\/n² ≤ 1\/(n(n−1))`. Pas inductiu: 0.",
+        "id" : "P2",
+        "puntosObtenidos" : 0.5
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No sap demostrar una igualtat o inclusió entre conjunts genèrics. Fa servir exemples concrets i mal construïts.",
+            "patron" : "no sabe abordar Conjunts i Relacions",
+            "refuerzo" : "Practica 5 igualtats de conjunts amb l'esquema 'sigui x ∈ X qualsevol' + definicions de ∪, ∩ i ⊆ (exàmens 2021-2022 de EXAMFM.pdf).",
+            "tema" : "Conjunts i Relacions"
+          },
+          {
+            "descripcion" : "Per a un ⇔ no separa ⇒ i ⇐ ni diu quin mètode fa servir (directe, contrarecíproc, doble inclusió).",
+            "patron" : "no indica el método de demostración",
+            "refuerzo" : "Comença sempre amb: '⇒) Suposem … (H). Prova directa per doble inclusió.' i '⇐) …'.",
+            "tema" : "Demostracions"
+          },
+          {
+            "descripcion" : "Substitueix la prova general per un cas particular.",
+            "patron" : "usa ejemplos como demostración",
+            "refuerzo" : "Un exemple només serveix per refutar un enunciat universal, no per demostrar-lo.",
+            "tema" : "Demostracions"
+          }
+        ],
+        "feedback" : "No hi ha cap demostració. Defineixes A i B com a llistes que es contenen a elles mateixes (A = (∅, A, B)), cosa que no té sentit, i acabes escrivint 'A = B' sense cap justificació. No indiques el mètode de cap de les dues implicacions. Per a ⇐ n'hi ha prou de substituir B per A: `A ∪ A = A ⊆ A = A ∩ A`. Per a ⇒ cal fer doble inclusió: sigui x ∈ A qualsevol ⇒ x ∈ A ∪ B ⇒(H) x ∈ A ∩ B ⇒ x ∈ B, i el mateix intercanviant A i B.",
+        "id" : "P3",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "2\/10. La negació de quantificadors la tens bé (P1), però al paper no hi ha cap demostració: la inducció i la prova amb conjunts estan per començar. A la P2 només hi ha el pas base. Després escrius una H.I. i una T.I. que no són fórmules amb sentit i proves un cas concret amb l'aritmètica malament. A la P3 tractes A i B com si fossin llistes d'elements concrets en lloc de raonar amb un x qualsevol. Queden 10 dies per al parcial i Inducció i Conjunts pesen el 50%. Prioritats: (1) aprendre de memòria l'esquema d'inducció: pas base, H.I. amb n−1, T.I. amb n, separar l'últim sumand, aplicar la H.I. i acabar la desigualtat amb ⇔; (2) l'esquema de doble inclusió: «sigui x ∈ A qualsevol ⇒ … ⇒ x ∈ B»; (3) llegir bé la notació de sumatori."
+  },
   "diagnostico" : true,
   "examen" : {
     "duracionMinutos" : 15,
@@ -61,6 +158,7 @@
   "id" : "44254F11-3A1B-42A9-B0F3-B8FFA1EDF505",
   "minutos" : 14,
   "modo" : "diagnostico",
+  "notaDespues" : 1.7249999999999999,
   "pizarras" : {
     "P2" : [
       "estudi\/simulacres\/2026-10-25-44254F11\/P2-1.png"

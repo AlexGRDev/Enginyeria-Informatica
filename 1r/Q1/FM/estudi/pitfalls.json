@@ -1,0 +1,106 @@
+[
+  {
+    "descripcion" : "Dona la resposta correcta sense citar les regles de negació de quantificadors ni De Morgan.",
+    "ejemplos" : [
+      "Dona la resposta correcta sense citar les regles de negació de quantificadors ni De Morgan."
+    ],
+    "id" : "35E78C03-ADFE-43E4-BC66-C3B39C521995",
+    "patron" : "no justifica las reglas aplicadas",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Escriu sempre la cadena `¬∀x∃y φ ≡ ∃x∀y ¬φ` i el pas de De Morgan, encara que només sigui en una línia.",
+    "tema" : "Lògica",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "La H.I. no és cap proposició ('n+1') i la T.I. no correspon a l'enunciat per a n.",
+    "ejemplos" : [
+      "La H.I. no és cap proposició ('n+1') i la T.I. no correspon a l'enunciat per a n."
+    ],
+    "id" : "9F8702B1-BAA9-4720-8B26-60DD4F5A6B49",
+    "patron" : "H.I. y T.I. mal formuladas",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Plantilla: H.I. = l'enunciat amb n−1 al lloc de n; T.I. = l'enunciat amb n; especifica sempre n > 1.",
+    "tema" : "Inducció",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Al pas inductiu substitueix valors concrets (n=3, k=2) en lloc de raonar per a un n genèric.",
+    "ejemplos" : [
+      "Al pas inductiu substitueix valors concrets (n=3, k=2) en lloc de raonar per a un n genèric."
+    ],
+    "id" : "3F94F74C-FAA6-431B-BA75-CCD5578D0888",
+    "patron" : "comprueba casos concretos en vez de demostrar",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "El pas inductiu treballa amb n genèric: ∑_{k=1}^{n} = ∑_{k=1}^{n−1} + últim terme, i després aplica la H.I.",
+    "tema" : "Inducció",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Interpreta ∑_{k=1}^{n} 1\/k² com a potències del tipus 'k^(n+1)' i escriu 'Σ k = 1' com si fos un valor.",
+    "ejemplos" : [
+      "Interpreta ∑_{k=1}^{n} 1\/k² com a potències del tipus 'k^(n+1)' i escriu 'Σ k = 1' com si fos un valor."
+    ],
+    "id" : "A3598FBA-7674-46ED-9769-F60E9789E355",
+    "patron" : "lectura errónea de la notación de sumatorio",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Desplega a mà ∑_{k=1}^{3} 1\/k² = 1 + 1\/4 + 1\/9 per fixar què fan l'índex i els límits.",
+    "tema" : "Sumatoris",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Escriu cadenes d'igualtats falses: 2^4 = 1\/2 i 2 − 1\/4 = −1.",
+    "ejemplos" : [
+      "Escriu cadenes d'igualtats falses: 2^4 = 1\/2 i 2 − 1\/4 = −1."
+    ],
+    "id" : "70320ACB-7927-489E-9C63-7BE012AEA63C",
+    "patron" : "errores aritméticos básicos",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Revisa cada igualtat abans de passar a la línia següent.",
+    "tema" : "Inducció",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "No sap demostrar una igualtat o inclusió entre conjunts genèrics. Fa servir exemples concrets i mal construïts.",
+    "ejemplos" : [
+      "No sap demostrar una igualtat o inclusió entre conjunts genèrics. Fa servir exemples concrets i mal construïts."
+    ],
+    "id" : "983A3960-2EBE-4B04-95BD-78B2E153C294",
+    "patron" : "no sabe abordar Conjunts i Relacions",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Practica 5 igualtats de conjunts amb l'esquema 'sigui x ∈ X qualsevol' + definicions de ∪, ∩ i ⊆ (exàmens 2021-2022 de EXAMFM.pdf).",
+    "tema" : "Conjunts i Relacions",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Per a un ⇔ no separa ⇒ i ⇐ ni diu quin mètode fa servir (directe, contrarecíproc, doble inclusió).",
+    "ejemplos" : [
+      "Per a un ⇔ no separa ⇒ i ⇐ ni diu quin mètode fa servir (directe, contrarecíproc, doble inclusió)."
+    ],
+    "id" : "E2CFDFE0-CFA1-4530-8A97-C0BCB86F5EFD",
+    "patron" : "no indica el método de demostración",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Comença sempre amb: '⇒) Suposem … (H). Prova directa per doble inclusió.' i '⇐) …'.",
+    "tema" : "Demostracions",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Substitueix la prova general per un cas particular.",
+    "ejemplos" : [
+      "Substitueix la prova general per un cas particular."
+    ],
+    "id" : "C1C7C066-EA6E-4744-A2DB-C98A65E9A85B",
+    "patron" : "usa ejemplos como demostración",
+    "primera" : "2026-10-25T17:46:45Z",
+    "refuerzo" : "Un exemple només serveix per refutar un enunciat universal, no per demostrar-lo.",
+    "tema" : "Demostracions",
+    "ultima" : "2026-10-25T17:46:45Z",
+    "veces" : 1
+  }
+]
