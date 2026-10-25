@@ -5,15 +5,15 @@
 
 Generado por Kiwi GEI el 2026-10-25. Objetivo: **8,0**. Próximo examen: Parcial 1 FM, 2026-11-04 (en 10 días).
 
-**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+**Estimación: 1,7 / 10** (-6,3 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,7.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Demostracions | 25 % | sin evaluar | 0 | - |
-| Inducció | 25 % | sin evaluar | 0 | - |
-| Conjunts i Relacions | 25 % | sin evaluar | 0 | - |
-| Lògica | 15 % | sin evaluar | 0 | - |
-| Sumatoris | 10 % | sin evaluar | 0 | - |
+| Demostracions | 25 % | 1,0 | 1 | 2026-10-25 (diagnostico) |
+| Inducció | 25 % | 1,0 | 1 | 2026-10-25 (diagnostico) |
+| Conjunts i Relacions | 25 % | 0,5 | 1 | 2026-10-25 (diagnostico) |
+| Lògica | 15 % | 6,0 | 1 | 2026-10-25 (diagnostico) |
+| Sumatoris | 10 % | 2,0 | 1 | 2026-10-25 (diagnostico) |
 | Funcions (fuera del examen) | 0 % | sin evaluar | 0 | - |
 | Divisibilitat (fuera del examen) | 0 % | sin evaluar | 0 | - |
 | Congruències (fuera del examen) | 0 % | sin evaluar | 0 | - |
