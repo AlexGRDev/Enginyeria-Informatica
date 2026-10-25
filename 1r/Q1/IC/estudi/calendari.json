@@ -1,0 +1,38 @@
+[
+  {
+    "asignatura" : "IC",
+    "fecha" : "2026-10-30T08:00:00Z",
+    "hecho" : false,
+    "id" : "ABE92E96-9C7A-4FD2-93CB-2FBC7C1299E2",
+    "notas" : "",
+    "tipo" : "examen",
+    "titulo" : "Parcial 1 IC"
+  },
+  {
+    "asignatura" : "IC",
+    "fecha" : "2026-12-21T08:00:00Z",
+    "hecho" : false,
+    "id" : "C85FD6B4-A576-4EEE-998D-4B68AAEA0820",
+    "notas" : "",
+    "tipo" : "examen",
+    "titulo" : "Parcial 2 IC"
+  },
+  {
+    "asignatura" : "IC",
+    "fecha" : "2027-01-12T08:00:00Z",
+    "hecho" : false,
+    "id" : "0435D507-2EC0-40B7-B999-2CBF626E40EB",
+    "notas" : "",
+    "tipo" : "examen",
+    "titulo" : "Final IC"
+  },
+  {
+    "asignatura" : "IC",
+    "fecha" : "2027-02-06T08:00:00Z",
+    "hecho" : false,
+    "id" : "3E976FF0-407D-4B0F-A4A6-369860D65F4E",
+    "notas" : "",
+    "tipo" : "examen",
+    "titulo" : "Recuperació IC"
+  }
+]
