@@ -1,0 +1,57 @@
+{
+  "creado" : "2026-10-25T10:15:22Z",
+  "modoTutor" : "guiar",
+  "notaObjetivo" : 8,
+  "temas" : [
+    {
+      "enExamen" : true,
+      "nombre" : "Càrrega elèctrica i llei de Coulomb",
+      "peso" : 0.08
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Camp elèctric i potencial (E = -∇V)",
+      "peso" : 0.1
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Corrent elèctric (I = dQ\/dt, I = n·q·v_d·A, J)",
+      "peso" : 0.08
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Llei d'Ohm (V = IR, J = σE) i resistència",
+      "peso" : 0.1
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+      "peso" : 0.14
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Corrent Altern",
+      "peso" : 0.15
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Electrònica i portes lògiques",
+      "peso" : 0.15
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Ones",
+      "peso" : 0.15
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f)",
+      "peso" : 0.03
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Simulació amb LTspice",
+      "peso" : 0.02
+    }
+  ]
+}
