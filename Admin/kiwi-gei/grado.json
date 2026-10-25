@@ -134,6 +134,17 @@
       "nombre" : "Práctica 2 · Simulacio de circuits de corrent continu",
       "origen" : "raco-practica|F|2",
       "tipo" : "practica"
+    },
+    {
+      "asignatura" : "F",
+      "componente" : "L2",
+      "detalle" : "",
+      "fecha" : "2026-10-05T16:49:18Z",
+      "formato" : "Online",
+      "id" : "FB960C4F-4E82-4434-BFD2-B4461E7406AA",
+      "nombre" : "Simulacio de sircuits de corrent continua",
+      "nota" : 0,
+      "tipo" : "laboratorio"
     }
   ],
   "codigos" : {
