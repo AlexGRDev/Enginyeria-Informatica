@@ -1,4 +1,105 @@
 {
+  "actividades" : [
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "C6A963EF-1E92-4E30-AA68-E8A6AD975123",
+      "nombre" : "Prova prèvia Pràctica 2",
+      "nota" : 2,
+      "origen" : "atenea|Prova prèvia Pràctica 2",
+      "tipo" : "practica"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "9B012EEA-E75F-4458-AAF3-719523420A7B",
+      "nombre" : "Prova prèvia Pràctica 1",
+      "nota" : 0,
+      "origen" : "atenea|Prova prèvia Pràctica 1",
+      "tipo" : "practica"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "AA37A10C-3DA0-42AA-BB8C-290F6AC43FA3",
+      "nombre" : "Qüestionari ET3a",
+      "nota" : 8.1,
+      "origen" : "atenea|Qüestionari ET3a",
+      "tipo" : "test"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "128B594F-9613-457C-A8F7-EBBAD3D75957",
+      "nombre" : "Qüestionari ET3b",
+      "nota" : 9.1,
+      "origen" : "atenea|Qüestionari ET3b",
+      "tipo" : "test"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "B734A0DB-B6A4-4A13-8C69-82F82D43EA2F",
+      "nombre" : "Qüestionari ET3c",
+      "nota" : 10,
+      "origen" : "atenea|Qüestionari ET3c",
+      "tipo" : "test"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "5A3C484B-B70F-421B-BB9F-1FA478C1CBD4",
+      "nombre" : "Qüestionari ET4",
+      "nota" : 10,
+      "origen" : "atenea|Qüestionari ET4",
+      "tipo" : "test"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "87A894A6-B9A4-4C3D-915A-47000268DD04",
+      "nombre" : "Qüestionari ET5",
+      "nota" : 8.9,
+      "origen" : "atenea|Qüestionari ET5",
+      "tipo" : "test"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "57EC3CFA-DC15-44D8-8331-6F0D9E4CB217",
+      "nombre" : "Qüestionari ET7a",
+      "nota" : 5.8,
+      "origen" : "atenea|Qüestionari ET7a",
+      "tipo" : "test"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-10-25T16:31:09Z",
+      "formato" : "Atenea",
+      "id" : "E60A3808-A19C-41E8-80A4-594406D89DEF",
+      "nombre" : "Prova prèvia Pràctica 0",
+      "nota" : 5,
+      "origen" : "atenea|Prova prèvia Pràctica 0",
+      "tipo" : "practica"
+    }
+  ],
   "estados" : {
     "F" : "enCurso",
     "FM" : "enCurso",
