@@ -108,7 +108,7 @@
       "fecha": "2026-10-25T17:02:39Z",
       "formato": "Racó (PDF)",
       "id": "090FB722-2A65-4B57-8EB4-07D61DEB604E",
-      "nombre": "Laboratori 1",
+      "nombre": "Laboratorio / talleres 1",
       "nota": 0,
       "origen": "raco|https://api.fib.upc.edu/v2/jo/avisos/adjunt/128190?format=json|0",
       "tipo": "laboratorio"
@@ -120,7 +120,7 @@
       "fecha": "2026-09-18T16:12:12Z",
       "formato": "Papel",
       "id": "8A04C63A-6AE6-4847-B79A-5F4D86E0FA72",
-      "nombre": "Practuca Oscil.loscopi",
+      "nombre": "Pràctica 1 · Funcionament de l'oscil·loscopi i del polímetre",
       "nota": 7.7,
       "tipo": "laboratorio"
     },
@@ -131,7 +131,7 @@
       "fecha": "2026-10-05T16:49:18Z",
       "formato": "Online",
       "id": "FB960C4F-4E82-4434-BFD2-B4461E7406AA",
-      "nombre": "Simulacio de sircuits de corrent continua",
+      "nombre": "Pràctica 2 · Simulació de circuits de corrent continu",
       "nota": 0,
       "tipo": "laboratorio"
     }
