@@ -1,473 +1,452 @@
 {
-  "actividades" : [
+  "actividades": [
     {
-      "asignatura" : "IC",
-      "componente" : "L2",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "C6A963EF-1E92-4E30-AA68-E8A6AD975123",
-      "nombre" : "Prova prèvia Pràctica 2",
-      "nota" : 2,
-      "origen" : "atenea|Prova prèvia Pràctica 2",
-      "tipo" : "practica"
+      "asignatura": "IC",
+      "componente": "L2",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "C6A963EF-1E92-4E30-AA68-E8A6AD975123",
+      "nombre": "Prova prèvia Pràctica 2",
+      "nota": 2,
+      "origen": "atenea|Prova prèvia Pràctica 2",
+      "tipo": "practica"
     },
     {
-      "asignatura" : "IC",
-      "componente" : "L1",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "9B012EEA-E75F-4458-AAF3-719523420A7B",
-      "nombre" : "Prova prèvia Pràctica 1",
-      "nota" : 0,
-      "origen" : "atenea|Prova prèvia Pràctica 1",
-      "tipo" : "practica"
+      "asignatura": "IC",
+      "componente": "L1",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "9B012EEA-E75F-4458-AAF3-719523420A7B",
+      "nombre": "Prova prèvia Pràctica 1",
+      "nota": 0,
+      "origen": "atenea|Prova prèvia Pràctica 1",
+      "tipo": "practica"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "AA37A10C-3DA0-42AA-BB8C-290F6AC43FA3",
-      "nombre" : "Qüestionari ET3a",
-      "nota" : 8.1,
-      "origen" : "atenea|Qüestionari ET3a",
-      "tipo" : "test"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "AA37A10C-3DA0-42AA-BB8C-290F6AC43FA3",
+      "nombre": "Qüestionari ET3a",
+      "nota": 8.1,
+      "origen": "atenea|Qüestionari ET3a",
+      "tipo": "test"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "128B594F-9613-457C-A8F7-EBBAD3D75957",
-      "nombre" : "Qüestionari ET3b",
-      "nota" : 9.1,
-      "origen" : "atenea|Qüestionari ET3b",
-      "tipo" : "test"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "128B594F-9613-457C-A8F7-EBBAD3D75957",
+      "nombre": "Qüestionari ET3b",
+      "nota": 9.1,
+      "origen": "atenea|Qüestionari ET3b",
+      "tipo": "test"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "B734A0DB-B6A4-4A13-8C69-82F82D43EA2F",
-      "nombre" : "Qüestionari ET3c",
-      "nota" : 10,
-      "origen" : "atenea|Qüestionari ET3c",
-      "tipo" : "test"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "B734A0DB-B6A4-4A13-8C69-82F82D43EA2F",
+      "nombre": "Qüestionari ET3c",
+      "nota": 10,
+      "origen": "atenea|Qüestionari ET3c",
+      "tipo": "test"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "5A3C484B-B70F-421B-BB9F-1FA478C1CBD4",
-      "nombre" : "Qüestionari ET4",
-      "nota" : 10,
-      "origen" : "atenea|Qüestionari ET4",
-      "tipo" : "test"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "5A3C484B-B70F-421B-BB9F-1FA478C1CBD4",
+      "nombre": "Qüestionari ET4",
+      "nota": 10,
+      "origen": "atenea|Qüestionari ET4",
+      "tipo": "test"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "87A894A6-B9A4-4C3D-915A-47000268DD04",
-      "nombre" : "Qüestionari ET5",
-      "nota" : 8.9,
-      "origen" : "atenea|Qüestionari ET5",
-      "tipo" : "test"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "87A894A6-B9A4-4C3D-915A-47000268DD04",
+      "nombre": "Qüestionari ET5",
+      "nota": 8.9,
+      "origen": "atenea|Qüestionari ET5",
+      "tipo": "test"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "57EC3CFA-DC15-44D8-8331-6F0D9E4CB217",
-      "nombre" : "Qüestionari ET7a",
-      "nota" : 5.8,
-      "origen" : "atenea|Qüestionari ET7a",
-      "tipo" : "test"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "57EC3CFA-DC15-44D8-8331-6F0D9E4CB217",
+      "nombre": "Qüestionari ET7a",
+      "nota": 5.8,
+      "origen": "atenea|Qüestionari ET7a",
+      "tipo": "test"
     },
     {
-      "asignatura" : "IC",
-      "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
-      "id" : "E60A3808-A19C-41E8-80A4-594406D89DEF",
-      "nombre" : "Prova prèvia Pràctica 0",
-      "nota" : 5,
-      "origen" : "atenea|Prova prèvia Pràctica 0",
-      "tipo" : "practica"
+      "asignatura": "IC",
+      "detalle": "",
+      "fecha": "2026-10-25T16:31:09Z",
+      "formato": "Atenea",
+      "id": "E60A3808-A19C-41E8-80A4-594406D89DEF",
+      "nombre": "Prova prèvia Pràctica 0",
+      "nota": 5,
+      "origen": "atenea|Prova prèvia Pràctica 0",
+      "tipo": "practica"
     },
     {
-      "asignatura" : "FM",
-      "componente" : "L",
-      "detalle" : "Notes_LAB1_-_51L1.pdf",
-      "fecha" : "2026-10-25T17:02:39Z",
-      "formato" : "Racó (PDF)",
-      "id" : "090FB722-2A65-4B57-8EB4-07D61DEB604E",
-      "nombre" : "Laboratori 1",
-      "nota" : 0,
-      "origen" : "raco|https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json|0",
-      "tipo" : "laboratorio"
+      "asignatura": "FM",
+      "componente": "L",
+      "detalle": "Notes_LAB1_-_51L1.pdf",
+      "fecha": "2026-10-25T17:02:39Z",
+      "formato": "Racó (PDF)",
+      "id": "090FB722-2A65-4B57-8EB4-07D61DEB604E",
+      "nombre": "Laboratorio / talleres 1",
+      "nota": 0,
+      "origen": "raco|https://api.fib.upc.edu/v2/jo/avisos/adjunt/128190?format=json|0",
+      "tipo": "laboratorio"
     },
     {
-      "asignatura" : "F",
-      "componente" : "L1",
-      "detalle" : "",
-      "fecha" : "2026-09-18T16:12:12Z",
-      "formato" : "Papel",
-      "id" : "8A04C63A-6AE6-4847-B79A-5F4D86E0FA72",
-      "nombre" : "Practuca Oscil.loscopi",
-      "nota" : 7.7,
-      "tipo" : "laboratorio"
+      "asignatura": "F",
+      "componente": "L1",
+      "detalle": "",
+      "fecha": "2026-09-18T16:12:12Z",
+      "formato": "Papel",
+      "id": "8A04C63A-6AE6-4847-B79A-5F4D86E0FA72",
+      "nombre": "Pràctica 1 · Funcionament de l'oscil·loscopi i del polímetre",
+      "nota": 7.7,
+      "tipo": "laboratorio"
     },
     {
-      "asignatura" : "F",
-      "componente" : "L2",
-      "detalle" : "Enunciado del Racó",
-      "fecha" : "2026-09-14T11:14:01Z",
-      "formato" : "online",
-      "id" : "35D33680-AF40-4F0E-8C12-DB9D7AB3E184",
-      "nombre" : "Práctica 2 · Simulacio de circuits de corrent continu",
-      "origen" : "raco-practica|F|2",
-      "tipo" : "practica"
-    },
-    {
-      "asignatura" : "F",
-      "componente" : "L2",
-      "detalle" : "",
-      "fecha" : "2026-10-05T16:49:18Z",
-      "formato" : "Online",
-      "id" : "FB960C4F-4E82-4434-BFD2-B4461E7406AA",
-      "nombre" : "Simulacio de sircuits de corrent continua",
-      "nota" : 0,
-      "tipo" : "laboratorio"
+      "asignatura": "F",
+      "componente": "L2",
+      "detalle": "",
+      "fecha": "2026-10-05T16:49:18Z",
+      "formato": "Online",
+      "id": "FB960C4F-4E82-4434-BFD2-B4461E7406AA",
+      "nombre": "Pràctica 2 · Simulació de circuits de corrent continu",
+      "nota": 0,
+      "tipo": "laboratorio"
     }
   ],
-  "codigos" : {
-    "F" : "158"
+  "codigos": {
+    "F": "158"
   },
-  "esquemas" : {
-    "F" : {
-      "aprobado" : 5,
-      "componentes" : [
+  "esquemas": {
+    "F": {
+      "aprobado": 5,
+      "componentes": [
         {
-          "id" : "P1",
-          "nombre" : "Parcial 1 (temas 1 y 2)",
-          "peso" : 45,
-          "tipo" : "parcial"
+          "id": "P1",
+          "nombre": "Parcial 1 (temas 1 y 2)",
+          "peso": 45,
+          "tipo": "parcial"
         },
         {
-          "id" : "P2",
-          "nombre" : "Parcial 2 (temas 3 y 4)",
-          "peso" : 45,
-          "tipo" : "parcial"
+          "id": "P2",
+          "nombre": "Parcial 2 (temas 3 y 4)",
+          "peso": 45,
+          "tipo": "parcial"
         },
         {
-          "id" : "F",
-          "nombre" : "Examen final (opcional, todo el temario)",
-          "peso" : 90,
-          "tipo" : "final"
+          "id": "F",
+          "nombre": "Examen final (opcional, todo el temario)",
+          "peso": 90,
+          "tipo": "final"
         },
         {
-          "id" : "L1",
-          "nombre" : "Práctica de laboratorio 1",
-          "peso" : 1.5,
-          "tipo" : "laboratorio"
+          "id": "L1",
+          "nombre": "Práctica de laboratorio 1",
+          "peso": 1.5,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L2",
-          "nombre" : "Práctica de laboratorio 2",
-          "peso" : 1.5,
-          "tipo" : "laboratorio"
+          "id": "L2",
+          "nombre": "Práctica de laboratorio 2",
+          "peso": 1.5,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L3",
-          "nombre" : "Práctica de laboratorio 3",
-          "peso" : 1.5,
-          "tipo" : "laboratorio"
+          "id": "L3",
+          "nombre": "Práctica de laboratorio 3",
+          "peso": 1.5,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L4",
-          "nombre" : "Práctica de laboratorio 4",
-          "peso" : 1.5,
-          "tipo" : "laboratorio"
+          "id": "L4",
+          "nombre": "Práctica de laboratorio 4",
+          "peso": 1.5,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L5",
-          "nombre" : "Práctica de laboratorio 5",
-          "peso" : 1.5,
-          "tipo" : "laboratorio"
+          "id": "L5",
+          "nombre": "Práctica de laboratorio 5",
+          "peso": 1.5,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "ExLab",
-          "nombre" : "Examen de laboratorio (presentación oral)",
-          "peso" : 2.5,
-          "tipo" : "laboratorio"
+          "id": "ExLab",
+          "nombre": "Examen de laboratorio (presentación oral)",
+          "peso": 2.5,
+          "tipo": "laboratorio"
         }
       ],
-      "derivadas" : [
+      "derivadas": [
         {
-          "formula" : "0.75*avg(L1, L2, L3, L4, L5) + 0.25*ExLab",
-          "id" : "L"
+          "formula": "0.75*avg(L1, L2, L3, L4, L5) + 0.25*ExLab",
+          "id": "L"
         }
       ],
-      "formulaFinal" : "0.9*max((P1+P2)\/2, F) + 0.1*L",
-      "resumen" : "La teoría cuenta un 90 % y es el máximo entre la media de los dos parciales y el examen final opcional (F). El laboratorio cuenta un 10 %: el 75 % es la media de las 5 prácticas y el 25 % el examen oral de laboratorio (ExLab). El peso del 90 % asignado a F es alternativo al de los parciales: solo cuenta si mejora su media. La guía no da explícitamente la nota mínima para aprobar, así que he supuesto un 5. La competencia transversal de comunicación oral y escrita se califica aparte con letra (A–D) y no entra en la nota numérica."
+      "formulaFinal": "0.9*max((P1+P2)/2, F) + 0.1*L",
+      "resumen": "La teoría cuenta un 90 % y es el máximo entre la media de los dos parciales y el examen final opcional (F). El laboratorio cuenta un 10 %: el 75 % es la media de las 5 prácticas y el 25 % el examen oral de laboratorio (ExLab). El peso del 90 % asignado a F es alternativo al de los parciales: solo cuenta si mejora su media. La guía no da explícitamente la nota mínima para aprobar, así que he supuesto un 5. La competencia transversal de comunicación oral y escrita se califica aparte con letra (A–D) y no entra en la nota numérica."
     },
-    "FM" : {
-      "aprobado" : 5,
-      "componentes" : [
+    "FM": {
+      "aprobado": 5,
+      "componentes": [
         {
-          "id" : "P1",
-          "nombre" : "Primer parcial",
-          "peso" : 40,
-          "tipo" : "parcial"
+          "id": "P1",
+          "nombre": "Primer parcial",
+          "peso": 40,
+          "tipo": "parcial"
         },
         {
-          "id" : "P2",
-          "nombre" : "Segundo parcial",
-          "peso" : 40,
-          "tipo" : "parcial"
+          "id": "P2",
+          "nombre": "Segundo parcial",
+          "peso": 40,
+          "tipo": "parcial"
         },
         {
-          "id" : "L",
-          "nombre" : "Laboratorio \/ talleres",
-          "peso" : 20,
-          "tipo" : "laboratorio"
+          "id": "L",
+          "nombre": "Laboratorio / talleres",
+          "peso": 20,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "F",
-          "nombre" : "Examen final",
-          "peso" : 100,
-          "tipo" : "final"
+          "id": "F",
+          "nombre": "Examen final",
+          "peso": 100,
+          "tipo": "final"
         }
       ],
-      "derivadas" : [
+      "derivadas": [
         {
-          "formula" : "0.4*P1 + 0.4*P2 + 0.2*L",
-          "id" : "AC"
+          "formula": "0.4*P1 + 0.4*P2 + 0.2*L",
+          "id": "AC"
         }
       ],
-      "formulaFinal" : "max(0.4*P1 + 0.4*P2 + 0.2*L, F)",
-      "resumen" : "Evaluación continua AC = 40% P1 + 40% P2 + 20% laboratorio; la nota del curso es max(AC, F), donde F es el final, que vale el 100%. He ignorado la addenda, que parece de un curso anterior o de contingencia (dos talleres al 10%, parciales al 35% y cuestionarios Atenea al 10%), y la guía no detalla cómo se calcula la nota de laboratorio L."
+      "formulaFinal": "max(0.4*P1 + 0.4*P2 + 0.2*L, F)",
+      "resumen": "Evaluación continua AC = 40% P1 + 40% P2 + 20% laboratorio; la nota del curso es max(AC, F), donde F es el final, que vale el 100%. He ignorado la addenda, que parece de un curso anterior o de contingencia (dos talleres al 10%, parciales al 35% y cuestionarios Atenea al 10%), y la guía no detalla cómo se calcula la nota de laboratorio L."
     },
-    "IC" : {
-      "aprobado" : 5,
-      "componentes" : [
+    "IC": {
+      "aprobado": 5,
+      "componentes": [
         {
-          "id" : "EP1",
-          "nombre" : "Examen parcial 1 (temas 2-7)",
-          "peso" : 32,
-          "tipo" : "parcial"
+          "id": "EP1",
+          "nombre": "Examen parcial 1 (temas 2-7)",
+          "peso": 32,
+          "tipo": "parcial"
         },
         {
-          "id" : "EP2",
-          "nombre" : "Examen parcial 2 (temas 8-14)",
-          "peso" : 48,
-          "tipo" : "parcial"
+          "id": "EP2",
+          "nombre": "Examen parcial 2 (temas 8-14)",
+          "peso": 48,
+          "tipo": "parcial"
         },
         {
-          "id" : "EF",
-          "nombre" : "Examen final",
-          "peso" : 80,
-          "tipo" : "final"
+          "id": "EF",
+          "nombre": "Examen final",
+          "peso": 80,
+          "tipo": "final"
         },
         {
-          "id" : "L1",
-          "nombre" : "Práctica de laboratorio 1",
-          "peso" : 3.33,
-          "tipo" : "laboratorio"
+          "id": "L1",
+          "nombre": "Práctica de laboratorio 1",
+          "peso": 3.33,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L2",
-          "nombre" : "Práctica de laboratorio 2",
-          "peso" : 3.33,
-          "tipo" : "laboratorio"
+          "id": "L2",
+          "nombre": "Práctica de laboratorio 2",
+          "peso": 3.33,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L3",
-          "nombre" : "Práctica de laboratorio 3",
-          "peso" : 3.33,
-          "tipo" : "laboratorio"
+          "id": "L3",
+          "nombre": "Práctica de laboratorio 3",
+          "peso": 3.33,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L4",
-          "nombre" : "Práctica de laboratorio 4",
-          "peso" : 3.33,
-          "tipo" : "laboratorio"
+          "id": "L4",
+          "nombre": "Práctica de laboratorio 4",
+          "peso": 3.33,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L5",
-          "nombre" : "Práctica de laboratorio 5",
-          "peso" : 3.33,
-          "tipo" : "laboratorio"
+          "id": "L5",
+          "nombre": "Práctica de laboratorio 5",
+          "peso": 3.33,
+          "tipo": "laboratorio"
         },
         {
-          "id" : "L6",
-          "nombre" : "Práctica de laboratorio 6",
-          "peso" : 3.33,
-          "tipo" : "laboratorio"
+          "id": "L6",
+          "nombre": "Práctica de laboratorio 6",
+          "peso": 3.33,
+          "tipo": "laboratorio"
         }
       ],
-      "derivadas" : [
+      "derivadas": [
         {
-          "formula" : "max(0.4*EP1 + 0.6*EP2, EF)",
-          "id" : "NTP"
+          "formula": "max(0.4*EP1 + 0.6*EP2, EF)",
+          "id": "NTP"
         },
         {
-          "formula" : "avg(L1, L2, L3, L4, L5, L6)",
-          "id" : "NL"
+          "formula": "avg(L1, L2, L3, L4, L5, L6)",
+          "id": "NL"
         }
       ],
-      "formulaFinal" : "0.8*max(0.4*EP1 + 0.6*EP2, EF) + 0.2*avg(L1, L2, L3, L4, L5, L6)",
-      "resumen" : "NF = 0.8·NTP + 0.2·NL. NTP es el máximo entre 0.4·EP1 + 0.6·EP2 y el examen final EF, y NL es la media de las 6 prácticas (la práctica 0 no cuenta). Cada práctica vale 0.65·prueba previa + 0.35·informe final, o un 0 si no se entrega el informe previo completo al empezar la sesión. La guía dice que la nota de evaluación continua incluye también «entregas y trabajos indicados por el profesor», pero no les da ningún peso, así que no salen en la fórmula."
+      "formulaFinal": "0.8*max(0.4*EP1 + 0.6*EP2, EF) + 0.2*avg(L1, L2, L3, L4, L5, L6)",
+      "resumen": "NF = 0.8·NTP + 0.2·NL. NTP es el máximo entre 0.4·EP1 + 0.6·EP2 y el examen final EF, y NL es la media de las 6 prácticas (la práctica 0 no cuenta). Cada práctica vale 0.65·prueba previa + 0.35·informe final, o un 0 si no se entrega el informe previo completo al empezar la sesión. La guía dice que la nota de evaluación continua incluye también «entregas y trabajos indicados por el profesor», pero no les da ningún peso, así que no salen en la fórmula."
     },
-    "PRO1" : {
-      "aprobado" : 5,
-      "componentes" : [
+    "PRO1": {
+      "aprobado": 5,
+      "componentes": [
         {
-          "id" : "P",
-          "nombre" : "Examen parcial (midterm, jutge.org)",
-          "peso" : 40,
-          "tipo" : "parcial"
+          "id": "P",
+          "nombre": "Examen parcial (midterm, jutge.org)",
+          "peso": 40,
+          "tipo": "parcial"
         },
         {
-          "id" : "F",
-          "nombre" : "Examen final (jutge.org)",
-          "peso" : 60,
-          "tipo" : "final"
+          "id": "F",
+          "nombre": "Examen final (jutge.org)",
+          "peso": 60,
+          "tipo": "final"
         }
       ],
-      "derivadas" : [
-
-      ],
-      "formulaFinal" : "max(0.4*P + 0.6*F, F)",
-      "resumen" : "N = max(0,4·P + 0,6·F, F): el parcial cuenta un 40 % y el final un 60 %, salvo que el final por sí solo dé más nota. Con una nota entre 3,5 y 4,9 puedes ir a la reevaluación (curso intensivo); si la apruebas, la nota final es 5. He usado el método de la guía principal, que encaja con los dos exámenes programados. Una addenda describe otro sistema, probablemente de un curso anterior: dos parciales y un final, max(0,2·P1 + 0,3·P2 + 0,5·FF, F), y exige mínimos de problemas resueltos. No lo he tenido en cuenta, pero conviene confirmarlo en la web de la asignatura."
+      "derivadas": [],
+      "formulaFinal": "max(0.4*P + 0.6*F, F)",
+      "resumen": "N = max(0,4·P + 0,6·F, F): el parcial cuenta un 40 % y el final un 60 %, salvo que el final por sí solo dé más nota. Con una nota entre 3,5 y 4,9 puedes ir a la reevaluación (curso intensivo); si la apruebas, la nota final es 5. He usado el método de la guía principal, que encaja con los dos exámenes programados. Una addenda describe otro sistema, probablemente de un curso anterior: dos parciales y un final, max(0,2·P1 + 0,3·P2 + 0,5·FF, F), y exige mínimos de problemas resueltos. No lo he tenido en cuenta, pero conviene confirmarlo en la web de la asignatura."
     }
   },
-  "estados" : {
-    "F" : "enCurso",
-    "FM" : "enCurso",
-    "IC" : "enCurso",
-    "PRO1" : "enCurso"
+  "estados": {
+    "F": "enCurso",
+    "FM": "enCurso",
+    "IC": "enCurso",
+    "PRO1": "enCurso"
   },
-  "examenes" : {
-
-  },
-  "extras" : [
-
-  ],
-  "horario" : [
+  "examenes": {},
+  "extras": [],
+  "horario": [
     {
-      "asignatura" : "FM",
-      "aulas" : "A5001",
-      "dia" : 1,
-      "duracion" : 1,
-      "inicio" : "14:00",
-      "tipo" : "T"
+      "asignatura": "FM",
+      "aulas": "A5001",
+      "dia": 1,
+      "duracion": 1,
+      "inicio": "14:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "IC",
-      "aulas" : "A5001",
-      "dia" : 1,
-      "duracion" : 2,
-      "inicio" : "15:00",
-      "tipo" : "T"
+      "asignatura": "IC",
+      "aulas": "A5001",
+      "dia": 1,
+      "duracion": 2,
+      "inicio": "15:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "F",
-      "aulas" : "A5001",
-      "dia" : 1,
-      "duracion" : 2,
-      "inicio" : "17:00",
-      "tipo" : "T"
+      "asignatura": "F",
+      "aulas": "A5001",
+      "dia": 1,
+      "duracion": 2,
+      "inicio": "17:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "FM",
-      "aulas" : "A5104",
-      "dia" : 2,
-      "duracion" : 2,
-      "inicio" : "14:00",
-      "tipo" : "L"
+      "asignatura": "FM",
+      "aulas": "A5104",
+      "dia": 2,
+      "duracion": 2,
+      "inicio": "14:00",
+      "tipo": "L"
     },
     {
-      "asignatura" : "PRO1",
-      "aulas" : "A5001",
-      "dia" : 2,
-      "duracion" : 2,
-      "inicio" : "17:00",
-      "tipo" : "T"
+      "asignatura": "PRO1",
+      "aulas": "A5001",
+      "dia": 2,
+      "duracion": 2,
+      "inicio": "17:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "FM",
-      "aulas" : "A5001",
-      "dia" : 3,
-      "duracion" : 1,
-      "inicio" : "15:00",
-      "tipo" : "T"
+      "asignatura": "FM",
+      "aulas": "A5001",
+      "dia": 3,
+      "duracion": 1,
+      "inicio": "15:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "PRO1",
-      "aulas" : "C6S303",
-      "dia" : 3,
-      "duracion" : 3,
-      "inicio" : "16:00",
-      "tipo" : "L"
+      "asignatura": "PRO1",
+      "aulas": "C6S303",
+      "dia": 3,
+      "duracion": 3,
+      "inicio": "16:00",
+      "tipo": "L"
     },
     {
-      "asignatura" : "FM",
-      "aulas" : "A5001",
-      "dia" : 4,
-      "duracion" : 1,
-      "inicio" : "14:00",
-      "tipo" : "T"
+      "asignatura": "FM",
+      "aulas": "A5001",
+      "dia": 4,
+      "duracion": 1,
+      "inicio": "14:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "IC",
-      "aulas" : "A5001",
-      "dia" : 4,
-      "duracion" : 2,
-      "inicio" : "15:00",
-      "tipo" : "T"
+      "asignatura": "IC",
+      "aulas": "A5001",
+      "dia": 4,
+      "duracion": 2,
+      "inicio": "15:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "F",
-      "aulas" : "A5001",
-      "dia" : 4,
-      "duracion" : 2,
-      "inicio" : "17:00",
-      "tipo" : "T"
+      "asignatura": "F",
+      "aulas": "A5001",
+      "dia": 4,
+      "duracion": 2,
+      "inicio": "17:00",
+      "tipo": "T"
     },
     {
-      "asignatura" : "IC",
-      "aulas" : "A5S109",
-      "dia" : 5,
-      "duracion" : 2,
-      "inicio" : "14:00",
-      "tipo" : "L"
+      "asignatura": "IC",
+      "aulas": "A5S109",
+      "dia": 5,
+      "duracion": 2,
+      "inicio": "14:00",
+      "tipo": "L"
     },
     {
-      "asignatura" : "F",
-      "aulas" : "A1S101, A5204",
-      "dia" : 5,
-      "duracion" : 2,
-      "inicio" : "16:00",
-      "tipo" : "L"
+      "asignatura": "F",
+      "aulas": "A1S101, A5204",
+      "dia": 5,
+      "duracion": 2,
+      "inicio": "16:00",
+      "tipo": "L"
     }
   ],
-  "horas" : [
-
-  ],
-  "notas" : {
-
-  },
-  "pdfsRevisados" : [
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129049?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
+  "horas": [],
+  "notas": {},
+  "pdfsRevisados": [
+    "https://api.fib.upc.edu/v2/jo/avisos/adjunt/129049?format=json",
+    "https://api.fib.upc.edu/v2/jo/avisos/adjunt/128388?format=json",
+    "https://api.fib.upc.edu/v2/jo/avisos/adjunt/128190?format=json"
   ]
 }
