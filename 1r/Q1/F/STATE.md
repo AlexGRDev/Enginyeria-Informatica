@@ -5,19 +5,19 @@
 
 Generado por Kiwi GEI el 2026-10-25. Objetivo: **8,0**. Próximo examen: Parcial 1 F, 2026-11-03 (en 9 días).
 
-**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+**Estimación: 0,8 / 10** (-7,2 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,8.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Càrrega elèctrica i llei de Coulomb | 8 % | sin evaluar | 0 | - |
-| Camp elèctric i potencial (E = -∇V) | 10 % | sin evaluar | 0 | - |
-| Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | 8 % | sin evaluar | 0 | - |
-| Llei d'Ohm (V = IR, J = σE) i resistència | 10 % | sin evaluar | 0 | - |
-| Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 14 % | sin evaluar | 0 | - |
-| Corrent Altern | 15 % | sin evaluar | 0 | - |
+| Càrrega elèctrica i llei de Coulomb | 8 % | 7,0 | 1 | 2026-10-25 (diagnostico) |
+| Camp elèctric i potencial (E = -∇V) | 10 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
+| Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | 8 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
+| Llei d'Ohm (V = IR, J = σE) i resistència | 10 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
+| Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 14 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
+| Corrent Altern | 15 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
 | Electrònica i portes lògiques (fuera del examen) | 15 % | sin evaluar | 0 | - |
 | Ones (fuera del examen) | 15 % | sin evaluar | 0 | - |
-| Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f) | 3 % | sin evaluar | 0 | - |
+| Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f) | 3 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
 | Simulació amb LTspice (fuera del examen) | 2 % | sin evaluar | 0 | - |
 <!-- kiwi-gei:estat:fi -->
 
