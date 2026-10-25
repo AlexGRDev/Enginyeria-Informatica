@@ -3,7 +3,7 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 4 días).
+Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**. Próximo examen: Recuperació PRO1, 2027-02-06 (en 104 días).
 
 **Sin estimación todavía**: haz el test diagnóstico o un simulacro.
 
