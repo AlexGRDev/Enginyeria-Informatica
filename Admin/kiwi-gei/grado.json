@@ -2,6 +2,7 @@
   "actividades" : [
     {
       "asignatura" : "IC",
+      "componente" : "L2",
       "detalle" : "",
       "fecha" : "2026-10-25T16:31:09Z",
       "formato" : "Atenea",
@@ -13,6 +14,7 @@
     },
     {
       "asignatura" : "IC",
+      "componente" : "L1",
       "detalle" : "",
       "fecha" : "2026-10-25T16:31:09Z",
       "formato" : "Atenea",
@@ -101,6 +103,7 @@
     },
     {
       "asignatura" : "FM",
+      "componente" : "L",
       "detalle" : "Notes_LAB1_-_51L1.pdf",
       "fecha" : "2026-10-25T17:02:39Z",
       "formato" : "Racó (PDF)",
