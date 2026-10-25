@@ -1,0 +1,75 @@
+{
+  "diagnostico" : true,
+  "examen" : {
+    "duracionMinutos" : 15,
+    "preguntas" : [
+      {
+        "criterios" : "1,5 p per marcar B. 0,5 p per citar les dues regles (negació de quantificadors i De Morgan). Si es marca A o D, 0 p a la marca, però es pot donar fins a 0,25 p si la justificació identifica bé una de les dues regles. Diagnòstic: A indica error amb De Morgan; D indica no tenir clar que l'ordre dels quantificadors importa.",
+        "enunciado" : "Sigui l'enunciat (domini ℝ per a x i y):\n\n`∀x ∃y (x < y ∧ y² < x)`\n\nQuina de les fórmules següents és equivalent a la seva negació? Marca una sola opció i escriu en una línia les dues regles que has aplicat.",
+        "fuente" : "material\/raco\/FM_setmana2_grup50.pdf (secció 1.2: negació de quantificadors i taula resum); format inspirat en EXAMFM.pdf, 1r parcial 01\/04\/2022, problema 1",
+        "id" : "P1",
+        "opciones" : [
+          "A) `∃x ∀y (x ≥ y ∧ y² ≥ x)`",
+          "B) `∃x ∀y (x ≥ y ∨ y² ≥ x)`",
+          "C) `∀x ∃y (x ≥ y ∨ y² ≥ x)`",
+          "D) `∃y ∀x (x ≥ y ∨ y² ≥ x)`"
+        ],
+        "puntos" : 2,
+        "solucionReferencia" : "Resposta: B.\n`¬∀x ∃y (x < y ∧ y² < x)` ≡ `∃x ¬∃y (x < y ∧ y² < x)` ≡ `∃x ∀y ¬(x < y ∧ y² < x)` ≡ (De Morgan) `∃x ∀y (¬(x < y) ∨ ¬(y² < x))` ≡ `∃x ∀y (x ≥ y ∨ y² ≥ x)`.\nRegles: negació de quantificadors (`¬∀ ≡ ∃¬`, `¬∃ ≡ ∀¬`) i De Morgan `¬(φ ∧ ψ) ≡ ¬φ ∨ ¬ψ`.\nA falla perquè no aplica De Morgan (manté ∧). C no canvia els quantificadors. D canvia l'ordre dels quantificadors, i en general `∃x∀y` no és equivalent a `∃y∀x`.",
+        "tema" : "Lògica",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "Pas base correcte, calculant els dos costats: 0,75 p. H.I. i T.I. ben escrites, amb l'índex desplaçat (n−1 a la H.I.) i amb n > 1: 1 p. Separar l'últim sumand i aplicar la H.I. dient on s'usa: 1 p. Demostrar la desigualtat (3) amb l'àlgebra correcta: 1,25 p. Justificar que el factor pel qual es multiplica és positiu (ús de n > 1): 0,5 p. Penalitzacions: suposar la T.I. i arribar a una cosa certa sense equivalències (⇔) ben encadenades, −1 p; usar n = 1 al pas inductiu (divisió per n−1 = 0), −0,5 p; només comprovar casos concrets, 0 p al pas inductiu.",
+        "enunciado" : "Demostra per inducció simple que per a tot n ≥ 1:\n\n`∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n`\n\nEscriu explícitament el pas base, la hipòtesi d'inducció (H.I.) i la tesi d'inducció (T.I.), i indica en quin pas fas servir la H.I. Justifica cada desigualtat.",
+        "fuente" : "Estil de EXAMFM.pdf, 1r parcial 07\/11\/2024, problema 2 i 1r parcial 04\/11\/2022, problema 2 (inducció amb desigualtat de sumatori); enunciat propi",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "puntos" : 4.5,
+        "solucionReferencia" : "Pas base, n = 1: el costat esquerre és `∑_{k=1}^{1} 1\/k² = 1` i el dret és `2 − 1\/1 = 1`. Es compleix `1 ≤ 1`.\n\nPas inductiu, sigui n > 1:\n• H.I.: `∑_{k=1}^{n−1} 1\/k² ≤ 2 − 1\/(n−1)`.\n• T.I.: `∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n`.\n\n`∑_{k=1}^{n} 1\/k²` =(1) `∑_{k=1}^{n−1} 1\/k² + 1\/n²` ≤(2) `2 − 1\/(n−1) + 1\/n²` ≤(3) `2 − 1\/n`.\n(1) Separem l'últim sumand.\n(2) Sumem `1\/n²` als dos costats de la H.I. Aquí és on es fa servir la H.I.\n(3) `2 − 1\/(n−1) + 1\/n² ≤ 2 − 1\/n` ⇔ `1\/n² ≤ 1\/(n−1) − 1\/n = 1\/(n(n−1))` ⇔(*) `n(n−1) ≤ n²` ⇔ `−n ≤ 0`, que és cert.\n(*) Multipliquem per `n²·n(n−1)`, que és positiu perquè n > 1, i per tant es manté el sentit de la desigualtat.\nPer transitivitat de ≤ obtenim la T.I. ∎",
+        "tema" : "Inducció",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Implicació ⇐ ben justificada: 1 p. Implicació ⇒: plantejar la doble inclusió o el contrarecíproc dient el mètode, 0,5 p; demostració element a element de `A ⊆ B` amb les definicions de ∪ i ∩ i l'ús explícit de (H), 1,25 p; l'altra inclusió (n'hi ha prou de dir 'anàlogament intercanviant A i B' si queda clar), 0,75 p. Un diagrama de Venn no puntua com a demostració. Al contrarecíproc, negar malament A = B (per exemple, escriure 'A ⊈ B i B ⊈ A' en lloc de 'o'), −0,75 p.",
+        "enunciado" : "Siguin A, B conjunts qualssevol. Demostra que:\n\n`A ∪ B ⊆ A ∩ B ⇔ A = B`\n\nIndica el mètode que fas servir en cada implicació i justifica cada pas (definició de ∪, ∩, ⊆ o la igualtat de conjunts).",
+        "fuente" : "Estil de EXAMFM.pdf, 1r parcial 21\/04\/2021, problema 3 (A − B = B − A ⇔ A = B) i 1r parcial 04\/11\/2022, problema 3; enunciat propi",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "puntos" : 3.5,
+        "solucionReferencia" : "⇐) Prova directa per substitució. Si A = B, substituïm B per A: `A ∪ B = A ∪ A = A` i `A ∩ B = A ∩ A = A` (idempotència). Com que `A ⊆ A`, es té `A ∪ B ⊆ A ∩ B`.\n\n⇒) Prova directa. Suposem `A ∪ B ⊆ A ∩ B` (H). Per veure A = B, demostrem `A ⊆ B` i `B ⊆ A`.\n• `A ⊆ B`: sigui x ∈ A qualsevol. Aleshores x ∈ A ∨ x ∈ B, és a dir x ∈ A ∪ B (def. ∪). Per (H), x ∈ A ∩ B, és a dir x ∈ A ∧ x ∈ B (def. ∩), i per tant x ∈ B.\n• `B ⊆ A`: es fa igual intercanviant A i B. Sigui x ∈ B ⇒ x ∈ A ∪ B ⇒(H) x ∈ A ∩ B ⇒ x ∈ A.\nTenim doble inclusió, per tant A = B. ∎\n\nAlternativa per a ⇒: contrarecíproc. Si A ≠ B, existeix x amb (x ∈ A ∧ x ∉ B) o amb (x ∈ B ∧ x ∉ A). En el primer cas x ∈ A ∪ B però x ∉ A ∩ B, de manera que `A ∪ B ⊈ A ∩ B`. El segon cas és simètric.",
+        "tema" : "Conjunts i Relacions",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts)"
+  },
+  "fecha" : "2026-10-25T17:31:24Z",
+  "fuentes" : [
+    "material\/EXAMFM.pdf",
+    "material\/raco\/Examens_FM_-_2026-07-27T122117.133.pdf",
+    "material\/raco\/FM_setmana1_grup50.pdf",
+    "material\/raco\/FM_setmana2_grup50.pdf",
+    "material\/raco\/FM_setmana3_grup50.pdf",
+    "material\/raco\/FM_setmana4_grup50.pdf",
+    "material\/raco\/FM_setmana56_grup50.pdf"
+  ],
+  "id" : "44254F11-3A1B-42A9-B0F3-B8FFA1EDF505",
+  "minutos" : 14,
+  "modo" : "diagnostico",
+  "pizarras" : {
+    "P2" : [
+      "estudi\/simulacres\/2026-10-25-44254F11\/P2-1.png"
+    ],
+    "P3" : [
+      "estudi\/simulacres\/2026-10-25-44254F11\/P3-1.png"
+    ]
+  },
+  "respuestas" : {
+    "P1" : "b"
+  }
+}
