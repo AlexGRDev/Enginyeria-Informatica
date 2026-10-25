@@ -1,4 +1,170 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1,
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+      },
+      {
+        "nota" : 0.5,
+        "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+      }
+    ],
+    "notaTotal" : 0.2,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Lista de pesos 2,4,8,... en vez de 1,2,4,... y bits leídos con el peso creciente de izquierda a derecha.",
+            "patron" : "Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido)",
+            "refuerzo" : "Etiquetar los bits de derecha a izquierda con 2^0, 2^1, ...; el LSB es el de la derecha y pesa 1.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          },
+          {
+            "descripcion" : "El hexadecimal dado (952) no corresponde a ninguna agrupación de nibbles de 10101101.",
+            "patron" : "No agrupa de 4 en 4 bits al pasar binario a hexadecimal",
+            "refuerzo" : "Separar en nibbles desde la derecha y convertir cada uno (1010=A, 1101=D).",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "Xu = 600 y hexadecimal 952 son incorrectos. Tu tabla de pesos empieza en 2 (2, 4, 8, ..., 256) en lugar de 1, 2, 4, ..., 128, y además asignas los bits de izquierda a derecha con peso creciente, cuando el MSB tiene el peso mayor. Ni siquiera tu propia tabla suma 600. El hexadecimal no se obtiene agrupando de 4 en 4: 1010 1101 = AD. Xu = 128+32+8+4+1 = 173.",
+        "id" : "1",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Tabla de pesos 2..256 y binario resultante incorrecto para el decimal dado.",
+            "patron" : "Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido)",
+            "refuerzo" : "Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          },
+          {
+            "descripcion" : "Apartado b en blanco.",
+            "patron" : "No sabe abordar el rango de representación en base b",
+            "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1].",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "a) El hexadecimal 1CA es correcto (0,25), pero tu binario 10100111 es incorrecto y no corresponde a 458 ni a 1CA (el binario correcto es 111001010). Además la tabla de pesos vuelve a empezar en 2, y el número de partida está escrito como 758 en tu pizarra. No muestras el procedimiento que lleva de tu binario a 1CA. b) No contestado: rango [0, 5^4 - 1] = [0, 624].",
+        "id" : "2",
+        "puntosObtenidos" : 0.25
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar el número mínimo de bits para un rango",
+            "refuerzo" : "Buscar el menor n con 2^n > máximo; los dígitos hexadecimales son ceil(n\/4).",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "En blanco. Hacían falta 10 bits (2^9 = 512 < 1000 < 1024 = 2^10) y 3 dígitos hexadecimales.",
+        "id" : "3",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Solo hay valores sueltos de F, sin las 8 combinaciones ni las señales intermedias.",
+            "patron" : "Tabla de verdad incompleta o sin columnas intermedias",
+            "refuerzo" : "Escribir las 8 filas en orden binario y una columna por señal intermedia.",
+            "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+          }
+        ],
+        "feedback" : "No hay tabla completa: solo se ven valores sueltos de F sin columnas intermedias (a+b, b·c) y no hay 8 filas. La solución esperada es 0,0,1,0,1,1,1,0 para abc de 000 a 111. Sin tabla verificable, 0.",
+        "id" : "4",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
+            "refuerzo" : "Evaluar columna a columna x, s, a·b, x·c, co.",
+            "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+          }
+        ],
+        "feedback" : "En blanco. s = a⊕b⊕c; co = m3+m5+m6+m7.",
+        "id" : "5",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar la suma de minterms",
+            "refuerzo" : "Un minterm por cada fila con salida 1, y contar puertas a partir de ellos.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          }
+        ],
+        "feedback" : "En blanco. f = m1+m2+m4+m7; 4 And de 3 entradas y 1 Or de 4; ROM de 16 palabras de 3 bits.",
+        "id" : "6",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar el contenido de una ROM",
+            "refuerzo" : "Dirección = 4·Yu + Xu; recorrer los valores de Yu y marcar los Xu < Yu.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          }
+        ],
+        "feedback" : "En blanco. 16 palabras; unos en las direcciones 4, 8, 9, 12, 13, 14.",
+        "id" : "7",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar caminos críticos y tiempos de propagación",
+            "refuerzo" : "Sumar los Tp de las puertas de cada camino entrada-salida y quedarse con el máximo.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "En blanco. a: 90, b: 80, c: 50, d: 30.",
+        "id" : "8",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar caminos críticos con bloques",
+            "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "En blanco. x→w: 100 por x-Not-e-s-Or-w; y→z: 90 por y-k-f-And-z.",
+        "id" : "9",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar cronogramas con glitch",
+            "refuerzo" : "Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "En blanco. n baja en t=30, w sube en 40 y baja en 50 (glitch en [40,50)).",
+        "id" : "10",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Test casi en blanco: solo has intentado 1, 2 y 4, y casi todo está mal. El fallo de base es el cálculo con pesos de bit: pones la lista de pesos empezando en 2 (2, 4, 8...) en vez de en 1 (1, 2, 4...) y lees el vector al revés. Eso te da un decimal y un hexadecimal incorrectos en 1. En 2, el hexadecimal 1CA coincide con la solución, pero no sale de tu binario, que es otro número. Las preguntas de síntesis y modelo temporal están en blanco. Para el 30\/10 hay que repasar la conversión base 2 ↔ 10 ↔ 16, y también tablas de verdad, minterms\/ROM y caminos críticos, porque ahora mismo no puntúas en ellos."
+  },
   "diagnostico" : true,
   "examen" : {
     "duracionMinutos" : 15,
@@ -150,6 +316,7 @@
   "id" : "8CB620BD-6DB4-439C-A288-FA1F133606AE",
   "minutos" : 24,
   "modo" : "diagnostico",
+  "notaDespues" : 0.3888888888888889,
   "pizarras" : {
     "1" : [
       "estudi\/simulacres\/2026-10-25-8CB620BD\/1-1.png"
