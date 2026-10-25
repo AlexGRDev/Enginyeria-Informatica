@@ -1,0 +1,47 @@
+{
+  "creado" : "2026-10-25T10:17:31Z",
+  "modoTutor" : "guiar",
+  "notaObjetivo" : 8,
+  "temas" : [
+    {
+      "enExamen" : true,
+      "nombre" : "Demostracions",
+      "peso" : 0.25
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Inducció",
+      "peso" : 0.25
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Conjunts i Relacions",
+      "peso" : 0.25
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Lògica",
+      "peso" : 0.15
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Sumatoris",
+      "peso" : 0.1
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Funcions",
+      "peso" : 0
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Divisibilitat",
+      "peso" : 0
+    },
+    {
+      "enExamen" : false,
+      "nombre" : "Congruències",
+      "peso" : 0
+    }
+  ]
+}

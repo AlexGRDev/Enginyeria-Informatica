@@ -1,5 +1,24 @@
 # Estado — FM
 
+<!-- kiwi-gei:estat:inici -->
+## Nota si el examen fuera hoy
+
+Generado por Kiwi GEI el 2026-10-25. Objetivo: **8,0**. Próximo examen: Parcial 1 FM, 2026-11-04 (en 10 días).
+
+**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+
+| Tema | Peso | Dominio | Evaluaciones | Última |
+|---|---|---|---|---|
+| Demostracions | 25 % | sin evaluar | 0 | - |
+| Inducció | 25 % | sin evaluar | 0 | - |
+| Conjunts i Relacions | 25 % | sin evaluar | 0 | - |
+| Lògica | 15 % | sin evaluar | 0 | - |
+| Sumatoris | 10 % | sin evaluar | 0 | - |
+| Funcions (fuera del examen) | 0 % | sin evaluar | 0 | - |
+| Divisibilitat (fuera del examen) | 0 % | sin evaluar | 0 | - |
+| Congruències (fuera del examen) | 0 % | sin evaluar | 0 | - |
+<!-- kiwi-gei:estat:fi -->
+
 ## Última actualización: 2026-10-08
 
 ## Cubierto
