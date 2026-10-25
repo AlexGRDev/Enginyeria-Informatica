@@ -1,0 +1,81 @@
+{
+  "temas" : {
+    "Camp elèctric i potencial (E = -∇V)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    },
+    "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    },
+    "Corrent Altern" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    },
+    "Corrent elèctric (I = dQ\/dt, I = n·q·v_d·A, J)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    },
+    "Càrrega elèctrica i llei de Coulomb" : {
+      "dominio" : 7,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 7
+        }
+      ]
+    },
+    "Llei d'Ohm (V = IR, J = σE) i resistència" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    },
+    "Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
+          "fecha" : "2026-10-25T11:15:03Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    }
+  }
+}
