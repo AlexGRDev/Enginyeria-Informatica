@@ -3,7 +3,7 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**.
+Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**. Próximo examen: Parcial 1 IC, 2026-10-30 (en 5 días).
 
 **Sin estimación todavía**: haz el test diagnóstico o un simulacro.
 
