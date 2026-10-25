@@ -2,7 +2,7 @@
   {
     "asignatura" : "FM",
     "fecha" : "2026-11-04T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "88D453CF-DDF9-46AA-9F56-61E8375F105E",
     "notas" : "",
     "tipo" : "examen",
@@ -11,7 +11,7 @@
   {
     "asignatura" : "FM",
     "fecha" : "2026-12-22T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "27DB5E41-DD3A-4018-88A9-59B52DB076C0",
     "notas" : "",
     "tipo" : "examen",
@@ -20,7 +20,7 @@
   {
     "asignatura" : "FM",
     "fecha" : "2027-01-14T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "29F6141F-2BAF-48FB-947F-FFC2C5F0D760",
     "notas" : "",
     "tipo" : "examen",
@@ -29,7 +29,7 @@
   {
     "asignatura" : "FM",
     "fecha" : "2027-02-06T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "BF0A2369-3480-455E-940E-7C7CB1332DE4",
     "notas" : "",
     "tipo" : "examen",
