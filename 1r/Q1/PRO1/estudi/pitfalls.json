@@ -1,0 +1,60 @@
+[
+  {
+    "descripcion" : "Entrega main vacío, sin lectura ni salida.",
+    "ejemplos" : [
+      "Entrega main vacío, sin lectura ni salida.",
+      "Lee un solo entero en vez de la expresión completa con operador y comparador, y sin bucle hasta fin de entrada.",
+      "Sin esquema de recorrido de secuencia de caracteres con búsqueda.",
+      "Sin esquema de recorrido con centinela y contador de rachas."
+    ],
+    "id" : "9B332E4F-C8B2-439A-B5F0-B3A78367A0B8",
+    "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+    "primera" : "2026-10-25T20:40:13Z",
+    "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+    "tema" : "E\/S con std::cin\/std::cout",
+    "ultima" : "2026-10-25T20:40:13Z",
+    "veces" : 4
+  },
+  {
+    "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
+    "ejemplos" : [
+      "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
+      "Sin intento de enumeración con bucles anidados.",
+      "Sin comparación de racionales con enteros ni simplificación con gcd."
+    ],
+    "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
+    "patron" : "No sabe abordar Tipos básicos",
+    "primera" : "2026-10-25T20:40:13Z",
+    "refuerzo" : "Comparar a\/b y c\/d con a*d y c*b, y simplificar con gcd al imprimir.",
+    "tema" : "Tipos básicos",
+    "ultima" : "2026-10-25T20:40:13Z",
+    "veces" : 3
+  },
+  {
+    "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
+    "ejemplos" : [
+      "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar."
+    ],
+    "id" : "EBF1EB1F-8D20-4D54-A6D2-9035ECB36EAF",
+    "patron" : "Código que no compila por descuido de sintaxis",
+    "primera" : "2026-10-25T20:40:13Z",
+    "refuerzo" : "Compilar antes de entregar y escribir comillas rectas.",
+    "tema" : "Tipos básicos",
+    "ultima" : "2026-10-25T20:40:13Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "No implementa la función pedida.",
+    "ejemplos" : [
+      "No implementa la función pedida.",
+      "No implementa la función pedida."
+    ],
+    "id" : "FC1EE0B2-27F1-446F-9AB2-9E5D554AF4FD",
+    "patron" : "No sabe abordar Funciones auxiliares",
+    "primera" : "2026-10-25T20:40:13Z",
+    "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+    "tema" : "Funciones auxiliares",
+    "ultima" : "2026-10-25T20:40:13Z",
+    "veces" : 2
+  }
+]

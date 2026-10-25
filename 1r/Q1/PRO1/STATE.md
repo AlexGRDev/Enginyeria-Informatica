@@ -5,17 +5,17 @@
 
 Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**. Próximo examen: Recuperació PRO1, 2027-02-06 (en 104 días).
 
-**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+**Estimación: 0,0 / 10** (-10,0 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,0.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | sin evaluar | 0 | - |
-| Punteros y aritmética de punteros | 20 % | sin evaluar | 0 | - |
-| Cadenas estilo C (char*) | 20 % | sin evaluar | 0 | - |
-| Funciones auxiliares | 15 % | sin evaluar | 0 | - |
-| Recursividad | 12 % | sin evaluar | 0 | - |
-| std::string | 10 % | sin evaluar | 0 | - |
-| E/S con std::cin/std::cout | 8 % | sin evaluar | 0 | - |
+| Tipos básicos | 15 % | 0,0 | 1 | 2026-10-25 (jutge) |
+| Punteros y aritmética de punteros | 20 % | 0,0 | 1 | 2026-10-25 (jutge) |
+| Cadenas estilo C (char*) | 20 % | 0,0 | 1 | 2026-10-25 (jutge) |
+| Funciones auxiliares | 15 % | 0,0 | 1 | 2026-10-25 (jutge) |
+| Recursividad | 12 % | 0,0 | 1 | 2026-10-25 (jutge) |
+| std::string | 10 % | 0,0 | 1 | 2026-10-25 (jutge) |
+| E/S con std::cin/std::cout | 8 % | 0,0 | 1 | 2026-10-25 (jutge) |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08

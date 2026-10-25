@@ -1,0 +1,336 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 0,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 0,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 0,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Entrega main vacío, sin lectura ni salida.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Practicar lectura de casos hasta fin de entrada con bucles anidados y salida carácter a carácter.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "main vacío. No lee la entrada ni dibuja ninguna A. No sabes abordar el esquema de lectura de casos hasta fin de entrada ni los bucles anidados de dibujo por caracteres.",
+        "funcional" : 0,
+        "id" : "P1",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Ejercicios de extracción de dígitos y reconstrucción de enteros con potencias de 10.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "main vacío. Falta leer cada número y procesar sus dígitos con %10 y \/10, sumando 1 a los pares y reconstruyendo el número en el orden correcto. Ten en cuenta el 9 par+1 no existe, pero el 8 pasa a 9 sin acarreo.",
+        "funcional" : 0,
+        "id" : "P2",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Lee un solo entero en vez de la expresión completa con operador y comparador, y sin bucle hasta fin de entrada.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Leer char\/string de operadores y repetir con while (cin >> a >> op >> b >> cmp >> c).",
+            "tema" : "E\/S con std::cin\/std::cout"
+          },
+          {
+            "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
+            "patron" : "Código que no compila por descuido de sintaxis",
+            "refuerzo" : "Compilar antes de entregar y escribir comillas rectas.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "No compila: falta `;` tras `int expr`, `exrp` mal escrito, comillas tipográficas “false” y `else if (expr >` sin terminar. La lógica es incorrecta: el enunciado exige leer NUM1 OP NUM2 CMP NUM3 (tres números, un operador char y un comparador de uno o dos caracteres), y tú lees un solo entero. Los errores de sintaxis eran triviales, pero la lógica está lejos de estar completa.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin esquema de recorrido de secuencia de caracteres con búsqueda.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema de búsqueda sobre secuencia leída carácter a carácter con contador de repeticiones consecutivas.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "main vacío. Falta leer N y recorrer las cartas una a una con contador de racha, sin guardarlas, parando en el primer N-Poker.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No implementa la función pedida.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Escribir funciones con pre\/post que devuelvan string según comparaciones de parámetros.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "No hay función poker_hand; solo main vacío. Debía comparar las tres cartas entre sí y distinguir trío de ases, trío, pareja y todas distintas.",
+        "funcional" : 0,
+        "id" : "P5",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No implementa la función pedida.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "No hay función is_bicolor. Había que recorrer los dígitos y contar los cambios de dígito (exactamente uno) sin que un dígito reaparezca.",
+        "funcional" : 0,
+        "id" : "P6",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin intento de enumeración con bucles anidados.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Enumeración con bucles anidados y salida carácter a carácter.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "main vacío. Falta generar los bicolor de N cifras, por ejemplo con dos dígitos d≠e y una longitud k de 1 a N-1 para el primer bloque, evitando ceros a la izquierda.",
+        "funcional" : 0,
+        "id" : "P7",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin esquema de recorrido con centinela y contador de rachas.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "main vacío. Falta leer hasta '.', contar rachas de cartes iguales y, al acabar cada racha de k≥2, escribir Parella, Trio, Poker o 'k C's!', sin almacenar la secuencia. Cuidado con la última racha antes del punto.",
+        "funcional" : 0,
+        "id" : "P8",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin comparación de racionales con enteros ni simplificación con gcd.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Comparar a\/b y c\/d con a*d y c*b, y simplificar con gcd al imprimir.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "main vacío. Falta leer numerador, '\/' y denominador, comparar fracciones con productos cruzados en enteros (no reales), guardar la mayor y simplificar con gcd al final.",
+        "funcional" : 0,
+        "id" : "P9",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Simulacro sin resolver: ocho archivos son la plantilla con un main vacío y P3 es un borrador que no compila. Nota 0. Para el parcial del 29\/10 conviene practicar los esquemas de lectura (caso a caso, con centinela o sin tamaño conocido), los bucles con dígitos y las funciones sencillas con pre\/post. En un examen real, entrega al menos una versión parcial que compile y pase los casos públicos."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 75,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X46364 · Dibuixant A's\n\n# Dibuixant A's\n\nFeu un programa que, donats naturals positius $n$, dibuixa `A`'s com les\nque es mostren als exemples.\n\n## Entrada\n\nUn nombre arbitrari de casos, a on cadascun consisteix en un natural\npositiu en una línia.\n\n## Sortida\n\nPer a cada cas, la corresponent `A`, seguida d'una línia en blanc.\n\n## Observació\n\nPodeu escriure la sortida caràcter a caràcter o amb strings construits\nprèviament, com preferiu.\n\nAvaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T16:23:52.444Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · ya lo tenías aceptado",
+        "id" : "P1",
+        "jutge" : "X46364_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X15492 · Sumar 1 als dígits parells\n\n# Sumar 1 als dígits parells\n\nEscriviu un programa que llegeix nombres d'entrada, i els torna a\nescriure després d'haver sumat 1 a aquells dígits que fossin parells.\n\nPer exemple, el programa transformarà el nombre `785902` en `795913`.\n\n## Entrada\n\nL'entrada té un nombre arbitrari de casos. Cada cas conté un natural\npositiu en una línia.\n\n## Sortida\n\nPer a cada cas, la sortida té una línia amb el corresponent nombre\nresultant de sumar 1 als dígits que siguin parells.\n\n## Observació\n\nNo es poden utilitzar mètodes d'emmagatzemament massiu d'informació (com\nper exemple `string` o `vector`). Llegiu els nombres d'entrada un per un\nsobre variables `int`, per exemple amb `cin >> a`, i solucioneu el\nproblema manipulant enters amb operacions bàsiques `+,-,*,\/,%`.\n\nAvaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:51:46.261Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P2",
+        "jutge" : "X15492_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X40685 · Comparant resultats d'operacions\n\n# Comparant resultats d'operacions\n\nImplementeu un programa que llegeix expressions booleanes de comparació\nentre una operació aritmètica entre naturals i un nombre natural, i\ndetermina si s'avaluen a `true` o `false`.\n\n## Entrada\n\nCada línia de l'entrada té el següent format:\n\n    NUM1 OPERADOR NUM2 COMPARADOR NUM3\n\nA on `NUM1, NUM2, NUM3` son naturals, `OPERADOR` és un operador de\n`{+,-,*}`, i COMPARADOR és un operador de comparació de\n`{,<=,>=,==,!=}`.\n\n## Sortida\n\nPer a cada línia d'entrada, la sortida conté `true` o `false`, el valor\nbooleà al que s'avalua l'expressió booleana que representa la línia.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T15:56:43.361Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P3",
+        "jutge" : "X40685_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V43042 · N-Poker consecutiu\n\n# N-Poker consecutiu\n\nTenim una seqüència de cartes de Poker, i volem saber si en algun punt\nde la seqüència hi ha $N$ cartes consecutives iguals (un \\\"N-Poker\nconsecutiu\\\"). Fes un **programa** que llegeixi un enter positiu $N$, i\nuna seqüència de cartes, i determini si la seqüència té o no $N$ cartes\nconsecutives iguals.\n\n## Entrada\n\nL'entrada comença amb un enter positiu $N$. Després ve una seqüència de\ncaràcters que representen les cartes de la seqüència. Tal com en el\nproblema \\\"Mà de Poker\\\", els caràcters per a les cartes són `A`, `2`,\n`3`, \\..., `9`, `0`, `J`, `Q` i `K`. Es garanteix que la seqüència de\ncartes té almenys una carta.\n\n## Sortida\n\nEscriu \\\"$N$-Poker de $x$!\\\" si la seqüència té $N$ cartes consecutives\nde valor $x$ iguals. En cas contrari, escriu \\\"No hi ha N-Poker\\\". Per\nexemple, si $N$ és 7, i trobem 7 repeticions de la carta K, la sortida\nserà \\\"7-Poker de K!\\\", però si no hi ha cap carta repetida 7 vegades,\nla sortida serà \\\"No hi ha 7-Poker\\\". La sortida identifica el primer\n$N$-Poker consecutiu trobat, amb la $x$ corresponent, tot i que a la\nseqüència hi podria haver subseqüents $N$-Pokers consecutius.\n\n## Observació\n\nEn aquest problema cal tractar l'entrada caràcter a caràcter, si fas\nservir `string`s o algun mètode per emmagatzemar les dades el problema\nserà considerat invàlid. A més, tingues en compte que la seqüència prové\nd'una font il·limitada de cartes, de manera que no es pot suposar cap\nlongitud màxima.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:09:23.797Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · ya lo tenías aceptado",
+        "id" : "P4",
+        "jutge" : "V43042_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V43542 · Mà de Poker\n\n# Mà de Poker\n\nEscriu una **funció** que donades 3 cartes de Pòquer retorni una\ndescripció (un `string`) de la mà que representen. La descripció ha de\nser una de les quatre possibilitats següents: \\\"Trio d'Asos!\\\",\n\\\"Trio\\\", \\\"Parella\\\", o \\\"Totes les cartes diferents\\\".\n\nLes cartes són un dels 13 caràcters següents: `A`, `2`, `3`, \\..., `9`,\n`0`, `J`, `Q`, `K`. Hi has dos caràcters que val la pena explicar: la\ncarta `A` és l'as i representa l'1, tal com en les baralles normals, i\nel dígit `0` representa el 10, per simplificar la lectura.\n\nLa capçalera de la funció és, exactament:\n\n    \/**\n    * @pre c1, c2, c3 en {A, 2, 3, ..., 8, 9, 0, J, Q, K}\n    * @post Retorna \"Trio d'Asos!\", \"Trio\", \"Parella\", o \n    *       \"Totes les cartes diferents\" segons c1, c2 i c3.\n    *\/\n    string poker_hand(char c1, char c2, char c3);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-10-01T15:36:25.399Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · ya lo tenías aceptado",
+        "id" : "P5",
+        "jutge" : "V43542_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T80784 · Nombres bicolor\n\n# Nombres bicolor\n\nDefinim com a número *bicolor* un natural $n$ amb només dos dígits\ndiferents que estan repetits en dos blocs (o \\\"colors\\\"). Més\nformalment, la seqüència de dígits de $n$ és\n$d_1d_2\\ldots d_ke_1e_2\\ldots e_l$, on $d$ i $e$ són els dos dígits i,\n$d\\neq e$, $k > 0$ i $l > 0$.\n\nExemples de números bicolor: 7722, 44111, 666699, 277 i 45.\\\nExemples de números que **no** són bicolor: 121, 113311, 7878, 1234, 7,\n99910.\n\nImplementa una **funció** `is_bicolor` que rep un natural i determina si\nés bicolor. La funció rep un número $n >= 0$ i retorna `true` si és\nbicolor i `false` en cas contrari.\n\nLa capçalera de la funció ha de ser:\n\n    \/**\n     * @pre  n >= 0\n     * @post retorna cert si n és bicolor, fals en cas contrari\n     *\/\n    bool is_bicolor(int n);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-03-05T08:50:13.138Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · ya lo tenías aceptado",
+        "id" : "P6",
+        "jutge" : "T80784_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### Z98456 · Enumera nombres bicolor\n\n# Enumera nombres bicolor\n\nExactament igual que a l'exercici \\\"Nombres bicolor\\\", definim com a\nnúmero *bicolor* un natural $n$ amb només dos dígits diferents que estan\nrepetits en dos blocs (o \\\"colors\\\").\n\nFes un **programa** que mostra per pantalla tots els nombres bicolor de\n$N$ xifres.\n\n## Entrada\n\nL'entrada consisteix en un natural $N$, amb $N >= 2$.\n\n## Sortida\n\nUna llista de nombres bicolor de $N$ xifres, un per línia. Els nombres\nes poden escriure **en qualsevol ordre**. Pots generar la sortida com\nvulguis, ja sigui fent servir enters o bé generant els nombres caràcter\na caràcter.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T23:08:10.554Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P7",
+        "jutge" : "Z98456_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### Z61488 · Repeticions de Cartes\n\n# Repeticions de Cartes\n\nEscriu un **programa** que informi de les *repeticions consecutives* en\nuna seqüència de cartes de Poker. Es tracta de detectar subseqüències\nconsecutives de cartes iguals, d'una longitud $k \\geq 2$, i escriure a\nla sortida una frase descrivint cada subseqüència fent servir els noms\ntípics del Poker. Considerarem 4 casos: \\\"Parella\\\" ($k = 2$), \\\"Trio\\\"\n($k = 3$), \\\"Poker\\\" ($k = 4$) i repeticions més llargues ($k > 4$). Si\nuna carta no surt repetida a la seqüència no cal informar de res. Tampoc\ncal considerar solapaments, només cal informar de les subseqüències amb\nrepeticions més llargues.\n\n## Entrada\n\nL'entrada consisteix en una seqüència de caràcters que representen les\ncartes. Tal com en el problema \\\"Millor Carta\\\", els caràcters per a les\ncartes són `A`, `2`, `3`, \\..., `9`, `0`, `J`, `Q` i `K`. La seqüència\nde cartes acaba amb un punt, o sigui el caràcter `'.'`, i pot estar\nbuida.\n\n## Sortida\n\nCal detectar les repeticions consecutives de cartes i escriure a la\nsortida la descripció que correspongui al número de vegades $k$ que la\ncarta $C$ ha sortit repetida: \\\"Parella de $C$s\\\", \\\"Trio de $C$s\\\",\n\\\"Poker de $C$s\\\" o \\\"$k$ $C$s!\\\". Cada descripció ha d'anar en una\nlínia diferent i en l'ordre en què apareixen a la seqüència d'entrada.\nConsulteu les sortides dels jocs de prova públics per veure'n exemples\nconcrets.\n\n## Observació\n\nEn aquest problema cal tractar l'entrada caràcter a caràcter; si feu\nservir `string`s o algun mètode per emmagatzemar les cartes el problema\nserà considerat **invàlid**. A més, tingueu en compte que la seqüència\ns'assumeix que prové d'una font il·limitada de cartes, de manera que no\nes pot suposar cap longitud màxima.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T20:01:10.538Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P8",
+        "jutge" : "Z61488_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T61086 · Màxim d'una seqüència de racionals\n\n# Màxim d'una seqüència de racionals\n\nFes un programa que calcula el màxim d'una seqüència de racionals.\n\n## Entrada\n\nUna seqüència de racionals positius sense sentinella, amb almenys 1\nelement. Els racionals d'entrada no tenen perquè estar simplificats.\nCada racional està format per dos enters separats pel caràcter '`\/`'.\n\n## Sortida\n\nEl racional més gran de la seqüència, simplificat, en el mateix format\nque els racionals d'entrada.\n\n## Observació\n\n- Els centres d'interès d'aquest problema són la **correctesa** i la\n  **llegibilitat**.\n\n- Podeu fer servir la funció `gcd` (màxim comú divisor) de la llibreria\n  estàndard que es pot incloure amb la capçalera '`#include <numeric>`'.\n  (També es poden fer servir '`max`', '`min`' i '`swap`', que estan\n  incloses automàticament quan s'inclou `iostream`.)\n\n- No feu servir nombres reals per representar el valor d'un racional en\n  aquest exercici, si ho feu l'exercici serà invalidat.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T12:54:41.005Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P9",
+        "jutge" : "T61086_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 9 problemas"
+  },
+  "fecha" : "2026-10-25T20:35:53Z",
+  "fuentes" : [
+    "X46364",
+    "X15492",
+    "X40685",
+    "V43042",
+    "V43542",
+    "T80784",
+    "Z98456",
+    "Z61488",
+    "T61086"
+  ],
+  "id" : "6F46DF11-488B-455A-ABB0-DDF07F6326F3",
+  "minutos" : 3,
+  "modo" : "jutge",
+  "notaDespues" : 0,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X46364.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X15492.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X40685.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\texpr\n\tstd::cin >> expr;\n\tif (exrp > 3)\n\t\tstd::cout << “false” << std::endl;\n\telse if (expr >\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V43042.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P5" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V43542.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P6" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T80784.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P7" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   Z98456.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P8" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   Z61488.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P9" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T61086.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/25 21:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/25 21:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+
+  }
+}
