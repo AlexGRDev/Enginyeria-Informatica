@@ -1,7 +1,9 @@
 {
   "estados" : {
+    "F" : "enCurso",
     "FM" : "enCurso",
-    "IC" : "enCurso"
+    "IC" : "enCurso",
+    "PRO1" : "enCurso"
   },
   "examenes" : {
 
