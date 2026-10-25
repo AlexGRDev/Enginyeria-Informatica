@@ -123,6 +123,17 @@
       "nombre" : "Practuca Oscil.loscopi",
       "nota" : 7.7,
       "tipo" : "laboratorio"
+    },
+    {
+      "asignatura" : "F",
+      "componente" : "L2",
+      "detalle" : "Enunciado del Racó",
+      "fecha" : "2026-09-14T11:14:01Z",
+      "formato" : "online",
+      "id" : "35D33680-AF40-4F0E-8C12-DB9D7AB3E184",
+      "nombre" : "Práctica 2 · Simulacio de circuits de corrent continu",
+      "origen" : "raco-practica|F|2",
+      "tipo" : "practica"
     }
   ],
   "codigos" : {
