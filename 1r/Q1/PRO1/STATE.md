@@ -1,5 +1,23 @@
 # Estado — PRO1
 
+<!-- kiwi-gei:estat:inici -->
+## Nota si el examen fuera hoy
+
+Generado por Kiwi GEI el 2026-10-25. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 4 días).
+
+**Sin estimación todavía**: haz el test diagnóstico o un simulacro.
+
+| Tema | Peso | Dominio | Evaluaciones | Última |
+|---|---|---|---|---|
+| Tipos básicos | 15 % | sin evaluar | 0 | - |
+| Punteros y aritmética de punteros | 20 % | sin evaluar | 0 | - |
+| Cadenas estilo C (char*) | 20 % | sin evaluar | 0 | - |
+| Funciones auxiliares | 15 % | sin evaluar | 0 | - |
+| Recursividad | 12 % | sin evaluar | 0 | - |
+| std::string | 10 % | sin evaluar | 0 | - |
+| E/S con std::cin/std::cout | 8 % | sin evaluar | 0 | - |
+<!-- kiwi-gei:estat:fi -->
+
 ## Última actualización: 2026-10-08
 
 ## Cubierto

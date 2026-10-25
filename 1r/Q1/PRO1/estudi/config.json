@@ -1,0 +1,42 @@
+{
+  "creado" : "2026-10-25T10:18:08Z",
+  "modoTutor" : "guiar",
+  "notaObjetivo" : 10,
+  "temas" : [
+    {
+      "enExamen" : true,
+      "nombre" : "Tipos básicos",
+      "peso" : 0.15
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Punteros y aritmética de punteros",
+      "peso" : 0.2
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Cadenas estilo C (char*)",
+      "peso" : 0.2
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Funciones auxiliares",
+      "peso" : 0.15
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Recursividad",
+      "peso" : 0.12
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "std::string",
+      "peso" : 0.1
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "E\/S con std::cin\/std::cout",
+      "peso" : 0.08
+    }
+  ]
+}
