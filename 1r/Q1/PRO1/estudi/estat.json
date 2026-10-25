@@ -1,0 +1,81 @@
+{
+  "temas" : {
+    "Cadenas estilo C (char*)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    },
+    "E\/S con std::cin\/std::cout" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    },
+    "Funciones auxiliares" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    },
+    "Punteros y aritmética de punteros" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    },
+    "Recursividad" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    },
+    "Tipos básicos" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    },
+    "std::string" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
+          "fecha" : "2026-10-25T20:40:13Z",
+          "fuente" : "jutge",
+          "nota" : 0
+        }
+      ]
+    }
+  }
+}
