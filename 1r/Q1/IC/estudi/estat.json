@@ -1,0 +1,48 @@
+{
+  "temas" : {
+    "Modelo temporal (tiempos de propagación, caminos críticos)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
+          "fecha" : "2026-10-25T20:31:52Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    },
+    "Puertas lógicas y análisis de combinacionales (tabla de verdad)" : {
+      "dominio" : 0.5,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
+          "fecha" : "2026-10-25T20:31:52Z",
+          "fuente" : "diagnostico",
+          "nota" : 0.5
+        }
+      ]
+    },
+    "Representación de números naturales (base b, binario, hexadecimal, conversiones)" : {
+      "dominio" : 1,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
+          "fecha" : "2026-10-25T20:31:52Z",
+          "fuente" : "diagnostico",
+          "nota" : 1
+        }
+      ]
+    },
+    "Síntesis de combinacionales (suma de minterms, ROM)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
+          "fecha" : "2026-10-25T20:31:52Z",
+          "fuente" : "diagnostico",
+          "nota" : 0
+        }
+      ]
+    }
+  }
+}

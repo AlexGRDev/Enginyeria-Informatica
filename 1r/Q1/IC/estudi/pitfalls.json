@@ -1,0 +1,146 @@
+[
+  {
+    "descripcion" : "Lista de pesos 2,4,8,... en vez de 1,2,4,... y bits leídos con el peso creciente de izquierda a derecha.",
+    "ejemplos" : [
+      "Lista de pesos 2,4,8,... en vez de 1,2,4,... y bits leídos con el peso creciente de izquierda a derecha.",
+      "Tabla de pesos 2..256 y binario resultante incorrecto para el decimal dado."
+    ],
+    "id" : "294C8402-8280-48E3-8D5B-0C304BD13C99",
+    "patron" : "Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido)",
+    "primera" : "2026-10-25T20:31:52Z",
+    "refuerzo" : "Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando.",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-25T20:31:52Z",
+    "veces" : 2
+  },
+  {
+    "descripcion" : "El hexadecimal dado (952) no corresponde a ninguna agrupación de nibbles de 10101101.",
+    "ejemplos" : [
+      "El hexadecimal dado (952) no corresponde a ninguna agrupación de nibbles de 10101101."
+    ],
+    "id" : "5D58A881-9392-4A05-A292-5B59638EBE23",
+    "patron" : "No agrupa de 4 en 4 bits al pasar binario a hexadecimal",
+    "primera" : "2026-10-25T20:31:52Z",
+    "refuerzo" : "Separar en nibbles desde la derecha y convertir cada uno (1010=A, 1101=D).",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-25T20:31:52Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Apartado b en blanco.",
+    "ejemplos" : [
+      "Apartado b en blanco."
+    ],
+    "id" : "9711CD03-5340-4016-AD29-89A235E6E19E",
+    "patron" : "No sabe abordar el rango de representación en base b",
+    "primera" : "2026-10-25T20:31:52Z",
+    "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1].",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-25T20:31:52Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "6531167C-AC00-4E29-BD79-CF8735D2141D",
+    "patron" : "No sabe abordar el número mínimo de bits para un rango",
+    "primera" : "2026-10-25T20:31:52Z",
+    "refuerzo" : "Buscar el menor n con 2^n > máximo; los dígitos hexadecimales son ceil(n\/4).",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-25T20:31:52Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Solo hay valores sueltos de F, sin las 8 combinaciones ni las señales intermedias.",
+    "ejemplos" : [
+      "Solo hay valores sueltos de F, sin las 8 combinaciones ni las señales intermedias."
+    ],
+    "id" : "1619ABF7-09CD-43FD-AE70-8C4929099071",
+    "patron" : "Tabla de verdad incompleta o sin columnas intermedias",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Escribir las 8 filas en orden binario y una columna por señal intermedia.",
+    "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "2486CC78-D59F-4E29-B0A0-DB9E17860C0F",
+    "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Evaluar columna a columna x, s, a·b, x·c, co.",
+    "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "FA83ED46-8155-4733-905B-A252E7AC8C39",
+    "patron" : "No sabe abordar la suma de minterms",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Un minterm por cada fila con salida 1, y contar puertas a partir de ellos.",
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "7F1BBAAE-8B7C-4781-9A48-A7F391FA4BE5",
+    "patron" : "No sabe abordar el contenido de una ROM",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Dirección = 4·Yu + Xu; recorrer los valores de Yu y marcar los Xu < Yu.",
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "10038CA6-45E4-428A-8539-9275122982B9",
+    "patron" : "No sabe abordar caminos críticos y tiempos de propagación",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Sumar los Tp de las puertas de cada camino entrada-salida y quedarse con el máximo.",
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "322FF751-6A13-4E9C-B377-2C48CF40F44B",
+    "patron" : "No sabe abordar caminos críticos con bloques",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida.",
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco.",
+    "ejemplos" : [
+      "Pregunta en blanco."
+    ],
+    "id" : "ABEA373A-D386-4EEF-BF0A-46692ACED947",
+    "patron" : "No sabe abordar cronogramas con glitch",
+    "primera" : "2026-10-25T20:31:53Z",
+    "refuerzo" : "Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo.",
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-25T20:31:53Z",
+    "veces" : 1
+  }
+]
