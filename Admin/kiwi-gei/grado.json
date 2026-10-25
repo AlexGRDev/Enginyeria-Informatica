@@ -11,6 +11,104 @@
   "extras" : [
 
   ],
+  "horario" : [
+    {
+      "asignatura" : "FM",
+      "aulas" : "A5001",
+      "dia" : 1,
+      "duracion" : 1,
+      "inicio" : "14:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "IC",
+      "aulas" : "A5001",
+      "dia" : 1,
+      "duracion" : 2,
+      "inicio" : "15:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "F",
+      "aulas" : "A5001",
+      "dia" : 1,
+      "duracion" : 2,
+      "inicio" : "17:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "FM",
+      "aulas" : "A5104",
+      "dia" : 2,
+      "duracion" : 2,
+      "inicio" : "14:00",
+      "tipo" : "L"
+    },
+    {
+      "asignatura" : "PRO1",
+      "aulas" : "A5001",
+      "dia" : 2,
+      "duracion" : 2,
+      "inicio" : "17:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "FM",
+      "aulas" : "A5001",
+      "dia" : 3,
+      "duracion" : 1,
+      "inicio" : "15:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "PRO1",
+      "aulas" : "C6S303",
+      "dia" : 3,
+      "duracion" : 3,
+      "inicio" : "16:00",
+      "tipo" : "L"
+    },
+    {
+      "asignatura" : "FM",
+      "aulas" : "A5001",
+      "dia" : 4,
+      "duracion" : 1,
+      "inicio" : "14:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "IC",
+      "aulas" : "A5001",
+      "dia" : 4,
+      "duracion" : 2,
+      "inicio" : "15:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "F",
+      "aulas" : "A5001",
+      "dia" : 4,
+      "duracion" : 2,
+      "inicio" : "17:00",
+      "tipo" : "T"
+    },
+    {
+      "asignatura" : "IC",
+      "aulas" : "A5S109",
+      "dia" : 5,
+      "duracion" : 2,
+      "inicio" : "14:00",
+      "tipo" : "L"
+    },
+    {
+      "asignatura" : "F",
+      "aulas" : "A1S101, A5204",
+      "dia" : 5,
+      "duracion" : 2,
+      "inicio" : "16:00",
+      "tipo" : "L"
+    }
+  ],
   "horas" : [
 
   ],
