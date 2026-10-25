@@ -1,0 +1,97 @@
+{
+  "diagnostico" : true,
+  "examen" : {
+    "duracionMinutos" : 15,
+    "preguntas" : [
+      {
+        "criterios" : "1,5 pts si la letra es correcta (c). 0 pts en otro caso. Si responde en pizarra con el planteamiento `4\/x² = 1\/(x−3)²` y descarta las regiones x<0 y 0<x<3, pero se equivoca en el álgebra, se anota como fallo de cálculo y no de concepto.",
+        "enunciado" : "Dos cargas puntuales están fijas sobre el eje x: `q1 = +4 µC` en `x = 0` y `q2 = −1 µC` en `x = 3 m`. ¿En qué punto del eje x (a distancia finita) el campo eléctrico total es nulo?",
+        "fuente" : "propia",
+        "id" : "Q1",
+        "opciones" : [
+          "a) x = 1 m",
+          "b) x = 2 m",
+          "c) x = 6 m",
+          "d) x = −3 m"
+        ],
+        "puntos" : 1.5,
+        "solucionReferencia" : "Respuesta: c.\nEntre las cargas (0<x<3) los dos campos apuntan en el mismo sentido (+x, alejándose de q1 y hacia q2), así que no se anulan. Para x<0 el punto está más cerca de la carga de mayor módulo, así que |E1| > |E2| y no se anulan. El punto debe estar en x>3, más cerca de la carga pequeña:\n`k·4\/x² = k·1\/(x−3)²` → `2\/x = 1\/(x−3)` → `2x − 6 = x` → `x = 6 m`.\nLas opciones a) y b) caen entre las cargas y d) en la región x<0.",
+        "tema" : "Càrrega elèctrica i llei de Coulomb",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "a) 0,5 pts: `E = ΔV\/d ≈ 3,3·10⁴ V\/m` (0,25 si el orden de magnitud es correcto pero hay un error de unidades). b) 0,5 pts: sentido de E hacia potenciales decrecientes, de la parte superior a la base, justificado con `E = −∇V`. c) 0,5 pts: `W = Q·ΔV = 5·10⁸ J`. d) 0,5 pts: `I = 5·10⁴ A`.",
+        "enunciado" : "En un núvol de tempesta la parte superior tiene un potencial 10⁸ V más alto que la base, y la distancia vertical entre ambas es de 3 km. Un rayo transporta 5 C de un extremo a otro del núvol en 100 µs. Suponiendo un campo uniforme:\na) Estima el módulo del campo eléctrico que provoca el rayo.\nb) Indica el sentido del campo (hacia arriba o hacia abajo) y justifícalo a partir de la relación entre E y V.\nc) Estima la energía liberada.\nd) Calcula la intensidad media de la descarga.",
+        "fuente" : "material\/raco\/ProblemesTema1.pdf, problema 1 (añadidos los apartados b y d, este último con la duración del problema 3)",
+        "id" : "Q2",
+        "opciones" : [
+
+        ],
+        "puntos" : 2,
+        "solucionReferencia" : "a) `E = ΔV\/d = 10⁸ \/ 3000 ≈ 3,33·10⁴ V\/m`.\nb) Según `E = −∇V`, E apunta en el sentido en que V decrece. La parte superior está a mayor potencial, así que E apunta hacia abajo, de la parte superior hacia la base.\nc) `W = Q·ΔV = 5 · 10⁸ = 5·10⁸ J`.\nd) `I = ΔQ\/Δt = 5 \/ 10⁻⁴ = 5·10⁴ A` (50 kA).",
+        "tema" : "Camp elèctric i potencial (E = -∇V)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 0,5 pts: R = 0,17 Ω (0 si no pasa la sección a m²). b) 0,5 pts: I = 1 A y J = 10⁶ A\/m². c) 0,5 pts: E = 0,017 V\/m y comprobación con `J = σE`. d) 0,5 pts: v_d ≈ 7,4·10⁻⁵ m\/s; 0,25 si la fórmula es correcta y el resultado está mal en potencias de 10.",
+        "enunciado" : "Un hilo de cobre de longitud L = 10 m y sección A = 1 mm² tiene resistividad `ρ = 1,7·10⁻⁸ Ω·m` y densidad de electrones libres `n = 8,5·10²⁸ m⁻³`. Entre sus extremos se aplica una diferencia de potencial de 0,17 V (`e = 1,6·10⁻¹⁹ C`).\na) Calcula la resistencia del hilo.\nb) Calcula la intensidad I y la densidad de corriente J.\nc) Calcula el campo eléctrico en el interior del hilo y comprueba que se cumple `J = σE`.\nd) Calcula la velocidad de arrastre v_d de los electrones.",
+        "fuente" : "propia",
+        "id" : "Q3",
+        "opciones" : [
+
+        ],
+        "puntos" : 2,
+        "solucionReferencia" : "a) `R = ρL\/A = 1,7·10⁻⁸ · 10 \/ 10⁻⁶ = 0,17 Ω`.\nb) `I = V\/R = 0,17\/0,17 = 1 A`. `J = I\/A = 1\/10⁻⁶ = 10⁶ A\/m²`.\nc) `E = V\/L = 0,17\/10 = 0,017 V\/m`. `σ = 1\/ρ ≈ 5,88·10⁷ S\/m` → `σE ≈ 5,88·10⁷ · 0,017 ≈ 10⁶ A\/m² = J` ✓.\nd) `I = n·e·v_d·A` → `v_d = J\/(n·e) = 10⁶ \/ (8,5·10²⁸ · 1,6·10⁻¹⁹) = 10⁶ \/ 1,36·10¹⁰ ≈ 7,4·10⁻⁵ m\/s`.",
+        "tema" : "Llei d'Ohm (V = IR, J = σE) i resistència",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 0,75 pts: condición de equilibrio planteada (divisores iguales o cociente de resistencias) 0,5 + Rx = 5 Ω 0,25. b) 0,75 pts: V_A = 6 V (0,25), V_B = 8 V (0,25), V_A − V_B = −2 V con signo correcto (0,25). c) 0,5 pts: argumentar que con V_A = V_B la corriente por el amperímetro es nula y por tanto el resultado no depende de su resistencia (o de ε).",
+        "enunciado" : "Una fuente ideal de fem ε alimenta dos ramas en paralelo. Rama izquierda: una resistencia variable R (unida al borne positivo) en serie con una resistencia de 400 Ω (unida al borne negativo); el nudo entre ambas se llama A. Rama derecha: una resistencia desconocida Rx (unida al borne positivo) en serie con una de 10 Ω (unida al borne negativo); el nudo entre ambas se llama B.\na) Con R = 200 Ω se observa que `V_A − V_B = 0`. Calcula Rx.\nb) Con ese Rx, ε = 12 V y R = 400 Ω, calcula `V_A − V_B`.\nc) En la situación del apartado a), si se conecta un amperímetro entre A y B, ¿qué marca? Justifícalo en una línea.",
+        "fuente" : "material\/raco\/ProblemesTema1.pdf, problema 28 a), b) y c) (reformulado con el valor de ε como dato)",
+        "id" : "Q4",
+        "opciones" : [
+
+        ],
+        "puntos" : 2,
+        "solucionReferencia" : "Tomando el borne negativo como referencia (V = 0), cada rama es un divisor de tensión:\n`V_A = ε·400\/(R+400)`, `V_B = ε·10\/(Rx+10)`.\na) `V_A = V_B` con R = 200: `400\/600 = 10\/(Rx+10)` → `Rx + 10 = 15` → `Rx = 5 Ω` (equivalente a la condición de Wheatstone `R\/400 = Rx\/10`).\nb) `V_A = 12·400\/800 = 6 V`; `V_B = 12·10\/15 = 8 V` → `V_A − V_B = −2 V`.\nc) Marca 0 A. Si el puente está equilibrado, `V_A = V_B`, así que no hay diferencia de potencial que impulse corriente entre A y B, sea cual sea la resistencia que se conecte (el resultado tampoco depende de ε).",
+        "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 1 pt: T y f (0,4), V0 (0,3), Vef (0,3). b) 1,5 pts: X_C (0,4), Z (0,4), I0 (0,3), φ con módulo y sentido correcto, la intensidad avanza (0,4). Si el signo de φ es correcto pero no se interpreta quién avanza, se dan 0,2.",
+        "enunciado" : "Un generador sinusoidal alimenta un circuito RC serie con R = 200 Ω y C = 100 nF. La tensión del generador se visualiza en un osciloscopio con coeficiente de deflexión A = 1 V\/div y base de tiempos B = 0,2 ms\/div. La distancia vertical entre un máximo y un mínimo es H = 8 div y la distancia horizontal entre dos máximos consecutivos es L = 5 div.\na) Determina el período T, la frecuencia f, la amplitud V0 y el valor eficaz Vef de la tensión del generador.\nb) Calcula el módulo de la impedancia Z, la amplitud I0 de la intensidad y el desfase φ entre tensión e intensidad, indicando qué magnitud avanza respecto a la otra.",
+        "fuente" : "material\/raco\/Practica3(llibret-practica5)CORRENT_ALTERN_CIRCUITS_RC_RL_i_RLC_SERIE.pdf, problema previ 2.1 a), combinado con material\/raco\/Practica1(llibret-practica1)FUNCIONAMENT_DE_LOSCILLOSCOPI_I_DEL_POLIMETRE.pdf, exercici previ 1.2",
+        "id" : "Q5",
+        "opciones" : [
+
+        ],
+        "puntos" : 2.5,
+        "solucionReferencia" : "a) `T = B·L = 0,2·5 = 1 ms` → `f = 1\/T = 1 kHz`. `Vpp = A·H = 8 V` → `V0 = Vpp\/2 = 4 V`. `Vef = V0\/√2 ≈ 2,83 V`.\nb) `ω = 2πf ≈ 6283 rad\/s`. `X_C = 1\/(ωC) = 1\/(6283·10⁻⁷) ≈ 1592 Ω`.\n`Z = √(R² + X_C²) = √(200² + 1592²) ≈ 1604 Ω`.\n`I0 = V0\/Z = 4\/1604 ≈ 2,49 mA`.\n`φ = arctan(X\/R) = arctan(−1592\/200) ≈ −82,8°`. Como φ < 0, la intensidad avanza unos 82,8° respecte a la tensión del generador (circuito capacitivo).",
+        "tema" : "Corrent Altern",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern"
+  },
+  "fecha" : "2026-10-25T11:13:18Z",
+  "fuentes" : [
+    "ejercicios\/PracticaP2_CorrentContinu.md",
+    "material\/raco\/Practica1(llibret-practica1)FUNCIONAMENT_DE_LOSCILLOSCOPI_I_DEL_POLIMETRE.pdf",
+    "material\/raco\/Practica2(llibret-practica13)Simulacio_de_circuits_de_corrent_continu.pdf",
+    "material\/raco\/Practica3(llibret-practica5)CORRENT_ALTERN_CIRCUITS_RC_RL_i_RLC_SERIE.pdf",
+    "material\/raco\/Practica4(llibret-practica7)DIODES_CARACTERISTIQUES_I_APLICACIONS.pdf",
+    "material\/raco\/Practica5(llibret-practica10)PROPAGACIO_I_INTERFERENCIA_DONES.pdf",
+    "material\/raco\/ProblemesTema1.pdf",
+    "material\/raco\/ProblemesTema2.pdf"
+  ],
+  "id" : "B86E2D0B-DDC0-4B62-9534-0DCF0DC59C2A",
+  "minutos" : 1,
+  "modo" : "diagnostico",
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "Q1" : "c"
+  }
+}
