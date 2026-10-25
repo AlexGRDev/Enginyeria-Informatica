@@ -1,0 +1,69 @@
+{
+  "estados" : {
+    "F" : "enCurso",
+    "FM" : "enCurso",
+    "IC" : "enCurso",
+    "PRO1" : "enCurso"
+  },
+  "examenes" : {
+
+  },
+  "extras" : [
+
+  ],
+  "horas" : [
+    {
+      "code" : "PRO1",
+      "fecha" : "2026-10-25T14:03:39Z",
+      "horas" : 3,
+      "id" : "BF532FB7-49EC-423A-A845-8A24387042FA",
+      "tipo" : "T"
+    },
+    {
+      "code" : "FM",
+      "fecha" : "2026-10-25T14:06:46Z",
+      "horas" : 3,
+      "id" : "76946FAE-643E-407C-A48B-BFC9216DC6EF",
+      "tipo" : "T"
+    },
+    {
+      "code" : "IC",
+      "fecha" : "2026-10-25T14:07:37Z",
+      "horas" : 4,
+      "id" : "4C99F5A4-09F6-4756-87AC-9873803069CC",
+      "tipo" : "T"
+    },
+    {
+      "code" : "PRO1",
+      "fecha" : "2026-10-25T14:07:55Z",
+      "horas" : 6,
+      "id" : "6B50C183-CB03-4435-82E8-D3A38D9DCB2E",
+      "tipo" : "L"
+    },
+    {
+      "code" : "IC",
+      "fecha" : "2026-10-25T14:08:18Z",
+      "horas" : 6,
+      "id" : "E4F40458-C39B-4645-8571-CB1516BC71D9",
+      "tipo" : "L"
+    },
+    {
+      "code" : "F",
+      "fecha" : "2026-10-25T14:08:39Z",
+      "horas" : 3,
+      "id" : "9961843B-C0B1-4C6D-8701-10A5023B6A8C",
+      "tipo" : "T"
+    },
+    {
+      "code" : "F",
+      "fecha" : "2026-10-25T14:08:57Z",
+      "horas" : 6,
+      "id" : "64814E29-A189-426C-84A8-0CAC0B67971E",
+      "tipo" : "L"
+    }
+  ],
+  "notas" : {
+
+  },
+  "pase" : 24
+}
