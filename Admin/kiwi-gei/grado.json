@@ -112,6 +112,17 @@
       "nota" : 0,
       "origen" : "raco|https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json|0",
       "tipo" : "laboratorio"
+    },
+    {
+      "asignatura" : "F",
+      "componente" : "L1",
+      "detalle" : "",
+      "fecha" : "2026-09-18T16:12:12Z",
+      "formato" : "Papel",
+      "id" : "8A04C63A-6AE6-4847-B79A-5F4D86E0FA72",
+      "nombre" : "Practuca Oscil.loscopi",
+      "nota" : 7.7,
+      "tipo" : "laboratorio"
     }
   ],
   "codigos" : {
