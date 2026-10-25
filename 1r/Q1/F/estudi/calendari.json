@@ -2,7 +2,7 @@
   {
     "asignatura" : "F",
     "fecha" : "2026-11-03T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "28DD7A16-1533-4922-9C00-EDE3F0E750AF",
     "notas" : "",
     "tipo" : "examen",
@@ -11,7 +11,7 @@
   {
     "asignatura" : "F",
     "fecha" : "2026-12-23T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "2CFE8929-E063-401E-A5FC-A5C7A3ED985B",
     "notas" : "",
     "tipo" : "examen",
@@ -20,7 +20,7 @@
   {
     "asignatura" : "F",
     "fecha" : "2027-01-18T08:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "AFC6BB5B-2449-475C-A689-2F69C3620A26",
     "notas" : "",
     "tipo" : "examen",
