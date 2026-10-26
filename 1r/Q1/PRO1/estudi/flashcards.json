@@ -1,3 +1,146 @@
 [
-
+  {
+    "ease" : 2.5,
+    "fuente" : "P37469",
+    "id" : "01023B51-F002-462C-9474-726F913C0F70",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P37469, n=125 segundos. Encuentra el fallo:\n```\nint h = n \/ 60;\nint m = (n % 3600) \/ 60;\nint s = n % 60;\ncout << h << ' ' << m << ' ' << s;\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 1: h = n \/ 3600 (no 60)",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P37469",
+    "id" : "7969F163-A238-440D-83D6-C897BEA29126",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P37469, n=3725. Encuentra el fallo:\n```\nint h = n \/ 3600;\nint m = n % 60 \/ 60;\nint s = n % 60;\ncout << h << ' ' << m << ' ' << s;\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 2: m = (n % 3600) \/ 60",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P37469",
+    "id" : "5E28552A-66A4-4EC6-94CF-0A4A8EDE6F4D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P37469, n=75. Encuentra el fallo:\n```\nint h = n \/ 3600;\nint m = n % 3600 \/ 60;\nint s = n \/ 60;\ncout << h << ' ' << m << ' ' << s;\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 3: s = n % 60 (no n \/ 60)",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P39057",
+    "id" : "DD5A72C6-544E-4E12-8126-F8F6B31A4A20",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P39057, radio r=2 (double). Encuentra el fallo:\n```\ndouble r;\ncin >> r;\ndouble area = 3.14159 * r ^ 2;\ncout << fixed << setprecision(6) << area;\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 3: ^ es XOR, usar r * r",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P39057",
+    "id" : "864E3AC3-315D-4DA6-B208-2F6EBCA10DD9",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P39057. Encuentra el fallo:\n```\nstring t;\ncin >> t;\nif (t = \"rectangle\") {\n    double a, b; cin >> a >> b;\n    cout << a * b;\n}\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 3: = en vez de ==: t == \"rectangle\"",
+    "tema" : "std::string"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P39057",
+    "id" : "E7B04B1F-D207-4A73-B0C5-E7968B22A35B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P39057, n descripciones. Encuentra el fallo:\n```\nint n;\ncin >> n;\nfor (int i = 0; i <= n; ++i) {\n    string t; cin >> t;\n}\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 3: i < n (hace n+1 lecturas)",
+    "tema" : "E\/S con std::cin\/std::cout"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P39057",
+    "id" : "D2D8D408-B48A-4C7A-BE5A-31CB81A35B35",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P39057, area de un rectángulo 2 x 3 con lados enteros. Encuentra el fallo:\n```\nint a = 2, b = 3;\ndouble area = a \/ b * 6;\ncout << area;\n```\nSupón que se quería a*b. Si en cambio se quisiera a\/b real, ¿qué da hoy y qué corrección?",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Da 0 (división entera); usar double(a) \/ b",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P89265",
+    "id" : "8A978BFC-9523-44CB-A554-3D40D6EB5F50",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P89265, intervalos [a1,b1],[a2,b2]. Intersección [3,5] y [4,9]. Encuentra el fallo:\n```\nint x = min(a1, a2);\nint y = max(b1, b2);\nif (x <= y) cout << '[' << x << ',' << y << ']';\n```\n¿Qué imprime y cuál es la corrección?",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Imprime [3,9]; x = max(a1,a2), y = min(b1,b2)",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P89265",
+    "id" : "527949E4-BE51-4491-B416-A20C612D7486",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P89265. Intervalos [2,2] y [5,7]. Encuentra el fallo:\n```\nint x = max(a1, a2);\nint y = min(b1, b2);\nif (x < y) cout << '[' << x << ',' << y << ']';\nelse cout << \"[]\";\n```\n¿Qué caso límite falla? Corrección.",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Falla [2,2]∩[2,5]=[2,2]; usar x <= y",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P89265",
+    "id" : "F36D12E1-F304-4C4F-859D-F56959EE40AC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P89265. Intervalos [1,4] y [1,4]. Encuentra el fallo:\n```\nif (a1 == a2 and b1 == b2) cout << '=';\nelse if (a1 <= a2 and b2 <= b1) cout << '1';\nelse if (a2 <= a1 and b1 <= b2) cout << '2';\nelse cout << '?';\n```\nSi se intercambian los textos de las líneas 2 y 3, ¿qué pasa? ¿Cuál es el correcto para '1' (primero dentro del segundo)?",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 2 es '2'; '1' exige a2<=a1 and b1<=b2",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P89265",
+    "id" : "C0633E4C-D5DF-434E-882F-4D0C816A42E0",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P89265. Encuentra el fallo (función que debe devolver la intersección por referencia):\n```\nvoid inter(int a1, int b1, int a2, int b2, int x, int y) {\n    x = max(a1, a2);\n    y = min(b1, b2);\n}\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Faltan referencias: int& x, int& y",
+    "tema" : "Funciones auxiliares"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "P37469",
+    "id" : "0EC20A90-6A3A-4546-8C63-74132F1125AD",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "P37469. Encuentra el fallo:\n```\nint h, m, s;\ncin >> n;\nh = n \/ 3600;\nm = (n % 3600) \/ 60;\ncout << h << ' ' << m << ' ' << s;\n```",
+    "proxima" : "2026-10-26T19:58:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "s sin inicializar: falta s = n % 60",
+    "tema" : "Tipos básicos"
+  }
 ]
