@@ -1,3 +1,112 @@
 [
-
+  {
+    "ease" : 2.5,
+    "id" : "6373E810-4DBF-4723-9DEC-37491FCF3807",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Periodo **10 ms**. ¿Frecuencia?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**100 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "7C18CF48-4563-4964-A2BC-5E146D5BB59E",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Frecuencia **500 Hz**. ¿Periodo?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**2 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "3C811583-04AD-402C-AECC-7A1B268A4C3D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Frecuencia **200 Hz**. ¿Periodo?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**5 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "44D0B94E-564B-41CC-9520-C97828B7241D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Divisor de tensión: Vin = **12 V**, R1 = **6 kΩ** (arriba), R2 = **2 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**3 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "ADE8F50A-EB7B-4CAE-B27F-A31ABD5AD28A",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "R = **100 Ω**, I = **8 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.8 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "483A4529-9438-48DD-A8D7-810693D3A45C",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Pico a pico ocupa **3 divisiones** a **1 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **3 V**; amplitud = **1.5 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "35515CC4-03DB-4C48-8EAF-8B2D42F49FDE",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "**12 Ω** en paralelo con **6 Ω**. ¿Resistencia equivalente?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**4 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "0DBDB193-C313-436A-A97F-F90E5EE5658D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Periodo **5 ms**. ¿Frecuencia?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**200 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D4773893-CC7B-4063-A119-3F85329F88C0",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "**15 V** sobre **600 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**25 mA**; **0.375 W**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "52AD7A1D-5C6E-46DC-879F-D1A0A043856F",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "R = **80 Ω**, I = **6 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.48 V**",
+    "tema" : "Ohm"
+  }
 ]
