@@ -8,6 +8,12 @@
           "fecha" : "2026-10-25T20:31:52Z",
           "fuente" : "diagnostico",
           "nota" : 0
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal: 0,0",
+          "fecha" : "2026-10-26T07:41:29Z",
+          "fuente" : "estilo",
+          "nota" : 0
         }
       ]
     },
@@ -19,17 +25,29 @@
           "fecha" : "2026-10-25T20:31:52Z",
           "fuente" : "diagnostico",
           "nota" : 0.5
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal: 0,0",
+          "fecha" : "2026-10-26T07:41:29Z",
+          "fuente" : "estilo",
+          "nota" : 0.5
         }
       ]
     },
     "Representación de números naturales (base b, binario, hexadecimal, conversiones)" : {
-      "dominio" : 1,
+      "dominio" : 1.2999999999999998,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
           "fecha" : "2026-10-25T20:31:52Z",
           "fuente" : "diagnostico",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal: 0,0",
+          "fecha" : "2026-10-26T07:41:29Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
@@ -40,6 +58,12 @@
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
           "fecha" : "2026-10-25T20:31:52Z",
           "fuente" : "diagnostico",
+          "nota" : 0
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal: 0,0",
+          "fecha" : "2026-10-26T07:41:29Z",
+          "fuente" : "estilo",
           "nota" : 0
         }
       ]
