@@ -215,12 +215,13 @@
   {
     "ease" : 2.5,
     "id" : "33CFB65E-D259-4C55-9E21-5CD0AAB8C24A",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Pasa a hexadecimal: **1011 1001**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:20:29Z",
+    "repeticiones" : 1,
     "respuesta" : "**0xB9**",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:20:29Z"
   }
 ]
