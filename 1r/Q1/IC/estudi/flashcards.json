@@ -12,26 +12,28 @@
     "ultima" : "2026-10-26T12:50:15Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "E7301EE2-53D5-41CF-B65B-E2C3D6C72C03",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "¿Qué decimal es **1101 1110** en complemento a 2 (8 bits)?",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:28:47Z",
+    "repeticiones" : 1,
     "respuesta" : "**-34**",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:28:47Z"
   },
   {
     "ease" : 2.5,
     "id" : "502FE846-3796-4194-9600-C0DD1EC65442",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Pasa a binario (8 bits): **124**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:29:05Z",
+    "repeticiones" : 1,
     "respuesta" : "`0111 1100`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:29:05Z"
   },
   {
     "ease" : 1.7000000000000002,
@@ -60,57 +62,62 @@
   {
     "ease" : 2.5,
     "id" : "D06F9A04-99EF-41A8-844B-CC2DDB3F2CE6",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Escribe **-52** en complemento a 2 con 8 bits",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:29:16Z",
+    "repeticiones" : 1,
     "respuesta" : "`1100 1100`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:29:16Z"
   },
   {
     "ease" : 2.5,
     "id" : "D7BD97DB-252E-42CF-BC84-FAB03D5F4673",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Suma en binario de 4 bits: **0011 + 0001**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:29:33Z",
+    "repeticiones" : 1,
     "respuesta" : "`0100`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:29:33Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "5B547806-73A7-40D7-8230-B674BDFED91E",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "**XOR** bit a bit de **0110** y **0111** (4 bits)",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:29:39Z",
+    "repeticiones" : 1,
     "respuesta" : "`0001`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:29:39Z"
   },
   {
     "ease" : 2.5,
     "id" : "0651BD34-C93D-4922-AAF5-F35997738CEE",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "¿Cuántos bits hacen falta como mínimo para representar **299** valores distintos?",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:29:47Z",
+    "repeticiones" : 1,
     "respuesta" : "**9**",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:29:47Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "6F2C38C8-9521-4D10-8558-79AD4623529B",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "¿Cuántos bits hacen falta como mínimo para representar **9** valores distintos?",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:29:51Z",
+    "repeticiones" : 1,
     "respuesta" : "**4**",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:29:51Z"
   },
   {
     "ease" : 2.5,
