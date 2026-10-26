@@ -1,7 +1,7 @@
 [
   {
     "fecha" : "2026-10-26T18:00:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "FAE648BE-4BC5-4A46-ACEA-CCFBEA463DF9",
     "notas" : "Plan automático de Kiwi GEI",
     "tipo" : "tarea",
