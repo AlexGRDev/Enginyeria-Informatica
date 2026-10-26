@@ -1,4 +1,136 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1.5,
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+      }
+    ],
+    "notaTotal" : 0.4,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Fila 1: 10101100 convertido a 0x10B en lugar de AC.",
+            "patron" : "No agrupa de 4 en 4 bits al pasar binario a hexadecimal",
+            "refuerzo" : "Separar en nibbles desde la derecha y convertir cada uno (1010=A, 1101=D, 1100=C).",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          },
+          {
+            "descripcion" : "Xu = 180, 110 y vector de 201 con un bit mal (11011001 = 217).",
+            "patron" : "Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido)",
+            "refuerzo" : "Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          },
+          {
+            "descripcion" : "Fila 2: 6D no se expandió a 0110 1101; el vector escrito es 01101110 y el hex 0D.",
+            "patron" : "No expande cada dígito hexadecimal a 4 bits al pasar hexadecimal a binario",
+            "refuerzo" : "Convertir cada dígito hexadecimal a su nibble (6=0110, D=1101, 9=1001, F=1111) y concatenar; el vector final debe tener 8 bits.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "Solo la fila 4 está completa y correcta (00111010, 3A, 58). Fila 1: 10101100 es 1010|1100 = AC y Xu = 172; pones 0x10B y 180, que no sale de ningún agrupamiento de 4 bits. Fila 2: 6D = 0110 1101 = 109; escribes 01101110 (que sería 6E), hex 0D (el enunciado ya da 6D) y Xu = 110. Fila 3: 201 = 128+64+8+1 = 11001001; tu vector 11011001 vale 217. El hex C9 sí es correcto, pero la fila se pierde porque el vector está mal. No comprobaste sumando pesos.",
+        "id" : "E1",
+        "puntosObtenidos" : 0.375
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin fórmula de valor ni rango con n dígitos en base b.",
+            "patron" : "No sabe abordar el rango de representación en base b",
+            "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural y con signo.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          },
+          {
+            "descripcion" : "No calcula los bits mínimos para 0..1000 ni los dígitos hexadecimales.",
+            "patron" : "No sabe abordar el número mínimo de bits para un rango",
+            "refuerzo" : "Buscar el menor n con 2^n > máximo; los dígitos hexadecimales son ceil(n\/4).",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "Sin respuesta válida: lo de la pizarra es una tabla a b | c d que no corresponde a ningún apartado. Faltan la fórmula Wu = Σ wi·b^i con rango [0, b^n - 1], el rango [0, 624] y el valor 482 para b = 5, y los 10 bits (2^10 = 1024 > 1000) con 3 dígitos hexadecimales.",
+        "id" : "E2",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No completa la tabla de F con señales intermedias.",
+            "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
+            "refuerzo" : "Evaluar columna a columna x, s, a·b, x·c, co. Escribir las 8 filas en orden binario y una columna por señal intermedia.",
+            "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+          },
+          {
+            "descripcion" : "No enumera caminos ni Tp del circuito con el bloque H.",
+            "patron" : "No sabe abordar caminos críticos con bloques",
+            "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida, y sumar los Tp de cada uno.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          },
+          {
+            "descripcion" : "No escribe F como suma de minterms.",
+            "patron" : "No sabe abordar la suma de minterms",
+            "refuerzo" : "Un minterm por cada fila con salida 1, y contar puertas a partir de ellos.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          }
+        ],
+        "feedback" : "En blanco. Había que hacer la tabla con x, f, s, g, h, F; F = m3+m4+m5+m7; y los caminos críticos considerando e->f, e->s, k->f y k->s: a y b dan 160, c da 130 y el circuito 160.",
+        "id" : "E3",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin minterms de p, sin conteo de puertas, sin tamaño de ROM ni síntesis con decodificador.",
+            "patron" : "No sabe abordar la suma de minterms",
+            "refuerzo" : "Un minterm por cada fila con salida 1, y contar puertas a partir de ellos.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          }
+        ],
+        "feedback" : "En blanco. p = m0+m3+m4+m6 (4 And de 3 entradas y 1 Or de 4), ROM de 8 palabras x 2 bits, y q con Or de 4 entradas sobre las salidas 1, 3, 5 y 6 del decodificador.",
+        "id" : "E4",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No rellena ninguna de las 16 palabras.",
+            "patron" : "No sabe abordar el contenido de una ROM",
+            "refuerzo" : "Dirección = 4·Yu + Xu; recorrer los valores de Yu y marcar los Xu < Yu.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          }
+        ],
+        "feedback" : "En blanco. Con dirección = 4·Yu + Xu había que recorrer las 16 combinaciones aplicando Yu - Xu si Xu < Yu, y (Xu+Yu)%4 en otro caso.",
+        "id" : "E5",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No propaga d, e ni w ni identifica el glitch.",
+            "patron" : "No sabe abordar cronogramas con glitch",
+            "refuerzo" : "Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "En blanco. Había que propagar cada cambio con su Tp: d = 1 en [0,20) y [60,80); e = 1 en [30,40) y [90,100); w = 1 en [50,60) y [70,80). El glitch está en [50,60), causado por e (a·!a) al subir a.",
+        "id" : "E6",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Solo E1 aporta nota (0,375 de 10): la fila 4 está bien y el resto falla. E2 no está respondida, porque la pizarra tiene una tabla a b c d que no corresponde al enunciado. E3 a E6 están en blanco. Los fallos de E1 son los mismos de siempre: pesos de bit, agrupación en nibbles y expansión hex a bits. Prioridad antes del 30\/10: conversiones con comprobación sumando pesos, rango y mínimo de bits, tabla de verdad con columnas intermedias, minterms y ROM, caminos críticos con bloques y cronogramas con glitch."
+  },
   "diagnostico" : false,
   "examen" : {
     "duracionMinutos" : 75,
@@ -111,6 +243,7 @@
   "minutos" : 63,
   "modo" : "estilo",
   "notaAntes" : 0.4222222222222223,
+  "notaDespues" : 0.4188888888888889,
   "pizarras" : {
     "E1" : [
       "estudi\/simulacres\/2026-10-26-6359FCA4\/E1-1.png"

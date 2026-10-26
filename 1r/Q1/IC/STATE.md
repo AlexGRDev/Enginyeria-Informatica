@@ -9,10 +9,10 @@ Generado por Kiwi GEI el 2026-10-26. Objetivo: **10,0**. Próximo examen: Parcia
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 25 % | 1,1 | 3 | 2026-10-26 (real) |
-| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 20 % | 0,5 | 3 | 2026-10-26 (real) |
-| Síntesis de combinacionales (suma de minterms, ROM) | 25 % | 0,0 | 3 | 2026-10-26 (real) |
-| Modelo temporal (tiempos de propagación, caminos críticos) | 20 % | 0,0 | 3 | 2026-10-26 (real) |
+| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 25 % | 1,3 | 4 | 2026-10-26 (estilo) |
+| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 20 % | 0,2 | 4 | 2026-10-26 (estilo) |
+| Síntesis de combinacionales (suma de minterms, ROM) | 25 % | 0,0 | 4 | 2026-10-26 (estilo) |
+| Modelo temporal (tiempos de propagación, caminos críticos) | 20 % | 0,0 | 4 | 2026-10-26 (estilo) |
 | Circuitos secuenciales (fuera del examen) | 3 % | 0,0 | 1 | 2026-10-26 (real) |
 | SISA (ensamblador) (fuera del examen) | 3 % | sin evaluar | 0 | - |
 | Arquitectura del computador (fuera del examen) | 2 % | sin evaluar | 0 | - |
