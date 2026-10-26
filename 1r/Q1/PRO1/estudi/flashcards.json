@@ -1,3 +1,68 @@
 [
-
+  {
+    "ease" : 2.5,
+    "id" : "189FE626-8336-4A31-A025-2749B2B4AB3F",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe devolver la media entera de a y b. Encuentra el fallo:\n```\nint media(int a, int b) {\n    int m = a + b \/ 2;\n    return m;\n}\n```\nCon a=4, b=8 debería dar 6.",
+    "proxima" : "2026-10-26T16:33:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 2: precedencia. Da 4+4=8. Corrección: `int m = (a + b) \/ 2;`",
+    "tema" : "Tipos básicos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "43BEB2DA-81A9-4DDD-9E5D-E8BB5A901004",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe dejar en x el doble de x. Encuentra el fallo:\n```\nvoid doblar(int x) {\n    x = 2 * x;\n}\n...\nint n = 5;\ndoblar(n);\ncout << n;\n```\nImprime 5 y debería imprimir 10.",
+    "proxima" : "2026-10-26T16:33:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 1: x se pasa por valor. Corrección: `void doblar(int& x)`.",
+    "tema" : "Funciones auxiliares"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "EEE5BECB-51CB-46E5-AB70-21238ABF3436",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe contar los dígitos de n>0. Encuentra el fallo:\n```\nint digitos(int n) {\n    int c;\n    while (n > 0) {\n        ++c;\n        n = n \/ 10;\n    }\n    return c;\n}\n```",
+    "proxima" : "2026-10-26T16:33:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 2: `c` sin inicializar. Corrección: `int c = 0;`",
+    "tema" : "Funciones auxiliares"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "B1527FB2-9268-45AA-9AB3-17AE99FAFDDE",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe calcular n! para n>=0. Encuentra el fallo:\n```\nint fact(int n) {\n    if (n == 0) return 1;\n    n * fact(n - 1);\n}\n```",
+    "proxima" : "2026-10-26T16:33:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 3: falta el return. Corrección: `return n * fact(n - 1);`",
+    "tema" : "Recursividad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "041D5772-95C6-4506-98FA-1C375C4CE5C4",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe contar las 'a' en s. Con s=\"banana\" debería dar 3. Encuentra el fallo:\n```\nint cont = 0;\nfor (int i = 0; i <= s.size(); ++i) {\n    if (s[i] == 'a') ++cont;\n}\n```",
+    "proxima" : "2026-10-26T16:33:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 2: `<=` accede a s[s.size()], fuera de rango. Corrección: `i < s.size()`.",
+    "tema" : "std::string"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "B4044376-E70A-4A1F-B647-9DE138DA224E",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe sumar 1+2+...+n con n>=0. Encuentra el fallo:\n```\nint suma(int n) {\n    if (n == 0) return 0;\n    return n + suma(n);\n}\n```",
+    "proxima" : "2026-10-26T16:33:20Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea 3: la llamada recursiva no reduce el problema, recursión infinita. Corrección: `suma(n - 1)`.",
+    "tema" : "Recursividad"
+  }
 ]
