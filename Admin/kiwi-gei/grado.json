@@ -108,9 +108,9 @@
       "fecha" : "2026-10-25T17:02:39Z",
       "formato" : "Racó (PDF)",
       "id" : "090FB722-2A65-4B57-8EB4-07D61DEB604E",
-      "nombre" : "Laboratorio / talleres 1",
+      "nombre" : "Laboratorio \/ talleres 1",
       "nota" : 0,
-      "origen" : "raco|https://api.fib.upc.edu/v2/jo/avisos/adjunt/128190?format=json|0",
+      "origen" : "raco|https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json|0",
       "tipo" : "laboratorio"
     },
     {
@@ -204,7 +204,7 @@
           "id" : "L"
         }
       ],
-      "formulaFinal" : "0.9*max((P1+P2)/2, F) + 0.1*L",
+      "formulaFinal" : "0.9*max((P1+P2)\/2, F) + 0.1*L",
       "resumen" : "La teoría cuenta un 90 % y es el máximo entre la media de los dos parciales y el examen final opcional (F). El laboratorio cuenta un 10 %: el 75 % es la media de las 5 prácticas y el 25 % el examen oral de laboratorio (ExLab). El peso del 90 % asignado a F es alternativo al de los parciales: solo cuenta si mejora su media. La guía no da explícitamente la nota mínima para aprobar, así que he supuesto un 5. La competencia transversal de comunicación oral y escrita se califica aparte con letra (A–D) y no entra en la nota numérica."
     },
     "FM" : {
@@ -224,7 +224,7 @@
         },
         {
           "id" : "L",
-          "nombre" : "Laboratorio / talleres",
+          "nombre" : "Laboratorio \/ talleres",
           "peso" : 20,
           "tipo" : "laboratorio"
         },
@@ -331,7 +331,9 @@
           "tipo" : "final"
         }
       ],
-      "derivadas" : [],
+      "derivadas" : [
+
+      ],
       "formulaFinal" : "max(0.4*P + 0.6*F, F)",
       "resumen" : "N = max(0,4·P + 0,6·F, F): el parcial cuenta un 40 % y el final un 60 %, salvo que el final por sí solo dé más nota. Con una nota entre 3,5 y 4,9 puedes ir a la reevaluación (curso intensivo); si la apruebas, la nota final es 5. He usado el método de la guía principal, que encaja con los dos exámenes programados. Una addenda describe otro sistema, probablemente de un curso anterior: dos parciales y un final, max(0,2·P1 + 0,3·P2 + 0,5·FF, F), y exige mínimos de problemas resueltos. No lo he tenido en cuenta, pero conviene confirmarlo en la web de la asignatura."
     }
@@ -342,8 +344,12 @@
     "IC" : "enCurso",
     "PRO1" : "enCurso"
   },
-  "examenes" : {},
-  "extras" : [],
+  "examenes" : {
+
+  },
+  "extras" : [
+
+  ],
   "horario" : [
     {
       "asignatura" : "FM",
@@ -458,12 +464,22 @@
       "id" : "81D2C23C-9CA0-4467-9BAE-054B27BCC6F7",
       "origen" : "2026-10-26|IC|15:00",
       "tipo" : "T"
+    },
+    {
+      "code" : "F",
+      "fecha" : "2026-10-26T16:00:00Z",
+      "horas" : 2,
+      "id" : "9AF6910E-59B4-4E98-A5EE-A659061C79C2",
+      "origen" : "2026-10-26|F|17:00",
+      "tipo" : "T"
     }
   ],
-  "notas" : {},
+  "notas" : {
+
+  },
   "pdfsRevisados" : [
-    "https://api.fib.upc.edu/v2/jo/avisos/adjunt/129049?format=json",
-    "https://api.fib.upc.edu/v2/jo/avisos/adjunt/128388?format=json",
-    "https://api.fib.upc.edu/v2/jo/avisos/adjunt/128190?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129049?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
   ]
 }
