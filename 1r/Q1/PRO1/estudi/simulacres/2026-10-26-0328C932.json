@@ -1,0 +1,142 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 90,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X46364 · Dibuixant A's\n\n# Dibuixant A's\n\nFeu un programa que, donats naturals positius $n$, dibuixa `A`'s com les\nque es mostren als exemples.\n\n## Entrada\n\nUn nombre arbitrari de casos, a on cadascun consisteix en un natural\npositiu en una línia.\n\n## Sortida\n\nPer a cada cas, la corresponent `A`, seguida d'una línia en blanc.\n\n## Observació\n\nPodeu escriure la sortida caràcter a caràcter o amb strings construits\nprèviament, com preferiu.\n\nAvaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T16:23:52.444Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · ya lo tenías aceptado",
+        "id" : "P1",
+        "jutge" : "X46364_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X26208 · Rectangles (3)\n\n# Rectangles (3)\n\nFeu un programa que escrigui $k$ rectangles $n\\times m$. Escriviu cada\nrectangle de forma independent, i ompliu-lo amb un 9, désprés un 8, ...,\ndesprés un 0, etcètera.\n\n## Entrada\n\nL'entrada consisteix en tres naturals $k$, $n$ i $m$.\n\n## Sortida\n\nEscriviu $k$ rectangles de mida $n \\times m$ omplint-lo amb 9,8,...0, 9,\n.... Separeu dos rectangles amb una línea en blanc.\n\n## Informació del problema\n\nAutoria: Maria Serna\n\nGeneració: 2026-01-25T14:42:24.138Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P2",
+        "jutge" : "X26208_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X66638 · Primer digits senars (1,3,5,7,9), després dígits parells positius (2,4,6,8)\n\n# Primer digits senars (1,3,5,7,9), després dígits parells positius (2,4,6,8)\n\nFeu un programa tal que, per a cada natural positiu `x` d'entrada,\nescrigui dos nombres naturals `y,z` separats per un espai en blanc. El\nnatural `y` està format per la subseqüència de dígits de `x` que son\nsenars (és a dir, del conjunt `{1,3,5,7,9}`), seguida de la subseqüència\nde dígits de `x` que son parells i positius (és a dir, del conjunt\n`{2,4,6,8}`). El natural `z` és simplement el doble de `y`, és a dir,\n`z == 2*y`.\n\nPer exemple, si `x` és 250813126, llavors el programa ha d'escriure en\nprimer lloc el natural 51312826, doncs la subseqüència de dígits senars\nde `x` és 5131, i la subseqüència de dígits parells i positius de `x` és\n2826. En segon lloc, el programa ha d'escriure 102625652, doncs és el\ndoble de 51312826.\n\n## Entrada\n\nL'entrada consisteix en varis casos de naturals positius `x`, cadascun\nen una línia.\n\n## Sortida\n\nPer a cada `x` d'entrada, el programa escriu els corresponents `y,z` en\nuna nova línia, i separats per un espai en blanc.\n\n## Observació\n\nNo es pot utilitzar cap mètode d'emmagatzemament massiu de dades, ni tan\nsols `string`. Resoleu aquest exercici utilitzant només el tipus `int` i\nmanipulant enters amb operacions bàsiques (`+,-,*,\/,%`).\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T22:02:10.357Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P3",
+        "jutge" : "X66638_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X15492 · Sumar 1 als dígits parells\n\n# Sumar 1 als dígits parells\n\nEscriviu un programa que llegeix nombres d'entrada, i els torna a\nescriure després d'haver sumat 1 a aquells dígits que fossin parells.\n\nPer exemple, el programa transformarà el nombre `785902` en `795913`.\n\n## Entrada\n\nL'entrada té un nombre arbitrari de casos. Cada cas conté un natural\npositiu en una línia.\n\n## Sortida\n\nPer a cada cas, la sortida té una línia amb el corresponent nombre\nresultant de sumar 1 als dígits que siguin parells.\n\n## Observació\n\nNo es poden utilitzar mètodes d'emmagatzemament massiu d'informació (com\nper exemple `string` o `vector`). Llegiu els nombres d'entrada un per un\nsobre variables `int`, per exemple amb `cin >> a`, i solucioneu el\nproblema manipulant enters amb operacions bàsiques `+,-,*,\/,%`.\n\nAvaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:51:46.261Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P4",
+        "jutge" : "X15492_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T80784 · Nombres bicolor\n\n# Nombres bicolor\n\nDefinim com a número *bicolor* un natural $n$ amb només dos dígits\ndiferents que estan repetits en dos blocs (o \\\"colors\\\"). Més\nformalment, la seqüència de dígits de $n$ és\n$d_1d_2\\ldots d_ke_1e_2\\ldots e_l$, on $d$ i $e$ són els dos dígits i,\n$d\\neq e$, $k > 0$ i $l > 0$.\n\nExemples de números bicolor: 7722, 44111, 666699, 277 i 45.\\\nExemples de números que **no** són bicolor: 121, 113311, 7878, 1234, 7,\n99910.\n\nImplementa una **funció** `is_bicolor` que rep un natural i determina si\nés bicolor. La funció rep un número $n >= 0$ i retorna `true` si és\nbicolor i `false` en cas contrari.\n\nLa capçalera de la funció ha de ser:\n\n    \/**\n     * @pre  n >= 0\n     * @post retorna cert si n és bicolor, fals en cas contrari\n     *\/\n    bool is_bicolor(int n);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-03-05T08:50:13.138Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · ya lo tenías aceptado",
+        "id" : "P5",
+        "jutge" : "T80784_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V43542 · Mà de Poker\n\n# Mà de Poker\n\nEscriu una **funció** que donades 3 cartes de Pòquer retorni una\ndescripció (un `string`) de la mà que representen. La descripció ha de\nser una de les quatre possibilitats següents: \\\"Trio d'Asos!\\\",\n\\\"Trio\\\", \\\"Parella\\\", o \\\"Totes les cartes diferents\\\".\n\nLes cartes són un dels 13 caràcters següents: `A`, `2`, `3`, \\..., `9`,\n`0`, `J`, `Q`, `K`. Hi has dos caràcters que val la pena explicar: la\ncarta `A` és l'as i representa l'1, tal com en les baralles normals, i\nel dígit `0` representa el 10, per simplificar la lectura.\n\nLa capçalera de la funció és, exactament:\n\n    \/**\n    * @pre c1, c2, c3 en {A, 2, 3, ..., 8, 9, 0, J, Q, K}\n    * @post Retorna \"Trio d'Asos!\", \"Trio\", \"Parella\", o \n    *       \"Totes les cartes diferents\" segons c1, c2 i c3.\n    *\/\n    string poker_hand(char c1, char c2, char c3);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-10-01T15:36:25.399Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · ya lo tenías aceptado",
+        "id" : "P6",
+        "jutge" : "V43542_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V43042 · N-Poker consecutiu\n\n# N-Poker consecutiu\n\nTenim una seqüència de cartes de Poker, i volem saber si en algun punt\nde la seqüència hi ha $N$ cartes consecutives iguals (un \\\"N-Poker\nconsecutiu\\\"). Fes un **programa** que llegeixi un enter positiu $N$, i\nuna seqüència de cartes, i determini si la seqüència té o no $N$ cartes\nconsecutives iguals.\n\n## Entrada\n\nL'entrada comença amb un enter positiu $N$. Després ve una seqüència de\ncaràcters que representen les cartes de la seqüència. Tal com en el\nproblema \\\"Mà de Poker\\\", els caràcters per a les cartes són `A`, `2`,\n`3`, \\..., `9`, `0`, `J`, `Q` i `K`. Es garanteix que la seqüència de\ncartes té almenys una carta.\n\n## Sortida\n\nEscriu \\\"$N$-Poker de $x$!\\\" si la seqüència té $N$ cartes consecutives\nde valor $x$ iguals. En cas contrari, escriu \\\"No hi ha N-Poker\\\". Per\nexemple, si $N$ és 7, i trobem 7 repeticions de la carta K, la sortida\nserà \\\"7-Poker de K!\\\", però si no hi ha cap carta repetida 7 vegades,\nla sortida serà \\\"No hi ha 7-Poker\\\". La sortida identifica el primer\n$N$-Poker consecutiu trobat, amb la $x$ corresponent, tot i que a la\nseqüència hi podria haver subseqüents $N$-Pokers consecutius.\n\n## Observació\n\nEn aquest problema cal tractar l'entrada caràcter a caràcter, si fas\nservir `string`s o algun mètode per emmagatzemar les dades el problema\nserà considerat invàlid. A més, tingues en compte que la seqüència prové\nd'una font il·limitada de cartes, de manera que no es pot suposar cap\nlongitud màxima.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:09:23.797Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · ya lo tenías aceptado",
+        "id" : "P7",
+        "jutge" : "V43042_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X39980 · Màxim de Seqüències per Paritat\n\n# Màxim de Seqüències per Paritat\n\nDonada una seqüència $S$, una **subseqüència** de parells (o senars) es\nuna seqüència d'elements parells (o senars) **adjacents** d'$S$. Per\nexemple, si $S = 4,6,5,8,9,12,14,16,5,4$, una subseqüència d'elements\nparells d'$S$ podria ser $4,6$, o $12,14$ o $12,14,16$, tot i que n'hi\nhauria alguna més (per a nombres senars seria igual, però òbviament amb\nsenars).\n\nUna **subseqüència màxima** de parells (senars) seria una subseqüència\ncom l'anterior, però que no està pròpiament continguda dins de cap altra\nsubseqüència de parells (senars). En l'exemple anterior, la subseqüència\n$12,14$ no és màxima, perquè està pròpiament continguda dins de\n$12,14,16$. En canvi, la subseqüència $12,14,16$ és màxima perquè no\nestà pròpiament continguda dins de cap altra subseqüència.\n\nCal implementar la **programa** que calculi la mida de la subseqüència\nmàxima de parells més llarga i la mida de la subseqüència màxima de\nsenars més llarga.\n\n## Entrada\n\nUna seqüència $S$ d'enters positius.\n\n## Sortida\n\nLa mida de la subseqüència màxima de parells més llarga i la mida de la\nsubseqüència màxima de senars més llarga.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T15:54:31.986Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P8",
+        "jutge" : "X39980_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T77863 · Decodificar Base64 (2)\n\n# Decodificar Base64 (2)\n\n*(Aquest problema fa servir la funció `char\\_to\\_base64` del problema\n\\\"Decodificar Base64 (1)\\\".)*\n\nEs tracta de fer un programa que, donada una seqüència de caràcters a\nl'entrada (un dels 64 que representen els dígits de base 64), la\n**decodifiqui en els seus bytes**. La decodificació funciona de la\nsegüent manera:\n\n1.  Primer, per a cada grup de 4 caràcters (o quartet) de l'entrada\n    $c_1$, $c_2$, $c_3$ i $c_4$, els transformem en els seus dígits\n    corresponents. $d_1$, $d_2$, $d_3$, $d_4$, usant la funció\n    `char_to_base64`.\n\n2.  Després, amb els 4 dígits $d_i$ reconstruim el natural $x$ aplicant\n    la fórmula:\n\n    $$x = ((d_1 \\cdot 64 + d_2) \\cdot 64 + d_3) \\cdot 64 + d_4$$\n\n3.  Tot seguit, reinterpretem $x$ en base 256, i n'extraiem les xifres,\n    que ara són 3: $B_1$, $B_2$, i $B_3$. El procés és totalment anàleg\n    a extreure les xifres d'un nombre en base 10, però en base 256. El\n    que haurem fet és calcular els dígits $B_i$ de la fórmula següent:\n\n    $$x = (B_1 \\cdot 256 + B_2) \\cdot 256  + B_3$$\n\n    *(Cal recordar que el procés d'extracció de les xifres treballat a\n    PRO1 produeix les xifres al **revés**, començant per $B_3$)*\n\n4.  Finalment, mostrem $B_1$, $B_2$ i $B_3$ com a nombres naturals per\n    pantalla, en aquest ordre.\n\nLa codificació en base 64 sempre té un nombre de caràcters múltiple de\n4, però just al final de la seqüència pot haver-hi '`=`' o '`==`', que\nens diu que el número de bytes de l'últim quartet són 2 o 1, i no 3:\n\nSi l'últim quartet té algun '`=`' al final:\n\n- Si té '`==`': el número de bytes serà 1; assignem $d_3 = 0$ i\n  $d_4 = 0$, decodifiquem segons els passos anteriors, però només\n  mostrem $B_1$ per pantalla.\n\n- Si té '`=`': el número de bytes és 2; assignem $d_4 = 0$, decodifiquem\n  segons els passos anteriors, però només mostrem $B_1$ i $B_2$ per\n  pantalla.\n\n## Entrada\n\nL'entrada consisteix en diversos casos, a on cada cas és una seqüència\nde caràcters acabada en punt en una línia.\n\n## Sortida\n\nLa sortida ha de ser una línia per a cada cas amb els bytes com a\nnombres naturals. Abans de cada byte, inclòs el primer, hi ha d'haver un\nespai.\n\n## Observació\n\n- Aquest problema té com a centres d'interès la **correctesa** i la\n  **llegibilitat**. En particular, es valorarà que el programa utilitzi\n  funcions per evitar repetició i separar les diverses tasques.\n\n- Si teniu la funció `char_to_base64` i el Jutge us l'ha acceptat,\n  useu-la directament. Si no, copieu la següent definició, (i afegiu\n  `#include <algorithm>`):\n\n      int char_to_base64(char c) {\n          static char _syms[65] =\n              \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n              \"abcdefghijklmnopqrstuvwxyz\"\n              \"0123456789+\/\";\n          return std::find(_syms, _syms + 64, c) - _syms;\n      }\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T12:55:34.913Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P9",
+        "jutge" : "T77863_ca",
+        "puntos" : 1.1111111111111112,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 9 problemas"
+  },
+  "fecha" : "2026-10-26T17:07:37Z",
+  "fuentes" : [
+    "X46364",
+    "X26208",
+    "X66638",
+    "X15492",
+    "T80784",
+    "V43542",
+    "V43042",
+    "X39980",
+    "T77863"
+  ],
+  "id" : "0328C932-A814-4EF5-A009-8F69A9958DE0",
+  "minutos" : 33,
+  "modo" : "jutge",
+  "notaAntes" : 0,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X46364.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nvoid\tft_draw_a(int a)\n{\n\tint\tmid;\n\tint\thight;\n\tint\ti;\n\tint\tj;\n\tint\tlen;\n\n\tmid = a \/ 2 + 1;\n\thight = 4 * mid;\n\ti = 0;\n\twhile (i < hight)\n\t{\n\t\tj = 0;\n\t\twhile (j < hight - 1 - i)\n\t\t{\n\t\t\tstd::cout << ' ';\n\t\t\tj++;\n\t\t}\n\t\tif (2 * i <= a || (i >= 2 * mid && i < 3 * mid))\n\t\t{\n\t\t\tlen = 2 * i + a;\n\t\t\tj = 0;\n\t\t\twhile (j < len)\n\t\t\t{\n\t\t\t\tstd::cout << 'A';\n\t\t\t\tj++;\n\t\t\t}\n\t\t}\n\t\telse\n\t\t{\n\t\t\tj = 0;\n\t\t\twhile (j < a)\n\t\t\t{\n\t\t\t\tstd::cout << 'A';\n\t\t\t\tj++;\n\t\t\t}\n\t\t\tj = 0;\n\t\t\twhile (j < 2 * i - a)\n\t\t\t{\n\t\t\t\tstd::cout << ' ';\n\t\t\t\tj++;\n\t\t\t}\n\t\t\tj = 0;\n\t\t\twhile (j < a)\n\t\t\t{\n\t\t\t\tstd::cout << 'A';\n\t\t\t\tj++;\n\t\t\t}\n\t\t}\n\t\tstd::cout << '\\n';\n\t\ti++;\n\t}\n\n}\n\nint    main(void)\n{\n    std::ios_base::sync_with_stdio(false);\n    std::cin.tie(NULL);\n    int    n;\n\n    while (std::cin >> n)\n    {\n        ft_draw_a(n);\n        std::cout << '\\n';\n    }\n    return (0);\n}\n",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X26208.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nvoid\tft_calc_rectangle(int rectangle, int r_size, int times)\n{\n\tint\tnbr[10];\n\tint\ti;\n\tint\tj;\n\tint\tk;\n\tint\t*pnbr;\n\n\tpnbr = nbr;\n\ti = 9;\n\twhile (i >= 0)\n\t{\n\t\t*pnbr = i;\n\t\tpnbr++;\n\t\ti--;\n\t}\n\tk = 0;\n\twhile (k < rectangle)\n\t{\n\t\tif (k > 0)\n\t\t\tstd::cout << '\\n';\n\t\tpnbr = nbr;\n\t\ti = 0;\n\t\twhile (i < r_size)\n\t\t{\n\t\t\tj = 0;\n\t\t\twhile (j < times)\n\t\t\t{\n\t\t\t\tstd::cout << *pnbr;\n\t\t\t\tpnbr++;\n\t\t\t\tif (pnbr == nbr + 10)\n\t\t\t\t\tpnbr = nbr;\n\t\t\t\tj++;\n\t\t\t}\n\t\t\tstd::cout << '\\n';\n\t\t\ti++;\n\t\t}\n\t\tk++;\n\t}\n}\n\nint\tmain(void)\n{\n\tstd::ios_base::sync_with_stdio(false);\n    std::cin.tie(NULL);\n\tint\tk,n,m;\n\n\tstd::cin >> k >> n >> m;\n\tft_calc_rectangle(k, n, m);\n\treturn (0);\n}\n",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X66638.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X15492.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P5" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T80784.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P6" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V43542.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P7" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V43042.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P8" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X39980.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P9" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T77863.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 18:07:37 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 18:07:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+    "P1" : "AC",
+    "P2" : "AC"
+  }
+}
