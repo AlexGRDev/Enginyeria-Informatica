@@ -115,24 +115,26 @@
   {
     "ease" : 2.5,
     "id" : "5B41CBCB-2A3B-47A4-B67A-137DDC6BBA48",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Pasa a binario: **0xCA**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:22:44Z",
+    "repeticiones" : 1,
     "respuesta" : "`1100 1010`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:22:44Z"
   },
   {
     "ease" : 2.5,
     "id" : "D1314DA6-08A0-430B-9892-3332BF34168F",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Pasa a binario (8 bits): **135**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:23:02Z",
+    "repeticiones" : 1,
     "respuesta" : "`1000 0111`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:02Z"
   },
   {
     "ease" : 1.7000000000000002,
@@ -147,70 +149,76 @@
     "ultima" : "2026-10-26T12:51:26Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "2F072C1C-A9F5-401F-9A9F-6E242E23A6AA",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "¿Cuántos bits hacen falta como mínimo para representar **935** valores distintos?",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:23:09Z",
+    "repeticiones" : 1,
     "respuesta" : "**10**",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:09Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "75F3C312-23C3-4A39-A7BD-4031D8CFFC99",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "**AND** bit a bit de **0101** y **1011** (4 bits)",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:23:15Z",
+    "repeticiones" : 1,
     "respuesta" : "`0001`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:15Z"
   },
   {
     "ease" : 2.5,
     "id" : "17702E67-3270-4A3C-920A-624352A1360F",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "¿Cuántos bits hacen falta como mínimo para representar **709** valores distintos?",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:23:20Z",
+    "repeticiones" : 1,
     "respuesta" : "**10**",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:20Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "18D2F88C-2233-433F-847A-BFE731B40FA7",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "**OR** bit a bit de **0011** y **1110** (4 bits)",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:23:24Z",
+    "repeticiones" : 1,
     "respuesta" : "`1111`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:24Z"
   },
   {
     "ease" : 2.5,
     "id" : "949D2F37-9AF2-46D5-84EB-D8C14C5B004D",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "entrenamiento",
     "pregunta" : "Suma en binario de 4 bits: **0101 + 0110**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T13:23:35Z",
+    "repeticiones" : 1,
     "respuesta" : "`1011`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:35Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 2.6,
     "id" : "9C491F87-791A-4F7D-825F-A4AF8B4627A2",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "entrenamiento",
     "pregunta" : "Suma en binario de 4 bits: **0111 + 1000**",
-    "proxima" : "2026-10-26T12:42:06Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-29T13:23:39Z",
+    "repeticiones" : 1,
     "respuesta" : "`1111`",
-    "tema" : "Conversiones"
+    "tema" : "Conversiones",
+    "ultima" : "2026-10-26T13:23:39Z"
   },
   {
     "ease" : 2.5,
