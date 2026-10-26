@@ -1,3 +1,112 @@
 [
-
+  {
+    "ease" : 2.5,
+    "id" : "9D83A09A-E750-401C-8625-2C836A65F729",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Un conjunto de **3** elementos: ¿cuántos subconjuntos tiene y cuántas relaciones binarias sobre él?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**8** subconjuntos; **2^9** relaciones",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D99CF01A-7EBB-4445-BB9F-DF7A18D9FA57",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "**9^15** mod **11**",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**1**",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "84D6DEF7-DCE9-431E-B3D8-1078556ADC78",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "C(**8**, **2**)",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**28**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "0376D8FF-8FED-4A98-8250-563B8CA068B0",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Inverso de **9** módulo **13**",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**3** (9·3 = 27 ≡ 1)",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "524BE341-1E7E-482D-884F-07A17C0D17CE",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "|A| = 45, |B| = 56, |A∩B| = 33. ¿|A∪B|?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**68**",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F13BCD3D-0564-4DD4-9AF7-A0F16CB5B8AD",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "¿De cuántas formas se ordenan **2** elementos escogidos de entre **3**?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**6** (3!\/1!)",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "AB3E886F-8936-430C-81CA-FDD47130987B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Inverso de **3** módulo **5**",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**2** (3·2 = 6 ≡ 1)",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "23D5EA23-8254-4B7D-BA6B-F38FD84DA602",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Inverso de **5** módulo **11**",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**9** (5·9 = 45 ≡ 1)",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "04666C7F-24DB-4A94-AC8C-1709EF1FE2B5",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "C(**8**, **3**)",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**56**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "CA6ACE99-43C6-4BD4-AA8E-2FCD98C2689B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "|A| = 23, |B| = 37, |A∩B| = 12. ¿|A∪B|?",
+    "proxima" : "2026-10-26T16:33:05Z",
+    "repeticiones" : 0,
+    "respuesta" : "**48**",
+    "tema" : "Conjuntos"
+  }
 ]
