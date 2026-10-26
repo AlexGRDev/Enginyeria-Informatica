@@ -90,23 +90,25 @@
   {
     "ease" : 2.5,
     "id" : "D4773893-CC7B-4063-A119-3F85329F88C0",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "diaria-2026-10-26",
     "pregunta" : "**15 V** sobre **600 Ω**. ¿Corriente? ¿Potencia?",
-    "proxima" : "2026-10-26T16:33:05Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T16:50:39Z",
+    "repeticiones" : 1,
     "respuesta" : "**25 mA**; **0.375 W**",
-    "tema" : "Ohm"
+    "tema" : "Ohm",
+    "ultima" : "2026-10-26T16:50:39Z"
   },
   {
     "ease" : 2.5,
     "id" : "52AD7A1D-5C6E-46DC-879F-D1A0A043856F",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "diaria-2026-10-26",
     "pregunta" : "R = **80 Ω**, I = **6 mA**. ¿Tensión en la resistencia?",
-    "proxima" : "2026-10-26T16:33:05Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T16:51:10Z",
+    "repeticiones" : 1,
     "respuesta" : "**0.48 V**",
-    "tema" : "Ohm"
+    "tema" : "Ohm",
+    "ultima" : "2026-10-26T16:51:10Z"
   }
 ]
