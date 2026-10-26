@@ -1,5 +1,16 @@
 {
   "temas" : {
+    "Circuitos secuenciales" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7): 0,0",
+          "fecha" : "2026-10-26T08:22:22Z",
+          "fuente" : "real",
+          "nota" : 0
+        }
+      ]
+    },
     "Modelo temporal (tiempos de propagación, caminos críticos)" : {
       "dominio" : 0,
       "evaluaciones" : [
@@ -13,6 +24,12 @@
           "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal: 0,0",
           "fecha" : "2026-10-26T07:41:29Z",
           "fuente" : "estilo",
+          "nota" : 0
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7): 0,0",
+          "fecha" : "2026-10-26T08:22:22Z",
+          "fuente" : "real",
           "nota" : 0
         }
       ]
@@ -31,11 +48,17 @@
           "fecha" : "2026-10-26T07:41:29Z",
           "fuente" : "estilo",
           "nota" : 0.5
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7): 0,0",
+          "fecha" : "2026-10-26T08:22:22Z",
+          "fuente" : "real",
+          "nota" : 0.5
         }
       ]
     },
     "Representación de números naturales (base b, binario, hexadecimal, conversiones)" : {
-      "dominio" : 1.2999999999999998,
+      "dominio" : 1.1199999999999999,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
@@ -48,6 +71,12 @@
           "fecha" : "2026-10-26T07:41:29Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7): 0,0",
+          "fecha" : "2026-10-26T08:22:22Z",
+          "fuente" : "real",
+          "nota" : 1
         }
       ]
     },
@@ -64,6 +93,12 @@
           "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal: 0,0",
           "fecha" : "2026-10-26T07:41:29Z",
           "fuente" : "estilo",
+          "nota" : 0
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7): 0,0",
+          "fecha" : "2026-10-26T08:22:22Z",
+          "fuente" : "real",
           "nota" : 0
         }
       ]

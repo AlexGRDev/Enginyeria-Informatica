@@ -32,15 +32,16 @@
     "descripcion" : "Apartado b en blanco.",
     "ejemplos" : [
       "Apartado b en blanco.",
-      "Sin respuesta a la fórmula de Wu y al rango."
+      "Sin respuesta a la fórmula de Wu y al rango.",
+      "Pregunta 1 en blanco: no aborda la interpretación de vectores de bits como enteros ni las salidas del esquema de bloques."
     ],
     "id" : "9711CD03-5340-4016-AD29-89A235E6E19E",
     "patron" : "No sabe abordar el rango de representación en base b",
     "primera" : "2026-10-25T20:31:52Z",
-    "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1].",
+    "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural y con signo.",
     "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-    "ultima" : "2026-10-26T07:41:29Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T08:22:22Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Pregunta en blanco.",
@@ -73,43 +74,46 @@
     "descripcion" : "Pregunta en blanco.",
     "ejemplos" : [
       "Pregunta en blanco.",
-      "No construye la tabla con columnas intermedias para el circuito con bloque B."
+      "No construye la tabla con columnas intermedias para el circuito con bloque B.",
+      "Pregunta 3 en blanco: sin tabla de verdad, mapas ni síntesis."
     ],
     "id" : "2486CC78-D59F-4E29-B0A0-DB9E17860C0F",
     "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
     "primera" : "2026-10-25T20:31:53Z",
-    "refuerzo" : "Evaluar columna a columna x, s, a·b, x·c, co.",
+    "refuerzo" : "Evaluar columna a columna x, s, a·b, x·c, co. Escribir las 8 filas en orden binario y una columna por señal intermedia.",
     "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-    "ultima" : "2026-10-26T07:41:29Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T08:22:22Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Pregunta en blanco.",
     "ejemplos" : [
       "Pregunta en blanco.",
-      "No escribe minterms, ni contenido de ROM, ni usa el decodificador."
+      "No escribe minterms, ni contenido de ROM, ni usa el decodificador.",
+      "Sin conexiones del descodificador ni OR del estado siguiente."
     ],
     "id" : "FA83ED46-8155-4733-905B-A252E7AC8C39",
     "patron" : "No sabe abordar la suma de minterms",
     "primera" : "2026-10-25T20:31:53Z",
     "refuerzo" : "Un minterm por cada fila con salida 1, y contar puertas a partir de ellos.",
     "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-    "ultima" : "2026-10-26T07:41:29Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T08:22:22Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Pregunta en blanco.",
     "ejemplos" : [
       "Pregunta en blanco.",
-      "No rellena la ROM a partir de la especificación en pseudocódigo."
+      "No rellena la ROM a partir de la especificación en pseudocódigo.",
+      "Sin contenido de ROM para el CLC de salidas (000->00, 001->00, 010->01, 011->10, 100->11, resto XX)."
     ],
     "id" : "7F1BBAAE-8B7C-4781-9A48-A7F391FA4BE5",
     "patron" : "No sabe abordar el contenido de una ROM",
     "primera" : "2026-10-25T20:31:53Z",
     "refuerzo" : "Dirección = 4·Yu + Xu; recorrer los valores de Yu y marcar los Xu < Yu.",
     "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-    "ultima" : "2026-10-26T07:41:29Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T08:22:22Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Pregunta en blanco.",
@@ -128,29 +132,31 @@
     "descripcion" : "Pregunta en blanco.",
     "ejemplos" : [
       "Pregunta en blanco.",
-      "No enumera caminos que atraviesan un bloque con Tp distinto por par entrada-salida."
+      "No enumera caminos que atraviesan un bloque con Tp distinto por par entrada-salida.",
+      "Sin camino crítico ni tiempo de ciclo mínimo (150+450+50+50=700 u.t.)."
     ],
     "id" : "322FF751-6A13-4E9C-B377-2C48CF40F44B",
     "patron" : "No sabe abordar caminos críticos con bloques",
     "primera" : "2026-10-25T20:31:53Z",
-    "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida.",
+    "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida, y sumar los Tp de cada uno.",
     "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-    "ultima" : "2026-10-26T07:41:29Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T08:22:22Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Pregunta en blanco.",
     "ejemplos" : [
       "Pregunta en blanco.",
-      "No propaga los cambios de entrada con los Tp de las puertas."
+      "No propaga los cambios de entrada con los Tp de las puertas.",
+      "No se dibujan !x ni Mx y w no se obtiene propagando retardos desde los flancos de clk."
     ],
     "id" : "ABEA373A-D386-4EEF-BF0A-46692ACED947",
     "patron" : "No sabe abordar cronogramas con glitch",
     "primera" : "2026-10-25T20:31:53Z",
     "refuerzo" : "Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo.",
     "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-    "ultima" : "2026-10-26T07:41:29Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T08:22:22Z",
+    "veces" : 3
   },
   {
     "descripcion" : "6D da 1101110 (7 bits) y 9F da un vector de 9 bits en lugar de 01101101 y 10011111.",
@@ -163,6 +169,19 @@
     "refuerzo" : "Convertir cada dígito hexadecimal a su nibble (6=0110, D=1101, 9=1001, F=1111) y concatenar; el vector final debe tener 8 bits.",
     "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
     "ultima" : "2026-10-26T07:41:29Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Sin arcos en el grafo de la XOR de los dos últimos bits.",
+    "ejemplos" : [
+      "Sin arcos en el grafo de la XOR de los dos últimos bits."
+    ],
+    "id" : "DC151C2B-D9E5-4C4B-B74F-C8E81ED673E4",
+    "patron" : "No sabe abordar el grafo de estados de un circuito secuencial",
+    "primera" : "2026-10-26T08:22:22Z",
+    "refuerzo" : "Cada estado guarda los dos últimos bits de x; w es su XOR; el arco con x desplaza el historial.",
+    "tema" : "Circuitos secuenciales",
+    "ultima" : "2026-10-26T08:22:22Z",
     "veces" : 1
   }
 ]
