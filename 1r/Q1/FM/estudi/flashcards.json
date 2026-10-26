@@ -77,15 +77,16 @@
     "tema" : "Congruencias"
   },
   {
-    "ease" : 2.5,
+    "ease" : 1.7000000000000002,
     "id" : "23D5EA23-8254-4B7D-BA6B-F38FD84DA602",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "diaria-2026-10-26",
     "pregunta" : "Inverso de **5** módulo **11**",
-    "proxima" : "2026-10-26T16:33:05Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T16:56:23Z",
+    "repeticiones" : 1,
     "respuesta" : "**9** (5·9 = 45 ≡ 1)",
-    "tema" : "Congruencias"
+    "tema" : "Congruencias",
+    "ultima" : "2026-10-26T16:56:23Z"
   },
   {
     "ease" : 2.5,
@@ -101,12 +102,13 @@
   {
     "ease" : 2.5,
     "id" : "CA6ACE99-43C6-4BD4-AA8E-2FCD98C2689B",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "diaria-2026-10-26",
     "pregunta" : "|A| = 23, |B| = 37, |A∩B| = 12. ¿|A∪B|?",
-    "proxima" : "2026-10-26T16:33:05Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T16:56:04Z",
+    "repeticiones" : 1,
     "respuesta" : "**48**",
-    "tema" : "Conjuntos"
+    "tema" : "Conjuntos",
+    "ultima" : "2026-10-26T16:56:04Z"
   }
 ]
