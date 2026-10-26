@@ -11,15 +11,16 @@
     "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
   },
   {
-    "ease" : 2.5,
+    "ease" : 1.7000000000000002,
     "id" : "30DE5D5B-7504-4910-9F3F-8C4EAFDE5AFA",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Procedimiento para sintetizar una salida en suma de minterms a partir de su tabla de verdad.",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:54Z",
+    "repeticiones" : 1,
     "respuesta" : "Un minterm por cada fila con salida 1. La salida es el OR de todos esos minterms. Las filas con salida 0 no se usan.",
-    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+    "ultima" : "2026-10-26T09:48:54Z"
   },
   {
     "ease" : 2.5,
@@ -99,15 +100,16 @@
     "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
   },
   {
-    "ease" : 2.5,
+    "ease" : 1.7000000000000002,
     "id" : "F03A618F-F4B9-4036-8456-84EB01239442",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Cómo se construye la tabla de verdad para analizar un combinacional de 3 entradas.",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:55Z",
+    "repeticiones" : 1,
     "respuesta" : "8 filas (2^3) en orden binario 000...111. Una columna por cada señal intermedia, evaluadas en el orden en que las calculan las puertas, y al final las columnas de salida.",
-    "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+    "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
+    "ultima" : "2026-10-26T09:48:55Z"
   },
   {
     "ease" : 2.5,
@@ -143,81 +145,88 @@
     "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
   },
   {
-    "ease" : 2.5,
+    "ease" : 1.7000000000000002,
     "id" : "5048252E-5D6F-42A6-BAC4-48FF0238A7A4",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "ROM de Xu < Yu (dirección = 4·Yu + Xu): ¿en qué direcciones hay un 1?",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:57Z",
+    "repeticiones" : 1,
     "respuesta" : "Yu=1: dirección 4. Yu=2: direcciones 8 y 9. Yu=3: direcciones 12, 13 y 14. Yu=0: ninguna.",
-    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+    "ultima" : "2026-10-26T09:48:57Z"
   },
   {
     "ease" : 2.5,
     "id" : "6C5B8F87-8077-4B96-871F-57A93A55A735",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Contenido completo de la ROM de Xu < Yu, direcciones 0 a 15 en grupos de 4.",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:46:43Z",
+    "repeticiones" : 1,
     "respuesta" : "0000 1000 1100 1110 (Yu=0, 1, 2, 3).",
-    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+    "ultima" : "2026-10-26T09:46:43Z"
   },
   {
     "ease" : 2.5,
     "id" : "79C1BC06-262B-47E1-B6D0-FE6192E08357",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Cómo se calcula el Tp de un circuito y su camino crítico.",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:47:10Z",
+    "repeticiones" : 1,
     "respuesta" : "Se enumeran todos los caminos entrada-salida y se suma el Tp de las puertas de cada uno. El Tp del circuito es el máximo, y ese camino es el crítico.",
-    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-26T09:47:10Z"
   },
   {
-    "ease" : 2.5,
+    "ease" : 1.7000000000000002,
     "id" : "432749CA-857F-47D6-8DC8-302AD0FD7A4C",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Un bloque tiene Tp a→s = 3 y b→s = 5. Tras él hay un NOT de Tp 1. ¿Tp de cada camino y camino crítico?",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:58Z",
+    "repeticiones" : 1,
     "respuesta" : "a→s→NOT: 3+1 = 4. b→s→NOT: 5+1 = 6. Camino crítico: b, con 6.",
-    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-26T09:48:58Z"
   },
   {
     "ease" : 2.5,
     "id" : "BF053B97-485D-4D4A-BC52-CA771561D5F2",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "¿Por qué en un bloque no basta usar su Tp máximo para todos los caminos?",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:15Z",
+    "repeticiones" : 1,
     "respuesta" : "Cada par entrada-salida del bloque tiene su propio Tp interno. Hay que usar el del par por el que pasa cada camino. Si no, se sobreestiman los caminos que no pasan por el par más lento.",
-    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-26T09:48:15Z"
   },
   {
     "ease" : 2.5,
     "id" : "301C2632-98A8-4032-AB4C-980D9BEA8466",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "¿Qué es un glitch en un cronograma y cuándo aparece?",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:40Z",
+    "repeticiones" : 1,
     "respuesta" : "Un pulso espurio en la salida. Aparece cuando dos caminos con distinto retardo reconvergen en una puerta, aunque el valor final no cambie.",
-    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-26T09:48:40Z"
   },
   {
     "ease" : 2.5,
     "id" : "1F12E7AE-F950-4E85-8C43-8704C5C6ECD3",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Procedimiento para dibujar un cronograma con glitch.",
-    "proxima" : "2026-10-26T09:35:00Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T09:48:48Z",
+    "repeticiones" : 1,
     "respuesta" : "Propagar cada cambio de entrada con el Tp de cada puerta. Dividir el tiempo en intervalos entre cambios y evaluar la salida de cada puerta en cada intervalo.",
-    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+    "ultima" : "2026-10-26T09:48:48Z"
   },
   {
     "ease" : 2.5,
