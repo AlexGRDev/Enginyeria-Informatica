@@ -1,0 +1,53 @@
+{
+  "examenes" : [
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 3,
+      "fuente" : "material\/raco\/Examens_FM_-_2026-07-27T122117.133.pdf",
+      "orden" : 200260,
+      "temas" : [
+        {
+          "tema" : "Demostracions",
+          "tipo" : "demostración de equivalencia o implicación (paridad, desigualdades, racionales) con método explícito: contrarrecíproco, reducción al absurdo o disyunción en el consecuente"
+        },
+        {
+          "tema" : "Inducció",
+          "tipo" : "inducción simple sobre desigualdad, múltiplo o fórmula (H.I. y T.I. explícitas, separando último término o factor)"
+        },
+        {
+          "tema" : "Sumatoris",
+          "tipo" : "inducción con sumatorio o productorio como enunciado, separando el último término y aplicando la H.I."
+        },
+        {
+          "tema" : "Conjunts i Relacions",
+          "tipo" : "igualdad o inclusión de conjuntos (⇔, ∪, ∩, −, ×) por doble inclusión con x genérico, o relación de equivalencia: probar reflexiva, simétrica, transitiva, calcular clases y conjunto cociente"
+        }
+      ]
+    },
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 3,
+      "fuente" : "material\/EXAMFM.pdf",
+      "orden" : 0,
+      "temas" : [
+        {
+          "tema" : "Demostracions",
+          "tipo" : "demostración de equivalencia o implicación (paridad, desigualdades, racionales) con método explícito: contrarrecíproco, reducción al absurdo o disyunción en el consecuente"
+        },
+        {
+          "tema" : "Inducció",
+          "tipo" : "inducción simple sobre desigualdad, múltiplo o fórmula (H.I. y T.I. explícitas, separando último término o factor)"
+        },
+        {
+          "tema" : "Sumatoris",
+          "tipo" : "inducción con sumatorio o productorio como enunciado, separando el último término y aplicando la H.I."
+        },
+        {
+          "tema" : "Conjunts i Relacions",
+          "tipo" : "igualdad o inclusión de conjuntos (⇔, ∪, ∩, −, ×) por doble inclusión con x genérico, o relación de equivalencia: probar reflexiva, simétrica, transitiva, calcular clases y conjunto cociente"
+        }
+      ]
+    }
+  ],
+  "fecha" : "2026-10-26T17:56:45Z"
+}
