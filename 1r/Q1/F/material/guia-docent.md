@@ -1,6 +1,6 @@
 # Guia docent: F
 
-_Font: api.fib.upc.edu, descarregada el 2026-10-25._
+_Font: api.fib.upc.edu, descarregada el 2026-10-26._
 
 ## Actes Avaluatius
 
