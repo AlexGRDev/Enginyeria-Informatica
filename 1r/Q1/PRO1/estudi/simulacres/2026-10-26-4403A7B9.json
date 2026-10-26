@@ -1,0 +1,222 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 2.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 2.5,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 4,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 1.8,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "La función auxiliar no lleva @pre ni @post.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Correcto y lineal: tres comparaciones por caso. Lectura con `while (cin >> a >> b >> c)` válida porque el número de casos es arbitrario. Falta la especificación pre\/post sobre `ft_no_max_no_min`. Alternativa más simple: calcular el mediano como a+b+c-max-min.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "void ft_no_max_no_min(int a, int b, int c) sin pre\/post",
+            "puntos" : 1
+          }
+        ],
+        "puntosObtenidos" : 1.8
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Usa std::string cuando el enunciado exige solo int con operaciones aritméticas.",
+            "patron" : "Incumplir restricción explícita del enunciado",
+            "refuerzo" : "Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y \/10.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "La lógica es correcta (impares y luego pares positivos, z = 2*y, AC en el Jutge). Pero el enunciado prohíbe `string` y exige usar solo `int` con +,-,*,\/,%. Leer `std::string x` y recorrerlo con `c_str()` incumple esa restricción explícita, así que la nota es 0. Se resuelve con `x%10` y `x\/10`, aunque eso invierte el orden de los dígitos. Hay que leer los dígitos de derecha a izquierda y colocar cada uno con una potencia de 10 acumulada para cada grupo.",
+        "funcional" : 10,
+        "id" : "P2",
+        "penalizaciones" : [
+          {
+            "categoria" : "restriccion",
+            "concepto" : "Incumplir restricción explícita del enunciado",
+            "detalle" : "std::string x; while (std::cin >> x) ... x.c_str() cuando se prohíbe incluso string; implica nota 0",
+            "puntos" : 10
+          }
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No plantea el recorrido de dígitos para contar picos.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "En blanco: el main está vacío. Hay que recorrer los dígitos con %10 y \/10 y comparar cada trío consecutivo, guardando solo los dos dígitos anteriores.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No escribe la función recursiva de diferencia de dígitos.",
+            "patron" : "No sabe abordar Recursividad",
+            "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
+            "tema" : "Recursividad"
+          }
+        ],
+        "feedback" : "En blanco. Caso base: x == 0 devuelve y, o y == 0 devuelve x, porque el dígito que falta cuenta como 0. Paso recursivo: abs(x%10 - y%10) + diferencia(x\/10, y\/10).",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No plantea la comparación de racionales con enteros ni la simplificación con gcd.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Comparar a\/b y c\/d con a*d y c*b, y simplificar con gcd al imprimir.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco. Lee a\/b con `cin >> a >> c >> b` (c es el char '\/'). Compara a\/b y c\/d con a*d y c*b, sin reales. Al final simplifica con gcd.",
+        "funcional" : 0,
+        "id" : "P5",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Solo P1 puntúa (1,8 de 10). P2 funciona pero usa `string`, que el enunciado prohíbe, así que vale 0. P3, P4 y P5 están en blanco. No he podido leer las imágenes de pizarra porque no venían adjuntas, y la nota se basa solo en el código. Prioridad antes del parcial: recorrido de dígitos con %10 y \/10 sin string, recursión sobre dígitos y comparación de racionales con producto cruzado y gcd."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X31205 · Donats tres nombres diferents, escriure el que no és ni màxim ni mínim\n\n# Donats tres nombres diferents, escriure el que no és ni màxim ni mínim\n\nL'entrada d'aquest exercici té varis casos. Cada cas consisteix en tres\nnaturals diferents $a,b,c$. Per a cada cas, la sortida ha de ser un dels\ntres nombres d'entrada, concretament el que no és ni el més gran ni el\nmés petit.\n\nPer exemple, amb entrada `35102 785902 149` el programa haurà d'escriure\n`35102`.\n\n## Entrada\n\nL'entrada té un nombre arbitrari de casos. Cada cas conté tres naturals\nen una línia.\n\n## Sortida\n\nPer a cada cas, hi ha una línia amb el corresponent natural que no és ni\nel més gran ni el més petit.\n\n## Observació\n\nNo es poden utilitzar mètodes d'emmagatzemament massiu d'informació (com\nper exemple `string` o `vector`). Avaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T15:05:39.213Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P1",
+        "jutge" : "X31205_ca",
+        "puntos" : 2,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X66638 · Primer digits senars (1,3,5,7,9), després dígits parells positius (2,4,6,8)\n\n# Primer digits senars (1,3,5,7,9), després dígits parells positius (2,4,6,8)\n\nFeu un programa tal que, per a cada natural positiu `x` d'entrada,\nescrigui dos nombres naturals `y,z` separats per un espai en blanc. El\nnatural `y` està format per la subseqüència de dígits de `x` que son\nsenars (és a dir, del conjunt `{1,3,5,7,9}`), seguida de la subseqüència\nde dígits de `x` que son parells i positius (és a dir, del conjunt\n`{2,4,6,8}`). El natural `z` és simplement el doble de `y`, és a dir,\n`z == 2*y`.\n\nPer exemple, si `x` és 250813126, llavors el programa ha d'escriure en\nprimer lloc el natural 51312826, doncs la subseqüència de dígits senars\nde `x` és 5131, i la subseqüència de dígits parells i positius de `x` és\n2826. En segon lloc, el programa ha d'escriure 102625652, doncs és el\ndoble de 51312826.\n\n## Entrada\n\nL'entrada consisteix en varis casos de naturals positius `x`, cadascun\nen una línia.\n\n## Sortida\n\nPer a cada `x` d'entrada, el programa escriu els corresponents `y,z` en\nuna nova línia, i separats per un espai en blanc.\n\n## Observació\n\nNo es pot utilitzar cap mètode d'emmagatzemament massiu de dades, ni tan\nsols `string`. Resoleu aquest exercici utilitzant només el tipus `int` i\nmanipulant enters amb operacions bàsiques (`+,-,*,\/,%`).\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T22:02:10.357Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P2",
+        "jutge" : "X66638_ca",
+        "puntos" : 2,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X25987 · Nombre de pics en números d'entrada\n\n# Nombre de pics en números d'entrada\n\nDonat un nombre natural `n`, un pic a `n` son tres dígits consecutius de\nla representació en base 10 de `n` tals que el d'enmig és estrictament\nmajor que els altres dos que l'envolten.\n\nEscriviu un programa que llegeix nombres d'entrada, i compta quants pics\nhi ha en cadascun d'ells.\n\nPer exemple, amb entrada `192056423` haurà d'escriure `2`.\n\n## Entrada\n\nL'entrada té un nombre arbitrari de casos. Cada cas conté un natural\npositiu en una línia.\n\n## Sortida\n\nPer a cada cas, hi ha una línia amb el corresponent nombre de pics.\n\n## Observació\n\nNo es pot utilitzar cap mètode d'emmagatzemament massiu de dades, ni tan\nsols `string`. Resoleu aquest exercici utilitzant només el tipus `int` i\nmanipulant enters amb operacions bàsiques (`+,-,*,\/,%`).\n\nAvaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T14:41:24.842Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P3",
+        "jutge" : "X25987_ca",
+        "puntos" : 2,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### U43326 · Diferència entre Nombres\n\n# Diferència entre Nombres\n\nLa diferència entre dos nombres es defineix com la suma del valor de la\ndiferència (en valor absolut) dígit a dígit. Per exemple, la diferència\nentre el 24 i el 2317 és 9:\n\n    0024\n    2317\n    ----\n    2313 = 2 + 3 + 1 + 3 = 9\n\nCal implementar la funció **recursiva** `int diferencia(int x, int y)`\namb la següent especificació:\n\n`PRE: ` Dos enters $x \\geq 0$ i $y \\geq 0$.\n\n`POST:` La diferència entre $x$ i $y$.\n\n## Observació\n\nLes funcions iteratives s'invalidaran. Només cal que envieu la funció en\nun fitxer `.cc`. La resta no es tindrà en compte.\n\nEs pot fer servir la funció `abs` afegint:\n\n    #include <cmath>\n    using namespace std;\n\n## Entrada\n\nDos enters $x \\geq 0$ i $y \\geq 0$.\n\n## Sortida\n\nLa diferència entre $x$ i $y$.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:00:23.165Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P4",
+        "jutge" : "U43326_ca",
+        "puntos" : 2,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T61086 · Màxim d'una seqüència de racionals\n\n# Màxim d'una seqüència de racionals\n\nFes un programa que calcula el màxim d'una seqüència de racionals.\n\n## Entrada\n\nUna seqüència de racionals positius sense sentinella, amb almenys 1\nelement. Els racionals d'entrada no tenen perquè estar simplificats.\nCada racional està format per dos enters separats pel caràcter '`\/`'.\n\n## Sortida\n\nEl racional més gran de la seqüència, simplificat, en el mateix format\nque els racionals d'entrada.\n\n## Observació\n\n- Els centres d'interès d'aquest problema són la **correctesa** i la\n  **llegibilitat**.\n\n- Podeu fer servir la funció `gcd` (màxim comú divisor) de la llibreria\n  estàndard que es pot incloure amb la capçalera '`#include <numeric>`'.\n  (També es poden fer servir '`max`', '`min`' i '`swap`', que estan\n  incloses automàticament quan s'inclou `iostream`.)\n\n- No feu servir nombres reals per representar el valor d'un racional en\n  aquest exercici, si ho feu l'exercici serà invalidat.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T12:54:41.005Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P5",
+        "jutge" : "T61086_ca",
+        "puntos" : 2,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 5 problemas"
+  },
+  "fecha" : "2026-10-26T20:14:51Z",
+  "fuentes" : [
+    "X31205",
+    "X66638",
+    "X25987",
+    "U43326",
+    "T61086"
+  ],
+  "id" : "4403A7B9-CEE6-4F39-A696-AFA0595D7F33",
+  "minutos" : 22,
+  "modo" : "jutge",
+  "notaAntes" : 1.5368472552418897,
+  "notaDespues" : 1.8683217029392236,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X31205.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 21:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 21:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nvoid\tft_no_max_no_min(int a, int b, int c)\n{\n\tif ((a < b && b < c) || (c < b && b < a))\n\t\tstd::cout << b << '\\n';\n\telse if ((b < a && a < c) || (c < a && a < b))\n\t\tstd::cout << a << '\\n';\n\telse\n\t\tstd::cout << c << '\\n';\n}\n\nint\tmain(void)\n{\n\tint\ta;\n\tint\tb;\n\tint\tc;\n\n\twhile (std::cin >> a >> b >> c)\n\t\tft_no_max_no_min(a, b, c);\n\treturn (0);\n}",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X66638.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 21:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 21:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n#include <iostream>\n#include <string>\n\nvoid\tft_odd_even(const char *str)\n{\n\tconst char\t*pstr;\n\tlong long\ty;\n\n\ty = 0;\n\tpstr = str;\n\twhile (*pstr)\n\t{\n\t\tif ((*pstr - '0') % 2 == 1)\n\t\t\ty = y * 10 + (*pstr - '0');\n\t\tpstr++;\n\t}\n\tpstr = str;\n\twhile (*pstr)\n\t{\n\t\tif (*pstr != '0' && (*pstr - '0') % 2 == 0)\n\t\t\ty = y * 10 + (*pstr - '0');\n\t\tpstr++;\n\t}\n\tstd::cout << y << ' ' << 2 * y << '\\n';\n}\n\nint\tmain(void)\n{\n\tstd::string\tx;\n\n\twhile (std::cin >> x)\n\t\tft_odd_even(x.c_str());\n\treturn (0);\n}",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X25987.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 21:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 21:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   U43326.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 21:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 21:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P5" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T61086.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/26 21:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/26 21:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+    "P1" : "AC",
+    "P2" : "AC"
+  }
+}

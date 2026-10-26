@@ -23,15 +23,16 @@
       "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
       "Sin intento de enumeración con bucles anidados.",
       "Sin comparación de racionales con enteros ni simplificación con gcd.",
-      "Extracción de dígitos y construcción de números solo con int."
+      "Extracción de dígitos y construcción de números solo con int.",
+      "No plantea la comparación de racionales con enteros ni la simplificación con gcd."
     ],
     "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
     "patron" : "No sabe abordar Tipos básicos",
     "primera" : "2026-10-25T20:40:13Z",
     "refuerzo" : "Comparar a\/b y c\/d con a*d y c*b, y simplificar con gcd al imprimir.",
     "tema" : "Tipos básicos",
-    "ultima" : "2026-10-26T17:41:32Z",
-    "veces" : 4
+    "ultima" : "2026-10-26T20:37:15Z",
+    "veces" : 5
   },
   {
     "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
@@ -53,29 +54,31 @@
       "No implementa la función pedida.",
       "Recorrido de dígitos con %10 y \/10 reconstruyendo el número.",
       "Función is_bicolor sin implementar.",
-      "Decodificación base 64 con extracción de dígitos en base 256."
+      "Decodificación base 64 con extracción de dígitos en base 256.",
+      "No plantea el recorrido de dígitos para contar picos."
     ],
     "id" : "FC1EE0B2-27F1-446F-9AB2-9E5D554AF4FD",
     "patron" : "No sabe abordar Funciones auxiliares",
     "primera" : "2026-10-25T20:40:13Z",
     "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-26T17:41:32Z",
-    "veces" : 5
+    "ultima" : "2026-10-26T20:37:15Z",
+    "veces" : 6
   },
   {
     "descripcion" : "ft_draw_a no tiene @pre\/@post.",
     "ejemplos" : [
       "ft_draw_a no tiene @pre\/@post.",
-      "ft_calc_rectangle sin @pre\/@post."
+      "ft_calc_rectangle sin @pre\/@post.",
+      "La función auxiliar no lleva @pre ni @post."
     ],
     "id" : "50F48229-0E9F-4EB8-B8BF-AA5E260EE795",
     "patron" : "No documentar las funciones con especificación pre\/post",
     "primera" : "2026-10-26T17:41:32Z",
     "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-26T17:41:32Z",
-    "veces" : 2
+    "ultima" : "2026-10-26T20:37:15Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Bucles de impresión de espacios y 'A' repetidos dentro de una sola función.",
@@ -114,6 +117,32 @@
     "refuerzo" : "Comparar c1, c2, c3 entre sí y devolver el string según los casos.",
     "tema" : "std::string",
     "ultima" : "2026-10-26T17:41:32Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Usa std::string cuando el enunciado exige solo int con operaciones aritméticas.",
+    "ejemplos" : [
+      "Usa std::string cuando el enunciado exige solo int con operaciones aritméticas."
+    ],
+    "id" : "43BC58F3-0336-4EAC-99BC-95DD7ECE4223",
+    "patron" : "Incumplir restricción explícita del enunciado",
+    "primera" : "2026-10-26T20:37:15Z",
+    "refuerzo" : "Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y \/10.",
+    "tema" : "Tipos básicos",
+    "ultima" : "2026-10-26T20:37:15Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "No escribe la función recursiva de diferencia de dígitos.",
+    "ejemplos" : [
+      "No escribe la función recursiva de diferencia de dígitos."
+    ],
+    "id" : "4E7AC40B-6660-47FA-9721-2892B1D212D9",
+    "patron" : "No sabe abordar Recursividad",
+    "primera" : "2026-10-26T20:37:15Z",
+    "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
+    "tema" : "Recursividad",
+    "ultima" : "2026-10-26T20:37:15Z",
     "veces" : 1
   }
 ]
