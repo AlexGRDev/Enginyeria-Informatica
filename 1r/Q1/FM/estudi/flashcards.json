@@ -1,3 +1,167 @@
 [
-
+  {
+    "ease" : 2.5,
+    "id" : "7A2D0CFC-28F7-4EEB-A07A-7A9931BB3E5B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "C(**5**, **3**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**10**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "57A7E41D-7BA4-48C7-B06E-6101C4C3B37A",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "mcd(**48**, **16**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**16**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D6D2E16B-91EF-4564-887A-D0C927C05EEC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "mcd(**15**, **25**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**5**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "924F736A-B32D-45F9-AC2C-CDD0996AB8C7",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Un conjunto de **5** elementos: ¿cuántos subconjuntos tiene y cuántas relaciones binarias sobre él?",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**32** subconjuntos; **2^25** relaciones",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "343A0DBE-85EB-4A10-88B6-5747F9828AD7",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "mcm(**9**, **6**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**18**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "9A8661FE-2429-415A-AA6C-7072FABB3925",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "C(**8**, **2**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**28**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "13835599-F5D1-4178-9C98-A0F82CD58846",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Inverso de **2** módulo **13**",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**7** (2·7 = 14 ≡ 1)",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "8B52112E-2BE1-4A88-87E9-0DF46151558B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "|A| = 40, |B| = 47, |A∩B| = 19. ¿|A∪B|?",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**68**",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F78EAD7A-F280-4105-87A9-692D8E6523DC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "¿De cuántas formas se ordenan **2** elementos escogidos de entre **5**?",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**20** (5!\/3!)",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "8380D396-7E71-4BFD-B9DC-39318C30C438",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "¿De cuántas formas se ordenan **3** elementos escogidos de entre **3**?",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**6** (3!\/0!)",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "79958D42-7182-4126-A74D-C1F14C73CDFC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "¿De cuántas formas se ordenan **3** elementos escogidos de entre **5**?",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**60** (5!\/2!)",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "DD72BB7D-2B8D-419D-9E86-E4986C77004D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "C(**8**, **2**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**28**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "2AF2ECE9-A40B-4685-A467-C4D59475D64E",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "mcd(**8**, **28**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**4**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "799291E9-D793-447D-A9C1-9A66C03D94E5",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "mcd(**12**, **20**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**4**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "9560B977-50AC-437C-86CC-FB0ACA8D833E",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "mcd(**18**, **18**)",
+    "proxima" : "2026-10-26T16:59:33Z",
+    "repeticiones" : 0,
+    "respuesta" : "**18**",
+    "tema" : "Divisibilidad"
+  }
 ]
