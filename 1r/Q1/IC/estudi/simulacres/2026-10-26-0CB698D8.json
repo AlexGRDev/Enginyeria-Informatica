@@ -1,0 +1,229 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1,
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+      },
+      {
+        "nota" : 0.5,
+        "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Circuitos secuenciales"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta 1 en blanco: no aborda la interpretación de vectores de bits como enteros ni las salidas del esquema de bloques.",
+            "patron" : "No sabe abordar el rango de representación en base b",
+            "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural y con signo.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "En blanco. Había que completar dos filas con conversiones entre binario y entero con signo (complemento a 2), desplazamientos SL-3 y SRA-2, resta, comparación LT y MUX.",
+        "id" : "p1",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin contenido de ROM para el CLC de salidas (000->00, 001->00, 010->01, 011->10, 100->11, resto XX).",
+            "patron" : "No sabe abordar el contenido de una ROM",
+            "refuerzo" : "Dirección = 4·Yu + Xu; recorrer los valores de Yu y marcar los Xu < Yu.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          },
+          {
+            "descripcion" : "Sin conexiones del descodificador ni OR del estado siguiente.",
+            "patron" : "No sabe abordar la suma de minterms",
+            "refuerzo" : "Un minterm por cada fila con salida 1, y contar puertas a partir de ellos.",
+            "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+          }
+        ],
+        "feedback" : "En blanco. Faltaba el descodificador con las conexiones de los arcos, la codificación del registro (3 biestables) y los valores de la ROM (dirección q2q1q0).",
+        "id" : "p2",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta 3 en blanco: sin tabla de verdad, mapas ni síntesis.",
+            "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
+            "refuerzo" : "Evaluar columna a columna x, s, a·b, x·c, co. Escribir las 8 filas en orden binario y una columna por señal intermedia.",
+            "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+          }
+        ],
+        "feedback" : "En blanco. Faltaban la tabla de verdad del descodificador con ORs, los tres mapas de Karnaugh y la síntesis con puertas.",
+        "id" : "p3",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No se dibujan !x ni Mx y w no se obtiene propagando retardos desde los flancos de clk.",
+            "patron" : "No sabe abordar cronogramas con glitch",
+            "refuerzo" : "Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "Solo hay una forma de onda de w en la pizarra (0 hasta 6, 1 hasta 12, 0 hasta 24, luego 1), sin marcas de tiempo que correspondan al cronograma, y sin las filas !x ni Mx. Hay que propagar con Tp(NOT)=1, Tp(Mx)=2 y Tp(biestable)=4 desde cada flanco. La onda no concuerda con la solución (w sube 4 u.t. después de un flanco de clk, no en 6) y faltan dos de las tres filas, así que no puntúa.",
+        "id" : "p4",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin arcos en el grafo de la XOR de los dos últimos bits.",
+            "patron" : "No sabe abordar el grafo de estados de un circuito secuencial",
+            "refuerzo" : "Cada estado guarda los dos últimos bits de x; w es su XOR; el arco con x desplaza el historial.",
+            "tema" : "Circuitos secuenciales"
+          }
+        ],
+        "feedback" : "En blanco. Había que definir 4 estados que recuerden (x(c-1), x(c-2)) y dibujar los arcos para x=0 y x=1.",
+        "id" : "p5",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Sin camino crítico ni tiempo de ciclo mínimo (150+450+50+50=700 u.t.).",
+            "patron" : "No sabe abordar caminos críticos con bloques",
+            "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida, y sumar los Tp de cada uno.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "En blanco. Faltaban los arcos de la UC (z=0\/1 en E2 y E3, Ini en E0 y E7), el camino crítico RegA\/RegB-ADD-MUX-MUX-REG y los 700 u.t.",
+        "id" : "p6",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Examen casi en blanco: solo hay una pizarra de p4 con una forma de onda de w, y no sirve. Nota 0 sobre 10. Con el parcial en 4 días, el orden de trabajo es: conversiones y rango en base b, tabla de verdad con columnas intermedias y suma de minterms\/ROM, y modelo temporal (camino crítico y cronogramas). Los temas fuera del parcial (secuenciales) quedan para después."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 105,
+    "preguntas" : [
+      {
+        "criterios" : "-0,75 por cada fila incorrecta.",
+        "enunciado" : "Pregunta 1 (1,5 puntos). Dado el esquema en bloques del CLC de la figura (ver figura en el PDF original), complete la tabla de valores de las salidas para cada valor de las entradas (LT calcula A<B interpretando sus entradas como enteros).\nEsquema: entradas X e Y (buses de 8 bits). X entra en el bloque SL-3 (desplazamiento a la izquierda 3 posiciones) e Y en el bloque SRA-2 (desplazamiento aritmético a la derecha 2 posiciones). Hay un bloque SUB (A-B, con entradas A, B y bit de salida b de acarreo\/préstamo), un bloque LT (A<B, con entradas + y -), un bloque ADD (con entrada de acarreo c, y acarreo de salida v; su entrada c va a 0 según la figura) y un MUX de 2 entradas (1 0) cuya salida es W (8 bits). Las salidas de 1 bit son a, b, c, d, e (ver conexiones exactas en la figura del PDF original).\nTabla (la fila se completa con los valores que faltan; Xs e Ys son X e Y interpretados como enteros con signo):\nFila 1: X = ?, Y = 01100110, Xs = -15, Ys = ?, W = ?, a, b, c, d, e = ?\nFila 2: X = 10101010, Y = ?, Xs = ?, Ys = -120, W = ?, a, b, c, d, e = ?",
+        "fuente" : "25-26-Q1-EP1-Enunciat.pdf, ejercicio 1",
+        "id" : "p1",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+        "puntos" : 1.5,
+        "solucionReferencia" : "Fila 1: X = 11110001, Y = 01100110, Xs = -15, Ys = 102, W = 00001010, a=0, b=1, c=0, d=1, e=0.\nFila 2: X = 10101010, Y = 10001000, Xs = -86, Ys = -120, W = 11001000, a=1, b=1, c=1, d=1, e=0.",
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "0,5 puntos descodificador y conexiones correctas (-0,25 por error, 0 si 3 errores o más). 0,5 puntos conexiones al registro correctas (binario). 0,5 puntos valores de la ROM correctos (-0,25 por error, 0 si 2 errores o más; las direcciones 5, 6 y 7 pueden ser XX).",
+        "enunciado" : "Pregunta 2 (1,5 puntos). Dado el grafo de estados de un CLS (ver figura en el PDF original), haga la síntesis del circuito utilizando un Descodificador (el orden de las entradas de mayor a menor peso debe ser q2q1q0a) y las puertas necesarias para el CLC que calcula el estado siguiente (CLC G) y una ROM para el CLC de salidas (CLC H). Sintetice el circuito usando el número mínimo de biestables.\nGrafo (cada estado: q2q1q0 \/ w1w0; entrada a): \n000\/00 (inicial): a=0 -> 000; a=1 -> 001.\n001\/00: a=0 -> 010 (según figura, arco etiquetado x\/1 hacia 010); a=1 -> 010 (ver figura para etiquetas exactas).\n010\/01: a=0 -> 010; a=1 -> 011.\n011\/10: a=1 -> 001; a=0 -> 100.\n100\/11: a=0 -> 000; a=1 -> 001.\n(Las etiquetas exactas de los arcos están en la figura del PDF original.)",
+        "fuente" : "25-26-Q1-EP1-Enunciat.pdf, ejercicio 2",
+        "id" : "p2",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+        "puntos" : 1.5,
+        "solucionReferencia" : "Solución oficial (ver figura de la solución): 3 biestables (5 estados, estados codificados con q2q1q0 dados). Descodificador de 16 salidas con entradas a (peso menor), q0, q1, q2; cada arco del grafo se conecta a la salida correspondiente del descodificador y se hace OR de las salidas que activan cada bit del estado siguiente (q0+ y q1+; q2+ con las salidas correspondientes) hacia las entradas D de los biestables. ROM de 8 palabras (dirección q2q1q0) con contenido: 000->00, 001->00, 010->01, 011->10, 100->11, 101, 110 y 111 -> XX (o cualquier valor).",
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 0,75 puntos tabla de verdad (-0,25 por fila errónea, 0 si 3 errores o más). b) 0,25 por mapa (3 mapas) y su suma de minterms correcta (0 si 2 errores o más). c) 0,5 puntos síntesis con puertas (-0,25 por error, 0 si 2 errores o más). Si el apartado a falla en una salida, esa salida también falla en b y c.",
+        "enunciado" : "Pregunta 3 (2 puntos). Dado el CLC de la figura (ver figura en el PDF original): un descodificador de 3 entradas (x, y, z, con x de mayor peso) con enable e=1 y salidas 0..7; las salidas se combinan con tres puertas OR que generan w0, w1 y w2 (conexiones en la figura).\na) Obtenga la tabla de verdad (análisis de CLCs), columnas x y z | w2 w1 w0.\nb) Simplifique el CLC usando mapas de Karnaugh (incluir en la solución) para obtener la expresión mínima en suma de minterms de cada salida. Escriba también la expresión mínima.\nc) Realice la síntesis del CLC simplificado en el apartado b usando puertas lógicas.",
+        "fuente" : "25-26-Q1-EP1-Enunciat.pdf, ejercicio 3",
+        "id" : "p3",
+        "opciones" : [
+
+        ],
+        "pagina" : 2,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+        "puntos" : 2,
+        "solucionReferencia" : "a) xyz | w2 w1 w0: 000|110; 001|011; 010|101; 011|101; 100|010; 101|011; 110|000; 111|100. (es decir, w2w1w0: 000->110, 001->011, 010->101, 011->101, 100->010, 101->011, 110->000, 111->100; en columnas w2,w1,w0: 1 1 0 \/ 0 1 1 \/ 1 0 1 \/ 1 0 1 \/ 0 1 0 \/ 0 1 1 \/ 0 0 0 \/ 1 0 0).\nb) Mapas de Karnaugh: W0 = !Y·Z + !X·Y; W1 = !Y; W2 = !X·!Z + Y·Z.\nc) Síntesis con 3 inversores (x, y, z), para W0 dos AND de 2 entradas y una OR; W1 = !Y directamente; W2 dos AND de 2 entradas y una OR.",
+        "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "-0,5 por cada fila incorrecta (!x, Mx, w).",
+        "enunciado" : "Pregunta 4 (1,5 puntos). Dado el circuito secuencial de la figura (ver figura en el PDF original), complete el cronograma (cada línea vertical es 1 u.t.). Tp(NOT) = 1 u.t., Tp(Biestable) = 4 u.t., Tp(Mx) = 2 u.t.\nCircuito: entradas clk, y, x. Un inversor sobre x genera !x. Un multiplexor Mx (entradas 1 y 0): la entrada 1 es y... (ver figura para el cableado exacto) y la entrada 0 es !x; el selector es la salida Q del biestable D. La salida del Mx va a D; el biestable es activo por flanco de clk y su salida Q es w, que también realimenta el selector del Mx.\nCronograma dado (ver PDF): clk, x e y como dibujados. Hay que completar las filas !x, Mx y w (w parte en 0 en el primer tramo).",
+        "fuente" : "25-26-Q1-EP1-Enunciat.pdf, ejercicio 4",
+        "id" : "p4",
+        "opciones" : [
+
+        ],
+        "pagina" : 3,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+        "puntos" : 1.5,
+        "solucionReferencia" : "Ver cronograma de la solución oficial en el PDF: !x es x invertida con retardo 1 u.t.; Mx es la salida del multiplexor con retardo 2 u.t. respecto a sus entradas (!x, y y w); w cambia 4 u.t. después de cada flanco de subida de clk con el valor de Mx. Resultado según la solución oficial: w = 0 hasta el segundo flanco de subida de clk, pasa a 1 hasta el tramo del cuarto flanco y vuelve a 0 tras el flanco posterior.",
+        "tema" : "Circuitos secuenciales",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "-0,5 por cada estado incorrecto. Un estado es incorrecto si alguno de los arcos que salen de él es incorrecto.",
+        "enunciado" : "Pregunta 5 (1,5 puntos). Hay que diseñar un circuito que, dada una secuencia de entrada, calcule la XOR de los dos últimos bits: w(c) = XOR(x(c-1), x(c-2)). En los primeros ciclos se asume x(-1) = x(-2) = 0.\nEjemplo de comportamiento:\nCiclo: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14\nx:     0 1 1 0 0 1 0 1 0 1 1 1 1 0 1\nw:     0 0 1 0 1 0 1 1 1 1 1 0 0 0 1\nComplete el grafo de estados que implemente el CLS deseado. (ver figura en el PDF original). Estados dados: Ei (estado inicial ficticio con salida w y arco con etiqueta x), E1 (salida 1), E0 (inicial, salida 0), E3 (salida 0) y E2 (salida 1). Faltan los arcos, que hay que dibujar con sus etiquetas.",
+        "fuente" : "25-26-Q1-EP1-Enunciat.pdf, ejercicio 5",
+        "id" : "p5",
+        "opciones" : [
+
+        ],
+        "pagina" : 3,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+        "puntos" : 1.5,
+        "solucionReferencia" : "Cada estado recuerda (x(c-1), x(c-2)): E0 = 00 (w=0), E1 = 10 (w=1), E2 = 01 (w=1), E3 = 11 (w=0).\nE0: x=0 -> E0; x=1 -> E1.\nE1: x=0 -> E2; x=1 -> E3.\nE2: x=0 -> E0; x=1 -> E1.\nE3: x=0 -> E2; x=1 -> E3.",
+        "tema" : "Circuitos secuenciales",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 1,25 puntos: -0,25 por cada estado incorrecto (salidas o arcos de salida erróneos). b) 0,5 puntos (en el enunciado original el reparto es: apartado a 1,25, b 0,5, c 0,25, binario; el camino debe ser correcto). c) 0,25 puntos, solo si el camino es correcto.",
+        "enunciado" : "Pregunta 6 (2 puntos). Diseñar un PPE que calcule: si ((A=0) o (B=0)) W=A, si no W=2*(A+B).\nEl PPE tiene dos entradas: ini (1 bit) y X (bus de 8 bits). En el mismo ciclo en que ini vale 1, X vale A; en el siguiente ciclo, X vale B. Una vez iniciado un cálculo se ignora ini. Salidas: bus W (8 bits) y fi (1 bit); el resultado sale por W en el mismo ciclo en que fi vale 1. Debe poder iniciarse un nuevo cálculo lo antes posible.\nUnidad de proceso (ver figura en el PDF original): X entra en dos registros con carga (LdA y LdB, registros A y B), un sumador ADD, tres multiplexores (controlados por Mxz, Mx0 y Mx1), un bloque z (detector de cero, salida z), un bloque SL-1 (desplazamiento a la izquierda 1 posición) y un registro de salida REG que da W.\na) Implemente la unidad de control completando el grafo (ver figura): estados E0 (inicial) a E7; ya están dibujados los arcos E1->E2, E2->E3, E3->E4 y E4->E5; no sobra ningún estado, pero faltan arcos, etiquetas y valores de las salidas. No olvide las señales de entrada en la leyenda. Tabla de salidas (a completar; x = indiferente), columnas LdA LdB Mxz Mx0 Mx1 Fi: S0: LdA=1; S1: LdB=1; S2: Mxz=1; S3: (vacío); S4: Mx0=0; S5: (vacío); S6: Mx0=1; S7: Fi=1.\nb) Indique uno de los caminos críticos de todo el circuito secuencial (UP + UC), sabiendo que la UC se implementa con una ROM y un multiplexor de buses. Tp(Biestable)=150 u.t., Tp(MUX)=50 u.t., Tp(ADD)=450 u.t., Tp(Z)=60 u.t., Tp(SL-1)=0 u.t., Tp(ROM)=70 u.t.\nc) ¿Cuál debería ser el tiempo de ciclo mínimo del circuito secuencial completo (UP + UC)?",
+        "fuente" : "25-26-Q1-EP1-Enunciat.pdf, ejercicio 6",
+        "id" : "p6",
+        "opciones" : [
+
+        ],
+        "pagina" : 4,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+        "puntos" : 2,
+        "solucionReferencia" : "a) Leyenda de entradas: (Ini, z). Arcos: E0: Ini=0 -> E0; Ini=1 -> E1. E1 -> E2. E2: z=0 -> E3; z=1 -> E6. E3: z=0 -> E4; z=1 -> E6. E4 -> E5. E5 -> E7. E6 -> E7. E7: Ini=0 -> E0; Ini=1 -> E1.\nSalidas (LdA LdB Mxz Mx0 Mx1 Fi): S0: 1 x x x x 0; S1: 0 1 x x x 0; S2: 0 0 1 x x 0; S3: 0 0 0 x x 0; S4: x x x 0 1 0; S5: x x x x 0 0; S6: x x x 1 1 0; S7: 1 x x x x 1.\nb) RegA\/RegB (150) - ADD (450) - MUX (50) - MUX (50) - REG.\nc) 150 + 450 + 50 + 50 = 700 u.t.",
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7)"
+  },
+  "fecha" : "2026-10-26T08:14:09Z",
+  "fuentes" : [
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
+    "material\/25-26-Q1-EP1-Solució.pdf"
+  ],
+  "id" : "0CB698D8-53CA-45C2-97EF-B765BC54EB7C",
+  "minutos" : 7,
+  "modo" : "real",
+  "notaAntes" : 0.4722222222222222,
+  "notaDespues" : 0.4222222222222223,
+  "pizarras" : {
+    "p4" : [
+      "estudi\/simulacres\/2026-10-26-0CB698D8\/p4-1.png"
+    ]
+  },
+  "respuestas" : {
+
+  }
+}
