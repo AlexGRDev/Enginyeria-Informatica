@@ -244,45 +244,49 @@
   {
     "ease" : 2.5,
     "id" : "2C9C6C4B-A376-4C06-938C-AA1DF3613192",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Pasa 3C hexadecimal a binario.",
-    "proxima" : "2026-10-26T06:19:15Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T06:52:00Z",
+    "repeticiones" : 1,
     "respuesta" : "3 = 0011 y C = 1100, así que 00111100.",
-    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-26T06:52:00Z"
   },
   {
     "ease" : 2.5,
     "id" : "E54B5601-1ED3-4A39-880B-46D658C0FD50",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Equivalencias de los nibbles 1010, 1011, 1100, 1101, 1110, 1111 en hexadecimal.",
-    "proxima" : "2026-10-26T06:19:15Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T06:52:45Z",
+    "repeticiones" : 1,
     "respuesta" : "A, B, C, D, E, F.",
-    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-26T06:52:45Z"
   },
   {
     "ease" : 2.5,
     "id" : "1CCBDBA7-CA1B-4A24-980B-5A727061B069",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Rango de representación con n dígitos en base b.",
-    "proxima" : "2026-10-26T06:19:15Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T06:52:51Z",
+    "repeticiones" : 1,
     "respuesta" : "[0, b^n - 1], con b^n valores distintos.",
-    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-26T06:52:51Z"
   },
   {
     "ease" : 2.5,
     "id" : "FB9250B0-2F1F-4ED9-A6CA-8692A04FE80F",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "refuerzo PITFALLS",
     "pregunta" : "Rango con 8 bits y rango con 3 dígitos hexadecimales.",
-    "proxima" : "2026-10-26T06:19:15Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-10-27T06:52:56Z",
+    "repeticiones" : 1,
     "respuesta" : "8 bits: [0, 255]. 3 dígitos hex: [0, 16^3 - 1] = [0, 4095].",
-    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-10-26T06:52:56Z"
   }
 ]
