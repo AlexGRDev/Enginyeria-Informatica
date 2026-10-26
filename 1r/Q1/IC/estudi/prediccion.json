@@ -1,641 +1,621 @@
 {
   "examenes" : [
     {
+      "duracionMinutos" : 150,
+      "ejercicios" : 8,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP2-Enunciat.pdf",
       "orden" : 200250,
       "temas" : [
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Direcciones de etiquetas y contenido de memoria de instrucciones ensambladas (.data\/.text), y dirección\/contenido de ST tras ejecutar el programa"
+          "tipo" : "direcciones de etiquetas y contenido de instrucciones en memoria tras ensamblar"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Contenido de la ROM_Q+ en hexadecimal"
+          "tipo" : "escritura de instrucción en memoria al ejecutar en SISC Von Neumann"
+        },
+        {
+          "tema" : "Arquitectura del computador",
+          "tipo" : "contenido de la ROM_Q+"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Ensamblar y desensamblar instrucciones SISA (hex a ensamblador y viceversa, NA)"
+          "tipo" : "ensamblar y desensamblar instrucciones"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Contenido de la ROM_OUT por estado e instrucción en IR"
+          "tipo" : "contenido de la ROM_OUT"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Cambios en el estado del computador SISC tras ejecutar instrucciones (JALR, ST, OUT, BNZ)"
+          "tipo" : "cambios en el estado del computador al ejecutar instrucciones"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Palabra de control del SISC por estado (@A, @B, @D, F, N, ADDR-IO)"
+          "tipo" : "palabra de control por estado"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo del SISC (Decode y Ld)"
+          "tipo" : "camino crítico y tiempo de ciclo mínimo del SISC"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo del SISC (Decode y Ld)"
-        },
-        {
-          "tema" : "Arquitectura del computador",
-          "tipo" : "Añadir instrucción SETZero-32: modificar UPG, grafo de estados, acciones por estado y filas de ROM_OUT"
+          "tipo" : "nueva instrucción: modificar UPG, grafo de estados y ROM_OUT"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Añadir instrucción SETZero-32 (semántica y codificación de la nueva instrucción)"
+          "tipo" : "nueva instrucción SISA (SETZero-32)"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 6,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EP1-Enunciat.pdf",
       "orden" : 200250,
       "temas" : [
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de valores de un CLC en bloques (SL, SRA, SUB, ADD, LT, MUX) con vectores de 8 bits"
+          "tipo" : "tabla de valores de un CLC de bloques (SL, SRA, SUB, ADD, LT, MUX)"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Interpretación de vectores de 8 bits como enteros (Xs, Ys) en la tabla de valores del CLC"
+          "tipo" : "vectores de 8 bits y valores con signo (Xs, Ys)"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Síntesis de un CLS desde grafo de estados con decodificador, puertas y ROM, mínimo de biestables"
+          "tipo" : "síntesis de CLS desde grafo con decodificador, puertas y ROM"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Síntesis de un CLS desde grafo de estados con decodificador, puertas y ROM, mínimo de biestables"
+          "tipo" : "síntesis con decodificador y ROM de las salidas"
         },
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de verdad de un CLC con decodificador y puertas OR"
+          "tipo" : "tabla de verdad de un CLC con decodificador y OR"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Simplificación por Karnaugh a suma de minterms y síntesis con puertas lógicas"
+          "tipo" : "mapa de Karnaugh, expresión mínima y síntesis con puertas"
+        },
+        {
+          "tema" : "Circuitos secuenciales",
+          "tipo" : "cronograma de circuito secuencial con biestable y mux"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Cronograma de un circuito secuencial con Tp de NOT, biestable y MUX"
+          "tipo" : "cronograma con retardos de NOT, biestable y Mx"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Cronograma de un circuito secuencial con Tp de NOT, biestable y MUX"
+          "tipo" : "grafo de estados (XOR de los dos últimos bits)"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Grafo de estados para la XOR de los dos últimos bits"
-        },
-        {
-          "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE: unidad de control (grafo y tabla de salidas)"
+          "tipo" : "PPE: grafo de la unidad de control y tabla de salidas"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo de un PPE (UP + UC con ROM y mux de buses)"
+          "tipo" : "camino crítico y tiempo de ciclo mínimo del PPE (UP + UC con ROM)"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 6,
       "fuente" : "material\/25-26-Q1-EP1-Enunciat.pdf",
       "orden" : 200250,
       "temas" : [
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de valores de un CLC en bloques (SL, SRA, SUB, ADD, LT, MUX) con vectores de 8 bits"
+          "tipo" : "tabla de valores de un CLC de bloques (SL, SRA, SUB, ADD, LT, MUX)"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Interpretación de vectores de 8 bits como enteros (Xs, Ys) en la tabla de valores del CLC"
+          "tipo" : "vectores de 8 bits y valores con signo (Xs, Ys)"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Síntesis de un CLS desde grafo de estados con decodificador, puertas y ROM, mínimo de biestables"
+          "tipo" : "síntesis de CLS desde grafo con decodificador, puertas y ROM"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Síntesis de un CLS desde grafo de estados con decodificador, puertas y ROM, mínimo de biestables"
+          "tipo" : "síntesis con decodificador y ROM de las salidas"
         },
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de verdad de un CLC con decodificador y puertas OR"
+          "tipo" : "tabla de verdad de un CLC con decodificador y OR"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Simplificación por Karnaugh a suma de minterms y síntesis con puertas lógicas"
+          "tipo" : "mapa de Karnaugh, expresión mínima y síntesis con puertas"
+        },
+        {
+          "tema" : "Circuitos secuenciales",
+          "tipo" : "cronograma de circuito secuencial con biestable y mux"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Cronograma de un circuito secuencial con Tp de NOT, biestable y MUX"
+          "tipo" : "cronograma con retardos de NOT, biestable y Mx"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Cronograma de un circuito secuencial con Tp de NOT, biestable y MUX"
+          "tipo" : "grafo de estados (XOR de los dos últimos bits)"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Grafo de estados para la XOR de los dos últimos bits"
-        },
-        {
-          "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE: unidad de control (grafo y tabla de salidas)"
+          "tipo" : "PPE: grafo de la unidad de control y tabla de salidas"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo de un PPE (UP + UC con ROM y mux de buses)"
+          "tipo" : "camino crítico y tiempo de ciclo mínimo del PPE (UP + UC con ROM)"
         }
       ]
     },
     {
+      "duracionMinutos" : 150,
+      "ejercicios" : 7,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/24-25-Q1-EP2 ENUNCIAT.pdf",
       "orden" : 200240,
       "temas" : [
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Direcciones de etiquetas, memoria\/contenido de instrucciones ensambladas, STB tras ejecución"
-        },
-        {
-          "tema" : "SISA (ensamblador)",
-          "tipo" : "Número de instrucciones ejecutadas y ciclos del programa en el SISC"
+          "tipo" : "direcciones de etiquetas y contenido de instrucciones en memoria tras ensamblar"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Número de instrucciones ejecutadas y ciclos del programa en el SISC"
+          "tipo" : "instrucciones ejecutadas y ciclos en SISC Von Neumann"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Ensamblar y desensamblar instrucciones SISA (NA)"
+          "tipo" : "ensamblar y desensamblar instrucciones"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Contenido de la ROM_OUT por estado e instrucción"
+          "tipo" : "contenido de la ROM_OUT"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Cambios en el estado del computador tras ejecutar instrucciones (JALR, ST, IN, BNZ)"
+          "tipo" : "cambios en el estado del computador al ejecutar instrucciones"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Palabra de control del SISC por estado"
+          "tipo" : "palabra de control por estado"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo del SISC en Fetch y Addr"
+          "tipo" : "camino crítico y tiempo de ciclo mínimo del SISC"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Camino crítico y tiempo de ciclo del SISC en Fetch y Addr"
-        },
-        {
-          "tema" : "Arquitectura del computador",
-          "tipo" : "Añadir instrucción JALRZ: modificar UPG y grafo de estados, acciones y filas de ROM_OUT"
+          "tipo" : "nueva instrucción JALRZ: UPG, grafo de estados y ROM_OUT"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Añadir instrucción JALRZ (semántica y codificación)"
+          "tipo" : "nueva instrucción SISA (JALRZ)"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 7,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/24-25-Q1-EP1-Enunciado.pdf",
       "orden" : 200240,
       "temas" : [
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Tabla de conversión vector de 8 bits, hexadecimal y valor natural Xu"
+          "tipo" : "conversión binario, hexadecimal y decimal de vectores de 8 bits"
         },
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de verdad de las salidas m y n de un circuito con bloque H, puertas y ROM, y suma de minterms de n"
+          "tipo" : "tabla de verdad de salidas de un circuito con bloque H y ROM"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Expresión en suma de minterms de n en un circuito con ROM"
+          "tipo" : "expresión en suma de minterms"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y Tp de a a m en circuito con bloque H, puertas y ROM"
+          "tipo" : "camino crítico y Tp entrada-salida con bloque"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Fórmula del valor natural en base 8 con 4 dígitos y rango en base 16 con 4 dígitos"
+          "tipo" : "fórmula del valor en base 8 y rango en base 16"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Tamaño mínimo de ROM para un circuito de 16 entradas y 8 salidas"
+          "tipo" : "tamaño mínimo de ROM"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE de unidad de control (mensajes con palabra de guarda XOR): grafo de estados y tabla de salidas"
+          "tipo" : "PPE: grafo y tabla de salidas de la UC"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Mismo problema con la UPG: completar grafo con mnemotécnicos"
+          "tipo" : "PPE con UPG: grafo con mnemotécnicos"
+        },
+        {
+          "tema" : "Arquitectura del computador",
+          "tipo" : "UPG: mnemotécnicos por estado"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Mapa de Karnaugh con indiferentes y expresión mínima en suma de productos"
+          "tipo" : "mapa de Karnaugh con indiferentes y expresión mínima"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Grafo de estados y leyenda de un circuito secuencial con ROM y biestables"
+          "tipo" : "grafo de estados desde circuito con ROM"
         }
       ]
     },
     {
+      "duracionMinutos" : 150,
+      "ejercicios" : 4,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/23-24-Q1-EP2-Enunciado.pdf",
       "orden" : 200230,
       "temas" : [
         {
-          "tema" : "SISA (ensamblador)",
-          "tipo" : "Completar UC de propósito específico y código SISA de un bucle while (R2=R2*3)"
-        },
-        {
-          "tema" : "Arquitectura del computador",
-          "tipo" : "Completar UC de propósito específico (grafo de estados con UPG)"
-        },
-        {
-          "tema" : "Arquitectura del computador",
-          "tipo" : "Palabra de control del SISC en ciclos concretos (Movi, Ldb, D)"
-        },
-        {
-          "tema" : "Arquitectura del computador",
-          "tipo" : "Contenido de la ROM_OUT por estado e instrucción"
+          "tema" : "Circuitos secuenciales",
+          "tipo" : "PPE: grafo de la UC específica con UPG"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Direcciones de etiquetas y memoria\/contenido de instrucciones ensambladas con sección .data"
-        },
-        {
-          "tema" : "SISA (ensamblador)",
-          "tipo" : "Nueva instrucción JI: cálculo de ciclos y porcentaje de reducción del tiempo de ejecución"
+          "tipo" : "código SISA equivalente al pseudo-código while"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Implementar JI solo modificando ROMs (grafo y filas de ROM_OUT) y modificando hardware de la UPG a 4 ciclos"
+          "tipo" : "palabra de control del SISC en un ciclo"
+        },
+        {
+          "tema" : "Arquitectura del computador",
+          "tipo" : "contenido de la ROM_OUT"
+        },
+        {
+          "tema" : "SISA (ensamblador)",
+          "tipo" : "direcciones de etiquetas y contenido de instrucciones en memoria tras ensamblar"
+        },
+        {
+          "tema" : "Arquitectura del computador",
+          "tipo" : "nueva instrucción JI: ciclos, ROM, modificación de UPG y grafo"
+        },
+        {
+          "tema" : "SISA (ensamblador)",
+          "tipo" : "nueva instrucción SISA (salto indexado JI)"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 6,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/23-24-Q1-EP1-Enunciat.pdf",
       "orden" : 200230,
       "temas" : [
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Cronograma de un CLC con puertas NOT, AND y OR y zonas sombreadas"
+          "tipo" : "cronograma con zonas sombreadas y glitch"
         },
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de valores de un CLC en bloques (SRA, SRL, SUB, ADD, LT, MUX)"
-        },
-        {
-          "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Interpretación de vectores de 8 bits como enteros en la tabla de valores del CLC"
+          "tipo" : "tabla de valores de un CLC de bloques"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Síntesis de un CLS Moore desde grafo con ROM de estado siguiente y decodificador"
+          "tipo" : "síntesis de CLS desde grafo (ROM + decodificador, Karnaugh)"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Síntesis de un CLS Moore con ROM y decodificador, y con Karnaugh y puertas"
+          "tipo" : "síntesis con ROM, decodificador y Karnaugh"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Tabla de transiciones, tabla de salidas y grafo de estados de un CLS con puertas y biestables"
+          "tipo" : "tablas de transición y salidas, grafo desde circuito"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo de un CLS con tiempos de estabilización de entradas y salidas"
+          "tipo" : "camino crítico y tiempo de ciclo mínimo de un CLS"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE calculadora en Ca2: UP, palabra de control y de condición, grafo de estados de la UC"
+          "tipo" : "PPE calculadora: UP, palabra de control y grafo de la UC"
         }
       ]
     },
     {
+      "duracionMinutos" : 150,
+      "ejercicios" : 7,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/22-23-Q1-EP2-Enunciado.pdf",
       "orden" : 200220,
       "temas" : [
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Direcciones de etiquetas, memoria\/contenido de instrucciones ensambladas, ST tras ejecución"
-        },
-        {
-          "tema" : "SISA (ensamblador)",
-          "tipo" : "Número de instrucciones ejecutadas y ciclos de un programa SISC"
+          "tipo" : "direcciones de etiquetas y contenido de instrucciones en memoria tras ensamblar"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Número de instrucciones ejecutadas y ciclos de un programa SISC"
+          "tipo" : "instrucciones ejecutadas y ciclos"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Ensamblar y desensamblar instrucciones SISA (NA)"
+          "tipo" : "ensamblar y desensamblar instrucciones"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Contenido del IR, de la ROM_OUT y bits de la palabra de control por estado"
+          "tipo" : "IR, ROM_OUT y palabra de control en un ciclo"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Cambios en el estado del computador tras ST, BNZ, LDB, MOVI"
+          "tipo" : "cambios en el estado del computador al ejecutar instrucciones"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Completar programa SISA con subrutina (llamada JALR, equivalente a programa en C)"
+          "tipo" : "completar programa con subrutina y JALR"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo del SISC en Fetch, Addr, Ldb y Movhi"
+          "tipo" : "camino crítico y Tc por nodo del SISC"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Camino crítico y tiempo de ciclo mínimo del SISC en Fetch, Addr, Ldb y Movhi"
-        },
-        {
-          "tema" : "Arquitectura del computador",
-          "tipo" : "Añadir instrucción ADDBZ: formato, grafo de estados, acciones, filas de ROM_OUT y ROM_Q+"
+          "tipo" : "nueva instrucción ADDBZ: formato, grafo, acciones, ROM_OUT y ROM_Q+"
         },
         {
           "tema" : "SISA (ensamblador)",
-          "tipo" : "Añadir instrucción ADDBZ (formato y codificación)"
+          "tipo" : "nueva instrucción SISA (ADDBZ)"
         }
       ]
     },
     {
+      "duracionMinutos" : 0,
+      "ejercicios" : 10,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/22-23-Q1-EP1-FullRespostes.pdf",
       "orden" : 200220,
       "temas" : [
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Hoja de respuestas: síntesis con suma de minterms, decodificador, ROM y Karnaugh"
+          "tipo" : "síntesis con suma de minterms, decodificador, ROM y Karnaugh"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Hoja de respuestas: tabla aritmética X, Xu, Xs, X+Y, X-Y con cn, v1n, bn, v2n"
+          "tipo" : "aritmética modular, Xu, Xs, suma y resta con c, b, v"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Hoja de respuestas: multiplexor 4-1 a partir de multiplexores 2-1"
+          "tipo" : "multiplexor 4-1 a partir de 2-1"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Hoja de respuestas: contenido de ROM de un CLS"
-        },
-        {
-          "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Hoja de respuestas: contenido de ROM de un CLS"
+          "tipo" : "CLS con ROM y multiplexor de buses: contenido de la ROM"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Hoja de respuestas: tabla de salidas y grafo de estados del PPE (Collatz)"
+          "tipo" : "PPE Collatz: grafo y tabla de salidas de la UC"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Hoja de respuestas: tamaño de la ROM (palabras y bits por palabra)"
+          "tipo" : "tamaño mínimo de la ROM de la UC"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Hoja de respuestas: camino(s) crítico(s) y tiempo de propagación"
+          "tipo" : "camino crítico y tiempo de propagación de la UP"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Hoja de respuestas: mnemotécnico a palabra de control de la UPG y viceversa"
-        },
-        {
-          "tema" : "SISA (ensamblador)",
-          "tipo" : "Hoja de respuestas: mnemotécnico a palabra de control de la UPG y viceversa"
+          "tipo" : "mnemotécnico a palabra de control de la UPG"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Hoja de respuestas: grafo de estados de UC de propósito específico con la UPG"
+          "tipo" : "palabra de control de la UPG a mnemotécnico"
+        },
+        {
+          "tema" : "Circuitos secuenciales",
+          "tipo" : "UC de propósito específico con UPG para el código en C"
         }
       ]
     },
     {
+      "duracionMinutos" : 0,
+      "ejercicios" : 10,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/22-23-Q1-EP1-Enunciat.pdf",
       "orden" : 200220,
       "temas" : [
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Síntesis de r y s desde tabla de verdad con indiferentes: suma de minterms, decodificador, ROM y Karnaugh"
+          "tipo" : "síntesis con suma de minterms, decodificador, ROM y Karnaugh"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Tabla aritmética X, Xu, Xs, X+Y, X-Y con banderas cn, v1n, bn, v2n"
+          "tipo" : "aritmética modular, Xu, Xs, suma y resta con c, b, v"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Multiplexor 4-1 a partir de multiplexores 2-1"
+          "tipo" : "multiplexor 4-1 a partir de 2-1"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Contenido en hexadecimal de filas de la ROM de un CLS con ROM de mida mínima y mux de buses"
-        },
-        {
-          "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Contenido en hexadecimal de filas de la ROM de un CLS con ROM de mida mínima y mux de buses"
+          "tipo" : "CLS con ROM y multiplexor de buses: contenido de la ROM"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE (conjetura de Collatz): grafo de estados y tabla de salidas de la UC"
+          "tipo" : "PPE Collatz: grafo y tabla de salidas de la UC"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Tamaño de ROM de la UC (palabras y bits por palabra)"
+          "tipo" : "tamaño mínimo de la ROM de la UC"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino(s) crítico(s) y tiempo de propagación de la UP con tiempos de entrada y salida"
+          "tipo" : "camino crítico y tiempo de propagación de la UP"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Mnemotécnico a palabra de control de la UPG y viceversa"
-        },
-        {
-          "tema" : "SISA (ensamblador)",
-          "tipo" : "Mnemotécnico a palabra de control de la UPG y viceversa"
+          "tipo" : "mnemotécnico a palabra de control de la UPG"
         },
         {
           "tema" : "Arquitectura del computador",
-          "tipo" : "Grafo de estados de UC de propósito específico con UPG (while Collatz)"
+          "tipo" : "palabra de control de la UPG a mnemotécnico"
+        },
+        {
+          "tema" : "Circuitos secuenciales",
+          "tipo" : "UC de propósito específico con UPG para el código en C"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 6,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/20-21-Q1-E1-Enunciat.pdf",
       "orden" : 200200,
       "temas" : [
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Tabla de conversión X, hexadecimal, Xu y Xs (Ca2)"
+          "tipo" : "conversión binario, hexadecimal, Xu y Xs"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Cronograma de un CLC con NOT, AND y OR y zonas sombreadas"
+          "tipo" : "cronograma con zonas sombreadas y glitch"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Grafo de estados de un CLS con ROM y decodificador a partir del esquema"
-        },
-        {
-          "tema" : "Circuitos secuenciales",
-          "tipo" : "Cronograma simplificado de un CLS"
+          "tipo" : "grafo de estados desde circuito con ROM, cronograma y parámetros de ROM + mux"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "CLS Moore con una ROM y mux de buses: número de biestables, palabras y bits de ROM, tamaño del mux"
+          "tipo" : "tamaño de ROM para un CLS en modelo de Moore"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Mapa de Karnaugh con indiferentes y expresión mínima en suma de productos"
+          "tipo" : "mapa de Karnaugh con indiferentes y expresión mínima"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Número mínimo de bits para enteros en Ca2"
+          "tipo" : "número mínimo de bits en Ca2"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE de control de password: grafo de estados de la UC y tabla de salidas"
+          "tipo" : "PPE de password: grafo de la UC y tabla de salidas"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 4,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/19-20-Q1-E2-Enunciado.pdf",
       "orden" : 200190,
       "temas" : [
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Implementación del bloque SRL-4 para 16 bits"
-        },
-        {
-          "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Full-adder con dos half-adders y puertas mínimas"
+          "tipo" : "implementación de SRL-4 y Full-Adder con Half-Adders y puertas"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Sumador de 4 bits encadenado con Fa: elegir X e Y para observar tiempos de propagación de 300 u.t. y 100 u.t."
+          "tipo" : "tiempo de propagación de sumador encadenado según entradas"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "ADD y SUB en Ca2 de 8 bits con señales c\/b\/v"
+          "tipo" : "ADD y SUB en Ca2 de 8 bits con c\/b y v"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Grafo de estados y leyenda de un circuito secuencial con ROM y mux"
+          "tipo" : "grafo de estados desde circuito con ROM y mux"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE contador de secuencia 101: palabra de control y condición, grafo de la UC"
-        },
-        {
-          "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "UC con biestables y 2 ROMs: bits de dirección, palabras y contenido de la ROM de transiciones"
+          "tipo" : "PPE contador de secuencia 101: palabras de control y condición, grafo, ROMs de la UC"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de propagación del PPE"
+          "tipo" : "camino crítico y Tp del PPE"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Número de biestables para n estados, registro con señal de carga y esquema general de CLS Moore"
-        },
-        {
-          "tema" : "Circuitos secuenciales",
-          "tipo" : "Cronograma y grafo de estados de un circuito extractor de datos (ED0) con micromensajes"
+          "tipo" : "teoría: nº de biestables, registro con carga, esquema Moore"
         }
       ]
     },
     {
+      "duracionMinutos" : 75,
+      "ejercicios" : 6,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/19-20-Q1-E1-Enunciat.pdf",
       "orden" : 200190,
       "temas" : [
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Tabla de conversión de X de 8 bits, hexadecimal y Xu"
+          "tipo" : "conversión binario, hexadecimal y decimal"
         },
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de verdad de W desde esquema de puertas AND\/NOT\/OR"
+          "tipo" : "tabla de verdad de un circuito de puertas"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Expresión en suma de minterms de W"
+          "tipo" : "expresión en suma de minterms"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y Tp del esquema de puertas"
+          "tipo" : "camino crítico y Tp de un circuito de puertas"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Mapa de Karnaugh con indiferentes y expresión mínima en suma de productos"
+          "tipo" : "mapa de Karnaugh con indiferentes y expresión mínima"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Contenido de una ROM para sintetizar Z y W desde tabla de verdad (con puerta XOR)"
+          "tipo" : "contenido de una ROM desde tabla de verdad"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Construir tabla de verdad con indiferentes desde enunciado verbal (reactor: alarma y turbina)"
+          "tipo" : "tabla de verdad desde enunciado (sistema de seguridad)"
         }
       ]
     },
     {
+      "duracionMinutos" : 105,
+      "ejercicios" : 6,
       "fuente" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/18-19-Q1-E2-Enunciado.pdf",
       "orden" : 200180,
       "temas" : [
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Tabla de valores de un CLC en bloques (SRL, SRA, SUB, ADD, NOT) con banderas b, v1, c, v2"
+          "tipo" : "tabla de valores de un CLC de bloques"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Interpretación de vectores de 8 bits y banderas de overflow en la tabla del CLC"
+          "tipo" : "aritmética SUB\/ADD con banderas b, c, v1, v2"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Grafo de estados de un circuito con ROM y biestables"
-        },
-        {
-          "tema" : "Circuitos secuenciales",
-          "tipo" : "Cronograma simplificado de un CLS"
+          "tipo" : "grafo de estados y cronograma desde circuito con ROM"
         },
         {
           "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-          "tipo" : "Camino crítico y tiempo de ciclo de un CLS con tiempos de entrada y salida"
+          "tipo" : "camino crítico y tiempo de ciclo de un CLS"
         },
         {
           "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-          "tipo" : "Número mínimo de bits para enteros en Ca2"
+          "tipo" : "número mínimo de bits en Ca2"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Diseño de PPE decrementador: UP, palabra de control y condición, grafo de la UC"
+          "tipo" : "PPE decrementador: UP, palabras de control y condición, grafo de la UC"
         },
         {
           "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "UC con ROM de tamaño mínimo y mux de buses: palabras, bits y parámetros del mux"
+          "tipo" : "tamaño de ROM y mux de buses de la UC"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Síntesis de CLS desde grafo de estados con biestables mínimos, decodificador y puertas OR"
-        },
-        {
-          "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
-          "tipo" : "Síntesis de CLS desde grafo de estados con biestables mínimos, decodificador y puertas OR"
+          "tipo" : "síntesis de CLS con decodificador y puertas OR"
         },
         {
           "tema" : "Circuitos secuenciales",
-          "tipo" : "Número de biestables para k estados y registro con señal de carga"
+          "tipo" : "teoría: nº de biestables, registro con carga"
         },
         {
           "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-          "tipo" : "Esquema de circuitos SRL-2 y SRA-2 para buses de 6 bits"
+          "tipo" : "esquema de SRL-2 y SRA-2"
         }
       ]
     }
   ],
-  "fecha" : "2026-10-26T10:15:10Z"
+  "fecha" : "2026-10-26T17:54:10Z"
 }
