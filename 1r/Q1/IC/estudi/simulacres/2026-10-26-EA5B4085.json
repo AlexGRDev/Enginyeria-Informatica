@@ -1,0 +1,116 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 120,
+    "preguntas" : [
+      {
+        "criterios" : "Cada fila correcta vale 0,375. Cada fila con algún error resta 0,375 (criterio de la FIB: error por fila). Un único fallo de pesos (p. ej. empezar en 2 o invertir el orden) se penaliza una vez por fila afectada.",
+        "enunciado" : "Ejercicio 1 (1,5 puntos). Cada fila de la tabla tiene 3 columnas: el vector X de 8 bits, X en hexadecimal y Xu, el valor en decimal de X interpretado como natural en binario. Completa las casillas vacías.\n\nFila 1: X = 10110100, hexa = ?, Xu = ?\nFila 2: X = ?, hexa = 6D, Xu = ?\nFila 3: X = ?, hexa = ?, Xu = 203\nFila 4: X = ?, hexa = 9F, Xu = ?",
+        "fuente" : "11-12-Q1-E1-Enunciado.pdf ejercicio 1; 12-13-Q1-E1-Enunciado.pdf ejercicio 1",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "puntos" : 1.5,
+        "solucionReferencia" : "Fila 1: 1011 0100 = B4; Xu = 128+32+16+4 = 180.\nFila 2: 6D = 0110 1101 = 01101101; Xu = 64+32+8+4+1 = 109.\nFila 3: 203 = 128+64+8+2+1 -> 11001011 = CB.\nFila 4: 9F = 1001 1111 = 10011111; Xu = 128+16+8+4+2+1 = 159.\nPesos de bit: x7..x0 = 128, 64, 32, 16, 8, 4, 2, 1 (el bit 0 pesa 2^0 = 1).",
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 0,25 (binario: fórmula con pesos b^i desde i=0 y rango correcto). b) 0,125 por 12 bits y 0,125 por 3 dígitos hexadecimales.",
+        "enunciado" : "Ejercicio 2 (0,5 puntos).\na) Escribe la fórmula del valor Wu de un número natural representado por los n dígitos wn-1, ..., w1, w0 en el sistema convencional en base b, y el rango de naturales representables. (0,25)\nb) Calcula el número mínimo de bits para representar todos los naturales de 0 a 2500 y cuántos dígitos hexadecimales ocupa ese vector. (0,25)",
+        "fuente" : "11-12-Q1-E1-Enunciado.pdf ejercicio 2; 12-13-Q1-E1-Enunciado.pdf ejercicio 3 (a, b)",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "puntos" : 0.5,
+        "solucionReferencia" : "a) Wu = Σ(i=0..n-1) wi·b^i, con 0 ≤ wi ≤ b-1. Rango: [0, b^n - 1].\nb) 2^11 = 2048 ≤ 2500 no basta; 2^12 = 4096 > 2500. Mínimo 12 bits. Dígitos hexadecimales: ceil(12\/4) = 3.",
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 1,5 binario: tabla completa con columnas intermedias correctas; cualquier error en F o en una columna da 0 en el apartado a (0,25 por columna intermedia correcta como máximo si se resuelve parcialmente, a criterio del corrector). b) 0,5 por entrada (0,25 camino + 0,25 tiempo; el tiempo solo cuenta si el camino es correcto). Para a y b, aceptar cualquiera de los caminos empatados.",
+        "enunciado" : "Ejercicio 3 (3 puntos). Circuito combinacional con entradas a, b, c y salida F, formado por:\n- p = Xor(a, b)\n- q = Not(b)\n- Bloque B con entradas e = p y g = c, y salidas f y h.\n- r = And(f, q)\n- F = Or(r, h)\n\nTabla de verdad de B (e g -> f h): 00 -> 0 1; 01 -> 1 0; 10 -> 1 1; 11 -> 0 0.\nTp de B (u.t.): e->f = 40, e->h = 70, g->f = 60, g->h = 30.\nTp de puertas (u.t.): Not = 10, And = 30, Or = 20, Xor = 50.\n\na) Completa la tabla de verdad de F para las 8 combinaciones de (a, b, c), con una columna por cada señal intermedia (p, q, f, h, r). (1,5)\nb) Para cada entrada (a, b, c) escribe un camino crítico hasta F (secuencia de señales y puertas, indicando entrada y salida de B cuando se atraviese) y su tiempo de propagación. Ejemplo de notación: a - Xor - e - f - And - Or - F. (1,5)",
+        "fuente" : "11-12-Q1-E1-Enunciado.pdf ejercicio 3; 12-13-Q1-E1-Enunciado.pdf ejercicio 2",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "puntos" : 3,
+        "solucionReferencia" : "a) abc | p q e g | f h | r | F\n000 | 0 1 | 0 0 | 0 1 | 0 | 1\n001 | 0 1 | 0 1 | 1 0 | 1 | 1\n010 | 1 0 | 1 0 | 1 1 | 0 | 1\n011 | 1 0 | 1 1 | 0 0 | 0 | 0\n100 | 1 1 | 1 0 | 1 1 | 1 | 1\n101 | 1 1 | 1 1 | 0 0 | 0 | 0\n110 | 0 0 | 0 0 | 0 1 | 0 | 1\n111 | 0 0 | 0 1 | 1 0 | 0 | 0\nF = 1,1,1,0,1,0,1,0 (filas 000 a 111).\n\nb) Tp(a-F): a - Xor - e - f - And - Or - F = 50+40+30+20 = 140. Alternativa igual de crítica: a - Xor - e - h - Or - F = 50+70+20 = 140.\nTp(b-F): por Xor igual que a: 140 (b - Xor - e - f - And - Or - F). Por Not: b - Not - And - Or - F = 10+30+20 = 60 < 140.\nTp(c-F): c - g - f - And - Or - F = 60+30+20 = 110 (c - g - h - Or - F = 30+20 = 50).",
+        "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad) \/ Modelo temporal (tiempos de propagación, caminos críticos)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Cada apartado 0,5, binario. En b), 0,25 por los minterms y 0,25 por el recuento de puertas. En c) se exige el orden de direcciones correcto (dirección = x2x1x0 con x0 como bit de menor peso).",
+        "enunciado" : "Ejercicio 4 (2 puntos). Se quiere sintetizar el circuito con la siguiente tabla de verdad:\n\nx2 x1 x0 | u v w\n0 0 0 | 1 0 0\n0 0 1 | 0 0 1\n0 1 0 | 0 1 1\n0 1 1 | 1 0 1\n1 0 0 | 0 1 0\n1 0 1 | 1 1 0\n1 1 0 | 0 0 1\n1 1 1 | 1 1 1\n\na) Con una única ROM: ¿cuántas señales de entrada tiene, cuántas palabras y cuántos bits por palabra? (0,5)\nb) Escribe v como suma de minterms e indica cuántas puertas And y Or, y de cuántas entradas cada una, hacen falta para implementarla directamente (sin contar inversores). (0,5)\nc) Sintetiza solo u con una ROM: escribe su contenido para las direcciones 0 a 7. (0,5)\nd) Sintetiza w con un decodificador 3 a 8 y un número mínimo de puertas Or: indica qué salidas del decodificador se conectan y qué puerta Or usas. (0,5)",
+        "fuente" : "11-12-Q1-E1-Enunciado.pdf ejercicio 4; 12-13-Q1-E1-Enunciado.pdf ejercicio 3 (c, d)",
+        "id" : "P4",
+        "opciones" : [
+
+        ],
+        "pagina" : 2,
+        "puntos" : 2,
+        "solucionReferencia" : "a) 3 entradas, 2^3 = 8 palabras, 3 bits por palabra (u, v, w).\nb) v = 1 en las filas 2, 4, 5, 7: v = !x2·x1·!x0 + x2·!x1·!x0 + x2·!x1·x0 + x2·x1·x0. Son 4 And de 3 entradas y 1 Or de 4 entradas.\nc) Contenido de la ROM de u (dirección 0..7): 1, 0, 0, 1, 0, 1, 0, 1.\nd) w = 1 en las filas 1, 2, 3, 6, 7. Se conectan las salidas 1, 2, 3, 6 y 7 del decodificador a una sola puerta Or de 5 entradas (o una cascada equivalente de Or de 2 entradas).",
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "c correcto 0,25. d correcto (3 transiciones) 0,5. w correcto (3 transiciones) 0,5. Identificar el glitch de w en [110, 120) 0,25. Cada transición mal u omitida resta 0,125 dentro de su señal.",
+        "enunciado" : "Ejercicio 5 (1,5 puntos). Circuito con entradas a, b y señales: c = Not(a), d = And(b, c), w = Or(a, d). Tp(Not) = 10, Tp(And) = 20, Tp(Or) = 20 u.t.\nAntes de t = 0 las entradas llevan estables mucho tiempo con a = 0 y b = 1, y las señales están estabilizadas.\nEntradas: a sube a 1 en t = 20 y baja a 0 en t = 60. b baja a 0 en t = 80 (vale 1 antes).\nDa la lista de instantes de cambio, con el nuevo valor, de c, d y w hasta t = 140. Indica si w presenta algún glitch y entre qué instantes.",
+        "fuente" : "11-12-Q1-E1-Enunciado.pdf ejercicio 6; 12-13-Q1-E1-Enunciado.pdf ejercicio 5",
+        "id" : "P5",
+        "opciones" : [
+
+        ],
+        "pagina" : 2,
+        "puntos" : 1.5,
+        "solucionReferencia" : "Estado inicial: c = 1, d = 1, w = 1.\nc: baja a 0 en t = 30 (a sube en 20 + 10); sube a 1 en t = 70 (a baja en 60 + 10).\nd = And(b, c) con retardo 20: c vale 0 entre 30 y 70, así que d baja a 0 en t = 50; c vuelve a 1 en 70 con b = 1 todavía (b baja en 80), así que d sube a 1 en t = 90; b baja en 80, por lo que d vuelve a 0 en t = 100. Pulso de d en [90, 100).\nw = Or(a, d) con retardo 20: a sube en 20, w ya valía 1, sigue 1. d baja en 50 pero a = 1 (hasta 60), w sigue 1. a baja en 60 y w lo ve en t = 80 con d = 0, así que w baja a 0 en t = 80. d sube en 90, w sube a 1 en t = 110. d baja en 100, w baja a 0 en t = 120.\nResumen: w = 1 en [0, 80), 0 en [80, 110), 1 en [110, 120) y 0 desde 120. El pulso en [110, 120) es un glitch: ni a = 0 ni b = 0 estacionarios lo justifican, es la transición de d por el camino a - Not - And.",
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "0,1 por palabra correcta (16 palabras = 1,6), con tope 1,5. Si hay 6 o más palabras erróneas, 0. Error sistemático en la dirección (intercambiar Xu e Yu) penaliza como mucho 0,75.",
+        "enunciado" : "Ejercicio 6 (1,5 puntos). Una ROM de 16 palabras sintetiza un circuito con entradas X = (x1, x0), Y = (y1, y0) y salidas r, w1, w0. La dirección de la ROM es 4·Yu + Xu (x0 es el bit de menor peso de la dirección, y1 el de mayor). Xu, Yu y Wu = (w1, w0) son los naturales representados en binario; r es un bit. Usa n%k = resto de la división entera de n entre k.\n\nif (Xu > Yu) { Wu = Xu - Yu; r = 0; }\nelse { Wu = (Xu + Yu) % 4; if (Xu + Yu >= 4) r = 1; else r = 0; }\n\nEscribe el contenido de la ROM (las 16 palabras, formato r w1 w0), indicando dirección, Yu y Xu de cada una.",
+        "fuente" : "12-13-Q1-E1-Enunciado.pdf ejercicio 4",
+        "id" : "P6",
+        "opciones" : [
+
+        ],
+        "pagina" : 2,
+        "puntos" : 1.5,
+        "solucionReferencia" : "dir (Yu,Xu) -> r w1 w0\n0 (0,0) -> 000\n1 (0,1) -> 001\n2 (0,2) -> 010\n3 (0,3) -> 011\n4 (1,0) -> 001\n5 (1,1) -> 010\n6 (1,2) -> 001\n7 (1,3) -> 010\n8 (2,0) -> 010\n9 (2,1) -> 011\n10 (2,2) -> 100\n11 (2,3) -> 001\n12 (3,0) -> 011\n13 (3,1) -> 100\n14 (3,2) -> 101\n15 (3,3) -> 110\nCasos con Xu > Yu: dir 1, 2, 3, 6, 7, 11 (W = Xu - Yu, r = 0). En el resto, W = (Xu+Yu) % 4 y r = 1 solo si la suma es ≥ 4 (dir 10, 13, 14, 15).",
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Simulacro Parcial 1 IC (temas 2 y 3): Representación, combinacionales, síntesis y modelo temporal"
+  },
+  "fecha" : "2026-10-26T07:12:04Z",
+  "fuentes" : [
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E1-Enunciado.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E1-Solucion.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E2-Enunciado.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E2-Solucion.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E1-Enunciado.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E1-Solucion.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E2-Enunciado.pdf",
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E2-Solucion.pdf"
+  ],
+  "id" : "EA5B4085-BDAC-4391-84D2-1C5EF2ED920D",
+  "minutos" : 28,
+  "modo" : "estilo",
+  "notaAntes" : 0.3888888888888889,
+  "pizarras" : {
+    "P1" : [
+      "estudi\/simulacres\/2026-10-26-EA5B4085\/P1-1.png"
+    ]
+  },
+  "respuestas" : {
+
+  }
+}
