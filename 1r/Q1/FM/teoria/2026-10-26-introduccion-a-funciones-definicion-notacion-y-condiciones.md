@@ -5,59 +5,73 @@
 
 ## En una frase
 
-Se cierra la parte de relaciones y se introducen las funciones como asignaciones dinámicas f: A → B, con sus condiciones de definición, distintas de propiedades como la inyectividad, y su lectura como algoritmos.
+Una función `f: A → B` asigna a cada elemento de `A` un único elemento de `B`, y se exigen dos condiciones, existencia y unicidad de la imagen.
 
 ## Temas de la clase
 
-- Paso de relaciones a funciones: perspectiva dinámica
-- Definición y notación f: A → B, b = f(a)
-- Condiciones para que una asignación sea función
-- Propiedades de funciones (inyectividad) frente a definición
-- Funciones dadas por algoritmos
+- Paso de conjuntos y relaciones estáticos a funciones
+- Notación `f: A → B` e imagen `b = f(a)`
+- Ejemplo intuitivo con personas
+- Condiciones de función: existencia y unicidad
+- Propiedades posteriores que dependen de esas condiciones
 
-## Funciones: del punto de vista estático al dinámico
+## De conjuntos estáticos a funciones
 
-Con conjuntos y relaciones se trabajaba con objetos estáticos. Las funciones aportan una perspectiva dinámica: son una manera de relacionar conjuntos distintos, y no solo de describirlos. Con esto se cierra la parte de relaciones y se empieza el tema de funciones.
+Hasta ahora los conjuntos y las relaciones eran algo estático: se trabajaba dentro de un conjunto. Con las **funciones** se pasa a una visión dinámica: una función es una manera de **relacionar elementos de conjuntos diferentes**, es decir, de asignar a cada elemento de un conjunto un elemento de otro.
 
-- Una función relaciona los elementos de un conjunto con los de otro, que pueden ser de naturaleza distinta (por ejemplo, personas y números).
-- Una función es una **asignación**: a un elemento del primer conjunto se le asigna un elemento del segundo.
-- El profesor puso un ejemplo con un conjunto de personas relacionado con otro conjunto [?].
+- Un conjunto puede ser de números, de personas, etc. No hace falta que sean numéricos.
+- Una función es un tipo especial de relación entre dos conjuntos. El profesor la contrapuso a las relaciones vistas hasta ahora (relaciones de equivalencia, particiones).
 
-## Definición y notación
+**Ojo:** esta parte de la transcripción es muy confusa y no se distingue con claridad qué se dijo sobre la conexión con las relaciones [?].
 
-Una función (también llamada **aplicación**) va de un conjunto A a un conjunto B y asigna elementos de B a elementos de A.
+## Notación
 
-- Se escribe `f: A → B`.
-- Si `a ∈ A`, su asignación se escribe `b = f(a)`, es decir, `b` es la función aplicada a `a`.
-- La flecha `→` indica entre qué conjuntos va la función. Para indicar qué hace con cada elemento concreto se usa una flecha distinta [?] (el profesor distinguió las dos flechas, pero el detalle no se entiende).
-- La regla que da la asignación puede escribirse de varias formas [?].
+Una función (o aplicación) va de un conjunto `A` a un conjunto `B` y se escribe:
 
-**Ejemplo:** una función de los reales positivos en los reales positivos, definida por una fórmula `f(x) = [?]`. La regla de asignación se comprueba elemento a elemento: a cada `x` le corresponde un valor concreto [?].
+- `f: A → B`
+- Para un elemento `a ∈ A`, su imagen es `b = f(a)`. Es decir, `f` asigna a `a` el elemento `b` de `B`.
 
-**Ojo:** no toda regla de asignación es una función. El profesor puso un caso de una asignación que "no es una función" [?]. Lo que sí se entiende es que la regla debe cumplir unas condiciones sobre cómo se asigna a cada elemento [?].
+Dos usos de las flechas, según lo que se señala:
+- La flecha entre conjuntos (`A → B`) indica de dónde a dónde va la función.
+- Una flecha que une elementos (`a ↦ b`) indica qué elemento concreto se asigna a qué elemento [?].
 
-## Las condiciones de una función y por qué importan
+Ejemplo mencionado: una función que va de los reales positivos a los reales positivos, definida por una regla que da `f(x)` para cada `x` [?: la fórmula concreta no se entiende].
 
-El profesor insistió en que las condiciones que debe cumplir una asignación para ser función son importantes [?]. Se usan después en problemas para demostrar que una función concreta tiene ciertas propiedades.
+## Ejemplo con personas
 
-- **Inyectividad** y otras propiedades de funciones (probablemente también sobreyectividad) son propiedades de una función dada, no de cualquier asignación.
-- Una **propiedad** de una función se demuestra a partir de su definición [?].
+Para ver la idea se usó un ejemplo intuitivo con dos conjuntos: uno de personas y otro de objetos o lugares [?: los detalles no se entienden].
 
-**Ojo:** la inyectividad es una propiedad de la función, no su definición. No hay que confundir "ser función" con "ser inyectiva".
+- Se relaciona cada elemento del primer conjunto con uno del segundo.
+- Eso es una asignación. Si la asignación está bien hecha, es una función.
 
-## Funciones como algoritmos
+## Las dos condiciones de una función
 
-Una función no tiene por qué ser una fórmula ni una "aplicación directa" entre dos conjuntos. También puede venir dada por un programa o algoritmo:
+Para que una asignación de `A` a `B` sea función se piden **dos condiciones** (la transcripción no las recoge con claridad; la formulación es la habitual del tema [?]):
 
-- Se le pasa un **input** (una entrada) y devuelve un **output** (una salida).
-- Un algoritmo bien definido es también una función, y la idea de asignación sigue siendo la misma.
-- El profesor señaló que hay programas que no funcionan como función [?].
+- **Existencia:** todo elemento de `A` tiene imagen en `B`.
+- **Unicidad:** esa imagen es única, un solo elemento de `B` por cada elemento de `A`.
+
+El profesor insistió en que estas condiciones son importantes: de ellas depende que muchas propiedades posteriores tengan sentido, y por eso cuando algo "no es una función" hay que poder decir cuál de las dos falla.
+
+**Ojo:** una regla que a un mismo elemento le asigna dos valores, o que no asigna ninguno, **no es una función**. Se dio un ejemplo de algo que "no es una función" [?: no se entiende cuál].
+
+## Propiedades que vendrán
+
+El profesor anunció que más adelante se estudiarán propiedades de las funciones, como si son inyectivas, exhaustivas, etc. [?: el reconocimiento escribe «detiva, in activa»; no se puede confirmar la lista]. Se dijo que estas propiedades son importantes para demostrar cosas sobre funciones.
+
+## Función como programa
+
+Una función también puede verse como un **programa o algoritmo**: recibe una entrada (input) y devuelve una salida (output).
+
+- Encontrar o definir una función no siempre es dar una fórmula directa; puede consistir en dar un algoritmo que calcule el resultado.
+- Una función, por tanto, no tiene por qué ser una expresión matemática: también lo es la regla que un programa aplica a su entrada.
+
+**Ojo:** el resto de la clase (el final de la transcripción) es ininteligible [?].
 
 ## Para repasar
 
-1. ¿Qué diferencia hay entre trabajar con conjuntos y relaciones y trabajar con funciones, según el profesor?
-2. ¿Cómo se escribe una función de A en B y cómo se escribe la imagen de un elemento `a`?
-3. ¿Qué significa decir que una función es una asignación entre dos conjuntos?
-4. ¿Por qué no toda regla de asignación es una función?
-5. ¿Es la inyectividad parte de la definición de función o una propiedad que puede tener o no?
-6. ¿Puede un algoritmo con entrada y salida considerarse una función?
+1. ¿Qué diferencia hay entre trabajar dentro de un conjunto y usar una función?
+2. ¿Cómo se escribe una función de `A` en `B` y cómo se denota la imagen de `a ∈ A`?
+3. ¿Qué dos condiciones debe cumplir una asignación para ser función?
+4. Una regla asigna a un elemento de `A` dos elementos de `B`. ¿Es función? ¿Qué condición falla?
+5. ¿En qué sentido puede verse una función como un programa con entrada y salida?
