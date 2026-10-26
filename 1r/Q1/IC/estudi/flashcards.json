@@ -1,3 +1,134 @@
 [
-
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 1",
+    "id" : "413DE1C9-4BF6-4335-A122-03B82EEBA5F8",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Xs de 10110000 (C2, 8 bits)",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "-80",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 1",
+    "id" : "16EE7878-197F-4142-B93A-E43148D57917",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Xu de 00111011",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "59",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 1",
+    "id" : "BC2F014B-0C8B-4C0C-97BC-41AD523BCE76",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "01110010 en hexadecimal",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "0x72",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "22-23 Q2 EP1, ej. 4",
+    "id" : "C3A98940-48CF-455C-BA24-1280C6DFD4FD",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Rango de representación en C2 con 8 bits",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "[-128, 127]",
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "22-23 Q2 EP1, ej. 4",
+    "id" : "17D261D1-5497-4C93-80AD-11A348AD6117",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Biestables mínimos para un CLS de 5 estados",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "3",
+    "tema" : "Circuitos secuenciales"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 5c",
+    "id" : "D934B0AB-4AF0-4031-991D-7E0DEEEABB41",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "UC con 4 estados y entrada Req (1 bit): palabras de la ROM de estado siguiente",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "8 palabras (de 2 bits)",
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 5c",
+    "id" : "A64FAC24-2628-4E50-8355-801F6D5EAA3D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "UC Moore con 4 estados y 5 salidas: tamaño de la ROM de salidas",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "4 palabras de 5 bits",
+    "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 5d",
+    "id" : "CA275C97-B92D-44B1-96D0-ABAC242FE375",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Camino FF UC (100) → ROM (300) → selección MUX Ld (60) → REG. ¿Ciclo mínimo?",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "460 ut",
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "22-23 Q2 EP1, ej. 2",
+    "id" : "C680CABF-FA4A-4346-80D3-0495F9388970",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Camino FF (50) → AND (20) → NOT (10) → OR (20) → NOT (10), salida estable 135 ut antes del flanco. ¿Tcicle?",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "245 ut",
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "22-23 Q2 EP1, ej. 7b",
+    "id" : "8473B936-D2F5-4C5B-BAE2-387E840820E7",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Camino FF UC (100) → ROM (60) → MUX-2-1 (50) → LTU (500) → MUX-4-1 (100) → FF UC. ¿Tiempo?",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "810 ut",
+    "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+  },
+  {
+    "ease" : 2.5,
+    "fuente" : "11-12 Q1 E2, ej. 4",
+    "id" : "4232B662-4008-4C14-8488-DD63DC8C92ED",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "w=1 en c+1, c+2, c+3 si x=1 en c, si no 0. Con x=0,1,0,0,0,1 en ciclos 0 a 5, ¿w en el ciclo 5?",
+    "proxima" : "2026-10-26T19:58:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "0",
+    "tema" : "Circuitos secuenciales"
+  }
 ]
