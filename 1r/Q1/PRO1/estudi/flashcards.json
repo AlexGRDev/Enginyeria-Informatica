@@ -1,3 +1,35 @@
 [
-
+  {
+    "ease" : 2.5,
+    "id" : "D33D4299-1F60-48B4-B1CA-5C949AE045EA",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Cuenta los cambios entre dígitos consecutivos de n (n = 1223 da 2). ¿Qué falla?\n```\nint canvis(int n)\n{\n    int c;\n    while (n >= 10) {\n        if (n%10 != (n\/10)%10) ++c;\n        n = n\/10;\n    }\n    return c;\n}\n```",
+    "proxima" : "2026-10-26T17:00:00Z",
+    "repeticiones" : 0,
+    "respuesta" : "Línea int c;: c no está inicializada, así que ++c parte de un valor basura. Corrección: int c = 0;",
+    "tema" : "Funciones auxiliares"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "B8389AB6-81A7-4DD8-A2AD-E64BC5605DF8",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Suma de los 4 elementos de v (debe dar 10). ¿Qué falla?\n```\nint v[4] = {1, 2, 3, 4};\nint* p = v;\nint s = 0;\nwhile (p <= v + 4) {\n    s += *p;\n    ++p;\n}\n```",
+    "proxima" : "2026-10-26T17:00:00Z",
+    "repeticiones" : 0,
+    "respuesta" : "Condición del while: con <= se lee *(v+4), fuera del array. Corrección: while (p < v + 4).",
+    "tema" : "Punteros y aritmética de punteros"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "17112C1D-FA8B-42F5-A0C2-DE27768B4591",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-26",
+    "pregunta" : "Debe decir si dos cadenas C son iguales. Siempre devuelve basura. ¿Qué falla?\n```\nbool iguals(const char* a, const char* b)\n{\n    while (*a and *a == *b) {\n        ++a;\n        ++b;\n    }\n    *a == *b;\n}\n```",
+    "proxima" : "2026-10-26T17:00:00Z",
+    "repeticiones" : 0,
+    "respuesta" : "Última línea: falta el return, la comparación se evalúa y se descarta. Corrección: return *a == *b;",
+    "tema" : "Cadenas estilo C (char*)"
+  }
 ]
