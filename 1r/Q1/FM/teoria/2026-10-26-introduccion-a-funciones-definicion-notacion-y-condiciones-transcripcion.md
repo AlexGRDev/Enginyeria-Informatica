@@ -1,0 +1,231 @@
+# Transcripción: Introducción a funciones: definición, notación y condiciones
+
+- Asignatura: FM
+- Fecha: 2026-10-26 14:26
+- Idioma: es-ES
+- Duración: 00:27:41
+- Audio: sin filtrar
+- Origen: transcripción automática local (Speech), sin revisar
+
+## Transcripción
+
+**[00:00:01]** Me dir, me está instruiendo tot el tema de relacion, si com to la y la Raúl, etc. I ja toda una lida, la lgua, trapeu, ha comen funciones. A las dones. La funciones que también jugar megass conlos, es que ha j quizá y se queda para lavalució como a sujts con aquel tema,
+
+**[00:00:36]** Y que la prensa que funcionaba, teníamos conjunts y la un su, luego que con junts, y de la re y la que queda bien, estaba la semana , la que esta forma o esta. siempre es una cosa que era estática. Y no estaría muy solo. Yo estaría en el que sí, y que es trabajar Kunjunt. Ale, Sergio, Nogas, el de, de, pero, ¿cómo se puede relacionar diferentes Dallas y diferentes espacios dadas, por ejemplo, no pueden trabajar un mucho con Jun. que más. La conción es una manera de relacionar cults, es una manera de que mes y yo muy mta que tapa. Que me podría hablar un y un. aquí está la grasa la función. Ahora pasa la que está paspectiva la fatiga que tengo utilizar, con perspecpectiva es dinámica la teoría.
+
+**[00:01:35]** En estaal, la idea fundamental del cota que tengo. no de transición de la
+
+**[00:01:41]** , sino que el peor está todavía y con relacion con base y Isabel. En se olvida la sí y supongo. Vale. A. Para forma dos, estas ideas, porque esta palabra des, aquí, en casa con la Fons. Don a de presentar la función de maneratal al par hablar de la s. Las relacion no me van ahora relacion cultur, la traen ara, como la de Valencia, de, solo que ser narracion y cada eso para.
+
+**[00:02:28]** este ha pasado con untra, son cosas que ya sabemos, que los res. Cuando teu funciones a car y que has dicho . Yo, s
+
+**[00:02:45]** aquí o que no pare de nada, personas que dejan por vez cenlada. Eso efectivamente, una paella de nada. ¿Para qué? La pregunta capacidad, la reabs Vales. A las dos, panderilla, dos, la so de alguna forma es una más desca café en raza negra.
+
+**[00:03:09]** En cuanto digo una fusión también, al favor, aquí está funciónción, pero está de aquí, de que es lara y de toda esta ruta capaz a que está atrás recta. Peroustra idea ha salta, ya. la de toda la vida.
+
+**[00:03:36]** Hay saciar el de la de la aire y la emoción. Es mi ideal de que hay gente generalizada, no es para real, sino
+
+**[00:03:51]** , sino que se pa. Hay cosas allí en las eras, quedre un, que se, por ejemplo, el 2,
+
+**[00:04:07]** voy a relacionado ahora a decir a de que el que se va a trabajar a la subida de esta funciones. Probablemente igual que si detiva, in activa, etc.
+
+**[00:04:25]** Y eso, económica, de uso. La sima es
+
+**[00:04:36]** Te de vacaciones.
+
+**[00:04:40]** tienes a
+
+**[00:04:46]** a una vez.
+
+**[00:05:00]** Con una al.
+
+**[00:05:10]** Hola
+
+**[00:05:20]** Que conjo, dit, pots ser igual o realmente no.
+
+**[00:05:29]** Igual o diferente.
+
+**[00:05:41]** Para pragar su función, si eso continuas toda real, sus función se van carrera, me cambia la prueba. Pero de cuenta de difunción es como la alma, cada es una función. Es que valor que son objetivos. A verales, pero son mucho
+
+**[00:06:03]** nada. ideas
+
+**[00:06:10]** , la como ser una función entre entre dos jujus, que ahoraecen números. frecuente para ejemplola
+
+**[00:06:27]** Parala puede imaginar hay tres personas, va, obviamente, ¿no? Los trayendo. Al de me gustaría a ver a ver yo me contaré con a personas como
+
+**[00:06:49]** Y va a decir, no.
+
+**[00:06:54]** , yto. Y hay que te ves relaciona a estos hurtos, ¿no? Porque vale, tendrá
+
+**[00:07:05]** El.
+
+**[00:07:10]** , por ejemplo, a ver, con cheque a tú vas a con o que que uno que
+
+**[00:07:20]** así, o no te va.
+
+**[00:07:24]** Aquí que va a son los conjuts, con a personas y un conjut de los, canta que dos conyunts son, sonts, tampoco son, se, pero que tampoco son. relacionar dos que son másales, pass, ya que son a que está me de relación afecta aviones que a la del hospital. estaba con la del hospital, si haces una manera que está en comunas y es cu que vamos y hay que estacionar
+
+**[00:08:01]** barco. Halló menos, no así nació, ¿no?
+
+**[00:08:09]** Así nació estaba Daniel.
+
+**[00:08:20]** A
+
+**[00:08:23]** El que tiene
+
+**[00:08:26]** que es muy dunde, ¿no?
+
+**[00:08:30]** A. Ella fascina y es que estaba pensando una función. Una.
+
+**[00:08:49]** Vale. esto es una única una idea o una a sobra que son ajustas. Y la que central, o. Las de que también me gusta la. Pues una jugada, la la. ¿no?
+
+**[00:09:16]** y
+
+**[00:09:39]** igual que idea a ver, pero de ver es una asignación
+
+**[00:09:49]** ción. Y la designación de Cataltamen,
+
+**[00:09:56]** se va a día.
+
+**[00:10:02]** Es también uno
+
+**[00:10:08]** Claro.
+
+**[00:10:22]** Los
+
+**[00:10:27]** Así significa que para llena a ver. En estado a EGA, Se mejor.
+
+**[00:10:42]** A a Anacultura.
+
+**[00:10:49]** Vals, latación habitual, hay una aplicación de dos cjunts. la que cada a Pi es. Hasta el vídeo ahora, la tasa mdual.
+
+**[00:11:11]** Recordamos que avanzando de seguro inversión ridual quise tener una función EFA, la que laF función EEFA, va desde al 15.
+
+**[00:11:27]** Eso la una función, que va a rear.
+
+**[00:11:33]** También dos cunjunts, a I, que son un pas, y de hay una función que va desde antes de que esta función, aquellas que van una e. Es la que esta función asigna
+
+**[00:11:47]** de haber un alament a que esta asignación, si aquí estás escrib a esta manera, no?
+
+**[00:11:56]** B es una cosa en la B, es igual a la aplicación, la muepa aplicada
+
+**[00:12:04]** a la nuestra. La tarea esqueática has escribido la formamas de dar una aplicación. que va desde ya 15 saber. Cutas palabras también. aparte de estatación para indicar que va a de hacer y aix. A tarea, a escribir para que sea que el minúsculo de una una fecha porque todavía que estar aquí, a que está a una caixa o asigna a una ambiente de aquí. Para que claro, si te quiero estar general. nuevamente de está con mucho menos. Vale. Aix el tema de pasión, lación,
+
+**[00:12:55]** de la manera exactamente con solamente a
+
+**[00:13:01]** Y de qué está la ocasión. ¿Te gusta Malú? Me voy a cruzado, una, la un dos.
+
+**[00:13:14]** Vale, entonces una que siempre el guarida, vamos a una
+
+**[00:13:21]** primera flexión o. Casi, vamos.
+
+**[00:13:31]** Igual. El que, a que esta función, va des dos positius, que sobre reales, tant, ¿c escribir? I en una función que va a 10 Dos positions, cada el I va a acapar
+
+**[00:13:52]** to las re
+
+**[00:13:56]** Aquí acostumbar, que va tercer. La cón serían areadas. ¿Cómo está esta situación? Yo a que estas hi? de a día que se van a y a igual.
+
+**[00:14:22]** igual a
+
+**[00:14:28]** Eso se llama una. Ahora, para que evidente, cada de una vez hay un curso a la NBA. Me acord de que con Darima, una función con la Vicente B aquí, que sea al algoritmo, a cada también. Que no la agenda la la preocupé, y por las cuatro.
+
+**[00:14:54]** Que será el día de ayer. Así es una fusión. Ahora vez, si yo digo a eso de aquí
+
+**[00:15:05]** Aix sabe que no es una fusión, para que un no vol en París,
+
+**[00:15:13]** que me interesa la raíz.
+
+**[00:15:35]** Es simplemente, pues, que ya tenemos única idea, pero pues la que estaba.
+
+**[00:15:43]** Vale.
+
+**[00:15:51]** Sí.
+
+**[00:15:58]** A las horas, en ahí, te percibimos un salami. De la manera a la cual se asigna que el salamet es lazararla. Cada la regla y ya van a la aquí, la fas, pero es una que un enla y confusión aquesta regla en a relaciones. Des, ¿no? asignación
+
+**[00:16:28]** La asignación..
+
+**[00:16:37]** a
+
+**[00:16:56]** ¿Qué es la que está cerca?
+
+**[00:17:02]** La breda es una deión. Es una perra, que es un buen, tal en esta carta
+
+**[00:17:14]** De reglas,
+
+**[00:17:24]** . Y una banda.
+
+**[00:17:30]** totalmente. La cul
+
+**[00:17:34]** tiene. La cunchupeje, a, hasta toda la ciudad.
+
+**[00:17:48]** Ahora, aix se va, que parla de vez está a Sco Reu, también el que vos. Y laridad
+
+**[00:18:01]** Ese Arcoumil, si hay diversas, dos habs con Raúl? muy bien. ¿De la manera que es? A, ha estado la semana más 2. Está la bandera. Y es un poco loco, están. Y hace las plumas de prima.
+
+**[00:18:29]** A las donas, a que ps o a las cerles.
+
+**[00:18:40]** Y
+
+**[00:18:43]** tierra como lo mismo,
+
+**[00:18:51]** Vale, a las horas. Yo estoy pasando cunchuná, hago cun chup y compas un cuchador conchupé donde está una rimal. ¿Qué es la queez? arregla es una evalación. ¿Y qué es una que esión? que faltó también con lo que siempre escuchaba, ¿no? Allí
+
+**[00:19:12]** para toda la
+
+**[00:19:19]** están relacion.
+
+**[00:19:23]** funda. Y a la música, si llu grugos al al conte, de tal manera que ya estaba solo, una otra y manera que está relacionado a ladra. Aix no puede ser, porque sé que la ser que una fció fatal, si este para una función, si el Madrid.rigas, la que bien, su café alta de Si no. Aix es el examenament a que no está bien deix. Vale.
+
+**[00:20:00]** Ok, soy escritora.
+
+**[00:20:06]** Vale. La es detación y
+
+**[00:20:20]** Vale, que no. Si salió una fusión que iba a S, Vale, a partir de ahora, anterior que jugar a la que es españolaola a parti hizo. la manera que estoy acostumbrada en, pues mejor todo de otra manera. A que aquí yo le de mirarlar los nts a la sociedad.
+
+**[00:20:49]** Y aquí,
+
+**[00:21:00]** de quevimos en Sinaloa, que dos. Pero los pases para esta mañana. la. ¿Para qué esta moneda? Más que yo tengo un en cata de que y van a por ejemplo. Y aques, un en la otra, estamos pensando l'alicació, la formació es bueno,.
+
+**[00:21:31]** Para, a la que d. Més coses
+
+**[00:21:39]** relacionadas. Des cos de invasión m.
+
+**[00:21:48]** Alen, nos va a aquí,
+
+**[00:22:17]** Y para vez, preguntar preguntarte que está ahí el
+
+**[00:22:32]** Porque si
+
+**[00:22:41]** de todas las personas.
+
+**[00:23:07]** La forma. escribe acá a todos. Pix, capatayá, con la surtida, tiene una m
+
+**[00:23:20]** No,
+
+**[00:23:27]** Cas en París, igual ahí que para para
+
+**[00:23:35]** Hombre,
+
+**[00:23:41]** A la semana primera de que está nombre, y el
+
+**[00:23:56]** Ahora, para qué es importantet aques estas dos condiciones? Sí, una producción se les va a estas d condiciones, que es la de que la con su seguridad y por no que se ha con una. Y queculos de más de papel que funciona. Aquellas cosas con implican que funcion hasta 20 libras. Esto es importante. Para que algunos problemas buscarán a mostrar cada una seerta función hasta venta filidas. Y acá era de términología si noiga España, yo le intividad es una propiedad. Escondí que en la base con los equivalencia, donde la función, decida. A la juntilla que estás tú me dan un prueba de de
+
+**[00:25:07]** Ahora. Pero quiz buscar una funión no es a una aplicación directa entre a labe o una función olítica, sino que con hacer un programa, un programa de algoritmo que sí. En que cuando es una función para que un papa o hacer o sí, que esta función de unas varietas que li passeu 1, cuando se voltas, cuando se, con seists, toda la gente que sigu y un ratotor va un otra cosa, porque no puedo visionario y lo pasa es que sí. Con que esta idea, la con un input y y en Orozco, en la que no funciona, que es, hay que temas más que niño. de . Una rima, para con programas, para pero no funciona. para rocebo, la función de, de la guerra, sino que a este de para que también es una se parte de la sala para que a un programar un algoritmo, una excursión de la comida aire, a una ci, también es una exrsión, ahí está.
+
+**[00:26:14]** de otra, ya sonri Vale. gente aquí? puede exportar el jugador.
+
+**[00:26:28]** ¿
+
+**[00:26:32]** ayuda al museo de la temporada.
+
+**[00:26:37]** ahí hasta la mismamidad, da y ha inido y el que acababa a reados, pero de una ta. Así estaría que no te lleva, ¿no? Si en cambio,
+
+**[00:26:55]** por aquí, la zona, que no cre
+
+**[00:27:03]** regular aquí, persecutivo narrativo a la
+
+**[00:27:13]** La función que estará la definida cuatro
+
+**[00:27:33]** Hola, conducta. las g
+
