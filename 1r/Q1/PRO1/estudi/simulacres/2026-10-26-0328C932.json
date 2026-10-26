@@ -1,4 +1,233 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 3,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 3,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 0,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 4,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 1.67,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "ft_draw_a no tiene @pre\/@post.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "Bucles de impresión de espacios y 'A' repetidos dentro de una sola función.",
+            "patron" : "No aplicar diseño descendente",
+            "refuerzo" : "Extraer una acción escriu(n, c) que escriba n veces un carácter.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Funcionalmente correcto (AC), con coste lineal en el tamaño de la salida. Pierde puntos por estilo: la función no tiene especificación pre\/post y es un bloque largo con el mismo bucle de impresión repetido cinco veces, sin una función auxiliar tipo imprimir_caracteres(c, n).",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "void ft_draw_a(int a) sin @pre\/@post",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "mayor",
+            "concepto" : "No aplicar diseño descendente en problemas complejos",
+            "detalle" : "Cinco bucles while casi idénticos para imprimir espacios y 'A' en ft_draw_a",
+            "puntos" : 1
+          }
+        ],
+        "puntosObtenidos" : 0.89
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Array con los dígitos 9..0 en lugar de calcularlos con aritmética.",
+            "patron" : "Guardar una secuencia en un vector cuando no hace falta",
+            "refuerzo" : "Calcular el dígito con 9 - (cont % 10) y llevar un solo contador.",
+            "tema" : "Tipos básicos"
+          },
+          {
+            "descripcion" : "ft_calc_rectangle sin @pre\/@post.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Correcto (AC). El array nbr[10] con los dígitos 9..0 y el puntero circular es innecesario: el dígito se obtiene con 9 - (contador % 10). Eso implica además varias variables de más (nbr, pnbr, k). No hay especificación pre\/post de la función.",
+        "funcional" : 10,
+        "id" : "P2",
+        "penalizaciones" : [
+          {
+            "categoria" : "eficiencia",
+            "concepto" : "Guardar una secuencia en un vector cuando no hace falta",
+            "detalle" : "int nbr[10] relleno con 9..0 y recorrido con pnbr",
+            "puntos" : 1.5
+          },
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "void ft_calc_rectangle(int rectangle, int r_size, int times) sin especificación",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Dos o más variables innecesarias",
+            "detalle" : "nbr, pnbr y k sobran con el cálculo aritmético",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 0.78
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Extracción de dígitos y construcción de números solo con int.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Comparar a\/b y c\/d con a*d y c*b, y simplificar con gcd al imprimir.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "Main vacío, no resuelve nada.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Recorrido de dígitos con %10 y \/10 reconstruyendo el número.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Main vacío, no resuelve nada.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Función is_bicolor sin implementar.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "No hay función is_bicolor; no compila al enlazar con el main ignorado.",
+        "funcional" : 0,
+        "id" : "P5",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Función poker_hand sin implementar.",
+            "patron" : "No sabe abordar std::string",
+            "refuerzo" : "Comparar c1, c2, c3 entre sí y devolver el string según los casos.",
+            "tema" : "std::string"
+          }
+        ],
+        "feedback" : "No hay función poker_hand.",
+        "funcional" : 0,
+        "id" : "P6",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Lectura carácter a carácter con contador de racha.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "Main vacío.",
+        "funcional" : 0,
+        "id" : "P7",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Recorrido de secuencia con rachas de paridad.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "Main vacío.",
+        "funcional" : 0,
+        "id" : "P8",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Decodificación base 64 con extracción de dígitos en base 256.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Main vacío.",
+        "funcional" : 0,
+        "id" : "P9",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Solo P1 y P2 tienen solución real (AC); el resto son plantillas vacías con un main que no hace nada. No había imágenes de pizarra adjuntas, así que he corregido solo el código. Las dos soluciones funcionan, pero les faltan especificaciones pre\/post y descomposición en funciones. P2 guarda en un array lo que se calcula con aritmética. Prioridad antes del parcial del 29\/10: dígitos con %10 y \/10 (P3, P4, P5), el esquema de lectura carácter a carácter (P7, P8, P9) y funciones con string\/char (P6)."
+  },
   "diagnostico" : false,
   "examen" : {
     "duracionMinutos" : 90,
@@ -121,6 +350,7 @@
   "minutos" : 33,
   "modo" : "jutge",
   "notaAntes" : 0,
+  "notaDespues" : 1.5374226245158749,
   "pizarras" : {
 
   },
