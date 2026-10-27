@@ -1,0 +1,227 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 0.8,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.2,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "No extrae dígitos con %10 y \/10 ni compara dígitos consecutivos; usa punteros sin sentido sobre n.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "La función pujades no lleva @pre ni @post.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "El main no lee la entrada con cin; hardcodea los datos y lee fuera del array.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema for (int i = 0; i < k; ++i) { cin >> x; ... } con k leído antes.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "La función no resuelve el problema. Haces pn = &n y comparas *pn con *pn + 1, que es siempre distinto. La condición *pn != *pn + 1 se cumple siempre y solo incrementas n, así que el bucle while (*pn) no recorre dígitos y apenas termina (depende del desbordamiento de n). Nunca se llega a contar una pujada. pn++ apunta a memoria ajena a n. Hay que extraer el dígito con n%10, guardar el dígito anterior, comparar y avanzar con n\/10. El main no lee k ni los naturales: usa un array fijo con k incluido como dato, y while (*pnbr) acaba leyendo fuera del array (nbr[4]). Faltan @pre y @post. Usar punteros sobre un entero no tiene sentido aquí.",
+        "funcional" : 0,
+        "id" : "E1",
+        "penalizaciones" : [
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "int pujades(int n) sin @pre ni @post",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "mayor",
+            "concepto" : "Leer sin garantía de que haya un dato disponible",
+            "detalle" : "while (*pnbr) recorre nbr[4], fuera del array de 4 elementos",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "if (*pn != *pn + 1) ... else if (*pn <= *pn + 1 && *pn <= *pn + 2): condiciones sin sentido",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Nombres de variables que dificultan la lectura",
+            "detalle" : "la variable local pujades tiene el mismo nombre que la función; pn, pnbr poco claros",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco: no sabe abordar la lectura con centinela y contador de racha.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "En blanco. Esquema esperado: cin >> c; while (c != '.') { actualizar racha y máximo; cin >> c; }, con la racha reiniciada a 1 al cambiar de letra.",
+        "funcional" : 0,
+        "id" : "E2",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco: no construye el valor del byte ni escribe char(valor).",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco. Esquema esperado: leer cada bit como char y acumular valor = 2*valor + (bit - '0') en 8 pasos. Después escribir char(valor) y terminar con un salto de línea.",
+        "funcional" : 0,
+        "id" : "E3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco: no plantea caso base ni paso recursivo sobre dígitos.",
+            "patron" : "No sabe abordar Recursividad",
+            "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
+            "tema" : "Recursividad"
+          }
+        ],
+        "feedback" : "En blanco. Esquema esperado: caso base x==0 and y==0 devuelve 0. Si no, suma 1 cuando x%10 != y%10 y llama a difs(x\/10, y\/10).",
+        "funcional" : 0,
+        "id" : "E4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "No hay imágenes de pizarra adjuntas, así que he corregido solo el texto. Solo has entregado E1 y no funciona. E2, E3 y E4 están en blanco. La nota es 0 sobre 10. En E1 no extraes dígitos con %10 y \/10. Usas un puntero a n y lo incrementas como si fuera un vector de dígitos. El main no lee con cin. Para el parcial hay que repasar tres cosas: el recorrido de dígitos con %10 y \/10, el esquema cin >> c; while (c != '.') y la acumulación 2*valor + (bit - '0') para escribir char(valor). Falta además la recursión sobre dígitos con caso base x==0 and y==0."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "0,9 funcion pujades implementada y correcta (extraer dígitos con %10 y \/10, comparar con el dígito vecino); 0,4 caso límite de un dígito y n=0 correctos; 0,5 @pre y @post presentes y coherentes con el código; 0,5 main correcto con esquema for de k lecturas; 0,2 sin deficiencias de estilo. Si no se implementa la función: máximo 0,5 por el main. Cada deficiencia menor de la guía resta 0,5 (máx. 2).",
+        "ejercicio" : 0,
+        "enunciado" : "Pujades d'un nombre.\n\nDiem que un nombre natural té una pujada en una posició quan un dígit és estrictament més petit que el dígit que té immediatament a la seva dreta. Per exemple, 1213 té 2 pujades (1<2 i 1<3), 3211 en té 0 i 7 en té 0.\n\nEscriviu una funció `int pujades(int n)` que retorni el nombre de pujades de n, i un programa que la utilitzi. La funció ha d'anar documentada amb la seva especificació (@pre i @post). Només podeu treballar amb enters i les operacions +, -, *, \/, %.\n\nEntrada: un enter k >= 0 seguit de k naturals (entre 0 i 2·10^9).\nSortida: per a cada natural, una línia amb el seu nombre de pujades.\n\nExemple\nEntrada:\n3\n1213\n7\n9876\nSortida:\n2\n0\n0",
+        "fuente" : "No sabe abordar Funciones auxiliares (recorrido de dígitos con %10 y \/10 comparando dígitos consecutivos); incluye No documentar funciones con pre\/post",
+        "id" : "E1",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/\/ @pre n >= 0\n\/\/ @post retorna el nombre de parells de dígits consecutius de n\n\/\/       on el dígit de l'esquerra és estrictament menor que el de la dreta\nint pujades(int n) {\n    int res = 0;\n    int dreta = n%10;\n    n = n\/10;\n    while (n > 0) {\n        int esq = n%10;\n        if (esq < dreta) ++res;\n        dreta = esq;\n        n = n\/10;\n    }\n    return res;\n}\n\nint main() {\n    int k;\n    cin >> k;\n    for (int i = 0; i < k; ++i) {\n        int x;\n        cin >> x;\n        cout << pujades(x) << endl;\n    }\n}\n\nTraza 1213: dreta=3; esq=1<3 (1); dreta=1; esq=2<1 no; dreta=2; esq=1<2 (2). Resultado 2. Casos límite: n de un solo dígito da 0 (el while no entra).",
+        "tema" : "Funciones auxiliares",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,6 esquema de lectura correcto (cin >> c antes del while, cin >> c al final del cuerpo; sin leer más allá del '.'); 0,8 contador de racha correcto (incrementa si igual, reinicia a 1 si distinta); 0,5 máximo actualizado y escrito correctamente; 0,4 secuencia vacía y variables inicializadas; 0,2 sin deficiencias de estilo. Un main vacío o sin lectura\/escritura: 0. Usar while (cin >> c and c != '.'): -0,5 (deficiencia menor).",
+        "ejercicio" : 0,
+        "enunciado" : "Ratxa més llarga.\n\nEs llegeix una seqüència de lletres minúscules acabada en el caràcter '.'. La seqüència pot estar escrita en una o diverses línies, però en llegir-la amb `cin >> c` no cal preocupar-se dels espais ni dels salts de línia. Escriviu un programa que escrigui la longitud de la ratxa més llarga de lletres iguals consecutives.\n\nEntrada: lletres minúscules seguides d'un '.'. La seqüència pot ser buida (només el '.').\nSortida: un enter, la longitud de la ratxa més llarga (0 si la seqüència és buida).\n\nExemple 1\nEntrada:\naabbbcbb.\nSortida:\n3\n\nExemple 2\nEntrada:\nabcd.\nSortida:\n1\n\nExemple 3\nEntrada:\n.\nSortida:\n0",
+        "fuente" : "No sabe abordar E\/S con std::cin\/std::cout (esquema cin >> c; while (c != '.') {...; cin >> c;} con contador de racha)",
+        "id" : "E2",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    char c;\n    cin >> c;\n    char anterior = '.';\n    int ratxa = 0;\n    int maxim = 0;\n    while (c != '.') {\n        if (ratxa > 0 and c == anterior) ++ratxa;\n        else ratxa = 1;\n        if (ratxa > maxim) maxim = ratxa;\n        anterior = c;\n        cin >> c;\n    }\n    cout << maxim << endl;\n}\n\nTraza aabbbcbb.: ratxes 1,2,1,2,3,1,1,2 -> máximo 3. Con '.' inicial el while no entra y se escribe 0.",
+        "tema" : "E\/S con std::cin\/std::cout",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,5 lectura correcta de n y de cada bit como char con bucles for de medida conocida; 0,9 conversión char->dígito (bit - '0') y acumulación correcta del valor con aritmética (2*valor + bit, o bit*peso con peso 128 que se divide); 0,5 salida char(valor) sin separadores y salto de línea final; 0,4 variables reiniciadas en cada byte; 0,2 estilo. Si usa string, vector o conversión de biblioteca (p. ej. bitset, stoi): 0 (incumple restricción explícita). Sin intento de manipular el valor con aritmética: máximo 0,5.",
+        "ejercicio" : 0,
+        "enunciado" : "Missatge en binari.\n\nUn missatge es transmet com una seqüència de bytes, cadascun escrit com 8 caràcters '0' o '1' (primer el bit de més pes). Escriviu un programa que descodifiqui el missatge i n'escrigui els caràcters, tots seguits en una sola línia.\n\nRestriccions: no es pot usar `string`, ni vectors, ni funcions de la biblioteca per convertir de binari. Només caràcters i enters amb les operacions +, -, *, \/, %. Heu de llegir cada bit com a caràcter i construir el valor del byte vosaltres mateixos; el caràcter resultant s'obté amb `char(valor)`.\n\nEntrada: un enter n >= 0 seguit de n bytes, separats per espais o salts de línia.\nSortida: els n caràcters descodificats, seguits d'un salt de línia.\n\nExemple\nEntrada:\n3\n01001000 01101001\n00100001\nSortida:\nHi!",
+        "fuente" : "No sabe abordar Tipos básicos (acumular valor += bit*peso, escribir char(valor)); Incumplir restricción explícita del enunciado",
+        "id" : "E3",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    for (int i = 0; i < n; ++i) {\n        int valor = 0;\n        for (int j = 0; j < 8; ++j) {\n            char bit;\n            cin >> bit;\n            valor = 2*valor + (bit - '0');\n        }\n        cout << char(valor);\n    }\n    cout << endl;\n}\n\nTraza: 01001000 -> 72 'H'; 01101001 -> 105 'i'; 00100001 -> 33 '!'. Alternativa válida: valor += bit*peso con peso inicial 128 y peso = peso\/2.",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,5 caso base x==0 and y==0 correcto (no basta x==0 o y==0, pierde dígitos del otro número); 1,0 paso recursivo correcto (compara x%10 con y%10 y llama con x\/10, y\/10); 0,5 @pre y @post; 0,5 main correcto (for con k lecturas). Función iterativa o con string: 0 en el ejercicio. Cada deficiencia menor resta 0,5 (máx. 2).",
+        "ejercicio" : 0,
+        "enunciado" : "Dígits diferents.\n\nDonats dos naturals x i y, escrits en decimal i alineats per la dreta (els dígits que falten al nombre més curt es consideren 0), volem comptar en quantes posicions els dos nombres tenen un dígit diferent. Per exemple, 1234 i 34 es comparen com 1234 i 0034, i difereixen en 2 posicions; 505 i 5 difereixen en 1.\n\nEscriviu una funció RECURSIVA `int difs(int x, int y)` que retorni aquest nombre, amb la seva especificació (@pre i @post), i un programa que la utilitzi. Si la funció no és recursiva, l'exercici val 0. No es pot usar `string`: només enters amb +, -, *, \/, %.\n\nEntrada: un enter k >= 0 seguit de k parelles de naturals x y.\nSortida: per a cada parella, una línia amb difs(x, y).\n\nExemple\nEntrada:\n4\n1234 34\n505 5\n12 12\n0 0\nSortida:\n2\n1\n0\n0",
+        "fuente" : "No sabe abordar Recursividad (recursión sobre dígitos, caso base x==0 and y==0, paso x\/10, y\/10); incluye No documentar con pre\/post",
+        "id" : "E4",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/\/ @pre x >= 0 i y >= 0\n\/\/ @post retorna el nombre de posicions (alineades per la dreta, amb zeros\n\/\/       a l'esquerra del nombre més curt) on x i y tenen dígit diferent\nint difs(int x, int y) {\n    if (x == 0 and y == 0) return 0;\n    int d = 0;\n    if (x%10 != y%10) d = 1;\n    return d + difs(x\/10, y\/10);\n}\n\nint main() {\n    int k;\n    cin >> k;\n    for (int i = 0; i < k; ++i) {\n        int x, y;\n        cin >> x >> y;\n        cout << difs(x, y) << endl;\n    }\n}\n\nTraza 505,5: 5 vs 5 igual (0); 0 vs 0 igual (0); 5 vs 0 diferente (1); luego (0,0) -> 0. Total 1.",
+        "tema" : "Recursividad",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión"
+  },
+  "fecha" : "2026-10-27T08:31:57Z",
+  "fuentes" : [
+
+  ],
+  "id" : "6CCE401B-1687-47EC-949E-ABFD24AB2883",
+  "minutos" : 47,
+  "modo" : "estilo",
+  "notaAntes" : 1.5779022055752283,
+  "notaDespues" : 1.3851834520102322,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "E1" : "#include <iostream>\n\nint     pujades(int n)\n{\n        int     *pn;\n        int     pujades;\n\n        pn = &n;\n        pujades = 0;\n        while (*pn)\n        {\n                if (*pn != *pn + 1)\n                        (*pn)++;\n                else if (*pn <= *pn + 1 && *pn <= *pn + 2)\n                        (*pn)++;\n                else\n                        pujades += 1;\n                pn++;\n        }\n        return (pujades);\n}\n\nint     main(void)\n{\n        int     nbr[4] = {3, 1213, 7, 9876};\n        int     *pnbr;\n\n        pnbr = &nbr[0];\n        while (*pnbr)\n        {\n                std::cout << pujades(pnbr[0]) << '\\n';\n                pnbr++;\n        }\n        return (0);\n}"
+  }
+}
