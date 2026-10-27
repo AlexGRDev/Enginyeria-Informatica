@@ -3,9 +3,9 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-27. Objetivo: **7,5**. Próximo examen: Parcial 1 F, 2026-11-03 (en 7 días).
+Generado por Kiwi GEI el 2026-10-27. Objetivo: **8,5**. Próximo examen: Parcial 1 F, 2026-11-03 (en 7 días).
 
-**Estimación: 0,8 / 10** (-6,7 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,8.
+**Estimación: 0,8 / 10** (-7,7 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,8.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
