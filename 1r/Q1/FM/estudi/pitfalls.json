@@ -16,7 +16,8 @@
     "descripcion" : "La H.I. no és cap proposició ('n+1') i la T.I. no correspon a l'enunciat per a n.",
     "ejemplos" : [
       "La H.I. no és cap proposició ('n+1') i la T.I. no correspon a l'enunciat per a n.",
-      "H.I. y T.I. sobre un enunciado que no es el pedido, base en n=0 en vez de n=1, y la H.I. no es el enunciado con n−1 del problema."
+      "H.I. y T.I. sobre un enunciado que no es el pedido, base en n=0 en vez de n=1, y la H.I. no es el enunciado con n−1 del problema.",
+      "La H.I. incluye el último sumando y cota 1\/(n-1); la T.I. tiene una cota inventada 1\/((n-1)(n+2))."
     ],
     "id" : "9F8702B1-BAA9-4720-8B26-60DD4F5A6B49",
     "patron" : "H.I. y T.I. mal formuladas",
@@ -24,8 +25,8 @@
     "racha" : 0,
     "refuerzo" : "Plantilla: H.I. = l'enunciat amb n−1 al lloc de n; T.I. = l'enunciat amb n; especifica sempre n > 1.",
     "tema" : "Inducció",
-    "ultima" : "2026-10-27T13:48:32Z",
-    "veces" : 2
+    "ultima" : "2026-10-27T14:33:15Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Al pas inductiu substitueix valors concrets (n=3, k=2) en lloc de raonar per a un n genèric.",
@@ -44,7 +45,8 @@
     "descripcion" : "Interpreta ∑_{k=1}^{n} 1\/k² com a potències del tipus 'k^(n+1)' i escriu 'Σ k = 1' com si fos un valor.",
     "ejemplos" : [
       "Interpreta ∑_{k=1}^{n} 1\/k² com a potències del tipus 'k^(n+1)' i escriu 'Σ k = 1' com si fos un valor.",
-      "Usa ∏ (producto) en lugar de ∑ y cambia el término general por (i+1\/2)\/(i+1\/3) en vez de 1\/k²."
+      "Usa ∏ (producto) en lugar de ∑ y cambia el término general por (i+1\/2)\/(i+1\/3) en vez de 1\/k².",
+      "Se sustituye n por n-1 en el término general como si el índice k dependiera de ello, y se mezclan sumatorio y términos sueltos."
     ],
     "id" : "A3598FBA-7674-46ED-9769-F60E9789E355",
     "patron" : "lectura errónea de la notación de sumatorio",
@@ -52,14 +54,15 @@
     "racha" : 0,
     "refuerzo" : "Desplega a mà ∑_{k=1}^{3} 1\/k² = 1 + 1\/4 + 1\/9 per fixar què fan l'índex i els límits.",
     "tema" : "Sumatoris",
-    "ultima" : "2026-10-27T13:48:32Z",
-    "veces" : 2
+    "ultima" : "2026-10-27T14:33:15Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Escriu cadenes d'igualtats falses: 2^4 = 1\/2 i 2 − 1\/4 = −1.",
     "ejemplos" : [
       "Escriu cadenes d'igualtats falses: 2^4 = 1\/2 i 2 − 1\/4 = −1.",
-      "En el paso base `(1\/2)\/(1\/3) ≤ 2\/3` es falso (vale 3\/2); el paso de la T.I. multiplica en lugar de sumar el último término."
+      "En el paso base `(1\/2)\/(1\/3) ≤ 2\/3` es falso (vale 3\/2); el paso de la T.I. multiplica en lugar de sumar el último término.",
+      "En el paso base se escribe 1\/3 ≤ 1 en vez de evaluar 5\/6-1\/2=1\/3. Además hay errores de sustitución de n por n-1 en los denominadores."
     ],
     "id" : "70320ACB-7927-489E-9C63-7BE012AEA63C",
     "patron" : "errores aritméticos básicos",
@@ -67,23 +70,24 @@
     "racha" : 0,
     "refuerzo" : "Revisa cada igualtat abans de passar a la línia següent.",
     "tema" : "Inducció",
-    "ultima" : "2026-10-27T13:48:32Z",
-    "veces" : 2
+    "ultima" : "2026-10-27T14:33:15Z",
+    "veces" : 3
   },
   {
     "descripcion" : "No sap demostrar una igualtat o inclusió entre conjunts genèrics. Fa servir exemples concrets i mal construïts.",
     "ejemplos" : [
       "No sap demostrar una igualtat o inclusió entre conjunts genèrics. Fa servir exemples concrets i mal construïts.",
-      "No plantea 'sea x ∈ X cualquiera' ni usa definiciones de −, ∩, ∪, ⊆; escribe igualdades ajenas al enunciado."
+      "No plantea 'sea x ∈ X cualquiera' ni usa definiciones de −, ∩, ∪, ⊆; escribe igualdades ajenas al enunciado.",
+      "Pregunta en blanco: ni propiedades de la relación de equivalencia ni clases ni conjunto cociente."
     ],
     "id" : "983A3960-2EBE-4B04-95BD-78B2E153C294",
     "patron" : "no sabe abordar Conjunts i Relacions",
     "primera" : "2026-10-25T17:46:45Z",
     "racha" : 0,
-    "refuerzo" : "Practica 5 igualtats de conjunts amb l'esquema 'sigui x ∈ X qualsevol' + definicions de ∪, ∩ i ⊆ (exàmens 2021-2022 de EXAMFM.pdf).",
+    "refuerzo" : "Practica 5 igualtats de conjunts amb l'esquema 'sigui x ∈ X qualsevol' + definicions de ∪, ∩ i ⊆ (exàmens 2021-2022 de EXAMFM.pdf). Per a relacions: escriu les tres propietats amb la definició i calcula les classes una a una.",
     "tema" : "Conjunts i Relacions",
-    "ultima" : "2026-10-27T13:48:32Z",
-    "veces" : 2
+    "ultima" : "2026-10-27T14:33:15Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Per a un ⇔ no separa ⇒ i ⇐ ni diu quin mètode fa servir (directe, contrarecíproc, doble inclusió).",
@@ -124,6 +128,32 @@
     "refuerzo" : "Escriu sempre la cadena `¬∀x∃y φ ≡ ∃x∀y ¬φ` i el pas de De Morgan, encara que només sigui en una línia.",
     "tema" : "Lògica",
     "ultima" : "2026-10-27T13:48:32Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Pregunta en blanco: no se plantea ningún método de demostración.",
+    "ejemplos" : [
+      "Pregunta en blanco: no se plantea ningún método de demostración."
+    ],
+    "id" : "BAAB2A92-705B-4044-8E7C-EA51FEF3E115",
+    "patron" : "no sabe abordar Demostracions",
+    "primera" : "2026-10-27T14:33:15Z",
+    "refuerzo" : "Memoriza el esquema del contrarrecíproco: 'Suposem que ¬Q; cal veure ¬P' con la definició de racional a\/b, b≠0. Practica 3 demostracions de irracionalitat de EXAMFM.pdf.",
+    "tema" : "Demostracions",
+    "ultima" : "2026-10-27T14:33:15Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "No aparece ∑_{k=1}^{n} = ∑_{k=1}^{n-1} + 1\/(n²+n+1) ni el paso con H.I. ni la reducción a 1\/(n²+n+1) ≤ 1\/n-1\/(n+1).",
+    "ejemplos" : [
+      "No aparece ∑_{k=1}^{n} = ∑_{k=1}^{n-1} + 1\/(n²+n+1) ni el paso con H.I. ni la reducción a 1\/(n²+n+1) ≤ 1\/n-1\/(n+1)."
+    ],
+    "id" : "7481E259-E8F5-4129-AB25-28D877E0132F",
+    "patron" : "no separa el último sumando ni aplica la H.I.",
+    "primera" : "2026-10-27T14:33:15Z",
+    "refuerzo" : "Esquema fix: separa l'últim terme, aplica la H.I. (marca-ho amb H.I. sobre ≤), i redueix la desigualtat restant a una de certa.",
+    "tema" : "Inducció",
+    "ultima" : "2026-10-27T14:33:15Z",
     "veces" : 1
   }
 ]

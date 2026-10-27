@@ -1,0 +1,160 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 0.5,
+        "tema" : "Demostracions"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Inducció"
+      },
+      {
+        "nota" : 0.5,
+        "tema" : "Conjunts i Relacions"
+      },
+      {
+        "nota" : 3.5,
+        "tema" : "Lògica"
+      },
+      {
+        "nota" : 1.3,
+        "tema" : "Sumatoris"
+      }
+    ],
+    "notaTotal" : 0.25,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco: no se plantea ningún método de demostración.",
+            "patron" : "no sabe abordar Demostracions",
+            "refuerzo" : "Memoriza el esquema del contrarrecíproco: 'Suposem que ¬Q; cal veure ¬P' con la definició de racional a\/b, b≠0. Practica 3 demostracions de irracionalitat de EXAMFM.pdf.",
+            "tema" : "Demostracions"
+          }
+        ],
+        "feedback" : "En blanco. Faltaba plantear las dos implicaciones por contrarrecíproco con la definición de racional. En 1⇒2 había que ver que a≠b y despejar x=a\/(b-a). En 2⇒1 había que obtener x\/(x+1)=a\/(a+b) y justificar a+b≠0 con x≠-1.",
+        "id" : "P1",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "La H.I. incluye el último sumando y cota 1\/(n-1); la T.I. tiene una cota inventada 1\/((n-1)(n+2)).",
+            "patron" : "H.I. y T.I. mal formuladas",
+            "refuerzo" : "Plantilla: H.I. = l'enunciat amb n−1 al lloc de n; T.I. = l'enunciat amb n; especifica sempre n > 1.",
+            "tema" : "Inducció"
+          },
+          {
+            "descripcion" : "En el paso base se escribe 1\/3 ≤ 1 en vez de evaluar 5\/6-1\/2=1\/3. Además hay errores de sustitución de n por n-1 en los denominadores.",
+            "patron" : "errores aritméticos básicos",
+            "refuerzo" : "Revisa cada igualtat abans de passar a la línia següent.",
+            "tema" : "Inducció"
+          },
+          {
+            "descripcion" : "No aparece ∑_{k=1}^{n} = ∑_{k=1}^{n-1} + 1\/(n²+n+1) ni el paso con H.I. ni la reducción a 1\/(n²+n+1) ≤ 1\/n-1\/(n+1).",
+            "patron" : "no separa el último sumando ni aplica la H.I.",
+            "refuerzo" : "Esquema fix: separa l'últim terme, aplica la H.I. (marca-ho amb H.I. sobre ≤), i redueix la desigualtat restant a una de certa.",
+            "tema" : "Inducció"
+          },
+          {
+            "descripcion" : "Se sustituye n por n-1 en el término general como si el índice k dependiera de ello, y se mezclan sumatorio y términos sueltos.",
+            "patron" : "lectura errónea de la notación de sumatorio",
+            "refuerzo" : "Desplega a mà ∑_{k=1}^{3} 1\/k² = 1 + 1\/4 + 1\/9 per fixar què fan l'índex i els límits.",
+            "tema" : "Sumatoris"
+          }
+        ],
+        "feedback" : "Paso base: escribes la tesis para n=1 y llegas a 1\/3 ≤ 1. Eso es aritméticamente mal, porque 5\/6-1\/2=1\/3 y la comprobación correcta es 1\/3 ≤ 1\/3. Se concede 0,25. H.I.: mal formulada. Mezclas el sumatorio hasta n-1 con un término extra 1\/((n-1)²+(n-1)+1) dentro de la hipótesis y pones 5\/6-1\/(n-1) en lugar de 5\/6-1\/n. Lo correcto es ∑_{k=1}^{n-1} 1\/(k²+k+1) ≤ 5\/6-1\/n. T.I.: mal formulada, porque la cota derecha pasa a 1\/((n-1)(n+2)) en vez de 1\/(n+1). Después no separas el último sumando ni indicas dónde usas la H.I., y no reduces la desigualdad final comparando n²+n ≤ n²+n+1. La flecha hacia la última línea no está justificada y esa línea no coincide con ninguna tesis correcta. No hay conclusión. Los criterios de H.I.\/T.I., separar el sumando, reducción final y conclusión puntúan 0.",
+        "id" : "P2",
+        "puntosObtenidos" : 0.25
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco: ni propiedades de la relación de equivalencia ni clases ni conjunto cociente.",
+            "patron" : "no sabe abordar Conjunts i Relacions",
+            "refuerzo" : "Practica 5 igualtats de conjunts amb l'esquema 'sigui x ∈ X qualsevol' + definicions de ∪, ∩ i ⊆ (exàmens 2021-2022 de EXAMFM.pdf). Per a relacions: escriu les tres propietats amb la definició i calcula les classes una a una.",
+            "tema" : "Conjunts i Relacions"
+          }
+        ],
+        "feedback" : "En blanco. Había que probar reflexiva (n=0), simétrica (n→-n) y transitiva (n+m), calcular las 12 clases de A={-5..15} y escribir el cociente.",
+        "id" : "P3",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Simulacro prácticamente en blanco: P1 y P3 sin responder, y P2 sin demostración válida. Solo se salva un esbozo del paso base. La H.I. y la T.I. están mal formuladas, no se separa el último sumando y no se aplica la H.I. Con 8 días para el parcial, lo prioritario es dominar la plantilla de inducción con sumatorios y el esquema de relaciones de equivalencia (reflexiva, simétrica, transitiva y clases). Después, el método de demostración por contrarrecíproco."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 90,
+    "preguntas" : [
+      {
+        "criterios" : "0,5 p. indicar el mètode (contrarecíproc) i la forma de les dues implicacions; 1,25 p. per 1⇒2 (inclou veure que $a\\neq b$ i que es pot dividir per $b-a$); 1,25 p. per 2⇒1 (inclou justificar $a+b\\neq0$ amb la hipòtesi $x\\neq-1$). Es penalitza fer servir exemples com a demostració.",
+        "ejercicio" : 1,
+        "enunciado" : "Problema 1 [3 p.]\n\nSigui $x$ un nombre real, $x \\neq -1$. Demostreu que són equivalents:\n\n1. $x$ és irracional.\n2. $\\dfrac{x}{x+1}$ és irracional.\n\nExpliqueu clarament com plantegeu les demostracions i justifiqueu tots els passos. A cada pas indiqueu la propietat que feu servir. Utilitzeu només la definició de racional i passos bàsics.",
+        "fuente" : "EXAMFM.pdf, Primer examen parcial 05\/novembre\/2025, Problema 1",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 74,
+        "pdf" : "material\/EXAMFM.pdf",
+        "puntos" : 3,
+        "solucionReferencia" : "Dues implicacions, ambdues pel contrarecíproc.\n\n1 ⇒ 2 (contrarecíproc: si $\\frac{x}{x+1}$ és racional, llavors $x$ és racional). Per def. de racional, $\\frac{x}{x+1}=\\frac{a}{b}$ amb $a,b\\in\\mathbb{Z}$, $b\\neq0$. Es té $a\\neq b$: si $a=b$, $\\frac{x}{x+1}=1$, per tant $x=x+1$, és a dir $0=1$, absurd. Multiplicant per $(x+1)b$: $bx=ax+a$; restant $ax$: $x(b-a)=a$; com que $b-a\\neq0$, $x=\\frac{a}{b-a}$, amb $a,b-a$ enters i $b-a\\neq0$: $x$ és racional.\n\n2 ⇒ 1 (contrarecíproc: si $x$ és racional, llavors $\\frac{x}{x+1}$ és racional). $x=\\frac{a}{b}$, $b\\neq0$. Llavors $\\frac{x}{x+1}=\\frac{a\/b}{a\/b+1}=\\frac{a\/b}{(a+b)\/b}=\\frac{a}{a+b}$. Cal $a+b\\neq0$: per reducció a l'absurd, si $a+b=0$ llavors $a=-b$ i $x=\\frac{-b}{b}=-1$, contradicció amb $x\\neq-1$. Per tant $\\frac{a}{a+b}$ és racional.",
+        "tema" : "Demostracions",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "0,5 p. pas base; 0,5 p. H.I. i T.I. ben formulades (amb $n-1$ a la H.I. i $n>1$); 0,75 p. separar l'últim sumand i aplicar la H.I. indicant-ho; 1,0 p. reducció de la desigualtat final correcta i justificada (signe dels denominadors); 0,25 p. conclusió. Revisar errors aritmètics.",
+        "ejercicio" : 2,
+        "enunciado" : "Problema 2 [3 p.]\n\nDemostreu per inducció simple que per a tot $n \\geq 1$:\n\n$$\\sum_{k=1}^{n}\\frac{1}{k^{2}+k+1} \\leq \\frac{5}{6}-\\frac{1}{n+1}.$$\n\nDieu quines són la hipòtesi i la tesi d'inducció (el que s'ha de demostrar) i justifiqueu tots els passos. Indiqueu clarament on feu servir la hipòtesi d'inducció.",
+        "fuente" : "EXAMFM.pdf, Primer examen parcial 07\/novembre\/2024, Problema 2",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 58,
+        "pdf" : "material\/EXAMFM.pdf",
+        "puntos" : 3,
+        "solucionReferencia" : "Pas base $n=1$: esquerra $\\frac{1}{3}$; dreta $\\frac56-\\frac12=\\frac13$. Es compleix $\\frac13\\le\\frac13$.\n\nPas inductiu, $n>1$.\nH.I.: $\\sum_{k=1}^{n-1}\\frac{1}{k^2+k+1}\\le\\frac56-\\frac1n$.\nT.I.: $\\sum_{k=1}^{n}\\frac{1}{k^2+k+1}\\le\\frac56-\\frac1{n+1}$.\n\n$\\sum_{k=1}^{n}\\frac{1}{k^2+k+1}=\\sum_{k=1}^{n-1}\\frac{1}{k^2+k+1}+\\frac{1}{n^2+n+1}\\overset{H.I.}{\\le}\\frac56-\\frac1n+\\frac{1}{n^2+n+1}$.\nCal veure $\\frac56-\\frac1n+\\frac{1}{n^2+n+1}\\le\\frac56-\\frac1{n+1}$, equivalent a $\\frac{1}{n^2+n+1}\\le\\frac1n-\\frac1{n+1}=\\frac{1}{n^2+n}$, i com que els dos denominadors són positius, a $n^2+n\\le n^2+n+1$, que és certa.",
+        "tema" : "Inducció",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "i) 1,5 p. (0,4 reflexiva, 0,5 simètrica, 0,6 transitiva; cal usar $n\\in\\mathbb{Z}$ i la definició); ii) 1,75 p. (calcular cada classe amb la definició, comprovant que cobreixen tot $A$); iii) 0,75 p. quocient sense repetir classes.",
+        "ejercicio" : 2,
+        "enunciado" : "Problema 3 [4 p.]\n\nSigui $A \\subseteq \\mathbb{Z}$. En el conjunt $A$ es defineix la relació següent: donats $x,y \\in A$,\n\n$$x\\,R\\,y \\iff x = 2^{n}y \\text{ per a algun } n \\in \\mathbb{Z}$$\n\ni) Proveu que $R$ és una relació d'equivalència.\n\nii) Calculeu totes les classes quan $A = \\{-5,-4,-3,\\dots,15\\}$.\n\niii) Descriviu el conjunt quocient (sense repetir classes) quan $A = \\{-5,-4,-3,\\dots,15\\}$.\n\nJustifiqueu tots els passos.",
+        "fuente" : "EXAMFM.pdf, Primer examen parcial 08\/abril\/2026, Problema 2",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "pagina" : 83,
+        "pdf" : "material\/EXAMFM.pdf",
+        "puntos" : 4,
+        "solucionReferencia" : "i) Reflexiva: $x=2^0x$. Simètrica: si $x=2^ny$, multiplicant per $2^{-n}$, $y=2^{-n}x$ i $-n\\in\\mathbb{Z}$, per tant $yRx$. Transitiva: $x=2^ny$, $y=2^mz$ ⇒ $x=2^{n+m}z$, $n+m\\in\\mathbb{Z}$, per tant $xRz$.\n\nii) Classes: $\\overline{-5}=\\{-5\\}$; $\\overline{-4}=\\{-4,-2,-1\\}$; $\\overline{-3}=\\{-3\\}$; $\\overline{0}=\\{0\\}$; $\\overline{1}=\\{1,2,4,8\\}$; $\\overline{3}=\\{3,6,12\\}$; $\\overline{5}=\\{5,10\\}$; $\\overline{7}=\\{7,14\\}$; $\\overline{9}=\\{9\\}$; $\\overline{11}=\\{11\\}$; $\\overline{13}=\\{13\\}$; $\\overline{15}=\\{15\\}$.\n\niii) $A\/R=\\{\\overline{-5},\\overline{-4},\\overline{-3},\\overline{0},\\overline{1},\\overline{3},\\overline{5},\\overline{7},\\overline{9},\\overline{11},\\overline{13},\\overline{15}\\}$ (12 classes).",
+        "tema" : "Conjunts i Relacions",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Simulacro Parcial 1 FM (4\/11\/2026)"
+  },
+  "fecha" : "2026-10-27T14:12:41Z",
+  "fuentes" : [
+    "material\/EXAMFM.pdf",
+    "material\/raco\/Examens_FM_-_2026-07-27T122117.133.pdf"
+  ],
+  "id" : "37FCAFEF-3AAE-42DB-A7D8-1355C65447FF",
+  "minutos" : 20,
+  "modo" : "estilo",
+  "notaAntes" : 0.8024211793365781,
+  "notaDespues" : 0.5886780527389935,
+  "pizarras" : {
+    "P2" : [
+      "estudi\/simulacres\/2026-10-27-37FCAFEF\/P2-1.png"
+    ]
+  },
+  "respuestas" : {
+
+  }
+}

@@ -5,6 +5,12 @@
       "fecha" : "2026-10-27T13:48:32Z",
       "fuente" : "estilo",
       "real" : 0
+    },
+    {
+      "estimado" : 1.3772846799970397,
+      "fecha" : "2026-10-27T14:33:15Z",
+      "fuente" : "estilo",
+      "real" : 0.25
     }
   ],
   "temas" : {
@@ -22,11 +28,17 @@
           "fecha" : "2026-10-27T13:48:32Z",
           "fuente" : "estilo",
           "nota" : 0.5
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 FM (4\/11\/2026): 0,2",
+          "fecha" : "2026-10-27T14:33:15Z",
+          "fuente" : "estilo",
+          "nota" : 0.5
         }
       ]
     },
     "Demostracions" : {
-      "dominio" : 0.7424330607546201,
+      "dominio" : 0.6599519355484943,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
@@ -37,6 +49,12 @@
         {
           "evidencia" : "Mis errores · Parcial 1 FM (simulacro a medida): Conjunts, Inducció i Lògica: 0,0",
           "fecha" : "2026-10-27T13:48:32Z",
+          "fuente" : "estilo",
+          "nota" : 0.5
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 FM (4\/11\/2026): 0,2",
+          "fecha" : "2026-10-27T14:33:15Z",
           "fuente" : "estilo",
           "nota" : 0.5
         }
@@ -56,11 +74,17 @@
           "fecha" : "2026-10-27T13:48:32Z",
           "fuente" : "estilo",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 FM (4\/11\/2026): 0,2",
+          "fecha" : "2026-10-27T14:33:15Z",
+          "fuente" : "estilo",
+          "nota" : 1
         }
       ]
     },
     "Lògica" : {
-      "dominio" : 4.454598362897221,
+      "dominio" : 4.129822794342314,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
@@ -73,11 +97,17 @@
           "fecha" : "2026-10-27T13:48:32Z",
           "fuente" : "estilo",
           "nota" : 3
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 FM (4\/11\/2026): 0,2",
+          "fecha" : "2026-10-27T14:33:15Z",
+          "fuente" : "estilo",
+          "nota" : 3.5
         }
       ]
     },
     "Sumatoris" : {
-      "dominio" : 1.4848661208517075,
+      "dominio" : 1.4219705797802824,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
@@ -90,6 +120,12 @@
           "fecha" : "2026-10-27T13:48:32Z",
           "fuente" : "estilo",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 FM (4\/11\/2026): 0,2",
+          "fecha" : "2026-10-27T14:33:15Z",
+          "fuente" : "estilo",
+          "nota" : 1.3
         }
       ]
     }
