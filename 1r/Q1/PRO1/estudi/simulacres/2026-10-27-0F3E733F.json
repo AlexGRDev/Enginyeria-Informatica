@@ -1,0 +1,227 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "canvis no extrae dígitos; el bucle no modifica n y no termina.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "La @pre\/@post contiene el ejemplo de entrada y salida, no el contrato de la función.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "canvis no recorre los dígitos: el while (0 <= n and n <= cnt) nunca modifica n, así que es un bucle infinito para cualquier n válido, y c++ no cuenta cambios. Falta %10, \/10 y la comparación con el dígito anterior. El main usa while (cin >> nbr) e ignora t, cuando la entrada indica cuántos datos hay (debe ser for con t). La especificación solo copia el ejemplo de entrada\/salida, no es @pre\/@post. Se aprecia solo que la función y el main están separados.",
+        "funcional" : 0,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "@pre:Entrada: 3 1123 7 90909 \/ @pos: alida: 2, 0, 4",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Esquemas de lectura no recomendados",
+            "detalle" : "while (std::cin >> nbr) cuando se conoce t",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "cnt = 2000000000; while (0 <= n && n <= cnt) comprueba la precondición en el bucle",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Falta cin >> c al final del bucle; se usa s++ en vez de leer, y la racha no se calcula.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "El esquema de lectura inicial es correcto (cin >> s; while (s != '.')), pero dentro del bucle nunca se vuelve a leer: s++ incrementa el carácter en vez de leer el siguiente, y no hay cin >> s al final, por lo que el bucle no termina. La lógica de racha es incoherente: prev = s justo antes de comparar prev == s + 1 hace que la comparación sea siempre falsa, y i y racha se manejan como el mismo contador. No hay variable de máximo. Solo acierta con la entrada '.', que da 0.",
+        "funcional" : 0.3,
+        "id" : "P2",
+        "penalizaciones" : [
+          {
+            "categoria" : "mayor",
+            "concepto" : "Consultar una variable no inicializada",
+            "detalle" : "prev se declara sin inicializar y solo se asigna dentro del bucle; no hay variable de máximo ni valor inicial para comparar con el primer carácter",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Dos o más variables innecesarias",
+            "detalle" : "i y racha hacen lo mismo; falta maxim",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar Recursividad",
+            "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
+            "tema" : "Recursividad"
+          }
+        ],
+        "feedback" : "En blanco.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "P1 y P2 no resuelven el problema: P1 tiene un bucle infinito y no recorre dígitos, P2 no avanza la lectura. P3 y P4 en blanco. No había imágenes de pizarra que evaluar. Nota 0,1\/10. Prioridad: recorrido de dígitos con %10 y \/10, el esquema cin >> c; while (c != '.') { ...; cin >> c; }, y acumulación por pesos."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "0,8: función canvis correcta con %10 y \/10 (recorrido de dígitos). 0,5: comparación con el dígito anterior y caso de un solo dígito\/0 correcto. 0,4: especificación @pre\/@post de la función. 0,4: main con esquema de lectura for con t. 0,4: sin string\/vector, sin código redundante. Función no implementada o main vacío: 0 en el apartado correspondiente.",
+        "ejercicio" : 0,
+        "enunciado" : "Canvis entre dígits.\n\nEscribe un programa en C++ que lea un entero t y después t enteros n (0 <= n <= 2000000000). Para cada n, escribe en una línea cuántas veces cambia el dígito al recorrer n de izquierda a derecha, es decir, cuántas parejas de dígitos consecutivos son distintas.\n\nDebes escribir una función auxiliar int canvis(int n) que devuelva ese número, con su especificación (@pre y @post). No se puede convertir n a string ni usar vectores: solo aritmética entera.\n\nEntrada:\n3\n1123\n7\n90909\n\nSalida:\n2\n0\n4",
+        "fuente" : "No sabe abordar Funciones auxiliares (recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos)",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/** @pre n >= 0\n    @post Retorna el numero de parejas de digitos consecutivos distintos de n. *\/\nint canvis(int n) {\n    int res = 0;\n    int ant = n % 10;\n    n = n \/ 10;\n    while (n > 0) {\n        int d = n % 10;\n        if (d != ant) ++res;\n        ant = d;\n        n = n \/ 10;\n    }\n    return res;\n}\n\nint main() {\n    int t;\n    cin >> t;\n    for (int i = 0; i < t; ++i) {\n        int n;\n        cin >> n;\n        cout << canvis(n) << endl;\n    }\n}\n\nCasos límite: n de un dígito (incluido 0) da 0. Se compara cada dígito con el anterior extraído, de derecha a izquierda (el número de cambios es el mismo).",
+        "tema" : "Funciones auxiliares",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,8: esquema de lectura correcto (cin >> c; while (c != '.') {...; cin >> c;}) sin leer más allá del punto. 0,7: contador de racha reiniciado correctamente (a 1) al cambiar de letra. 0,5: máximo actualizado y salida correcta. 0,3: caso vacío (salida 0). 0,2: sin almacenar la secuencia. Main vacío o sin lectura\/salida: 0.",
+        "ejercicio" : 0,
+        "enunciado" : "Racha más larga.\n\nLa entrada es una secuencia de letras minúsculas terminada en un punto ('.'). Escribe un programa en C++ que lea los caracteres con cin >> c y escriba la longitud de la racha más larga de letras iguales consecutivas. Si la secuencia está vacía (solo el punto), escribe 0. No se puede guardar la secuencia (ni string ni vector).\n\nEntrada 1:\naabbbcbb.\n\nSalida 1:\n3\n\nEntrada 2:\n.\n\nSalida 2:\n0",
+        "fuente" : "No sabe abordar E\/S con std::cin\/std::cout (esquema cin >> c; while (c != '.') con contador de racha)",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    char c;\n    cin >> c;\n    char ant = ' ';\n    int racha = 0;\n    int maxim = 0;\n    while (c != '.') {\n        if (c == ant) ++racha;\n        else racha = 1;\n        if (racha > maxim) maxim = racha;\n        ant = c;\n        cin >> c;\n    }\n    cout << maxim << endl;\n}\n\nLa primera lectura es segura porque la secuencia siempre acaba en '.'. 'ant' inicial ' ' nunca coincide con una letra.",
+        "tema" : "E\/S con std::cin\/std::cout",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,8: acumulación correcta valor += bit * peso con peso *= 2 y conversión (c - '0'). 0,6: al leer '*' escribe char(valor) y reinicia valor y peso. 0,5: esquema de lectura con centinela correcto. 0,3: salto de línea final. 0,3: cumple la restricción (sin string, vector ni operadores de bits). Incumplir la restricción: 0 en la pregunta.",
+        "ejercicio" : 0,
+        "enunciado" : "Bytes en binario.\n\nLa entrada es una secuencia de caracteres '0', '1' y '*', terminada en un punto ('.'). Cada grupo de bits terminado en '*' codifica el código ASCII de una letra, con el bit menos significativo primero (el primer bit vale 1, el segundo 2, el tercero 4, etc.). Cada grupo tiene entre 1 y 7 bits. Escribe un programa en C++ que escriba, en una sola línea, los caracteres codificados.\n\nRestricción: solo puedes usar variables char e int y las operaciones +, -, *, \/, %. No se permiten string, vector ni operadores de bits (<<, >>, &, |).\n\nEntrada:\n0001001*1001011*.\n\nSalida:\nHi\n\n(Los códigos son 72 = 'H' y 105 = 'i'.)",
+        "fuente" : "No sabe abordar Tipos básicos (valor += bit * peso; peso *= 2 y char(valor) al leer '*') e Incumplir restricción explícita del enunciado",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    char c;\n    cin >> c;\n    int valor = 0;\n    int peso = 1;\n    while (c != '.') {\n        if (c == '*') {\n            cout << char(valor);\n            valor = 0;\n            peso = 1;\n        } else {\n            valor += (c - '0') * peso;\n            peso *= 2;\n        }\n        cin >> c;\n    }\n    cout << endl;\n}\n\nTraza: 0001001 -> 8 + 64 = 72 = 'H'; 1001011 -> 1 + 8 + 32 + 64 = 105 = 'i'.",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,6: caso base correcto (x == 0 and y == 0). 0,8: paso recursivo correcto (dígito de unidades con abs y llamada con x\/10, y\/10). 0,4: especificación @pre\/@post. 0,4: main con lectura for y salida correctas. 0,3: sin código redundante. Solución no recursiva: 0 en la pregunta.",
+        "ejercicio" : 0,
+        "enunciado" : "Diferencia de dígitos.\n\nDados dos enteros x, y >= 0, su diferencia de dígitos es la suma de |dx - dy| para cada posición, alineando los números por la derecha (unidades con unidades, decenas con decenas...) y tomando 0 como dígito en las posiciones donde un número ya no tiene dígitos.\n\nEscribe un programa en C++ que lea un entero t y después t parejas x y, y escriba la diferencia de dígitos de cada pareja en una línea.\n\nDebes escribir una función RECURSIVA int dif(int x, int y), documentada con @pre y @post. Una solución iterativa o con string se puntúa con 0.\n\nEntrada:\n3\n1234 56\n505 505\n0 9\n\nSalida:\n7\n0\n9\n\n(1234 y 56: |4-6| + |3-5| + |2-0| + |1-0| = 2 + 2 + 2 + 1 = 7.)",
+        "fuente" : "No sabe abordar Recursividad (recursión sobre dígitos con caso base x==0 and y==0) y No documentar las funciones con especificación pre\/post",
+        "id" : "P4",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\n#include <cstdlib>\nusing namespace std;\n\n\/** @pre x >= 0, y >= 0\n    @post Retorna la suma de |dx - dy| sobre las posiciones de digitos,\n          alineando por la derecha y con digito 0 donde falte. *\/\nint dif(int x, int y) {\n    if (x == 0 and y == 0) return 0;\n    return abs(x % 10 - y % 10) + dif(x \/ 10, y \/ 10);\n}\n\nint main() {\n    int t;\n    cin >> t;\n    for (int i = 0; i < t; ++i) {\n        int x, y;\n        cin >> x >> y;\n        cout << dif(x, y) << endl;\n    }\n}\n\nCaso base x == 0 and y == 0 (también cubre la pareja 0 0, que da 0); el paso trata el último dígito y recurre con x\/10, y\/10.",
+        "tema" : "Recursividad",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad"
+  },
+  "fecha" : "2026-10-27T07:42:44Z",
+  "fuentes" : [
+
+  ],
+  "id" : "0F3E733F-896E-46AA-9593-E57AFF4FDF4E",
+  "minutos" : 46,
+  "modo" : "estilo",
+  "notaAntes" : 1.8242529974207802,
+  "notaDespues" : 1.5779293161094714,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "#include <iostream>\n\n\/*\n   @pre:Entrada: 3 1123 7 90909\n   @pos: alida: 2, 0, 4\n*\/\n\nint\tcanvis(int n)\n{\n\tint\tc;\n\tint\tcnt;\n\n\tcnt = 2000000000;\n\n\tc = 0;\n\twhile (0 <= n &&  n <= cnt)\n\t\tc++;\n\treturn (c);\n}\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\twhile (std::cin >> nbr)\n\t\tstd::cout << canvis(nbr) << '\\n';\n\treturn (0);\n}",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   main.cpp                                           :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 08:44:11 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 09:13:16 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tchar\ts;\n\tchar\tprev;\n\tint\tracha;\n\tint\ti;\n\n\ti = 0;\n\tracha = 0;\n\tstd::cin >> s;\n\twhile (s != '.')\n\t{\n\t\tprev = s;\n\t\tif (prev == s + 1 || i == racha)\n\t\t{\n\t\t\tif (prev != s + 1 || i != racha)\n\t\t\t{\n\t\t\t\ti = 0;\n\t\t\t\tracha = 0;\n\t\t\t}\n\t\t\ti += 1;\n\t\t\tracha += 1;\n\t\t}\n\t\ts++;\n\t}\n\tstd::cout << i << '\\n';\n\treturn (0);\n}\n"
+  }
+}

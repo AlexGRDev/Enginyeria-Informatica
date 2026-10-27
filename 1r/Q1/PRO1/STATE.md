@@ -9,13 +9,13 @@ Generado por Kiwi GEI el 2026-10-27. Objetivo: **10,0**. Próximo examen: Parcia
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | 1,9 | 5 | 2026-10-27 (jutge) |
-| Punteros y aritmética de punteros | 20 % | 1,0 | 5 | 2026-10-27 (jutge) |
-| Cadenas estilo C (char*) | 20 % | 0,4 | 5 | 2026-10-27 (jutge) |
-| Funciones auxiliares | 15 % | 2,2 | 5 | 2026-10-27 (jutge) |
-| Recursividad | 12 % | 1,7 | 5 | 2026-10-27 (jutge) |
-| std::string | 10 % | 0,4 | 5 | 2026-10-27 (jutge) |
-| E/S con std::cin/std::cout | 8 % | 2,3 | 5 | 2026-10-27 (jutge) |
+| Tipos básicos | 15 % | 1,9 | 6 | 2026-10-27 (estilo) |
+| Punteros y aritmética de punteros | 20 % | 1,0 | 6 | 2026-10-27 (estilo) |
+| Cadenas estilo C (char*) | 20 % | 0,4 | 6 | 2026-10-27 (estilo) |
+| Funciones auxiliares | 15 % | 2,1 | 6 | 2026-10-27 (estilo) |
+| Recursividad | 12 % | 1,6 | 6 | 2026-10-27 (estilo) |
+| std::string | 10 % | 0,4 | 6 | 2026-10-27 (estilo) |
+| E/S con std::cin/std::cout | 8 % | 2,2 | 6 | 2026-10-27 (estilo) |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08
