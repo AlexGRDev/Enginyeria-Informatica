@@ -22,22 +22,22 @@
   {
     "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
     "ejemplos" : [
-      "Sin comparación de racionales con enteros ni simplificación con gcd.",
       "Extracción de dígitos y construcción de números solo con int.",
       "No plantea la comparación de racionales con enteros ni la simplificación con gcd.",
       "No convierte los bits leídos a un valor y a un char ASCII.",
       "No implementa la conversión de dígito a char con aritmética de caracteres.",
       "No sabe construir x en base 256 y extraer dígitos en base 64.",
       "Pregunta en blanco.",
-      "Ejercicio en blanco: no construye el valor del byte ni escribe char(valor)."
+      "Ejercicio en blanco: no construye el valor del byte ni escribe char(valor).",
+      "Pregunta en blanco: conversión binario a decimal solo con aritmética de int."
     ],
     "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
     "patron" : "No sabe abordar Tipos básicos",
     "primera" : "2026-10-25T20:40:13Z",
     "refuerzo" : "Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'.",
     "tema" : "Tipos básicos",
-    "ultima" : "2026-10-27T09:20:01Z",
-    "veces" : 10
+    "ultima" : "2026-10-27T10:19:56Z",
+    "veces" : 11
   },
   {
     "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
@@ -55,22 +55,22 @@
   {
     "descripcion" : "No implementa la función pedida.",
     "ejemplos" : [
-      "Decodificación base 64 con extracción de dígitos en base 256.",
       "No plantea el recorrido de dígitos para contar picos.",
       "No implementa la diferencia entre dos números ni la reutiliza en el programa de la secuencia.",
       "Función auxiliar y especificación que no corresponden al problema planteado.",
       "No descompone en comparar y simplificar racionales.",
       "No separa la codificación de un grupo de 3 bytes en una acción.",
       "canvis no extrae dígitos; el bucle no modifica n y no termina.",
-      "No extrae dígitos con %10 y \/10 ni compara dígitos consecutivos; usa punteros sin sentido sobre n."
+      "No extrae dígitos con %10 y \/10 ni compara dígitos consecutivos; usa punteros sin sentido sobre n.",
+      "Pregunta en blanco: recorrido de dígitos contando cambios entre dígitos consecutivos."
     ],
     "id" : "FC1EE0B2-27F1-446F-9AB2-9E5D554AF4FD",
     "patron" : "No sabe abordar Funciones auxiliares",
     "primera" : "2026-10-25T20:40:13Z",
     "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-27T09:20:01Z",
-    "veces" : 12
+    "ultima" : "2026-10-27T10:19:56Z",
+    "veces" : 13
   },
   {
     "descripcion" : "ft_draw_a no tiene @pre\/@post.",
@@ -80,15 +80,16 @@
       "La función auxiliar no lleva @pre ni @post.",
       "La función no tiene @pre\/@post propios; el comentario es del main y no coincide con el problema.",
       "La @pre\/@post contiene el ejemplo de entrada y salida, no el contrato de la función.",
-      "La función pujades no lleva @pre ni @post."
+      "La función pujades no lleva @pre ni @post.",
+      "No hay función ni especificación."
     ],
     "id" : "50F48229-0E9F-4EB8-B8BF-AA5E260EE795",
     "patron" : "No documentar las funciones con especificación pre\/post",
     "primera" : "2026-10-26T17:41:32Z",
     "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-27T09:20:01Z",
-    "veces" : 6
+    "ultima" : "2026-10-27T10:19:56Z",
+    "veces" : 7
   },
   {
     "descripcion" : "Bucles de impresión de espacios y 'A' repetidos dentro de una sola función.",
@@ -147,14 +148,28 @@
     "ejemplos" : [
       "No escribe la función recursiva de diferencia de dígitos.",
       "Pregunta en blanco.",
-      "Ejercicio en blanco: no plantea caso base ni paso recursivo sobre dígitos."
+      "Ejercicio en blanco: no plantea caso base ni paso recursivo sobre dígitos.",
+      "Pregunta en blanco: recursión sobre dígitos de dos números."
     ],
     "id" : "4E7AC40B-6660-47FA-9721-2892B1D212D9",
     "patron" : "No sabe abordar Recursividad",
     "primera" : "2026-10-26T20:37:15Z",
     "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
     "tema" : "Recursividad",
-    "ultima" : "2026-10-27T09:20:01Z",
-    "veces" : 3
+    "ultima" : "2026-10-27T10:19:56Z",
+    "veces" : 4
+  },
+  {
+    "descripcion" : "Usa ft_strchr(\"a\", c) != NULL para comparar con un único carácter, en lugar de c == 'a'.",
+    "ejemplos" : [
+      "Usa ft_strchr(\"a\", c) != NULL para comparar con un único carácter, en lugar de c == 'a'."
+    ],
+    "id" : "AAAE4C57-0AD5-4342-877A-B226139FC091",
+    "patron" : "Código redundante o innecesariamente complicado",
+    "primera" : "2026-10-27T10:19:56Z",
+    "refuerzo" : "Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales.",
+    "tema" : "Cadenas estilo C (char*)",
+    "ultima" : "2026-10-27T10:19:56Z",
+    "veces" : 1
   }
 ]

@@ -5,17 +5,17 @@
 
 Generado por Kiwi GEI el 2026-10-27. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 2 días).
 
-**Estimación: 1,2 / 10** (-8,8 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,2.
+**Estimación: 1,3 / 10** (-8,7 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,3.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | 1,8 | 7 | 2026-10-27 (estilo) |
-| Punteros y aritmética de punteros | 20 % | 1,0 | 7 | 2026-10-27 (estilo) |
-| Cadenas estilo C (char*) | 20 % | 0,4 | 7 | 2026-10-27 (estilo) |
-| Funciones auxiliares | 15 % | 2,0 | 7 | 2026-10-27 (estilo) |
-| Recursividad | 12 % | 1,6 | 7 | 2026-10-27 (estilo) |
-| std::string | 10 % | 0,4 | 7 | 2026-10-27 (estilo) |
-| E/S con std::cin/std::cout | 8 % | 2,1 | 7 | 2026-10-27 (estilo) |
+| Tipos básicos | 15 % | 1,8 | 8 | 2026-10-27 (estilo) |
+| Punteros y aritmética de punteros | 20 % | 1,0 | 8 | 2026-10-27 (estilo) |
+| Cadenas estilo C (char*) | 20 % | 0,4 | 8 | 2026-10-27 (estilo) |
+| Funciones auxiliares | 15 % | 2,0 | 8 | 2026-10-27 (estilo) |
+| Recursividad | 12 % | 1,6 | 8 | 2026-10-27 (estilo) |
+| std::string | 10 % | 0,4 | 8 | 2026-10-27 (estilo) |
+| E/S con std::cin/std::cout | 8 % | 2,4 | 8 | 2026-10-27 (estilo) |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08
