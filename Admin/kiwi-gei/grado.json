@@ -495,5 +495,16 @@
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129049?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
+  ],
+  "sesiones" : [
+    {
+      "asignatura" : "F",
+      "aulas" : "A6203",
+      "horas" : 3,
+      "id" : "extra|F|1793113200",
+      "inicio" : "2026-10-27T15:00:00Z",
+      "tipo" : "P",
+      "titulo" : "Recordatori Taller Fisica F50 "
+    }
   ]
 }
