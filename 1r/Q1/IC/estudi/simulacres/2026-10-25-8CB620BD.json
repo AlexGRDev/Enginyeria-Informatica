@@ -35,7 +35,7 @@
             "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
           }
         ],
-        "feedback" : "Xu = 600 y hexadecimal 952 son incorrectos. Tu tabla de pesos empieza en 2 (2, 4, 8, ..., 256) en lugar de 1, 2, 4, ..., 128, y además asignas los bits de izquierda a derecha con peso creciente, cuando el MSB tiene el peso mayor. Ni siquiera tu propia tabla suma 600. El hexadecimal no se obtiene agrupando de 4 en 4: 1010 1101 = AD. Xu = 128+32+8+4+1 = 173.",
+        "feedback" : "$X_u = 600$ y hexadecimal 952 son incorrectos. Tu tabla de pesos empieza en 2 ($2, 4, 8, \\ldots, 256$) en lugar de $1, 2, 4, \\ldots, 128$, y además asignas los bits de izquierda a derecha con peso creciente, cuando el MSB tiene el peso mayor. Ni siquiera tu propia tabla suma 600. El hexadecimal no se obtiene agrupando de 4 en 4: $1010\\ 1101 = \\text{AD}$. $X_u = 128+32+8+4+1 = 173$.",
         "id" : "1",
         "puntosObtenidos" : 0
       },
@@ -54,7 +54,7 @@
             "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
           }
         ],
-        "feedback" : "a) El hexadecimal 1CA es correcto (0,25), pero tu binario 10100111 es incorrecto y no corresponde a 458 ni a 1CA (el binario correcto es 111001010). Además la tabla de pesos vuelve a empezar en 2, y el número de partida está escrito como 758 en tu pizarra. No muestras el procedimiento que lleva de tu binario a 1CA. b) No contestado: rango [0, 5^4 - 1] = [0, 624].",
+        "feedback" : "a) El hexadecimal 1CA es correcto (0,25), pero tu binario 10100111 es incorrecto y no corresponde a 458 ni a 1CA (el binario correcto es 111001010). Además la tabla de pesos vuelve a empezar en 2, y el número de partida está escrito como 758 en tu pizarra. No muestras el procedimiento que lleva de tu binario a 1CA. b) No contestado: rango $[0, 5^4 - 1] = [0, 624]$.",
         "id" : "2",
         "puntosObtenidos" : 0.25
       },
@@ -67,7 +67,7 @@
             "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
           }
         ],
-        "feedback" : "En blanco. Hacían falta 10 bits (2^9 = 512 < 1000 < 1024 = 2^10) y 3 dígitos hexadecimales.",
+        "feedback" : "En blanco. Hacían falta 10 bits ($2^9 = 512 < 1000 < 1024 = 2^{10}$) y 3 dígitos hexadecimales.",
         "id" : "3",
         "puntosObtenidos" : 0
       },
@@ -80,7 +80,7 @@
             "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
           }
         ],
-        "feedback" : "No hay tabla completa: solo se ven valores sueltos de F sin columnas intermedias (a+b, b·c) y no hay 8 filas. La solución esperada es 0,0,1,0,1,1,1,0 para abc de 000 a 111. Sin tabla verificable, 0.",
+        "feedback" : "No hay tabla completa: solo se ven valores sueltos de $F$ sin columnas intermedias ($a+b$, $b \\cdot c$) y no hay 8 filas. La solución esperada es $0,0,1,0,1,1,1,0$ para $abc$ de 000 a 111. Sin tabla verificable, 0.",
         "id" : "4",
         "puntosObtenidos" : 0
       },
@@ -93,7 +93,7 @@
             "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
           }
         ],
-        "feedback" : "En blanco. s = a⊕b⊕c; co = m3+m5+m6+m7.",
+        "feedback" : "En blanco. $s = a \\oplus b \\oplus c$; $co = m_3+m_5+m_6+m_7$.",
         "id" : "5",
         "puntosObtenidos" : 0
       },
@@ -106,7 +106,7 @@
             "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
           }
         ],
-        "feedback" : "En blanco. f = m1+m2+m4+m7; 4 And de 3 entradas y 1 Or de 4; ROM de 16 palabras de 3 bits.",
+        "feedback" : "En blanco. $f = m_1+m_2+m_4+m_7$; 4 And de 3 entradas y 1 Or de 4; ROM de 16 palabras de 3 bits.",
         "id" : "6",
         "puntosObtenidos" : 0
       },
@@ -145,7 +145,7 @@
             "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
           }
         ],
-        "feedback" : "En blanco. x→w: 100 por x-Not-e-s-Or-w; y→z: 90 por y-k-f-And-z.",
+        "feedback" : "En blanco. $x \\to w$: 100 por x-Not-e-s-Or-w; $y \\to z$: 90 por y-k-f-And-z.",
         "id" : "9",
         "puntosObtenidos" : 0
       },
@@ -158,12 +158,12 @@
             "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
           }
         ],
-        "feedback" : "En blanco. n baja en t=30, w sube en 40 y baja en 50 (glitch en [40,50)).",
+        "feedback" : "En blanco. $n$ baja en $t=30$, $w$ sube en 40 y baja en 50 (glitch en $[40,50)$).",
         "id" : "10",
         "puntosObtenidos" : 0
       }
     ],
-    "resumen" : "Test casi en blanco: solo has intentado 1, 2 y 4, y casi todo está mal. El fallo de base es el cálculo con pesos de bit: pones la lista de pesos empezando en 2 (2, 4, 8...) en vez de en 1 (1, 2, 4...) y lees el vector al revés. Eso te da un decimal y un hexadecimal incorrectos en 1. En 2, el hexadecimal 1CA coincide con la solución, pero no sale de tu binario, que es otro número. Las preguntas de síntesis y modelo temporal están en blanco. Para el 30\/10 hay que repasar la conversión base 2 ↔ 10 ↔ 16, y también tablas de verdad, minterms\/ROM y caminos críticos, porque ahora mismo no puntúas en ellos."
+    "resumen" : "Test casi en blanco: solo has intentado 1, 2 y 4, y casi todo está mal. El fallo de base es el cálculo con pesos de bit: pones la lista de pesos empezando en 2 ($2, 4, 8\\ldots$) en vez de en 1 ($1, 2, 4\\ldots$) y lees el vector al revés. Eso te da un decimal y un hexadecimal incorrectos en 1. En 2, el hexadecimal 1CA coincide con la solución, pero no sale de tu binario, que es otro número. Las preguntas de síntesis y modelo temporal están en blanco. Para el 30\/10 hay que repasar la conversión base $2 \\leftrightarrow 10 \\leftrightarrow 16$, y también tablas de verdad, minterms\/ROM y caminos críticos, porque ahora mismo no puntúas en ellos."
   },
   "diagnostico" : true,
   "examen" : {
@@ -171,14 +171,14 @@
     "preguntas" : [
       {
         "criterios" : "0,5 hexadecimal, 0,5 decimal. Binario por apartado.",
-        "enunciado" : "El vector X = 10101101 representa un natural en binario. Da X en hexadecimal y Xu en decimal.",
+        "enunciado" : "El vector $X = 10101101$ representa un natural en binario. Da $X$ en hexadecimal y $X_u$ en decimal.",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 1 (variante)",
         "id" : "1",
         "opciones" : [
 
         ],
         "puntos" : 1,
-        "solucionReferencia" : "1010 1101 = AD (hex). Xu = 128+32+8+4+1 = 173.",
+        "solucionReferencia" : "$1010\\ 1101 = \\text{AD}$ (hex). $X_u = 128+32+8+4+1 = 173$.",
         "tema" : "Representación de números naturales",
         "tipo" : "desarrollo"
       },
@@ -191,7 +191,7 @@
 
         ],
         "puntos" : 1,
-        "solucionReferencia" : "a) 458 = 256+128+64+8+2 = 111001010 en binario; agrupando de 4 desde la derecha: 0001 1100 1010 = 1CA hex. b) [0, 5^4 - 1] = [0, 624].",
+        "solucionReferencia" : "a) $458 = 256+128+64+8+2 = 111001010$ en binario; agrupando de 4 desde la derecha: $0001\\ 1100\\ 1010 = \\text{1CA}$ hex. b) $[0, 5^4 - 1] = [0, 624]$.",
         "tema" : "Representación de números naturales",
         "tipo" : "desarrollo"
       },
@@ -204,98 +204,98 @@
 
         ],
         "puntos" : 0.5,
-        "solucionReferencia" : "2^10 = 1024 > 1000 >= 2^9 = 512, luego 10 bits. 10 bits ocupan ceil(10\/4) = 3 dígitos hexadecimales.",
+        "solucionReferencia" : "$2^{10} = 1024 > 1000 \\ge 2^9 = 512$, luego 10 bits. 10 bits ocupan $\\lceil 10\/4 \\rceil = 3$ dígitos hexadecimales.",
         "tema" : "Representación de números naturales",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "1 punto si la tabla es correcta; cada fila errónea resta 0,25.",
-        "enunciado" : "Circuito de entradas a, b, c y salida F = (a + b) · !(b · c), con + = Or, · = And. Completa la tabla de verdad de F para las 8 combinaciones (a b c) en orden binario creciente.",
+        "enunciado" : "Circuito de entradas $a, b, c$ y salida $F = (a + b) \\cdot \\overline{(b \\cdot c)}$, con $+$ = Or, $\\cdot$ = And. Completa la tabla de verdad de $F$ para las 8 combinaciones $(a\\ b\\ c)$ en orden binario creciente.",
         "fuente" : "12-13-Q1-E1-Enunciado.pdf, ejercicio 2a (análisis por tabla de verdad)",
         "id" : "4",
         "opciones" : [
 
         ],
         "puntos" : 1,
-        "solucionReferencia" : "abc: 000→0, 001→0, 010→1, 011→0, 100→1, 101→1, 110→1, 111→0.",
+        "solucionReferencia" : "$abc$: $000 \\to 0$, $001 \\to 0$, $010 \\to 1$, $011 \\to 0$, $100 \\to 1$, $101 \\to 1$, $110 \\to 1$, $111 \\to 0$.",
         "tema" : "Puertas lógicas y análisis de combinacionales",
         "tipo" : "desarrollo"
       },
       {
-        "criterios" : "0,5 tabla (binario), 0,5 minterms de co (binario).",
-        "enunciado" : "Circuito con entradas a, b, c: x = a Xor b; s = x Xor c; co = (a · b) + (x · c). Escribe la tabla de verdad de s y co (a b c en orden creciente) y da co como suma de minterms.",
+        "criterios" : "0,5 tabla (binario), 0,5 minterms de $co$ (binario).",
+        "enunciado" : "Circuito con entradas $a, b, c$: $x = a \\oplus b$; $s = x \\oplus c$; $co = (a \\cdot b) + (x \\cdot c)$. Escribe la tabla de verdad de $s$ y $co$ ($a\\ b\\ c$ en orden creciente) y da $co$ como suma de minterms.",
         "fuente" : "propia (análisis de sumador completo, estilo 11-12-Q1-E1 ejercicio 3)",
         "id" : "5",
         "opciones" : [
 
         ],
         "puntos" : 1,
-        "solucionReferencia" : "abc: 000 s0 co0; 001 s1 co0; 010 s1 co0; 011 s0 co1; 100 s1 co0; 101 s0 co1; 110 s0 co1; 111 s1 co1. co = !a·b·c + a·!b·c + a·b·!c + a·b·c (m3+m5+m6+m7).",
+        "solucionReferencia" : "$abc$: 000 $s=0$ $co=0$; 001 $s=1$ $co=0$; 010 $s=1$ $co=0$; 011 $s=0$ $co=1$; 100 $s=1$ $co=0$; 101 $s=0$ $co=1$; 110 $s=0$ $co=1$; 111 $s=1$ $co=1$. $co = \\bar a \\cdot b \\cdot c + a \\cdot \\bar b \\cdot c + a \\cdot b \\cdot \\bar c + a \\cdot b \\cdot c$ ($m_3+m_5+m_6+m_7$).",
         "tema" : "Puertas lógicas y análisis de combinacionales",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "0,5 por apartado. Binario por apartado.",
-        "enunciado" : "La función f(x2,x1,x0) vale 1 solo para las combinaciones 001, 010, 100 y 111.\na) Escribe f como suma de minterms.\nb) Si se implementa directamente, ¿cuántas puertas And y Or hay y de cuántas entradas? (sin contar Not)\nc) Si f se sintetizara junto con otras 2 funciones de 4 entradas con una sola ROM, ¿cuántas palabras y bits por palabra tiene esa ROM?",
+        "enunciado" : "La función $f(x_2,x_1,x_0)$ vale 1 solo para las combinaciones 001, 010, 100 y 111.\na) Escribe $f$ como suma de minterms.\nb) Si se implementa directamente, ¿cuántas puertas And y Or hay y de cuántas entradas? (sin contar Not)\nc) Si $f$ se sintetizara junto con otras 2 funciones de 4 entradas con una sola ROM, ¿cuántas palabras y bits por palabra tiene esa ROM?",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 4; 12-13-Q1-E1-Enunciado.pdf, ejercicio 3c y 3d",
         "id" : "6",
         "opciones" : [
 
         ],
         "puntos" : 1.5,
-        "solucionReferencia" : "a) f = !x2·!x1·x0 + !x2·x1·!x0 + x2·!x1·!x0 + x2·x1·x0. b) 4 And de 3 entradas y 1 Or de 4 entradas. c) 4 entradas y 3 salidas: 2^4 = 16 palabras de 3 bits (ROM de 4 entradas con las 3 funciones: f más las otras 2).",
+        "solucionReferencia" : "a) $f = \\bar x_2 \\cdot \\bar x_1 \\cdot x_0 + \\bar x_2 \\cdot x_1 \\cdot \\bar x_0 + x_2 \\cdot \\bar x_1 \\cdot \\bar x_0 + x_2 \\cdot x_1 \\cdot x_0$. b) 4 And de 3 entradas y 1 Or de 4 entradas. c) 4 entradas y 3 salidas: $2^4 = 16$ palabras de 3 bits (ROM de 4 entradas con las 3 funciones: $f$ más las otras 2).",
         "tema" : "Síntesis de combinacionales",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "0,25 número de palabras; 1,25 direcciones (cada dirección sobrante o faltante resta 0,25, mínimo 0).",
-        "enunciado" : "Una ROM tiene como entradas de dirección x0 (bit 0), x1 (bit 1), y0 (bit 2), y1 (bit 3), con X=(x1,x0) e Y=(y1,y0) naturales en binario, de modo que la dirección vale 4·Yu + Xu. La salida lt vale 1 si Xu < Yu. ¿Cuántas palabras tiene la ROM? Escribe las direcciones (en decimal) en las que se guarda un 1 para lt.",
+        "enunciado" : "Una ROM tiene como entradas de dirección $x_0$ (bit 0), $x_1$ (bit 1), $y_0$ (bit 2), $y_1$ (bit 3), con $X=(x_1,x_0)$ e $Y=(y_1,y_0)$ naturales en binario, de modo que la dirección vale $4 \\cdot Y_u + X_u$. La salida $lt$ vale 1 si $X_u < Y_u$. ¿Cuántas palabras tiene la ROM? Escribe las direcciones (en decimal) en las que se guarda un 1 para $lt$.",
         "fuente" : "12-13-Q1-E1-Enunciado.pdf, ejercicio 4 (contenido de ROM)",
         "id" : "7",
         "opciones" : [
 
         ],
         "puntos" : 1.5,
-        "solucionReferencia" : "4 entradas: 16 palabras. lt=1 si Xu<Yu. Yu=1: Xu=0 → dirección 4. Yu=2: Xu=0,1 → 8, 9. Yu=3: Xu=0,1,2 → 12, 13, 14. Direcciones con 1: {4, 8, 9, 12, 13, 14}; el resto 0.",
+        "solucionReferencia" : "4 entradas: 16 palabras. $lt=1$ si $X_u<Y_u$. $Y_u=1$: $X_u=0$ → dirección 4. $Y_u=2$: $X_u=0,1$ → 8, 9. $Y_u=3$: $X_u=0,1,2$ → 12, 13, 14. Direcciones con 1: $\\{4, 8, 9, 12, 13, 14\\}$; el resto 0.",
         "tema" : "Síntesis de combinacionales",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "0,25 por entrada (camino y tiempo correctos).",
-        "enunciado" : "Tp(Not)=10, Tp(And)=30, Tp(Or)=20 u.t. Circuito: u = Not(a); v = And(u, b); w = Or(v, c); F = And(w, d). Da el camino crítico y el tiempo de propagación de cada entrada (a, b, c, d) a F.",
+        "enunciado" : "$T_p(\\text{Not})=10$, $T_p(\\text{And})=30$, $T_p(\\text{Or})=20$ u.t. Circuito: $u = \\text{Not}(a)$; $v = \\text{And}(u, b)$; $w = \\text{Or}(v, c)$; $F = \\text{And}(w, d)$. Da el camino crítico y el tiempo de propagación de cada entrada ($a, b, c, d$) a $F$.",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 3 (variante sin bloque)",
         "id" : "8",
         "opciones" : [
 
         ],
         "puntos" : 1,
-        "solucionReferencia" : "a: a-Not-And-Or-And-F = 10+30+20+30 = 90. b: b-And-Or-And-F = 30+20+30 = 80. c: c-Or-And-F = 20+30 = 50. d: d-And-F = 30. Camino crítico del circuito: a-Not-And-Or-And-F, 90 u.t.",
+        "solucionReferencia" : "a: a-Not-And-Or-And-F $= 10+30+20+30 = 90$. b: b-And-Or-And-F $= 30+20+30 = 80$. c: c-Or-And-F $= 20+30 = 50$. d: d-And-F $= 30$. Camino crítico del circuito: a-Not-And-Or-And-F, 90 u.t.",
         "tema" : "Modelo temporal",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "0,75 por par de entrada-salida: 0,5 camino, 0,25 tiempo (solo si el camino es correcto).",
-        "enunciado" : "Tp(Not)=10, Tp(And)=30, Tp(Or)=20 u.t. Bloque H con Tp: e→f 40, e→s 70, k→f 60, k→s 30. Circuito de entradas x, y: Not(x) entra en e de H; y entra en k de H; z = And(f, y); w = Or(s, x). Da el camino crítico y el Tp de x a w, y de y a z.",
+        "enunciado" : "$T_p(\\text{Not})=10$, $T_p(\\text{And})=30$, $T_p(\\text{Or})=20$ u.t. Bloque H con $T_p$: $e \\to f$ 40, $e \\to s$ 70, $k \\to f$ 60, $k \\to s$ 30. Circuito de entradas $x, y$: $\\text{Not}(x)$ entra en $e$ de H; $y$ entra en $k$ de H; $z = \\text{And}(f, y)$; $w = \\text{Or}(s, x)$. Da el camino crítico y el $T_p$ de $x$ a $w$, y de $y$ a $z$.",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 3; 12-13-Q1-E1-Enunciado.pdf, ejercicio 2b",
         "id" : "9",
         "opciones" : [
 
         ],
         "puntos" : 1.5,
-        "solucionReferencia" : "x→w: caminos: x-Or-w = 20; x-Not-e-s-Or-w = 10+70+20 = 100. Crítico: x-Not-e-s-Or-w, 100 u.t. y→z: y-And-z = 30; y-k-f-And-z = 60+30 = 90. Crítico: y-k-f-And-z, 90 u.t.",
+        "solucionReferencia" : "$x \\to w$: caminos: x-Or-w $= 20$; x-Not-e-s-Or-w $= 10+70+20 = 100$. Crítico: x-Not-e-s-Or-w, 100 u.t. $y \\to z$: y-And-z $= 30$; y-k-f-And-z $= 60+30 = 90$. Crítico: y-k-f-And-z, 90 u.t.",
         "tema" : "Modelo temporal",
         "tipo" : "desarrollo"
       },
       {
-        "criterios" : "0,25 cambio de n, 0,25 subida de w en 40, 0,25 bajada de w en 50, 0,25 valores finales\/pulso.",
-        "enunciado" : "Tp(Not)=10, Tp(And)=20 u.t. Circuito: n = Not(a); w = And(a, n). La entrada a vale 0 hasta t=20, pasa a 1 en t=20 y se mantiene en 1. Da los instantes en que cambian n y w y sus valores en todo el intervalo de 0 a 80.",
+        "criterios" : "0,25 cambio de $n$, 0,25 subida de $w$ en 40, 0,25 bajada de $w$ en 50, 0,25 valores finales\/pulso.",
+        "enunciado" : "$T_p(\\text{Not})=10$, $T_p(\\text{And})=20$ u.t. Circuito: $n = \\text{Not}(a)$; $w = \\text{And}(a, n)$. La entrada $a$ vale 0 hasta $t=20$, pasa a 1 en $t=20$ y se mantiene en 1. Da los instantes en que cambian $n$ y $w$ y sus valores en todo el intervalo de 0 a 80.",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 6 (cronograma); PRAC1 (glitch del Xor-2)",
         "id" : "10",
         "opciones" : [
 
         ],
         "puntos" : 1,
-        "solucionReferencia" : "Antes de t=20: a=0, n=1 (estable), w=0. En t=20 a sube a 1. n baja a 0 en t=30 (20+10). Entre 20 y 30 las dos entradas del And valen 1. w sube a 1 en t=40 (20+20) y baja a 0 en t=50 (30+20). Resultado: w=0 salvo un pulso (glitch) a 1 en [40,50). A partir de t=50 w=0 y n=0.",
+        "solucionReferencia" : "Antes de $t=20$: $a=0$, $n=1$ (estable), $w=0$. En $t=20$ $a$ sube a 1. $n$ baja a 0 en $t=30$ ($20+10$). Entre 20 y 30 las dos entradas del And valen 1. $w$ sube a 1 en $t=40$ ($20+20$) y baja a 0 en $t=50$ ($30+20$). Resultado: $w=0$ salvo un pulso (glitch) a 1 en $[40,50)$. A partir de $t=50$ $w=0$ y $n=0$.",
         "tema" : "Modelo temporal",
         "tipo" : "desarrollo"
       }
@@ -314,6 +314,7 @@
     "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E2-Solucion.pdf"
   ],
   "id" : "8CB620BD-6DB4-439C-A288-FA1F133606AE",
+  "latex" : true,
   "minutos" : 24,
   "modo" : "diagnostico",
   "notaDespues" : 0.3888888888888889,
