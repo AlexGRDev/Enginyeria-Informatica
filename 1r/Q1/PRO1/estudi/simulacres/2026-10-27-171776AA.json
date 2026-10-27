@@ -1,0 +1,76 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T28896 · Seqüència teulada\n\n# Seqüència teulada\n\nUna \\\"seqüència teulada\\\" és una seqüència d'enters sense sentinella que\nté les següents propietats:\n\n- El primer i últim element són iguals.\n\n- Té dues parts de la mateixa longitud: un subseqüència creixent fins al\n  punt mig que dóna lloc a una subseqüència decreixent fins al final\n  (les dues parts de la teulada).\n\n![image](teulada.pdf){width=\"15cm\"}\n\n**NOTA: Obriu el PDF per veure la imatge, a la web no apareix.**\n\nPer ser totalment precisos, considerem que els elements de la seqüència\nteulada són $x_i$, amb $1 \\leq i \\leq N$ i $N$ senar. Sigui $k$ la\nposició central de la seqüència (és a dir, $N = 2k - 1$). La pujada\ninicial inclou els elements $x_1, x_2, \\ldots, x_{k-1}, x_k$ i es\ncompleix que $x_{i-1} \\leq x_{i}$ per a $2 \\leq i \\leq k$. La baixada\ninclou $x_k$ i té els elements $x_k, x_{k+1}, \\ldots, x_{N-1}, x_N$, i\nes complexien dues condicions: per una banda, $x_k > x_{k+1}$\n*estrictament* (el principi de la baixada); per altra, que\n$x_{i-1} \\geq x_i$, per a la resta d'elements, $k+2 \\leq i \\leq N$. A\nmés a més es compleix que $x_1 = x_N$.\n\nFes un **programa** que determina si la seqüència d'entrada és una\n\\\"seqüència teulada\\\".\n\n## Observació\n\nAquest problema té com a centres d'interès la **correctesa**,\nl'**eficiència** i la **llegibilitat**.\n\nEls diferents jocs de prova d'aquest problema otorguen una puntuació\nparcial, i la nota del problema és la suma de tots. Els jocs de prova\nestan separats en correctesa i eficiència, i els d'eficiència fan servir\nentrades de longituds molt grans i és necessari que el programa faci el\nmínim número d'operacions possible per arribar al resultat.\n\n## Entrada\n\nUna seqüència d'enters sense sentinella.\n\n## Sortida\n\nLa paraula \\\"`si`\\\" si la seqüència d'entrada és una \\\"seqüència\nteulada\\\" i \\\"`no`\\\" en cas contrari.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-03-17T20:08:27.976Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn1 · no resuelto",
+        "id" : "P1",
+        "jutge" : "T28896_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn1",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V84122 · Codificar en Base64 (1)\n\n# Codificar en Base64 (1)\n\n**Preliminars**\n\nEn base 2 tenim 2 dígits (`0` i `1`), en base 10 en tenim 10 (`0`, `1`,\n`2`, \\..., `9`), i en base 16 en tenim 16 (l'hexadecimal, que utilitza\n`0`, `1`, `2`, \\..., `9`, `A`, `B`, `C`, `D`, `E`, i `F`).\n\nLa **base 64** és doncs, simplement, una base amb molts més dígits. Però\ndonat que necessitem 64 símbols diferents per representar tots els\ndígits, cal fer servir totes les lletres del codi ASCII (26 majúscules i\n26 minúscules, en total 52), i tots els dígits decimals (0 a 9, en total\n10). De fet això no és suficient, perquè ens dóna 62 símbols en total.\nPer arribar als 64, es van escollir el '`+`' pel dígit 62 i '`\/`' pel\n63.\n\nLes correspondències exactes entre dígits en base 64 i els seus\ncaràcters respectius són aquestes:\n\n- Del 0 al 25, la corresponent lletra majúscula,\n\n- del 26 al 51, la corresponent lletra minúscula,\n\n- del 52 al 61, el corresponent dígit decimal,\n\n- el 62 és el caràcter '`+`'; i\n\n- el 63 és el caràcter '`\/`'.\n\nAixí doncs, si mostrem els caràcters ASCII utilitzats, tots junts i per\nordre, en la codificació de base 64 (que, per cert, és un estàndard),\ntenim:\n\n    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/\n\n**Objectiu**\n\nFes una **funció** que, donat un valor en base 64 retorni el seu\ncaràcter associat. La funció té la capçalera:\n\n    \/**\n     * @brief Passa un valor en base 64 a un caràcter.\n     * @pre Precondició: `d` >= 0 i `d` <= 63\n     *\/\n    char base64_to_char(int d);\n\n## Observació\n\nAquest problema té com a centres d'interès la **correctesa** i la\n**llegibilitat**. Només cal enviar la funció demanada; el programa\nprincipal serà ignorat. No es poden utilitzar les funcions `isupper`,\n`islower` de la llibreria estàndard.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T13:12:52.185Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn1 · no resuelto",
+        "id" : "P2",
+        "jutge" : "V84122_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn1",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T61086 · Màxim d'una seqüència de racionals\n\n# Màxim d'una seqüència de racionals\n\nFes un programa que calcula el màxim d'una seqüència de racionals.\n\n## Entrada\n\nUna seqüència de racionals positius sense sentinella, amb almenys 1\nelement. Els racionals d'entrada no tenen perquè estar simplificats.\nCada racional està format per dos enters separats pel caràcter '`\/`'.\n\n## Sortida\n\nEl racional més gran de la seqüència, simplificat, en el mateix format\nque els racionals d'entrada.\n\n## Observació\n\n- Els centres d'interès d'aquest problema són la **correctesa** i la\n  **llegibilitat**.\n\n- Podeu fer servir la funció `gcd` (màxim comú divisor) de la llibreria\n  estàndard que es pot incloure amb la capçalera '`#include <numeric>`'.\n  (També es poden fer servir '`max`', '`min`' i '`swap`', que estan\n  incloses automàticament quan s'inclou `iostream`.)\n\n- No feu servir nombres reals per representar el valor d'un racional en\n  aquest exercici, si ho feu l'exercici serà invalidat.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T12:54:41.005Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn1 · no resuelto",
+        "id" : "P3",
+        "jutge" : "T61086_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn1",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### W53973 · Codificar en Base64 (2)\n\n# Codificar en Base64 (2)\n\n*(Aquest problema fa servir la funció `base64\\_to\\_char` del problema\n\\\"Codificar en Base64 (1)\\\".)*\n\nEs tracta de fer un programa que, donada una seqüència de bytes a\nl'entrada (naturals entre 0 i 255), la **codifiqui en base 64**. La\ncodificació funciona de la següent manera, i treballa amb tripletes de 3\nbytes:\n\n1.  Primer, cada 3 bytes d'entrada $B_1$, $B_2$ i $B_3$, construïm un\n    enter $x$ en base 256 de la següent manera:\n\n    $$x = (B_1 \\cdot 256 + B_2) \\cdot 256  + B_3$$\n\n2.  Després, reinterpretem $x$ en base 64 i n'extraiem les xifres, que\n    ara són 4: $d_1$, $d_2$, $d_3$, i $d_4$. El procés és totalment\n    anàleg a extreure les xifres d'un nombre en base 10, però en\n    base 64. El que estem fent és calcular els dígits $d_i$ de la\n    fórmula següent:\n\n    $$x = ((d_1 \\cdot 64 + d_2) \\cdot 64 + d_3) \\cdot 64 + d_4$$\n\n    *(Cal recordar que el procés d'extracció de xifres treballat a PRO1\n    produeix les xifres al **revés**, és a dir, començant per $d_4$.)*\n\n3.  Per últim, usant la funció `base64_to_char` convertim $d_1$, $d_2$,\n    $d_3$ i $d_4$ en caràcters i els mostrem a la sortida en aquest\n    ordre.\n\nSi la seqüència d'entrada no té un llargada múltiple de 3, just al\nfinal, tindrem un grup de només 1 o 2 bytes:\n\n- Si tenim un grup de 2 bytes: assignem $B_3 = 0$, i seguim igualment\n  els passos de la codificació. Un cop amb les xifres $d_i$, canviem\n  $d_4$ pel caràcter '`=`'.\n\n- Si tenim un grup d'1 byte: assignem $B_2 = 0$ i $B_3 = 0$, i seguim\n  igualment els passos de la codificació. Un cop amb les xifres $d_i$,\n  canviem tant $d_3$ com $d_4$ pel caràcter '`=`'.\n\n## Entrada\n\nL'entrada consisteix en diverses seqüències de bytes. Cadascuna comença\namb un enter $n$ que indica el nombre de bytes que segueixen i després\nhi ha $n$ bytes, a on cadascún és només un nombre natural entre 0 i 255\n(ambdós inclosos).\n\n## Sortida\n\nLa sortida ha de ser una línia per a cada cas amb la codificació en base\n64 de la seqüència de bytes de l'entrada, sense espais entre els\ncaràcters.\n\n## Observacions\n\n- Aquest problema té com a centre d'interès la **correctesa** i la\n  **llegibilitat**. Sobre la llegibilitat, es valorarà que el programa\n  utilitzi funcions per evitar repetició i separar les diverses tasques.\n\n- Si teniu la funció `base64_to_char` i el Jutge us l'ha acceptat,\n  useu-la directament. Si no, copieu la següent definició:\n\n      char base64_to_char(int d) {\n          static char _syms[65] =\n              \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n              \"abcdefghijklmnopqrstuvwxyz\"\n              \"0123456789+\/\";\n          return _syms[d];\n      }\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T13:19:01.988Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn1 · no resuelto",
+        "id" : "P4",
+        "jutge" : "W53973_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn1",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 4 problemas"
+  },
+  "fecha" : "2026-10-27T06:57:39Z",
+  "fuentes" : [
+    "T28896",
+    "V84122",
+    "T61086",
+    "W53973"
+  ],
+  "id" : "171776AA-38AD-499D-9073-73EC3E1FF286",
+  "minutos" : 26,
+  "modo" : "jutge",
+  "notaAntes" : 2.302759131397527,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T28896.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:57:39 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:57:39 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/*\n   * PRE: Una seqüència S d’enters positius, sense sentinella\n   * POS: El programa ha d’escriure \"SI\" pel canal d’entrada en cas que S\n\tsigui creixent respecte a la diferència, i \"NO\" altrament.\n*\/\n\nint\tft_roof_sequence(int a, int b)\n{\n\tint\td, r;\n\n\td = 0;\n\twhile (a > 0 || b > 0)\n\t{\n\t\tr = a % 10 - b % 10;\n\t\tif (r < 0)\n\t\t\tr = -r;\n\t\td += r;\n\t\ta \/= 10;\n\t\tb \/= 10;\n\t}\n\treturn (d);\n}\n\nint\tmain(void)\n{\n\tint\tprev, x,d,d_prev;\n\tbool\tok;\n\n\td_prev = -1;\n\tok = false;\n\tif (std::cin >> prev)\n\t{\n\t\twhile (ok && std::cin >> x)\n\t\t{\n\t\t\td = ft_roof_sequence(prev, x);\n\t\t\tif (d < d_prev)\n\t\t\t\tok = true;\n\t\t\td_prev = d;\n\t\t\tprev = x;\n\t\t}\n\t}\n\tstd::cout << (ok ? \"SI\" : \"NO\") << std::endl;\n\treturn (0);\n}",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V84122.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:57:39 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:57:39 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T61086.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:57:39 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:57:39 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   W53973.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:57:39 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:57:39 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+
+  }
+}
