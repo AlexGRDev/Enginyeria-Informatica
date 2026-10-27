@@ -81,7 +81,7 @@
             "tema" : "Funciones auxiliares"
           }
         ],
-        "feedback" : "Correcto (AC). El array nbr[10] con los dígitos 9..0 y el puntero circular es innecesario: el dígito se obtiene con 9 - (contador % 10). Eso implica además varias variables de más (nbr, pnbr, k). No hay especificación pre\/post de la función.",
+        "feedback" : "Correcto (AC). El array nbr[10] con los dígitos $9..0$ y el puntero circular es innecesario: el dígito se obtiene con $9 - (\\text{contador} \\bmod 10)$. Eso implica además varias variables de más (nbr, pnbr, k). No hay especificación pre\/post de la función.",
         "funcional" : 10,
         "id" : "P2",
         "penalizaciones" : [
@@ -226,7 +226,7 @@
         "puntosObtenidos" : 0
       }
     ],
-    "resumen" : "Solo P1 y P2 tienen solución real (AC); el resto son plantillas vacías con un main que no hace nada. No había imágenes de pizarra adjuntas, así que he corregido solo el código. Las dos soluciones funcionan, pero les faltan especificaciones pre\/post y descomposición en funciones. P2 guarda en un array lo que se calcula con aritmética. Prioridad antes del parcial del 29\/10: dígitos con %10 y \/10 (P3, P4, P5), el esquema de lectura carácter a carácter (P7, P8, P9) y funciones con string\/char (P6)."
+    "resumen" : "Solo P1 y P2 tienen solución real (AC); el resto son plantillas vacías con un main que no hace nada. No había imágenes de pizarra adjuntas, así que he corregido solo el código. Las dos soluciones funcionan, pero les faltan especificaciones pre\/post y descomposición en funciones. P2 guarda en un array lo que se calcula con aritmética. Prioridad antes del parcial del 29\/10: dígitos con $\\%10$ y $\/10$ (P3, P4, P5), el esquema de lectura carácter a carácter (P7, P8, P9) y funciones con string\/char (P6)."
   },
   "diagnostico" : false,
   "examen" : {
@@ -347,6 +347,7 @@
     "T77863"
   ],
   "id" : "0328C932-A814-4EF5-A009-8F69A9958DE0",
+  "latex" : true,
   "minutos" : 33,
   "modo" : "jutge",
   "notaAntes" : 0,

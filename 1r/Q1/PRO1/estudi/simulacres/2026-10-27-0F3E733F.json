@@ -144,7 +144,7 @@
       {
         "criterios" : "0,8: función canvis correcta con %10 y \/10 (recorrido de dígitos). 0,5: comparación con el dígito anterior y caso de un solo dígito\/0 correcto. 0,4: especificación @pre\/@post de la función. 0,4: main con esquema de lectura for con t. 0,4: sin string\/vector, sin código redundante. Función no implementada o main vacío: 0 en el apartado correspondiente.",
         "ejercicio" : 0,
-        "enunciado" : "Canvis entre dígits.\n\nEscribe un programa en C++ que lea un entero t y después t enteros n (0 <= n <= 2000000000). Para cada n, escribe en una línea cuántas veces cambia el dígito al recorrer n de izquierda a derecha, es decir, cuántas parejas de dígitos consecutivos son distintas.\n\nDebes escribir una función auxiliar int canvis(int n) que devuelva ese número, con su especificación (@pre y @post). No se puede convertir n a string ni usar vectores: solo aritmética entera.\n\nEntrada:\n3\n1123\n7\n90909\n\nSalida:\n2\n0\n4",
+        "enunciado" : "Canvis entre dígits.\n\nEscribe un programa en C++ que lea un entero t y después t enteros n ($0 \\le n \\le 2000000000$). Para cada n, escribe en una línea cuántas veces cambia el dígito al recorrer n de izquierda a derecha, es decir, cuántas parejas de dígitos consecutivos son distintas.\n\nDebes escribir una función auxiliar int canvis(int n) que devuelva ese número, con su especificación (@pre y @post). No se puede convertir n a string ni usar vectores: solo aritmética entera.\n\nEntrada:\n3\n1123\n7\n90909\n\nSalida:\n2\n0\n4",
         "fuente" : "No sabe abordar Funciones auxiliares (recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos)",
         "id" : "P1",
         "opciones" : [
@@ -185,14 +185,14 @@
         "pagina" : 0,
         "pdf" : "",
         "puntos" : 2.5,
-        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    char c;\n    cin >> c;\n    int valor = 0;\n    int peso = 1;\n    while (c != '.') {\n        if (c == '*') {\n            cout << char(valor);\n            valor = 0;\n            peso = 1;\n        } else {\n            valor += (c - '0') * peso;\n            peso *= 2;\n        }\n        cin >> c;\n    }\n    cout << endl;\n}\n\nTraza: 0001001 -> 8 + 64 = 72 = 'H'; 1001011 -> 1 + 8 + 32 + 64 = 105 = 'i'.",
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    char c;\n    cin >> c;\n    int valor = 0;\n    int peso = 1;\n    while (c != '.') {\n        if (c == '*') {\n            cout << char(valor);\n            valor = 0;\n            peso = 1;\n        } else {\n            valor += (c - '0') * peso;\n            peso *= 2;\n        }\n        cin >> c;\n    }\n    cout << endl;\n}\n\nTraza: 0001001 $\\to$ $8 + 64 = 72$ = 'H'; 1001011 $\\to$ $1 + 8 + 32 + 64 = 105$ = 'i'.",
         "tema" : "Tipos básicos",
         "tipo" : "codigo"
       },
       {
         "criterios" : "0,6: caso base correcto (x == 0 and y == 0). 0,8: paso recursivo correcto (dígito de unidades con abs y llamada con x\/10, y\/10). 0,4: especificación @pre\/@post. 0,4: main con lectura for y salida correctas. 0,3: sin código redundante. Solución no recursiva: 0 en la pregunta.",
         "ejercicio" : 0,
-        "enunciado" : "Diferencia de dígitos.\n\nDados dos enteros x, y >= 0, su diferencia de dígitos es la suma de |dx - dy| para cada posición, alineando los números por la derecha (unidades con unidades, decenas con decenas...) y tomando 0 como dígito en las posiciones donde un número ya no tiene dígitos.\n\nEscribe un programa en C++ que lea un entero t y después t parejas x y, y escriba la diferencia de dígitos de cada pareja en una línea.\n\nDebes escribir una función RECURSIVA int dif(int x, int y), documentada con @pre y @post. Una solución iterativa o con string se puntúa con 0.\n\nEntrada:\n3\n1234 56\n505 505\n0 9\n\nSalida:\n7\n0\n9\n\n(1234 y 56: |4-6| + |3-5| + |2-0| + |1-0| = 2 + 2 + 2 + 1 = 7.)",
+        "enunciado" : "Diferencia de dígitos.\n\nDados dos enteros $x, y \\ge 0$, su diferencia de dígitos es la suma de $|d_x - d_y|$ para cada posición, alineando los números por la derecha (unidades con unidades, decenas con decenas...) y tomando 0 como dígito en las posiciones donde un número ya no tiene dígitos.\n\nEscribe un programa en C++ que lea un entero t y después t parejas x y, y escriba la diferencia de dígitos de cada pareja en una línea.\n\nDebes escribir una función RECURSIVA int dif(int x, int y), documentada con @pre y @post. Una solución iterativa o con string se puntúa con 0.\n\nEntrada:\n3\n1234 56\n505 505\n0 9\n\nSalida:\n7\n0\n9\n\n(1234 y 56: $|4-6| + |3-5| + |2-0| + |1-0| = 2 + 2 + 2 + 1 = 7$.)",
         "fuente" : "No sabe abordar Recursividad (recursión sobre dígitos con caso base x==0 and y==0) y No documentar las funciones con especificación pre\/post",
         "id" : "P4",
         "opciones" : [
@@ -213,6 +213,7 @@
 
   ],
   "id" : "0F3E733F-896E-46AA-9593-E57AFF4FDF4E",
+  "latex" : true,
   "minutos" : 46,
   "modo" : "estilo",
   "notaAntes" : 1.8242529974207802,

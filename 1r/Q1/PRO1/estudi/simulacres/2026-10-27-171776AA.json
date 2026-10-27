@@ -53,7 +53,7 @@
             "tema" : "Funciones auxiliares"
           }
         ],
-        "feedback" : "El código no resuelve la seqüència teulada: `ft_roof_sequence` calcula la suma de diferencias entre dígitos de dos números, que es otro problema, y la especificación habla de 'creixent respecte a la diferència'. Además `ok = false` y `while (ok && std::cin >> x)` impiden entrar al bucle, así que siempre imprime 'NO' (el enunciado pide 'si'\/'no' en minúsculas; aquí 'SI'\/'NO'). Falla todos los casos públicos. Faltaba: comprobar fase de subida (`<=`), bajada estricta al inicio (`>`), después `>=`, longitud impar con pico en el centro (la subida y la bajada deben tener la misma longitud) y primer = último. Se hace en una sola pasada O(n) sin vector, contando la longitud de cada fase.",
+        "feedback" : "El código no resuelve la seqüència teulada: `ft_roof_sequence` calcula la suma de diferencias entre dígitos de dos números, que es otro problema, y la especificación habla de 'creixent respecte a la diferència'. Además `ok = false` y `while (ok && std::cin >> x)` impiden entrar al bucle, así que siempre imprime 'NO' (el enunciado pide 'si'\/'no' en minúsculas; aquí 'SI'\/'NO'). Falla todos los casos públicos. Faltaba: comprobar fase de subida (`<=`), bajada estricta al inicio (`>`), después `>=`, longitud impar con pico en el centro (la subida y la bajada deben tener la misma longitud) y primer = último. Se hace en una sola pasada $O(n)$ sin vector, contando la longitud de cada fase.",
         "funcional" : 0,
         "id" : "P1",
         "penalizaciones" : [
@@ -81,7 +81,7 @@
             "tema" : "Tipos básicos"
           }
         ],
-        "feedback" : "En blanco: solo hay un `main` vacío y no existe `base64_to_char`. Faltaba: devolver 'A' + d si d<26, 'a' + (d-26) si d<52, '0' + (d-52) si d<62, '+' si 62 y '\/' si 63.",
+        "feedback" : "En blanco: solo hay un `main` vacío y no existe `base64_to_char`. Faltaba: devolver 'A' + d si $d<26$, 'a' + (d-26) si $d<52$, '0' + (d-52) si $d<62$, '+' si 62 y '\/' si 63.",
         "funcional" : 0,
         "id" : "P2",
         "penalizaciones" : [
@@ -127,7 +127,7 @@
             "tema" : "Funciones auxiliares"
           }
         ],
-        "feedback" : "En blanco: solo hay un `main` vacío. Faltaba: leer n y los bytes por tripletes (completando con 0), calcular x en base 256, extraer 4 dígitos con %64 y \/64 (salen al revés), convertir con `base64_to_char` y sustituir por '=' según el resto de la longitud, con funciones auxiliares.",
+        "feedback" : "En blanco: solo hay un `main` vacío. Faltaba: leer $n$ y los bytes por tripletes (completando con 0), calcular $x$ en base 256, extraer 4 dígitos con %64 y \/64 (salen al revés), convertir con `base64_to_char` y sustituir por '=' según el resto de la longitud, con funciones auxiliares.",
         "funcional" : 0,
         "id" : "P4",
         "penalizaciones" : [
@@ -197,6 +197,7 @@
     "W53973"
   ],
   "id" : "171776AA-38AD-499D-9073-73EC3E1FF286",
+  "latex" : true,
   "minutos" : 26,
   "modo" : "jutge",
   "notaAntes" : 2.302759131397527,
