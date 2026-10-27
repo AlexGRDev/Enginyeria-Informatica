@@ -1,8 +1,183 @@
 {
   "examenes" : [
-
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 7,
+      "fuente" : "material\/examens\/Ex_CC_CA_nov2022.pdf",
+      "orden" : 20220,
+      "temas" : [
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T1 test: dos baterías con resistencia interna en oposición, potencia que suministra la de mayor fem"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T2 test: ΔV entre dos puntos en estado estacionario con condensadores (sin corriente por sus ramas) siguiendo el camino por fuentes y resistencias"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T3 test: descarga RC, tiempo para que la energía del condensador baje al 25 %"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T4 test: función de transferencia de un filtro RL (tipo de filtro y valor |Vout\/Vin| a una ω)"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T5 test: ancho de banda, velocidad de transmisión y duración mínima del pulso en fibra óptica"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "Problema 1: leyes de Kirchhoff en circuito de varias mallas (fem e intensidades desconocidas), equivalente Thévenin, carga de un condensador en estacionario, resistencia para disipar una potencia dada"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "Problema 2: fasores a partir de lecturas de osciloscopio (V(t) y tensión en R con desfase), I(t), impedancia total, potencia media, impedancia y tensión entre A y B, intensidades de rama en paralelo L y Zp"
+        }
+      ]
+    },
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 6,
+      "fuente" : "material\/examens\/Ex_CC_CA_mar2022.pdf",
+      "orden" : 20220,
+      "temas" : [
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T1 test: cuatro resistencias en paralelo a una batería ideal, relaciones entre intensidades, tensiones y potencias"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T2 test: descarga RC dada q(t), deducir R, τ, energía e intensidad inicial"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T3 test: red serie-paralelo de cuatro resistencias, cuál consume más potencia"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T4 test: frecuencia a la que un filtro RL da |Vout\/Vin| = 1\/√5"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T5 test: equivalente Thévenin a partir de dos medidas de ΔV con dos resistencias de carga"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "Problema, apartado a: circuito con puente (R5), fem desconocida a partir de I5, ΔV entre A y B"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "Problema, apartado b: circuito RLC con generador sinusoidal, tensiones instantáneas en bobina y condensador, potencia media"
+        }
+      ]
+    },
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 6,
+      "fuente" : "material\/examens\/Ex_CC_CA_nov2021.pdf",
+      "orden" : 20210,
+      "temas" : [
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T1 test: línea ADSL, ancho de banda, velocidad de transmisión y duración mínima del pulso"
+        },
+        {
+          "tema" : "Corrent elèctric (I = dQ\/dt, I = n·q·v_d·A, J)",
+          "tipo" : "T2 test: carga que circula por una bombilla LED a partir de P, V y tiempo (I = P\/V, Q = I·Δt)"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T3 test: red serie-paralelo de cuatro resistencias, cuál consume más potencia"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T4 test: transitorio RL al cerrar el interruptor (intensidad inicial, final, constante de tiempo)"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T5 test: valor de la función de transferencia de un filtro RL a una ω dada"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "Problema: corrientes de rama y fem desconocidas con leyes de nudos y mallas, equivalente Thévenin, resistencia de máxima potencia y su potencia, ΔV y capacidad de una rama RC en estacionario"
+        }
+      ]
+    },
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 6,
+      "fuente" : "material\/examens\/Ex_CC_CA_abril2021.pdf",
+      "orden" : 20210,
+      "temas" : [
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T1 test: línea ADSL, ancho de banda, velocidad de transmisión y duración mínima del pulso"
+        },
+        {
+          "tema" : "Corrent elèctric (I = dQ\/dt, I = n·q·v_d·A, J)",
+          "tipo" : "T2 test: carga que circula por una bombilla LED a partir de P, V y tiempo (I = P\/V, Q = I·Δt)"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T3 test: red serie-paralelo de cuatro resistencias, cuál consume más potencia"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T4 test: transitorio RL al cerrar el interruptor (intensidad inicial, final, constante de tiempo)"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T5 test: valor de la función de transferencia de un filtro RL a una ω dada"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "Problema, apartados a y b: intensidades y fem desconocida a partir de VQP, equivalente Thévenin entre A y B"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "Problema, apartados c y d: cambio a generador alterno y condensador, impedancia de una rama serie RC, impedancia total y fasor de la intensidad del generador"
+        }
+      ]
+    },
+    {
+      "duracionMinutos" : 0,
+      "ejercicios" : 6,
+      "fuente" : "material\/examens\/Ex_CC_CA_nov2020.pdf",
+      "orden" : 20200,
+      "temas" : [
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T1 test: RLC en resonancia, resistencia a partir de la potencia disipada y Vef"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T2 test: desfase en RL serie al doblar la frecuencia"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "T3 test: corriente por la fem en circuito con condensadores en estacionario"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T4 test: descarga RC, capacidad a partir del tiempo en que la tensión cae a la mitad"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "T5 test: valor de R que hace equivalentes un filtro paso bajo RC y uno RL (R = √(L\/C))"
+        },
+        {
+          "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+          "tipo" : "Problema, apartados a y b: equivalente Thévenin a partir de dos medidas con Rc, verificación, ΔV en circuito abierto, intensidades de rama y fem con Kirchhoff"
+        },
+        {
+          "tema" : "Corrent Altern",
+          "tipo" : "Problema, apartados c y d: generador sinusoidal con condensador, elemento reactivo en paralelo para que I y V estén en fase, potencia media del generador"
+        }
+      ]
+    }
   ],
-  "fecha" : "2026-10-27T15:44:19Z",
+  "fecha" : "2026-10-27T16:49:02Z",
   "manual" : {
     "duracionMinutos" : 120,
     "ejercicios" : 10
