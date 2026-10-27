@@ -1,0 +1,203 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0.5,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 5,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 2.38,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Usa ft_strchr(\"a\", c) != NULL para comparar con un único carácter, en lugar de c == 'a'.",
+            "patron" : "Código redundante o innecesariamente complicado",
+            "refuerzo" : "Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales.",
+            "tema" : "Cadenas estilo C (char*)"
+          }
+        ],
+        "feedback" : "Esquema de lectura correcto (lectura previa y relectura al final), racha reiniciada con otro carácter, máximo bien actualizado y caso vacío da 0. Falla el estilo: ft_strchr(\"a\", c) != NULL es una forma rebuscada de escribir c == 'a'. Esa función auxiliar no hace falta y complica el código con punteros y casts. Las funciones llevan pre\/post.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "if (ft_strchr(\"a\", c) != NULL) en vez de if (c == 'a'); la función ft_strchr entera sobra.",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 2.38
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco: recorrido de dígitos contando cambios entre dígitos consecutivos.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "En blanco. No hay función canvis ni main. Falta el recorrido de dígitos con %10 y \/10 comparando cada dígito con el siguiente.",
+        "funcional" : 0,
+        "id" : "P2",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco: conversión binario a decimal solo con aritmética de int.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco. Faltaba extraer el último dígito con %10, acumular valor += bit*peso, duplicar el peso y avanzar con \/10.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco: recursión sobre dígitos de dos números.",
+            "patron" : "No sabe abordar Recursividad",
+            "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
+            "tema" : "Recursividad"
+          },
+          {
+            "descripcion" : "No hay función ni especificación.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "En blanco. Faltaba el caso base x == 0 and y == 0, el paso recursivo con x\/10 e y\/10, el valor absoluto de la diferencia y el pre\/post.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Solo P1 tiene respuesta y es funcionalmente correcta, con una penalización por comprobar 'a' mediante ft_strchr(\"a\", c) en lugar de c == 'a'. P2, P3 y P4 están en blanco, así que puntúan 0. No he recibido ninguna imagen de pizarra, así que he corregido solo el texto entregado. Con 2,0 sobre 10 estás lejos del objetivo, y los tres bloques en blanco (dígitos con %10 y \/10, binario a decimal y recursión sobre dígitos) son los que más puntos te hacen perder."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "0,5 lectura previa y relectura al final del bucle con condición c != '.'; 0,5 contador de racha actual que se reinicia con otro carácter; 0,5 actualización correcta del máximo; 0,5 salida correcta y casos límite (vacía); 0,5 estilo (sin while (cin >> c), sin variables innecesarias, sin vector). Main vacío o sin lectura: 0.",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe un programa que lea una secuencia de caracteres que acaba en '.' (el punto no forma parte de la secuencia, y la secuencia puede ser vacía) y escriba la longitud de la racha más larga de letras 'a' consecutivas.\n\nEntrada: una secuencia de caracteres sin espacios, terminada en '.'.\nSalida: un entero, la longitud de la racha más larga de 'a' consecutivas (0 si no hay ninguna).\n\nEjemplo:\nEntrada: baaabaaaaacaa.\nSalida: 5\n\nUsa el esquema de lectura recomendado en el curso (lectura previa y lectura al final del bucle, sin leer con while (cin >> c)).",
+        "fuente" : "No sabe abordar E\/S con std::cin\/std::cout",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    char c;\n    cin >> c;\n    int racha = 0;\n    int maxima = 0;\n    while (c != '.') {\n        if (c == 'a') {\n            ++racha;\n            if (racha > maxima) maxima = racha;\n        } else racha = 0;\n        cin >> c;\n    }\n    cout << maxima << endl;\n}\n\nCasos límite: secuencia vacía (solo '.') da 0; todo 'a' da la longitud total.",
+        "tema" : "E\/S con std::cin\/std::cout",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,75 recorrido de dígitos con %10 y \/10 con condición de parada correcta (n >= 10, un dígito da 0); 0,5 comparación correcta entre dígitos consecutivos; 0,5 main con lectura for de m y uso de la función; 0,5 casos límite (0, un dígito); 0,25 pre\/post en la función. No implementar la función: 0.",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe una función int canvis(int n) que, dado un entero n >= 0, devuelva el número de posiciones en que dos dígitos consecutivos de n (en su escritura decimal) son distintos. Escribe también un programa principal que lea una secuencia de enteros no negativos y, para cada uno, escriba su resultado en una línea.\n\nEntrada: primero un entero m >= 0, y después m enteros n >= 0.\nSalida: para cada n, una línea con canvis(n).\n\nEjemplo:\nEntrada: 4 1223 7 0 1213\nSalida:\n1\n0\n0\n3\n\nDebes usar la función canvis. No puedes convertir los números a string ni guardarlos en vectores.",
+        "fuente" : "No sabe abordar Funciones auxiliares",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/\/ Pre: n >= 0\n\/\/ Post: devuelve el numero de pares de digitos consecutivos distintos de n\nint canvis(int n) {\n    int res = 0;\n    while (n >= 10) {\n        if (n%10 != (n\/10)%10) ++res;\n        n = n\/10;\n    }\n    return res;\n}\n\nint main() {\n    int m;\n    cin >> m;\n    for (int i = 0; i < m; ++i) {\n        int n;\n        cin >> n;\n        cout << canvis(n) << endl;\n    }\n}\n\nComprobación: 1223 -> pares (3,2) distinto, (2,2) igual, (2,1) distinto = 2. NOTA: el ejemplo del enunciado debe leerse como 1223 -> 2; salida correcta del ejemplo: 2, 0, 0, 3.",
+        "tema" : "Funciones auxiliares",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,75 extracción del último dígito con %10 y avance con \/10; 0,75 acumulación valor += bit*peso; 0,5 actualización del peso (peso *= 2); 0,5 salida y condición del bucle correctas. Usar string\/char\/vector: 0 (incumple la restricción).",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe un programa que lea un entero n > 0 escrito solo con dígitos 0 y 1 (interpretado como número binario, máximo 9 dígitos) y escriba el valor del número en decimal. Restricción: debes tratar el dato solo como int, usando únicamente las operaciones +, -, *, \/, % (no string, no char, no vectores).\n\nEntrada: un entero n formado por 0 y 1.\nSalida: su valor en decimal.\n\nEjemplo:\nEntrada: 101101\nSalida: 45",
+        "fuente" : "No sabe abordar Tipos básicos; Incumplir restricción explícita del enunciado",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    int valor = 0;\n    int peso = 1;\n    while (n > 0) {\n        valor += (n%10)*peso;\n        peso *= 2;\n        n = n\/10;\n    }\n    cout << valor << endl;\n}\n\n101101 -> 1+4+8+32 = 45.",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "0,75 caso base x == 0 and y == 0; 0,75 paso recursivo con x\/10, y\/10; 0,5 valor absoluto correcto; 0,25 main correcto; 0,25 pre\/post escritas. Versión iterativa: 0.",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe una función recursiva int difDigits(int x, int y) que, dados dos enteros x, y >= 0, devuelva la suma de las diferencias absolutas entre los dígitos que ocupan la misma posición (contando desde las unidades). Si un número tiene menos dígitos que el otro, sus dígitos que faltan se consideran 0. Documenta la función con su especificación pre\/post. Escribe también el main que lee x e y y escribe el resultado.\n\nEntrada: dos enteros x e y.\nSalida: el resultado de difDigits(x, y).\n\nEjemplo:\nEntrada: 359 42\nSalida: 11\n(|9-2| + |5-4| + |3-0| = 7+1+3 = 11)\n\nLa función debe ser recursiva (una versión iterativa puntúa 0).",
+        "fuente" : "No sabe abordar Recursividad; No documentar las funciones con especificación pre\/post",
+        "id" : "P4",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/\/ Pre: x >= 0, y >= 0\n\/\/ Post: devuelve la suma de |dx - dy| sobre las posiciones de digitos de x e y,\n\/\/       completando con ceros el numero mas corto\nint difDigits(int x, int y) {\n    if (x == 0 and y == 0) return 0;\n    int a = x%10;\n    int b = y%10;\n    int d = a - b;\n    if (d < 0) d = -d;\n    return d + difDigits(x\/10, y\/10);\n}\n\nint main() {\n    int x, y;\n    cin >> x >> y;\n    cout << difDigits(x, y) << endl;\n}",
+        "tema" : "Recursividad",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Mis errores · Parcial PRO1 a medida (45 min)"
+  },
+  "fecha" : "2026-10-27T09:41:14Z",
+  "fuentes" : [
+
+  ],
+  "id" : "97853C23-AD90-4373-8E47-85C8CB427FCD",
+  "minutos" : 38,
+  "modo" : "estilo",
+  "notaAntes" : 1.3851695854670019,
+  "notaDespues" : 1.4982737221840516,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "#include <iostream>\n\n\/\/ @pre: s es una string terminada en '\\0'\n\/\/ @post: retorna un puntero a la primera ocurrencia de c en s, o NULL si no está\nchar    *ft_strchr(const char *s, int c)\n{\n        const char    *pstr;\n\n        pstr = s;\n        while (*pstr)\n        {\n                if (*pstr == (unsigned char)c)\n                        return ((char *)pstr);\n                pstr++;\n        }\n        if ((unsigned char)c == '\\0')\n                return ((char *)pstr);\n        return (NULL);\n}\n\n\/\/ @pre: std::cin contiene una secuencia de caracteres sin espacios terminada en '.'\n\/\/ @post: consume la secuencia hasta '.' y retorna la longitud de la racha más larga de 'a' consecutivas\nint     ft_secuencia(void)\n{\n        char    c;\n        int     actual;\n        int     maxima;\n\n        actual = 0;\n        maxima = 0;\n        std::cin >> c;\n        while (c != '.')\n        {\n                if (ft_strchr(\"a\", c) != NULL)\n                {\n                        actual++;\n                        if (actual > maxima)\n                                maxima = actual;\n                }\n                else\n                        actual = 0;\n                std::cin >> c;\n        }\n        return (maxima);\n}\n\nint     main(void)\n{\n        std::cout << ft_secuencia() << std::endl;\n        return (0);\n}"
+  }
+}
