@@ -3,17 +3,17 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-25. Objetivo: **8,0**. Próximo examen: Parcial 1 FM, 2026-11-04 (en 10 días).
+Generado por Kiwi GEI el 2026-10-27. Objetivo: **8,0**. Próximo examen: Parcial 1 FM, 2026-11-04 (en 8 días).
 
-**Estimación: 1,7 / 10** (-6,3 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,7.
+**Estimación: 1,4 / 10** (-6,6 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,4.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Demostracions | 25 % | 1,0 | 1 | 2026-10-25 (diagnostico) |
-| Inducció | 25 % | 1,0 | 1 | 2026-10-25 (diagnostico) |
-| Conjunts i Relacions | 25 % | 0,5 | 1 | 2026-10-25 (diagnostico) |
-| Lògica | 15 % | 6,0 | 1 | 2026-10-25 (diagnostico) |
-| Sumatoris | 10 % | 2,0 | 1 | 2026-10-25 (diagnostico) |
+| Demostracions | 25 % | 0,7 | 2 | 2026-10-27 (estilo) |
+| Inducció | 25 % | 1,0 | 2 | 2026-10-27 (estilo) |
+| Conjunts i Relacions | 25 % | 0,5 | 2 | 2026-10-27 (estilo) |
+| Lògica | 15 % | 4,5 | 2 | 2026-10-27 (estilo) |
+| Sumatoris | 10 % | 1,5 | 2 | 2026-10-27 (estilo) |
 | Funcions (fuera del examen) | 0 % | sin evaluar | 0 | - |
 | Divisibilitat (fuera del examen) | 0 % | sin evaluar | 0 | - |
 | Congruències (fuera del examen) | 0 % | sin evaluar | 0 | - |
