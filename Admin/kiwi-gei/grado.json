@@ -486,6 +486,14 @@
       "id" : "F83F1B5A-C60D-4B70-A77A-A12118CA8E6F",
       "origen" : "2026-10-27|FM|14:00",
       "tipo" : "L"
+    },
+    {
+      "code" : "F",
+      "fecha" : "2026-10-27T15:00:00Z",
+      "horas" : 1.7666666666666666,
+      "id" : "9C463AAA-F2C5-4AD4-8844-FD1F9F827A29",
+      "origen" : "2026-10-27|F|16:00",
+      "tipo" : "AD"
     }
   ],
   "notas" : {
@@ -493,7 +501,7 @@
   },
   "ocultas" : [
     "2026-10-27|PRO1|17:00",
-    "2026-10-27|F|16:00"
+    "2026-10-27|PRO1|16:00"
   ],
   "pdfsRevisados" : [
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129049?format=json",
@@ -502,15 +510,6 @@
   ],
   "sesiones" : [
     {
-      "asignatura" : "F",
-      "aulas" : "A6203",
-      "horas" : 3,
-      "id" : "extra|F|1793113200",
-      "inicio" : "2026-10-27T15:00:00Z",
-      "tipo" : "P",
-      "titulo" : "Clase de F"
-    },
-    {
       "asignatura" : "PRO1",
       "aulas" : "A6203",
       "horas" : 3,
@@ -518,6 +517,15 @@
       "inicio" : "2026-10-27T15:00:00Z",
       "tipo" : "P",
       "titulo" : "Clase de PRO1"
+    },
+    {
+      "asignatura" : "F",
+      "aulas" : "A6203",
+      "horas" : 3,
+      "id" : "extra|F|1793113200",
+      "inicio" : "2026-10-27T15:00:00Z",
+      "tipo" : "P",
+      "titulo" : "Clase de F"
     }
   ],
   "simulacrosClase" : [
