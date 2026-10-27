@@ -33,7 +33,7 @@
             "tema" : "Lògica"
           }
         ],
-        "feedback" : "Marques B, que és correcta (1,5 p). No escrius les dues regles que demana l'enunciat, la negació de quantificadors (`¬∀ ≡ ∃¬`, `¬∃ ≡ ∀¬`) i De Morgan (`¬(φ ∧ ψ) ≡ ¬φ ∨ ¬ψ`), i per això perds 0,5 p. Al parcial una resposta sense justificar puntua parcialment.",
+        "feedback" : "Marques B, que és correcta (1,5 p). No escrius les dues regles que demana l'enunciat, la negació de quantificadors ($\\neg\\forall \\equiv \\exists\\neg$, $\\neg\\exists \\equiv \\forall\\neg$) i De Morgan ($\\neg(\\varphi \\land \\psi) \\equiv \\neg\\varphi \\lor \\neg\\psi$), i per això perds 0,5 p. Al parcial una resposta sense justificar puntua parcialment.",
         "id" : "P1",
         "puntosObtenidos" : 1.5
       },
@@ -64,7 +64,7 @@
             "tema" : "Inducció"
           }
         ],
-        "feedback" : "Pas base: arribes a `1 ≤ 1`, però amb la notació del sumatori desfeta (escrius 'Σ k=1^2 · 1\/1²' i 'Σ k = 1'). Has d'escriure `∑_{k=1}^{1} 1\/k² = 1` i `2 − 1\/1 = 1`. Et dono 0,5 de 0,75. H.I.: escrius 'n+1', que no és cap afirmació. La H.I. és `∑_{k=1}^{n−1} 1\/k² ≤ 2 − 1\/(n−1)`, amb n > 1. T.I.: escrius 'k^(n+1) = 1\/k ≤ 2 − 1\/(n+1)'. Has confós el sumatori amb una potència i has perdut el sumatori del costat esquerre. Després prens k=2, n=3 i escrius '16 = 1\/2 ≤ 2 − 1\/4 = −1'. Això són igualtats falses (16 ≠ 1\/2, 2 − 1\/4 = 7\/4 ≠ −1) i, a més, comprovar un cas concret no demostra res. Falten la separació de l'últim sumand, l'ús de la H.I. i la desigualtat `1\/n² ≤ 1\/(n(n−1))`. Pas inductiu: 0.",
+        "feedback" : "Pas base: arribes a $1 \\le 1$, però amb la notació del sumatori desfeta (escrius 'Σ k=1^2 · 1\/1²' i 'Σ k = 1'). Has d'escriure $\\sum_{k=1}^{1} \\frac{1}{k^2} = 1$ i $2 - \\frac{1}{1} = 1$. Et dono 0,5 de 0,75. H.I.: escrius 'n+1', que no és cap afirmació. La H.I. és $\\sum_{k=1}^{n-1} \\frac{1}{k^2} \\le 2 - \\frac{1}{n-1}$, amb $n > 1$. T.I.: escrius 'k^(n+1) = 1\/k ≤ 2 − 1\/(n+1)'. Has confós el sumatori amb una potència i has perdut el sumatori del costat esquerre. Després prens $k=2$, $n=3$ i escrius '16 = 1\/2 ≤ 2 − 1\/4 = −1'. Això són igualtats falses ($16 \\ne \\frac{1}{2}$, $2 - \\frac{1}{4} = \\frac{7}{4} \\ne -1$) i, a més, comprovar un cas concret no demostra res. Falten la separació de l'últim sumand, l'ús de la H.I. i la desigualtat $\\frac{1}{n^2} \\le \\frac{1}{n(n-1)}$. Pas inductiu: 0.",
         "id" : "P2",
         "puntosObtenidos" : 0.5
       },
@@ -89,12 +89,12 @@
             "tema" : "Demostracions"
           }
         ],
-        "feedback" : "No hi ha cap demostració. Defineixes A i B com a llistes que es contenen a elles mateixes (A = (∅, A, B)), cosa que no té sentit, i acabes escrivint 'A = B' sense cap justificació. No indiques el mètode de cap de les dues implicacions. Per a ⇐ n'hi ha prou de substituir B per A: `A ∪ A = A ⊆ A = A ∩ A`. Per a ⇒ cal fer doble inclusió: sigui x ∈ A qualsevol ⇒ x ∈ A ∪ B ⇒(H) x ∈ A ∩ B ⇒ x ∈ B, i el mateix intercanviant A i B.",
+        "feedback" : "No hi ha cap demostració. Defineixes $A$ i $B$ com a llistes que es contenen a elles mateixes ($A = (\\emptyset, A, B)$), cosa que no té sentit, i acabes escrivint '$A = B$' sense cap justificació. No indiques el mètode de cap de les dues implicacions. Per a $\\Leftarrow$ n'hi ha prou de substituir $B$ per $A$: $A \\cup A = A \\subseteq A = A \\cap A$. Per a $\\Rightarrow$ cal fer doble inclusió: sigui $x \\in A$ qualsevol $\\Rightarrow x \\in A \\cup B \\overset{(H)}{\\Rightarrow} x \\in A \\cap B \\Rightarrow x \\in B$, i el mateix intercanviant $A$ i $B$.",
         "id" : "P3",
         "puntosObtenidos" : 0
       }
     ],
-    "resumen" : "2\/10. La negació de quantificadors la tens bé (P1), però al paper no hi ha cap demostració: la inducció i la prova amb conjunts estan per començar. A la P2 només hi ha el pas base. Després escrius una H.I. i una T.I. que no són fórmules amb sentit i proves un cas concret amb l'aritmètica malament. A la P3 tractes A i B com si fossin llistes d'elements concrets en lloc de raonar amb un x qualsevol. Queden 10 dies per al parcial i Inducció i Conjunts pesen el 50%. Prioritats: (1) aprendre de memòria l'esquema d'inducció: pas base, H.I. amb n−1, T.I. amb n, separar l'últim sumand, aplicar la H.I. i acabar la desigualtat amb ⇔; (2) l'esquema de doble inclusió: «sigui x ∈ A qualsevol ⇒ … ⇒ x ∈ B»; (3) llegir bé la notació de sumatori."
+    "resumen" : "2\/10. La negació de quantificadors la tens bé (P1), però al paper no hi ha cap demostració: la inducció i la prova amb conjunts estan per començar. A la P2 només hi ha el pas base. Després escrius una H.I. i una T.I. que no són fórmules amb sentit i proves un cas concret amb l'aritmètica malament. A la P3 tractes $A$ i $B$ com si fossin llistes d'elements concrets en lloc de raonar amb un $x$ qualsevol. Queden 10 dies per al parcial i Inducció i Conjunts pesen el 50%. Prioritats: (1) aprendre de memòria l'esquema d'inducció: pas base, H.I. amb $n-1$, T.I. amb $n$, separar l'últim sumand, aplicar la H.I. i acabar la desigualtat amb $\\iff$; (2) l'esquema de doble inclusió: «sigui $x \\in A$ qualsevol $\\Rightarrow \\dots \\Rightarrow x \\in B$»; (3) llegir bé la notació de sumatori."
   },
   "diagnostico" : true,
   "examen" : {
@@ -102,43 +102,43 @@
     "preguntas" : [
       {
         "criterios" : "1,5 p per marcar B. 0,5 p per citar les dues regles (negació de quantificadors i De Morgan). Si es marca A o D, 0 p a la marca, però es pot donar fins a 0,25 p si la justificació identifica bé una de les dues regles. Diagnòstic: A indica error amb De Morgan; D indica no tenir clar que l'ordre dels quantificadors importa.",
-        "enunciado" : "Sigui l'enunciat (domini ℝ per a x i y):\n\n`∀x ∃y (x < y ∧ y² < x)`\n\nQuina de les fórmules següents és equivalent a la seva negació? Marca una sola opció i escriu en una línia les dues regles que has aplicat.",
+        "enunciado" : "Sigui l'enunciat (domini $\\mathbb{R}$ per a $x$ i $y$):\n\n$$\\forall x\\, \\exists y\\, (x < y \\land y^2 < x)$$\n\nQuina de les fórmules següents és equivalent a la seva negació? Marca una sola opció i escriu en una línia les dues regles que has aplicat.",
         "fuente" : "material\/raco\/FM_setmana2_grup50.pdf (secció 1.2: negació de quantificadors i taula resum); format inspirat en EXAMFM.pdf, 1r parcial 01\/04\/2022, problema 1",
         "id" : "P1",
         "opciones" : [
-          "A) `∃x ∀y (x ≥ y ∧ y² ≥ x)`",
-          "B) `∃x ∀y (x ≥ y ∨ y² ≥ x)`",
-          "C) `∀x ∃y (x ≥ y ∨ y² ≥ x)`",
-          "D) `∃y ∀x (x ≥ y ∨ y² ≥ x)`"
+          "A) $\\exists x\\, \\forall y\\, (x \\ge y \\land y^2 \\ge x)$",
+          "B) $\\exists x\\, \\forall y\\, (x \\ge y \\lor y^2 \\ge x)$",
+          "C) $\\forall x\\, \\exists y\\, (x \\ge y \\lor y^2 \\ge x)$",
+          "D) $\\exists y\\, \\forall x\\, (x \\ge y \\lor y^2 \\ge x)$"
         ],
         "puntos" : 2,
-        "solucionReferencia" : "Resposta: B.\n`¬∀x ∃y (x < y ∧ y² < x)` ≡ `∃x ¬∃y (x < y ∧ y² < x)` ≡ `∃x ∀y ¬(x < y ∧ y² < x)` ≡ (De Morgan) `∃x ∀y (¬(x < y) ∨ ¬(y² < x))` ≡ `∃x ∀y (x ≥ y ∨ y² ≥ x)`.\nRegles: negació de quantificadors (`¬∀ ≡ ∃¬`, `¬∃ ≡ ∀¬`) i De Morgan `¬(φ ∧ ψ) ≡ ¬φ ∨ ¬ψ`.\nA falla perquè no aplica De Morgan (manté ∧). C no canvia els quantificadors. D canvia l'ordre dels quantificadors, i en general `∃x∀y` no és equivalent a `∃y∀x`.",
+        "solucionReferencia" : "Resposta: B.\n$\\neg\\forall x\\, \\exists y\\, (x < y \\land y^2 < x) \\equiv \\exists x\\, \\neg\\exists y\\, (x < y \\land y^2 < x) \\equiv \\exists x\\, \\forall y\\, \\neg(x < y \\land y^2 < x)$ ≡ (De Morgan) $\\exists x\\, \\forall y\\, (\\neg(x < y) \\lor \\neg(y^2 < x)) \\equiv \\exists x\\, \\forall y\\, (x \\ge y \\lor y^2 \\ge x)$.\nRegles: negació de quantificadors ($\\neg\\forall \\equiv \\exists\\neg$, $\\neg\\exists \\equiv \\forall\\neg$) i De Morgan $\\neg(\\varphi \\land \\psi) \\equiv \\neg\\varphi \\lor \\neg\\psi$.\nA falla perquè no aplica De Morgan (manté $\\land$). C no canvia els quantificadors. D canvia l'ordre dels quantificadors, i en general $\\exists x\\,\\forall y$ no és equivalent a $\\exists y\\,\\forall x$.",
         "tema" : "Lògica",
         "tipo" : "test"
       },
       {
-        "criterios" : "Pas base correcte, calculant els dos costats: 0,75 p. H.I. i T.I. ben escrites, amb l'índex desplaçat (n−1 a la H.I.) i amb n > 1: 1 p. Separar l'últim sumand i aplicar la H.I. dient on s'usa: 1 p. Demostrar la desigualtat (3) amb l'àlgebra correcta: 1,25 p. Justificar que el factor pel qual es multiplica és positiu (ús de n > 1): 0,5 p. Penalitzacions: suposar la T.I. i arribar a una cosa certa sense equivalències (⇔) ben encadenades, −1 p; usar n = 1 al pas inductiu (divisió per n−1 = 0), −0,5 p; només comprovar casos concrets, 0 p al pas inductiu.",
-        "enunciado" : "Demostra per inducció simple que per a tot n ≥ 1:\n\n`∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n`\n\nEscriu explícitament el pas base, la hipòtesi d'inducció (H.I.) i la tesi d'inducció (T.I.), i indica en quin pas fas servir la H.I. Justifica cada desigualtat.",
+        "criterios" : "Pas base correcte, calculant els dos costats: 0,75 p. H.I. i T.I. ben escrites, amb l'índex desplaçat ($n-1$ a la H.I.) i amb $n > 1$: 1 p. Separar l'últim sumand i aplicar la H.I. dient on s'usa: 1 p. Demostrar la desigualtat (3) amb l'àlgebra correcta: 1,25 p. Justificar que el factor pel qual es multiplica és positiu (ús de $n > 1$): 0,5 p. Penalitzacions: suposar la T.I. i arribar a una cosa certa sense equivalències ($\\iff$) ben encadenades, −1 p; usar $n = 1$ al pas inductiu (divisió per $n-1 = 0$), −0,5 p; només comprovar casos concrets, 0 p al pas inductiu.",
+        "enunciado" : "Demostra per inducció simple que per a tot $n \\ge 1$:\n\n$$\\sum_{k=1}^{n} \\frac{1}{k^2} \\le 2 - \\frac{1}{n}$$\n\nEscriu explícitament el pas base, la hipòtesi d'inducció (H.I.) i la tesi d'inducció (T.I.), i indica en quin pas fas servir la H.I. Justifica cada desigualtat.",
         "fuente" : "Estil de EXAMFM.pdf, 1r parcial 07\/11\/2024, problema 2 i 1r parcial 04\/11\/2022, problema 2 (inducció amb desigualtat de sumatori); enunciat propi",
         "id" : "P2",
         "opciones" : [
 
         ],
         "puntos" : 4.5,
-        "solucionReferencia" : "Pas base, n = 1: el costat esquerre és `∑_{k=1}^{1} 1\/k² = 1` i el dret és `2 − 1\/1 = 1`. Es compleix `1 ≤ 1`.\n\nPas inductiu, sigui n > 1:\n• H.I.: `∑_{k=1}^{n−1} 1\/k² ≤ 2 − 1\/(n−1)`.\n• T.I.: `∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n`.\n\n`∑_{k=1}^{n} 1\/k²` =(1) `∑_{k=1}^{n−1} 1\/k² + 1\/n²` ≤(2) `2 − 1\/(n−1) + 1\/n²` ≤(3) `2 − 1\/n`.\n(1) Separem l'últim sumand.\n(2) Sumem `1\/n²` als dos costats de la H.I. Aquí és on es fa servir la H.I.\n(3) `2 − 1\/(n−1) + 1\/n² ≤ 2 − 1\/n` ⇔ `1\/n² ≤ 1\/(n−1) − 1\/n = 1\/(n(n−1))` ⇔(*) `n(n−1) ≤ n²` ⇔ `−n ≤ 0`, que és cert.\n(*) Multipliquem per `n²·n(n−1)`, que és positiu perquè n > 1, i per tant es manté el sentit de la desigualtat.\nPer transitivitat de ≤ obtenim la T.I. ∎",
+        "solucionReferencia" : "Pas base, $n = 1$: el costat esquerre és $\\sum_{k=1}^{1} \\frac{1}{k^2} = 1$ i el dret és $2 - \\frac{1}{1} = 1$. Es compleix $1 \\le 1$.\n\nPas inductiu, sigui $n > 1$:\n• H.I.: $\\sum_{k=1}^{n-1} \\frac{1}{k^2} \\le 2 - \\frac{1}{n-1}$.\n• T.I.: $\\sum_{k=1}^{n} \\frac{1}{k^2} \\le 2 - \\frac{1}{n}$.\n\n$$\\sum_{k=1}^{n} \\frac{1}{k^2} \\overset{(1)}{=} \\sum_{k=1}^{n-1} \\frac{1}{k^2} + \\frac{1}{n^2} \\overset{(2)}{\\le} 2 - \\frac{1}{n-1} + \\frac{1}{n^2} \\overset{(3)}{\\le} 2 - \\frac{1}{n}.$$\n(1) Separem l'últim sumand.\n(2) Sumem $\\frac{1}{n^2}$ als dos costats de la H.I. Aquí és on es fa servir la H.I.\n(3) $2 - \\frac{1}{n-1} + \\frac{1}{n^2} \\le 2 - \\frac{1}{n}$ $\\iff$ $\\frac{1}{n^2} \\le \\frac{1}{n-1} - \\frac{1}{n} = \\frac{1}{n(n-1)}$ $\\overset{(*)}{\\iff}$ $n(n-1) \\le n^2$ $\\iff$ $-n \\le 0$, que és cert.\n(*) Multipliquem per $n^2 \\cdot n(n-1)$, que és positiu perquè $n > 1$, i per tant es manté el sentit de la desigualtat.\nPer transitivitat de $\\le$ obtenim la T.I. ∎",
         "tema" : "Inducció",
         "tipo" : "desarrollo"
       },
       {
-        "criterios" : "Implicació ⇐ ben justificada: 1 p. Implicació ⇒: plantejar la doble inclusió o el contrarecíproc dient el mètode, 0,5 p; demostració element a element de `A ⊆ B` amb les definicions de ∪ i ∩ i l'ús explícit de (H), 1,25 p; l'altra inclusió (n'hi ha prou de dir 'anàlogament intercanviant A i B' si queda clar), 0,75 p. Un diagrama de Venn no puntua com a demostració. Al contrarecíproc, negar malament A = B (per exemple, escriure 'A ⊈ B i B ⊈ A' en lloc de 'o'), −0,75 p.",
-        "enunciado" : "Siguin A, B conjunts qualssevol. Demostra que:\n\n`A ∪ B ⊆ A ∩ B ⇔ A = B`\n\nIndica el mètode que fas servir en cada implicació i justifica cada pas (definició de ∪, ∩, ⊆ o la igualtat de conjunts).",
+        "criterios" : "Implicació $\\Leftarrow$ ben justificada: 1 p. Implicació $\\Rightarrow$: plantejar la doble inclusió o el contrarecíproc dient el mètode, 0,5 p; demostració element a element de $A \\subseteq B$ amb les definicions de $\\cup$ i $\\cap$ i l'ús explícit de (H), 1,25 p; l'altra inclusió (n'hi ha prou de dir 'anàlogament intercanviant $A$ i $B$' si queda clar), 0,75 p. Un diagrama de Venn no puntua com a demostració. Al contrarecíproc, negar malament $A = B$ (per exemple, escriure '$A \\not\\subseteq B$ i $B \\not\\subseteq A$' en lloc de 'o'), −0,75 p.",
+        "enunciado" : "Siguin $A$, $B$ conjunts qualssevol. Demostra que:\n\n$$A \\cup B \\subseteq A \\cap B \\iff A = B$$\n\nIndica el mètode que fas servir en cada implicació i justifica cada pas (definició de $\\cup$, $\\cap$, $\\subseteq$ o la igualtat de conjunts).",
         "fuente" : "Estil de EXAMFM.pdf, 1r parcial 21\/04\/2021, problema 3 (A − B = B − A ⇔ A = B) i 1r parcial 04\/11\/2022, problema 3; enunciat propi",
         "id" : "P3",
         "opciones" : [
 
         ],
         "puntos" : 3.5,
-        "solucionReferencia" : "⇐) Prova directa per substitució. Si A = B, substituïm B per A: `A ∪ B = A ∪ A = A` i `A ∩ B = A ∩ A = A` (idempotència). Com que `A ⊆ A`, es té `A ∪ B ⊆ A ∩ B`.\n\n⇒) Prova directa. Suposem `A ∪ B ⊆ A ∩ B` (H). Per veure A = B, demostrem `A ⊆ B` i `B ⊆ A`.\n• `A ⊆ B`: sigui x ∈ A qualsevol. Aleshores x ∈ A ∨ x ∈ B, és a dir x ∈ A ∪ B (def. ∪). Per (H), x ∈ A ∩ B, és a dir x ∈ A ∧ x ∈ B (def. ∩), i per tant x ∈ B.\n• `B ⊆ A`: es fa igual intercanviant A i B. Sigui x ∈ B ⇒ x ∈ A ∪ B ⇒(H) x ∈ A ∩ B ⇒ x ∈ A.\nTenim doble inclusió, per tant A = B. ∎\n\nAlternativa per a ⇒: contrarecíproc. Si A ≠ B, existeix x amb (x ∈ A ∧ x ∉ B) o amb (x ∈ B ∧ x ∉ A). En el primer cas x ∈ A ∪ B però x ∉ A ∩ B, de manera que `A ∪ B ⊈ A ∩ B`. El segon cas és simètric.",
+        "solucionReferencia" : "$\\Leftarrow$) Prova directa per substitució. Si $A = B$, substituïm $B$ per $A$: $A \\cup B = A \\cup A = A$ i $A \\cap B = A \\cap A = A$ (idempotència). Com que $A \\subseteq A$, es té $A \\cup B \\subseteq A \\cap B$.\n\n$\\Rightarrow$) Prova directa. Suposem $A \\cup B \\subseteq A \\cap B$ (H). Per veure $A = B$, demostrem $A \\subseteq B$ i $B \\subseteq A$.\n• $A \\subseteq B$: sigui $x \\in A$ qualsevol. Aleshores $x \\in A \\lor x \\in B$, és a dir $x \\in A \\cup B$ (def. $\\cup$). Per (H), $x \\in A \\cap B$, és a dir $x \\in A \\land x \\in B$ (def. $\\cap$), i per tant $x \\in B$.\n• $B \\subseteq A$: es fa igual intercanviant $A$ i $B$. Sigui $x \\in B \\Rightarrow x \\in A \\cup B \\overset{(H)}{\\Rightarrow} x \\in A \\cap B \\Rightarrow x \\in A$.\nTenim doble inclusió, per tant $A = B$. ∎\n\nAlternativa per a $\\Rightarrow$: contrarecíproc. Si $A \\ne B$, existeix $x$ amb ($x \\in A \\land x \\notin B$) o amb ($x \\in B \\land x \\notin A$). En el primer cas $x \\in A \\cup B$ però $x \\notin A \\cap B$, de manera que $A \\cup B \\not\\subseteq A \\cap B$. El segon cas és simètric.",
         "tema" : "Conjunts i Relacions",
         "tipo" : "desarrollo"
       }
@@ -156,6 +156,7 @@
     "material\/raco\/FM_setmana56_grup50.pdf"
   ],
   "id" : "44254F11-3A1B-42A9-B0F3-B8FFA1EDF505",
+  "latex" : true,
   "minutos" : 14,
   "modo" : "diagnostico",
   "notaDespues" : 1.7249999999999999,
