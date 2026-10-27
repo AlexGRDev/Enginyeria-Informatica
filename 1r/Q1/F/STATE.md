@@ -3,9 +3,9 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-27. Objetivo: **8,5**. Próximo examen: Parcial 1 F, 2026-11-03 (en 7 días).
+Generado por Kiwi GEI el 2026-10-27. Objetivo: **7,5**. Próximo examen: Parcial 1 F, 2026-11-03 (en 7 días).
 
-**Estimación: 0,8 / 10** (-7,7 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,8.
+**Estimación: 0,9 / 10** (-6,6 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,9.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
@@ -17,7 +17,7 @@ Generado por Kiwi GEI el 2026-10-27. Objetivo: **8,5**. Próximo examen: Parcial
 | Corrent Altern | 15 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
 | Electrònica i portes lògiques (fuera del examen) | 15 % | sin evaluar | 0 | - |
 | Ones (fuera del examen) | 15 % | sin evaluar | 0 | - |
-| Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f) | 3 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
+| Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f) (fuera del examen) | 3 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
 | Simulació amb LTspice (fuera del examen) | 2 % | sin evaluar | 0 | - |
 <!-- kiwi-gei:estat:fi -->
 
