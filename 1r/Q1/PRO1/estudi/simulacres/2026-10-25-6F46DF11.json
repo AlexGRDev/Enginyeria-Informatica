@@ -58,7 +58,7 @@
             "tema" : "Tipos básicos"
           }
         ],
-        "feedback" : "main vacío. Falta leer cada número y procesar sus dígitos con %10 y \/10, sumando 1 a los pares y reconstruyendo el número en el orden correcto. Ten en cuenta el 9 par+1 no existe, pero el 8 pasa a 9 sin acarreo.",
+        "feedback" : "main vacío. Falta leer cada número y procesar sus dígitos con $\\%10$ y $\/10$, sumando 1 a los pares y reconstruyendo el número en el orden correcto. Ten en cuenta el 9 par$+1$ no existe, pero el 8 pasa a 9 sin acarreo.",
         "funcional" : 0,
         "id" : "P2",
         "penalizaciones" : [
@@ -98,7 +98,7 @@
             "tema" : "E\/S con std::cin\/std::cout"
           }
         ],
-        "feedback" : "main vacío. Falta leer N y recorrer las cartas una a una con contador de racha, sin guardarlas, parando en el primer N-Poker.",
+        "feedback" : "main vacío. Falta leer $N$ y recorrer las cartas una a una con contador de racha, sin guardarlas, parando en el primer N-Poker.",
         "funcional" : 0,
         "id" : "P4",
         "penalizaciones" : [
@@ -149,7 +149,7 @@
             "tema" : "Tipos básicos"
           }
         ],
-        "feedback" : "main vacío. Falta generar los bicolor de N cifras, por ejemplo con dos dígitos d≠e y una longitud k de 1 a N-1 para el primer bloque, evitando ceros a la izquierda.",
+        "feedback" : "main vacío. Falta generar los bicolor de $N$ cifras, por ejemplo con dos dígitos $d\\neq e$ y una longitud $k$ de 1 a $N-1$ para el primer bloque, evitando ceros a la izquierda.",
         "funcional" : 0,
         "id" : "P7",
         "penalizaciones" : [
@@ -166,7 +166,7 @@
             "tema" : "E\/S con std::cin\/std::cout"
           }
         ],
-        "feedback" : "main vacío. Falta leer hasta '.', contar rachas de cartes iguales y, al acabar cada racha de k≥2, escribir Parella, Trio, Poker o 'k C's!', sin almacenar la secuencia. Cuidado con la última racha antes del punto.",
+        "feedback" : "main vacío. Falta leer hasta '.', contar rachas de cartes iguales y, al acabar cada racha de $k\\geq 2$, escribir Parella, Trio, Poker o 'k C's!', sin almacenar la secuencia. Cuidado con la última racha antes del punto.",
         "funcional" : 0,
         "id" : "P8",
         "penalizaciones" : [
@@ -313,6 +313,7 @@
     "T61086"
   ],
   "id" : "6F46DF11-488B-455A-ABB0-DDF07F6326F3",
+  "latex" : true,
   "minutos" : 3,
   "modo" : "jutge",
   "notaDespues" : 0,

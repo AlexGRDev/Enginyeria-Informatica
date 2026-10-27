@@ -41,7 +41,7 @@
             "tema" : "Funciones auxiliares"
           }
         ],
-        "feedback" : "Correcto y lineal: tres comparaciones por caso. Lectura con `while (cin >> a >> b >> c)` válida porque el número de casos es arbitrario. Falta la especificación pre\/post sobre `ft_no_max_no_min`. Alternativa más simple: calcular el mediano como a+b+c-max-min.",
+        "feedback" : "Correcto y lineal: tres comparaciones por caso. Lectura con `while (cin >> a >> b >> c)` válida porque el número de casos es arbitrario. Falta la especificación pre\/post sobre `ft_no_max_no_min`. Alternativa más simple: calcular el mediano como $a+b+c-\\max-\\min$.",
         "funcional" : 10,
         "id" : "P1",
         "penalizaciones" : [
@@ -63,7 +63,7 @@
             "tema" : "Tipos básicos"
           }
         ],
-        "feedback" : "La lógica es correcta (impares y luego pares positivos, z = 2*y, AC en el Jutge). Pero el enunciado prohíbe `string` y exige usar solo `int` con +,-,*,\/,%. Leer `std::string x` y recorrerlo con `c_str()` incumple esa restricción explícita, así que la nota es 0. Se resuelve con `x%10` y `x\/10`, aunque eso invierte el orden de los dígitos. Hay que leer los dígitos de derecha a izquierda y colocar cada uno con una potencia de 10 acumulada para cada grupo.",
+        "feedback" : "La lógica es correcta (impares y luego pares positivos, $z = 2 \\cdot y$, AC en el Jutge). Pero el enunciado prohíbe `string` y exige usar solo `int` con $+, -, *, \/, \\%$. Leer `std::string x` y recorrerlo con `c_str()` incumple esa restricción explícita, así que la nota es 0. Se resuelve con `x%10` y `x\/10`, aunque eso invierte el orden de los dígitos. Hay que leer los dígitos de derecha a izquierda y colocar cada uno con una potencia de 10 acumulada para cada grupo.",
         "funcional" : 10,
         "id" : "P2",
         "penalizaciones" : [
@@ -85,7 +85,7 @@
             "tema" : "Funciones auxiliares"
           }
         ],
-        "feedback" : "En blanco: el main está vacío. Hay que recorrer los dígitos con %10 y \/10 y comparar cada trío consecutivo, guardando solo los dos dígitos anteriores.",
+        "feedback" : "En blanco: el main está vacío. Hay que recorrer los dígitos con $\\%10$ y $\/10$ y comparar cada trío consecutivo, guardando solo los dos dígitos anteriores.",
         "funcional" : 0,
         "id" : "P3",
         "penalizaciones" : [
@@ -102,7 +102,7 @@
             "tema" : "Recursividad"
           }
         ],
-        "feedback" : "En blanco. Caso base: x == 0 devuelve y, o y == 0 devuelve x, porque el dígito que falta cuenta como 0. Paso recursivo: abs(x%10 - y%10) + diferencia(x\/10, y\/10).",
+        "feedback" : "En blanco. Caso base: $x == 0$ devuelve $y$, o $y == 0$ devuelve $x$, porque el dígito que falta cuenta como 0. Paso recursivo: $\\mathrm{abs}(x \\% 10 - y \\% 10) + \\mathrm{diferencia}(x\/10, y\/10)$.",
         "funcional" : 0,
         "id" : "P4",
         "penalizaciones" : [
@@ -119,7 +119,7 @@
             "tema" : "Tipos básicos"
           }
         ],
-        "feedback" : "En blanco. Lee a\/b con `cin >> a >> c >> b` (c es el char '\/'). Compara a\/b y c\/d con a*d y c*b, sin reales. Al final simplifica con gcd.",
+        "feedback" : "En blanco. Lee $\\frac{a}{b}$ con `cin >> a >> c >> b` (c es el char '\/'). Compara $\\frac{a}{b}$ y $\\frac{c}{d}$ con $a \\cdot d$ y $c \\cdot b$, sin reales. Al final simplifica con gcd.",
         "funcional" : 0,
         "id" : "P5",
         "penalizaciones" : [
@@ -128,7 +128,7 @@
         "puntosObtenidos" : 0
       }
     ],
-    "resumen" : "Solo P1 puntúa (1,8 de 10). P2 funciona pero usa `string`, que el enunciado prohíbe, así que vale 0. P3, P4 y P5 están en blanco. No he podido leer las imágenes de pizarra porque no venían adjuntas, y la nota se basa solo en el código. Prioridad antes del parcial: recorrido de dígitos con %10 y \/10 sin string, recursión sobre dígitos y comparación de racionales con producto cruzado y gcd."
+    "resumen" : "Solo P1 puntúa (1,8 de 10). P2 funciona pero usa `string`, que el enunciado prohíbe, así que vale 0. P3, P4 y P5 están en blanco. No he podido leer las imágenes de pizarra porque no venían adjuntas, y la nota se basa solo en el código. Prioridad antes del parcial: recorrido de dígitos con $\\%10$ y $\/10$ sin string, recursión sobre dígitos y comparación de racionales con producto cruzado y gcd."
   },
   "diagnostico" : false,
   "examen" : {
@@ -201,6 +201,7 @@
     "T61086"
   ],
   "id" : "4403A7B9-CEE6-4F39-A696-AFA0595D7F33",
+  "latex" : true,
   "minutos" : 22,
   "modo" : "jutge",
   "notaAntes" : 1.5368472552418897,
