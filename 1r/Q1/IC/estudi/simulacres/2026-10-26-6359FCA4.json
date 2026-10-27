@@ -41,7 +41,7 @@
             "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
           }
         ],
-        "feedback" : "Solo la fila 4 está completa y correcta (00111010, 3A, 58). Fila 1: 10101100 es 1010|1100 = AC y Xu = 172; pones 0x10B y 180, que no sale de ningún agrupamiento de 4 bits. Fila 2: 6D = 0110 1101 = 109; escribes 01101110 (que sería 6E), hex 0D (el enunciado ya da 6D) y Xu = 110. Fila 3: 201 = 128+64+8+1 = 11001001; tu vector 11011001 vale 217. El hex C9 sí es correcto, pero la fila se pierde porque el vector está mal. No comprobaste sumando pesos.",
+        "feedback" : "Solo la fila 4 está completa y correcta (00111010, 3A, 58). Fila 1: 10101100 es 1010|1100 = AC y $X_u = 172$; pones 0x10B y 180, que no sale de ningún agrupamiento de 4 bits. Fila 2: 6D = 0110 1101 = 109; escribes 01101110 (que sería 6E), hex 0D (el enunciado ya da 6D) y $X_u = 110$. Fila 3: $201 = 128+64+8+1 = $ 11001001; tu vector 11011001 vale 217. El hex C9 sí es correcto, pero la fila se pierde porque el vector está mal. No comprobaste sumando pesos.",
         "id" : "E1",
         "puntosObtenidos" : 0.375
       },
@@ -60,7 +60,7 @@
             "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
           }
         ],
-        "feedback" : "Sin respuesta válida: lo de la pizarra es una tabla a b | c d que no corresponde a ningún apartado. Faltan la fórmula Wu = Σ wi·b^i con rango [0, b^n - 1], el rango [0, 624] y el valor 482 para b = 5, y los 10 bits (2^10 = 1024 > 1000) con 3 dígitos hexadecimales.",
+        "feedback" : "Sin respuesta válida: lo de la pizarra es una tabla a b | c d que no corresponde a ningún apartado. Faltan la fórmula $W_u = \\sum w_i \\cdot b^i$ con rango $[0, b^n - 1]$, el rango $[0, 624]$ y el valor 482 para $b = 5$, y los 10 bits ($2^{10} = 1024 > 1000$) con 3 dígitos hexadecimales.",
         "id" : "E2",
         "puntosObtenidos" : 0
       },
@@ -85,7 +85,7 @@
             "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
           }
         ],
-        "feedback" : "En blanco. Había que hacer la tabla con x, f, s, g, h, F; F = m3+m4+m5+m7; y los caminos críticos considerando e->f, e->s, k->f y k->s: a y b dan 160, c da 130 y el circuito 160.",
+        "feedback" : "En blanco. Había que hacer la tabla con x, f, s, g, h, F; $F = m_3+m_4+m_5+m_7$; y los caminos críticos considerando $e \\rightarrow f$, $e \\rightarrow s$, $k \\rightarrow f$ y $k \\rightarrow s$: a y b dan 160, c da 130 y el circuito 160.",
         "id" : "E3",
         "puntosObtenidos" : 0
       },
@@ -98,7 +98,7 @@
             "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
           }
         ],
-        "feedback" : "En blanco. p = m0+m3+m4+m6 (4 And de 3 entradas y 1 Or de 4), ROM de 8 palabras x 2 bits, y q con Or de 4 entradas sobre las salidas 1, 3, 5 y 6 del decodificador.",
+        "feedback" : "En blanco. $p = m_0+m_3+m_4+m_6$ (4 And de 3 entradas y 1 Or de 4), ROM de 8 palabras x 2 bits, y q con Or de 4 entradas sobre las salidas 1, 3, 5 y 6 del decodificador.",
         "id" : "E4",
         "puntosObtenidos" : 0
       },
@@ -111,7 +111,7 @@
             "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
           }
         ],
-        "feedback" : "En blanco. Con dirección = 4·Yu + Xu había que recorrer las 16 combinaciones aplicando Yu - Xu si Xu < Yu, y (Xu+Yu)%4 en otro caso.",
+        "feedback" : "En blanco. Con dirección = $4 \\cdot Y_u + X_u$ había que recorrer las 16 combinaciones aplicando $Y_u - X_u$ si $X_u < Y_u$, y $(X_u+Y_u)\\%4$ en otro caso.",
         "id" : "E5",
         "puntosObtenidos" : 0
       },
@@ -124,7 +124,7 @@
             "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
           }
         ],
-        "feedback" : "En blanco. Había que propagar cada cambio con su Tp: d = 1 en [0,20) y [60,80); e = 1 en [30,40) y [90,100); w = 1 en [50,60) y [70,80). El glitch está en [50,60), causado por e (a·!a) al subir a.",
+        "feedback" : "En blanco. Había que propagar cada cambio con su Tp: d = 1 en $[0,20)$ y $[60,80)$; e = 1 en $[30,40)$ y $[90,100)$; w = 1 en $[50,60)$ y $[70,80)$. El glitch está en $[50,60)$, causado por e ($a \\cdot \\bar{a}$) al subir a.",
         "id" : "E6",
         "puntosObtenidos" : 0
       }
@@ -137,7 +137,7 @@
     "preguntas" : [
       {
         "criterios" : "0,375 por fila completa y correcta (las tres casillas). Cualquier error en una fila hace perder esa fila. Errores típicos: pesos de bit mal asignados, no agrupar de 4 en 4 desde la derecha, no expandir cada dígito hexadecimal a 4 bits.",
-        "enunciado" : "Ejercicio 1 (1,5 puntos). Cada fila de la tabla tiene 3 columnas: el vector X de 8 bits, X en hexadecimal y Xu, el valor decimal de X interpretado como natural codificado en binario. Completa las casillas vacías.\n\nFila 1: X = 10101100, hexa = ?, Xu = ?\nFila 2: X = ?, hexa = 6D, Xu = ?\nFila 3: X = ?, hexa = ?, Xu = 201\nFila 4: X = 00111010, hexa = ?, Xu = ?",
+        "enunciado" : "Ejercicio 1 (1,5 puntos). Cada fila de la tabla tiene 3 columnas: el vector X de 8 bits, X en hexadecimal y $X_u$, el valor decimal de X interpretado como natural codificado en binario. Completa las casillas vacías.\n\nFila 1: X = 10101100, hexa = ?, $X_u$ = ?\nFila 2: X = ?, hexa = 6D, $X_u$ = ?\nFila 3: X = ?, hexa = ?, $X_u$ = 201\nFila 4: X = 00111010, hexa = ?, $X_u$ = ?",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 1; 12-13-Q1-E1-Enunciado.pdf, ejercicio 1",
         "id" : "E1",
         "opciones" : [
@@ -146,13 +146,13 @@
         "pagina" : 1,
         "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E1-Enunciado.pdf",
         "puntos" : 1.5,
-        "solucionReferencia" : "Fila 1: 10101100 = AC (1010|1100), Xu = 128+32+8+4 = 172.\nFila 2: 6D = 0110 1101, Xu = 64+32+8+4+1 = 109.\nFila 3: 201 = 128+64+8+1 -> 11001001 = C9.\nFila 4: 00111010 = 3A, Xu = 32+16+8+2 = 58.",
+        "solucionReferencia" : "Fila 1: 10101100 = AC (1010|1100), $X_u = 128+32+8+4 = 172$.\nFila 2: 6D = 0110 1101, $X_u = 64+32+8+4+1 = 109$.\nFila 3: $201 = 128+64+8+1 \\rightarrow$ 11001001 = C9.\nFila 4: 00111010 = 3A, $X_u = 32+16+8+2 = 58$.",
         "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "a) 0,5 (binario: fórmula y rango correctos). b) 0,25 rango, 0,25 valor. c) 0,25 número de bits, 0,25 dígitos hexadecimales.",
-        "enunciado" : "Ejercicio 2 (1,5 puntos).\na) (0,5) Escribe la fórmula del valor del natural Wu en función de los n dígitos wn-1, ..., w1, w0 del sistema convencional en base b, y el rango de naturales representables con n dígitos.\nb) (0,5) Para b = 5 y n = 4, indica el rango en decimal y el valor decimal del vector de dígitos (3, 4, 1, 2) (w3 = 3, w0 = 2).\nc) (0,5) ¿Cuál es el número mínimo de bits para representar todos los naturales de 0 a 1000? ¿Cuántos dígitos hexadecimales ocupa ese vector si se expresa con ese número mínimo de bits (agrupando de 4 en 4)?",
+        "enunciado" : "Ejercicio 2 (1,5 puntos).\na) (0,5) Escribe la fórmula del valor del natural $W_u$ en función de los $n$ dígitos $w_{n-1}, \\ldots, w_1, w_0$ del sistema convencional en base $b$, y el rango de naturales representables con $n$ dígitos.\nb) (0,5) Para $b = 5$ y $n = 4$, indica el rango en decimal y el valor decimal del vector de dígitos $(3, 4, 1, 2)$ ($w_3 = 3$, $w_0 = 2$).\nc) (0,5) ¿Cuál es el número mínimo de bits para representar todos los naturales de 0 a 1000? ¿Cuántos dígitos hexadecimales ocupa ese vector si se expresa con ese número mínimo de bits (agrupando de 4 en 4)?",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 2; 12-13-Q1-E1-Enunciado.pdf, ejercicio 3 a) y b)",
         "id" : "E2",
         "opciones" : [
@@ -161,13 +161,13 @@
         "pagina" : 1,
         "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E1-Enunciado.pdf",
         "puntos" : 1.5,
-        "solucionReferencia" : "a) Wu = Σ(i=0..n-1) wi·b^i, con 0 ≤ wi ≤ b-1; rango [0, b^n - 1].\nb) Rango [0, 5^4 - 1] = [0, 624]. Valor: 3·125 + 4·25 + 1·5 + 2 = 375+100+5+2 = 482.\nc) Menor n con 2^n > 1000: 2^9 = 512 no basta, 2^10 = 1024 sí, n = 10 bits. Dígitos hexadecimales = ceil(10\/4) = 3.",
+        "solucionReferencia" : "a) $W_u = \\sum_{i=0}^{n-1} w_i \\cdot b^i$, con $0 \\le w_i \\le b-1$; rango $[0, b^n - 1]$.\nb) Rango $[0, 5^4 - 1] = [0, 624]$. Valor: $3 \\cdot 125 + 4 \\cdot 25 + 1 \\cdot 5 + 2 = 375+100+5+2 = 482$.\nc) Menor $n$ con $2^n > 1000$: $2^9 = 512$ no basta, $2^{10} = 1024$ sí, $n = 10$ bits. Dígitos hexadecimales = $\\lceil 10\/4 \\rceil = 3$.",
         "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "a) 1 punto: 0,5 por las 8 filas de F correctas, 0,5 por las columnas intermedias correctas. b) 0,5 binario. c) 1 punto: 0,25 por entrada (camino crítico y Tp correctos) más 0,25 por el Tp del circuito. Debe considerarse los caminos internos del bloque por par entrada-salida; si solo se suma un Tp por bloque, se pierde el apartado de esa entrada.",
-        "enunciado" : "Ejercicio 3 (2,5 puntos). Circuito con entradas a, b, c y salida F:\n- x = Xor(a, b)\n- Bloque H con entradas e = x y k = c, y salidas f y s\n- g = And(a, f)\n- h = Not(s)\n- F = Or(g, h)\n\nTabla de verdad del bloque H (e k | f s): 00 | 0 1; 01 | 1 1; 10 | 1 1; 11 | 0 0.\nTp del bloque H (entrada a salida): e->f 60, e->s 40, k->f 80, k->s 50 u.t.\nTp de puertas: Not = 10, And = 30, Or = 20, Xor = 50 u.t.\n\na) (1) Completa la tabla de verdad de F para las 8 combinaciones (a b c), con una columna por señal intermedia (x, f, s, g, h).\nb) (0,5) Escribe F como suma de minterms.\nc) (1) Para cada entrada (a, b, c) escribe el camino crítico hasta F (indicando señales y bloques, p. ej. a - Xor - e - f - And - Or - F) y su tiempo de propagación. Indica el Tp del circuito.",
+        "enunciado" : "Ejercicio 3 (2,5 puntos). Circuito con entradas a, b, c y salida F:\n- $x = \\text{Xor}(a, b)$\n- Bloque H con entradas $e = x$ y $k = c$, y salidas $f$ y $s$\n- $g = \\text{And}(a, f)$\n- $h = \\text{Not}(s)$\n- $F = \\text{Or}(g, h)$\n\nTabla de verdad del bloque H (e k | f s): 00 | 0 1; 01 | 1 1; 10 | 1 1; 11 | 0 0.\nTp del bloque H (entrada a salida): $e \\rightarrow f$ 60, $e \\rightarrow s$ 40, $k \\rightarrow f$ 80, $k \\rightarrow s$ 50 u.t.\nTp de puertas: Not = 10, And = 30, Or = 20, Xor = 50 u.t.\n\na) (1) Completa la tabla de verdad de F para las 8 combinaciones (a b c), con una columna por señal intermedia (x, f, s, g, h).\nb) (0,5) Escribe F como suma de minterms.\nc) (1) Para cada entrada (a, b, c) escribe el camino crítico hasta F (indicando señales y bloques, p. ej. a - Xor - e - f - And - Or - F) y su tiempo de propagación. Indica el Tp del circuito.",
         "fuente" : "12-13-Q1-E1-Enunciado.pdf, ejercicio 2; 11-12-Q1-E1-Enunciado.pdf, ejercicio 3",
         "id" : "E3",
         "opciones" : [
@@ -176,13 +176,13 @@
         "pagina" : 1,
         "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E1-Enunciado.pdf",
         "puntos" : 2.5,
-        "solucionReferencia" : "a) x = a^b; f = x^c; s = !(x·c); g = a·f; h = !s = x·c; F = g + h.\nabc: x f s g h F\n000: 0 0 1 0 0 0\n001: 0 1 1 0 0 0\n010: 1 1 1 0 0 0\n011: 1 0 0 0 1 1\n100: 1 1 1 1 0 1\n101: 1 0 0 0 1 1\n110: 0 0 1 0 0 0\n111: 0 1 1 1 0 1\nb) F = !a·b·c + a·!b·!c + a·!b·c + a·b·c (m3 + m4 + m5 + m7).\nc) Caminos:\na: a-And-Or = 50; a-Xor-e-f-And-Or = 50+60+30+20 = 160; a-Xor-e-s-Not-Or = 50+40+10+20 = 120. Crítico 160 (a - Xor - e - f - And - Or - F).\nb: igual sin el camino directo: b - Xor - e - f - And - Or - F = 160.\nc: c-k-f-And-Or = 80+30+20 = 130; c-k-s-Not-Or = 80. Crítico 130 (c - k - f - And - Or - F).\nTp del circuito = 160.",
+        "solucionReferencia" : "a) $x = a \\oplus b$; $f = x \\oplus c$; $s = \\overline{x \\cdot c}$; $g = a \\cdot f$; $h = \\bar{s} = x \\cdot c$; $F = g + h$.\nabc: x f s g h F\n000: 0 0 1 0 0 0\n001: 0 1 1 0 0 0\n010: 1 1 1 0 0 0\n011: 1 0 0 0 1 1\n100: 1 1 1 1 0 1\n101: 1 0 0 0 1 1\n110: 0 0 1 0 0 0\n111: 0 1 1 1 0 1\nb) $F = \\bar{a} \\cdot b \\cdot c + a \\cdot \\bar{b} \\cdot \\bar{c} + a \\cdot \\bar{b} \\cdot c + a \\cdot b \\cdot c$ ($m_3 + m_4 + m_5 + m_7$).\nc) Caminos:\na: a-And-Or = 50; a-Xor-e-f-And-Or = $50+60+30+20 = 160$; a-Xor-e-s-Not-Or = $50+40+10+20 = 120$. Crítico 160 (a - Xor - e - f - And - Or - F).\nb: igual sin el camino directo: b - Xor - e - f - And - Or - F = 160.\nc: c-k-f-And-Or = $80+30+20 = 130$; c-k-s-Not-Or = 80. Crítico 130 (c - k - f - And - Or - F).\nTp del circuito = 160.",
         "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad) \/ Modelo temporal",
         "tipo" : "desarrollo"
       },
       {
         "criterios" : "a) 0,5 binario (un minterm erróneo o faltante = 0). b) 0,25 binario. c) 0,25 binario. d) 0,5: 0,25 salidas correctas, 0,25 Or de 4 entradas.",
-        "enunciado" : "Ejercicio 4 (1,5 puntos). Se tiene la siguiente tabla de verdad con entradas x2 x1 x0 y salidas p, q:\nx2x1x0 | p q\n000 | 1 0\n001 | 0 1\n010 | 0 0\n011 | 1 1\n100 | 1 0\n101 | 0 1\n110 | 1 1\n111 | 0 0\n\na) (0,5) Escribe p como suma de minterms.\nb) (0,25) ¿Cuántas puertas And y Or, y de cuántas entradas cada una, hacen falta para implementar directamente p como suma de minterms (sin contar los Not)?\nc) (0,25) Tamaño mínimo de una única ROM que sintetice p y q a la vez: número de palabras y bits por palabra.\nd) (0,5) Sintetiza q con un decodificador 3 a 8 y el mínimo de puertas Or: indica qué salidas del decodificador van a la Or y de cuántas entradas es.",
+        "enunciado" : "Ejercicio 4 (1,5 puntos). Se tiene la siguiente tabla de verdad con entradas $x_2 x_1 x_0$ y salidas p, q:\nx2x1x0 | p q\n000 | 1 0\n001 | 0 1\n010 | 0 0\n011 | 1 1\n100 | 1 0\n101 | 0 1\n110 | 1 1\n111 | 0 0\n\na) (0,5) Escribe p como suma de minterms.\nb) (0,25) ¿Cuántas puertas And y Or, y de cuántas entradas cada una, hacen falta para implementar directamente p como suma de minterms (sin contar los Not)?\nc) (0,25) Tamaño mínimo de una única ROM que sintetice p y q a la vez: número de palabras y bits por palabra.\nd) (0,5) Sintetiza q con un decodificador 3 a 8 y el mínimo de puertas Or: indica qué salidas del decodificador van a la Or y de cuántas entradas es.",
         "fuente" : "11-12-Q1-E1-Enunciado.pdf, ejercicio 4; 12-13-Q1-E1-Enunciado.pdf, ejercicio 3 c) y d)",
         "id" : "E4",
         "opciones" : [
@@ -191,13 +191,13 @@
         "pagina" : 2,
         "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E1-Enunciado.pdf",
         "puntos" : 1.5,
-        "solucionReferencia" : "a) p = 1 en 000, 011, 100, 110: p = !x2·!x1·!x0 + !x2·x1·x0 + x2·!x1·!x0 + x2·x1·!x0 (m0 + m3 + m4 + m6).\nb) 4 And de 3 entradas y 1 Or de 4 entradas.\nc) 3 entradas -> 2^3 = 8 palabras, 2 bits por palabra.\nd) q = 1 en 001, 011, 101, 110: Or de 4 entradas conectada a las salidas 1, 3, 5 y 6 del decodificador.",
+        "solucionReferencia" : "a) p = 1 en 000, 011, 100, 110: $p = \\bar{x_2} \\cdot \\bar{x_1} \\cdot \\bar{x_0} + \\bar{x_2} \\cdot x_1 \\cdot x_0 + x_2 \\cdot \\bar{x_1} \\cdot \\bar{x_0} + x_2 \\cdot x_1 \\cdot \\bar{x_0}$ ($m_0 + m_3 + m_4 + m_6$).\nb) 4 And de 3 entradas y 1 Or de 4 entradas.\nc) 3 entradas $\\rightarrow$ $2^3 = 8$ palabras, 2 bits por palabra.\nd) q = 1 en 001, 011, 101, 110: Or de 4 entradas conectada a las salidas 1, 3, 5 y 6 del decodificador.",
         "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
         "tipo" : "desarrollo"
       },
       {
-        "criterios" : "16 palabras. Se resta 0,25 por cada fila (grupo de 4 direcciones por valor de Yu) con algún error, sin pasar de 1,5; con 4 grupos mal es 0. Verificar que la dirección se calcula como 4·Yu + Xu (error típico: invertir el orden).",
-        "enunciado" : "Ejercicio 5 (1,5 puntos). Una ROM de 16 palabras y 3 bits por palabra implementa una función con entradas X = (x1, x0), Y = (y1, y0) y salidas (r, w1, w0). Los bits de dirección son (a3, a2, a1, a0) = (y1, y0, x1, x0). X, Y y W = (w1, w0) representan naturales Xu, Yu, Wu en binario; r es un bit. n%k es el resto de la división entera (resto positivo).\n\nif (Xu < Yu) { Wu = Yu - Xu; r = 1; }\nelse { Wu = (Xu + Yu) % 4; r = 0; }\n\nEscribe el contenido de la ROM: para cada dirección (0 a 15, en decimal) el valor binario r w1 w0.",
+        "criterios" : "16 palabras. Se resta 0,25 por cada fila (grupo de 4 direcciones por valor de $Y_u$) con algún error, sin pasar de 1,5; con 4 grupos mal es 0. Verificar que la dirección se calcula como $4 \\cdot Y_u + X_u$ (error típico: invertir el orden).",
+        "enunciado" : "Ejercicio 5 (1,5 puntos). Una ROM de 16 palabras y 3 bits por palabra implementa una función con entradas $X = (x_1, x_0)$, $Y = (y_1, y_0)$ y salidas $(r, w_1, w_0)$. Los bits de dirección son $(a_3, a_2, a_1, a_0) = (y_1, y_0, x_1, x_0)$. X, Y y $W = (w_1, w_0)$ representan naturales $X_u$, $Y_u$, $W_u$ en binario; r es un bit. $n\\%k$ es el resto de la división entera (resto positivo).\n\nif (Xu < Yu) { Wu = Yu - Xu; r = 1; }\nelse { Wu = (Xu + Yu) % 4; r = 0; }\n\nEscribe el contenido de la ROM: para cada dirección (0 a 15, en decimal) el valor binario r w1 w0.",
         "fuente" : "12-13-Q1-E1-Enunciado.pdf, ejercicio 4",
         "id" : "E5",
         "opciones" : [
@@ -206,7 +206,7 @@
         "pagina" : 2,
         "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E1-Enunciado.pdf",
         "puntos" : 1.5,
-        "solucionReferencia" : "Dirección = 4·Yu + Xu. Contenido (r w1 w0):\nYu=0: dir0 = 000, dir1 = 001, dir2 = 010, dir3 = 011.\nYu=1: dir4 = 101 (Xu=0<1, W=1), dir5 = 010 (1+1=2), dir6 = 011 (3), dir7 = 000 (4%4=0).\nYu=2: dir8 = 110 (W=2), dir9 = 101 (W=1), dir10 = 000 (4%4), dir11 = 001 (5%4).\nYu=3: dir12 = 111 (W=3), dir13 = 110 (W=2), dir14 = 101 (W=1), dir15 = 010 (6%4).",
+        "solucionReferencia" : "Dirección = $4 \\cdot Y_u + X_u$. Contenido (r w1 w0):\n$Y_u=0$: dir0 = 000, dir1 = 001, dir2 = 010, dir3 = 011.\n$Y_u=1$: dir4 = 101 ($X_u=0<1$, W=1), dir5 = 010 ($1+1=2$), dir6 = 011 (3), dir7 = 000 ($4\\%4=0$).\n$Y_u=2$: dir8 = 110 (W=2), dir9 = 101 (W=1), dir10 = 000 ($4\\%4$), dir11 = 001 ($5\\%4$).\n$Y_u=3$: dir12 = 111 (W=3), dir13 = 110 (W=2), dir14 = 101 (W=1), dir15 = 010 ($6\\%4$).",
         "tema" : "Síntesis de combinacionales (suma de minterms, ROM)",
         "tipo" : "desarrollo"
       },
@@ -221,7 +221,7 @@
         "pagina" : 2,
         "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/11-12-Q1-E1-Enunciado.pdf",
         "puntos" : 1.5,
-        "solucionReferencia" : "a) d = !a retrasado 10: a=1 en [10,50) y [70,100) -> d=0 en [20,60) y [80,100); d=1 en [0,20) y [60,80).\nb) a·d sin retardo: a=1 y d=1 en [10,20) y [70,80). e = esto retrasado 20: e=1 en [30,40) y [90,100).\nc) e+b sin retardo: e=1 [30,40), b=1 [50,60), e=1 [90,100). w = retrasado 20: w=1 en [50,60), [70,80) y a partir de 110 (fuera de ventana).\nd) w ideal = b retrasado 20 = 1 en [70,80). El pulso espurio es [50,60): lo causa el glitch de e (a·!a) al subir a, porque d tarda 10 u.t. en bajar y durante ese tiempo And ve a=1 y d=1.",
+        "solucionReferencia" : "a) $d = \\bar{a}$ retrasado 10: a=1 en $[10,50)$ y $[70,100)$ $\\rightarrow$ d=0 en $[20,60)$ y $[80,100)$; d=1 en $[0,20)$ y $[60,80)$.\nb) $a \\cdot d$ sin retardo: a=1 y d=1 en $[10,20)$ y $[70,80)$. e = esto retrasado 20: e=1 en $[30,40)$ y $[90,100)$.\nc) $e+b$ sin retardo: e=1 $[30,40)$, b=1 $[50,60)$, e=1 $[90,100)$. w = retrasado 20: w=1 en $[50,60)$, $[70,80)$ y a partir de 110 (fuera de ventana).\nd) w ideal = b retrasado 20 = 1 en $[70,80)$. El pulso espurio es $[50,60)$: lo causa el glitch de e ($a \\cdot \\bar{a}$) al subir a, porque d tarda 10 u.t. en bajar y durante ese tiempo And ve a=1 y d=1.",
         "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
         "tipo" : "desarrollo"
       }
@@ -240,6 +240,7 @@
     "material\/atenea\/Enunciats i Solucions dels Exàmens\/12-13-Q1-E2-Solucion.pdf"
   ],
   "id" : "6359FCA4-9BBE-4B77-9B18-8354834CF504",
+  "latex" : true,
   "minutos" : 63,
   "modo" : "estilo",
   "notaAntes" : 0.4222222222222223,
