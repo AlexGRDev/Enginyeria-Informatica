@@ -1,0 +1,76 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### U43326 · Diferència entre Nombres\n\n# Diferència entre Nombres\n\nLa diferència entre dos nombres es defineix com la suma del valor de la\ndiferència (en valor absolut) dígit a dígit. Per exemple, la diferència\nentre el 24 i el 2317 és 9:\n\n    0024\n    2317\n    ----\n    2313 = 2 + 3 + 1 + 3 = 9\n\nCal implementar la funció **recursiva** `int diferencia(int x, int y)`\namb la següent especificació:\n\n`PRE: ` Dos enters $x \\geq 0$ i $y \\geq 0$.\n\n`POST:` La diferència entre $x$ i $y$.\n\n## Observació\n\nLes funcions iteratives s'invalidaran. Només cal que envieu la funció en\nun fitxer `.cc`. La resta no es tindrà en compte.\n\nEs pot fer servir la funció `abs` afegint:\n\n    #include <cmath>\n    using namespace std;\n\n## Entrada\n\nDos enters $x \\geq 0$ i $y \\geq 0$.\n\n## Sortida\n\nLa diferència entre $x$ i $y$.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:00:23.165Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Primavera · no resuelto",
+        "id" : "P1",
+        "jutge" : "U43326_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Primavera",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T42335 · Seqüència de Nombres Diferents\n\n# Seqüència de nombres diferents\n\nIgual que en el problema \\\"Diferència entre Nombres\\\", la *diferència*\nentre dos nombres es defineix com la suma dels valors absoluts de les\nrestes dígit a dígit.\n\nUna sequencia és **creixent respecte a la diferència** entre adjacents\nsi per a cada 3 numeros adjacents de la sequencia:\n\n$$\\dots ~~ x_{i-1} ~~ x_i ~~ x_{i+1} ~~ \\dots$$\n\nes compleix que\n\n$$d_i \\leq d_{i+1}$$\n\non $d_i$ es la diferència entre $x_{i-1}$ i $x_i$, i $d_{i+1}$ es la\ndiferència entre $x_i$ i $x_{i+1}$.\n\nCal implementar un **programa** que digui si una seqüència és creixent\nrespecte a la diferència.\n\n## Entrada\n\nUna seqüència $S$ d'enters positius, sense sentinella.\n\n## Sortida\n\nEl programa ha d'escriure \\\"`SI`\\\" pel canal d'entrada en cas que $S$\nsigui creixent respecte a la diferència, i \\\"`NO`\\\" altrament.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T12:52:48.342Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Primavera · no resuelto",
+        "id" : "P2",
+        "jutge" : "T42335_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Primavera",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X39980 · Màxim de Seqüències per Paritat\n\n# Màxim de Seqüències per Paritat\n\nDonada una seqüència $S$, una **subseqüència** de parells (o senars) es\nuna seqüència d'elements parells (o senars) **adjacents** d'$S$. Per\nexemple, si $S = 4,6,5,8,9,12,14,16,5,4$, una subseqüència d'elements\nparells d'$S$ podria ser $4,6$, o $12,14$ o $12,14,16$, tot i que n'hi\nhauria alguna més (per a nombres senars seria igual, però òbviament amb\nsenars).\n\nUna **subseqüència màxima** de parells (senars) seria una subseqüència\ncom l'anterior, però que no està pròpiament continguda dins de cap altra\nsubseqüència de parells (senars). En l'exemple anterior, la subseqüència\n$12,14$ no és màxima, perquè està pròpiament continguda dins de\n$12,14,16$. En canvi, la subseqüència $12,14,16$ és màxima perquè no\nestà pròpiament continguda dins de cap altra subseqüència.\n\nCal implementar la **programa** que calculi la mida de la subseqüència\nmàxima de parells més llarga i la mida de la subseqüència màxima de\nsenars més llarga.\n\n## Entrada\n\nUna seqüència $S$ d'enters positius.\n\n## Sortida\n\nLa mida de la subseqüència màxima de parells més llarga i la mida de la\nsubseqüència màxima de senars més llarga.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T15:54:31.986Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Primavera · no resuelto",
+        "id" : "P3",
+        "jutge" : "X39980_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Primavera",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### Z95902 · Seqüència Pseudo Morse (I)\n\n# Seqüència Pseudo-Morse\n\nUna seqüència **pseudo-morse** és una seqüència que pot contenir aquests\ntres símbols:\n\n`                                  0 1 *`\n\nUna subseqüència de 0's i 1's representa un enter en base 2 escrit a\nl'inrevés. Per exemple, el 65 és, en binari:\n\n$$01000001$$\n\nperò escrit a l'inrevés és:\n\n$$10000010$$\n\nEn una seqüència pseudo-morse totes les subseqüències màximes de 0's i\n1's representen un caràcter ASCII. Això vol dir que el caràcter `*`\nsepara subseqüències màximes. Per exemple, `10000010` representa el 65,\nés a dir, el caràcter `A` (recordeu que escrivim amb el bit de menys pes\na l'esquerra de tot).\n\nCal fer un programa que llegeixi una seqüència pseudo-morse i que\ntransformi totes les subseqüències de 0's i 1's en caràcters ASCII.\n\nPer exemple, la seqüència:\n\n`                00010010 * 11110010 * 00110010 * 10000010 *`\n\nrepresenta la seqüència `HOLA`:\n\n`                00010010 * 11110010 * 00110010 * 10000010 *`\n\n`                  72         79         76         65`\n\n`                  H          O          L          A`\n\nNo totes les subseqüències de 0's i 1's han de tenir la mateixa mida.\nPer exemple, la seqüència:\n\n`                00010010 * 1111001 * 0011001 * 1000001 *`\n\ndonaria el mateix resultat que la seqüència anterior (altrament dit: els\nzeros a la dreta són opcionals).\n\n## Observació\n\nCom que llegireu caràcters, no cal que tingueu en compte els espais,\nperquè quan feu `cin >> c` (on `char c;`) no agafa els espais.\n\nÒbviament, no podeu fer servir la funció d'exponenciació ni tampoc no en\npodeu implementar cap vosaltres (penalització de -8 punts a la correcció\nmanual).\n\nEl format de la seqüència d'entrada sempre serà: 0's i 1's i un `*`.\n\n## Entrada\n\nPel canal d'entrada estàndard: una seqüència pseudo-Morse $S$.\n\n## Sortida\n\nLa transformació en ASCII de la seqüència pseudo-Morse $S$.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T20:03:45.020Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Primavera · no resuelto",
+        "id" : "P4",
+        "jutge" : "Z95902_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Primavera",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 4 problemas"
+  },
+  "fecha" : "2026-10-27T06:15:26Z",
+  "fuentes" : [
+    "U43326",
+    "T42335",
+    "X39980",
+    "Z95902"
+  ],
+  "id" : "2FB441DD-3BEB-42CE-97E5-3F5893E1D0A6",
+  "minutos" : 32,
+  "modo" : "jutge",
+  "notaAntes" : 1.8667639492609973,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   U43326.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:15:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:15:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/*\n   * PRE:  Dos enters $x \\geq 0$ i $y \\geq 0$.\n   * POST: La diferència entre $x$ i $y$.\n*\/\n\nint\tdiferencia(int x, int y)\n{\n\tif (x < 10 && y < 10)\n\t{\n\t\tif (x > y)\n\t\t\treturn (x - y);\n\t\treturn (y - x);\n\t}\n\treturn (diferencia(x % 10, y % 10) + diferencia(x \/ 10, y \/ 10));\n}",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T42335.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:15:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:15:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X39980.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:15:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:15:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   Z95902.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/27 07:15:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/27 07:15:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+    "P1" : "IE"
+  }
+}
