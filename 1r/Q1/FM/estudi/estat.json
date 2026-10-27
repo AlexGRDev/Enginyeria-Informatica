@@ -1,4 +1,12 @@
 {
+  "residuos" : [
+    {
+      "estimado" : 1.7249999999999999,
+      "fecha" : "2026-10-27T13:48:32Z",
+      "fuente" : "estilo",
+      "real" : 0
+    }
+  ],
   "temas" : {
     "Conjunts i Relacions" : {
       "dominio" : 0.5,
@@ -8,17 +16,29 @@
           "fecha" : "2026-10-25T17:46:45Z",
           "fuente" : "diagnostico",
           "nota" : 0.5
+        },
+        {
+          "evidencia" : "Mis errores · Parcial 1 FM (simulacro a medida): Conjunts, Inducció i Lògica: 0,0",
+          "fecha" : "2026-10-27T13:48:32Z",
+          "fuente" : "estilo",
+          "nota" : 0.5
         }
       ]
     },
     "Demostracions" : {
-      "dominio" : 1,
+      "dominio" : 0.7424330607546201,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
           "fecha" : "2026-10-25T17:46:45Z",
           "fuente" : "diagnostico",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Mis errores · Parcial 1 FM (simulacro a medida): Conjunts, Inducció i Lògica: 0,0",
+          "fecha" : "2026-10-27T13:48:32Z",
+          "fuente" : "estilo",
+          "nota" : 0.5
         }
       ]
     },
@@ -30,28 +50,46 @@
           "fecha" : "2026-10-25T17:46:45Z",
           "fuente" : "diagnostico",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Mis errores · Parcial 1 FM (simulacro a medida): Conjunts, Inducció i Lògica: 0,0",
+          "fecha" : "2026-10-27T13:48:32Z",
+          "fuente" : "estilo",
+          "nota" : 1
         }
       ]
     },
     "Lògica" : {
-      "dominio" : 6,
+      "dominio" : 4.454598362897221,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
           "fecha" : "2026-10-25T17:46:45Z",
           "fuente" : "diagnostico",
           "nota" : 6
+        },
+        {
+          "evidencia" : "Mis errores · Parcial 1 FM (simulacro a medida): Conjunts, Inducció i Lògica: 0,0",
+          "fecha" : "2026-10-27T13:48:32Z",
+          "fuente" : "estilo",
+          "nota" : 3
         }
       ]
     },
     "Sumatoris" : {
-      "dominio" : 2,
+      "dominio" : 1.4848661208517075,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico FM – Parcial 1 (Lògica, Inducció i Sumatoris, Demostracions i Conjunts): 2,0",
           "fecha" : "2026-10-25T17:46:45Z",
           "fuente" : "diagnostico",
           "nota" : 2
+        },
+        {
+          "evidencia" : "Mis errores · Parcial 1 FM (simulacro a medida): Conjunts, Inducció i Lògica: 0,0",
+          "fecha" : "2026-10-27T13:48:32Z",
+          "fuente" : "estilo",
+          "nota" : 1
         }
       ]
     }
