@@ -506,7 +506,9 @@
   "pdfsRevisados" : [
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129049?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129193?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json"
   ],
   "sesiones" : [
     {
