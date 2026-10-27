@@ -7,11 +7,11 @@ Generado el 2026-10-27. Ordenado por número de veces: arriba, lo que más hay q
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
-| No sabe abordar Funciones auxiliares | Funciones auxiliares | 11 | 2026-10-27 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
-| No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 10 | 2026-10-27 | Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha. |
-| No sabe abordar Tipos básicos | Tipos básicos | 9 | 2026-10-27 | Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'. |
-| No documentar las funciones con especificación pre/post | Funciones auxiliares | 5 | 2026-10-27 | Escribir @pre y @post sobre cada función antes de implementarla. |
-| No sabe abordar Recursividad | Recursividad | 2 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
+| No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 12 | 2026-10-27 | Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha. |
+| No sabe abordar Funciones auxiliares | Funciones auxiliares | 12 | 2026-10-27 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
+| No sabe abordar Tipos básicos | Tipos básicos | 10 | 2026-10-27 | Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'. |
+| No documentar las funciones con especificación pre/post | Funciones auxiliares | 6 | 2026-10-27 | Escribir @pre y @post sobre cada función antes de implementarla. |
+| No sabe abordar Recursividad | Recursividad | 3 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
 | Incumplir restricción explícita del enunciado | Tipos básicos | 1 | 2026-10-26 | Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y /10. |
 | No aplicar diseño descendente | Funciones auxiliares | 1 | 2026-10-26 | Extraer una acción escriu(n, c) que escriba n veces un carácter. |
 | Guardar una secuencia en un vector cuando no hace falta | Tipos básicos | 1 | 2026-10-26 | Calcular el dígito con 9 - (cont % 10) y llevar un solo contador. |

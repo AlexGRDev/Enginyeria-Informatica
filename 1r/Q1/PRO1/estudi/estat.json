@@ -29,11 +29,17 @@
       "fecha" : "2026-10-27T08:29:37Z",
       "fuente" : "estilo",
       "real" : 0
+    },
+    {
+      "estimado" : 1.2749297588126174,
+      "fecha" : "2026-10-27T09:20:01Z",
+      "fuente" : "estilo",
+      "real" : 0
     }
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.3855281696081838,
+      "dominio" : 0.3873079005688729,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -70,11 +76,17 @@
           "fecha" : "2026-10-27T08:29:37Z",
           "fuente" : "estilo",
           "nota" : 0.4
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
+          "fuente" : "estilo",
+          "nota" : 0.4
         }
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 2.1619307027257975,
+      "dominio" : 2.080527139213337,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -111,11 +123,17 @@
           "fecha" : "2026-10-27T08:29:37Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.0813615619439023,
+      "dominio" : 2.009866309249369,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -152,11 +170,17 @@
           "fecha" : "2026-10-27T08:29:37Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 1.0048887001584024,
+      "dominio" : 0.9796916954223629,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -193,11 +217,17 @@
           "fecha" : "2026-10-27T08:29:37Z",
           "fuente" : "estilo",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
+          "fuente" : "estilo",
+          "nota" : 0.8
         }
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.6249836527538988,
+      "dominio" : 1.572719597169791,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -234,11 +264,17 @@
           "fecha" : "2026-10-27T08:29:37Z",
           "fuente" : "estilo",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
+          "fuente" : "estilo",
+          "nota" : 1.2
         }
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 1.854245582612482,
+      "dominio" : 1.8106808216336765,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -275,11 +311,17 @@
           "fecha" : "2026-10-27T08:29:37Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
     "std::string" : {
-      "dominio" : 0.38552816961093966,
+      "dominio" : 0.38730790056991043,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -314,6 +356,12 @@
         {
           "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
           "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 0.4
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 (simulacro a medida): dígitos, rachas, bits y recursión: 0,0",
+          "fecha" : "2026-10-27T09:20:01Z",
           "fuente" : "estilo",
           "nota" : 0.4
         }
