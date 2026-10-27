@@ -39,7 +39,7 @@
             "tema" : "Conjunts i Relacions"
           }
         ],
-        "feedback" : "La pizarra no contiene ninguna de las dos demostraciones. Se escriben igualdades `A ∪ (B − C) = A ∪ B` y `(A ∪ B) − C = A ∪ B` que no son los enunciados pedidos (y la segunda es falsa en general). Se listan conjuntos como `A = [∅, A, B[∅, B], C[∅, C]]`, que no tienen sentido (A aparece dentro de sí mismo, mezcla de elementos y conjuntos). No hay método indicado, ni x genérico, ni doble inclusión, ni uso de definiciones de −, ∩, ∪. No se demuestra `A − (B ∩ C) = (A − B) ∪ (A − C)` ni que `A ∪ B ⊆ A ∩ C` implique `B ⊆ A` y `A ⊆ C`.",
+        "feedback" : "La pizarra no contiene ninguna de las dos demostraciones. Se escriben igualdades $A \\cup (B \\setminus C) = A \\cup B$ y $(A \\cup B) \\setminus C = A \\cup B$ que no son los enunciados pedidos (y la segunda es falsa en general). Se listan conjuntos como $A = [\\emptyset, A, B[\\emptyset, B], C[\\emptyset, C]]$, que no tienen sentido (A aparece dentro de sí mismo, mezcla de elementos y conjuntos). No hay método indicado, ni $x$ genérico, ni doble inclusión, ni uso de definiciones de $\\setminus$, $\\cap$, $\\cup$. No se demuestra $A \\setminus (B \\cap C) = (A \\setminus B) \\cup (A \\setminus C)$ ni que $A \\cup B \\subseteq A \\cap C$ implique $B \\subseteq A$ y $A \\subseteq C$.",
         "id" : "E1",
         "puntosObtenidos" : 0
       },
@@ -64,7 +64,7 @@
             "tema" : "Inducció"
           }
         ],
-        "feedback" : "Se resuelve un enunciado distinto: `∑_{i=0}^{n} (i+1\/2)\/(i+1\/3) ≤ (n+3)\/2`, con base n=0 y cota inventada, en lugar de `∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n` con n ≥ 1. No se despliega `∑_{k=1}^{3} 1\/k²` (apartado 1 sin hacer, ni se razona que un caso no demuestra). El paso base con n=0 es incorrecto para el enunciado y la aritmética es dudosa (`(1\/2)\/(1\/3) = 3\/2`, no `≤ 2\/3` como escribe). La H.I. se formula con cota `(n+2)\/2` y la T.I. con `(n+3)\/2`, mal ligadas al enunciado. En el paso inductivo se multiplica el término por la cota en vez de sumar (`∏` en lugar de `∑`), lo que es un error estructural. La conclusión no se sigue. Se aprecia la estructura base\/H.I.\/T.I. con n > 0, pero sobre el problema equivocado no puntúa.",
+        "feedback" : "Se resuelve un enunciado distinto: $\\sum_{i=0}^{n} \\frac{i+1\/2}{i+1\/3} \\leq \\frac{n+3}{2}$, con base $n=0$ y cota inventada, en lugar de $\\sum_{k=1}^{n} \\frac{1}{k^2} \\leq 2 - \\frac{1}{n}$ con $n \\geq 1$. No se despliega $\\sum_{k=1}^{3} \\frac{1}{k^2}$ (apartado 1 sin hacer, ni se razona que un caso no demuestra). El paso base con $n=0$ es incorrecto para el enunciado y la aritmética es dudosa ($\\frac{1\/2}{1\/3} = \\frac{3}{2}$, no $\\leq \\frac{2}{3}$ como escribe). La H.I. se formula con cota $\\frac{n+2}{2}$ y la T.I. con $\\frac{n+3}{2}$, mal ligadas al enunciado. En el paso inductivo se multiplica el término por la cota en vez de sumar ($\\prod$ en lugar de $\\sum$), lo que es un error estructural. La conclusión no se sigue. Se aprecia la estructura base\/H.I.\/T.I. con $n > 0$, pero sobre el problema equivocado no puntúa.",
         "id" : "E2",
         "puntosObtenidos" : 0
       },
@@ -77,21 +77,21 @@
             "tema" : "Lògica"
           }
         ],
-        "feedback" : "En blanco. No se niega φ ni se decide su verdad. Con y = −|x| − 1 se ve que φ es cierta.",
+        "feedback" : "En blanco. No se niega $\\varphi$ ni se decide su verdad. Con $y = -|x| - 1$ se ve que $\\varphi$ es cierta.",
         "id" : "E3",
         "puntosObtenidos" : 0
       }
     ],
-    "resumen" : "Nota 0 sobre 10. E1 no demuestra nada: la pizarra tiene igualdades que no son el enunciado y listas de conjuntos sin sentido. E2 resuelve otro problema (suma de (i+1\/2)\/(i+1\/3) con cota (n+2)\/2), no la suma de 1\/k² del enunciado. E3 en blanco. Prioridad: doble inclusión con x genérico, leer bien el enunciado antes de plantear la inducción, y practicar negación de cuantificadores con regla citada."
+    "resumen" : "Nota 0 sobre 10. E1 no demuestra nada: la pizarra tiene igualdades que no son el enunciado y listas de conjuntos sin sentido. E2 resuelve otro problema (suma de $\\frac{i+1\/2}{i+1\/3}$ con cota $\\frac{n+2}{2}$), no la suma de $\\frac{1}{k^2}$ del enunciado. E3 en blanco. Prioridad: doble inclusión con $x$ genérico, leer bien el enunciado antes de plantear la inducción, y practicar negación de cuantificadores con regla citada."
   },
   "diagnostico" : false,
   "examen" : {
     "duracionMinutos" : 90,
     "preguntas" : [
       {
-        "criterios" : "1) 2 p.: 0,25 mètode (doble inclusió, x genèric); 0,75 per cada inclusió ben justificada (def. de −, ∩, ∪, De Morgan\/cassos); 0,25 conclusió. No s'accepten exemples concrets ni diagrames de Venn com a demostració. 2) 1,5 p.: 0,25 mètode i hipòtesi; 0,625 per cada inclusió amb x genèric i justificació de cada pas.",
+        "criterios" : "1) 2 p.: 0,25 mètode (doble inclusió, $x$ genèric); 0,75 per cada inclusió ben justificada (def. de $\\setminus$, $\\cap$, $\\cup$, De Morgan\/cassos); 0,25 conclusió. No s'accepten exemples concrets ni diagrames de Venn com a demostració. 2) 1,5 p.: 0,25 mètode i hipòtesi; 0,625 per cada inclusió amb $x$ genèric i justificació de cada pas.",
         "ejercicio" : 3,
-        "enunciado" : "Siguin `A, B, C` conjunts qualssevol. Justifiqueu tots els passos.\n\n1) [2 p.] Demostreu que `A − (B ∩ C) = (A − B) ∪ (A − C)`.\n2) [1,5 p.] Demostreu que si `A ∪ B ⊆ A ∩ C` llavors `B ⊆ A` i `A ⊆ C`.\n\nIndiqueu en cada cas el mètode de demostració que feu servir.",
+        "enunciado" : "Siguin $A, B, C$ conjunts qualssevol. Justifiqueu tots els passos.\n\n1) [2 p.] Demostreu que $A \\setminus (B \\cap C) = (A \\setminus B) \\cup (A \\setminus C)$.\n2) [1,5 p.] Demostreu que si $A \\cup B \\subseteq A \\cap C$ llavors $B \\subseteq A$ i $A \\subseteq C$.\n\nIndiqueu en cada cas el mètode de demostració que feu servir.",
         "fuente" : "no sabe abordar Conjunts i Relacions",
         "id" : "E1",
         "opciones" : [
@@ -100,14 +100,14 @@
         "pagina" : 75,
         "pdf" : "material\/EXAMFM.pdf",
         "puntos" : 3.5,
-        "solucionReferencia" : "1) Doble inclusió amb x genèric.\n⊆) Sigui x ∈ A − (B ∩ C) qualsevol. Per def. de −: x ∈ A ∧ x ∉ B ∩ C. Per def. de ∩ i De Morgan: x ∉ B ∨ x ∉ C. Per tant (x ∈ A ∧ x ∉ B) ∨ (x ∈ A ∧ x ∉ C) (distributiva), és a dir x ∈ A − B o x ∈ A − C, i per def. de ∪: x ∈ (A − B) ∪ (A − C).\n⊇) Sigui x ∈ (A − B) ∪ (A − C). Per cassos. Cas 1: x ∈ A − B, llavors x ∈ A i x ∉ B; com que B ∩ C ⊆ B, x ∉ B ∩ C; per tant x ∈ A − (B ∩ C). Cas 2: x ∈ A − C, anàleg amb B ∩ C ⊆ C.\n(També es pot fer amb una cadena d'equivalències ⇔ justificant cada pas.)\n\n2) Prova directa. Hipòtesi: A ∪ B ⊆ A ∩ C.\nA ⊆ C: sigui x ∈ A. Llavors x ∈ A ∪ B, per la hipòtesi x ∈ A ∩ C, i per tant x ∈ C.\nB ⊆ A: sigui x ∈ B. Llavors x ∈ A ∪ B, per la hipòtesi x ∈ A ∩ C, i per tant x ∈ A.",
+        "solucionReferencia" : "1) Doble inclusió amb $x$ genèric.\n$\\subseteq$) Sigui $x \\in A \\setminus (B \\cap C)$ qualsevol. Per def. de $\\setminus$: $x \\in A \\wedge x \\notin B \\cap C$. Per def. de $\\cap$ i De Morgan: $x \\notin B \\vee x \\notin C$. Per tant $(x \\in A \\wedge x \\notin B) \\vee (x \\in A \\wedge x \\notin C)$ (distributiva), és a dir $x \\in A \\setminus B$ o $x \\in A \\setminus C$, i per def. de $\\cup$: $x \\in (A \\setminus B) \\cup (A \\setminus C)$.\n$\\supseteq$) Sigui $x \\in (A \\setminus B) \\cup (A \\setminus C)$. Per cassos. Cas 1: $x \\in A \\setminus B$, llavors $x \\in A$ i $x \\notin B$; com que $B \\cap C \\subseteq B$, $x \\notin B \\cap C$; per tant $x \\in A \\setminus (B \\cap C)$. Cas 2: $x \\in A \\setminus C$, anàleg amb $B \\cap C \\subseteq C$.\n(També es pot fer amb una cadena d'equivalències $\\Leftrightarrow$ justificant cada pas.)\n\n2) Prova directa. Hipòtesi: $A \\cup B \\subseteq A \\cap C$.\n$A \\subseteq C$: sigui $x \\in A$. Llavors $x \\in A \\cup B$, per la hipòtesi $x \\in A \\cap C$, i per tant $x \\in C$.\n$B \\subseteq A$: sigui $x \\in B$. Llavors $x \\in A \\cup B$, per la hipòtesi $x \\in A \\cap C$, i per tant $x \\in A$.",
         "tema" : "Conjunts i Relacions",
         "tipo" : "desarrollo"
       },
       {
-        "criterios" : "1) 1 p.: 0,5 desplegament i comparació correctes (49\/36 ≤ 60\/36); 0,5 raonament que un cas no és demostració. 2) 3 p.: 0,5 pas base correcte; 0,75 H.I. i T.I. ben formulades (H.I. amb n−1, T.I. amb n, n > 1; no s'accepta «n+1» com a hipòtesi); 0,75 separació de l'últim terme i ús explícit de la H.I.; 0,75 desigualtat final amb n genèric i justificant l'ús de n > 1 (signes); 0,25 conclusió. Es penalitza substituir valors concrets al pas inductiu i les igualtats aritmètiques falses.",
+        "criterios" : "1) 1 p.: 0,5 desplegament i comparació correctes ($\\frac{49}{36} \\leq \\frac{60}{36}$); 0,5 raonament que un cas no és demostració. 2) 3 p.: 0,5 pas base correcte; 0,75 H.I. i T.I. ben formulades (H.I. amb $n-1$, T.I. amb $n$, $n > 1$; no s'accepta «$n+1$» com a hipòtesi); 0,75 separació de l'últim terme i ús explícit de la H.I.; 0,75 desigualtat final amb $n$ genèric i justificant l'ús de $n > 1$ (signes); 0,25 conclusió. Es penalitza substituir valors concrets al pas inductiu i les igualtats aritmètiques falses.",
         "ejercicio" : 2,
-        "enunciado" : "1) [1 p.] Desplegueu a mà `∑_{k=1}^{3} 1\/k²` i comproveu que compleix `∑_{k=1}^{3} 1\/k² ≤ 2 − 1\/3`. Aquesta comprovació, demostra la desigualtat per a tot `n`? Raoneu-ho en una línia.\n\n2) [3 p.] Demostreu per inducció que per a tot `n ≥ 1`:\n`∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n`.\nDigueu explícitament quin és el pas base, quina és la hipòtesi d'inducció, quina és la tesi d'inducció i on feu servir la hipòtesi. Justifiqueu tots els passos.",
+        "enunciado" : "1) [1 p.] Desplegueu a mà $\\sum_{k=1}^{3} \\frac{1}{k^2}$ i comproveu que compleix $\\sum_{k=1}^{3} \\frac{1}{k^2} \\leq 2 - \\frac{1}{3}$. Aquesta comprovació, demostra la desigualtat per a tot $n$? Raoneu-ho en una línia.\n\n2) [3 p.] Demostreu per inducció que per a tot $n \\geq 1$:\n$\\sum_{k=1}^{n} \\frac{1}{k^2} \\leq 2 - \\frac{1}{n}$.\nDigueu explícitament quin és el pas base, quina és la hipòtesi d'inducció, quina és la tesi d'inducció i on feu servir la hipòtesi. Justifiqueu tots els passos.",
         "fuente" : "H.I. y T.I. mal formuladas; comprueba casos concretos en vez de demostrar; lectura errónea de la notación de sumatorio; errores aritméticos básicos",
         "id" : "E2",
         "opciones" : [
@@ -116,14 +116,14 @@
         "pagina" : 74,
         "pdf" : "material\/EXAMFM.pdf",
         "puntos" : 4,
-        "solucionReferencia" : "1) ∑_{k=1}^{3} 1\/k² = 1 + 1\/4 + 1\/9 = 36\/36 + 9\/36 + 4\/36 = 49\/36. I 2 − 1\/3 = 5\/3 = 60\/36. Com que 49\/36 ≤ 60\/36, es compleix per n = 3. No demostra res per a tot n: comprovar casos concrets només dona exemples (només serveix per refutar un enunciat universal).\n\n2) Pas base n = 1: ∑_{k=1}^{1} 1\/k² = 1 i 2 − 1\/1 = 1; 1 ≤ 1 és cert.\nPas inductiu. Sigui n > 1 qualsevol.\nH.I. (enunciat amb n−1): ∑_{k=1}^{n−1} 1\/k² ≤ 2 − 1\/(n−1).\nT.I. (enunciat amb n): ∑_{k=1}^{n} 1\/k² ≤ 2 − 1\/n.\nDemostració: ∑_{k=1}^{n} 1\/k² = ∑_{k=1}^{n−1} 1\/k² + 1\/n² ≤(H.I., sumant 1\/n² als dos costats) 2 − 1\/(n−1) + 1\/n².\nFalta veure 2 − 1\/(n−1) + 1\/n² ≤ 2 − 1\/n ⇔ 1\/n² ≤ 1\/(n−1) − 1\/n = 1\/(n(n−1)) ⇔ (multiplicant per n²(n−1) > 0, ja que n > 1) n−1 ≤ n, que és cert. Per tant la T.I. és certa.",
+        "solucionReferencia" : "1) $\\sum_{k=1}^{3} \\frac{1}{k^2} = 1 + \\frac{1}{4} + \\frac{1}{9} = \\frac{36}{36} + \\frac{9}{36} + \\frac{4}{36} = \\frac{49}{36}$. I $2 - \\frac{1}{3} = \\frac{5}{3} = \\frac{60}{36}$. Com que $\\frac{49}{36} \\leq \\frac{60}{36}$, es compleix per $n = 3$. No demostra res per a tot $n$: comprovar casos concrets només dona exemples (només serveix per refutar un enunciat universal).\n\n2) Pas base $n = 1$: $\\sum_{k=1}^{1} \\frac{1}{k^2} = 1$ i $2 - \\frac{1}{1} = 1$; $1 \\leq 1$ és cert.\nPas inductiu. Sigui $n > 1$ qualsevol.\nH.I. (enunciat amb $n-1$): $\\sum_{k=1}^{n-1} \\frac{1}{k^2} \\leq 2 - \\frac{1}{n-1}$.\nT.I. (enunciat amb $n$): $\\sum_{k=1}^{n} \\frac{1}{k^2} \\leq 2 - \\frac{1}{n}$.\nDemostració: $\\sum_{k=1}^{n} \\frac{1}{k^2} = \\sum_{k=1}^{n-1} \\frac{1}{k^2} + \\frac{1}{n^2} \\overset{\\text{H.I.}}{\\leq} 2 - \\frac{1}{n-1} + \\frac{1}{n^2}$ (H.I., sumant $\\frac{1}{n^2}$ als dos costats).\nFalta veure $2 - \\frac{1}{n-1} + \\frac{1}{n^2} \\leq 2 - \\frac{1}{n} \\Leftrightarrow \\frac{1}{n^2} \\leq \\frac{1}{n-1} - \\frac{1}{n} = \\frac{1}{n(n-1)} \\Leftrightarrow$ (multiplicant per $n^2(n-1) > 0$, ja que $n > 1$) $n-1 \\leq n$, que és cert. Per tant la T.I. és certa.",
         "tema" : "Inducció",
         "tipo" : "desarrollo"
       },
       {
-        "criterios" : "1) 1 p.: 0,25 per cada pas correcte amb la regla citada (¬∀, ¬∃, De Morgan, negació de desigualtats); sense citar regla, màxim 0,5. 2) 1,5 p.: 0,25 decisió correcta (certa); 0,5 elecció d'un y que depèn de x amb x genèric; 0,5 comprovació de y < x; 0,25 comprovació de y² > x. No s'accepta provar només alguns valors de x.",
+        "criterios" : "1) 1 p.: 0,25 per cada pas correcte amb la regla citada ($\\neg\\forall$, $\\neg\\exists$, De Morgan, negació de desigualtats); sense citar regla, màxim 0,5. 2) 1,5 p.: 0,25 decisió correcta (certa); 0,5 elecció d'un $y$ que depèn de $x$ amb $x$ genèric; 0,5 comprovació de $y < x$; 0,25 comprovació de $y^2 > x$. No s'accepta provar només alguns valors de $x$.",
         "ejercicio" : 1,
-        "enunciado" : "Considereu l'enunciat `φ ≡ ∀x ∈ ℝ ∃y ∈ ℝ (y < x ∧ y² > x)`.\n\n1) [1 p.] Escriviu la negació de `φ` com una fórmula on no hi hagi cap negació davant d'un quantificador ni d'una conjunció. Indiqueu la regla que apliqueu a cada pas.\n2) [1,5 p.] Decidiu si `φ` és certa o falsa i demostreu-ho.",
+        "enunciado" : "Considereu l'enunciat $\\varphi \\equiv \\forall x \\in \\mathbb{R}\\ \\exists y \\in \\mathbb{R}\\ (y < x \\wedge y^2 > x)$.\n\n1) [1 p.] Escriviu la negació de $\\varphi$ com una fórmula on no hi hagi cap negació davant d'un quantificador ni d'una conjunció. Indiqueu la regla que apliqueu a cada pas.\n2) [1,5 p.] Decidiu si $\\varphi$ és certa o falsa i demostreu-ho.",
         "fuente" : "no justifica las reglas aplicadas",
         "id" : "E3",
         "opciones" : [
@@ -132,7 +132,7 @@
         "pagina" : 20,
         "pdf" : "material\/EXAMFM.pdf",
         "puntos" : 2.5,
-        "solucionReferencia" : "1) ¬∀x ∃y (y<x ∧ y²>x) ≡ ∃x ¬∃y (y<x ∧ y²>x)  [negació de ∀: ¬∀ ≡ ∃¬]\n≡ ∃x ∀y ¬(y<x ∧ y²>x)  [negació de ∃: ¬∃ ≡ ∀¬]\n≡ ∃x ∀y (¬(y<x) ∨ ¬(y²>x))  [De Morgan: ¬(p∧q) ≡ ¬p ∨ ¬q]\n≡ ∃x ∀y (y ≥ x ∨ y² ≤ x)  [negació de < i >].\n\n2) φ és certa. Sigui x ∈ ℝ qualsevol i triem y = −|x| − 1 (depèn de x, com permet ∀x∃y).\ny < x: y = −|x| − 1 < −|x| ≤ x.\ny² > x: y² = (|x|+1)² = x² + 2|x| + 1 = |x| + (x² + |x| + 1) > |x| ≥ x, perquè x² + |x| + 1 > 0.\nAixí existeix y amb y < x ∧ y² > x per a cada x, i φ és certa (per tant la seva negació és falsa).",
+        "solucionReferencia" : "1) $\\neg\\forall x\\, \\exists y\\, (y<x \\wedge y^2>x) \\equiv \\exists x\\, \\neg\\exists y\\, (y<x \\wedge y^2>x)$  [negació de $\\forall$: $\\neg\\forall \\equiv \\exists\\neg$]\n$\\equiv \\exists x\\, \\forall y\\, \\neg(y<x \\wedge y^2>x)$  [negació de $\\exists$: $\\neg\\exists \\equiv \\forall\\neg$]\n$\\equiv \\exists x\\, \\forall y\\, (\\neg(y<x) \\vee \\neg(y^2>x))$  [De Morgan: $\\neg(p\\wedge q) \\equiv \\neg p \\vee \\neg q$]\n$\\equiv \\exists x\\, \\forall y\\, (y \\geq x \\vee y^2 \\leq x)$  [negació de $<$ i $>$].\n\n2) $\\varphi$ és certa. Sigui $x \\in \\mathbb{R}$ qualsevol i triem $y = -|x| - 1$ (depèn de $x$, com permet $\\forall x\\,\\exists y$).\n$y < x$: $y = -|x| - 1 < -|x| \\leq x$.\n$y^2 > x$: $y^2 = (|x|+1)^2 = x^2 + 2|x| + 1 = |x| + (x^2 + |x| + 1) > |x| \\geq x$, perquè $x^2 + |x| + 1 > 0$.\nAixí existeix $y$ amb $y < x \\wedge y^2 > x$ per a cada $x$, i $\\varphi$ és certa (per tant la seva negació és falsa).",
         "tema" : "Lògica",
         "tipo" : "desarrollo"
       }
@@ -145,6 +145,7 @@
     "material\/raco\/Examens_FM_-_2026-07-27T122117.133.pdf"
   ],
   "id" : "53953F81-34E5-4CC8-B664-B2807E22A51D",
+  "latex" : true,
   "minutos" : 29,
   "modo" : "estilo",
   "notaAntes" : 1.7249999999999999,
