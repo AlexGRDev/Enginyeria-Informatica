@@ -3,14 +3,14 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-26. Objetivo: **10,0**. Próximo examen: Parcial 1 IC, 2026-10-30 (en 4 días).
+Generado por Kiwi GEI el 2026-10-27. Objetivo: **9,5**. Próximo examen: Parcial 1 IC, 2026-10-30 (en 3 días).
 
-**Estimación: 0,4 / 10** (-9,6 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,4.
+**Estimación: 0,4 / 10** (-9,1 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,4.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 25 % | 1,3 | 4 | 2026-10-26 (estilo) |
-| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 20 % | 0,2 | 4 | 2026-10-26 (estilo) |
+| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 25 % | 1,2 | 4 | 2026-10-26 (estilo) |
+| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 20 % | 0,4 | 4 | 2026-10-26 (estilo) |
 | Síntesis de combinacionales (suma de minterms, ROM) | 25 % | 0,0 | 4 | 2026-10-26 (estilo) |
 | Modelo temporal (tiempos de propagación, caminos críticos) | 20 % | 0,0 | 4 | 2026-10-26 (estilo) |
 | Circuitos secuenciales (fuera del examen) | 3 % | 0,0 | 1 | 2026-10-26 (real) |
