@@ -135,9 +135,9 @@
         "tipo" : "codigo"
       },
       {
-        "criterios" : "0,75 recorrido de dígitos con %10 y \/10 con condición de parada correcta (n >= 10, un dígito da 0); 0,5 comparación correcta entre dígitos consecutivos; 0,5 main con lectura for de m y uso de la función; 0,5 casos límite (0, un dígito); 0,25 pre\/post en la función. No implementar la función: 0.",
+        "criterios" : "0,75 recorrido de dígitos con %10 y \/10 con condición de parada correcta ($n \\ge 10$, un dígito da 0); 0,5 comparación correcta entre dígitos consecutivos; 0,5 main con lectura for de m y uso de la función; 0,5 casos límite (0, un dígito); 0,25 pre\/post en la función. No implementar la función: 0.",
         "ejercicio" : 0,
-        "enunciado" : "Escribe una función int canvis(int n) que, dado un entero n >= 0, devuelva el número de posiciones en que dos dígitos consecutivos de n (en su escritura decimal) son distintos. Escribe también un programa principal que lea una secuencia de enteros no negativos y, para cada uno, escriba su resultado en una línea.\n\nEntrada: primero un entero m >= 0, y después m enteros n >= 0.\nSalida: para cada n, una línea con canvis(n).\n\nEjemplo:\nEntrada: 4 1223 7 0 1213\nSalida:\n1\n0\n0\n3\n\nDebes usar la función canvis. No puedes convertir los números a string ni guardarlos en vectores.",
+        "enunciado" : "Escribe una función int canvis(int n) que, dado un entero $n \\ge 0$, devuelva el número de posiciones en que dos dígitos consecutivos de n (en su escritura decimal) son distintos. Escribe también un programa principal que lea una secuencia de enteros no negativos y, para cada uno, escriba su resultado en una línea.\n\nEntrada: primero un entero $m \\ge 0$, y después $m$ enteros $n \\ge 0$.\nSalida: para cada n, una línea con canvis(n).\n\nEjemplo:\nEntrada: 4 1223 7 0 1213\nSalida:\n1\n0\n0\n3\n\nDebes usar la función canvis. No puedes convertir los números a string ni guardarlos en vectores.",
         "fuente" : "No sabe abordar Funciones auxiliares",
         "id" : "P2",
         "opciones" : [
@@ -146,14 +146,14 @@
         "pagina" : 0,
         "pdf" : "",
         "puntos" : 2.5,
-        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/\/ Pre: n >= 0\n\/\/ Post: devuelve el numero de pares de digitos consecutivos distintos de n\nint canvis(int n) {\n    int res = 0;\n    while (n >= 10) {\n        if (n%10 != (n\/10)%10) ++res;\n        n = n\/10;\n    }\n    return res;\n}\n\nint main() {\n    int m;\n    cin >> m;\n    for (int i = 0; i < m; ++i) {\n        int n;\n        cin >> n;\n        cout << canvis(n) << endl;\n    }\n}\n\nComprobación: 1223 -> pares (3,2) distinto, (2,2) igual, (2,1) distinto = 2. NOTA: el ejemplo del enunciado debe leerse como 1223 -> 2; salida correcta del ejemplo: 2, 0, 0, 3.",
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\n\/\/ Pre: n >= 0\n\/\/ Post: devuelve el numero de pares de digitos consecutivos distintos de n\nint canvis(int n) {\n    int res = 0;\n    while (n >= 10) {\n        if (n%10 != (n\/10)%10) ++res;\n        n = n\/10;\n    }\n    return res;\n}\n\nint main() {\n    int m;\n    cin >> m;\n    for (int i = 0; i < m; ++i) {\n        int n;\n        cin >> n;\n        cout << canvis(n) << endl;\n    }\n}\n\nComprobación: $1223 \\to$ pares (3,2) distinto, (2,2) igual, (2,1) distinto = 2. NOTA: el ejemplo del enunciado debe leerse como $1223 \\to 2$; salida correcta del ejemplo: 2, 0, 0, 3.",
         "tema" : "Funciones auxiliares",
         "tipo" : "codigo"
       },
       {
         "criterios" : "0,75 extracción del último dígito con %10 y avance con \/10; 0,75 acumulación valor += bit*peso; 0,5 actualización del peso (peso *= 2); 0,5 salida y condición del bucle correctas. Usar string\/char\/vector: 0 (incumple la restricción).",
         "ejercicio" : 0,
-        "enunciado" : "Escribe un programa que lea un entero n > 0 escrito solo con dígitos 0 y 1 (interpretado como número binario, máximo 9 dígitos) y escriba el valor del número en decimal. Restricción: debes tratar el dato solo como int, usando únicamente las operaciones +, -, *, \/, % (no string, no char, no vectores).\n\nEntrada: un entero n formado por 0 y 1.\nSalida: su valor en decimal.\n\nEjemplo:\nEntrada: 101101\nSalida: 45",
+        "enunciado" : "Escribe un programa que lea un entero $n > 0$ escrito solo con dígitos 0 y 1 (interpretado como número binario, máximo 9 dígitos) y escriba el valor del número en decimal. Restricción: debes tratar el dato solo como int, usando únicamente las operaciones +, -, *, \/, % (no string, no char, no vectores).\n\nEntrada: un entero n formado por 0 y 1.\nSalida: su valor en decimal.\n\nEjemplo:\nEntrada: 101101\nSalida: 45",
         "fuente" : "No sabe abordar Tipos básicos; Incumplir restricción explícita del enunciado",
         "id" : "P3",
         "opciones" : [
@@ -162,14 +162,14 @@
         "pagina" : 0,
         "pdf" : "",
         "puntos" : 2.5,
-        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    int valor = 0;\n    int peso = 1;\n    while (n > 0) {\n        valor += (n%10)*peso;\n        peso *= 2;\n        n = n\/10;\n    }\n    cout << valor << endl;\n}\n\n101101 -> 1+4+8+32 = 45.",
+        "solucionReferencia" : "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    int valor = 0;\n    int peso = 1;\n    while (n > 0) {\n        valor += (n%10)*peso;\n        peso *= 2;\n        n = n\/10;\n    }\n    cout << valor << endl;\n}\n\n$101101 \\to 1+4+8+32 = 45$.",
         "tema" : "Tipos básicos",
         "tipo" : "codigo"
       },
       {
         "criterios" : "0,75 caso base x == 0 and y == 0; 0,75 paso recursivo con x\/10, y\/10; 0,5 valor absoluto correcto; 0,25 main correcto; 0,25 pre\/post escritas. Versión iterativa: 0.",
         "ejercicio" : 0,
-        "enunciado" : "Escribe una función recursiva int difDigits(int x, int y) que, dados dos enteros x, y >= 0, devuelva la suma de las diferencias absolutas entre los dígitos que ocupan la misma posición (contando desde las unidades). Si un número tiene menos dígitos que el otro, sus dígitos que faltan se consideran 0. Documenta la función con su especificación pre\/post. Escribe también el main que lee x e y y escribe el resultado.\n\nEntrada: dos enteros x e y.\nSalida: el resultado de difDigits(x, y).\n\nEjemplo:\nEntrada: 359 42\nSalida: 11\n(|9-2| + |5-4| + |3-0| = 7+1+3 = 11)\n\nLa función debe ser recursiva (una versión iterativa puntúa 0).",
+        "enunciado" : "Escribe una función recursiva int difDigits(int x, int y) que, dados dos enteros $x, y \\ge 0$, devuelva la suma de las diferencias absolutas entre los dígitos que ocupan la misma posición (contando desde las unidades). Si un número tiene menos dígitos que el otro, sus dígitos que faltan se consideran 0. Documenta la función con su especificación pre\/post. Escribe también el main que lee x e y y escribe el resultado.\n\nEntrada: dos enteros x e y.\nSalida: el resultado de difDigits(x, y).\n\nEjemplo:\nEntrada: 359 42\nSalida: 11\n($|9-2| + |5-4| + |3-0| = 7+1+3 = 11$)\n\nLa función debe ser recursiva (una versión iterativa puntúa 0).",
         "fuente" : "No sabe abordar Recursividad; No documentar las funciones con especificación pre\/post",
         "id" : "P4",
         "opciones" : [
@@ -190,6 +190,7 @@
 
   ],
   "id" : "97853C23-AD90-4373-8E47-85C8CB427FCD",
+  "latex" : true,
   "minutos" : 38,
   "modo" : "estilo",
   "notaAntes" : 1.3851695854670019,
