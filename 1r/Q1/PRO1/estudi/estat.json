@@ -23,11 +23,17 @@
       "fecha" : "2026-10-27T07:24:37Z",
       "fuente" : "jutge",
       "real" : 0
+    },
+    {
+      "estimado" : 1.3180799244367634,
+      "fecha" : "2026-10-27T08:29:37Z",
+      "fuente" : "estilo",
+      "real" : 0
     }
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.3831710856277346,
+      "dominio" : 0.3855281696081838,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -58,11 +64,17 @@
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
           "nota" : 0.4
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 0.4
         }
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 2.2697419763265594,
+      "dominio" : 2.1619307027257975,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -93,11 +105,17 @@
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
           "nota" : 1.8
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.176050222438499,
+      "dominio" : 2.0813615619439023,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -128,11 +146,17 @@
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
           "nota" : 1.8
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 1.005684941996429,
+      "dominio" : 1.0048887001584024,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -163,11 +187,17 @@
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 1
         }
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.7267772246027242,
+      "dominio" : 1.6249836527538988,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -198,11 +228,17 @@
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 1
         }
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 1.9119429551069602,
+      "dominio" : 1.854245582612482,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -233,11 +269,17 @@
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
+          "nota" : 1.5
         }
       ]
     },
     "std::string" : {
-      "dominio" : 0.3831710856319613,
+      "dominio" : 0.38552816961093966,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -267,6 +309,12 @@
           "evidencia" : "Simulacro Jutge · 4 problemas: 0,0",
           "fecha" : "2026-10-27T07:24:37Z",
           "fuente" : "jutge",
+          "nota" : 0.4
+        },
+        {
+          "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): funciones auxiliares, E\/S, tipos básicos y recursividad: 0,0",
+          "fecha" : "2026-10-27T08:29:37Z",
+          "fuente" : "estilo",
           "nota" : 0.4
         }
       ]
