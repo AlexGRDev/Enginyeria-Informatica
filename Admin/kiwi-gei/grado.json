@@ -492,6 +492,7 @@
 
   },
   "ocultas" : [
+    "2026-10-27|PRO1|17:00",
     "2026-10-27|F|16:00"
   ],
   "pdfsRevisados" : [
@@ -507,7 +508,19 @@
       "id" : "extra|F|1793113200",
       "inicio" : "2026-10-27T15:00:00Z",
       "tipo" : "P",
-      "titulo" : "Recordatori Taller Fisica F50 "
+      "titulo" : "Clase de F"
+    },
+    {
+      "asignatura" : "PRO1",
+      "aulas" : "A6203",
+      "horas" : 3,
+      "id" : "extra|PRO1|1793113200",
+      "inicio" : "2026-10-27T15:00:00Z",
+      "tipo" : "P",
+      "titulo" : "Clase de PRO1"
     }
+  ],
+  "simulacrosClase" : [
+
   ]
 }
