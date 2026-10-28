@@ -41,11 +41,17 @@
       "fecha" : "2026-10-27T10:19:56Z",
       "fuente" : "estilo",
       "real" : 2.38
+    },
+    {
+      "estimado" : 1.2628168013555061,
+      "fecha" : "2026-10-28T08:32:09Z",
+      "fuente" : "jutge",
+      "real" : 0.13
     }
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.3996640686742307,
+      "dominio" : 0.3997056588087084,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -94,11 +100,17 @@
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
           "nota" : 0.5
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
+          "nota" : 0.4
         }
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 2.4006338812685577,
+      "dominio" : 2.326268633100535,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -147,11 +159,17 @@
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
           "nota" : 5
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
+          "nota" : 1.8
         }
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.008784530361574,
+      "dominio" : 1.9457913105219633,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -200,11 +218,17 @@
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
           "nota" : 2
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
+          "nota" : 1.5
         }
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 0.981918413036433,
+      "dominio" : 0.9593948768607415,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -253,11 +277,17 @@
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
+          "nota" : 0.8
         }
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.5647462409899915,
+      "dominio" : 1.5195865747538564,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -306,11 +336,17 @@
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
+          "nota" : 1.2
         }
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 1.7766161136645158,
+      "dominio" : 1.7423679477807321,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -359,11 +395,17 @@
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
+          "nota" : 1.5
         }
       ]
     },
     "std::string" : {
-      "dominio" : 0.3886995302788934,
+      "dominio" : 0.39009865470619287,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -411,6 +453,12 @@
           "evidencia" : "Mis errores · Parcial PRO1 a medida (45 min): 2,4",
           "fecha" : "2026-10-27T10:19:56Z",
           "fuente" : "estilo",
+          "nota" : 0.4
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 0,1",
+          "fecha" : "2026-10-28T08:32:09Z",
+          "fuente" : "jutge",
           "nota" : 0.4
         }
       ]

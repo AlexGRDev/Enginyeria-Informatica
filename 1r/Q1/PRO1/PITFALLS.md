@@ -3,15 +3,17 @@
 <!-- kiwi-gei:pitfalls:inici -->
 ## Contador de errores (Kiwi GEI)
 
-Generado el 2026-10-27. Ordenado por número de veces: arriba, lo que más hay que reforzar.
+Generado el 2026-10-28. Ordenado por número de veces: arriba, lo que más hay que reforzar.
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
-| No sabe abordar Funciones auxiliares | Funciones auxiliares | 13 | 2026-10-27 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
-| No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 12 | 2026-10-27 | Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha. |
-| No sabe abordar Tipos básicos | Tipos básicos | 11 | 2026-10-27 | Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'. |
+| No sabe abordar Funciones auxiliares | Funciones auxiliares | 15 | 2026-10-28 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
+| No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 13 | 2026-10-28 | Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha. |
+| No sabe abordar Tipos básicos | Tipos básicos | 12 | 2026-10-28 | Practicar la generación de números con bucles anidados sobre dígitos y la escritura con una acción auxiliar. |
 | No documentar las funciones con especificación pre/post | Funciones auxiliares | 7 | 2026-10-27 | Escribir @pre y @post sobre cada función antes de implementarla. |
 | No sabe abordar Recursividad | Recursividad | 4 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
+| Uso incorrecto de punteros sobre variables escalares | Punteros y aritmética de punteros | 1 | 2026-10-28 | Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `/10`. |
+| Código redundante o innecesariamente complicado | Tipos básicos | 1 | 2026-10-28 | Devolver directamente la expresión booleana. |
 | Código redundante o innecesariamente complicado | Cadenas estilo C (char*) | 1 | 2026-10-27 | Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales. |
 | Incumplir restricción explícita del enunciado | Tipos básicos | 1 | 2026-10-26 | Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y /10. |
 | No aplicar diseño descendente | Funciones auxiliares | 1 | 2026-10-26 | Extraer una acción escriu(n, c) que escriba n veces un carácter. |

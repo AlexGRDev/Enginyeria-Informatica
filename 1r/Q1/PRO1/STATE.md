@@ -3,19 +3,19 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-27. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 2 días).
+Generado por Kiwi GEI el 2026-10-28. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 1 días).
 
-**Estimación: 1,3 / 10** (-8,7 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,3.
+**Estimación: 1,2 / 10** (-8,8 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,2.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | 1,8 | 8 | 2026-10-27 (estilo) |
-| Punteros y aritmética de punteros | 20 % | 1,0 | 8 | 2026-10-27 (estilo) |
-| Cadenas estilo C (char*) | 20 % | 0,4 | 8 | 2026-10-27 (estilo) |
-| Funciones auxiliares | 15 % | 2,0 | 8 | 2026-10-27 (estilo) |
-| Recursividad | 12 % | 1,6 | 8 | 2026-10-27 (estilo) |
-| std::string | 10 % | 0,4 | 8 | 2026-10-27 (estilo) |
-| E/S con std::cin/std::cout | 8 % | 2,4 | 8 | 2026-10-27 (estilo) |
+| Tipos básicos | 15 % | 1,7 | 9 | 2026-10-28 (jutge) |
+| Punteros y aritmética de punteros | 20 % | 1,0 | 9 | 2026-10-28 (jutge) |
+| Cadenas estilo C (char*) | 20 % | 0,4 | 9 | 2026-10-28 (jutge) |
+| Funciones auxiliares | 15 % | 1,9 | 9 | 2026-10-28 (jutge) |
+| Recursividad | 12 % | 1,5 | 9 | 2026-10-28 (jutge) |
+| std::string | 10 % | 0,4 | 9 | 2026-10-28 (jutge) |
+| E/S con std::cin/std::cout | 8 % | 2,3 | 9 | 2026-10-28 (jutge) |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08
