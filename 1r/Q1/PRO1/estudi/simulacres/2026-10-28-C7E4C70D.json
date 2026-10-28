@@ -1,0 +1,38 @@
+{
+  "diagnostico" : false,
+  "ejercicio" : true,
+  "examen" : {
+    "duracionMinutos" : 20,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### P37500 · Primers nombres\n\n# Primers nombres\n\nFeu un programa que llegeixi un nombre $n$, i que escrigui tots els\nnombres entre 0 i $n$.\n\n## Entrada\n\nL'entrada consisteix en un natural $n$.\n\n## Sortida\n\nEscriviu en ordre tots els naturals entre 0 i $n$.\n\n## Informació del problema\n\nAutoria: Jordi Petit\n\nGeneració: 2026-01-25T10:34:13.733Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Tipos básicos · no resuelto",
+        "id" : "P1",
+        "jutge" : "P37500_ca",
+        "puntos" : 10,
+        "solucionReferencia" : "",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Ejercicio · Tipos básicos · P37500"
+  },
+  "fecha" : "2026-10-28T15:37:49Z",
+  "fuentes" : [
+    "P37500"
+  ],
+  "id" : "C7E4C70D-4114-4992-B572-51E64D6A9E7F",
+  "minutos" : 6,
+  "modo" : "jutge",
+  "notaAntes" : 2.5468346100305683,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "#include <iostream>\n\n\/\/@pre: n > 0;\n\/\/@pos: retorna de 0 < n\n\nint\tmain(void)\n{\n\tint\tn;\n\tint\ti;\n\n\tstd::cin >> n;\n\ti = 0;\n\twhile (n-- >= 0)\n\t\tstd::cout << i++ << '\\n';\n\treturn (0);\n}"
+  },
+  "veredictos" : {
+    "P1" : "AC"
+  }
+}
