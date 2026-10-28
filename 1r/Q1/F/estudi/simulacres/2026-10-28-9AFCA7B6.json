@@ -1,4 +1,106 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 2,
+        "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Corrent Altern"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+
+        ],
+        "feedback" : "Correcta. R1 consume 48 W al ser la de mayor `R·I²` (rama de 5 Ω con 4 A).",
+        "id" : "T1",
+        "puntosObtenidos" : 0.8
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No usa que en resonancia la reactancia total es nula y la potencia es `V_ef²\/R`.",
+            "patron" : "no aplica Z = R en resonancia (P = Vef²\/R)",
+            "refuerzo" : "Memoriza: resonancia `ω = 1\/√(LC)`, `Z = R`, `I = V\/R`, `P = V_ef²\/R`. Haz 3 problemas RLC serie de ProblemesTema2.",
+            "tema" : "Corrent Altern"
+          }
+        ],
+        "feedback" : "Incorrecta. En resonancia `X_L = X_C`, luego `Z = R` y `P = V_ef²\/R`, de donde `R = 220²\/50 = 968 Ω` (opción a). 2968 Ω no sale de ninguna relación válida.",
+        "id" : "T2",
+        "puntosObtenidos" : -0.2
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Elige una opción sin comprobar las dos medidas en `V = ε·R\/(R_Th+R)`.",
+            "patron" : "no plantea el sistema de dos ecuaciones para Thévenin",
+            "refuerzo" : "Con dos medidas (R, V), divide las ecuaciones para obtener `R_Th` y luego `ε_Th`. Verifica siempre la opción elegida con ambos datos.",
+            "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone"
+          }
+        ],
+        "feedback" : "Incorrecta. Plantea `V = ε·R\/(R_Th+R)` con las dos medidas y resuelve el sistema: `R_Th = 250 Ω`, `ε_Th = 15 V` (opción b). Con a) y 12 V a 1000 Ω no se cumple: 12·1000\/1600 = 7,5 V.",
+        "id" : "T3",
+        "puntosObtenidos" : -0.2
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Da 10 mA como corriente inicial, cuando es la final. Una bobina se comporta como circuito abierto en t=0 y como cable en régimen estacionario.",
+            "patron" : "confunde condiciones inicial y final en circuito RL",
+            "refuerzo" : "RL: `I(t) = (ε\/R)(1 − e^{−t\/τ})`, `τ = L\/R`. Haz los problemas de transitorios RC\/RL de ProblemesTema2.",
+            "tema" : "Corrent Altern"
+          }
+        ],
+        "feedback" : "Incorrecta. La bobina impide el salto de corriente: `I(0) = 0`, `I(∞) = ε\/R = 10 mA` y `τ = L\/R = 10 µs`. La opción a) es la única cierta.",
+        "id" : "T4",
+        "puntosObtenidos" : -0.2
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No obtiene `|H| = R\/√(R²+X_L²)` ni despeja bien `ω` (le sale R\/(2L), con la fracción invertida).",
+            "patron" : "error en función de transferencia de filtro RL",
+            "refuerzo" : "Escribe `H = R\/(R + jωL)`, calcula el módulo, iguala y despeja. Practica filtros RC\/RL de ProblemesTema2.",
+            "tema" : "Corrent Altern"
+          }
+        ],
+        "feedback" : "Incorrecta. `|H| = R\/√(R²+(Lω)²) = 1\/√5` da `Lω = 2R`, es decir `ω = 2R\/L` (opción b). Te falta el divisor de tensión con la impedancia de la bobina.",
+        "id" : "T5",
+        "puntosObtenidos" : -0.2
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Problema de CC (Kirchhoff, Thévenin, condensador en estacionario) sin abordar.",
+            "patron" : "no sabe abordar Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+            "refuerzo" : "Repite este problema (nov 2021) desde cero: nudos y mallas, Thévenin con fuentes anuladas, condensador = circuito abierto en estacionario. Añade ProblemesTema1 problema 28.",
+            "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone"
+          }
+        ],
+        "feedback" : "En blanco: no he recibido ninguna imagen de pizarra, así que se puntúa 0. Se esperaba: `I3 = 35,3 mA` de A a B, `I2 = 28,1 mA` de B a A, `ε1 = 11,06 V`, `ε2 = 17,1 V`; Thévenin `ε_Th = 5,3 V`, `R_Th = 97,1 Ω`, `P_max = 72,3 mW`; `ΔV_R = 0`, `ΔV_C = 5,3 V`, `C = 0,57 µF`.",
+        "id" : "P1",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Problema de fasores e impedancias (serie-paralelo, potencia media) sin abordar.",
+            "patron" : "no sabe abordar Corrent Altern",
+            "refuerzo" : "Rehaz este problema (nov 2022) paso a paso: `I = V_R\/R` con su fase, `Z = V\/I`, `Z_AB = Z − R`, `V_AB = Z_AB·I`, `I_L = V_AB\/(jX_L)`, `I_p = I − I_L`. Haz 5 problemas de ProblemesTema2.",
+            "tema" : "Corrent Altern"
+          }
+        ],
+        "feedback" : "En blanco: no he recibido ninguna imagen de pizarra, así que se puntúa 0. Se esperaba: `I(t) = 1,8·cos(100πt − 14°) A`, `Z_total = 55,5∠14° Ω`, `P = 87,3 W`, `Z_AB = 3,9 + j13,44 Ω`, `V_AB = 25,2·cos(100πt + 60°) V`, `I_L = 2,52∠−30° A`, `I_p = 0,92∠117,6° A`.",
+        "id" : "P2",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Nota 0 sobre 10: los tests suman 0,8 - 0,8 = 0, así que la nota total queda en 0. P1 y P2 llegan en blanco, porque no he recibido ninguna imagen de pizarra y no puedo puntuar lo que no veo. Si esa resolución existe, reenvíala y se corrige. Solo acierta T1 (potencia con corrientes de rama). Los cuatro fallos de test son de Corrent Altern y Thévenin: en resonancia `Z = R` y `P = V_ef²\/R`, el inductor impide el salto de corriente con `τ = L\/R`, el divisor de tensión del filtro RL y el sistema de dos ecuaciones para Thévenin. Los tests incorrectos restan y, sin intentar los problemas, pierdes 6 puntos seguros."
+  },
   "diagnostico" : false,
   "examen" : {
     "duracionMinutos" : 120,
@@ -142,6 +244,7 @@
   "minutos" : 1,
   "modo" : "estilo",
   "notaAntes" : 0.8615384615384615,
+  "notaDespues" : 0.8004229652272852,
   "pizarras" : {
 
   },

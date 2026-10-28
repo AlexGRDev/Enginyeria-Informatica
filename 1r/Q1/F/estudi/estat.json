@@ -1,4 +1,12 @@
 {
+  "residuos" : [
+    {
+      "estimado" : 0.8615384615384615,
+      "fecha" : "2026-10-28T11:24:54Z",
+      "fuente" : "estilo",
+      "real" : 0
+    }
+  ],
   "temas" : {
     "Camp elèctric i potencial (E = -∇V)" : {
       "dominio" : 0,
@@ -12,13 +20,19 @@
       ]
     },
     "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone" : {
-      "dominio" : 0,
+      "dominio" : 1.0495828133362648,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
           "fecha" : "2026-10-25T11:15:03Z",
           "fuente" : "diagnostico",
           "nota" : 0
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 F: Corrent Continu i Corrent Altern (5 tests + 2 problemes): 0,0",
+          "fecha" : "2026-10-28T11:24:54Z",
+          "fuente" : "estilo",
+          "nota" : 2
         }
       ]
     },
@@ -29,6 +43,12 @@
           "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
           "fecha" : "2026-10-25T11:15:03Z",
           "fuente" : "diagnostico",
+          "nota" : 0
+        },
+        {
+          "evidencia" : "Simulacro Parcial 1 F: Corrent Continu i Corrent Altern (5 tests + 2 problemes): 0,0",
+          "fecha" : "2026-10-28T11:24:54Z",
+          "fuente" : "estilo",
           "nota" : 0
         }
       ]
@@ -45,7 +65,7 @@
       ]
     },
     "Càrrega elèctrica i llei de Coulomb" : {
-      "dominio" : 7,
+      "dominio" : 7.000000000000001,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",

@@ -3,15 +3,19 @@
 <!-- kiwi-gei:pitfalls:inici -->
 ## Contador de errores (Kiwi GEI)
 
-Generado el 2026-10-25. Ordenado por número de veces: arriba, lo que más hay que reforzar.
+Generado el 2026-10-28. Ordenado por número de veces: arriba, lo que más hay que reforzar.
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
-| no sabe abordar Corrent Altern | Corrent Altern | 1 | 2026-10-25 | Haz los problemas previos de la Pràctica 3 y 4 o 5 problemas de ProblemesTema2 con RC y RL serie. Para cada uno: `X_C = 1/(ωC)`, `Z = √(R²+X²)`, `I0 = V0/Z`, `φ = arctan(X/R)` con signo, e interpreta quién avanza (capacitivo: avanza la intensidad). |
-| no sabe abordar Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 1 | 2026-10-25 | Toma el borne negativo como referencia y escribe `V_A = ε·R_inf/(R_sup+R_inf)` en cada rama. Equilibrio: `V_A = V_B`, que es equivalente a `R/400 = Rx/10`. Repasa los apartados 1.3 a 1.5 de tu Pràctica 2 (ya los hiciste) y ProblemesTema1 problema 28. |
-| no sabe abordar Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | 1 | 2026-10-25 | Despeja `v_d = J/(n·e)` y vigila las potencias de 10. El resultado esperado es del orden de 10⁻⁴ a 10⁻⁵ m/s; si te sale mucho mayor, revisa. |
-| no sabe abordar Llei d'Ohm (V = IR, J = σE) i resistència | Llei d'Ohm (V = IR, J = σE) i resistència | 1 | 2026-10-25 | Practica la cadena completa con un hilo conductor: `R = ρL/A` (sección en m²: 1 mm² = 10⁻⁶ m²), `I = V/R`, `J = I/A`, `E = V/L`, comprobar `σE = J` con `σ = 1/ρ`. Haz al menos 3 problemas de ProblemesTema1 de este tipo. |
+| no sabe abordar Corrent Altern | Corrent Altern | 2 | 2026-10-28 | Rehaz este problema (nov 2022) paso a paso: `I = V_R/R` con su fase, `Z = V/I`, `Z_AB = Z − R`, `V_AB = Z_AB·I`, `I_L = V_AB/(jX_L)`, `I_p = I − I_L`. Haz 5 problemas de ProblemesTema2. |
+| no sabe abordar Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 2 | 2026-10-28 | Repite este problema (nov 2021) desde cero: nudos y mallas, Thévenin con fuentes anuladas, condensador = circuito abierto en estacionario. Añade ProblemesTema1 problema 28. |
+| error en función de transferencia de filtro RL | Corrent Altern | 1 | 2026-10-28 | Escribe `H = R/(R + jωL)`, calcula el módulo, iguala y despeja. Practica filtros RC/RL de ProblemesTema2. |
+| confunde condiciones inicial y final en circuito RL | Corrent Altern | 1 | 2026-10-28 | RL: `I(t) = (ε/R)(1 − e^{−t/τ})`, `τ = L/R`. Haz los problemas de transitorios RC/RL de ProblemesTema2. |
+| no plantea el sistema de dos ecuaciones para Thévenin | Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 1 | 2026-10-28 | Con dos medidas (R, V), divide las ecuaciones para obtener `R_Th` y luego `ε_Th`. Verifica siempre la opción elegida con ambos datos. |
+| no aplica Z = R en resonancia (P = Vef²/R) | Corrent Altern | 1 | 2026-10-28 | Memoriza: resonancia `ω = 1/√(LC)`, `Z = R`, `I = V/R`, `P = V_ef²/R`. Haz 3 problemas RLC serie de ProblemesTema2. |
 | no sabe abordar Camp elèctric i potencial (E = -∇V) | Camp elèctric i potencial (E = -∇V) | 1 | 2026-10-25 | Rehaz ProblemesTema1 problema 1 y otros dos problemas similares: `E = ΔV/d`, sentido de E hacia V decreciente por `E = −∇V`, `W = Q·ΔV`, `I = ΔQ/Δt`. Escribe siempre unidades. |
+| no sabe abordar Llei d'Ohm (V = IR, J = σE) i resistència | Llei d'Ohm (V = IR, J = σE) i resistència | 1 | 2026-10-25 | Practica la cadena completa con un hilo conductor: `R = ρL/A` (sección en m²: 1 mm² = 10⁻⁶ m²), `I = V/R`, `J = I/A`, `E = V/L`, comprobar `σE = J` con `σ = 1/ρ`. Haz al menos 3 problemas de ProblemesTema1 de este tipo. |
+| no sabe abordar Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | 1 | 2026-10-25 | Despeja `v_d = J/(n·e)` y vigila las potencias de 10. El resultado esperado es del orden de 10⁻⁴ a 10⁻⁵ m/s; si te sale mucho mayor, revisa. |
 <!-- kiwi-gei:pitfalls:fi -->
 
 | Fecha | Ejercicio | Error | Corrección |
