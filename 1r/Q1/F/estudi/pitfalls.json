@@ -41,27 +41,83 @@
   {
     "descripcion" : "Sin respuesta. No plantea las ramas como divisores de tensión ni la condición de equilibrio del puente.",
     "ejemplos" : [
-      "Sin respuesta. No plantea las ramas como divisores de tensión ni la condición de equilibrio del puente."
+      "Sin respuesta. No plantea las ramas como divisores de tensión ni la condición de equilibrio del puente.",
+      "Problema de CC (Kirchhoff, Thévenin, condensador en estacionario) sin abordar."
     ],
     "id" : "5E6BC525-F770-4E49-8113-7CB53AD58A68",
     "patron" : "no sabe abordar Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
     "primera" : "2026-10-25T11:15:03Z",
-    "refuerzo" : "Toma el borne negativo como referencia y escribe `V_A = ε·R_inf\/(R_sup+R_inf)` en cada rama. Equilibrio: `V_A = V_B`, que es equivalente a `R\/400 = Rx\/10`. Repasa los apartados 1.3 a 1.5 de tu Pràctica 2 (ya los hiciste) y ProblemesTema1 problema 28.",
+    "racha" : 0,
+    "refuerzo" : "Repite este problema (nov 2021) desde cero: nudos y mallas, Thévenin con fuentes anuladas, condensador = circuito abierto en estacionario. Añade ProblemesTema1 problema 28.",
     "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
-    "ultima" : "2026-10-25T11:15:03Z",
-    "veces" : 1
+    "ultima" : "2026-10-28T11:24:54Z",
+    "veces" : 2
   },
   {
     "descripcion" : "Sin respuesta. No lee el osciloscopio (T, f, V0, Vef) ni calcula X_C, Z, I0 y φ del RC serie.",
     "ejemplos" : [
-      "Sin respuesta. No lee el osciloscopio (T, f, V0, Vef) ni calcula X_C, Z, I0 y φ del RC serie."
+      "Sin respuesta. No lee el osciloscopio (T, f, V0, Vef) ni calcula X_C, Z, I0 y φ del RC serie.",
+      "Problema de fasores e impedancias (serie-paralelo, potencia media) sin abordar."
     ],
     "id" : "6DFA6F2C-A236-4726-AF81-DDCABB30D728",
     "patron" : "no sabe abordar Corrent Altern",
     "primera" : "2026-10-25T11:15:03Z",
-    "refuerzo" : "Haz los problemas previos de la Pràctica 3 y 4 o 5 problemas de ProblemesTema2 con RC y RL serie. Para cada uno: `X_C = 1\/(ωC)`, `Z = √(R²+X²)`, `I0 = V0\/Z`, `φ = arctan(X\/R)` con signo, e interpreta quién avanza (capacitivo: avanza la intensidad).",
+    "racha" : 0,
+    "refuerzo" : "Rehaz este problema (nov 2022) paso a paso: `I = V_R\/R` con su fase, `Z = V\/I`, `Z_AB = Z − R`, `V_AB = Z_AB·I`, `I_L = V_AB\/(jX_L)`, `I_p = I − I_L`. Haz 5 problemas de ProblemesTema2.",
     "tema" : "Corrent Altern",
-    "ultima" : "2026-10-25T11:15:03Z",
+    "ultima" : "2026-10-28T11:24:54Z",
+    "veces" : 2
+  },
+  {
+    "descripcion" : "No usa que en resonancia la reactancia total es nula y la potencia es `V_ef²\/R`.",
+    "ejemplos" : [
+      "No usa que en resonancia la reactancia total es nula y la potencia es `V_ef²\/R`."
+    ],
+    "id" : "4F68C09A-2D49-4A09-A8CF-3FFDFADEA20B",
+    "patron" : "no aplica Z = R en resonancia (P = Vef²\/R)",
+    "primera" : "2026-10-28T11:24:54Z",
+    "refuerzo" : "Memoriza: resonancia `ω = 1\/√(LC)`, `Z = R`, `I = V\/R`, `P = V_ef²\/R`. Haz 3 problemas RLC serie de ProblemesTema2.",
+    "tema" : "Corrent Altern",
+    "ultima" : "2026-10-28T11:24:54Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Elige una opción sin comprobar las dos medidas en `V = ε·R\/(R_Th+R)`.",
+    "ejemplos" : [
+      "Elige una opción sin comprobar las dos medidas en `V = ε·R\/(R_Th+R)`."
+    ],
+    "id" : "DAD7EC12-2377-4340-AF3E-8B7611F3BBAB",
+    "patron" : "no plantea el sistema de dos ecuaciones para Thévenin",
+    "primera" : "2026-10-28T11:24:54Z",
+    "refuerzo" : "Con dos medidas (R, V), divide las ecuaciones para obtener `R_Th` y luego `ε_Th`. Verifica siempre la opción elegida con ambos datos.",
+    "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+    "ultima" : "2026-10-28T11:24:54Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Da 10 mA como corriente inicial, cuando es la final. Una bobina se comporta como circuito abierto en t=0 y como cable en régimen estacionario.",
+    "ejemplos" : [
+      "Da 10 mA como corriente inicial, cuando es la final. Una bobina se comporta como circuito abierto en t=0 y como cable en régimen estacionario."
+    ],
+    "id" : "785C776E-755A-4E70-B45B-7FB6B1939CBA",
+    "patron" : "confunde condiciones inicial y final en circuito RL",
+    "primera" : "2026-10-28T11:24:54Z",
+    "refuerzo" : "RL: `I(t) = (ε\/R)(1 − e^{−t\/τ})`, `τ = L\/R`. Haz los problemas de transitorios RC\/RL de ProblemesTema2.",
+    "tema" : "Corrent Altern",
+    "ultima" : "2026-10-28T11:24:54Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "No obtiene `|H| = R\/√(R²+X_L²)` ni despeja bien `ω` (le sale R\/(2L), con la fracción invertida).",
+    "ejemplos" : [
+      "No obtiene `|H| = R\/√(R²+X_L²)` ni despeja bien `ω` (le sale R\/(2L), con la fracción invertida)."
+    ],
+    "id" : "B11F898C-14C2-4372-9817-2163074EEC42",
+    "patron" : "error en función de transferencia de filtro RL",
+    "primera" : "2026-10-28T11:24:54Z",
+    "refuerzo" : "Escribe `H = R\/(R + jωL)`, calcula el módulo, iguala y despeja. Practica filtros RC\/RL de ProblemesTema2.",
+    "tema" : "Corrent Altern",
+    "ultima" : "2026-10-28T11:24:54Z",
     "veces" : 1
   }
 ]

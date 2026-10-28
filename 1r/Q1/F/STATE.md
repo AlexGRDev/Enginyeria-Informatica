@@ -3,9 +3,9 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-27. Objetivo: **7,5**. Próximo examen: Parcial 1 F, 2026-11-03 (en 7 días).
+Generado por Kiwi GEI el 2026-10-28. Objetivo: **7,5**. Próximo examen: Parcial 1 F, 2026-11-03 (en 6 días).
 
-**Estimación: 0,9 / 10** (-6,6 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,9.
+**Estimación: 1,1 / 10** (-6,4 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,1.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
@@ -13,8 +13,8 @@ Generado por Kiwi GEI el 2026-10-27. Objetivo: **7,5**. Próximo examen: Parcial
 | Camp elèctric i potencial (E = -∇V) | 10 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
 | Corrent elèctric (I = dQ/dt, I = n·q·v_d·A, J) | 8 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
 | Llei d'Ohm (V = IR, J = σE) i resistència | 10 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
-| Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 14 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
-| Corrent Altern | 15 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
+| Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone | 14 % | 1,0 | 2 | 2026-10-28 (estilo) |
+| Corrent Altern | 15 % | 0,0 | 2 | 2026-10-28 (estilo) |
 | Electrònica i portes lògiques (fuera del examen) | 15 % | sin evaluar | 0 | - |
 | Ones (fuera del examen) | 15 % | sin evaluar | 0 | - |
 | Oscil·loscopi i polímetre (mesures Vpp, Vef, T, f) (fuera del examen) | 3 % | 0,0 | 1 | 2026-10-25 (diagnostico) |
