@@ -7,12 +7,14 @@ Generado el 2026-10-28. Ordenado por número de veces: arriba, lo que más hay q
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
-| No sabe abordar Funciones auxiliares | Funciones auxiliares | 15 | 2026-10-28 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
-| No sabe abordar Tipos básicos | Tipos básicos | 13 | 2026-10-28 | Practicar la generación de números con bucles anidados sobre dígitos y la escritura con una acción auxiliar. |
+| No sabe abordar Funciones auxiliares | Funciones auxiliares | 16 | 2026-10-28 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
+| No sabe abordar Tipos básicos | Tipos básicos | 14 | 2026-10-28 | Practicar la inversión de dígitos con %10 y /10 y la comparación con el original. |
 | No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 13 | 2026-10-28 | Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha. |
 | No documentar las funciones con especificación pre/post | Funciones auxiliares | 7 | 2026-10-27 | Escribir @pre y @post sobre cada función antes de implementarla. |
 | No sabe abordar Recursividad | Recursividad | 4 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
 | Uso incorrecto de punteros sobre variables escalares | Punteros y aritmética de punteros | 2 | 2026-10-28 | Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `/10`. |
+| Esquemas de lectura no recomendados | E/S con std::cin/std::cout | 1 | 2026-10-28 | Leer el primer carácter y luego el esquema del curso, procesando un caso completo por iteración. |
+| Código redundante o innecesariamente complicado | Funciones auxiliares | 1 | 2026-10-28 | Leer los 5 caracteres de cada caso y resolver según la posición de la x. |
 | Código redundante o innecesariamente complicado | Tipos básicos | 1 | 2026-10-28 | Devolver directamente la expresión booleana. |
 | Código redundante o innecesariamente complicado | Cadenas estilo C (char*) | 1 | 2026-10-27 | Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales. |
 | Incumplir restricción explícita del enunciado | Tipos básicos | 1 | 2026-10-26 | Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y /10. |

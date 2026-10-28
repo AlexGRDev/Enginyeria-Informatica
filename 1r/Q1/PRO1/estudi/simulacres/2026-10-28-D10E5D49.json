@@ -1,4 +1,132 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 4.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 3,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 5,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 4.5,
+    "preguntas" : [
+      {
+        "errores" : [
+
+        ],
+        "feedback" : "Correcto. 2*a == b+c es equivalente a que a sea el promedio y evita divisiones y decimales. Tiene especificación pre\/post y la lectura es directa. Sin deficiencias relevantes.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 2.5
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Parser genérico con estado static para un formato fijo de 5 caracteres.",
+            "patron" : "Código redundante o innecesariamente complicado",
+            "refuerzo" : "Leer los 5 caracteres de cada caso y resolver según la posición de la x.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "while (std::cin.get(c)) carácter a carácter hasta EOF, sin estructura por caso.",
+            "patron" : "Esquemas de lectura no recomendados",
+            "refuerzo" : "Leer el primer carácter y luego el esquema del curso, procesando un caso completo por iteración.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "Funciona (AC) y es lineal, sin string ni vector. Pero es mucho más complicado de lo necesario: el enunciado garantiza cinco caracteres c1+c2=c3 con una sola x, y basta leer los cinco, guardar los dos dígitos y calcular según la posición de x (c3-c2, c3-c1 o c1+c2). Tu parser con variables static, a\/b\/c acumuladas y flags enteros 0\/1 (solve, read, x) es difícil de leer y no usa el esquema por caso del enunciado. La lectura con while (cin.get(c)) hasta EOF carácter a carácter no es el esquema recomendado. Nombres como x, read, solve no reflejan su papel.",
+        "funcional" : 10,
+        "id" : "P2",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "ft_solv con estáticos a, b, c, value, x, solve, read para un formato fijo de 5 caracteres",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Esquemas de lectura no recomendados",
+            "detalle" : "while (std::cin.get(equacions)) ft_solv(equacions);",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Usar enteros 0\/1 como booleanos",
+            "detalle" : "static int solve = 1, read = 0; x = 1; if (read) ...",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Nombres de variables que dificultan la lectura",
+            "detalle" : "x, solve, read, value, equacions para variables con otro significado",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 2
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio de capicúa con dígitos en blanco.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Practicar la inversión de dígitos con %10 y \/10 y la comparación con el original.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco: main vacío, sin lectura ni lógica. Hace falta leer enteros hasta fin de entrada, comprobar capicúa con más de 2 cifras invirtiendo con %10 y \/10, y escribir el primero encontrado seguido de '!' o 'Res.'.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Función is_sandwich sin escribir.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "En blanco: ni siquiera existe la función is_sandwich, así que no compila contra el juez. Bastaba recorrer los dígitos con %10 y \/10, guardando el último dígito d, el dígito intermedio e distinto de d, y comprobando que el primero (más significativo) es d.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Resueltos P1 y P2 (AC). P3 y P4 en blanco, que son los que más pesan: capicúa con dígitos %10 y \/10 y la función is_sandwich. P2 es correcto pero sobrecomplicado para lo que pide. Prioridad para el parcial: recorrido de dígitos con %10 y \/10, que cubre P3 y P4, y esquemas de lectura del curso."
+  },
   "diagnostico" : false,
   "examen" : {
     "duracionMinutos" : 120,
@@ -61,6 +189,7 @@
   "minutos" : 79,
   "modo" : "jutge",
   "notaAntes" : 2.2693768618491035,
+  "notaDespues" : 2.5471041848944647,
   "pizarras" : {
 
   },
