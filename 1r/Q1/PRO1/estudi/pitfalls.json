@@ -23,14 +23,14 @@
   {
     "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
     "ejemplos" : [
-      "No plantea la comparación de racionales con enteros ni la simplificación con gcd.",
       "No convierte los bits leídos a un valor y a un char ASCII.",
       "No implementa la conversión de dígito a char con aritmética de caracteres.",
       "No sabe construir x en base 256 y extraer dígitos en base 64.",
       "Pregunta en blanco.",
       "Ejercicio en blanco: no construye el valor del byte ni escribe char(valor).",
       "Pregunta en blanco: conversión binario a decimal solo con aritmética de int.",
-      "Ejercicio en blanco."
+      "Ejercicio en blanco.",
+      "Ejercicio de generación de números bicolor sin respuesta."
     ],
     "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
     "patron" : "No sabe abordar Tipos básicos",
@@ -38,8 +38,8 @@
     "racha" : 0,
     "refuerzo" : "Practicar la generación de números con bucles anidados sobre dígitos y la escritura con una acción auxiliar.",
     "tema" : "Tipos básicos",
-    "ultima" : "2026-10-28T08:32:09Z",
-    "veces" : 12
+    "ultima" : "2026-10-28T09:03:37Z",
+    "veces" : 13
   },
   {
     "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
@@ -191,14 +191,16 @@
   {
     "descripcion" : "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
     "ejemplos" : [
-      "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido)."
+      "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
+      "Se crean punteros a los parámetros char solo para desreferenciarlos, sin ningún motivo."
     ],
     "id" : "68E2FE23-962D-4531-BD00-9110C3EFB75C",
     "patron" : "Uso incorrecto de punteros sobre variables escalares",
     "primera" : "2026-10-28T08:32:09Z",
+    "racha" : 0,
     "refuerzo" : "Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `\/10`.",
     "tema" : "Punteros y aritmética de punteros",
-    "ultima" : "2026-10-28T08:32:09Z",
-    "veces" : 1
+    "ultima" : "2026-10-28T09:03:37Z",
+    "veces" : 2
   }
 ]

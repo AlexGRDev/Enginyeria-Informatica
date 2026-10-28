@@ -1,0 +1,178 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 3,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 6,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 6,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 7,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 7.38,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Se crean punteros a los parámetros char solo para desreferenciarlos, sin ningún motivo.",
+            "patron" : "Uso incorrecto de punteros sobre variables escalares",
+            "refuerzo" : "Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `\/10`.",
+            "tema" : "Punteros y aritmética de punteros"
+          }
+        ],
+        "feedback" : "Lógica correcta y completa: trio de ases, trio, pareja y todas distintas, con AC. Los punteros a, b y c sobre los parámetros por valor no aportan nada: se pueden comparar c1, c2 y c3 directamente. Especificación pre\/post presente.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Dos o más variables innecesarias",
+            "detalle" : "char *a = &c1; char *b = &c2; char *c = &c3; y se usa *a, *b, *c en lugar de c1, c2, c3",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 2.38
+      },
+      {
+        "errores" : [
+
+        ],
+        "feedback" : "Correcto: salta el primer bloque de dígitos iguales, exige que quede algo y que el segundo bloque agote el número. Cubre n=0, un dígito, 121 y 113311. Documentada y sin penalizaciones.",
+        "funcional" : 10,
+        "id" : "P2",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 2.5
+      },
+      {
+        "errores" : [
+
+        ],
+        "feedback" : "Esquema de lectura carácter a carácter con racha, sin almacenar la secuencia, y para en cuanto se alcanza n. Cubre n=1 y la entrada que acaba sin racha. Correcto con AC. Detalle menor: la especificación dice \"n-Poker of x!\" pero el programa escribe \"de\", sin efecto en la nota.",
+        "funcional" : 10,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 2.5
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio de generación de números bicolor sin respuesta.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Practicar la generación de números con bucles anidados sobre dígitos y la escritura con una acción auxiliar.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco. Había que generar los números de N cifras formados por dos bloques de dos dígitos distintos: bucles anidados sobre d y e (d distinto de e) y sobre k de 1 a N-1, escribiendo k veces d y N-k veces e.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Tres de cuatro resueltos correctamente (P1, P2, P3 con AC). P1 pierde 0,5 por variables innecesarias. P4 en blanco: no sabes abordar la generación de números bicolor de N cifras. Nota 7,0\/10. Pendiente reforzar la generación con bucles anidados sobre dígitos y la recursión."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 120,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V43542 · Mà de Poker\n\n# Mà de Poker\n\nEscriu una **funció** que donades 3 cartes de Pòquer retorni una\ndescripció (un `string`) de la mà que representen. La descripció ha de\nser una de les quatre possibilitats següents: \\\"Trio d'Asos!\\\",\n\\\"Trio\\\", \\\"Parella\\\", o \\\"Totes les cartes diferents\\\".\n\nLes cartes són un dels 13 caràcters següents: `A`, `2`, `3`, \\..., `9`,\n`0`, `J`, `Q`, `K`. Hi has dos caràcters que val la pena explicar: la\ncarta `A` és l'as i representa l'1, tal com en les baralles normals, i\nel dígit `0` representa el 10, per simplificar la lectura.\n\nLa capçalera de la funció és, exactament:\n\n    \/**\n    * @pre c1, c2, c3 en {A, 2, 3, ..., 8, 9, 0, J, Q, K}\n    * @post Retorna \"Trio d'Asos!\", \"Trio\", \"Parella\", o \n    *       \"Totes les cartes diferents\" segons c1, c2 i c3.\n    *\/\n    string poker_hand(char c1, char c2, char c3);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-10-01T15:36:25.399Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 1 · ya lo tenías aceptado",
+        "id" : "P1",
+        "jutge" : "V43542_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 1",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T80784 · Nombres bicolor\n\n# Nombres bicolor\n\nDefinim com a número *bicolor* un natural $n$ amb només dos dígits\ndiferents que estan repetits en dos blocs (o \\\"colors\\\"). Més\nformalment, la seqüència de dígits de $n$ és\n$d_1d_2\\ldots d_ke_1e_2\\ldots e_l$, on $d$ i $e$ són els dos dígits i,\n$d\\neq e$, $k > 0$ i $l > 0$.\n\nExemples de números bicolor: 7722, 44111, 666699, 277 i 45.\\\nExemples de números que **no** són bicolor: 121, 113311, 7878, 1234, 7,\n99910.\n\nImplementa una **funció** `is_bicolor` que rep un natural i determina si\nés bicolor. La funció rep un número $n >= 0$ i retorna `true` si és\nbicolor i `false` en cas contrari.\n\nLa capçalera de la funció ha de ser:\n\n    \/**\n     * @pre  n >= 0\n     * @post retorna cert si n és bicolor, fals en cas contrari\n     *\/\n    bool is_bicolor(int n);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-03-05T08:50:13.138Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 1 · ya lo tenías aceptado",
+        "id" : "P2",
+        "jutge" : "T80784_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 1",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V43042 · N-Poker consecutiu\n\n# N-Poker consecutiu\n\nTenim una seqüència de cartes de Poker, i volem saber si en algun punt\nde la seqüència hi ha $N$ cartes consecutives iguals (un \\\"N-Poker\nconsecutiu\\\"). Fes un **programa** que llegeixi un enter positiu $N$, i\nuna seqüència de cartes, i determini si la seqüència té o no $N$ cartes\nconsecutives iguals.\n\n## Entrada\n\nL'entrada comença amb un enter positiu $N$. Després ve una seqüència de\ncaràcters que representen les cartes de la seqüència. Tal com en el\nproblema \\\"Mà de Poker\\\", els caràcters per a les cartes són `A`, `2`,\n`3`, \\..., `9`, `0`, `J`, `Q` i `K`. Es garanteix que la seqüència de\ncartes té almenys una carta.\n\n## Sortida\n\nEscriu \\\"$N$-Poker de $x$!\\\" si la seqüència té $N$ cartes consecutives\nde valor $x$ iguals. En cas contrari, escriu \\\"No hi ha N-Poker\\\". Per\nexemple, si $N$ és 7, i trobem 7 repeticions de la carta K, la sortida\nserà \\\"7-Poker de K!\\\", però si no hi ha cap carta repetida 7 vegades,\nla sortida serà \\\"No hi ha 7-Poker\\\". La sortida identifica el primer\n$N$-Poker consecutiu trobat, amb la $x$ corresponent, tot i que a la\nseqüència hi podria haver subseqüents $N$-Pokers consecutius.\n\n## Observació\n\nEn aquest problema cal tractar l'entrada caràcter a caràcter, si fas\nservir `string`s o algun mètode per emmagatzemar les dades el problema\nserà considerat invàlid. A més, tingues en compte que la seqüència prové\nd'una font il·limitada de cartes, de manera que no es pot suposar cap\nlongitud màxima.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:09:23.797Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 1 · ya lo tenías aceptado",
+        "id" : "P3",
+        "jutge" : "V43042_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 1",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### Z98456 · Enumera nombres bicolor\n\n# Enumera nombres bicolor\n\nExactament igual que a l'exercici \\\"Nombres bicolor\\\", definim com a\nnúmero *bicolor* un natural $n$ amb només dos dígits diferents que estan\nrepetits en dos blocs (o \\\"colors\\\").\n\nFes un **programa** que mostra per pantalla tots els nombres bicolor de\n$N$ xifres.\n\n## Entrada\n\nL'entrada consisteix en un natural $N$, amb $N >= 2$.\n\n## Sortida\n\nUna llista de nombres bicolor de $N$ xifres, un per línia. Els nombres\nes poden escriure **en qualsevol ordre**. Pots generar la sortida com\nvulguis, ja sigui fent servir enters o bé generant els nombres caràcter\na caràcter.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T23:08:10.554Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 1 · no resuelto",
+        "id" : "P4",
+        "jutge" : "Z98456_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 1",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 4 problemas"
+  },
+  "fecha" : "2026-10-28T08:41:40Z",
+  "fuentes" : [
+    "V43542",
+    "T80784",
+    "V43042",
+    "Z98456"
+  ],
+  "id" : "DD5B3A8E-898C-4649-A904-6C7771C8C714",
+  "minutos" : 21,
+  "modo" : "jutge",
+  "notaAntes" : 1.3017277003858645,
+  "notaDespues" : 2.2694834942056152,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   new_V43542.cpp                                     :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 09:42:46 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 09:42:46 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n#include <string>\n\n\/*\n* @pre c1, c2, c3 en {A, 2, 3, ..., 8, 9, 0, J, Q, K}\n* @post Retorna \"Trio d'Asos!\", \"Trio\", \"Parella\", o \n*       \"Totes les cartes diferents\" segons c1, c2 i c3.\n*\/\n\nstd::string\tpoker_hand(char c1, char c2, char c3)\n{\n\tchar\t*a;\n\tchar\t*b;\n\tchar\t*c;\n\n\ta = &c1;\n\tb = &c2;\n\tc = &c3;\n\tif (*a == *b && *b == *c)\n\t{\n\t\tif (*a == 'A')\n\t\t\treturn(\"Trio d'Asos!\");\n\t\treturn (\"Trio\");\n\t}\n\telse if (*a == *b || *b == *c || *a == *c)\n\t\treturn (\"Parella\");\n\treturn (\"Totes les cartes diferents\");\n}",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T80784.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 09:41:40 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 09:41:40 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/**\n@pre n >= 0\n@post retorna cert si n és bicolor, fals en cas contrari\n*\/\n\nbool\tis_bicolor(int n)\n{\n\tint\te;\n\tint\td;\n\n\te = n % 10;\n\twhile (n > 0 && n % 10 == e)\n\t\tn \/= 10;\n\tif (n == 0)\n\t\treturn (false);\n\td  = n % 10;\n\twhile (n > 0 && n % 10 == d)\n\t\tn \/= 10;\n\treturn (n == 0);\n}",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V43042.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 09:41:40 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 09:41:40 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/**\n * @pre  n > 0. La entrada contiene al menos una carta (A, 2..9, 0, J, Q, K)\n *       separada por espacios en blanco.\n * @post Se han leido cartas de std::cin hasta completar la primera racha de\n *       n cartas iguales consecutivas, o hasta el final de la entrada.\n *       Escribe \"n-Poker of x!\" si existe la racha (x = carta), y\n *       \"No n-Poker\" en caso contrario.\n *\/\n\nvoid\tft_GetPockerHand(int n)\n{\n\tchar\tc;\n\tchar\tnext;\n\tint\tracha;\n\n\tstd::cin >> c;\n\tracha = 1;\n\twhile (racha < n && std::cin >> next)\n\t{\n\t\tif (next == c)\n\t\t\tracha++;\n\t\telse\n\t\t{\n\t\t\tc = next;\n\t\t\tracha = 1;\n\t\t}\n\t}\n\tif (racha == n)\n\t\tstd::cout << n << \"-Poker de \" << c << \"!\\n\";\n\telse\n\t\tstd::cout << \"No hi ha \" << n << \"-Poker\\n\";\n}\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tft_GetPockerHand(nbr);\n}",
+    "P4" : ""
+  },
+  "veredictos" : {
+    "P1" : "AC",
+    "P2" : "AC",
+    "P3" : "AC"
+  }
+}
