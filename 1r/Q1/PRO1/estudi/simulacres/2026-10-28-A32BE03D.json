@@ -1,4 +1,130 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 0.8,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.2,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 0.4,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 1.8,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 0.13,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "No extrae una función `valor(char)` que traduzca cada carta a su valor numérico antes de comparar.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Escribir `int valor(char c)` con `if` para A, 0, J, Q, K y dígitos `c - '0'`, y comparar valores.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "`if (c1 > c2) return true; return false;` en vez de `return c1 > c2;`.",
+            "patron" : "Código redundante o innecesariamente complicado",
+            "refuerzo" : "Devolver directamente la expresión booleana.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "La lógica es incorrecta. (1) La cadena `if \/ else if` ejecuta una sola conversión, de modo que si `c1 == 'A'` nunca se convierte `c2`, y lo mismo con `'0'`. (2) `'A'` pasa a valer 1 cuando debe ser 14, el valor más alto. (3) Los caracteres `J`, `Q`, `K` se comparan por ASCII (`J`=74, `K`=75, `Q`=81), y eso da `K < Q`, que es falso. (4) Se mezclan dígitos en ASCII (50 a 57) con enteros 1 y 10, así que `'0'` convertido a 10 queda por debajo de `'2'` (50). Hace falta una función auxiliar `valor(char)` que devuelva 2..14 para cada carta y comparar `valor(c1) > valor(c2)`. Además, `if (c1 > c2) return true; return false;` es redundante.",
+        "funcional" : 1,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "if (c1 > c2) return (true); return (false); debería ser return c1 > c2;",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 0.13
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No recorre los dígitos con `%10` y `\/10` comparando el primero, el último y los intermedios.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
+            "patron" : "Uso incorrecto de punteros sobre variables escalares",
+            "refuerzo" : "Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `\/10`.",
+            "tema" : "Punteros y aritmética de punteros"
+          }
+        ],
+        "feedback" : "No resuelve el problema. `ft_nbrlen` cuenta decrementando hasta 0, así que devuelve `n` en lugar del número de dígitos. En `is_sandwich`, `pesquerra = &esquerra` y `pdreta = pesquerra + len` aplican aritmética de punteros sobre una variable local suelta, lo que es comportamiento indefinido, y el `return` dentro del `while` hace que el bucle no itere. Nunca se comparan dígitos. Esquema correcto: `d = n % 10`; quitar el último dígito; leer los dígitos siguientes con `%10` y `\/10` comprobando que sean distintos de `d` y todos iguales entre sí (`e`) hasta llegar al último, que debe ser igual a `d`; exigir al menos un dígito `e`. Los punteros no tienen sentido en este ejercicio. Las pre\/post están escritas, pero la de `ft_nbrlen` es incorrecta con `n = 0`.",
+        "funcional" : 0,
+        "id" : "P2",
+        "penalizaciones" : [
+          {
+            "categoria" : "otros",
+            "concepto" : "Lógica de aritmética de punteros sin sentido",
+            "detalle" : "pdreta = pesquerra + len; sobre un int local",
+            "puntos" : 1
+          }
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "En blanco: solo el `main` vacío de la plantilla. Hay que seguir el esquema `cin >> c; while (c != '.') {...; cin >> c;}` llevando la carta anterior y un contador de racha, sin guardar la secuencia. Al cambiar de carta o llegar al punto se escribe Parella, Trio, Poker o `k C!` según el contador.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Practicar la generación de números con bucles anidados sobre dígitos y la escritura con una acción auxiliar.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco: solo el `main` vacío de la plantilla. Se puede resolver con un triple bucle sobre `d`, `e` y `k = X-2` para generar `d e...e d`, o recorriendo todos los números de $X$ cifras y usando una función `is_sandwich` correcta.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Nota 0\/10. Solo se intentaron P1 y P2, y ninguna es correcta. P3 y P4 están en blanco (solo el `main` vacío de la plantilla). No he podido ver las imágenes de pizarra: no venían adjuntas, así que corrijo solo el código entregado. Fallos de fondo: no se traduce cada carta a su valor numérico antes de comparar, y en P2 no se extraen los dígitos con `%10` y `\/10`. Antes del parcial conviene practicar el recorrido de dígitos y el esquema `cin >> c; while (c != '.')`."
+  },
   "diagnostico" : false,
   "examen" : {
     "duracionMinutos" : 45,
@@ -61,6 +187,7 @@
   "minutos" : 43,
   "modo" : "jutge",
   "notaAntes" : 1.4978135993640993,
+  "notaDespues" : 1.3017304763042299,
   "pizarras" : {
 
   },

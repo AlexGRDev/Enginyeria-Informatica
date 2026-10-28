@@ -2,42 +2,44 @@
   {
     "descripcion" : "Entrega main vacío, sin lectura ni salida.",
     "ejemplos" : [
-      "Lectura carácter a carácter con contador de racha.",
       "Recorrido de secuencia con rachas de paridad.",
       "No plantea el esquema de lectura de la secuencia con contadores de racha.",
       "Recorrido de secuencia sin sentinela con estado (fase de subida\/bajada) y salida 'si'\/'no' exacta.",
       "No sabe leer racionales con separador '\/' en una secuencia sin sentinela.",
       "Falta cin >> c al final del bucle; se usa s++ en vez de leer, y la racha no se calcula.",
       "El main no lee la entrada con cin; hardcodea los datos y lee fuera del array.",
-      "Ejercicio en blanco: no sabe abordar la lectura con centinela y contador de racha."
+      "Ejercicio en blanco: no sabe abordar la lectura con centinela y contador de racha.",
+      "Ejercicio en blanco."
     ],
     "id" : "9B332E4F-C8B2-439A-B5F0-B3A78367A0B8",
     "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
     "primera" : "2026-10-25T20:40:13Z",
+    "racha" : 0,
     "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
     "tema" : "E\/S con std::cin\/std::cout",
-    "ultima" : "2026-10-27T09:20:01Z",
-    "veces" : 12
+    "ultima" : "2026-10-28T08:32:09Z",
+    "veces" : 13
   },
   {
     "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
     "ejemplos" : [
-      "Extracción de dígitos y construcción de números solo con int.",
       "No plantea la comparación de racionales con enteros ni la simplificación con gcd.",
       "No convierte los bits leídos a un valor y a un char ASCII.",
       "No implementa la conversión de dígito a char con aritmética de caracteres.",
       "No sabe construir x en base 256 y extraer dígitos en base 64.",
       "Pregunta en blanco.",
       "Ejercicio en blanco: no construye el valor del byte ni escribe char(valor).",
-      "Pregunta en blanco: conversión binario a decimal solo con aritmética de int."
+      "Pregunta en blanco: conversión binario a decimal solo con aritmética de int.",
+      "Ejercicio en blanco."
     ],
     "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
     "patron" : "No sabe abordar Tipos básicos",
     "primera" : "2026-10-25T20:40:13Z",
-    "refuerzo" : "Acumular valor += bit * peso; peso *= 2 y escribir char(valor) al leer '*'.",
+    "racha" : 0,
+    "refuerzo" : "Practicar la generación de números con bucles anidados sobre dígitos y la escritura con una acción auxiliar.",
     "tema" : "Tipos básicos",
-    "ultima" : "2026-10-27T10:19:56Z",
-    "veces" : 11
+    "ultima" : "2026-10-28T08:32:09Z",
+    "veces" : 12
   },
   {
     "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
@@ -55,22 +57,23 @@
   {
     "descripcion" : "No implementa la función pedida.",
     "ejemplos" : [
-      "No plantea el recorrido de dígitos para contar picos.",
-      "No implementa la diferencia entre dos números ni la reutiliza en el programa de la secuencia.",
       "Función auxiliar y especificación que no corresponden al problema planteado.",
       "No descompone en comparar y simplificar racionales.",
       "No separa la codificación de un grupo de 3 bytes en una acción.",
       "canvis no extrae dígitos; el bucle no modifica n y no termina.",
       "No extrae dígitos con %10 y \/10 ni compara dígitos consecutivos; usa punteros sin sentido sobre n.",
-      "Pregunta en blanco: recorrido de dígitos contando cambios entre dígitos consecutivos."
+      "Pregunta en blanco: recorrido de dígitos contando cambios entre dígitos consecutivos.",
+      "No extrae una función `valor(char)` que traduzca cada carta a su valor numérico antes de comparar.",
+      "No recorre los dígitos con `%10` y `\/10` comparando el primero, el último y los intermedios."
     ],
     "id" : "FC1EE0B2-27F1-446F-9AB2-9E5D554AF4FD",
     "patron" : "No sabe abordar Funciones auxiliares",
     "primera" : "2026-10-25T20:40:13Z",
+    "racha" : 0,
     "refuerzo" : "Recorrido de dígitos con %10 y \/10 contando cambios entre dígitos consecutivos.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-27T10:19:56Z",
-    "veces" : 13
+    "ultima" : "2026-10-28T08:32:09Z",
+    "veces" : 15
   },
   {
     "descripcion" : "ft_draw_a no tiene @pre\/@post.",
@@ -170,6 +173,32 @@
     "refuerzo" : "Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales.",
     "tema" : "Cadenas estilo C (char*)",
     "ultima" : "2026-10-27T10:19:56Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "`if (c1 > c2) return true; return false;` en vez de `return c1 > c2;`.",
+    "ejemplos" : [
+      "`if (c1 > c2) return true; return false;` en vez de `return c1 > c2;`."
+    ],
+    "id" : "4F54407A-15EF-45A7-949F-6ABAAD9FD2D8",
+    "patron" : "Código redundante o innecesariamente complicado",
+    "primera" : "2026-10-28T08:32:09Z",
+    "refuerzo" : "Devolver directamente la expresión booleana.",
+    "tema" : "Tipos básicos",
+    "ultima" : "2026-10-28T08:32:09Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
+    "ejemplos" : [
+      "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido)."
+    ],
+    "id" : "68E2FE23-962D-4531-BD00-9110C3EFB75C",
+    "patron" : "Uso incorrecto de punteros sobre variables escalares",
+    "primera" : "2026-10-28T08:32:09Z",
+    "refuerzo" : "Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `\/10`.",
+    "tema" : "Punteros y aritmética de punteros",
+    "ultima" : "2026-10-28T08:32:09Z",
     "veces" : 1
   }
 ]
