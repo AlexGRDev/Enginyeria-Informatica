@@ -1,0 +1,77 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 120,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X81984 · Donats tres nombres, comprova si algun d'ells és igual al promig dels altres dos\n\n# Donats tres nombres, comprova si algun d'ells és igual al promig dels altres dos\n\nEscriviu un programa que llegeix tres enters i comprova si n'hi ha un\nque és igual al promig dels altres dos.\n\n## Entrada\n\nTres nombres enters en una línia.\n\n## Sortida\n\nSi n'hi un dels tres que és igual al promig dels altres dos, escriu\n`YES`. En cas contrari, escriu `NO`.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T22:38:57.836Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P1",
+        "jutge" : "X81984_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X69165 · Equacions sobre dígits.\n\n# Equacions sobre dígits.\n\nL'entrada d'aquest exercici té varis casos. Cada cas consisteix en\nexactament cinc caràcters, i és un string de la forma $c_1+c_2=c_3$, a\non exactament un de $c_1,c_2,c_3$ és el caràcter $x$, i els altres dos\nson dígits.\n\nPer exemple, possibles entrades serien els strings `x+1=2` o `5+x=3` o\n`3+4=x`.\n\nLa sortida de cada cas és la solució de l'equació representada per\nl'string i interpretada en els nombres enters.\n\nLes sortides corresponents als exemples d'entrada anteriors serien `1`,\n`-2` i `7`.\n\n## Entrada\n\nL'entrada té un nombre arbitrari de casos. Cada cas conté 5 caràcters\ncom els descrits a l'enunciat.\n\n## Sortida\n\nPer a cada cas, la sortida té una línia amb un enter, la solució de\nl'equació representada.\n\n## Observació\n\nNo es poden utilitzar mètodes d'emmagatzemament massiu d'informació (com\nper exemple `string` o `vector`). Llegiu y tracteu 5 caràcters per a\ncada cas. Avaluació sobre 10 punts:\n\n- Solució lenta: 5 punts.\n\n- solució ràpida: 10 punts.\n\nEntenem com a solució ràpida una que és correcta, de cost lineal i capaç\nde superar els jocs de proves públics i privats. Entenem com a solució\nlenta una que no és ràpida, però és correcta i capaç de superar els jocs\nde proves públics.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T17:46:14.144Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P2",
+        "jutge" : "X69165_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X65175 · Algun nombre capicua\n\n# Algun nombre capicua\n\nFes un programa que llegeix una seqüència d'enters i diu si hi ha algun\nnombre capicua. Els nombres capicua son aquells que es mantenen iguals\nsi invertim les seves xifres, com ara 121, 95759 o 8008. En aquest\nproblema, però, considerarem que els nombres de 1 i 2 xifres *no son\ncapicua*. Per exemple, no direm que son capicua el 9, 22, 3 i 55.\n\n## Entrada\n\nL'entrada consisteix en una seqüència d'enters positius.\n\n## Sortida\n\nLa sortida ha de ser \\\"Res.\\\" si no hi ha cap nombre capicua a la\nseqüència o bé \\\"$n$!\\\", a on $n$ és el primer nombre capicua trobat.\n\n## Observacions\n\nEls números s'han de tractar com a enters, no com a `string`s.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T17:31:32.442Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exercicis de Consolidació per al Parcial · no resuelto",
+        "id" : "P3",
+        "jutge" : "X65175_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Exercicis de Consolidació per al Parcial",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V37339 · Nombres entrepà\n\n# Nombres entrepà\n\nDefinim com a número *entrepà* un natural $n$ amb només dos dígits $d$ i\n$e$ diferents, que formen una seqüència $de_1e_2\\cdots e_kd$. És a dir,\nel digít $d$ és el primer i l'últim dígit de $n$ (és el pa), i el dígit\n$e$ està repetit $k \\geq 1$ vegades entremig dels dos dígits $d$ (és\nl'embotit o el farciment). Per exemple, 121 és un número entrepà amb\n$d = 1$, $e = 2$, i $k = 1$. El 4004 és un número entrepà amb $d = 4$,\n$e = 0$, i $k = 2$.\n\nMés exemples de números entrepà: 7227, 41114, 966669, 10001 i 535.\\\nExemples de números que **no** són entrepà: 9, 12, 113311, 7878, 1234,\n9991, 1000.\n\nImplementa una **funció** `is_sandwich` que rep un nombre natural i\nretorna `true` si és un número entrepà i `false` en cas contrari.\n\nLa capçalera de la funció ha de ser:\n\n    \/**\n     * @pre  n >= 0\n     * @post retorna cert si n és un número entrepà, fals en cas contrari\n     *\/\n    bool is_sandwich(int n);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:08:40.923Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Exàmens Parcials Anteriors · no resuelto",
+        "id" : "P4",
+        "jutge" : "V37339_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Exàmens Parcials Anteriors",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 4 problemas"
+  },
+  "fecha" : "2026-10-28T09:50:36Z",
+  "fuentes" : [
+    "X81984",
+    "X69165",
+    "X65175",
+    "V37339"
+  ],
+  "id" : "D10E5D49-9237-4DEF-AF1B-23B1A55031D0",
+  "minutos" : 79,
+  "modo" : "jutge",
+  "notaAntes" : 2.2693768618491035,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X81984.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 10:51:24 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 11:28:11 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/*\n   @pre Tres nombres enters en una línia.\n   @pos Si n'hi un dels tres que és igual al promig dels altres dos, escriu\n\tYES. En cas contrari, escriu NO.\n*\/\nvoid\tft_equal_average(int a, int b, int c)\n{\n\tif (2 * a == (b + c) || 2 * b == (a + c) || 2 * c == (a + b))\n\t\tstd::cout  << \"YES\\n\";\n\telse\n\t\tstd::cout << \"NO\\n\";\n}\n\nint\tmain(void)\n{\n\tint nbr1, nbr2, nbr3;\n\n\tstd::cin >> nbr1 >> nbr2 >> nbr3;\n\tft_equal_average(nbr1, nbr2, nbr3);\n\treturn (0);\n}",
+    "P2" : "#include <iostream>\n\n\/* @Pre  n es el siguiente carácter, sin espacios, de una secuencia de\n         ecuaciones de la forma t+t=t (cada t es un entero o la incógnita\n         'x', que aparece una sola vez y puede estar a cualquier lado del\n         '='), una ecuación por línea. Las llamadas se hacen en orden,\n         un carácter por llamada, y tras la última línea se llama con\n         n = '\\n'.\n   @Post Si n != '\\n', se actualizan los acumuladores estáticos (a, b, c)\n         con el carácter leído y no se escribe nada.\n         Si n == '\\n' y a != 0, se escribe en una línea el valor de x\n         de la ecuación leída, (c - b) \/ a, y se reinician los\n         acumuladores para la siguiente ecuación.\n*\/\nvoid\tft_solv(char n)\n{\n\tstatic int\ta = 0, b = 0, c = 0;\n\tstatic int\tvalue = 0, x = 0;\n\tstatic int\tsolve = 1, read = 0;\n\n\tif (n >= '0' && n <= '9')\n\t{\n\t\tvalue = value * 10 + (n - '0');\n\t\tx = 1;\n\t}\n\telse if (n == 'x')\n\t{\n\t\tif (read)\n\t\t\tsolve = -solve;\n\t\tif (x)\n\t\t\ta += solve * value;\n\t\telse\n\t\t\ta += solve;\n\t\tvalue = x = 0;\n\t\tsolve = 1;\n\t}\n\telse\n\t{\n\t\tif (x && read)\n\t\t\tc += solve * value;\n\t\telse if (x)\n\t\t\tb += solve * value;\n\t\tvalue = x = 0;\n\t\tsolve = 1;\n\t\tif (n == '-')\n\t\t\tsolve = -1;\n\t\tif (n == '=')\n\t\t\tread = 1;\n\t\tif (n == '\\n')\n\t\t{\n\t\t\tif (a)\n\t\t\t\tstd::cout << (c - b) \/ a << '\\n';\n\t\t\ta = b = c = read = 0;\n\t\t}\n\t}\n}\n\nint\tmain(void)\n{\n\tchar\tequacions;\n\n\twhile (std::cin.get(equacions))\n\t\tft_solv(equacions);\n\tft_solv('\\n');\n\treturn (0);\n}",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X65175.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 10:50:36 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 10:50:36 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V37339.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 10:50:36 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 10:50:36 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+    "P1" : "AC",
+    "P2" : "AC"
+  }
+}
