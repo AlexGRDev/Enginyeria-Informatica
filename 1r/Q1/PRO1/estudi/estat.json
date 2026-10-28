@@ -47,11 +47,17 @@
       "fecha" : "2026-10-28T08:32:09Z",
       "fuente" : "jutge",
       "real" : 0.13
+    },
+    {
+      "estimado" : 1.2325057476797885,
+      "fecha" : "2026-10-28T09:03:37Z",
+      "fuente" : "jutge",
+      "real" : 7.38
     }
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.3997056588087084,
+      "dominio" : 0.5761245715858786,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -106,11 +112,17 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 0.4
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 2
         }
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 2.326268633100535,
+      "dominio" : 2.8415079925809024,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -165,11 +177,17 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 1.8
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 7
         }
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 1.9457913105219633,
+      "dominio" : 2.392733532932661,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -224,11 +242,17 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 6
         }
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 0.9593948768607415,
+      "dominio" : 1.1843543326481452,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -283,11 +307,17 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 0.8
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 3
         }
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.5195865747538564,
+      "dominio" : 1.5725480996023116,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -342,11 +372,17 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 1.2
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 2
         }
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 1.7423679477807321,
+      "dominio" : 2.1014943285132897,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -401,11 +437,17 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 5
         }
       ]
     },
     "std::string" : {
-      "dominio" : 0.39009865470619287,
+      "dominio" : 1.0085428193313801,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -460,6 +502,12 @@
           "fecha" : "2026-10-28T08:32:09Z",
           "fuente" : "jutge",
           "nota" : 0.4
+        },
+        {
+          "evidencia" : "Simulacro Jutge · 4 problemas: 7,4",
+          "fecha" : "2026-10-28T09:03:37Z",
+          "fuente" : "jutge",
+          "nota" : 6
         }
       ]
     }
