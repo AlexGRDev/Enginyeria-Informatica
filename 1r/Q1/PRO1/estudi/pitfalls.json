@@ -84,15 +84,17 @@
       "La función no tiene @pre\/@post propios; el comentario es del main y no coincide con el problema.",
       "La @pre\/@post contiene el ejemplo de entrada y salida, no el contrato de la función.",
       "La función pujades no lleva @pre ni @post.",
-      "No hay función ni especificación."
+      "No hay función ni especificación.",
+      "ft_ABC sin @pre ni @post."
     ],
     "id" : "50F48229-0E9F-4EB8-B8BF-AA5E260EE795",
     "patron" : "No documentar las funciones con especificación pre\/post",
     "primera" : "2026-10-26T17:41:32Z",
+    "racha" : 0,
     "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-27T10:19:56Z",
-    "veces" : 7
+    "ultima" : "2026-10-28T19:43:44Z",
+    "veces" : 8
   },
   {
     "descripcion" : "Bucles de impresión de espacios y 'A' repetidos dentro de una sola función.",
@@ -192,16 +194,17 @@
     "descripcion" : "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
     "ejemplos" : [
       "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
-      "Se crean punteros a los parámetros char solo para desreferenciarlos, sin ningún motivo."
+      "Se crean punteros a los parámetros char solo para desreferenciarlos, sin ningún motivo.",
+      "malloc y doble puntero para 3 enteros y 3 chars, en vez de variables simples o vector, contra el estilo del curso."
     ],
     "id" : "68E2FE23-962D-4531-BD00-9110C3EFB75C",
     "patron" : "Uso incorrecto de punteros sobre variables escalares",
     "primera" : "2026-10-28T08:32:09Z",
     "racha" : 0,
-    "refuerzo" : "Usar aritmética de punteros solo dentro de arrays; en este ejercicio basta con enteros y `%10`, `\/10`.",
+    "refuerzo" : "Usar variables enteras\/char o vector con índices; reservar memoria dinámica solo cuando el enunciado lo pida.",
     "tema" : "Punteros y aritmética de punteros",
-    "ultima" : "2026-10-28T09:03:37Z",
-    "veces" : 2
+    "ultima" : "2026-10-28T19:43:44Z",
+    "veces" : 3
   },
   {
     "descripcion" : "Parser genérico con estado static para un formato fijo de 5 caracteres.",
@@ -227,6 +230,19 @@
     "refuerzo" : "Leer el primer carácter y luego el esquema del curso, procesando un caso completo por iteración.",
     "tema" : "E\/S con std::cin\/std::cout",
     "ultima" : "2026-10-28T11:11:03Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Se reordenan los tres números dentro del bucle de salida, una vez por letra.",
+    "ejemplos" : [
+      "Se reordenan los tres números dentro del bucle de salida, una vez por letra."
+    ],
+    "id" : "2182732D-3C47-4290-8593-DF2714FF8A36",
+    "patron" : "Código redundante o innecesariamente complicado",
+    "primera" : "2026-10-28T19:43:44Z",
+    "refuerzo" : "Ordenar una sola vez antes del bucle de escritura, o separar ordenar y escribir en funciones distintas.",
+    "tema" : "E\/S con std::cin\/std::cout",
+    "ultima" : "2026-10-28T19:43:44Z",
     "veces" : 1
   }
 ]

@@ -1,0 +1,127 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 3,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 4,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 3,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 5,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 6.5,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "malloc y doble puntero para 3 enteros y 3 chars, en vez de variables simples o vector, contra el estilo del curso.",
+            "patron" : "Uso incorrecto de punteros sobre variables escalares",
+            "refuerzo" : "Usar variables enteras\/char o vector con índices; reservar memoria dinámica solo cuando el enunciado lo pida.",
+            "tema" : "Punteros y aritmética de punteros"
+          },
+          {
+            "descripcion" : "ft_ABC sin @pre ni @post.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "Se reordenan los tres números dentro del bucle de salida, una vez por letra.",
+            "patron" : "Código redundante o innecesariamente complicado",
+            "refuerzo" : "Ordenar una sola vez antes del bucle de escritura, o separar ordenar y escribir en funciones distintas.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "Funcionalmente correcto: ordena los tres enteros y escribe según las letras, con separación correcta y sin espacio final. El problema está en el estilo. (1) Usas malloc para 3 enteros y 3 chars, y pasas `int **` y `char **` sin necesidad; bastaban `int a, b, c; char x, y, z;` o un vector, y pasar por valor. En PRO1 manda el estilo del curso (variables, índices, vector), no la aritmética de punteros. (2) La ordenación de los tres números está dentro del `while (*pO)`, así que se repite en cada letra; debe hacerse una sola vez antes de escribir. (3) La función mezcla ordenar y escribir, sin descomposición ni especificación @pre\/@post. Para este problema bastaba leer los tres números, ordenarlos una vez y escribir con un `switch` o `if` sobre cada letra.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "Los tres if de intercambio están dentro de `while (*pO)` y se repiten en cada letra.",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "`void ft_ABC(int **n, char **order)` sin @pre\/@post.",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "mayor",
+            "concepto" : "Paso de parámetros por valor o referencia inadecuado",
+            "detalle" : "`int **n, char **order` cuando bastaban valores o un vector; los dobles punteros no se usan para modificar los punteros.",
+            "puntos" : 1
+          },
+          {
+            "categoria" : "otros",
+            "concepto" : "Construcciones no explicadas en clase",
+            "detalle" : "malloc\/free, cstdlib y aritmética de punteros (`*(pN + 2)`, `*(str + 3) = '\\0'`) en lugar de variables o vector con índices.",
+            "puntos" : 1
+          }
+        ],
+        "puntosObtenidos" : 6.5
+      }
+    ],
+    "resumen" : "La solución es correcta (AC), pero está escrita con malloc, doble puntero y aritmética de punteros, que no son el estilo del curso. Además repite la ordenación en cada vuelta del bucle y no documenta la función. En el mensaje no había imágenes de pizarra, así que he corregido solo el código entregado."
+  },
+  "diagnostico" : false,
+  "ejercicio" : true,
+  "examen" : {
+    "duracionMinutos" : 20,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### P57315 · ABC\n\n# ABC\n\nSe te dan tres enteros $A$, $B$ y $C$. Los números no se te dan\nnecesariamente en ese orden, pero sí sabemos que $A$ es menor que $B$ y\n$B$ es menor que $C$.\n\nSimplemente, te pedimos que escribas los tres números en el orden que se\nte indique.\n\n## Entrada\n\nLa primera línea contiene tres enteros menores que $100$ (los valores de\n$A$, $B$ y $C$, en un orden cualesquiera). La segunda línea contiene\ntres letras mayúsculas ('A', 'B' y 'C') representando el orden deseado.\n\n## Salida\n\nEscribe una línea con los tres números, en el orden indicado, separados\npor espacios.\n\n## Información del problema\n\nAutoría: COCI06\/07\n\nGeneración: 2026-01-25T11:25:54.741Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Cadenas estilo C (char*) · no resuelto",
+        "id" : "P1",
+        "jutge" : "P57315_es",
+        "puntos" : 10,
+        "solucionReferencia" : "",
+        "tema" : "E\/S con std::cin\/std::cout",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Ejercicio · E\/S con std::cin\/std::cout · P57315"
+  },
+  "fecha" : "2026-10-28T19:27:52Z",
+  "fuentes" : [
+    "P57315"
+  ],
+  "id" : "A7DDEDCB-A4D6-4337-9D55-77FCA380E1ED",
+  "minutos" : 15,
+  "modo" : "jutge",
+  "notaAntes" : 2.5465981281209826,
+  "notaDespues" : 2.571809109427672,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P57315.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 20:27:52 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 20:27:52 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n#include <cstdlib>\n\nvoid\tft_ABC(int **n, char **order)\n{\n\tint\t\t*pN;\n\tchar\t*pO;\n\tint\t\ttmp;\n\n\tpN = *n;\n\tpO = *order;\n\twhile (*pO)\n\t{\n\t\tif (*pN > *(pN + 1))\n\t\t{\n\t\t\ttmp = *pN;\n\t\t\t*pN = *(pN + 1);\n\t\t\t*(pN + 1) = tmp;\n\t\t}\n\t\tif (*(pN + 1) > *(pN + 2))\n\t\t{\n\t\t\ttmp = *(pN + 1);\n\t\t\t*(pN + 1) = *(pN + 2);\n\t\t\t*(pN + 2) = tmp;\n\t\t}\n\t\tif (*pN > *(pN + 1))\n\t\t{\n\t\t\ttmp = *pN;\n\t\t\t*pN = *(pN + 1);\n\t\t\t*(pN + 1) = tmp;\n\t\t}\n\t\tif (*pO == 'A')\n\t\t\tstd::cout << *pN;\n\t\telse if (*pO == 'B')\n\t\t\tstd::cout << *(pN + 1);\n\t\telse if (*pO == 'C')\n\t\t\tstd::cout << *(pN + 2);\n\t\tif (*(pO + 1))\n\t\t\tstd::cout << \" \";\n\t\tpO++;\n\t}\n\tstd::cout << \"\\n\";\n}\n\nint\tmain(void)\n{\n\tint\t\t*nbr;\n\tchar\t*str;\n\n\tnbr = (int *)malloc(sizeof(*nbr) * 3);\n\tstr = (char *)malloc((sizeof(*str) * 3) + 1);\n\tif (!nbr || !str)\n\t{\n\t\tstd::cout << \"Malloc ha fallado\" << \"\\n\";\n\t\tfree(nbr);\n\t\tfree(str);\n\t\treturn (1);\n\t}\n\t*(str + 3) = '\\0';\n\tif (std::cin >> *nbr >> *(nbr + 1) >> *(nbr + 2) >> *str >> *(str + 1) >> *(str + 2))\n\t\tft_ABC(&nbr, &str);\n\tfree(nbr);\n\tfree(str);\n\tnbr = nullptr;\n\tstr = nullptr;\n\treturn (0);\n}"
+  },
+  "veredictos" : {
+    "P1" : "AC"
+  }
+}
