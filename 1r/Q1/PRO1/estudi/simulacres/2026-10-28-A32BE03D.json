@@ -1,0 +1,76 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### S44767 · Millor Carta\n\n# Millor Carta\n\nEscriu una **funció** que donades dues cartes de Poker retorni `true` si\nel valor de la primera carta és major que el valor de la segona carta.\nLes cartes són les de la baralla de Poker habitual, representades amb un\ndels 13 caràcters següents: `A`, `2`, `3`, \\..., `9`, `0`, `J`, `Q`,\n`K`. Hi ha dos caràcters especials: la carta `A` és l'As i equival a\nl'1, tal com en les baralles normals, i el dígit `0` representa el 10,\nper simplificar la lectura. Fixeu-vos que les cartes identificades amb\nuna lletra sempre són majúscules.\n\nEls valors de les cartes són els següents: les cartes numèriques tenen\nel valor que indica el seu número. La carta `0` tindrà el valor 10, pel\nfet que representa la carta 10. Tot seguit, la `J` val 11, la `Q` val 12\ni la `K` val 13. L'`A` valdria 1, però en aquest problema considerarem\nque té el valor més alt (com es fa sovint), i serà 14.\n\nLa capçalera de la funció és, exactament:\n\n    \/**\n     * @pre c1, c2 en {A, 2, 3, ..., 8, 9, 0, J, Q, K}\n     * @post Retorna cert si c1 té un valor més alt que c2\n     *\/\n    bool better_card(char c1, char c2);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T12:45:25.138Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 2 · no resuelto",
+        "id" : "P1",
+        "jutge" : "S44767_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 2",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### V37339 · Nombres entrepà\n\n# Nombres entrepà\n\nDefinim com a número *entrepà* un natural $n$ amb només dos dígits $d$ i\n$e$ diferents, que formen una seqüència $de_1e_2\\cdots e_kd$. És a dir,\nel digít $d$ és el primer i l'últim dígit de $n$ (és el pa), i el dígit\n$e$ està repetit $k \\geq 1$ vegades entremig dels dos dígits $d$ (és\nl'embotit o el farciment). Per exemple, 121 és un número entrepà amb\n$d = 1$, $e = 2$, i $k = 1$. El 4004 és un número entrepà amb $d = 4$,\n$e = 0$, i $k = 2$.\n\nMés exemples de números entrepà: 7227, 41114, 966669, 10001 i 535.\\\nExemples de números que **no** són entrepà: 9, 12, 113311, 7878, 1234,\n9991, 1000.\n\nImplementa una **funció** `is_sandwich` que rep un nombre natural i\nretorna `true` si és un número entrepà i `false` en cas contrari.\n\nLa capçalera de la funció ha de ser:\n\n    \/**\n     * @pre  n >= 0\n     * @post retorna cert si n és un número entrepà, fals en cas contrari\n     *\/\n    bool is_sandwich(int n);\n\n## Observació\n\nNomés cal enviar la funció demanada; el programa principal serà ignorat.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T13:08:40.923Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 2 · no resuelto",
+        "id" : "P2",
+        "jutge" : "V37339_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 2",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### Z61488 · Repeticions de Cartes\n\n# Repeticions de Cartes\n\nEscriu un **programa** que informi de les *repeticions consecutives* en\nuna seqüència de cartes de Poker. Es tracta de detectar subseqüències\nconsecutives de cartes iguals, d'una longitud $k \\geq 2$, i escriure a\nla sortida una frase descrivint cada subseqüència fent servir els noms\ntípics del Poker. Considerarem 4 casos: \\\"Parella\\\" ($k = 2$), \\\"Trio\\\"\n($k = 3$), \\\"Poker\\\" ($k = 4$) i repeticions més llargues ($k > 4$). Si\nuna carta no surt repetida a la seqüència no cal informar de res. Tampoc\ncal considerar solapaments, només cal informar de les subseqüències amb\nrepeticions més llargues.\n\n## Entrada\n\nL'entrada consisteix en una seqüència de caràcters que representen les\ncartes. Tal com en el problema \\\"Millor Carta\\\", els caràcters per a les\ncartes són `A`, `2`, `3`, \\..., `9`, `0`, `J`, `Q` i `K`. La seqüència\nde cartes acaba amb un punt, o sigui el caràcter `'.'`, i pot estar\nbuida.\n\n## Sortida\n\nCal detectar les repeticions consecutives de cartes i escriure a la\nsortida la descripció que correspongui al número de vegades $k$ que la\ncarta $C$ ha sortit repetida: \\\"Parella de $C$s\\\", \\\"Trio de $C$s\\\",\n\\\"Poker de $C$s\\\" o \\\"$k$ $C$s!\\\". Cada descripció ha d'anar en una\nlínia diferent i en l'ordre en què apareixen a la seqüència d'entrada.\nConsulteu les sortides dels jocs de prova públics per veure'n exemples\nconcrets.\n\n## Observació\n\nEn aquest problema cal tractar l'entrada caràcter a caràcter; si feu\nservir `string`s o algun mètode per emmagatzemar les cartes el problema\nserà considerat **invàlid**. A més, tingueu en compte que la seqüència\ns'assumeix que prové d'una font il·limitada de cartes, de manera que no\nes pot suposar cap longitud màxima.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T20:01:10.538Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 2 · no resuelto",
+        "id" : "P3",
+        "jutge" : "Z61488_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 2",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X48217 · Enumera nombres entrepà\n\n# Enumera nombres entrepà\n\nExactament igual que a l'exercici \\\"Nombres entrepà\\\", definim com a\nnúmero entrepà un natural $n$ amb només dos dígits diferents $d$ i $e$\nque estan repetits en la forma $de_1e_2\\cdots e_kd$, amb $k \\geq 1$.\n\nEscriu un **programa** que mostri per pantalla tots els nombres entrepà\nde $X$ xifres.\n\n## Entrada\n\nL'entrada consisteix en un natural $X$, amb $3 \\leq X \\leq 9$.\n\n## Sortida\n\nUna llista de nombres entrepà de $X$ xifres, un per línia. Els nombres\nes poden escriure **en qualsevol ordre**. Pots generar els nombres com\nvulguis, ja sigui com a enters o caràcter a caràcter.\n\n## Informació del problema\n\nAutoria: PRO1\n\nGeneració: 2026-01-25T21:36:41.957Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2024 Tardor - Torn 2 · no resuelto",
+        "id" : "P4",
+        "jutge" : "X48217_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2024 Tardor - Torn 2",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 4 problemas"
+  },
+  "fecha" : "2026-10-28T07:47:53Z",
+  "fuentes" : [
+    "S44767",
+    "V37339",
+    "Z61488",
+    "X48217"
+  ],
+  "id" : "A32BE03D-7D06-453D-A2DE-FC3F3A089DC1",
+  "minutos" : 43,
+  "modo" : "jutge",
+  "notaAntes" : 1.4978135993640993,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   S44767.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 08:50:20 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 09:11:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/**\n* @pre c1, c2 en {A, 2, 3, ..., 8, 9, 0, J, Q, K}\n* @post Retorna cert si c1 té un valor més alt que c2\n*\/\nbool\tbetter_card(char c1, char c2)\n{\n\tif (c1 == 'A')\n\t\tc1 = 1;\n\telse if (c2 == 'A')\n\t\tc2 = 1;\n\telse if (c1 == '0')\n\t\tc1 = 10;\n\telse if (c2 == '0')\n\t\tc2 = 10;\n\tif (c1 > c2)\n\t\treturn (true);\n\treturn (false);\n}",
+    "P2" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   V37339.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 09:13:21 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 09:30:37 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\n\/*\n   @pre nbr > 0\n   @pos retorna el tamany de nbr\n*\/\nint\tft_nbrlen(int nbr)\n{\n\tint\ti;\n\n\ti = 0;\n\twhile (nbr-- > 0)\n\t\ti++;\n\treturn (i);\n}\n\n\/**\n@pre n >= 0\n@post retorna cert si n és un número entrepà, fals en cas contrari\n*\/\nbool\tis_sandwich(int n)\n{\n\tint\tesquerra;\n\tint\tlen;\n\tint\t*pdreta;\n\tint\t*pesquerra;\n\n\tesquerra = n % 10;\n\tlen = ft_nbrlen(n);\n\tpesquerra = &esquerra;\n\tpdreta = pesquerra + len;\n\twhile (len-- > 0)\n\t{\n\t\tif (pesquerra == pdreta)\n\t\t\treturn (true);\n\t\treturn (false);\n\t}\n\treturn (false);\n}",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   Z61488.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 08:47:54 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 08:47:54 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X48217.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/28 08:47:54 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/28 08:47:54 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+
+  }
+}
