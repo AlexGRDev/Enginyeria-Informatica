@@ -15,7 +15,7 @@ Generado por Kiwi GEI el 2026-10-28. Objetivo: **10,0**. Próximo examen: Parcia
 | Funciones auxiliares | 15 % | 2,5 | 11 | 2026-10-28 (jutge) |
 | Recursividad | 12 % | 1,5 | 11 | 2026-10-28 (jutge) |
 | std::string | 10 % | 1,0 | 11 | 2026-10-28 (jutge) |
-| E/S con std::cin/std::cout | 8 % | 3,1 | 11 | 2026-10-28 (jutge) |
+| E/S con std::cin/std::cout | 8 % | 3,4 | 12 | 2026-10-28 (ejercicio) |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08
