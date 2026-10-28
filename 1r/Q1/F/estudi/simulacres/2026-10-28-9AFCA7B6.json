@@ -1,0 +1,155 @@
+{
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 120,
+    "preguntas" : [
+      {
+        "criterios" : "0,8 si marca la b. Incorrecta: -0,25 según criterio del examen original.",
+        "ejercicio" : 3,
+        "enunciado" : "Quina de les quatre resistències del circuit de la figura consumeix la potència més alta?\n\n(ver figura en el PDF original: bateria $\\varepsilon=20\\,\\mathrm{V}$ en una malla amb dues branques en paral·lel; una branca té $R_1=3\\,\\Omega$ i $R_2=2\\,\\Omega$ en sèrie, l'altra $R_3=6\\,\\Omega$ i $R_4=4\\,\\Omega$ en sèrie)\n\na) $R_2$\nb) $R_1$\nc) $R_3$\nd) $R_4$",
+        "fuente" : "Ex_CC_CA_abril2021.pdf, Model A, T3",
+        "id" : "T1",
+        "opciones" : [
+          "R2",
+          "R1",
+          "R3",
+          "R4"
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/examens\/Ex_CC_CA_abril2021.pdf",
+        "puntos" : 0.8,
+        "solucionReferencia" : "Resposta b. Les dues branques estan a 20 V. Branca 1: $R=5\\,\\Omega$, $I=4\\,\\mathrm{A}$. Branca 2: $R=10\\,\\Omega$, $I=2\\,\\mathrm{A}$. $P=RI^2$: $P_1=3\\cdot16=48\\,\\mathrm{W}$, $P_2=2\\cdot16=32\\,\\mathrm{W}$, $P_3=6\\cdot4=24\\,\\mathrm{W}$, $P_4=4\\cdot4=16\\,\\mathrm{W}$. Màxim: $R_1$.",
+        "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "0,8 si marca la a.",
+        "ejercicio" : 1,
+        "enunciado" : "Un circuit RLC amb una autoinducció $L=25\\,\\mathrm{mH}$ i una capacitat $C=10\\,\\mu\\mathrm{F}$ està connectat a una font de corrent altern de tensió efectiva $V_{eff}=220\\,\\mathrm{V}$. Si la pulsació (o freqüència angular) de la font és igual a la de ressonància, el circuit dissipa una potència $P=50\\,\\mathrm{W}$. Quin és el valor de la resistència $R$ del circuit?\n\na) $968\\,\\Omega$\nb) $4000\\,\\Omega$\nc) $2968\\,\\Omega$\nd) $2000\\,\\Omega$",
+        "fuente" : "Ex_CC_CA_nov2020.pdf, Model A, T1",
+        "id" : "T2",
+        "opciones" : [
+          "968 Ω",
+          "4000 Ω",
+          "2968 Ω",
+          "2000 Ω"
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/examens\/Ex_CC_CA_nov2020.pdf",
+        "puntos" : 0.8,
+        "solucionReferencia" : "Resposta a. En ressonància $Z=R$, per tant $P=V_{eff}^2\/R$ i $R=220^2\/50=968\\,\\Omega$.",
+        "tema" : "Corrent Altern",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "0,8 si marca la b.",
+        "ejercicio" : 5,
+        "enunciado" : "En un circuit amb dos terminals A i B, observem que si connectem entre aquests una resistència $R=500\\,\\Omega$, la diferència de potencial val $V_A-V_B=10\\,\\mathrm{V}$. En canvi si $R=1000\\,\\Omega$, trobem $V_A-V_B=12\\,\\mathrm{V}$. Podem deduir que l'equivalent Thévenin del circuit és:\n\na) $\\varepsilon_{Th}=12\\,\\mathrm{V}$, $R_{Th}=600\\,\\Omega$\nb) $\\varepsilon_{Th}=15\\,\\mathrm{V}$, $R_{Th}=250\\,\\Omega$\nc) $\\varepsilon_{Th}=24\\,\\mathrm{V}$, $R_{Th}=250\\,\\Omega$\nd) $\\varepsilon_{Th}=24\\,\\mathrm{V}$, $R_{Th}=600\\,\\Omega$",
+        "fuente" : "Ex_CC_CA_mar2022.pdf, Model A, T5",
+        "id" : "T3",
+        "opciones" : [
+          "εTh = 12 V, RTh = 600 Ω",
+          "εTh = 15 V, RTh = 250 Ω",
+          "εTh = 24 V, RTh = 250 Ω",
+          "εTh = 24 V, RTh = 600 Ω"
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/examens\/Ex_CC_CA_mar2022.pdf",
+        "puntos" : 0.8,
+        "solucionReferencia" : "Resposta b. $V=\\varepsilon_{Th}R\/(R_{Th}+R)$. Dividint: $12\/10=2(R_{Th}+500)\/(R_{Th}+1000)$, d'on $6(R_{Th}+1000)=10(R_{Th}+500)$ i $R_{Th}=250\\,\\Omega$. Llavors $\\varepsilon_{Th}=10\\cdot750\/500=15\\,\\mathrm{V}$.",
+        "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "0,8 si marca la a.",
+        "ejercicio" : 4,
+        "enunciado" : "En el circuit de la figura, connectem l'interruptor a l'instant $t=0$. Podem afirmar que:\n\n(ver figura en el PDF original: font de $10\\,\\mathrm{V}$, interruptor, bobina de $10\\,\\mathrm{mH}$ i resistència $R=1\\,\\mathrm{k}\\Omega$ en sèrie)\n\na) La intensitat final és $10\\,\\mathrm{mA}$.\nb) La constant de temps val $100\\,\\mu\\mathrm{s}$.\nc) La intensitat inicial és $10\\,\\mathrm{mA}$.\nd) La constant de temps val $100\\,\\mathrm{ms}$.",
+        "fuente" : "Ex_CC_CA_nov2021.pdf, Model A, T4",
+        "id" : "T4",
+        "opciones" : [
+          "La intensitat final és 10 mA.",
+          "La constant de temps val 100 µs.",
+          "La intensitat inicial és 10 mA.",
+          "La constant de temps val 100 ms."
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/examens\/Ex_CC_CA_nov2021.pdf",
+        "puntos" : 0.8,
+        "solucionReferencia" : "Resposta a. $I(t)=\\frac{\\varepsilon}{R}(1-e^{-t\/\\tau})$: inicial 0, final $\\varepsilon\/R=10\/1000=10\\,\\mathrm{mA}$, $\\tau=L\/R=10\\,\\mu\\mathrm{s}$.",
+        "tema" : "Corrent Altern",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "0,8 si marca la b.",
+        "ejercicio" : 4,
+        "enunciado" : "Trobeu el valor de la freqüència pel qual la funció de transferència del circuit representat a la figura és $V_{out}\/V_{in}=1\/\\sqrt{5}$\n\n(ver figura en el PDF original: font $V_{in}$ en sèrie amb una bobina $L$; la resistència $R$ en paral·lel a la sortida, $V_{out}$ és la tensió a $R$)\n\na) $\\omega=R\/(2L)$\nb) $\\omega=2R\/L$\nc) $\\omega=R\/L$\nd) $\\omega=\\sqrt{5}R\/L$",
+        "fuente" : "Ex_CC_CA_mar2022.pdf, Model A, T4",
+        "id" : "T5",
+        "opciones" : [
+          "ω = R\/(2L)",
+          "ω = 2R\/L",
+          "ω = R\/L",
+          "ω = √5 R\/L"
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/examens\/Ex_CC_CA_mar2022.pdf",
+        "puntos" : 0.8,
+        "solucionReferencia" : "Resposta b. $V_{out}\/V_{in}=R\/\\sqrt{R^2+(L\\omega)^2}=1\/\\sqrt5$ implica $R^2+L^2\\omega^2=5R^2$, $L\\omega=2R$, $\\omega=2R\/L$.",
+        "tema" : "Corrent Altern",
+        "tipo" : "test"
+      },
+      {
+        "criterios" : "a) 0,9: sentits i corrents (0,45), les dues fems (0,45). b) 1,2: $\\epsilon_{Th}$ (0,3), $R_{Th}$ (0,3), $R$ de potència màxima (0,3), potència (0,3). c) 0,9: $\\Delta V_R=0$ i $\\Delta V_C=5.3\\,\\mathrm{V}$ (0,45), capacitat (0,45). Descomptar unitats absents.",
+        "enunciado" : "Problema 1 (CC). En el circuit de la figura sabem que la intensitat que circula per la resistència $R_1$ en sentit $B\\to A$ val $7.2\\,\\mathrm{mA}$, i que la diferència de potencial entre els punts $A$ i $B$ és $V_A-V_B=5.3\\,\\mathrm{V}$.\n\n(ver figura en el PDF original: tres branques entre A i B: esquerra $R_1$ amb $\\epsilon_1$, central $\\epsilon_2$ amb $R_2$, dreta $R_3$)\n\na) Determineu el valor dels corrents $I_2$ i $I_3$ que circulen per les resistències $R_2$ i $R_3$, tot indicant el seu sentit de circulació ($A\\to B$ o $B\\to A$). Trobeu també el valor de les fonts de tensió $\\epsilon_1$ i $\\epsilon_2$. (3p)\n\nb) Trobeu l'equivalent de Thévenin del circuit entre els punts $A$ i $B$. Quin és el valor de la resistència que connectada entre $A$ i $B$ consumeix la màxima potència? Quant val aquesta potència? (4p)\n\nc) Connectem entre els $A$ i $B$ una nova branca formada per un condensador $C$ i una resistència $R$ en sèrie. Quant val la diferència de potencial a cadascun d'aquests dos elements? Sabent que la càrrega del condensador un cop el sistema assoleix l'estat estacionari és de $3\\,\\mu\\mathrm{C}$, determineu quina és la seva capacitat. (3p)\n\nDades: $R_1=800\\,\\Omega$, $R_2=420\\,\\Omega$ i $R_3=150\\,\\Omega$.\n\nPuntuació en aquest simulacro: a) 0,9; b) 1,2; c) 0,9 (total 3).",
+        "fuente" : "Ex_CC_CA_nov2021.pdf, Problema",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "puntos" : 3,
+        "solucionReferencia" : "a) $V_A>V_B$: $I_3=5.3\/150=35.3\\,\\mathrm{mA}$ de $A\\to B$. Nusos: $I_1+I_2=I_3$, $I_2=35.3-7.2=28.1\\,\\mathrm{mA}$ en sentit $B\\to A$. Branca esquerra: $\\epsilon_1=(V_A-V_B)+R_1I_1=5.3+800\\cdot0.0072=11.06\\,\\mathrm{V}$. Branca central: $\\epsilon_2=5.3+420\\cdot0.0281=17.1\\,\\mathrm{V}$.\nb) $\\epsilon_{Th}=V_A-V_B=5.3\\,\\mathrm{V}$ (circuit obert). $1\/R_{Th}=1\/800+1\/420+1\/150$, $R_{Th}=97.1\\,\\Omega$. Màxima potència amb $R=R_{Th}=97.1\\,\\Omega$: $I=\\epsilon_{Th}\/(2R_{Th})=27.3\\,\\mathrm{mA}$, $P=I^2R=72.3\\,\\mathrm{mW}$.\nc) A l'estat estacionari $I=0$ a la branca: $\\Delta V_R=0$, $\\Delta V_C=5.3\\,\\mathrm{V}$. $C=Q\/\\Delta V=3\\cdot10^{-6}\/5.3=0.57\\,\\mu\\mathrm{F}$.",
+        "tema" : "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "a) 1,5: $I(t)$ con amplitud y fase (0,6), $\\bar Z_{total}$ (0,5), $P$ (0,4). b) 0,9: $\\bar Z_{AB}$ (0,45), $V_{AB}(t)$ (0,45). c) 0,6: $\\bar I_L$ (0,3), $\\bar I_p$ por nudos (0,3). Penalizar signo de fase y unidades.",
+        "ejercicio" : 2,
+        "enunciado" : "Problema 2 (CA). Al laboratori hem vist que mesurant la tensió en una resistència i a la font, som capaços de determinar els elements del circuit per casos senzills. Suposem que pel circuit de la figura veiem a l'oscil·loscopi que $V(t)=100\\cos(100\\pi t)\\,\\mathrm{V}$, i que la tensió a $R$ ($V_{BC}(t)$) té un valor màxim de $90\\,\\mathrm{V}$ i va endarrerida $14^\\circ$ respecte de $V(t)$. Determineu:\n\n(ver figura en el PDF original: generador $V(t)$ amb intensitat $I(t)$ cap amunt; entre els punts A i B, en paral·lel, una bobina $X_L=10\\,\\Omega$ i una impedància desconeguda $\\bar Z_p$; entre B i C una resistència $R=50\\,\\Omega$ que retorna al generador)\n\n(a) La intensitat instantània $I(t)$ subministrada pel generador, la impedància complexa $\\bar Z_{total}$ del circuit, i la potència mitjana $P$ que consumeix. (5p)\n\n(b) La impedància complexa equivalent $\\bar Z_{AB}$ entre A i B, i la tensió instantània $V_{AB}(t)$ entre aquests dos mateixos punts. (3p)\n\n(c) El fasor de la intensitat $\\bar I_L$ de la branca on hi ha $X_L$, i també el fasor de la intensitat $\\bar I_p$ per la branca on hi ha la impedància desconeguda $\\bar Z_p$ (que podríem ara determinar fàcilment, però no cal que ho feu). (2p)\n\nPuntuació en aquest simulacro: a) 1,5; b) 0,9; c) 0,6 (total 3).",
+        "fuente" : "Ex_CC_CA_nov2022.pdf, Problema 2",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 4,
+        "pdf" : "material\/examens\/Ex_CC_CA_nov2022.pdf",
+        "puntos" : 3,
+        "solucionReferencia" : "a) $\\bar V_R=90\\angle-14^\\circ\\,\\mathrm{V}$, $\\bar I=\\bar V_{BC}\/R=1.8\\angle-14^\\circ\\,\\mathrm{A}=1.75-j0.44\\,\\mathrm{A}$, $I(t)=1.8\\cos(100\\pi t-14^\\circ)\\,\\mathrm{A}$. $\\bar Z_{total}=100\\angle0^\\circ\/1.8\\angle-14^\\circ=55.5\\angle14^\\circ=53.9+j13.44\\,\\Omega$. $P=\\frac{I_0V_0}{2}\\cos\\varphi=\\frac{1.8\\cdot100}{2}\\cos14^\\circ=87.3\\,\\mathrm{W}$.\nb) $\\bar Z_{AB}=\\bar Z_{total}-R=3.9+j13.44\\,\\Omega=14\\angle73.5^\\circ\\,\\Omega$. $\\bar V_{AB}=\\bar Z_{AB}\\bar I=25.2\\angle60^\\circ\\,\\mathrm{V}$, $V_{AB}(t)=25.2\\cos(100\\pi t+60^\\circ)\\,\\mathrm{V}$.\nc) $\\bar I_L=\\bar V_{AB}\/(j10)=25.2\\angle60^\\circ\/10\\angle90^\\circ=2.52\\angle-30^\\circ\\,\\mathrm{A}=2.18-j1.26\\,\\mathrm{A}$. $\\bar I_p=\\bar I-\\bar I_L=-0.43+j0.82\\,\\mathrm{A}=0.92\\angle117.6^\\circ\\,\\mathrm{A}$.",
+        "tema" : "Corrent Altern",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Simulacro Parcial 1 F: Corrent Continu i Corrent Altern (5 tests + 2 problemes)"
+  },
+  "fecha" : "2026-10-28T11:23:03Z",
+  "fuentes" : [
+    "material\/examens\/Ex_CC_CA_abril2021.pdf",
+    "material\/examens\/Ex_CC_CA_mar2022.pdf",
+    "material\/examens\/Ex_CC_CA_nov2020.pdf",
+    "material\/examens\/Ex_CC_CA_nov2021.pdf",
+    "material\/examens\/Ex_CC_CA_nov2022.pdf"
+  ],
+  "id" : "9AFCA7B6-EE32-4448-833C-1D6E55525E60",
+  "minutos" : 1,
+  "modo" : "estilo",
+  "notaAntes" : 0.8615384615384615,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "T1" : "b",
+    "T2" : "c",
+    "T3" : "a",
+    "T4" : "c",
+    "T5" : "a"
+  }
+}
