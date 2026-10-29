@@ -8,8 +8,8 @@ Generado el 2026-10-29. Ordenado por número de veces: arriba, lo que más hay q
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
 | No sabe abordar Funciones auxiliares | Funciones auxiliares | 16 | 2026-10-28 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
+| No sabe abordar Tipos básicos | Tipos básicos | 15 | 2026-10-29 | Practicar la inversión de dígitos con %10 y /10 en un while (n > 0), escribiendo cada dígito al sacarlo, y tratar aparte el caso n == 0. |
 | No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 14 | 2026-10-29 | Hacer ++s y ajustar con if (s == 60) {s = 0; ++m;} y lo mismo con m y h. Imprimir un 0 delante si el valor es menor que 10. |
-| No sabe abordar Tipos básicos | Tipos básicos | 14 | 2026-10-28 | Practicar la inversión de dígitos con %10 y /10 y la comparación con el original. |
 | No documentar las funciones con especificación pre/post | Funciones auxiliares | 8 | 2026-10-28 | Escribir @pre y @post sobre cada función antes de implementarla. |
 | No sabe abordar Recursividad | Recursividad | 4 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
 | Uso incorrecto de punteros sobre variables escalares | Punteros y aritmética de punteros | 3 | 2026-10-28 | Usar variables enteras/char o vector con índices; reservar memoria dinámica solo cuando el enunciado lo pida. |

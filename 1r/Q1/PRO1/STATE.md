@@ -9,7 +9,7 @@ Generado por Kiwi GEI el 2026-10-29. Objetivo: **10,0**. Próximo examen: Parcia
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | 3,0 | 12 | 2026-10-29 (ejercicio) |
+| Tipos básicos | 15 % | 2,8 | 13 | 2026-10-29 (ejercicio) |
 | Punteros y aritmética de punteros | 20 % | 1,2 | 11 | 2026-10-28 (jutge) |
 | Cadenas estilo C (char*) | 20 % | 0,6 | 11 | 2026-10-28 (jutge) |
 | Funciones auxiliares | 15 % | 2,5 | 11 | 2026-10-28 (jutge) |
