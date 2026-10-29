@@ -1,0 +1,92 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 2.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1.2,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0.6,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 2.5,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 3,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 1,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Extrae un único dígito con %10 y \/10 en vez de recorrer todos los dígitos con un bucle; solo cubre números de dos cifras.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Practicar la inversión de dígitos con %10 y \/10 en un while (n > 0), escribiendo cada dígito al sacarlo, y tratar aparte el caso n == 0.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "Haces una sola división y un solo módulo, así que solo funciona con números de dos cifras. Con 123 escribe 312 en lugar de 321. Con un dígito, como 5, escribe 50 en lugar de 5. Con ceros finales, como 1200, no escribe 0021. Falta un bucle while (nbr > 0) que saque el último dígito con %10, lo escriba y divida con \/10. Así se obtienen también los ceros a la izquierda. El caso 0 hay que tratarlo aparte, escribiendo 0. Solo pasa el caso trivial.",
+        "funcional" : 1,
+        "id" : "P1",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 1
+      }
+    ],
+    "resumen" : "El programa solo invierte bien números de dos cifras. No hay bucle de extracción de dígitos con %10 y \/10, que es el núcleo del ejercicio. No se aportó ninguna imagen de pizarra, así que he corregido solo el código entregado. Nota: 1\/10."
+  },
+  "diagnostico" : false,
+  "ejercicio" : true,
+  "examen" : {
+    "duracionMinutos" : 20,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### P50327 · Número del revés\n\n# Número del revés\n\nFeu un programa que llegeixi un nombre i que l'escrigui del revés.\n\n## Entrada\n\nL'entrada consisteix en un natural.\n\n## Sortida\n\nEscriviu el número del revés, amb tants zeros a l'esquerra com té a la\ndreta.\n\n## Informació del problema\n\nAutoria: Jordi Petit\n\nGeneració: 2026-01-25T11:02:31.019Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Tipos básicos · no resuelto",
+        "id" : "P1",
+        "jutge" : "P50327_ca",
+        "puntos" : 10,
+        "solucionReferencia" : "",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Ejercicio · Tipos básicos · P50327"
+  },
+  "fecha" : "2026-10-29T09:05:14Z",
+  "fuentes" : [
+    "P50327"
+  ],
+  "id" : "DAE71409-503C-4328-BED7-476DF04A10D1",
+  "minutos" : 14,
+  "modo" : "jutge",
+  "notaAntes" : 2.6479423221290386,
+  "notaDespues" : 2.6223116454669766,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P50327.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/29 10:05:14 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/29 10:05:14 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\tnbr,div,mod;\n\n\tstd::cin >> nbr;\n\tdiv = nbr \/ 10;\n\tmod = nbr % 10;\n\tstd::cout << mod << div << '\\n';\n\treturn (0);\n}"
+  },
+  "veredictos" : {
+    "P1" : "WA"
+  }
+}

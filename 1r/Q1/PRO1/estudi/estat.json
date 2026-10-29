@@ -63,7 +63,7 @@
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.6183241486026078,
+      "dominio" : 0.6183241486026076,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -217,7 +217,7 @@
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.453190857248781,
+      "dominio" : 2.4531908572487806,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -430,7 +430,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 3.006501175850625,
+      "dominio" : 2.835631531533092,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -503,11 +503,17 @@
           "fecha" : "2026-10-29T09:03:51Z",
           "fuente" : "ejercicio",
           "nota" : 9.5
+        },
+        {
+          "evidencia" : "Ejercicio · Tipos básicos · P50327: 1,0",
+          "fecha" : "2026-10-29T09:19:41Z",
+          "fuente" : "ejercicio",
+          "nota" : 1
         }
       ]
     },
     "std::string" : {
-      "dominio" : 1.0076922211572128,
+      "dominio" : 1.0076922211572126,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",

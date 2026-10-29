@@ -23,23 +23,23 @@
   {
     "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
     "ejemplos" : [
-      "No implementa la conversión de dígito a char con aritmética de caracteres.",
       "No sabe construir x en base 256 y extraer dígitos en base 64.",
       "Pregunta en blanco.",
       "Ejercicio en blanco: no construye el valor del byte ni escribe char(valor).",
       "Pregunta en blanco: conversión binario a decimal solo con aritmética de int.",
       "Ejercicio en blanco.",
       "Ejercicio de generación de números bicolor sin respuesta.",
-      "Ejercicio de capicúa con dígitos en blanco."
+      "Ejercicio de capicúa con dígitos en blanco.",
+      "Extrae un único dígito con %10 y \/10 en vez de recorrer todos los dígitos con un bucle; solo cubre números de dos cifras."
     ],
     "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
     "patron" : "No sabe abordar Tipos básicos",
     "primera" : "2026-10-25T20:40:13Z",
     "racha" : 0,
-    "refuerzo" : "Practicar la inversión de dígitos con %10 y \/10 y la comparación con el original.",
+    "refuerzo" : "Practicar la inversión de dígitos con %10 y \/10 en un while (n > 0), escribiendo cada dígito al sacarlo, y tratar aparte el caso n == 0.",
     "tema" : "Tipos básicos",
-    "ultima" : "2026-10-28T11:11:03Z",
-    "veces" : 14
+    "ultima" : "2026-10-29T09:19:41Z",
+    "veces" : 15
   },
   {
     "descripcion" : "Falta ';', identificador mal escrito, comillas tipográficas y condición sin cerrar.",
