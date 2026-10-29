@@ -2,23 +2,23 @@
   {
     "descripcion" : "Entrega main vacío, sin lectura ni salida.",
     "ejemplos" : [
-      "Recorrido de secuencia con rachas de paridad.",
       "No plantea el esquema de lectura de la secuencia con contadores de racha.",
       "Recorrido de secuencia sin sentinela con estado (fase de subida\/bajada) y salida 'si'\/'no' exacta.",
       "No sabe leer racionales con separador '\/' en una secuencia sin sentinela.",
       "Falta cin >> c al final del bucle; se usa s++ en vez de leer, y la racha no se calcula.",
       "El main no lee la entrada con cin; hardcodea los datos y lee fuera del array.",
       "Ejercicio en blanco: no sabe abordar la lectura con centinela y contador de racha.",
-      "Ejercicio en blanco."
+      "Ejercicio en blanco.",
+      "No suma un segundo ni propaga el acarreo entre segundos, minutos y horas. Tampoco formatea la salida con dos dígitos ni con salto de línea."
     ],
     "id" : "9B332E4F-C8B2-439A-B5F0-B3A78367A0B8",
     "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
     "primera" : "2026-10-25T20:40:13Z",
     "racha" : 0,
-    "refuerzo" : "Esquema cin >> c; while (c != '.') { ...; cin >> c; } con contador de racha.",
+    "refuerzo" : "Hacer ++s y ajustar con if (s == 60) {s = 0; ++m;} y lo mismo con m y h. Imprimir un 0 delante si el valor es menor que 10.",
     "tema" : "E\/S con std::cin\/std::cout",
-    "ultima" : "2026-10-28T08:32:09Z",
-    "veces" : 13
+    "ultima" : "2026-10-29T08:51:22Z",
+    "veces" : 14
   },
   {
     "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
@@ -222,15 +222,17 @@
   {
     "descripcion" : "while (std::cin.get(c)) carácter a carácter hasta EOF, sin estructura por caso.",
     "ejemplos" : [
-      "while (std::cin.get(c)) carácter a carácter hasta EOF, sin estructura por caso."
+      "while (std::cin.get(c)) carácter a carácter hasta EOF, sin estructura por caso.",
+      "Usa while (std::cin >> h >> m >> s) cuando el enunciado da una única hora."
     ],
     "id" : "22E2E27D-4584-4D7D-A6E8-5A88798DB6DA",
     "patron" : "Esquemas de lectura no recomendados",
     "primera" : "2026-10-28T11:11:03Z",
-    "refuerzo" : "Leer el primer carácter y luego el esquema del curso, procesando un caso completo por iteración.",
+    "racha" : 0,
+    "refuerzo" : "Leer una sola vez cin >> h >> m >> s y resolver el caso sin bucle.",
     "tema" : "E\/S con std::cin\/std::cout",
-    "ultima" : "2026-10-28T11:11:03Z",
-    "veces" : 1
+    "ultima" : "2026-10-29T08:51:22Z",
+    "veces" : 2
   },
   {
     "descripcion" : "Se reordenan los tres números dentro del bucle de salida, una vez por letra.",

@@ -1,0 +1,83 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1,
+        "tema" : "E\/S con std::cin\/std::cout"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Tipos básicos"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "No suma un segundo ni propaga el acarreo entre segundos, minutos y horas. Tampoco formatea la salida con dos dígitos ni con salto de línea.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Hacer ++s y ajustar con if (s == 60) {s = 0; ++m;} y lo mismo con m y h. Imprimir un 0 delante si el valor es menor que 10.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          },
+          {
+            "descripcion" : "Usa while (std::cin >> h >> m >> s) cuando el enunciado da una única hora.",
+            "patron" : "Esquemas de lectura no recomendados",
+            "refuerzo" : "Leer una sola vez cin >> h >> m >> s y resolver el caso sin bucle.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "Funcionalmente es incorrecto: no incrementa el segundo en ningún caso. `h \/= 24`, `m \/= 60` y `s \/= 60 + 1` dividen y casi siempre dejan 0 o 1, así que la salida no tiene relación con la hora de entrada. No hay lógica de acarreo (s a m, m a h, 23:59:59 a 00:00:00). El formato `HH:MM:SS` con dos dígitos tampoco se cumple, porque no se rellena con ceros, y no se escribe salto de línea. Además, `while (std::cin >> h >> m >> s)` procesa varios casos cuando el enunciado pide uno solo, y no es el esquema de lectura recomendado. Falla los 5 samples.",
+        "funcional" : 0,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Esquemas de lectura no recomendados",
+            "detalle" : "while (std::cin >> h >> m >> s) con una única terna de datos en la entrada.",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "El programa no resuelve el problema. Nunca suma el segundo, no propaga acarreos (s=59 a m, m=59 a h, 23:59:59 a 00:00:00) y no imprime con dos dígitos. Las divisiones `h \/= 24`, `m \/= 60` y `s \/= 60 + 1` destruyen los valores en vez de ajustarlos. Hace falta `++s` y, después, `if (s == 60) { s = 0; ++m; }`, y lo mismo con m y h. Para el formato, imprimir un `0` delante cuando el valor es menor que 10. No he podido ver las imágenes de pizarra: la corrección se basa solo en el código entregado."
+  },
+  "diagnostico" : false,
+  "ejercicio" : true,
+  "examen" : {
+    "duracionMinutos" : 20,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### P34279 · Suma d'un segon\n\n# Suma d'un segon\n\nFeu un programa que afegeixi un segon a una hora del dia, donades les\nseves hores, minuts i segons.\n\n## Entrada\n\nL'entrada consisteix en tres naturals $h$, $m$ i $s$ que representen una\nhora del dia, és a dir, tals que $h<24$, $m<60$ i $s<60$.\n\n## Sortida\n\nCal escriure el nou temps definit per $h$, $m$ i $s$ més un segon en el\nformat \"`HH:MM:SS`\".\n\n## Informació del problema\n\nAutoria: Jordi Petit\n\nGeneració: 2026-01-25T10:21:01.303Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Tipos básicos · no resuelto",
+        "id" : "P1",
+        "jutge" : "P34279_ca",
+        "puntos" : 10,
+        "solucionReferencia" : "",
+        "tema" : "E\/S con std::cin\/std::cout",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Ejercicio · E\/S con std::cin\/std::cout · P34279"
+  },
+  "fecha" : "2026-10-29T08:35:53Z",
+  "fuentes" : [
+    "P34279"
+  ],
+  "id" : "4F3E01B9-0059-49B2-8B75-CC78821EF943",
+  "minutos" : 15,
+  "modo" : "jutge",
+  "notaAntes" : 2.5710285683184093,
+  "notaDespues" : 2.5480372608816357,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P34279.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/29 09:35:53 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/29 09:35:53 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\th,m,s;\n\n\twhile (std::cin >> h >> m >> s)\n\t{\n\t\tif ((h > 0 && h < 12) || (h > 12 && h < 24))\n\t\t\th \/= 24;\n\t\tif (m > 0 && m < 60)\n\t\t\tm \/=  60;\n\t\tif (s > 0 && s < 60)\n\t\t\ts \/= 60 + 1;\n\t\tstd::cout << h << \":\" << m << \":\" << s;\n\t}\n\treturn (0);\n}"
+  },
+  "veredictos" : {
+    "P1" : "WA"
+  }
+}
