@@ -13,10 +13,10 @@ Generado el 2026-10-29. Ordenado por número de veces: arriba, lo que más hay q
 | No documentar las funciones con especificación pre/post | Funciones auxiliares | 8 | 2026-10-28 | Escribir @pre y @post sobre cada función antes de implementarla. |
 | No sabe abordar Recursividad | Recursividad | 4 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
 | Uso incorrecto de punteros sobre variables escalares | Punteros y aritmética de punteros | 3 | 2026-10-28 | Usar variables enteras/char o vector con índices; reservar memoria dinámica solo cuando el enunciado lo pida. |
+| Código redundante o innecesariamente complicado | Tipos básicos | 2 | 2026-10-29 | Encadenar con else if cuando las condiciones son excluyentes y no evaluar condiciones de más. |
 | Esquemas de lectura no recomendados | E/S con std::cin/std::cout | 2 | 2026-10-29 | Leer una sola vez cin >> h >> m >> s y resolver el caso sin bucle. |
 | Código redundante o innecesariamente complicado | E/S con std::cin/std::cout | 1 | 2026-10-28 | Ordenar una sola vez antes del bucle de escritura, o separar ordenar y escribir en funciones distintas. |
 | Código redundante o innecesariamente complicado | Funciones auxiliares | 1 | 2026-10-28 | Leer los 5 caracteres de cada caso y resolver según la posición de la x. |
-| Código redundante o innecesariamente complicado | Tipos básicos | 1 | 2026-10-28 | Devolver directamente la expresión booleana. |
 | Código redundante o innecesariamente complicado | Cadenas estilo C (char*) | 1 | 2026-10-27 | Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales. |
 | Incumplir restricción explícita del enunciado | Tipos básicos | 1 | 2026-10-26 | Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y /10. |
 | No aplicar diseño descendente | Funciones auxiliares | 1 | 2026-10-26 | Extraer una acción escriu(n, c) que escriba n veces un carácter. |

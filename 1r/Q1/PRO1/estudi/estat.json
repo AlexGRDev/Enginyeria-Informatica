@@ -63,7 +63,7 @@
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.6183241486026075,
+      "dominio" : 0.6183241486026078,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -134,7 +134,7 @@
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 3.0841529175398126,
+      "dominio" : 3.084152944988827,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -359,7 +359,7 @@
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.5155471351078427,
+      "dominio" : 1.515547135107843,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -430,7 +430,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.3402813952269597,
+      "dominio" : 3.006501175850625,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -497,11 +497,17 @@
           "fecha" : "2026-10-28T11:11:03Z",
           "fuente" : "jutge",
           "nota" : 4.5
+        },
+        {
+          "evidencia" : "Ejercicio · Tipos básicos · X65880: 9,5",
+          "fecha" : "2026-10-29T09:03:51Z",
+          "fuente" : "ejercicio",
+          "nota" : 9.5
         }
       ]
     },
     "std::string" : {
-      "dominio" : 1.0076922211572126,
+      "dominio" : 1.0076922211572128,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
