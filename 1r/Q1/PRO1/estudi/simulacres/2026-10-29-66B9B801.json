@@ -1,0 +1,77 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 4,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 4,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 9.5,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Tres `if` independientes para casos mutuamente excluyentes en vez de una cadena `if \/ else if`.",
+            "patron" : "Código redundante o innecesariamente complicado",
+            "refuerzo" : "Encadenar con else if cuando las condiciones son excluyentes y no evaluar condiciones de más.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "Lee el carácter y clasifica correctamente mayúscula, minúscula y dígito con comparaciones de rango; el AC y los tres casos públicos lo confirman. Falla en la estructura: los tres casos son mutuamente excluyentes, pero usas tres `if` independientes que se evalúan siempre. Lo natural es `if \/ else if \/ else if`. También sobran `<< '\\n'` como segunda inserción (se puede poner `\"\\n\"` en la cadena o usar `endl`) y los paréntesis en `return (0)`. Son detalles menores de simplicidad.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "`if (c >= 'A' && c <= 'Z') ... if (c >= 'a' && c <= 'z') ... if (c >= '0' && c <= '9')` sin `else if`, aunque los casos son excluyentes.",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 9.5
+      }
+    ],
+    "resumen" : "Solución correcta (AC) y legible. Único defecto: tres `if` independientes para casos mutuamente excluyentes, sin `else if`, más detalles superfluos de forma."
+  },
+  "diagnostico" : false,
+  "ejercicio" : true,
+  "examen" : {
+    "duracionMinutos" : 20,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X65880 · Lletra o numero?\n\n# Lletra o numero?\n\nFeu un programa que llegeixi un caràcter alfabètic i digui si és una\nlletra (mjúacula o minúscula) o un nombre .\n\n## Entrada\n\nL'entrada consisteix en un caràcter alfabétic (mai serà un signe de\npuntuació).\n\n## Sortida\n\nCal escriure una línia indicant el tipus de caràcter. Seguiu el format\ndels exemples.\n\n## Informació del problema\n\nAutoria: Maria Serna\n\nGeneració: 2026-01-25T17:34:20.589Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Tipos básicos · no resuelto",
+        "id" : "P1",
+        "jutge" : "X65880_ca",
+        "puntos" : 10,
+        "solucionReferencia" : "",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Ejercicio · Tipos básicos · X65880"
+  },
+  "fecha" : "2026-10-29T08:58:23Z",
+  "fuentes" : [
+    "X65880"
+  ],
+  "id" : "66B9B801-B5B9-4A2C-8304-FBA963B57C51",
+  "minutos" : 5,
+  "modo" : "jutge",
+  "notaAntes" : 2.5480250053810747,
+  "notaDespues" : 2.6479578226453038,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   X65880.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/29 09:58:23 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/29 09:58:23 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tchar\tc;\n\n\tstd::cin >> c;\n\tif (c >= 'A' && c <= 'Z')\n\t\tstd::cout << \"Lletra majuscula\" << '\\n';\n\tif (c >= 'a' && c <= 'z')\n\t\tstd::cout << \"Lletra minuscula\" << '\\n';\n\tif (c >= '0' && c <= '9')\n\t\tstd::cout << \"Numero\" << '\\n';\n\treturn (0);\n}"
+  },
+  "veredictos" : {
+    "P1" : "AC"
+  }
+}

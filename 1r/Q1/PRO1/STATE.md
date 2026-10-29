@@ -5,11 +5,11 @@
 
 Generado por Kiwi GEI el 2026-10-29. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 0 días).
 
-**Estimación: 1,6 / 10** (-8,4 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,6.
+**Estimación: 1,7 / 10** (-8,3 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,7.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | 2,3 | 11 | 2026-10-28 (jutge) |
+| Tipos básicos | 15 % | 3,0 | 12 | 2026-10-29 (ejercicio) |
 | Punteros y aritmética de punteros | 20 % | 1,2 | 11 | 2026-10-28 (jutge) |
 | Cadenas estilo C (char*) | 20 % | 0,6 | 11 | 2026-10-28 (jutge) |
 | Funciones auxiliares | 15 % | 2,5 | 11 | 2026-10-28 (jutge) |

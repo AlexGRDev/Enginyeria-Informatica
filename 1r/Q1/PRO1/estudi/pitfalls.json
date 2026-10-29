@@ -180,15 +180,17 @@
   {
     "descripcion" : "`if (c1 > c2) return true; return false;` en vez de `return c1 > c2;`.",
     "ejemplos" : [
-      "`if (c1 > c2) return true; return false;` en vez de `return c1 > c2;`."
+      "`if (c1 > c2) return true; return false;` en vez de `return c1 > c2;`.",
+      "Tres `if` independientes para casos mutuamente excluyentes en vez de una cadena `if \/ else if`."
     ],
     "id" : "4F54407A-15EF-45A7-949F-6ABAAD9FD2D8",
     "patron" : "Código redundante o innecesariamente complicado",
     "primera" : "2026-10-28T08:32:09Z",
-    "refuerzo" : "Devolver directamente la expresión booleana.",
+    "racha" : 0,
+    "refuerzo" : "Encadenar con else if cuando las condiciones son excluyentes y no evaluar condiciones de más.",
     "tema" : "Tipos básicos",
-    "ultima" : "2026-10-28T08:32:09Z",
-    "veces" : 1
+    "ultima" : "2026-10-29T09:03:51Z",
+    "veces" : 2
   },
   {
     "descripcion" : "Aritmética de punteros sobre `&esquerra`, fuera de cualquier array (comportamiento indefinido).",
