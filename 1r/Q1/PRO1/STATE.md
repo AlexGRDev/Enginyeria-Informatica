@@ -3,7 +3,7 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-28. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 1 días).
+Generado por Kiwi GEI el 2026-10-29. Objetivo: **10,0**. Próximo examen: Parcial PRO1, 2026-10-29 (en 0 días).
 
 **Estimación: 1,6 / 10** (-8,4 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 1,6.
 
@@ -15,7 +15,7 @@ Generado por Kiwi GEI el 2026-10-28. Objetivo: **10,0**. Próximo examen: Parcia
 | Funciones auxiliares | 15 % | 2,5 | 11 | 2026-10-28 (jutge) |
 | Recursividad | 12 % | 1,5 | 11 | 2026-10-28 (jutge) |
 | std::string | 10 % | 1,0 | 11 | 2026-10-28 (jutge) |
-| E/S con std::cin/std::cout | 8 % | 3,4 | 12 | 2026-10-28 (ejercicio) |
+| E/S con std::cin/std::cout | 8 % | 3,1 | 13 | 2026-10-29 (ejercicio) |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08

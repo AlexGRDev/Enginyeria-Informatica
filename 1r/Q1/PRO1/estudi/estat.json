@@ -63,7 +63,7 @@
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.6183241486026078,
+      "dominio" : 0.6183241486026075,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -134,7 +134,7 @@
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 3.371540661817167,
+      "dominio" : 3.0841529175398126,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -207,11 +207,17 @@
           "fecha" : "2026-10-28T19:43:44Z",
           "fuente" : "ejercicio",
           "nota" : 6.5
+        },
+        {
+          "evidencia" : "Ejercicio · E\/S con std::cin\/std::cout · P34279: 0,0",
+          "fecha" : "2026-10-29T08:51:22Z",
+          "fuente" : "ejercicio",
+          "nota" : 0
         }
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.4531908572487815,
+      "dominio" : 2.453190857248781,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -282,7 +288,7 @@
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 1.1660006003328967,
+      "dominio" : 1.1660006003328964,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -353,7 +359,7 @@
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.5155471351078431,
+      "dominio" : 1.5155471351078427,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
