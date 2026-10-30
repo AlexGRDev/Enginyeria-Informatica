@@ -710,5 +710,82 @@
     "repeticiones" : 0,
     "respuesta" : "**6 V**",
     "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "1F2AAB60-38E5-43DA-A6FD-A0CAAF242061",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Resistencias en serie: **60 Ω**, **80 Ω** y **20 Ω**. ¿Total?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**160 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A0EB6EFC-F79B-4984-A220-2159E1BA0C2B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Divisor de tensión: Vin = **8 V**, R1 = **10 kΩ** (arriba), R2 = **30 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**6 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "1A3A7D06-56EB-4148-AB08-0337DBF6D552",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Pico a pico ocupa **6 divisiones** a **1 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **6 V**; amplitud = **3 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "65B4CD38-4647-406A-A92E-85BB73EC539F",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Periodo **0.1 ms**. ¿Frecuencia?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**10000 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "06DD89A6-3A63-408D-A4B4-AB42BE0BF152",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Periodo **0.5 ms**. ¿Frecuencia?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**2000 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E4E9B2C1-5B6D-465F-964E-AFD4B5F936D1",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Pico a pico ocupa **2 divisiones** a **5 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **10 V**; amplitud = **5 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "442A1CD8-D898-47B9-B85D-493525018973",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "**21 V** sobre **300 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**70 mA**; **1.47 W**",
+    "tema" : "Ohm"
   }
 ]
