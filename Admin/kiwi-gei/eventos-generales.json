@@ -182,5 +182,13 @@
     "notas" : "Plan automático de Kiwi GEI",
     "tipo" : "tarea",
     "titulo" : "[FM] Flashcards FM (30 s por tarjeta)"
+  },
+  {
+    "fecha" : "2026-10-30T17:08:00Z",
+    "hecho" : false,
+    "id" : "CD74DF05-F1F2-4CD6-B962-4731AA6A5EC5",
+    "notas" : "Plan automático de Kiwi GEI",
+    "tipo" : "tarea",
+    "titulo" : "[F] Flashcards F (30 s por tarjeta)"
   }
 ]
