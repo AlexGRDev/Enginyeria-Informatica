@@ -174,5 +174,13 @@
     "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527402",
     "tipo" : "tarea",
     "titulo" : "[IC] Entrega d'exercicis en paper tema 8"
+  },
+  {
+    "fecha" : "2026-10-30T17:00:00Z",
+    "hecho" : false,
+    "id" : "277EF27F-5BA0-46C8-BCEA-A844E8E4094C",
+    "notas" : "Plan automático de Kiwi GEI",
+    "tipo" : "tarea",
+    "titulo" : "[FM] Flashcards FM (30 s por tarjeta)"
   }
 ]
