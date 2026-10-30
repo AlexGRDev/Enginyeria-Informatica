@@ -166,5 +166,13 @@
     "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527330",
     "tipo" : "tarea",
     "titulo" : "[IC] Informe previ Pràctica 3"
+  },
+  {
+    "fecha" : "2026-11-15T22:59:00Z",
+    "hecho" : false,
+    "id" : "C0A6F2F9-0B82-4361-890A-B573B06370A8",
+    "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527402",
+    "tipo" : "tarea",
+    "titulo" : "[IC] Entrega d'exercicis en paper tema 8"
   }
 ]
