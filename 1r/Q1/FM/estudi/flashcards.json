@@ -704,5 +704,115 @@
     "repeticiones" : 0,
     "respuesta" : "**15**",
     "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "6C155A6A-7479-43B9-A6BA-0872C6BE6E27",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "mcm(**6**, **11**)",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**66**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "628B9E38-C0A9-40E4-9675-37E86B9DA5EF",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Inverso de **6** módulo **7**",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**6** (6·6 = 36 ≡ 1)",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "BAFA63E6-03E4-483C-BB9D-4E922D692D61",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "C(**7**, **2**)",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**21**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "B52FFEBB-4BDC-40C7-B1E0-82464EACD10D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "mcm(**4**, **5**)",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**20**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E26EE528-7649-4A41-B521-49107EE2CBE8",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "|A| = 25, |B| = 59, |A∩B| = 12. ¿|A∪B|?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**72**",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "416ED23C-4CFE-4505-994C-31CA3F22D1C6",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "Inverso de **3** módulo **13**",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**9** (3·9 = 27 ≡ 1)",
+    "tema" : "Congruencias"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F39D5D83-4B82-4D5E-937B-F0C75C3D4FC8",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "|A| = 32, |B| = 27, |A∩B| = 7. ¿|A∪B|?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**52**",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "0075E574-0D68-46D0-9748-1919140B5031",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "mcd(**80**, **40**)",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**40**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D98B4230-F24F-41B6-A471-0F39F0639F7B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "mcm(**10**, **11**)",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**110**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "6B3FED86-C26E-45F7-81CA-B7009287F257",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-10-30",
+    "pregunta" : "¿De cuántas formas se ordenan **4** elementos escogidos de entre **4**?",
+    "proxima" : "2026-10-30T11:07:19Z",
+    "repeticiones" : 0,
+    "respuesta" : "**24** (4!\/0!)",
+    "tema" : "Combinatoria"
   }
 ]
