@@ -28,13 +28,12 @@
       "asignatura" : "IC",
       "componente" : "EP1",
       "detalle" : "",
-      "fecha" : "2026-10-25T16:31:09Z",
-      "formato" : "Atenea",
+      "fecha" : "2026-11-10T07:55:15Z",
+      "formato" : "Papel",
       "id" : "AA37A10C-3DA0-42AA-BB8C-290F6AC43FA3",
-      "nombre" : "Qüestionari ET3a",
-      "nota" : 8.1,
-      "origen" : "atenea|Qüestionari ET3a",
-      "tipo" : "test"
+      "nombre" : "Examen parcial 1 (temas 2-7)",
+      "nota" : 0,
+      "tipo" : "examen"
     },
     {
       "asignatura" : "IC",
@@ -351,7 +350,9 @@
     "PRO1" : "enCurso"
   },
   "examenes" : {
-
+    "IC" : {
+      "parcial" : 0
+    }
   },
   "extras" : [
 
