@@ -143,7 +143,7 @@
     }
   ],
   "codigos" : {
-    "F" : "158"
+    "F" : "157"
   },
   "esquemas" : {
     "F" : {
@@ -524,7 +524,8 @@
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129193?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json"
   ],
   "sesiones" : [
     {
