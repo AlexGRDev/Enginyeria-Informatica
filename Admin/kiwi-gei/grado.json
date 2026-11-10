@@ -139,6 +139,17 @@
       "nombre" : "Pràctica 2 · Simulació de circuits de corrent continu",
       "nota" : 0,
       "tipo" : "laboratorio"
+    },
+    {
+      "asignatura" : "IC",
+      "detalle" : "",
+      "fecha" : "2026-11-10T08:22:30Z",
+      "formato" : "Atenea",
+      "id" : "1C8E5B2C-F0CF-42AF-8E38-6BBB00A9EC80",
+      "nombre" : "Qüestionari ET3a",
+      "nota" : 8.1,
+      "origen" : "atenea|Qüestionari ET3a",
+      "tipo" : "test"
     }
   ],
   "codigos" : {
