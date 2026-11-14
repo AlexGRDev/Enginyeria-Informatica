@@ -150,6 +150,17 @@
       "nota" : 8.1,
       "origen" : "atenea|Qüestionari ET3a",
       "tipo" : "test"
+    },
+    {
+      "asignatura" : "PRO1",
+      "componente" : "P",
+      "detalle" : "",
+      "fecha" : "2026-11-14T16:25:02Z",
+      "formato" : "Papel",
+      "id" : "D43DC155-DD7C-4910-A15F-6032A3681F78",
+      "nombre" : "Examen parcial (midterm, jutge.org)",
+      "nota" : 2,
+      "tipo" : "examen"
     }
   ],
   "codigos" : {
@@ -363,6 +374,9 @@
   "examenes" : {
     "IC" : {
       "parcial" : 0
+    },
+    "PRO1" : {
+      "parcial" : 2
     }
   },
   "extras" : [
