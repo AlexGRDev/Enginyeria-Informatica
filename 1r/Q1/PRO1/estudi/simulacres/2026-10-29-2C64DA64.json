@@ -1,0 +1,205 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 2.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1.2,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 0.6,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 2.5,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 2.8,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 1.13,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Cálculos como c - '+' + 62 y parche final if (c == 47) que provoca un bug.",
+            "patron" : "Código redundante o innecesariamente complicado",
+            "refuerzo" : "Devolver directamente con return en cada rama y usar variable separada para el resultado.",
+            "tema" : "Funciones auxiliares"
+          },
+          {
+            "descripcion" : "No hay @pre\/@post sobre la función.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Las ramas de letras y dígitos son correctas. El fallo es que el resultado se guarda en `c`, que sigue siendo un carácter, y luego `if (c == 47) c = 63;` confunde valores calculados con el carácter '\/'. La 'v' da 21+26=47 y devuelve 63 en vez de 47, así que el WA es real. Además la rama `c == '-'` es incorrecta (el carácter es '\/') y solo se salva por el parche posterior. Lo correcto es una rama `else if (c == '\/') return 63;` y devolver el valor sin reutilizar `c`. Falta la especificación pre\/post de la función.",
+        "funcional" : 5,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "c = c - '+' + 62; rama '-' errónea y if (c == 47) c = 63; que corrompe 'v'.",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "int char_to_base64(char c) sin comentario @pre\/@post.",
+            "puntos" : 1
+          }
+        ],
+        "puntosObtenidos" : 0.88
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "No recorre una secuencia sin sentinela leyendo hasta fin de entrada.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Practicar el esquema de lectura de secuencia sin sentinela y mantener el mínimo en curso.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          },
+          {
+            "descripcion" : "No compara racionales con producto cruzado.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Comparar a\/b < c\/d como a*d < c*b con enteros.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "Solo lee un racional, y la entrada es una secuencia sin sentinela de al menos 1 elemento: falta el bucle de lectura hasta fin de entrada. Tampoco compara racionales (hay que comparar por producto cruzado a*d < c*b) ni guarda el mínimo. Imprime el racional simplificado, que solo coincide si hay un único elemento. Además es una resolución monolítica sin funciones.",
+        "funcional" : 1,
+        "id" : "P2",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0.25
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10, aquí en base 256, separando en funciones.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "En blanco: solo cabecera y main vacío.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Ejercicio en blanco.",
+            "patron" : "No sabe abordar Tipos básicos",
+            "refuerzo" : "Practicar esquemas de recorrido de secuencias con comparación de elementos consecutivos.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "En blanco: solo cabecera y main vacío.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Solo P1 y P2 tienen código real. P1 casi funciona, pero tiene un bug por reutilizar `c` como resultado. P2 no recorre la secuencia ni compara racionales. P3 y P4 están en blanco (solo cabecera y `main` vacío). Nota aproximada 1,2\/10. Hay que dominar los esquemas de lectura de secuencias sin sentinela, la descomposición en funciones y el recorrido de dígitos en otra base."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 105,
+    "preguntas" : [
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### Z32581 · Decodificar Base64 (1)\n\n# Decodificar Base64 (1)\n\n**Preliminars**\n\nEn base 2 tenim 2 dígits (`0` i `1`), en base 10 en tenim 10 (`0`, `1`,\n`2`, \\..., `9`), i en base 16 en tenim 16 (l'hexadecimal, que utilitza\n`0`, `1`, `2`, \\..., `9`, `A`, `B`, `C`, `D`, `E`, i `F`).\n\nLa **base 64** és doncs, simplement, una base amb molts més dígits. Però\ndonat que necessitem 64 símbols diferents per representar tots els\ndígits, cal fer servir totes les lletres del codi ASCII (26 majúscules i\n26 minúscules, en total 52), i tots els dígits decimals (0 a 9, en total\n10). De fet això no és suficient, perquè ens dóna 62 símbols en total.\nPer arribar als 64, es van escollir el '`+`' pel dígit 62 i '`\/`' pel\n63.\n\nLes correspondències exactes entre dígits en base 64 i els seus\ncaràcters respectius són aquestes:\n\n- Del 0 al 25, la corresponent lletra majúscula,\n\n- del 26 al 51, la corresponent lletra minúscula,\n\n- del 52 al 61, el corresponent dígit decimal,\n\n- el 62 és el caràcter '`+`'; i\n\n- el 63 és el caràcter '`\/`'.\n\nAixí doncs, si mostrem els caràcters ASCII utilitzats en base 64 (que,\nper cert, és un estàndard), tots junts i per ordre, tenim:\n\n    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/\n\n**Objectiu**\n\nFes una **funció** que, donat un caràcter que representa un dígit en\nbase 64, retorni el dígit com un enter (entre 0 i 63). La funció té la\ncapçalera:\n\n    \/**\n     * @brief Passa un caràcter que representa un dígit en base 64 al seu\n     * valor corresponent\n     *\n     * @pre Precondició: c és una lletra, un dígit decimal, o bé `+` o `\/`\n     *\/\n    int char_to_base64(char c);\n\n## Observació\n\nAquest problema té com a centres d'interès la **correctesa** i la\n**llegibilitat**. Només cal enviar la funció demanada, el programa\nprincipal serà ignorat. No es poden utilitzar les funcions `isupper`,\n`islower` de la llibreria estàndard.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T19:59:13.664Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn 2 · no resuelto",
+        "id" : "P1",
+        "jutge" : "Z32581_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn 2",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### X28296 · Mínim d'una seqüència de racionals\n\n# Mínim d'una seqüència de racionals\n\nFes un programa que calcula el mínim d'una seqüència de racionals.\n\n## Entrada\n\nUna seqüència de racionals positius sense sentinella, amb almenys 1\nelement. Els racionals d'entrada no tenen perquè estar simplificats.\nCada racional està format per dos enters separats pel caràcter '`\/`'.\n\n## Sortida\n\nEl racional més petit de la seqüència, en el mateix format que els\nracionals d'entrada.\n\n## Observació\n\n- Aquest problema té com a centres d'interès la **correctesa** i la\n  **llegibilitat**.\n\n- Podeu fer servir la funció `gcd` (màxim comú divisor) de la llibreria\n  estàndard que es pot incloure amb la capçalera '`#include <numeric>`'.\n  (També es poden fer servir '`max`', '`min`' i '`swap`', que estan\n  incloses automàticament quan s'inclou `iostream`.)\n\n- No feu servir nombres reals per representar el valor d'un racional en\n  aquest exercici, si ho feu l'exercici serà invalidat.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T14:52:30.633Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn 2 · no resuelto",
+        "id" : "P2",
+        "jutge" : "X28296_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn 2",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### T77863 · Decodificar Base64 (2)\n\n# Decodificar Base64 (2)\n\n*(Aquest problema fa servir la funció `char\\_to\\_base64` del problema\n\\\"Decodificar Base64 (1)\\\".)*\n\nEs tracta de fer un programa que, donada una seqüència de caràcters a\nl'entrada (un dels 64 que representen els dígits de base 64), la\n**decodifiqui en els seus bytes**. La decodificació funciona de la\nsegüent manera:\n\n1.  Primer, per a cada grup de 4 caràcters (o quartet) de l'entrada\n    $c_1$, $c_2$, $c_3$ i $c_4$, els transformem en els seus dígits\n    corresponents. $d_1$, $d_2$, $d_3$, $d_4$, usant la funció\n    `char_to_base64`.\n\n2.  Després, amb els 4 dígits $d_i$ reconstruim el natural $x$ aplicant\n    la fórmula:\n\n    $$x = ((d_1 \\cdot 64 + d_2) \\cdot 64 + d_3) \\cdot 64 + d_4$$\n\n3.  Tot seguit, reinterpretem $x$ en base 256, i n'extraiem les xifres,\n    que ara són 3: $B_1$, $B_2$, i $B_3$. El procés és totalment anàleg\n    a extreure les xifres d'un nombre en base 10, però en base 256. El\n    que haurem fet és calcular els dígits $B_i$ de la fórmula següent:\n\n    $$x = (B_1 \\cdot 256 + B_2) \\cdot 256  + B_3$$\n\n    *(Cal recordar que el procés d'extracció de les xifres treballat a\n    PRO1 produeix les xifres al **revés**, començant per $B_3$)*\n\n4.  Finalment, mostrem $B_1$, $B_2$ i $B_3$ com a nombres naturals per\n    pantalla, en aquest ordre.\n\nLa codificació en base 64 sempre té un nombre de caràcters múltiple de\n4, però just al final de la seqüència pot haver-hi '`=`' o '`==`', que\nens diu que el número de bytes de l'últim quartet són 2 o 1, i no 3:\n\nSi l'últim quartet té algun '`=`' al final:\n\n- Si té '`==`': el número de bytes serà 1; assignem $d_3 = 0$ i\n  $d_4 = 0$, decodifiquem segons els passos anteriors, però només\n  mostrem $B_1$ per pantalla.\n\n- Si té '`=`': el número de bytes és 2; assignem $d_4 = 0$, decodifiquem\n  segons els passos anteriors, però només mostrem $B_1$ i $B_2$ per\n  pantalla.\n\n## Entrada\n\nL'entrada consisteix en diversos casos, a on cada cas és una seqüència\nde caràcters acabada en punt en una línia.\n\n## Sortida\n\nLa sortida ha de ser una línia per a cada cas amb els bytes com a\nnombres naturals. Abans de cada byte, inclòs el primer, hi ha d'haver un\nespai.\n\n## Observació\n\n- Aquest problema té com a centres d'interès la **correctesa** i la\n  **llegibilitat**. En particular, es valorarà que el programa utilitzi\n  funcions per evitar repetició i separar les diverses tasques.\n\n- Si teniu la funció `char_to_base64` i el Jutge us l'ha acceptat,\n  useu-la directament. Si no, copieu la següent definició, (i afegiu\n  `#include <algorithm>`):\n\n      int char_to_base64(char c) {\n          static char _syms[65] =\n              \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n              \"abcdefghijklmnopqrstuvwxyz\"\n              \"0123456789+\/\";\n          return std::find(_syms, _syms + 64, c) - _syms;\n      }\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T12:55:34.913Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn 2 · no resuelto",
+        "id" : "P3",
+        "jutge" : "T77863_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn 2",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+        "enunciado" : "### U87666 · Seqüència escala\n\n# Seqüència escala\n\nUn \\\"esglaó\\\" és una subseqüència de $w$ enters del mateix valor $h$. El\nvalor repetit $h$ d'un esglaó es diu l'\\\"alçada\\\", i el número\nd'elements $w$ és l'\\\"amplada\\\". Per exemple, les subseqüències següents\nsón \\\"esglaons\\\": \\\"`1`\\\" ($h = 1$, $w = 1$), \\\"`5 5 5`\\\" ($h = 5$,\n$w = 3$), i \\\"`-1 -1 -1 -1`\\\" ($h = -1$, $w = 4$).\n\nUna \\\"seqüència escala\\\" és una seqüència no buida d'enters sense\nsentinella, amb les següents propietats:\n\n- Està formada per un mínim de 2 \\\"esglaons\\\", segons la definició\n  anterior.\n\n- Tots els \\\"esglaons\\\" de l'escala tenen la mateixa amplada $w$.\n\n- A tota l'escala, la diferència $D = h - h_{prev}$ entre l'alçada d'un\n  esglaó i l'alçada de l'anterior és *constant* (és a dir, els esglaons\n  estan distribuits uniformement en alçada).\n\n![image](escala.png){width=\"15cm\"}\n\n**NOTA: Obriu el PDF per veure la imatge, a la web no apareix.**\n\nExemples de seqüències escala:\n\n  ------------------- ----------------------------------\n  `1 1 2 2 3 3`       3 esglaons, $w = 2$, i $D = 1$.\n  `10 6 2 -2`         4 esglaons, $w = 1$, i $D = -4$.\n  `0 0 0 0 3 3 3 3`   2 esglaons, $w = 4$, i $D = 3$.\n  ------------------- ----------------------------------\n\nFes un **programa** que determina si la seqüència d'entrada és una\n\\\"seqüència escala\\\".\n\n## Observació\n\nAquest problema té com a centres d'interès la **correctesa**,\nl'**eficiència** i la **llegibilitat**.\n\nEls diferents jocs de prova d'aquest problema otorguen una **puntuació\nparcial**, i la nota del problema és la suma de totes. Els jocs de prova\nestan separats en correctesa i eficiència, i els d'eficiència fan servir\nentrades de longituds molt grans i és necessari que el programa faci el\nmínim número d'operacions possible per arribar al resultat.\n\n## Entrada\n\nUna seqüència no builda d'enters sense sentinella.\n\n## Sortida\n\nLa paraula \\\"`si`\\\" si la seqüència d'entrada és una \\\"seqüència\nescala\\\" i \\\"`no`\\\" en cas contrari.\n\n## Informació del problema\n\nAutoria: Pau Fernández\n\nGeneració: 2026-01-25T13:04:04.010Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+        "fuente" : "Parcial 2025 Tardor - Torn 2 · no resuelto",
+        "id" : "P4",
+        "jutge" : "U87666_ca",
+        "puntos" : 2.5,
+        "solucionReferencia" : "",
+        "tema" : "Parcial 2025 Tardor - Torn 2",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Simulacro Jutge · 4 problemas"
+  },
+  "fecha" : "2026-10-29T10:14:51Z",
+  "fuentes" : [
+    "Z32581",
+    "X28296",
+    "T77863",
+    "U87666"
+  ],
+  "id" : "2C64DA64-520D-47FE-8292-A35E7C030B4D",
+  "minutos" : 83,
+  "modo" : "jutge",
+  "notaAntes" : 2.6221740596732106,
+  "notaDespues" : 2.48819129091499,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\nint\tchar_to_base64(char c)\n{\n\tif (c >= 'A' && c <= 'Z')\n\t\tc = c - 'A';\n\telse if (c >= 'a' && c <= 'z')\n\t\tc = c - 'a' + 26;\n\telse if (c >= '0' && c <= '9')\n\t\tc = c - '0' + 52;\n\telse if (c == '+')\n\t\tc = c - '+' + 62;\n\telse if (c == '-')\n\t\tc = c - '-' + 63;\n\tif (c == 47)\n\t\tc = 63;\n\treturn (c);\n}",
+    "P2" : "#include <numeric>\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\ta, b,g;\n\tchar\tc;\n\n\tstd::cin >> a >> c >> b;\n\tg = std::gcd(a, b);\n\tstd::cout << a \/ g << '\/' << b \/ g << '\\n';\n}",
+    "P3" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   T77863.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/29 11:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/29 11:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n",
+    "P4" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   U87666.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/10\/29 11:14:51 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/10\/29 11:14:51 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\treturn (0);\n}\n"
+  },
+  "veredictos" : {
+    "P1" : "WA",
+    "P2" : "WA"
+  }
+}
