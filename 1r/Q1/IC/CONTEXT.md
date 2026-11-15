@@ -29,6 +29,7 @@ Simulador de circuitos de laboratorio: LogicWorks 4.0 (Windows), ejecutado en ma
 Fuente: horari oficial a raco.fib.upc.edu (curs 2026-2027).
 
 - Parcial 1: 30/10/2026 13:00-15:00.
+  Entra hasta el **tema 7** (T2 naturales, T3 combinacionales, T4 bloques aritméticos, T5 enteros, T6 secuenciales, T7 procesadores de propósito específico). Fuera: T8 UPG, T9 E/S, T10 UC general, T11 memoria, T12-T13 SISC, T14 SISA.
 - Parcial 2: 21/12/2026 11:00-13:00.
 - Final: 12/01/2027 15:00-20:00.
 - Recuperació: 06/02/2027 10:00-13:00.

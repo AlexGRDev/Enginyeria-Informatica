@@ -637,5 +637,9 @@
       ]
     }
   ],
-  "fecha" : "2026-10-26T17:57:59Z"
+  "fecha" : "2026-10-26T17:57:59Z",
+  "manual" : {
+    "duracionMinutos" : 110,
+    "ejercicios" : 6
+  }
 }

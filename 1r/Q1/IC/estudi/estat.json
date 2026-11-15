@@ -1,5 +1,24 @@
 {
+  "residuos" : [
+    {
+      "estimado" : 0.31315521275677943,
+      "fecha" : "2026-11-10T07:56:42Z",
+      "fuente" : "examen-parcial",
+      "real" : 0
+    }
+  ],
   "temas" : {
+    "Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
+          "nota" : 0
+        }
+      ]
+    },
     "Circuitos secuenciales" : {
       "dominio" : 0,
       "evaluaciones" : [
@@ -7,6 +26,12 @@
           "evidencia" : "Simulacro Parcial 1 IC: EP1 IC-25-26-Q1 (temas 2, 3, 4, 5, 6 y 7): 0,0",
           "fecha" : "2026-10-26T08:22:22Z",
           "fuente" : "real",
+          "nota" : 0
+        },
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
           "nota" : 0
         }
       ]
@@ -37,11 +62,39 @@
           "fecha" : "2026-10-26T09:29:21Z",
           "fuente" : "estilo",
           "nota" : 0
+        },
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
+          "nota" : 0
+        }
+      ]
+    },
+    "Números enteros (complemento a 2, operaciones y bloques aritméticos)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
+          "nota" : 0
+        }
+      ]
+    },
+    "Procesadores de propósito específico (camino de datos y unidad de control)" : {
+      "dominio" : 0,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:54Z",
+          "fuente" : "tutor",
+          "nota" : 0
         }
       ]
     },
     "Puertas lógicas y análisis de combinacionales (tabla de verdad)" : {
-      "dominio" : 0.2,
+      "dominio" : 0.31981280539661255,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
@@ -66,11 +119,17 @@
           "fecha" : "2026-10-26T09:29:21Z",
           "fuente" : "estilo",
           "nota" : 0
+        },
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
+          "nota" : 0
         }
       ]
     },
     "Representación de números naturales (base b, binario, hexadecimal, conversiones)" : {
-      "dominio" : 1.3479999999999999,
+      "dominio" : 1.0356855353626773,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
@@ -95,6 +154,12 @@
           "fecha" : "2026-10-26T09:29:21Z",
           "fuente" : "estilo",
           "nota" : 1.5
+        },
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
+          "nota" : 0
         }
       ]
     },
@@ -123,6 +188,12 @@
           "evidencia" : "Simulacro Parcial 1 IC (temas 2 y 3) - 30\/10\/2026: 0,4",
           "fecha" : "2026-10-26T09:29:21Z",
           "fuente" : "estilo",
+          "nota" : 0
+        },
+        {
+          "evidencia" : "Nota oficial EP1 (T2-T7) publicada: 0 (Notes50-26-27-Q1.pdf, grupo 51). Nota global del parcial, sin desglose por tema.",
+          "fecha" : "2026-11-10T08:00:53Z",
+          "fuente" : "tutor",
           "nota" : 0
         }
       ]
