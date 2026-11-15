@@ -12,7 +12,7 @@
   },
   {
     "asignatura" : "IC",
-    "fecha" : "2026-10-30T08:00:00Z",
+    "fecha" : "2026-10-30T12:00:00Z",
     "hecho" : false,
     "id" : "ABE92E96-9C7A-4FD2-93CB-2FBC7C1299E2",
     "notas" : "",
@@ -33,7 +33,7 @@
   {
     "asignatura" : "IC",
     "externo" : "atenea-ev-23020446",
-    "fecha" : "2026-11-06T13:05:00Z",
+    "fecha" : "2026-11-13T13:05:00Z",
     "hecho" : false,
     "id" : "EBDACE6D-64B9-4946-A66D-68EA5885717C",
     "notas" : "",
@@ -44,7 +44,7 @@
   {
     "asignatura" : "IC",
     "externo" : "atenea-ev-23020478",
-    "fecha" : "2026-11-06T13:35:00Z",
+    "fecha" : "2026-11-13T13:35:00Z",
     "hecho" : false,
     "id" : "1135986F-02D7-4FCA-8C6A-5C899250C5FD",
     "notas" : "",

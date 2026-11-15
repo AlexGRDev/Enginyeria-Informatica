@@ -6,42 +6,57 @@
     {
       "enExamen" : true,
       "nombre" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-      "peso" : 0.25
+      "peso" : 0.12
     },
     {
       "enExamen" : true,
       "nombre" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)",
-      "peso" : 0.2
+      "peso" : 0.12
     },
     {
       "enExamen" : true,
       "nombre" : "Síntesis de combinacionales (suma de minterms, ROM)",
-      "peso" : 0.25
+      "peso" : 0.15
     },
     {
       "enExamen" : true,
       "nombre" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-      "peso" : 0.2
+      "peso" : 0.1
     },
     {
-      "enExamen" : false,
+      "enExamen" : true,
+      "nombre" : "Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores)",
+      "peso" : 0.12
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Números enteros (complemento a 2, operaciones y bloques aritméticos)",
+      "peso" : 0.14
+    },
+    {
+      "enExamen" : true,
       "nombre" : "Circuitos secuenciales",
-      "peso" : 0.03
+      "peso" : 0.13
+    },
+    {
+      "enExamen" : true,
+      "nombre" : "Procesadores de propósito específico (camino de datos y unidad de control)",
+      "peso" : 0.1
     },
     {
       "enExamen" : false,
       "nombre" : "SISA (ensamblador)",
-      "peso" : 0.03
+      "peso" : 0.01
     },
     {
       "enExamen" : false,
       "nombre" : "Arquitectura del computador",
-      "peso" : 0.02
+      "peso" : 0.005
     },
     {
       "enExamen" : false,
       "nombre" : "LogicWorks (simulador de laboratorio)",
-      "peso" : 0.02
+      "peso" : 0.005
     }
   ]
 }

@@ -3,20 +3,23 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-10-27. Objetivo: **9,5**. Próximo examen: Parcial 1 IC, 2026-10-30 (en 3 días).
+Generado por Kiwi GEI el 2026-11-10. Objetivo: **9,5**. Próximo examen: Parcial 2 IC, 2026-12-21 (en 41 días).
 
-**Estimación: 0,4 / 10** (-9,1 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,4.
+**Estimación: 0,2 / 10** (-9,3 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,2.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 25 % | 1,2 | 4 | 2026-10-26 (estilo) |
-| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 20 % | 0,4 | 4 | 2026-10-26 (estilo) |
-| Síntesis de combinacionales (suma de minterms, ROM) | 25 % | 0,0 | 4 | 2026-10-26 (estilo) |
-| Modelo temporal (tiempos de propagación, caminos críticos) | 20 % | 0,0 | 4 | 2026-10-26 (estilo) |
-| Circuitos secuenciales (fuera del examen) | 3 % | 0,0 | 1 | 2026-10-26 (real) |
-| SISA (ensamblador) (fuera del examen) | 3 % | sin evaluar | 0 | - |
-| Arquitectura del computador (fuera del examen) | 2 % | sin evaluar | 0 | - |
-| LogicWorks (simulador de laboratorio) (fuera del examen) | 2 % | sin evaluar | 0 | - |
+| Representación de números naturales (base b, binario, hexadecimal, conversiones) | 12 % | 1,0 | 5 | 2026-11-10 (tutor) |
+| Puertas lógicas y análisis de combinacionales (tabla de verdad) | 12 % | 0,3 | 5 | 2026-11-10 (tutor) |
+| Síntesis de combinacionales (suma de minterms, ROM) | 15 % | 0,0 | 5 | 2026-11-10 (tutor) |
+| Modelo temporal (tiempos de propagación, caminos críticos) | 10 % | 0,0 | 5 | 2026-11-10 (tutor) |
+| Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores) | 12 % | 0,0 | 1 | 2026-11-10 (tutor) |
+| Números enteros (complemento a 2, operaciones y bloques aritméticos) | 14 % | 0,0 | 1 | 2026-11-10 (tutor) |
+| Circuitos secuenciales | 13 % | 0,0 | 2 | 2026-11-10 (tutor) |
+| Procesadores de propósito específico (camino de datos y unidad de control) | 10 % | 0,0 | 1 | 2026-11-10 (tutor) |
+| SISA (ensamblador) (fuera del examen) | 1 % | sin evaluar | 0 | - |
+| Arquitectura del computador (fuera del examen) | 1 % | sin evaluar | 0 | - |
+| LogicWorks (simulador de laboratorio) (fuera del examen) | 1 % | sin evaluar | 0 | - |
 <!-- kiwi-gei:estat:fi -->
 
 ## Última actualización: 2026-10-08
