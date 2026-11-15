@@ -1,6 +1,6 @@
 # Guia docent: PRO1
 
-_Font: api.fib.upc.edu, descarregada el 2026-10-26._
+_Font: api.fib.upc.edu, descarregada el 2026-11-15._
 
 ## Actes Avaluatius
 
@@ -847,9 +847,9 @@ Programming I
 
 #### Competencies
 
-- G7.1
-- CT1.1B
 - CT1.1A
+- CT1.1B
+- G7.1
 
 #### Valor
 
@@ -903,8 +903,8 @@ Compare solutions regarding time and memory  use and choose the most appropriate
 
 #### Competencies
 
-- CT4.2
 - CT1.2B
+- CT4.2
 
 #### Valor
 
@@ -941,9 +941,9 @@ Understand binary search, insertion, sorting, selection, mergesort and quicksort
 
 #### Competencies
 
-- CT4.1
-- CT1.2B
 - CT1.1A
+- CT1.2B
+- CT4.1
 
 #### Valor
 
@@ -952,15 +952,15 @@ Understand other fundamental algorithms: Hörner, fast product
 #### Competencies
 
 - G7.1
-- CT8.6
+- CT1.1A
+- CT1.1B
+- CT1.2B
 - CT4.1
 - CT4.2
 - CT5.2
-- CT5.4
 - CT5.3
-- CT1.1B
-- CT1.2B
-- CT1.1A
+- CT5.4
+- CT8.6
 
 #### Valor
 

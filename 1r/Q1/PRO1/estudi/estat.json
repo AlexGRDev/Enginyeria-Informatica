@@ -59,6 +59,18 @@
       "fecha" : "2026-10-28T11:11:03Z",
       "fuente" : "jutge",
       "real" : 4.5
+    },
+    {
+      "estimado" : 1.6795554235491115,
+      "fecha" : "2026-10-29T11:38:27Z",
+      "fuente" : "jutge",
+      "real" : 1.13
+    },
+    {
+      "estimado" : 1.6795554235491121,
+      "fecha" : "2026-11-14T16:26:04Z",
+      "fuente" : "examen-parcial",
+      "real" : 2
     }
   ],
   "temas" : {
@@ -134,7 +146,7 @@
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 3.084152944988827,
+      "dominio" : 3.0841529449888268,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -359,7 +371,7 @@
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.515547135107843,
+      "dominio" : 1.5155471351078427,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -430,7 +442,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.835631531533092,
+      "dominio" : 2.835631541646168,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",

@@ -7,16 +7,16 @@ Generado el 2026-10-29. Ordenado por número de veces: arriba, lo que más hay q
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
-| No sabe abordar Funciones auxiliares | Funciones auxiliares | 16 | 2026-10-28 | Recorrido de dígitos con %10 y /10 contando cambios entre dígitos consecutivos. |
-| No sabe abordar Tipos básicos | Tipos básicos | 15 | 2026-10-29 | Practicar la inversión de dígitos con %10 y /10 en un while (n > 0), escribiendo cada dígito al sacarlo, y tratar aparte el caso n == 0. |
-| No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 14 | 2026-10-29 | Hacer ++s y ajustar con if (s == 60) {s = 0; ++m;} y lo mismo con m y h. Imprimir un 0 delante si el valor es menor que 10. |
-| No documentar las funciones con especificación pre/post | Funciones auxiliares | 8 | 2026-10-28 | Escribir @pre y @post sobre cada función antes de implementarla. |
+| No sabe abordar Tipos básicos | Tipos básicos | 17 | 2026-10-29 | Practicar esquemas de recorrido de secuencias con comparación de elementos consecutivos. |
+| No sabe abordar Funciones auxiliares | Funciones auxiliares | 17 | 2026-10-29 | Recorrido de dígitos con %10 y /10, aquí en base 256, separando en funciones. |
+| No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 15 | 2026-10-29 | Practicar el esquema de lectura de secuencia sin sentinela y mantener el mínimo en curso. |
+| No documentar las funciones con especificación pre/post | Funciones auxiliares | 9 | 2026-10-29 | Escribir @pre y @post sobre cada función antes de implementarla. |
 | No sabe abordar Recursividad | Recursividad | 4 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
 | Uso incorrecto de punteros sobre variables escalares | Punteros y aritmética de punteros | 3 | 2026-10-28 | Usar variables enteras/char o vector con índices; reservar memoria dinámica solo cuando el enunciado lo pida. |
+| Código redundante o innecesariamente complicado | Funciones auxiliares | 2 | 2026-10-29 | Devolver directamente con return en cada rama y usar variable separada para el resultado. |
 | Código redundante o innecesariamente complicado | Tipos básicos | 2 | 2026-10-29 | Encadenar con else if cuando las condiciones son excluyentes y no evaluar condiciones de más. |
 | Esquemas de lectura no recomendados | E/S con std::cin/std::cout | 2 | 2026-10-29 | Leer una sola vez cin >> h >> m >> s y resolver el caso sin bucle. |
 | Código redundante o innecesariamente complicado | E/S con std::cin/std::cout | 1 | 2026-10-28 | Ordenar una sola vez antes del bucle de escritura, o separar ordenar y escribir en funciones distintas. |
-| Código redundante o innecesariamente complicado | Funciones auxiliares | 1 | 2026-10-28 | Leer los 5 caracteres de cada caso y resolver según la posición de la x. |
 | Código redundante o innecesariamente complicado | Cadenas estilo C (char*) | 1 | 2026-10-27 | Comparar caracteres sueltos directamente con == y no crear helpers para condiciones triviales. |
 | Incumplir restricción explícita del enunciado | Tipos básicos | 1 | 2026-10-26 | Releer la sección Observació antes de elegir la representación; extraer dígitos con %10 y /10. |
 | No aplicar diseño descendente | Funciones auxiliares | 1 | 2026-10-26 | Extraer una acción escriu(n, c) que escriba n veces un carácter. |
