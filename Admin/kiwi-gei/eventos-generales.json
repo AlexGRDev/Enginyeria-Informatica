@@ -104,14 +104,6 @@
     "titulo" : "[IC] Prova prèvia Pràctica 5"
   },
   {
-    "fecha" : "2026-11-15T22:59:00Z",
-    "hecho" : false,
-    "id" : "09FC4CE3-31AA-495B-BE7C-402241172B8E",
-    "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527402",
-    "tipo" : "tarea",
-    "titulo" : "[IC] Entrega d'exercicis en paper tema 8"
-  },
-  {
     "fecha" : "2026-11-18T22:59:00Z",
     "hecho" : false,
     "id" : "D06787FE-62A9-4ED7-935F-A9071F4EA9F9",
@@ -134,14 +126,6 @@
     "notas" : "https:\/\/atenea.upc.edu\/mod\/quiz\/view.php?id=5527340",
     "tipo" : "tarea",
     "titulo" : "[IC] Qüestionari Informe Final Pràctica 6"
-  },
-  {
-    "fecha" : "2026-11-15T22:59:00Z",
-    "hecho" : false,
-    "id" : "C0A6F2F9-0B82-4361-890A-B573B06370A8",
-    "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527402",
-    "tipo" : "tarea",
-    "titulo" : "[IC] Entrega d'exercicis en paper tema 8"
   },
   {
     "fecha" : "2026-10-30T17:00:00Z",
@@ -190,5 +174,21 @@
     "notas" : "https:\/\/atenea.upc.edu\/mod\/quiz\/view.php?id=5527331",
     "tipo" : "tarea",
     "titulo" : "[IC] Prova prèvia Pràctica 3"
+  },
+  {
+    "fecha" : "2026-11-15T22:59:00Z",
+    "hecho" : true,
+    "id" : "09FC4CE3-31AA-495B-BE7C-402241172B8E",
+    "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527402",
+    "tipo" : "tarea",
+    "titulo" : "[IC] Entrega d'exercicis en paper tema 8"
+  },
+  {
+    "fecha" : "2026-11-15T22:59:00Z",
+    "hecho" : true,
+    "id" : "C0A6F2F9-0B82-4361-890A-B573B06370A8",
+    "notas" : "https:\/\/atenea.upc.edu\/mod\/assign\/view.php?id=5527402",
+    "tipo" : "tarea",
+    "titulo" : "[IC] Entrega d'exercicis en paper tema 8"
   }
 ]
