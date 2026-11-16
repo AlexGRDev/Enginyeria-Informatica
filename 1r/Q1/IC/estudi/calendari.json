@@ -56,7 +56,7 @@
     "asignatura" : "IC",
     "externo" : "atenea-ev-22865743",
     "fecha" : "2026-11-15T22:59:00Z",
-    "hecho" : false,
+    "hecho" : true,
     "id" : "A51F941E-4141-4FCF-8066-4D2B532B5C00",
     "notas" : "",
     "tipo" : "entrega",
