@@ -3,7 +3,7 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-11-16. Objetivo: **9,5**. Próximo examen: Parcial 2 IC, 2026-12-21 (en 35 días).
+Generado por Kiwi GEI el 2026-11-19. Objetivo: **9,5**. Próximo examen: Parcial 2 IC, 2026-12-21 (en 32 días).
 
 **Estimación: 0,2 / 10** (-9,3 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,2.
 
