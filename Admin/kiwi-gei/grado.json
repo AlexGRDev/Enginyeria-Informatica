@@ -161,6 +161,17 @@
       "nombre" : "Examen parcial (midterm, jutge.org)",
       "nota" : 2,
       "tipo" : "examen"
+    },
+    {
+      "asignatura" : "F",
+      "componente" : "P1",
+      "detalle" : "",
+      "fecha" : "2026-11-19T07:49:08Z",
+      "formato" : "Papel",
+      "id" : "FAB44B58-69A7-4222-85FD-6FBF95828344",
+      "nombre" : "Parcial 1 (temas 1 y 2)",
+      "nota" : 0,
+      "tipo" : "examen"
     }
   ],
   "codigos" : {
@@ -372,6 +383,9 @@
     "PRO1" : "enCurso"
   },
   "examenes" : {
+    "F" : {
+      "parcial" : 0
+    },
     "IC" : {
       "parcial" : 0
     },
