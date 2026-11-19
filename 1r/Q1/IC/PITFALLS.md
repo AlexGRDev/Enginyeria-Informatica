@@ -3,20 +3,22 @@
 <!-- kiwi-gei:pitfalls:inici -->
 ## Contador de errores (Kiwi GEI)
 
-Generado el 2026-10-26. Ordenado por número de veces: arriba, lo que más hay que reforzar.
+Generado el 2026-11-19. Ordenado por número de veces: arriba, lo que más hay que reforzar.
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
 | No sabe abordar la suma de minterms | Síntesis de combinacionales (suma de minterms, ROM) | 5 | 2026-10-26 | Un minterm por cada fila con salida 1, y contar puertas a partir de ellos. |
-| No sabe abordar cronogramas con glitch | Modelo temporal (tiempos de propagación, caminos críticos) | 4 | 2026-10-26 | Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo. |
+| Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido) | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 4 | 2026-10-26 | Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando. |
+| No sabe abordar el rango de representación en base b | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 4 | 2026-10-26 | Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural y con signo. |
+| No sabe abordar el análisis de combinacionales por tabla de verdad | Puertas lógicas y análisis de combinacionales (tabla de verdad) | 4 | 2026-10-26 | Evaluar columna a columna x, s, a·b, x·c, co. Escribir las 8 filas en orden binario y una columna por señal intermedia. |
 | No sabe abordar el contenido de una ROM | Síntesis de combinacionales (suma de minterms, ROM) | 4 | 2026-10-26 | Dirección = 4·Yu + Xu; recorrer los valores de Yu y marcar los Xu < Yu. |
 | No sabe abordar caminos críticos con bloques | Modelo temporal (tiempos de propagación, caminos críticos) | 4 | 2026-10-26 | Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida, y sumar los Tp de cada uno. |
-| No sabe abordar el análisis de combinacionales por tabla de verdad | Puertas lógicas y análisis de combinacionales (tabla de verdad) | 4 | 2026-10-26 | Evaluar columna a columna x, s, a·b, x·c, co. Escribir las 8 filas en orden binario y una columna por señal intermedia. |
-| No sabe abordar el rango de representación en base b | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 4 | 2026-10-26 | Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural y con signo. |
-| Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido) | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 4 | 2026-10-26 | Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando. |
-| No sabe abordar el número mínimo de bits para un rango | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 3 | 2026-10-26 | Buscar el menor n con 2^n > máximo; los dígitos hexadecimales son ceil(n/4). |
+| No sabe abordar cronogramas con glitch | Modelo temporal (tiempos de propagación, caminos críticos) | 4 | 2026-10-26 | Propagar cada cambio con el Tp de la puerta y evaluar la salida en cada intervalo. |
 | No agrupa de 4 en 4 bits al pasar binario a hexadecimal | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 3 | 2026-10-26 | Separar en nibbles desde la derecha y convertir cada uno (1010=A, 1101=D, 1100=C). |
+| No sabe abordar el número mínimo de bits para un rango | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 3 | 2026-10-26 | Buscar el menor n con 2^n > máximo; los dígitos hexadecimales son ceil(n/4). |
 | No expande cada dígito hexadecimal a 4 bits al pasar hexadecimal a binario | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 2 | 2026-10-26 | Convertir cada dígito hexadecimal a su nibble (6=0110, D=1101, 9=1001, F=1111) y concatenar; el vector final debe tener 8 bits. |
+| No sabe abordar la traducción de SISA a pseudocódigo (semántica de CMP y de cada instrucción) | SISA (ensamblador) | 1 | 2026-11-19 | Traducir línea a línea con la semántica de la hoja (CMPLT: Rd = (Ra<Rb) ? 1 : 0), sin saltarse ninguna instrucción, y comprobar con una tabla de valores de registros por iteración. |
+| Confunde el N8 de BZ/BNZ con un valor en vez de un desplazamiento de salto | SISA (ensamblador) | 1 | 2026-11-19 | Para cada salto calcular destino = índice_del_salto + 1 + N8 y dibujar una flecha en el listado. Un N8 negativo es un bucle. Repetir con 3 listados cortos. |
 | No sabe abordar el grafo de estados de un circuito secuencial | Circuitos secuenciales | 1 | 2026-10-26 | Cada estado guarda los dos últimos bits de x; w es su XOR; el arco con x desplaza el historial. |
 | Tabla de verdad incompleta o sin columnas intermedias | Puertas lógicas y análisis de combinacionales (tabla de verdad) | 1 | 2026-10-25 | Escribir las 8 filas en orden binario y una columna por señal intermedia. |
 | No sabe abordar caminos críticos y tiempos de propagación | Modelo temporal (tiempos de propagación, caminos críticos) | 1 | 2026-10-25 | Sumar los Tp de las puertas de cada camino entrada-salida y quedarse con el máximo. |

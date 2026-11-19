@@ -17,7 +17,7 @@ Generado por Kiwi GEI el 2026-11-19. Objetivo: **9,5**. Próximo examen: Parcial
 | Números enteros (complemento a 2, operaciones y bloques aritméticos) | 14 % | 0,0 | 1 | 2026-11-10 (tutor) |
 | Circuitos secuenciales | 13 % | 0,0 | 2 | 2026-11-10 (tutor) |
 | Procesadores de propósito específico (camino de datos y unidad de control) | 10 % | 0,0 | 1 | 2026-11-10 (tutor) |
-| SISA (ensamblador) (fuera del examen) | 1 % | sin evaluar | 0 | - |
+| SISA (ensamblador) (fuera del examen) | 1 % | 1,0 | 1 | 2026-11-19 (tutor) |
 | Arquitectura del computador (fuera del examen) | 1 % | sin evaluar | 0 | - |
 | LogicWorks (simulador de laboratorio) (fuera del examen) | 1 % | sin evaluar | 0 | - |
 <!-- kiwi-gei:estat:fi -->
