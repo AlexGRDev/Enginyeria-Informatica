@@ -5,6 +5,12 @@
       "fecha" : "2026-10-28T11:24:54Z",
       "fuente" : "estilo",
       "real" : 0
+    },
+    {
+      "estimado" : 1.087602429692812,
+      "fecha" : "2026-11-19T07:49:55Z",
+      "fuente" : "examen-parcial",
+      "real" : 0
     }
   ],
   "temas" : {
@@ -20,7 +26,7 @@
       ]
     },
     "Circuits de CC: Kirchhoff, divisor de tensió, Req, pont de Wheatstone" : {
-      "dominio" : 1.0495828133362648,
+      "dominio" : 1.049582709288055,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
@@ -65,7 +71,7 @@
       ]
     },
     "Càrrega elèctrica i llei de Coulomb" : {
-      "dominio" : 7.000000000000001,
+      "dominio" : 6.999999999999999,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico Parcial 1 F: Corrent Continu y Corrent Altern: 1,5",
