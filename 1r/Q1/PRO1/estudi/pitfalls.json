@@ -2,14 +2,14 @@
   {
     "descripcion" : "Entrega main vacío, sin lectura ni salida.",
     "ejemplos" : [
-      "Recorrido de secuencia sin sentinela con estado (fase de subida\/bajada) y salida 'si'\/'no' exacta.",
       "No sabe leer racionales con separador '\/' en una secuencia sin sentinela.",
       "Falta cin >> c al final del bucle; se usa s++ en vez de leer, y la racha no se calcula.",
       "El main no lee la entrada con cin; hardcodea los datos y lee fuera del array.",
       "Ejercicio en blanco: no sabe abordar la lectura con centinela y contador de racha.",
       "Ejercicio en blanco.",
       "No suma un segundo ni propaga el acarreo entre segundos, minutos y horas. Tampoco formatea la salida con dos dígitos ni con salto de línea.",
-      "No recorre una secuencia sin sentinela leyendo hasta fin de entrada."
+      "No recorre una secuencia sin sentinela leyendo hasta fin de entrada.",
+      "Pregunta en blanco."
     ],
     "id" : "9B332E4F-C8B2-439A-B5F0-B3A78367A0B8",
     "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
@@ -17,8 +17,8 @@
     "racha" : 0,
     "refuerzo" : "Practicar el esquema de lectura de secuencia sin sentinela y mantener el mínimo en curso.",
     "tema" : "E\/S con std::cin\/std::cout",
-    "ultima" : "2026-10-29T11:38:27Z",
-    "veces" : 15
+    "ultima" : "2026-11-19T09:11:53Z",
+    "veces" : 16
   },
   {
     "descripcion" : "Sin intento de manipular dígitos de un entero con +,-,*,\/,%.",
@@ -35,8 +35,9 @@
     "id" : "940E6304-9E04-488D-A50E-9FF07DEBAB17",
     "patron" : "No sabe abordar Tipos básicos",
     "primera" : "2026-10-25T20:40:13Z",
-    "racha" : 0,
+    "racha" : 1,
     "refuerzo" : "Practicar esquemas de recorrido de secuencias con comparación de elementos consecutivos.",
+    "superadas" : 1,
     "tema" : "Tipos básicos",
     "ultima" : "2026-10-29T11:38:27Z",
     "veces" : 17
@@ -57,14 +58,14 @@
   {
     "descripcion" : "No implementa la función pedida.",
     "ejemplos" : [
-      "No separa la codificación de un grupo de 3 bytes en una acción.",
       "canvis no extrae dígitos; el bucle no modifica n y no termina.",
       "No extrae dígitos con %10 y \/10 ni compara dígitos consecutivos; usa punteros sin sentido sobre n.",
       "Pregunta en blanco: recorrido de dígitos contando cambios entre dígitos consecutivos.",
       "No extrae una función `valor(char)` que traduzca cada carta a su valor numérico antes de comparar.",
       "No recorre los dígitos con `%10` y `\/10` comparando el primero, el último y los intermedios.",
       "Función is_sandwich sin escribir.",
-      "Ejercicio en blanco."
+      "Ejercicio en blanco.",
+      "Pregunta en blanco."
     ],
     "id" : "FC1EE0B2-27F1-446F-9AB2-9E5D554AF4FD",
     "patron" : "No sabe abordar Funciones auxiliares",
@@ -72,8 +73,8 @@
     "racha" : 0,
     "refuerzo" : "Recorrido de dígitos con %10 y \/10, aquí en base 256, separando en funciones.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-29T11:38:27Z",
-    "veces" : 17
+    "ultima" : "2026-11-19T09:11:53Z",
+    "veces" : 18
   },
   {
     "descripcion" : "ft_draw_a no tiene @pre\/@post.",
@@ -154,15 +155,17 @@
       "No escribe la función recursiva de diferencia de dígitos.",
       "Pregunta en blanco.",
       "Ejercicio en blanco: no plantea caso base ni paso recursivo sobre dígitos.",
-      "Pregunta en blanco: recursión sobre dígitos de dos números."
+      "Pregunta en blanco: recursión sobre dígitos de dos números.",
+      "Pregunta en blanco."
     ],
     "id" : "4E7AC40B-6660-47FA-9721-2892B1D212D9",
     "patron" : "No sabe abordar Recursividad",
     "primera" : "2026-10-26T20:37:15Z",
+    "racha" : 0,
     "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
     "tema" : "Recursividad",
-    "ultima" : "2026-10-27T10:19:56Z",
-    "veces" : 4
+    "ultima" : "2026-11-19T09:11:53Z",
+    "veces" : 5
   },
   {
     "descripcion" : "Usa ft_strchr(\"a\", c) != NULL para comparar con un único carácter, en lugar de c == 'a'.",
@@ -249,6 +252,32 @@
     "refuerzo" : "Ordenar una sola vez antes del bucle de escritura, o separar ordenar y escribir en funciones distintas.",
     "tema" : "E\/S con std::cin\/std::cout",
     "ultima" : "2026-10-28T19:43:44Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Usa while con contador en lugar de for cuando la iteración depende de un contador conocido.",
+    "ejemplos" : [
+      "Usa while con contador en lugar de for cuando la iteración depende de un contador conocido."
+    ],
+    "id" : "F6ED692E-A4BF-446D-B8D6-8095A5E63D81",
+    "patron" : "for en lugar de while cuando la iteración depende de una condición",
+    "primera" : "2026-11-19T09:11:53Z",
+    "refuerzo" : "Usar for (int i = 1; i < n; ++i) para recorrer n elementos conocidos.",
+    "tema" : "Tipos básicos",
+    "ultima" : "2026-11-19T09:11:53Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Declara curr, i y demás variables en el ámbito de main en lugar de dentro del bucle.",
+    "ejemplos" : [
+      "Declara curr, i y demás variables en el ámbito de main en lugar de dentro del bucle."
+    ],
+    "id" : "BC021EA6-D786-4CE5-9E11-934C8B2D3D98",
+    "patron" : "Variables declaradas en un ámbito más amplio del necesario",
+    "primera" : "2026-11-19T09:11:53Z",
+    "refuerzo" : "Declarar la variable de lectura dentro del cuerpo del bucle.",
+    "tema" : "Tipos básicos",
+    "ultima" : "2026-11-19T09:11:53Z",
     "veces" : 1
   }
 ]
