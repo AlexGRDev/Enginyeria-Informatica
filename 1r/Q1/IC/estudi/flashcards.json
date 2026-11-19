@@ -326,20 +326,21 @@
   {
     "concepto" : "Rango con n dígitos en base b",
     "dificultad" : 2,
-    "ease" : 2.5,
+    "ease" : 2.6,
     "errorHabitual" : "Dar b^n como máximo olvidando el cero",
     "explicacion" : "Con n dígitos en base b se representan b^n valores, de 0 a b^n - 1.",
     "fuente" : "Tema 2 problemas, ej. 2.2",
     "id" : "BA764B41-142F-4AAA-938D-AB4644D0CE8B",
-    "intervalo" : 0,
+    "intervalo" : 3,
     "origen" : "diaria-2026-11-17",
     "paso" : 1,
     "pasos" : 3,
     "pregunta" : "Rango de 4 dígitos en base 8: ¿el máximo es 8^4 o 8^4 - 1?",
-    "proxima" : "2026-11-17T13:51:49Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-11-22T17:36:12Z",
+    "repeticiones" : 1,
     "respuesta" : "8^4 - 1",
-    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-11-19T17:36:12Z"
   },
   {
     "concepto" : "Rango en base 4",
@@ -349,15 +350,16 @@
     "explicacion" : "4^3 = 64 valores, así que el máximo es 64 - 1 = 63 (333 en base 4).",
     "fuente" : "Tema 2 problemas, ej. 2.2",
     "id" : "103D96D6-421D-4AF0-A178-CE5C8D607E86",
-    "intervalo" : 0,
+    "intervalo" : 1,
     "origen" : "diaria-2026-11-17",
     "paso" : 2,
     "pasos" : 3,
     "pregunta" : "Máximo natural con 3 dígitos en base 4, en decimal?",
-    "proxima" : "2026-11-17T13:51:49Z",
-    "repeticiones" : 0,
+    "proxima" : "2026-11-20T17:36:52Z",
+    "repeticiones" : 1,
     "respuesta" : "63",
-    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+    "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+    "ultima" : "2026-11-19T17:36:52Z"
   },
   {
     "concepto" : "Rango en hexadecimal",
