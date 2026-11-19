@@ -1,0 +1,52 @@
+{
+  "actual" : "P1",
+  "guardado" : "2026-11-19T08:25:03Z",
+  "intento" : {
+    "diagnostico" : false,
+    "ejercicio" : true,
+    "examen" : {
+      "duracionMinutos" : 20,
+      "preguntas" : [
+        {
+          "criterios" : "Guía de corrección de PRO1: nota del profesor (funcional menos deficiencias); el veredicto del Jutge es informativo.",
+          "enunciado" : "### P60816 · Número del revés en hexadecimal\n\n# Número del revés en hexadecimal\n\nFeu un programa que llegeixi un nombre i que escrigui la seva\nrepresentació hexadecimal del revés. Seguiu la convenció d'usar les\nlletres de la '`A`' fins a la '`F`' per representar els valors del 10 al\n15.\n\n## Entrada\n\nL'entrada consisteix en un natural.\n\n## Sortida\n\nEscriviu, del revés, la representació hexadecimal del número, amb tants\nzeros a l'esquerra com calguin.\n\n## Informació del problema\n\nAutoria: Salvador Roura\n\nGeneració: 2026-01-25T11:07:06.776Z\n\n© *Jutge.org*, 2006--2026.\\\n<https:\/\/jutge.org>\n",
+          "fuente" : "Cadenas estilo C (char*) · no resuelto",
+          "id" : "P1",
+          "jutge" : "P60816_ca",
+          "puntos" : 10,
+          "solucionReferencia" : "",
+          "tema" : "Cadenas estilo C (char*)",
+          "tipo" : "codigo"
+        }
+      ],
+      "titulo" : "Ejercicio · Cadenas estilo C (char*) · P60816"
+    },
+    "fecha" : "2026-11-19T08:05:26Z",
+    "fuentes" : [
+      "P60816"
+    ],
+    "id" : "71F876BC-C6EC-4E27-8919-1617421E5B61",
+    "minutos" : 19,
+    "modo" : "jutge",
+    "notaAntes" : 2.387070423174606,
+    "pizarras" : {
+
+    },
+    "respuestas" : {
+      "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P60816.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/11\/19 09:05:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/11\/19 09:05:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tif (nbr == 0)\n\t{\n\t\tstd::cout << '0' << '\\n';\n\t\treturn 0;\n\t}\n\twhile (nbr > 0)\n\t{\n\t\tint rem = nbr % 16;\n\t\tchar digit;\n\t\tif (rem < 10)\n\t\t\tdigit = ('0' + rem);\n\t\telse\n\t\t\tdigit = ('a' + (rem - 10));\n\t\tstd::cout << digit;\n\t\tnbr = nbr \/ 16;\n\t}\n\tstd::cout << '\\n';\n\treturn 0;\n}\n"
+    },
+    "veredictos" : {
+
+    }
+  },
+  "modoRespuesta" : {
+
+  },
+  "respuestas" : {
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P60816.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/11\/19 09:05:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/11\/19 09:05:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tif (nbr == 0)\n\t{\n\t\tstd::cout << '0' << '\\n';\n\t\treturn 0;\n\t}\n\twhile (nbr > 0)\n\t{\n\t\tint rem = nbr % 16;\n\t\tchar digit;\n\t\tif (rem < 10)\n\t\t\tdigit = ('0' + rem);\n\t\telse\n\t\t\tdigit = ('a' + (rem - 10));\n\t\tstd::cout << digit;\n\t\tnbr = nbr \/ 16;\n\t}\n\tstd::cout << '\\n';\n\treturn 0;\n}\n"
+  },
+  "transcurrido" : 1176.981008052826,
+  "trazos" : {
+
+  }
+}
