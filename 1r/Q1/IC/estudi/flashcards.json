@@ -841,5 +841,49 @@
     "repeticiones" : 0,
     "respuesta" : "No hay salto relativo incondicional: BZ Rk, N8 con un Rk que valga 0, o JALR.",
     "tema" : "SISA (ensamblador)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "B7531EF6-7347-4CC3-93E7-24053C8EDDEB",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: destino de un BZ\/BNZ Ra, N8 situado en la instrucción de índice i",
+    "proxima" : "2026-11-19T17:21:26Z",
+    "repeticiones" : 0,
+    "respuesta" : "Destino = i + 1 + N8 (en instrucciones). En bytes: PC+2+2*N8. N8 es Ca2, de -128 a 127; negativo = bucle hacia atrás.",
+    "tema" : "SISA (ensamblador)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "403D25E1-6C97-4EE8-874B-9C3EA0C97E44",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: cómo cargar una constante de 16 bits en Rd y por qué ese orden",
+    "proxima" : "2026-11-19T17:21:26Z",
+    "repeticiones" : 0,
+    "respuesta" : "MOVI Rd, byte_bajo (extiende signo a 16 bits) y después MOVHI Rd, byte_alto (solo sobrescribe bits 15..8). Con el orden inverso, MOVI machacaría el byte alto.",
+    "tema" : "SISA (ensamblador)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "BAF76A9D-8CC9-4779-9302-4FE44F410A27",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: rangos de inmediatos y desplazamientos",
+    "proxima" : "2026-11-19T17:21:26Z",
+    "repeticiones" : 0,
+    "respuesta" : "ADDI y desplazamiento N6 de LD\/ST\/LDB\/STB: Ca2 de 6 bits, de -32 a 31, en bytes (no se escala). MOVI\/MOVHI\/BZ\/BNZ: N8, MOVI en Ca2 de -128 a 127.",
+    "tema" : "SISA (ensamblador)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "2919F5D7-276D-48A0-8272-3C6663C847D7",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: direcciones de vectores de words y accesos LD\/LDB",
+    "proxima" : "2026-11-19T17:21:26Z",
+    "repeticiones" : 0,
+    "respuesta" : "v[i] de words está en base + 2*i (bytes). LD\/ST ponen a 0 el bit 0 de la dirección y usan Little Endian (byte bajo en la dirección par). LDB extiende signo; STB guarda Rb<7..0>.",
+    "tema" : "SISA (ensamblador)"
   }
 ]
