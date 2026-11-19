@@ -23,16 +23,16 @@
     "P60816"
   ],
   "id" : "71F876BC-C6EC-4E27-8919-1617421E5B61",
-  "minutos" : 19,
+  "minutos" : 21,
   "modo" : "jutge",
-  "notaAntes" : 2.387070423174606,
+  "notaAntes" : 2.3870690607212515,
   "pizarras" : {
 
   },
   "respuestas" : {
-    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P60816.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/11\/19 09:05:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/11\/19 09:05:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tif (nbr == 0)\n\t{\n\t\tstd::cout << '0' << '\\n';\n\t\treturn 0;\n\t}\n\twhile (nbr > 0)\n\t{\n\t\tint rem = nbr % 16;\n\t\tchar digit;\n\t\tif (rem < 10)\n\t\t\tdigit = ('0' + rem);\n\t\telse\n\t\t\tdigit = ('a' + (rem - 10));\n\t\tstd::cout << digit;\n\t\tnbr = nbr \/ 16;\n\t}\n\tstd::cout << '\\n';\n\treturn 0;\n}\n"
+    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P60816.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/11\/19 09:05:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/11\/19 09:05:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tif (nbr == 0)\n\t{\n\t\tstd::cout << '0' << '\\n';\n\t\treturn 0;\n\t}\n\twhile (nbr > 0)\n\t{\n\t\tint rem = nbr % 16;\n\t\tchar digit;\n\t\tif (rem < 10)\n\t\t\tdigit = ('0' + rem);\n\t\telse\n\t\t\tdigit = ('A' + (rem - 10));\n\t\tstd::cout << digit;\n\t\tnbr = nbr \/ 16;\n\t}\n\tstd::cout << '\\n';\n\treturn 0;\n}\n"
   },
   "veredictos" : {
-
+    "P1" : "AC"
   }
 }
