@@ -582,6 +582,14 @@
       "id" : "9B5EAA70-082B-4192-8FB2-5E3CE696D03A",
       "origen" : "2026-11-18|PRO1|16:00",
       "tipo" : "L"
+    },
+    {
+      "code" : "IC",
+      "fecha" : "2026-11-19T14:00:00Z",
+      "horas" : 2,
+      "id" : "2D049CB1-5E2C-4337-A5AD-F2991B92BEAB",
+      "origen" : "2026-11-19|IC|15:00",
+      "tipo" : "T"
     }
   ],
   "notas" : {
