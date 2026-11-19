@@ -71,11 +71,17 @@
       "fecha" : "2026-11-14T16:26:04Z",
       "fuente" : "examen-parcial",
       "real" : 2
+    },
+    {
+      "estimado" : 1.9695251512894894,
+      "fecha" : "2026-11-19T09:11:53Z",
+      "fuente" : "estilo",
+      "real" : 2.13
     }
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 2.045023170531803,
+      "dominio" : 2.0450230003534773,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -306,7 +312,7 @@
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 1.1660006003328967,
+      "dominio" : 1.1660006003328964,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -377,7 +383,7 @@
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.515547135107843,
+      "dominio" : 1.5155471351078427,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -448,7 +454,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.8664979242475246,
+      "dominio" : 2.866497924247524,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",

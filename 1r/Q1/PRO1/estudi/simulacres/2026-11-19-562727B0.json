@@ -1,0 +1,215 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 4,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1.2,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 2,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 2.5,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 2.13,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Usa while con contador en lugar de for cuando la iteración depende de un contador conocido.",
+            "patron" : "for en lugar de while cuando la iteración depende de una condición",
+            "refuerzo" : "Usar for (int i = 1; i < n; ++i) para recorrer n elementos conocidos.",
+            "tema" : "Tipos básicos"
+          },
+          {
+            "descripcion" : "Declara curr, i y demás variables en el ámbito de main en lugar de dentro del bucle.",
+            "patron" : "Variables declaradas en un ámbito más amplio del necesario",
+            "refuerzo" : "Declarar la variable de lectura dentro del cuerpo del bucle.",
+            "tema" : "Tipos básicos"
+          }
+        ],
+        "feedback" : "Lógica correcta: lee n y el primero antes del bucle, compara con el anterior y cuenta subidas, n=1 bien. Fallos de estilo: if (!(cin >> n) || n < 1) es comprobación innecesaria dado n>=1 garantizado; el recorrido debería ser un for con contador, no while con i += 1; curr e i declaradas fuera del bucle; count += 1 en vez de ++count es aceptable pero verboso.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "menor",
+            "concepto" : "Código redundante o innecesariamente complicado",
+            "detalle" : "if (!(std::cin >> n) || n < 1) return (1); comprobación innecesaria con n>=1 garantizado",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "for en lugar de while \/ while en lugar de for con contador",
+            "detalle" : "while (i < n) { ... i += 1; } debería ser for (int i = 1; i < n; ++i)",
+            "puntos" : 0.5
+          },
+          {
+            "categoria" : "menor",
+            "concepto" : "Variables declaradas en un ámbito más amplio del necesario",
+            "detalle" : "int curr; int i; declaradas al inicio de main",
+            "puntos" : 0.5
+          }
+        ],
+        "puntosObtenidos" : 2.13
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar Funciones auxiliares",
+            "refuerzo" : "Recorrido de dígitos con %10 y \/10, aquí en base 256, separando en funciones.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "En blanco.",
+        "funcional" : 0,
+        "id" : "P2",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar E\/S con std::cin\/std::cout",
+            "refuerzo" : "Practicar el esquema de lectura de secuencia sin sentinela y mantener el mínimo en curso.",
+            "tema" : "E\/S con std::cin\/std::cout"
+          }
+        ],
+        "feedback" : "En blanco.",
+        "funcional" : 0,
+        "id" : "P3",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar Recursividad",
+            "refuerzo" : "Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10.",
+            "tema" : "Recursividad"
+          }
+        ],
+        "feedback" : "En blanco.",
+        "funcional" : 0,
+        "id" : "P4",
+        "penalizaciones" : [
+
+        ],
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Solo has resuelto P1, con lógica correcta y tres deficiencias menores de estilo (comprobación redundante, while en vez de for, variables en ámbito amplio). P2, P3 y P4 en blanco. Prioriza funciones auxiliares con dígitos en base 256, lectura de mínimo con contador y recursión sobre dígitos.opcional: documenta siempre con @pre\/@post."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 45,
+    "preguntas" : [
+      {
+        "criterios" : "2,5 puntos en total. Lectura correcta de n y del primer dato antes del bucle, o esquema equivalente sin leer de más (0,5). Recorrido de n elementos con for y contador (0,5). Comparación de cada elemento con el anterior guardando el anterior (0,75). Contador de subidas correcto, incluido n=1 (0,5). Salida correcta (0,25). Penalizaciones según la guía: while(cin>>k) con n conocido, vector innecesario (ineficiencia), código redundante.",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe un programa en C++ que lea un entero $n \\ge 1$ y a continuación una secuencia de $n$ enteros. Debe escribir cuántas veces un elemento es estrictamente mayor que el elemento inmediatamente anterior de la secuencia.\n\nEntrada: primero $n$, después los $n$ enteros.\n\nSalida: un único entero con el número de subidas.\n\nEjemplo de entrada:\n```\n7\n3 5 5 2 8 9 1\n```\nEjemplo de salida:\n```\n3\n```\n(Las subidas son 3→5, 2→8 y 8→9.)",
+        "fuente" : "No sabe abordar Tipos básicos (recorrido de secuencias con comparación de elementos consecutivos)",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "```\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    int anterior;\n    cin >> anterior;\n    int subidas = 0;\n    for (int i = 1; i < n; ++i) {\n        int x;\n        cin >> x;\n        if (x > anterior) ++subidas;\n        anterior = x;\n    }\n    cout << subidas << endl;\n}\n```\nSe lee el primer elemento fuera del bucle (n>=1 garantiza que existe) y se compara cada nuevo elemento con el anterior. No hace falta guardar la secuencia.",
+        "tema" : "Tipos básicos",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "2,5 puntos en total. Función suma_digitos_256 con @pre\/@post (0,5, aquí cuenta también la documentación). Extracción correcta de dígitos con %256 y \/256 (0,75). Bucle que termina cuando x==0 y caso x=0 correcto (0,5). main que lee hasta fin de datos o el número de casos indicado, llama a la función y escribe (0,5). Uso de unsigned\/int sin desbordamiento (0,25). Sin función auxiliar = máximo 1 punto.",
+        "ejercicio" : 0,
+        "enunciado" : "Un entero no negativo $x$ se escribe en base 256 con dígitos $d_k \\dots d_1 d_0$, es decir $x = \\sum d_i \\cdot 256^i$ con $0 \\le d_i \\le 255$. Escribe un programa en C++ que lea un entero $t$ y después $t$ enteros $x$ ($0 \\le x \\le 2\\cdot10^9$) y, para cada uno, escriba la suma de sus dígitos en base 256 y el número de dígitos distintos de cero.\n\nDebes implementar una función auxiliar que, dado $x$, devuelva la suma de sus dígitos en base 256, y otra que devuelva el número de dígitos distintos de cero. El main solo lee, llama a las funciones y escribe.\n\nEntrada: $t$ y luego los $t$ enteros.\n\nSalida: una línea por cada $x$ con dos enteros separados por un espacio: suma y cantidad de dígitos no nulos.\n\nEjemplo de entrada:\n```\n3\n0\n258\n65792\n```\nEjemplo de salida:\n```\n0 0\n3 2\n2 2\n```\n(258 = 1*256 + 2; 65792 = 1*256^2 + 1*256 + 0, suma 2, pero el último dígito es 0, por lo que hay 2 dígitos no nulos.)",
+        "fuente" : "No sabe abordar Funciones auxiliares (recorrido de dígitos con %10 y \/10, aquí en base 256, separando en funciones)",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "```\n#include <iostream>\nusing namespace std;\n\n\/\/ @pre x >= 0\n\/\/ @post retorna la suma de los digitos de x en base 256\nint suma_digitos(long long x) {\n    int s = 0;\n    while (x > 0) {\n        s += x % 256;\n        x = x \/ 256;\n    }\n    return s;\n}\n\n\/\/ @pre x >= 0\n\/\/ @post retorna cuantos digitos de x en base 256 son distintos de cero\nint no_nulos(long long x) {\n    int c = 0;\n    while (x > 0) {\n        if (x % 256 != 0) ++c;\n        x = x \/ 256;\n    }\n    return c;\n}\n\nint main() {\n    int t;\n    cin >> t;\n    for (int i = 0; i < t; ++i) {\n        long long x;\n        cin >> x;\n        cout << suma_digitos(x) << ' ' << no_nulos(x) << endl;\n    }\n}\n```\nCaso x=0: el bucle no entra y ambas devuelven 0, correcto. Se usa long long por seguridad frente al rango.",
+        "tema" : "Funciones auxiliares",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "2,5 puntos en total. Función con @pre\/@post antes de implementar (0,75: describe parámetros, valor de retorno y condiciones). Implementación correcta del recorrido de números pedido (1). Documentación coherente con el código, la @pre con la condición n>=1 y la @post con el significado exacto del resultado (0,5). main correcto con lectura y salida (0,25). Si falta toda la documentación, máximo 1,75.",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe un programa en C++ que lea un entero $n \\ge 1$ y una secuencia de $n$ enteros, sin centinela, y escriba el mínimo de la secuencia y cuántas veces aparece. Hazlo sin guardar la secuencia en un vector.\n\nEntrada: $n$ y luego los $n$ enteros.\n\nSalida: el mínimo y su número de apariciones, separados por un espacio.\n\nEjemplo de entrada:\n```\n6\n4 2 7 2 9 2\n```\nEjemplo de salida:\n```\n2 3\n```",
+        "fuente" : "No sabe abordar E\/S con std::cin\/std::cout (lectura de secuencia sin sentinela manteniendo el mínimo en curso)",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "```\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    int minim;\n    cin >> minim;\n    int cuantos = 1;\n    for (int i = 1; i < n; ++i) {\n        int x;\n        cin >> x;\n        if (x < minim) {\n            minim = x;\n            cuantos = 1;\n        } else if (x == minim) {\n            ++cuantos;\n        }\n    }\n    cout << minim << ' ' << cuantos << endl;\n}\n```\nAl aparecer un nuevo mínimo estricto se reinicia el contador a 1; si es igual se incrementa.",
+        "tema" : "E\/S con std::cin\/std::cout",
+        "tipo" : "codigo"
+      },
+      {
+        "criterios" : "2,5 puntos en total. Caso base correcto con x==0 and y==0 (0,75). Paso recursivo con x%10, y%10 y x\/10, y\/10 (0,75). Valor absoluto de la diferencia de cada par de dígitos, tratando como 0 los dígitos que faltan en el número más corto (0,5). Restricción: si usa iteración, 0 en la pregunta. Documentación @pre\/@post de la función (0,25). main correcto (0,25).",
+        "ejercicio" : 0,
+        "enunciado" : "Escribe un programa en C++ con una función RECURSIVA (prohibido usar bucles en ella) que, dados dos enteros $x, y \\ge 0$, devuelva la suma de las diferencias absolutas de sus dígitos posición a posición, empezando por las unidades. Si un número tiene menos dígitos que el otro, los dígitos que le faltan se consideran 0. Documenta la función con @pre y @post.\n\nEntrada: dos enteros $x$ e $y$.\n\nSalida: el valor calculado.\n\nEjemplo de entrada:\n```\n1234 56\n```\nEjemplo de salida:\n```\n6\n```\n(|4-6| + |3-5| + |2-0| + |1-0| = 2+2+2+1 = 7)\n\nNota: el ejemplo correcto de salida para esta entrada es 7.",
+        "fuente" : "No sabe abordar Recursividad (recursión sobre dígitos con caso base x==0 and y==0 y paso x\/10, y\/10)",
+        "id" : "P4",
+        "opciones" : [
+
+        ],
+        "pagina" : 0,
+        "pdf" : "",
+        "puntos" : 2.5,
+        "solucionReferencia" : "```\n#include <iostream>\nusing namespace std;\n\n\/\/ @pre x >= 0, y >= 0\n\/\/ @post retorna la suma de |dx - dy| sobre cada posicion de digito, con 0 para los digitos ausentes\nint dif_digitos(int x, int y) {\n    if (x == 0 and y == 0) return 0;\n    int dx = x % 10;\n    int dy = y % 10;\n    int d = dx - dy;\n    if (d < 0) d = -d;\n    return d + dif_digitos(x \/ 10, y \/ 10);\n}\n\nint main() {\n    int x, y;\n    cin >> x >> y;\n    cout << dif_digitos(x, y) << endl;\n}\n```\nSalida correcta del ejemplo: 7 (el valor 6 que aparece en el ejemplo del enunciado es un error de redacción; el cálculo detallado da 2+2+2+1=7).",
+        "tema" : "Recursividad",
+        "tipo" : "codigo"
+      }
+    ],
+    "titulo" : "Mis errores · Examen a medida PRO1: tipos básicos, funciones, E\/S y recursividad"
+  },
+  "fecha" : "2026-11-19T08:51:40Z",
+  "fuentes" : [
+
+  ],
+  "id" : "562727B0-F83E-461C-A848-89D45A13944C",
+  "minutos" : 20,
+  "modo" : "estilo",
+  "notaAntes" : 2.67237805425594,
+  "notaDespues" : 2.641194034811712,
+  "pizarras" : {
+
+  },
+  "respuestas" : {
+    "P1" : "#include <iostream>\n\nint\tmain(void)\n{\n\tint\tn;\n\tint\tprev;\n\tint\tcurr;\n\tint\tcount;\n\tint\ti;\n\n\tif (!(std::cin >> n) || n < 1)\n\t\treturn (1);\n\tstd::cin >> prev;\n\tcount = 0;\n\ti = 1;\n\twhile (i < n)\n\t{\n\t\tstd::cin >> curr;\n\t\tif (curr > prev)\n\t\t\tcount += 1;\n\t\tprev = curr;\n\t\ti += 1;\n\t}\n\tstd::cout << count << '\\n';\n\treturn (0);\n}"
+  }
+}
