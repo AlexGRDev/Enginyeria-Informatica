@@ -75,7 +75,7 @@
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 0.6183241486026078,
+      "dominio" : 2.045023170531803,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -142,6 +142,12 @@
           "fecha" : "2026-10-28T11:11:03Z",
           "fuente" : "jutge",
           "nota" : 1
+        },
+        {
+          "evidencia" : "Ejercicio · Cadenas estilo C (char*) · P60816: 9,0",
+          "fecha" : "2026-11-19T08:50:35Z",
+          "fuente" : "ejercicio",
+          "nota" : 9
         }
       ]
     },
@@ -229,7 +235,7 @@
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.453190857248781,
+      "dominio" : 2.4531908572487806,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -300,7 +306,7 @@
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 1.1660006003328964,
+      "dominio" : 1.1660006003328967,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -442,7 +448,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.866497935042149,
+      "dominio" : 2.8664979242475246,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",

@@ -1,4 +1,62 @@
 {
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 3.5,
+        "tema" : "Tipos básicos"
+      },
+      {
+        "nota" : 1.2,
+        "tema" : "Punteros y aritmética de punteros"
+      },
+      {
+        "nota" : 3.5,
+        "tema" : "Cadenas estilo C (char*)"
+      },
+      {
+        "nota" : 3,
+        "tema" : "Funciones auxiliares"
+      },
+      {
+        "nota" : 1.5,
+        "tema" : "Recursividad"
+      },
+      {
+        "nota" : 1,
+        "tema" : "std::string"
+      },
+      {
+        "nota" : 4,
+        "tema" : "E\/S con std::cin\/std::cout"
+      }
+    ],
+    "notaTotal" : 9,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "La función rev_hexa no tiene especificación @pre\/@post.",
+            "patron" : "No documentar las funciones con especificación pre\/post",
+            "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
+            "tema" : "Funciones auxiliares"
+          }
+        ],
+        "feedback" : "Solución correcta: extrae dígitos hexadecimales con %16 y \/16 y los escribe en orden inverso de forma natural. Trata el caso 0 aparte. Todos los casos públicos pasan y el Jutge da AC. Falta la especificación pre\/post de rev_hexa. Además, el caso 0 en main se podría evitar con un do-while en la función, pero es una simplificación menor y no se penaliza. El enunciado habla de natural y se lee un int, lo cual es aceptable para el rango esperado.",
+        "funcional" : 10,
+        "id" : "P1",
+        "penalizaciones" : [
+          {
+            "categoria" : "mayor",
+            "concepto" : "No documentar las funciones con especificación pre\/post",
+            "detalle" : "void\trev_hexa(int n) sin @pre ni @post",
+            "puntos" : 1
+          }
+        ],
+        "puntosObtenidos" : 9
+      }
+    ],
+    "resumen" : "Programa correcto y con AC. El único descuento es la falta de especificación pre\/post en la función auxiliar. Recuerda documentar siempre cada función para no perder un punto fijo.\n"
+  },
   "diagnostico" : false,
   "ejercicio" : true,
   "examen" : {
@@ -23,14 +81,15 @@
     "P60816"
   ],
   "id" : "71F876BC-C6EC-4E27-8919-1617421E5B61",
-  "minutos" : 21,
+  "minutos" : 45,
   "modo" : "jutge",
-  "notaAntes" : 2.3870690607212515,
+  "notaAntes" : 2.3870529002490777,
+  "notaDespues" : 2.6723926176916537,
   "pizarras" : {
 
   },
   "respuestas" : {
-    "P1" : "\/* ************************************************************************** *\/\n\/*                                                                            *\/\n\/*                                                        :::      ::::::::   *\/\n\/*   P60816.cpp                                         :+:      :+:    :+:   *\/\n\/*                                                    +:+ +:+         +:+     *\/\n\/*   By: agarcia2 <agarcia2@student.42barcelona.co  +#+  +:+       +#+        *\/\n\/*                                                +#+#+#+#+#+   +#+           *\/\n\/*   Created: 2026\/11\/19 09:05:26 by agarcia2          #+#    #+#             *\/\n\/*   Updated: 2026\/11\/19 09:05:26 by agarcia2         ###   ########.fr       *\/\n\/*                                                                            *\/\n\/* ************************************************************************** *\/\n\n#include <iostream>\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tif (nbr == 0)\n\t{\n\t\tstd::cout << '0' << '\\n';\n\t\treturn 0;\n\t}\n\twhile (nbr > 0)\n\t{\n\t\tint rem = nbr % 16;\n\t\tchar digit;\n\t\tif (rem < 10)\n\t\t\tdigit = ('0' + rem);\n\t\telse\n\t\t\tdigit = ('A' + (rem - 10));\n\t\tstd::cout << digit;\n\t\tnbr = nbr \/ 16;\n\t}\n\tstd::cout << '\\n';\n\treturn 0;\n}\n"
+    "P1" : "#include <iostream>\n\nvoid\trev_hexa(int n)\n{\n\twhile (n > 0)\n\t{\n\t\tint rem = n % 16;\n\t\tchar digit;\n\t\tif (rem < 10)\n\t\t\tdigit = ('0' + rem);\n\t\telse\n\t\t\tdigit = ('A' + (rem - 10));\n\t\tstd::cout << digit;\n\t\tn = n \/ 16;\n\t}\n}\n\nint\tmain(void)\n{\n\tint\tnbr;\n\n\tstd::cin >> nbr;\n\tif (nbr == 0)\n\t{\n\t\tstd::cout << '0' << '\\n';\n\t\treturn 0;\n\t}\n\trev_hexa(nbr);\n\tstd::cout << '\\n';\n\treturn 0;\n}"
   },
   "veredictos" : {
     "P1" : "AC"

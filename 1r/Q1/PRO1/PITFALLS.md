@@ -3,14 +3,14 @@
 <!-- kiwi-gei:pitfalls:inici -->
 ## Contador de errores (Kiwi GEI)
 
-Generado el 2026-10-29. Ordenado por número de veces: arriba, lo que más hay que reforzar.
+Generado el 2026-11-19. Ordenado por número de veces: arriba, lo que más hay que reforzar.
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
 | No sabe abordar Tipos básicos | Tipos básicos | 17 | 2026-10-29 | Practicar esquemas de recorrido de secuencias con comparación de elementos consecutivos. |
 | No sabe abordar Funciones auxiliares | Funciones auxiliares | 17 | 2026-10-29 | Recorrido de dígitos con %10 y /10, aquí en base 256, separando en funciones. |
 | No sabe abordar E/S con std::cin/std::cout | E/S con std::cin/std::cout | 15 | 2026-10-29 | Practicar el esquema de lectura de secuencia sin sentinela y mantener el mínimo en curso. |
-| No documentar las funciones con especificación pre/post | Funciones auxiliares | 9 | 2026-10-29 | Escribir @pre y @post sobre cada función antes de implementarla. |
+| No documentar las funciones con especificación pre/post | Funciones auxiliares | 10 | 2026-11-19 | Escribir @pre y @post sobre cada función antes de implementarla. |
 | No sabe abordar Recursividad | Recursividad | 4 | 2026-10-27 | Practicar recursión sobre dígitos con caso base x==0 and y==0 y paso x/10, y/10. |
 | Uso incorrecto de punteros sobre variables escalares | Punteros y aritmética de punteros | 3 | 2026-10-28 | Usar variables enteras/char o vector con índices; reservar memoria dinámica solo cuando el enunciado lo pida. |
 | Código redundante o innecesariamente complicado | Funciones auxiliares | 2 | 2026-10-29 | Devolver directamente con return en cada rama y usar variable separada para el resultado. |

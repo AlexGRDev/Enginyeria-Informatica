@@ -78,14 +78,14 @@
   {
     "descripcion" : "ft_draw_a no tiene @pre\/@post.",
     "ejemplos" : [
-      "ft_calc_rectangle sin @pre\/@post.",
       "La función auxiliar no lleva @pre ni @post.",
       "La función no tiene @pre\/@post propios; el comentario es del main y no coincide con el problema.",
       "La @pre\/@post contiene el ejemplo de entrada y salida, no el contrato de la función.",
       "La función pujades no lleva @pre ni @post.",
       "No hay función ni especificación.",
       "ft_ABC sin @pre ni @post.",
-      "No hay @pre\/@post sobre la función."
+      "No hay @pre\/@post sobre la función.",
+      "La función rev_hexa no tiene especificación @pre\/@post."
     ],
     "id" : "50F48229-0E9F-4EB8-B8BF-AA5E260EE795",
     "patron" : "No documentar las funciones con especificación pre\/post",
@@ -93,8 +93,8 @@
     "racha" : 0,
     "refuerzo" : "Escribir @pre y @post sobre cada función antes de implementarla.",
     "tema" : "Funciones auxiliares",
-    "ultima" : "2026-10-29T11:38:27Z",
-    "veces" : 9
+    "ultima" : "2026-11-19T08:50:35Z",
+    "veces" : 10
   },
   {
     "descripcion" : "Bucles de impresión de espacios y 'A' repetidos dentro de una sola función.",
