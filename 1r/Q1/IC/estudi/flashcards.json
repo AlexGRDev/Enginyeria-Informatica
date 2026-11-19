@@ -808,5 +808,38 @@
     "repeticiones" : 0,
     "respuesta" : "0",
     "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "AEF8A4E2-835F-4017-BBB3-D8E99F1DBFC4",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: destino de BZ\/BNZ Ra, N8 en índices de instrucción",
+    "proxima" : "2026-11-19T16:51:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "destino = índice_del_salto + 1 + N8 (N8 en Ca2, cuenta instrucciones desde la siguiente al salto). Si no se cumple, sigue la siguiente.",
+    "tema" : "SISA (ensamblador)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D09CF0A2-15AB-4107-A05E-6C6BF8E295FF",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: qué hace CMPLT Rd, Ra, Rb",
+    "proxima" : "2026-11-19T16:51:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "Rd = 1 si Ra < Rb (con signo), si no Rd = 0. No resta ni guarda la diferencia. CMPLTU compara como naturales.",
+    "tema" : "SISA (ensamblador)"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "01B7B4F0-5ADB-4626-8068-36B4ADA67584",
+    "intervalo" : 0,
+    "origen" : "tutor",
+    "pregunta" : "SISA: cómo se hace un salto incondicional",
+    "proxima" : "2026-11-19T16:51:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "No hay salto relativo incondicional: BZ Rk, N8 con un Rk que valga 0, o JALR.",
+    "tema" : "SISA (ensamblador)"
   }
 ]

@@ -194,5 +194,31 @@
     "tema" : "Circuitos secuenciales",
     "ultima" : "2026-10-26T08:22:22Z",
     "veces" : 1
+  },
+  {
+    "descripcion" : "Al pasar SISA a pseudocódigo trató BNZ R4,4 como una asignación R4=4 en vez de un salto relativo de 4 instrucciones, e ignoró el salto hacia atrás BZ R5,-6 (no vio el bucle).",
+    "ejemplos" : [
+      "Al pasar SISA a pseudocódigo trató BNZ R4,4 como una asignación R4=4 en vez de un salto relativo de 4 instrucciones, e ignoró el salto hacia atrás BZ R5,-6 (no vio el bucle)."
+    ],
+    "id" : "EB40B663-50DA-4E6A-8B93-96E1DFC65133",
+    "patron" : "Confunde el N8 de BZ\/BNZ con un valor en vez de un desplazamiento de salto",
+    "primera" : "2026-11-19T16:51:12Z",
+    "refuerzo" : "Para cada salto calcular destino = índice_del_salto + 1 + N8 y dibujar una flecha en el listado. Un N8 negativo es un bucle. Repetir con 3 listados cortos.",
+    "tema" : "SISA (ensamblador)",
+    "ultima" : "2026-11-19T16:51:12Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "Interpretó CMPLT R4,R3,R2 como la resta R3-R2 comparada con 4, y omitió ADD, ADDI y OUT en el pseudocódigo (devolvió R1 en vez de escribirlo en el puerto).",
+    "ejemplos" : [
+      "Interpretó CMPLT R4,R3,R2 como la resta R3-R2 comparada con 4, y omitió ADD, ADDI y OUT en el pseudocódigo (devolvió R1 en vez de escribirlo en el puerto)."
+    ],
+    "id" : "9A77F5C5-1D17-4B4F-943C-2CFA85EAB711",
+    "patron" : "No sabe abordar la traducción de SISA a pseudocódigo (semántica de CMP y de cada instrucción)",
+    "primera" : "2026-11-19T16:51:12Z",
+    "refuerzo" : "Traducir línea a línea con la semántica de la hoja (CMPLT: Rd = (Ra<Rb) ? 1 : 0), sin saltarse ninguna instrucción, y comprobar con una tabla de valores de registros por iteración.",
+    "tema" : "SISA (ensamblador)",
+    "ultima" : "2026-11-19T16:51:12Z",
+    "veces" : 1
   }
 ]

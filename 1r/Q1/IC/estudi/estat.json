@@ -94,7 +94,7 @@
       ]
     },
     "Puertas lógicas y análisis de combinacionales (tabla de verdad)" : {
-      "dominio" : 0.31981280539661255,
+      "dominio" : 0.3198128224349801,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
@@ -129,7 +129,7 @@
       ]
     },
     "Representación de números naturales (base b, binario, hexadecimal, conversiones)" : {
-      "dominio" : 1.0356855353626773,
+      "dominio" : 1.0356855889210679,
       "evaluaciones" : [
         {
           "evidencia" : "Test diagnóstico IC: Parcial 1 (temas 2 y 3): 0,2",
@@ -160,6 +160,17 @@
           "fecha" : "2026-11-10T08:00:53Z",
           "fuente" : "tutor",
           "nota" : 0
+        }
+      ]
+    },
+    "SISA (ensamblador)" : {
+      "dominio" : 1,
+      "evaluaciones" : [
+        {
+          "evidencia" : "Primer ejercicio de SISA (ensamblador a pseudocódigo): semántica de CMPLT y de BNZ\/BZ mal entendida, bucle no detectado, instrucciones omitidas.",
+          "fecha" : "2026-11-19T16:51:12Z",
+          "fuente" : "tutor",
+          "nota" : 1
         }
       ]
     },
