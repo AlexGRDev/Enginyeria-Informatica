@@ -681,5 +681,137 @@
     "repeticiones" : 0,
     "respuesta" : "**4 Ω**",
     "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "58C6B3EA-69FF-4EEB-A8FF-9F880525C4CF",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Pico a pico ocupa **3 divisiones** a **2 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **6 V**; amplitud = **3 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A5C0D58A-5CD3-4223-A507-ABC947E9D8D8",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "R = **140 Ω**, I = **3 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.42 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "56DF4D77-D5E7-431A-839C-D86998B47D2C",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Pico a pico ocupa **4 divisiones** a **5 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **20 V**; amplitud = **10 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "C9D71A3C-E0B3-41C9-896E-50EA16E6DB39",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Frecuencia **50 Hz**. ¿Periodo?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**20 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "04AEB53C-FEB9-4AD0-9D34-B551988096F7",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Resistencias en serie: **10 Ω**, **90 Ω** y **70 Ω**. ¿Total?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**170 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F9A89BAB-FCFD-4D2F-90FE-7C13A767C6CA",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Frecuencia **1000 Hz**. ¿Periodo?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**1 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "260A45A6-9DAE-4B11-AB0F-FDA85B0A3858",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Pico a pico ocupa **2 divisiones** a **1 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **2 V**; amplitud = **1 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "68D55DF8-840B-4D06-AA51-7036125DC155",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Resistencias en serie: **60 Ω**, **60 Ω** y **10 Ω**. ¿Total?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**130 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "42F29C98-F022-4C11-90B0-EFA897B07304",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Resistencias en serie: **30 Ω**, **60 Ω** y **40 Ω**. ¿Total?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**130 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "51631C8C-426A-44CA-9DB6-46728A24CA6D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "R = **190 Ω**, I = **9 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**1.71 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "35586FAF-A458-4BA2-9BDC-30F23F0C9711",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "Divisor de tensión: Vin = **16 V**, R1 = **6 kΩ** (arriba), R2 = **2 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**4 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A705089B-9619-40FA-8AB8-1529779E5A32",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-19",
+    "pregunta" : "R = **50 Ω**, I = **9 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-19T05:46:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.45 V**",
+    "tema" : "Ohm"
   }
 ]
