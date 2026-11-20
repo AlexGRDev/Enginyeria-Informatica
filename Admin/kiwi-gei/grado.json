@@ -161,6 +161,18 @@
       "nombre" : "Examen parcial (midterm, jutge.org)",
       "nota" : 2,
       "tipo" : "examen"
+    },
+    {
+      "asignatura" : "IC",
+      "componente" : "L4",
+      "detalle" : "",
+      "fecha" : "2026-11-20T17:48:59Z",
+      "formato" : "Atenea",
+      "id" : "518B3182-51A3-4E6F-983F-BD448185B8E9",
+      "nombre" : "Prova prèvia Pràctica 4",
+      "nota" : 0.8,
+      "origen" : "atenea|Prova prèvia Pràctica 4",
+      "tipo" : "practica"
     }
   ],
   "codigos" : {
@@ -583,7 +595,9 @@
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129193?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129968?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129969?format=json"
   ],
   "sesiones" : [
     {
