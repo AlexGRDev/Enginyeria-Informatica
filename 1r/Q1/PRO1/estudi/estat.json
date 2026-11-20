@@ -158,7 +158,7 @@
       ]
     },
     "E\/S con std::cin\/std::cout" : {
-      "dominio" : 3.0841529449888276,
+      "dominio" : 3.084152944988827,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -241,7 +241,7 @@
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.4531908572487806,
+      "dominio" : 2.4531908572487815,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -312,7 +312,7 @@
       ]
     },
     "Punteros y aritmética de punteros" : {
-      "dominio" : 1.1660006003328964,
+      "dominio" : 1.1660006003328967,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -454,7 +454,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.866497924247524,
+      "dominio" : 2.893618649167549,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -537,6 +537,12 @@
         {
           "evidencia" : "tarjetas estudiadas",
           "fecha" : "2026-11-19T08:04:16Z",
+          "fuente" : "flashcards",
+          "nota" : 3.229585385313597
+        },
+        {
+          "evidencia" : "tarjetas estudiadas",
+          "fecha" : "2026-11-20T05:46:37Z",
           "fuente" : "flashcards",
           "nota" : 3.229585385313597
         }
