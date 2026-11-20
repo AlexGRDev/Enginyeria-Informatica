@@ -637,5 +637,82 @@
     "repeticiones" : 0,
     "respuesta" : "**87**",
     "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A0A147F5-98CF-4457-98D5-567CBD663AAC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "¿De cuántas formas se ordenan **2** elementos escogidos de entre **6**?",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**30** (6!\/4!)",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "DECE1A8B-3B34-435B-89CF-5E09417A855D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "C(**4**, **2**)",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**6**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "50EE3735-5DE6-4EF0-A1C0-DB3ED9DE8928",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "|A| = 67, |B| = 25, |A∩B| = 13. ¿|A∪B|?",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**79**",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E823A922-C062-46A3-9461-62318FB14320",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "mcd(**18**, **16**)",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**2**",
+    "tema" : "Divisibilidad"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A66D11B1-9BBA-45A5-A521-79B2DB35BFCC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "C(**9**, **2**)",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**36**",
+    "tema" : "Combinatoria"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A7552D4B-39D5-4D41-AD9B-07550AEDE490",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "|A| = 86, |B| = 74, |A∩B| = 32. ¿|A∪B|?",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**128**",
+    "tema" : "Conjuntos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "095D9303-B5AF-460D-A2CD-4B67B45F3005",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "mcm(**11**, **7**)",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**77**",
+    "tema" : "Divisibilidad"
   }
 ]
