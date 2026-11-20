@@ -161,29 +161,6 @@
       "nombre" : "Examen parcial (midterm, jutge.org)",
       "nota" : 2,
       "tipo" : "examen"
-    },
-    {
-      "asignatura" : "F",
-      "componente" : "P1",
-      "detalle" : "",
-      "fecha" : "2026-11-19T07:49:08Z",
-      "formato" : "Papel",
-      "id" : "FAB44B58-69A7-4222-85FD-6FBF95828344",
-      "nombre" : "Parcial 1 (temas 1 y 2)",
-      "nota" : 0,
-      "tipo" : "examen"
-    },
-    {
-      "asignatura" : "IC",
-      "componente" : "L4",
-      "detalle" : "",
-      "fecha" : "2026-11-20T13:47:55Z",
-      "formato" : "Atenea",
-      "id" : "262F4F64-B61A-448C-864C-50A12A2356D5",
-      "nombre" : "Prova prèvia Pràctica 4",
-      "nota" : 0.8,
-      "origen" : "atenea|Prova prèvia Pràctica 4",
-      "tipo" : "practica"
     }
   ],
   "codigos" : {
@@ -395,9 +372,6 @@
     "PRO1" : "enCurso"
   },
   "examenes" : {
-    "F" : {
-      "parcial" : 0
-    },
     "IC" : {
       "parcial" : 0
     },
@@ -581,35 +555,11 @@
     },
     {
       "code" : "PRO1",
-      "fecha" : "2026-11-17T16:00:00Z",
-      "horas" : 2,
-      "id" : "760A2CFD-9796-4FA9-AC52-6C8CC10B9B43",
-      "origen" : "2026-11-17|PRO1|17:00",
-      "tipo" : "T"
-    },
-    {
-      "code" : "PRO1",
       "fecha" : "2026-11-18T15:00:00Z",
-      "horas" : 2.5833333333333335,
-      "id" : "9B5EAA70-082B-4192-8FB2-5E3CE696D03A",
+      "horas" : 3,
+      "id" : "85072384-CDEE-4C5D-8A69-94D89E7EFFB2",
       "origen" : "2026-11-18|PRO1|16:00",
       "tipo" : "L"
-    },
-    {
-      "code" : "IC",
-      "fecha" : "2026-11-19T14:00:00Z",
-      "horas" : 2,
-      "id" : "2D049CB1-5E2C-4337-A5AD-F2991B92BEAB",
-      "origen" : "2026-11-19|IC|15:00",
-      "tipo" : "T"
-    },
-    {
-      "code" : "F",
-      "fecha" : "2026-11-19T16:00:00Z",
-      "horas" : 2,
-      "id" : "6BA40DE7-2976-4FAA-B555-ED44B868D516",
-      "origen" : "2026-11-19|F|17:00",
-      "tipo" : "T"
     }
   ],
   "notas" : {
@@ -625,9 +575,7 @@
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129193?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129968?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129969?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json"
   ],
   "sesiones" : [
     {
