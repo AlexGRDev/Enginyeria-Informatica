@@ -626,5 +626,93 @@
     "repeticiones" : 0,
     "respuesta" : "`0001 1100`",
     "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "BC9E35CC-DCB4-46B2-B47D-2EC6BDCD6904",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "Escribe **-38** en complemento a 2 con 8 bits",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`1101 1010`",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A8388065-8ED3-4A59-B10D-61CF8E8182F2",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "¿Qué decimal es **1100 1010** en complemento a 2 (8 bits)?",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "**-54**",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "C5C28B18-97C5-4CF4-9D7F-8AEE868E4D7D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "Escribe **-109** en complemento a 2 con 8 bits",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`1001 0011`",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E39C328C-5A58-4CD6-B4F0-E57EED32388F",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "Suma en binario de 4 bits: **0101 + 1010**",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`1111`",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "C1EB6A22-D74E-434C-ABD5-E6BD34B1A528",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "**AND** bit a bit de **0010** y **0011** (4 bits)",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`0010`",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "8A78D255-7C95-4439-BE3F-B37F0AF02835",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "Suma en binario de 4 bits: **0101 + 0000**",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`0101`",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "545F277D-3613-46C4-BB48-597FD4874E7E",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "**NAND** bit a bit de **0100** y **1011** (4 bits)",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`1111`",
+    "tema" : "Conversiones"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A184C4C0-E485-493D-A917-3C6CBAA47CDE",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-20",
+    "pregunta" : "Pasa a binario: **0x1C**",
+    "proxima" : "2026-11-20T15:00:25Z",
+    "repeticiones" : 0,
+    "respuesta" : "`0001 1100`",
+    "tema" : "Conversiones"
   }
 ]
