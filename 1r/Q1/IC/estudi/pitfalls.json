@@ -220,5 +220,31 @@
     "tema" : "SISA (ensamblador)",
     "ultima" : "2026-11-19T16:51:12Z",
     "veces" : 1
+  },
+  {
+    "descripcion" : "La pizarra solo contiene una línea de cabecera con valores sueltos (a, b, Rb\/N, OP, F, In\/ALU, @D, WrD, N=0xDA...). No hay una fila por mnemotécnico ni valores de control de ninguna instrucción.",
+    "ejemplos" : [
+      "La pizarra solo contiene una línea de cabecera con valores sueltos (a, b, Rb\/N, OP, F, In\/ALU, @D, WrD, N=0xDA...). No hay una fila por mnemotécnico ni valores de control de ninguna instrucción."
+    ],
+    "id" : "9C4DA398-6F59-492C-A390-8A479902095A",
+    "patron" : "No sabe abordar la palabra de control de la UPG",
+    "primera" : "2026-11-20T07:32:56Z",
+    "refuerzo" : "Para cada instrucción, rellenar @A, @B, Rb\/N, OP, F, In\/ALU, @D, WrD y N en una fila propia. Usar X en lo que no importa y tachar la línea si la acción no es posible. Repasar el camino de datos de la UPG y el significado de cada señal.",
+    "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)",
+    "ultima" : "2026-11-20T07:32:56Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "No se identifica qué registros fuente y destino usa cada instrucción, ni la función de la ALU asociada (SUBI, OUT\/\/IN, SHLI, ADD).",
+    "ejemplos" : [
+      "No se identifica qué registros fuente y destino usa cada instrucción, ni la función de la ALU asociada (SUBI, OUT\/\/IN, SHLI, ADD)."
+    ],
+    "id" : "9625D7AA-817A-4435-9C32-0548AEE19396",
+    "patron" : "No sabe abordar la traducción de instrucciones SISA a señales de control",
+    "primera" : "2026-11-20T07:32:56Z",
+    "refuerzo" : "Escribir primero Rd, Ra, Rb o N de cada instrucción y después mapearlos a @D, @A, @B y N. Elegir F y Rb\/N según la operación (ADD: F=100, Rb\/N=1; SUBI\/SHLI usan N con Rb\/N=0).",
+    "tema" : "SISA (ensamblador)",
+    "ultima" : "2026-11-20T07:32:56Z",
+    "veces" : 1
   }
 ]

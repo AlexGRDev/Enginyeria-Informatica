@@ -1,0 +1,78 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 1,
+        "tema" : "SISA (ensamblador)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)"
+      }
+    ],
+    "notaTotal" : 0,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "La pizarra solo contiene una línea de cabecera con valores sueltos (a, b, Rb\/N, OP, F, In\/ALU, @D, WrD, N=0xDA...). No hay una fila por mnemotécnico ni valores de control de ninguna instrucción.",
+            "patron" : "No sabe abordar la palabra de control de la UPG",
+            "refuerzo" : "Para cada instrucción, rellenar @A, @B, Rb\/N, OP, F, In\/ALU, @D, WrD y N en una fila propia. Usar X en lo que no importa y tachar la línea si la acción no es posible. Repasar el camino de datos de la UPG y el significado de cada señal.",
+            "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)"
+          },
+          {
+            "descripcion" : "No se identifica qué registros fuente y destino usa cada instrucción, ni la función de la ALU asociada (SUBI, OUT\/\/IN, SHLI, ADD).",
+            "patron" : "No sabe abordar la traducción de instrucciones SISA a señales de control",
+            "refuerzo" : "Escribir primero Rd, Ra, Rb o N de cada instrucción y después mapearlos a @D, @A, @B y N. Elegir F y Rb\/N según la operación (ADD: F=100, Rb\/N=1; SUBI\/SHLI usan N con Rb\/N=0).",
+            "tema" : "SISA (ensamblador)"
+          }
+        ],
+        "feedback" : "La respuesta no resuelve la pregunta. Lo escrito en la pizarra es una sola fila de valores sueltos bajo los nombres de las columnas (1, 1, 0, 0, 1, 1, 0, 1, 1, N=0xDA aproximadamente), sin separar las cuatro instrucciones. Ninguna fila coincide con la solución. Por ejemplo, SUBI R1,R1,-2 exige @A=001, F=101, In\/ALU=0, @D=001, WrD=1 y N=0xFFFE. No hay N con complemento a 2 de -2, ni X en las señales irrelevantes de OUT\/\/IN, ni la línea de SHLI (F=111, N=0x0001) ni la de ADD (@A=110, @B=101, Rb\/N=1). Con 4 filas incorrectas, el criterio de penalización deja 0 puntos.",
+        "id" : "P1",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Pregunta 6 prácticamente en blanco: solo hay una fila de valores sin relación con las cuatro instrucciones. Hay que volver a trabajar la palabra de control de la UPG: mapear Rd\/Ra\/Rb\/N a @D\/@A\/@B\/N, elegir F y Rb\/N, e indicar In\/ALU y WrD. También hay que usar X donde no importa y escribir el inmediato en hexadecimal de 16 bits (-2 = 0xFFFE)."
+  },
+  "diagnostico" : false,
+  "ejercicio" : true,
+  "examen" : {
+    "duracionMinutos" : 12,
+    "preguntas" : [
+      {
+        "criterios" : "2,5 puntos por fila (10 en total). Se resta 2,5 por cada fila o columna con error, tomando el mínimo entre filas y columnas incorrectas, es decir, se penaliza el menor número de filas o columnas que cubren todos los fallos.",
+        "ejercicio" : 6,
+        "enunciado" : "Pregunta 6 (1 punto)\n\nIndicad el valor que debe tener cada uno de los bits de la palabra de control de la UPG (sin subsistema de I\/O ni memoria) para que realice, durante un ciclo, la acción concreta especificada mediante el mnemotécnico. Indicad con X las casillas cuyo valor no importe para la ejecución de la instrucción. En caso de que no se pueda realizar la acción, tachad toda la línea de señales.\n\nColumnas de la tabla: Mnemotécnico | @A | @B | Rb\/N | OP | F | In\/ALU | @D | WrD | N (Hexa)\n\nFilas:\n1) SUBI R1, R1, -2\n2) OUT R2 \/\/ IN R1\n3) SHLI R5, R7, 1\n4) ADD R7, R6, R5\n\n(ver figura de la UPG en el PDF original)",
+        "fuente" : "25-26-Q1-EF-Parte1-Enunciado.pdf, Pregunta 6",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 3,
+        "pdf" : "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EF-Parte1-Enunciado.pdf",
+        "puntos" : 10,
+        "solucionReferencia" : "Mnemotécnico | @A | @B | Rb\/N | OP | F | In\/ALU | @D | WrD | N\nSUBI R1, R1, -2 | 001 | xxx | 0 | 00 | 101 | 0 | 001 | 1 | 0xFFFE\nOUT R2 \/\/ IN R1 | 010 | xxx | x | xx | xxx | 1 | 001 | 1 | 0xXXXX\nSHLI R5, R7, 1 | 111 | xxx | 0 | 00 | 111 | 0 | 101 | 1 | 0x0001\nADD R7, R6, R5 | 110 | 101 | 1 | 00 | 100 | 1 | 111 | 1 | 0xXXXX\n\nNotas: en SUBI se suma el inmediato -2 (0xFFFE en 16 bits) con la función de la ALU F=101, tomando N como operando (Rb\/N=0) y escribiendo el resultado de la ALU (In\/ALU=0) en R1 (@D=001). En OUT R2 \/\/ IN R1 se lee R2 por @A, se saca por el bus de salida y se escribe en R1 el dato de entrada (In\/ALU=1), por lo que OP, F, Rb\/N y @B no importan. En SHLI se usa F=111 con N=1 y destino R5. En ADD se usa F=100, Rb\/N=1 con @B=R5 y @A=R6, y se escribe en R7 el resultado de la ALU.",
+        "tema" : "SISA (ensamblador)",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Ejercicio · SISA (ensamblador)"
+  },
+  "fecha" : "2026-11-20T07:20:53Z",
+  "fuentes" : [
+    "material\/atenea\/Enunciats i Solucions dels Exàmens\/25-26-Q1-EF-Parte1-Enunciado.pdf"
+  ],
+  "id" : "C0236FC2-468D-4186-9174-9DA3FC1EB349",
+  "minutos" : 11,
+  "modo" : "estilo",
+  "notaAntes" : 0,
+  "notaDespues" : 0,
+  "pizarras" : {
+    "P1" : [
+      "estudi\/simulacres\/2026-11-20-C0236FC2\/P1-1.png"
+    ]
+  },
+  "respuestas" : {
+
+  }
+}

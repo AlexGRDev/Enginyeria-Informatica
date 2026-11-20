@@ -3,7 +3,7 @@
 <!-- kiwi-gei:pitfalls:inici -->
 ## Contador de errores (Kiwi GEI)
 
-Generado el 2026-11-19. Ordenado por número de veces: arriba, lo que más hay que reforzar.
+Generado el 2026-11-20. Ordenado por número de veces: arriba, lo que más hay que reforzar.
 
 | Patrón | Tema | Veces | Última vez | Cómo reforzar |
 |---|---|---|---|---|
@@ -17,8 +17,10 @@ Generado el 2026-11-19. Ordenado por número de veces: arriba, lo que más hay q
 | No agrupa de 4 en 4 bits al pasar binario a hexadecimal | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 3 | 2026-10-26 | Separar en nibbles desde la derecha y convertir cada uno (1010=A, 1101=D, 1100=C). |
 | No sabe abordar el número mínimo de bits para un rango | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 3 | 2026-10-26 | Buscar el menor n con 2^n > máximo; los dígitos hexadecimales son ceil(n/4). |
 | No expande cada dígito hexadecimal a 4 bits al pasar hexadecimal a binario | Representación de números naturales (base b, binario, hexadecimal, conversiones) | 2 | 2026-10-26 | Convertir cada dígito hexadecimal a su nibble (6=0110, D=1101, 9=1001, F=1111) y concatenar; el vector final debe tener 8 bits. |
-| No sabe abordar la traducción de SISA a pseudocódigo (semántica de CMP y de cada instrucción) | SISA (ensamblador) | 1 | 2026-11-19 | Traducir línea a línea con la semántica de la hoja (CMPLT: Rd = (Ra<Rb) ? 1 : 0), sin saltarse ninguna instrucción, y comprobar con una tabla de valores de registros por iteración. |
+| No sabe abordar la traducción de instrucciones SISA a señales de control | SISA (ensamblador) | 1 | 2026-11-20 | Escribir primero Rd, Ra, Rb o N de cada instrucción y después mapearlos a @D, @A, @B y N. Elegir F y Rb/N según la operación (ADD: F=100, Rb/N=1; SUBI/SHLI usan N con Rb/N=0). |
+| No sabe abordar la palabra de control de la UPG | Procesadores de propósito específico (camino de datos y unidad de control) | 1 | 2026-11-20 | Para cada instrucción, rellenar @A, @B, Rb/N, OP, F, In/ALU, @D, WrD y N en una fila propia. Usar X en lo que no importa y tachar la línea si la acción no es posible. Repasar el camino de datos de la UPG y el significado de cada señal. |
 | Confunde el N8 de BZ/BNZ con un valor en vez de un desplazamiento de salto | SISA (ensamblador) | 1 | 2026-11-19 | Para cada salto calcular destino = índice_del_salto + 1 + N8 y dibujar una flecha en el listado. Un N8 negativo es un bucle. Repetir con 3 listados cortos. |
+| No sabe abordar la traducción de SISA a pseudocódigo (semántica de CMP y de cada instrucción) | SISA (ensamblador) | 1 | 2026-11-19 | Traducir línea a línea con la semántica de la hoja (CMPLT: Rd = (Ra<Rb) ? 1 : 0), sin saltarse ninguna instrucción, y comprobar con una tabla de valores de registros por iteración. |
 | No sabe abordar el grafo de estados de un circuito secuencial | Circuitos secuenciales | 1 | 2026-10-26 | Cada estado guarda los dos últimos bits de x; w es su XOR; el arco con x desplaza el historial. |
 | Tabla de verdad incompleta o sin columnas intermedias | Puertas lógicas y análisis de combinacionales (tabla de verdad) | 1 | 2026-10-25 | Escribir las 8 filas en orden binario y una columna por señal intermedia. |
 | No sabe abordar caminos críticos y tiempos de propagación | Modelo temporal (tiempos de propagación, caminos críticos) | 1 | 2026-10-25 | Sumar los Tp de las puertas de cada camino entrada-salida y quedarse con el máximo. |
