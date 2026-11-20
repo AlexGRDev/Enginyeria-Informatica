@@ -5,6 +5,12 @@
       "fecha" : "2026-11-10T07:56:42Z",
       "fuente" : "examen-parcial",
       "real" : 0
+    },
+    {
+      "estimado" : 0.16597939730890388,
+      "fecha" : "2026-11-20T07:53:18Z",
+      "fuente" : "estilo",
+      "real" : 0.1
     }
   ],
   "temas" : {
@@ -164,7 +170,7 @@
       ]
     },
     "SISA (ensamblador)" : {
-      "dominio" : 0.2816075164244242,
+      "dominio" : 0.28160758241564876,
       "evaluaciones" : [
         {
           "evidencia" : "Primer ejercicio de SISA (ensamblador a pseudocódigo): semántica de CMPLT y de BNZ\/BZ mal entendida, bucle no detectado, instrucciones omitidas.",

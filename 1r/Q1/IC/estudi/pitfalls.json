@@ -5,15 +5,17 @@
       "Lista de pesos 2,4,8,... en vez de 1,2,4,... y bits leídos con el peso creciente de izquierda a derecha.",
       "Tabla de pesos 2..256 y binario resultante incorrecto para el decimal dado.",
       "Usa 256 como peso del primer bit en vectores de 8 bits, con 9 pesos y alineación desplazada; en la fila 4 genera un vector de 9 bits.",
-      "Xu = 180, 110 y vector de 201 con un bit mal (11011001 = 217)."
+      "Xu = 180, 110 y vector de 201 con un bit mal (11011001 = 217).",
+      "No hay ninguna conversión entre bases 2, 10 y 16."
     ],
     "id" : "294C8402-8280-48E3-8D5B-0C304BD13C99",
     "patron" : "Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido)",
     "primera" : "2026-10-25T20:31:52Z",
+    "racha" : 0,
     "refuerzo" : "Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando.",
     "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-    "ultima" : "2026-10-26T09:29:21Z",
-    "veces" : 4
+    "ultima" : "2026-11-20T07:53:18Z",
+    "veces" : 5
   },
   {
     "descripcion" : "El hexadecimal dado (952) no corresponde a ninguna agrupación de nibbles de 10101101.",
@@ -36,15 +38,17 @@
       "Apartado b en blanco.",
       "Sin respuesta a la fórmula de Wu y al rango.",
       "Pregunta 1 en blanco: no aborda la interpretación de vectores de bits como enteros ni las salidas del esquema de bloques.",
-      "Sin fórmula de valor ni rango con n dígitos en base b."
+      "Sin fórmula de valor ni rango con n dígitos en base b.",
+      "Pregunta en blanco."
     ],
     "id" : "9711CD03-5340-4016-AD29-89A235E6E19E",
     "patron" : "No sabe abordar el rango de representación en base b",
     "primera" : "2026-10-25T20:31:52Z",
-    "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural y con signo.",
+    "racha" : 0,
+    "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural.",
     "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
-    "ultima" : "2026-10-26T09:29:21Z",
-    "veces" : 4
+    "ultima" : "2026-11-20T07:53:18Z",
+    "veces" : 5
   },
   {
     "descripcion" : "Pregunta en blanco.",
@@ -142,15 +146,17 @@
       "Pregunta en blanco.",
       "No enumera caminos que atraviesan un bloque con Tp distinto por par entrada-salida.",
       "Sin camino crítico ni tiempo de ciclo mínimo (150+450+50+50=700 u.t.).",
-      "No enumera caminos ni Tp del circuito con el bloque H."
+      "No enumera caminos ni Tp del circuito con el bloque H.",
+      "Pregunta en blanco."
     ],
     "id" : "322FF751-6A13-4E9C-B377-2C48CF40F44B",
     "patron" : "No sabe abordar caminos críticos con bloques",
     "primera" : "2026-10-25T20:31:53Z",
+    "racha" : 0,
     "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida, y sumar los Tp de cada uno.",
     "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
-    "ultima" : "2026-10-26T09:29:21Z",
-    "veces" : 4
+    "ultima" : "2026-11-20T07:53:18Z",
+    "veces" : 5
   },
   {
     "descripcion" : "Pregunta en blanco.",
@@ -211,28 +217,33 @@
   {
     "descripcion" : "Interpretó CMPLT R4,R3,R2 como la resta R3-R2 comparada con 4, y omitió ADD, ADDI y OUT en el pseudocódigo (devolvió R1 en vez de escribirlo en el puerto).",
     "ejemplos" : [
-      "Interpretó CMPLT R4,R3,R2 como la resta R3-R2 comparada con 4, y omitió ADD, ADDI y OUT en el pseudocódigo (devolvió R1 en vez de escribirlo en el puerto)."
+      "Interpretó CMPLT R4,R3,R2 como la resta R3-R2 comparada con 4, y omitió ADD, ADDI y OUT en el pseudocódigo (devolvió R1 en vez de escribirlo en el puerto).",
+      "Valores incorrectos y sin cálculo de direcciones: a) 0x64 (correcto 0x0A4A) y b) 0100 (correcto 0x0003). El valor de c) parece 0011 y el de d) 0...0011; no son los correctos (0x0000 y 0x0066)."
     ],
     "id" : "9A77F5C5-1D17-4B4F-943C-2CFA85EAB711",
     "patron" : "No sabe abordar la traducción de SISA a pseudocódigo (semántica de CMP y de cada instrucción)",
     "primera" : "2026-11-19T16:51:12Z",
-    "refuerzo" : "Traducir línea a línea con la semántica de la hoja (CMPLT: Rd = (Ra<Rb) ? 1 : 0), sin saltarse ninguna instrucción, y comprobar con una tabla de valores de registros por iteración.",
+    "racha" : 0,
+    "refuerzo" : "Calcular primero las direcciones (v1=0x0A47, v2=0x0A4A, res=0x0A4D) y luego traducir línea a línea con la semántica de la hoja.",
     "tema" : "SISA (ensamblador)",
-    "ultima" : "2026-11-19T16:51:12Z",
-    "veces" : 1
+    "ultima" : "2026-11-20T07:53:18Z",
+    "veces" : 2
   },
   {
     "descripcion" : "La pizarra solo contiene una línea de cabecera con valores sueltos (a, b, Rb\/N, OP, F, In\/ALU, @D, WrD, N=0xDA...). No hay una fila por mnemotécnico ni valores de control de ninguna instrucción.",
     "ejemplos" : [
-      "La pizarra solo contiene una línea de cabecera con valores sueltos (a, b, Rb\/N, OP, F, In\/ALU, @D, WrD, N=0xDA...). No hay una fila por mnemotécnico ni valores de control de ninguna instrucción."
+      "La pizarra solo contiene una línea de cabecera con valores sueltos (a, b, Rb\/N, OP, F, In\/ALU, @D, WrD, N=0xDA...). No hay una fila por mnemotécnico ni valores de control de ninguna instrucción.",
+      "Pregunta en blanco.",
+      "Pregunta en blanco."
     ],
     "id" : "9C4DA398-6F59-492C-A390-8A479902095A",
     "patron" : "No sabe abordar la palabra de control de la UPG",
     "primera" : "2026-11-20T07:32:56Z",
-    "refuerzo" : "Para cada instrucción, rellenar @A, @B, Rb\/N, OP, F, In\/ALU, @D, WrD y N en una fila propia. Usar X en lo que no importa y tachar la línea si la acción no es posible. Repasar el camino de datos de la UPG y el significado de cada señal.",
+    "racha" : 0,
+    "refuerzo" : "Seguir el código C estado a estado y escribir en cada uno la instrucción que realiza la acción, usando ADD\/ADDI\/SUBI\/MOVEI.",
     "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)",
-    "ultima" : "2026-11-20T07:32:56Z",
-    "veces" : 1
+    "ultima" : "2026-11-20T07:53:18Z",
+    "veces" : 3
   },
   {
     "descripcion" : "No se identifica qué registros fuente y destino usa cada instrucción, ni la función de la ALU asociada (SUBI, OUT\/\/IN, SHLI, ADD).",
@@ -245,6 +256,19 @@
     "refuerzo" : "Escribir primero Rd, Ra, Rb o N de cada instrucción y después mapearlos a @D, @A, @B y N. Elegir F y Rb\/N según la operación (ADD: F=100, Rb\/N=1; SUBI\/SHLI usan N con Rb\/N=0).",
     "tema" : "SISA (ensamblador)",
     "ultima" : "2026-11-20T07:32:56Z",
+    "veces" : 1
+  },
+  {
+    "descripcion" : "En blanco. La pizarra solo contiene un dibujo de biestable con puertas que no corresponde al enunciado (ALU con MUX de operaciones de 16 bits).",
+    "ejemplos" : [
+      "En blanco. La pizarra solo contiene un dibujo de biestable con puertas que no corresponde al enunciado (ALU con MUX de operaciones de 16 bits)."
+    ],
+    "id" : "AE6B7C50-6362-4CE8-A313-16B64CC9880C",
+    "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
+    "primera" : "2026-11-20T07:53:18Z",
+    "refuerzo" : "Evaluar el bloque para cada valor de F, calculando la operación seleccionada en hexadecimal (ADD, XOR, SHL, etc.).",
+    "tema" : "Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores)",
+    "ultima" : "2026-11-20T07:53:18Z",
     "veces" : 1
   }
 ]
