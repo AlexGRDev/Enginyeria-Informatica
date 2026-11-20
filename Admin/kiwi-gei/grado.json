@@ -172,6 +172,18 @@
       "nombre" : "Parcial 1 (temas 1 y 2)",
       "nota" : 0,
       "tipo" : "examen"
+    },
+    {
+      "asignatura" : "IC",
+      "componente" : "L4",
+      "detalle" : "",
+      "fecha" : "2026-11-20T13:47:55Z",
+      "formato" : "Atenea",
+      "id" : "262F4F64-B61A-448C-864C-50A12A2356D5",
+      "nombre" : "Prova prèvia Pràctica 4",
+      "nota" : 0.8,
+      "origen" : "atenea|Prova prèvia Pràctica 4",
+      "tipo" : "practica"
     }
   ],
   "codigos" : {
