@@ -1,0 +1,260 @@
+{
+  "correccion" : {
+    "dominioPorTema" : [
+      {
+        "nota" : 0,
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Puertas lógicas y análisis de combinacionales (tabla de verdad)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Síntesis de combinacionales (suma de minterms, ROM)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Números enteros (complemento a 2, operaciones y bloques aritméticos)"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Circuitos secuenciales"
+      },
+      {
+        "nota" : 0,
+        "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)"
+      },
+      {
+        "nota" : 1,
+        "tema" : "SISA (ensamblador)"
+      }
+    ],
+    "notaTotal" : 0.1,
+    "preguntas" : [
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar el rango de representación en base b",
+            "refuerzo" : "Con n dígitos en base b el rango es [0, b^n - 1]. Practicar la conversión de vectores de 8 bits a valor natural.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          },
+          {
+            "descripcion" : "No hay ninguna conversión entre bases 2, 10 y 16.",
+            "patron" : "Pesos de bit mal asignados (empieza en 2 en vez de 1 o orden invertido)",
+            "refuerzo" : "Restar pesos 256, 128, 64, ... desde el mayor que cabe y comprobar sumando.",
+            "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)"
+          }
+        ],
+        "feedback" : "En blanco. Rangos: $[0,255]$, $[0,4095]$, $[0,4095]$, $[0,1023]$. Sin conversiones de la tabla.",
+        "id" : "P1",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar caminos críticos con bloques",
+            "refuerzo" : "Enumerar todos los caminos, incluidos los internos del bloque por par entrada-salida, y sumar los Tp de cada uno.",
+            "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)"
+          }
+        ],
+        "feedback" : "En blanco. Faltan los dos caminos críticos (LD con 2980 ut y CMPLE\/CMPLEU con 2210 ut) y la tabla CMP\/AL.",
+        "id" : "P2",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "En blanco. La pizarra solo contiene un dibujo de biestable con puertas que no corresponde al enunciado (ALU con MUX de operaciones de 16 bits).",
+            "patron" : "No sabe abordar el análisis de combinacionales por tabla de verdad",
+            "refuerzo" : "Evaluar el bloque para cada valor de F, calculando la operación seleccionada en hexadecimal (ADD, XOR, SHL, etc.).",
+            "tema" : "Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores)"
+          }
+        ],
+        "feedback" : "No responde a lo pedido: no aparece ningún valor de W. Resultados esperados: 0x0002, 0x1E0F, 0xE6AB, 0xFD00, 0x00E0.",
+        "id" : "P3",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar la palabra de control de la UPG",
+            "refuerzo" : "Para cada ciclo, aplicar @D\/WrD en el flanco y leer A y B de los registros con @A y @B; la escritura se ve en el ciclo siguiente.",
+            "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)"
+          }
+        ],
+        "feedback" : "En blanco. Falta todo el cronograma del REGFILE.",
+        "id" : "P4",
+        "puntosObtenidos" : 0
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Valores incorrectos y sin cálculo de direcciones: a) 0x64 (correcto 0x0A4A) y b) 0100 (correcto 0x0003). El valor de c) parece 0011 y el de d) 0...0011; no son los correctos (0x0000 y 0x0066).",
+            "patron" : "No sabe abordar la traducción de SISA a pseudocódigo (semántica de CMP y de cada instrucción)",
+            "refuerzo" : "Calcular primero las direcciones (v1=0x0A47, v2=0x0A4A, res=0x0A4D) y luego traducir línea a línea con la semántica de la hoja.",
+            "tema" : "SISA (ensamblador)"
+          }
+        ],
+        "feedback" : "Las cuatro respuestas están mal. a) MOVI\/MOVHI cargan la dirección de v2 = 0x0A4A, no 0x64. b) LDB 2(R1) lee v1[2] = 3. c) res está sin inicializar, vale 0. d) El bucle suma v1[i]+0x64 y el último LDB lee res[1] = 0x66.",
+        "id" : "P5",
+        "puntosObtenidos" : 0.1
+      },
+      {
+        "errores" : [
+          {
+            "descripcion" : "Pregunta en blanco.",
+            "patron" : "No sabe abordar la palabra de control de la UPG",
+            "refuerzo" : "Seguir el código C estado a estado y escribir en cada uno la instrucción que realiza la acción, usando ADD\/ADDI\/SUBI\/MOVEI.",
+            "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)"
+          }
+        ],
+        "feedback" : "En blanco. Faltan: b) Eb ADD R2,R2,R3 y Ed ADDI R4,R2,5; c) MOVEI R0,0; SUBI R7,R7,3; ADDI R0,R0,1; ADDI R6,R6,1.",
+        "id" : "P6",
+        "puntosObtenidos" : 0
+      }
+    ],
+    "resumen" : "Simulacro prácticamente en blanco: solo P5 contiene respuestas y son incorrectas. P3 trae una pizarra que no se corresponde con el enunciado. Nota muy baja, con todos los temas del Parcial 2 por empezar. Prioridad: ALU y REGFILE (T8), caminos críticos del SISC (T12), grafos de la UPG y direcciones de datos en SISA."
+  },
+  "diagnostico" : false,
+  "examen" : {
+    "duracionMinutos" : 110,
+    "preguntas" : [
+      {
+        "criterios" : "Reparto sobre 1,5 pts: a) 0,4 (0,1 por apartado); b) 0,35 (0,05 por cada dígito mal; 0 si no suma pesos); c) 0,35; d) 0,4. Penalizar rango como 2^n sin restar 1 y pesos de bit mal asignados.",
+        "ejercicio" : 2,
+        "enunciado" : "Exercici 2.2 (Objectiu 2.2). Dóna el rang d'un nombre natural representat per un vector de: a) 8 bits. b) 3 Dígits hexadecimals. c) 4 dígits en base 8. d) 5 dígits en base 4.\n\nExercici 2.4 (Objectiu 2.4). Completa la següent taula de manera que a cada fila hi aparegui el mateix nombre natural però representat en base 2, 10 i 16 respectivament. Omplim la primera fila a tall d'exemple (ver tabla en el PDF original): Base 2 \/ Base 10 \/ Base 16. Fila 1: 1100, 12, C. Fila 2: 10110 en base 2. Fila 3: 69 en base 10. Fila 4: 4B en base 16. Fila 5: 11100010 en base 2. Fila 6: 2047 en base 10. Fila 7: 3CB en base 16. Fila 8: 10111010 en base 2. Fila 9: 128 en base 10. (ver figura en el PDF original)",
+        "fuente" : "Tema2-Problemas-Enunciados-Soluciones.pdf, ejercicios 2.2 y 2.4",
+        "id" : "P1",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "pdf" : "",
+        "puntos" : 1.5,
+        "solucionReferencia" : "2.2: a) [0,255]; b) [0,4095]; c) [0,4095]; d) [0,1023]. 2.4: 10110=22=16 hex; 69=1000101=45; 4B=1001011=75; 11100010=226=E2; 2047=11111111111=7FF; 3CB=1111001011=971; 10111010=186=BA; 128=10000000=80.",
+        "tema" : "Representación de números naturales (base b, binario, hexadecimal, conversiones)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Reparto sobre 2 pts: a) 0,5 (0,1 por fila); b) tabla CMP\/AL correcta 0,5; c) 1 pt: 0,5 por cada camino crítico correcto.",
+        "ejercicio" : 12,
+        "enunciado" : "Exercici 12.6. Especifica el camí crític (mitjançant el nom dels blocs) i calcula el temps de cicle mínim del computador SISC Harvard unicicle tenint en compte els següents retards per als components. Retards: And-2 20ut, Or-2 20ut, Not 10ut, biestables 100ut, la ROM de la UCG 90ut i els accessos a memòria I-MEM de 64KW i a un mòdul RAM de 32KB es de 800ut.\n\nExercici 12.7. Suposem que anul·lem les quatre instruccions d'accés a memòria del SISC Harvard unicicle. Especifica quin és el nou camí crític i calcula el temps de cicle mínim del processador SISC Harvard unicicle tenint en compte els mateixos retards per als components que a l'exercici anterior. (ver figura en el PDF original)",
+        "fuente" : "Tema12-Problemas-Enunciados-Soluciones.pdf, ejercicios 12.6 y 12.7",
+        "id" : "P2",
+        "opciones" : [
+
+        ],
+        "pagina" : 3,
+        "pdf" : "",
+        "puntos" : 2,
+        "solucionReferencia" : "12.6: camino crítico en LD: PC (100), I-MEM (800), Control Logic (180), MUX-2-1 (40), ALU (860), DATA-MEMORY (880), MUX-4-1 (80), REGFILE (40). Tiempo de ciclo mínimo: 2980 ut. 12.7: camino crítico en CMPLE\/CMPLEU: PC (100), I-MEM (800), Control Logic (0), REGFILE @B->B (130), MUX (40), ALU (1020), MUX-4-1 (80), REGFILE (40). Tiempo de ciclo mínimo: 2210 ut.",
+        "tema" : "Modelo temporal (tiempos de propagación, caminos críticos)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Reparto sobre 2 pts: tabla de 5 filas 1,0 (0,2 cada una, valor hex correcto); cálculo de F=0x6 como SHL y F=0x4 como ADD\/AND según figura 1,0.",
+        "ejercicio" : 8,
+        "enunciado" : "Exercici 8.2. (Objectiu 8.5) La figura següent correspon a l'esquema lògic intern d'un circuit que realitza operacions aritmètico-lògiques entre les paraules d'entrada X i Y (de 16 bits cadascuna). Té una entrada F de 3 bits que codifica l'operació aritmètica o lògica que es realitza. El MUX de sortida (entrades 0..7) selecciona: 0=AND, 1=OR, 2=XOR, 3=NOT, 4=ADD, 5=SUB, 6=SHA, 7=SHL (ver figura en el PDF original). Escriu el valor de la sortida W pels valors d'entrada X, Y i F que s'indiquen a la taula (el format per expressar el valor de qualsevol bus és en hexadecimal, per exemple W: 0xAB12). Taula (F, X, Y): (0x0, 0x0043, 0x0132); (0x4, 0x0F00, 0x0F0F); (0x2, 0xFF00, 0x19AB); (0x6, 0xA01C, 0x001B); (0x6, 0xA01C, 0x0003).",
+        "fuente" : "Tema8-Problemas-Enunciados-Soluciones.pdf, ejercicio 8.2",
+        "id" : "P3",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/atenea\/Tema 8. Unitat de Procés General\/Tema8-Problemas-Enunciados-Soluciones.pdf",
+        "puntos" : 2,
+        "solucionReferencia" : "F=0x0: 0x0002. F=0x4: 0x1E0F. F=0x2: 0xE6AB. F=0x6 (X=0xA01C, Y=0x001B): 0xFD00. F=0x6 (X=0xA01C, Y=0x0003): 0x00E0.",
+        "tema" : "Bloques aritméticos combinacionales para naturales (sumadores, comparadores, multiplexores)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Reparto sobre 2 pts: columna @D\/@A\/@B\/WrD correcta 0,5 por ciclo; registros y A\/B 1,5 en total repartidos por ciclo.",
+        "ejercicio" : 3,
+        "enunciado" : "Exercici 8.3. (Objectiu 8.5) La figura següent mostra l'esquema intern del bloc REGFILE (banc de 8 registres de 16 bits cadascun, amb 2 busos de lectura, A i B, i un bus de escriptura, D). Durant el cicle c tenim que: els valors emmagatzemats als registres (R0...R7) són els que indica el cronograma; @A, @B, @D i el bus de escriptura D, tenen els valors que indica el cronograma. Completa el cronograma simplificat pels cicles c+1 fins c+3. El format és hexadecimal pels busos de 16 bits i binari pels de 3. (ver figura en el PDF original)\nDatos: ciclo c, c+1, c+2, c+3. WrD: 1, 0, 1, 1. @D: 001, 010, 111, 101. D: 0x0020, 0x0020, 0x0021, 0x0105. @A: 001, 010, 111, 100. @B: 011, 000, 111, 001. En el ciclo c: R0=0x0031, R1=0x0000, R2=0x0001, R3=0x001B, R4=0xFF01, R7=0x0000, A=0x0000, B=0x001B.",
+        "fuente" : "Tema8-Problemas-Enunciados-Soluciones.pdf, ejercicio 8.3",
+        "id" : "P4",
+        "opciones" : [
+
+        ],
+        "pagina" : 2,
+        "pdf" : "material\/atenea\/Tema 8. Unitat de Procés General\/Tema8-Problemas-Enunciados-Soluciones.pdf",
+        "puntos" : 2,
+        "solucionReferencia" : "R0=0x0031 en c+1..c+3. R1=0x0020 desde c+1. R2=0x0001, R3=0x001B, R4=0xFF01 constantes. R7=0x0000 en c+1 y c+2, 0x0021 en c+3. A: 0x0001, 0x0000, 0xFF01. B: 0x0031, 0x0000, 0x0020.",
+        "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Reparto sobre 1,5 pts: 14.1 a-d 0,25 cada uno (1,0); 14.4 0,5 (0,1 por instrucción).",
+        "ejercicio" : 1,
+        "enunciado" : "Exercici 14.1. Donat el següent programa en llenguatge assemblador del SISA: .data v1: .byte 1,2,3 v2: .space 3, 0x64 res: .space 3 .text CONJUNT_INSTRUCCIONS .end. Doneu el valor contingut al registre R0 després d'executar el programa. Assumiu que el primer valor especificat a l'apartat encapçalat per la directiva \".data\" es posa a la posició 0x0A47 de la memòria. a) MOVI R0, lo(v2); MOVHI R0, hi(v2). b) MOVI R1, lo(v1); MOVHI R1, hi(v1); LDB R0, 2(R1). c) MOVI R1, lo(res); MOVHI R1, hi(res); LDB R0, 0(R1). d) MOVI R7, 3; MOVI R0, lo(v1); MOVHI R0, hi(v1); MOVI R1, lo(v2); MOVHI R1, hi(v2); MOVI R2, lo(res); MOVHI R2, hi(res); bucle: ADDI R7, R7, -1; ADD R6, R0, R7; LDB R3, 0(R6); ADD R6, R1, R7; LDB R4, 0(R6); ADD R3, R3, R4; ADD R6, R2, R7; STB 0(R6), R3; BNZ R7, bucle; LDB R0, 1(R6).",
+        "fuente" : "Tema14-Problemas-Enunciados-Soluciones.pdf, ejercicio 14.1",
+        "id" : "P5",
+        "opciones" : [
+
+        ],
+        "pagina" : 1,
+        "pdf" : "material\/atenea\/Tema 14. Llenguatge màquina i Assemblador SISA\/Tema14-Problemas-Enunciados-Soluciones.pdf",
+        "puntos" : 1.5,
+        "solucionReferencia" : "v1=0x0A47, v2=0x0A4A, res=0x0A4D. a) R0=0x0A4A. b) R0=0x0003. c) R0=0x0000. d) R0=0x0066 (cada res[i]=v1[i]+0x64; el último LDB lee res[1]=2+0x64=0x66).",
+        "tema" : "SISA (ensamblador)",
+        "tipo" : "desarrollo"
+      },
+      {
+        "criterios" : "Reparto sobre 1 pt: apartado a) 0,5 (0,1 por estado), apartado b) 0,5 (0,17 aprox. por estado).",
+        "ejercicio" : 5,
+        "enunciado" : "Exercici 8.5 (apartados b y c). Per cada un dels següents apartats, completa les accions que falten (mnemotècnics) en el graf de la unitat de control de propòsit específic perquè la UPG realitzi la funcionalitat que s'indica mitjançant un fragment de codi en llenguatge C. Considerem que els continguts dels registres són números naturals codificats en binari (unsigned integers).\nApartat b: if (R1 != 0) R2 = R2 + R3; else R2 = R2 + 1; R4=R2+5; Graf: Ea CMPEQI -,R1,0 ; Eb ___ ; Ec ADDI R2,R2,1 ; Ed ___ (arcs: z de Ea a Eb... ver figura en el PDF original).\nApartat c: for (R0 = 0; R0 < R5; R0++) { R7 = R7 - 3; } R6++; Graf: Ea MOVEI __,__ ; Eb CMPLTU -,R0,R5 ; Ec SUBI __,__,__ ; Ed ___ ; Ee ADDI __,__,__ (ver figura en el PDF original).",
+        "fuente" : "Tema8-Problemas-Enunciados-Soluciones.pdf, ejercicio 8.5 (apartados b y c)",
+        "id" : "P6",
+        "opciones" : [
+
+        ],
+        "pagina" : 4,
+        "pdf" : "",
+        "puntos" : 1,
+        "solucionReferencia" : "b) Eb: ADD R2,R2,R3; Ed: ADDI R4,R2,5. c) Ea: MOVEI R0,0; Ec: SUBI R7,R7,3; Ed: ADDI R0,R0,1; Ee: ADDI R6,R6,1.",
+        "tema" : "Procesadores de propósito específico (camino de datos y unidad de control)",
+        "tipo" : "desarrollo"
+      }
+    ],
+    "titulo" : "Simulacro Parcial 2 IC"
+  },
+  "fecha" : "2026-11-20T07:35:04Z",
+  "fuentes" : [
+    "material\/atenea\/Documentació de les pràctiques de Laboratori\/Libro-Practicas-IC-P6-Enunciado.pdf",
+    "material\/atenea\/Tema 10. Unitat de Control General: del graf d'estats al programa\/Tema10-Problemas-Enunciados-Soluciones.pdf",
+    "material\/atenea\/Tema 11. Memòria\/Tema11-Problemas-Enunciados-Soluciones.pdf",
+    "material\/atenea\/Tema 12. Los computadores SISC Harvard Uniciclo y Multiciclo\/Tema12-Problemas-Enunciados-Soluciones.pdf",
+    "material\/atenea\/Tema 14. Llenguatge màquina i Assemblador SISA\/Tema14-Problemas-Enunciados-Soluciones.pdf",
+    "material\/atenea\/Tema 2. Representació de números naturals\/Tema2-Problemas-Enunciados-Soluciones.pdf",
+    "material\/atenea\/Tema 8. Unitat de Procés General\/Tema8-Problemas-Enunciados-Soluciones.pdf",
+    "material\/atenea\/Tema 9. Entrada-Sortida\/Tema9-Problemas-Enunciados-Soluciones.pdf"
+  ],
+  "id" : "DE19158B-12F3-4A32-8316-7129D360D52D",
+  "minutos" : 18,
+  "modo" : "estilo",
+  "notaAntes" : 0,
+  "notaDespues" : 0.006803005435995296,
+  "pizarras" : {
+    "P3" : [
+      "estudi\/simulacres\/2026-11-20-DE19158B\/P3-1.png"
+    ],
+    "P5" : [
+      "estudi\/simulacres\/2026-11-20-DE19158B\/P5-1.png"
+    ]
+  },
+  "respuestas" : {
+
+  }
+}
