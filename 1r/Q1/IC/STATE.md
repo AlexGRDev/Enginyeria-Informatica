@@ -3,7 +3,7 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-11-19. Objetivo: **9,5**. Próximo examen: Parcial 2 IC, 2026-12-21 (en 32 días).
+Generado por Kiwi GEI el 2026-11-20. Objetivo: **9,5**. Próximo examen: Parcial 2 IC, 2026-12-21 (en 31 días).
 
 **Estimación: 0,2 / 10** (-9,3 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 0,2.
 
@@ -17,7 +17,7 @@ Generado por Kiwi GEI el 2026-11-19. Objetivo: **9,5**. Próximo examen: Parcial
 | Números enteros (complemento a 2, operaciones y bloques aritméticos) | 14 % | 0,0 | 1 | 2026-11-10 (tutor) |
 | Circuitos secuenciales | 13 % | 0,0 | 2 | 2026-11-10 (tutor) |
 | Procesadores de propósito específico (camino de datos y unidad de control) | 10 % | 0,0 | 1 | 2026-11-10 (tutor) |
-| SISA (ensamblador) (fuera del examen) | 1 % | 1,0 | 1 | 2026-11-19 (tutor) |
+| SISA (ensamblador) (fuera del examen) | 1 % | 0,3 | 2 | 2026-11-20 (ejercicio) |
 | Arquitectura del computador (fuera del examen) | 1 % | sin evaluar | 0 | - |
 | LogicWorks (simulador de laboratorio) (fuera del examen) | 1 % | sin evaluar | 0 | - |
 <!-- kiwi-gei:estat:fi -->
