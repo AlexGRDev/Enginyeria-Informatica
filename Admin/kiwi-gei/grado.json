@@ -196,7 +196,7 @@
         },
         {
           "id" : "F",
-          "nombre" : "Examen final (opcional, todo el temario)",
+          "nombre" : "Examen final (opcional, mejora\/recuperación)",
           "peso" : 90,
           "tipo" : "final"
         },
@@ -244,28 +244,40 @@
         }
       ],
       "formulaFinal" : "0.9*max((P1+P2)\/2, F) + 0.1*L",
-      "resumen" : "La teoría cuenta un 90 % y es el máximo entre la media de los dos parciales y el examen final opcional (F). El laboratorio cuenta un 10 %: el 75 % es la media de las 5 prácticas y el 25 % el examen oral de laboratorio (ExLab). El peso del 90 % asignado a F es alternativo al de los parciales: solo cuenta si mejora su media. La guía no da explícitamente la nota mínima para aprobar, así que he supuesto un 5. La competencia transversal de comunicación oral y escrita se califica aparte con letra (A–D) y no entra en la nota numérica."
+      "resumen" : "Nota = 0.9*max((P1+P2)\/2, F) + 0.1*L, con L = 0.75*media de las 5 prácticas + 0.25*ExLab. Se usa la metodología principal de la guía, que coincide con la addenda 2021-22. F es opcional (recuperación o mejora). Los pesos de P1, P2 y F son aproximados: P1 y P2 pesan 45% cada uno, y F puede llegar al 90% si sustituye a la media de parciales. Los pesos de las prácticas son 0.1*0.75\/5 = 1.5% cada una y ExLab pesa 2.5%. La guía no indica nota mínima distinta de 5."
     },
     "FM" : {
       "aprobado" : 5,
       "componentes" : [
         {
+          "id" : "T1",
+          "nombre" : "Prueba de taller 1",
+          "peso" : 10,
+          "tipo" : "laboratorio"
+        },
+        {
+          "id" : "T2",
+          "nombre" : "Prueba de taller 2",
+          "peso" : 10,
+          "tipo" : "laboratorio"
+        },
+        {
           "id" : "P1",
-          "nombre" : "Primer parcial",
-          "peso" : 40,
+          "nombre" : "Primer parcial (fuera de horas de clase)",
+          "peso" : 35,
           "tipo" : "parcial"
         },
         {
           "id" : "P2",
-          "nombre" : "Segundo parcial",
-          "peso" : 40,
+          "nombre" : "Segundo parcial (fuera de horas de clase)",
+          "peso" : 35,
           "tipo" : "parcial"
         },
         {
-          "id" : "L",
-          "nombre" : "Laboratorio \/ talleres",
-          "peso" : 20,
-          "tipo" : "laboratorio"
+          "id" : "A",
+          "nombre" : "Cuestionarios Atenea",
+          "peso" : 10,
+          "tipo" : "test"
         },
         {
           "id" : "F",
@@ -276,74 +288,74 @@
       ],
       "derivadas" : [
         {
-          "formula" : "0.4*P1 + 0.4*P2 + 0.2*L",
-          "id" : "AC"
+          "formula" : "0.1*T1+0.1*T2+0.35*P1+0.35*P2+0.1*A",
+          "id" : "N"
         }
       ],
-      "formulaFinal" : "max(0.4*P1 + 0.4*P2 + 0.2*L, F)",
-      "resumen" : "Evaluación continua AC = 40% P1 + 40% P2 + 20% laboratorio; la nota del curso es max(AC, F), donde F es el final, que vale el 100%. He ignorado la addenda, que parece de un curso anterior o de contingencia (dos talleres al 10%, parciales al 35% y cuestionarios Atenea al 10%), y la guía no detalla cómo se calcula la nota de laboratorio L."
+      "formulaFinal" : "max(N, F)",
+      "resumen" : "Según la addenda de evaluación (la vigente), la nota por evaluación continua es N = 0.1·T1 + 0.1·T2 + 0.35·P1 + 0.35·P2 + 0.1·A. La nota del curso es max(N, F), y el final F vale el 100 % si se hace. El texto principal de la guía es distinto (0.4·P1 + 0.4·P2 + 0.2·L, con L = laboratorio), pero lo sustituye la addenda. La addenda de contingencia se ha ignorado."
     },
     "IC" : {
       "aprobado" : 5,
       "componentes" : [
         {
           "id" : "EP1",
-          "nombre" : "Examen parcial 1 (temas 2-7)",
+          "nombre" : "Examen parcial 1 (NP1, temas 2-7)",
           "peso" : 32,
           "tipo" : "parcial"
         },
         {
           "id" : "EP2",
-          "nombre" : "Examen parcial 2 (temas 8-14)",
+          "nombre" : "Examen parcial 2 (NP2, temas 8-14)",
           "peso" : 48,
           "tipo" : "parcial"
         },
         {
           "id" : "EF",
-          "nombre" : "Examen final",
+          "nombre" : "Examen final (puede sustituir a la evaluación continua de teoría)",
           "peso" : 80,
           "tipo" : "final"
         },
         {
           "id" : "L1",
-          "nombre" : "Práctica de laboratorio 1",
-          "peso" : 3.33,
+          "nombre" : "Laboratorio 1 (NL1)",
+          "peso" : 3.333,
           "tipo" : "laboratorio"
         },
         {
           "id" : "L2",
-          "nombre" : "Práctica de laboratorio 2",
-          "peso" : 3.33,
+          "nombre" : "Laboratorio 2 (NL2)",
+          "peso" : 3.333,
           "tipo" : "laboratorio"
         },
         {
           "id" : "L3",
-          "nombre" : "Práctica de laboratorio 3",
-          "peso" : 3.33,
+          "nombre" : "Laboratorio 3 (NL3)",
+          "peso" : 3.333,
           "tipo" : "laboratorio"
         },
         {
           "id" : "L4",
-          "nombre" : "Práctica de laboratorio 4",
-          "peso" : 3.33,
+          "nombre" : "Laboratorio 4 (NL4)",
+          "peso" : 3.333,
           "tipo" : "laboratorio"
         },
         {
           "id" : "L5",
-          "nombre" : "Práctica de laboratorio 5",
-          "peso" : 3.33,
+          "nombre" : "Laboratorio 5 (NL5)",
+          "peso" : 3.333,
           "tipo" : "laboratorio"
         },
         {
           "id" : "L6",
-          "nombre" : "Práctica de laboratorio 6",
-          "peso" : 3.33,
+          "nombre" : "Laboratorio 6 (NL6)",
+          "peso" : 3.333,
           "tipo" : "laboratorio"
         }
       ],
       "derivadas" : [
         {
-          "formula" : "max(0.4*EP1 + 0.6*EP2, EF)",
+          "formula" : "max(0.4*EP1+0.6*EP2, EF)",
           "id" : "NTP"
         },
         {
@@ -351,21 +363,21 @@
           "id" : "NL"
         }
       ],
-      "formulaFinal" : "0.8*max(0.4*EP1 + 0.6*EP2, EF) + 0.2*avg(L1, L2, L3, L4, L5, L6)",
-      "resumen" : "NF = 0.8·NTP + 0.2·NL. NTP es el máximo entre 0.4·EP1 + 0.6·EP2 y el examen final EF, y NL es la media de las 6 prácticas (la práctica 0 no cuenta). Cada práctica vale 0.65·prueba previa + 0.35·informe final, o un 0 si no se entrega el informe previo completo al empezar la sesión. La guía dice que la nota de evaluación continua incluye también «entregas y trabajos indicados por el profesor», pero no les da ningún peso, así que no salen en la fórmula."
+      "formulaFinal" : "0.8*NTP + 0.2*NL",
+      "resumen" : "NF = 0.8*NTP + 0.2*NL. NTP = max(0.4*EP1 + 0.6*EP2, EF) y NL es la media de las 6 prácticas (la práctica 0 no cuenta). Cada NLi = 0.65*prueba previa + 0.35*informe final, y vale 0 si no se entrega el informe previo al inicio de la sesión. Los pesos de la lista son aproximados: el examen final (80) es alternativo a los parciales (32+48), así que los pesos suman más de 100. La guía menciona entregas y trabajos que el profesor puede indicar, pero no les da peso, así que no los he incluido. Usé la metodología vigente, no la addenda de 2021-22. No aparece una nota mínima explícita para aprobar, así que supuse 5."
     },
     "PRO1" : {
       "aprobado" : 5,
       "componentes" : [
         {
           "id" : "P",
-          "nombre" : "Examen parcial (midterm, jutge.org)",
+          "nombre" : "Examen parcial (midterm)",
           "peso" : 40,
           "tipo" : "parcial"
         },
         {
           "id" : "F",
-          "nombre" : "Examen final (jutge.org)",
+          "nombre" : "Examen final",
           "peso" : 60,
           "tipo" : "final"
         }
@@ -373,8 +385,8 @@
       "derivadas" : [
 
       ],
-      "formulaFinal" : "max(0.4*P + 0.6*F, F)",
-      "resumen" : "N = max(0,4·P + 0,6·F, F): el parcial cuenta un 40 % y el final un 60 %, salvo que el final por sí solo dé más nota. Con una nota entre 3,5 y 4,9 puedes ir a la reevaluación (curso intensivo); si la apruebas, la nota final es 5. He usado el método de la guía principal, que encaja con los dos exámenes programados. Una addenda describe otro sistema, probablemente de un curso anterior: dos parciales y un final, max(0,2·P1 + 0,3·P2 + 0,5·FF, F), y exige mínimos de problemas resueltos. No lo he tenido en cuenta, pero conviene confirmarlo en la web de la asignatura."
+      "formulaFinal" : "max(0.4*P+0.6*F, F)",
+      "resumen" : "Según la metodología vigente de la guía, la nota es N = max(0.4·P + 0.6·F, F), con un parcial (P) y un final (F), así que el final puede compensar un mal parcial. Si no se entrega ningún problema en un examen, esa nota es NP, y N es NP si ambos son NP. Se puede optar a reevaluación con N entre 3.5 y 4.9, y aprobarla da un 5. La guía también incluye una addenda con tres pruebas (P1, P2, F) y la fórmula max(0.2·P1+0.3·P2+0.5·FF, F). La ignoré porque contradice los actos evaluativos de la guía (un parcial y un final) y parece de un curso anterior. Si esa addenda fuera la vigente, la fórmula cambiaría."
     }
   },
   "estados" : {
@@ -590,14 +602,13 @@
     "2026-10-27|PRO1|16:00"
   ],
   "pdfsRevisados" : [
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129049?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129968?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129969?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129193?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129968?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129969?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
   ],
   "sesiones" : [
     {
