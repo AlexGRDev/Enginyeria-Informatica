@@ -610,6 +610,13 @@
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
   ],
+  "rutina" : {
+    "comida" : "12:30",
+    "despertar" : "06:45",
+    "desplazamientoMin" : 20,
+    "dormir" : "02:45",
+    "notas" : "creador de contenido de forntie y juegado rcompettivio, plan de fortnite: 4 - 6h diarais, llego a casa a las 19:20  ceno a las 20:20"
+  },
   "sesiones" : [
     {
       "asignatura" : "PRO1",
