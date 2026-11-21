@@ -10,6 +10,17 @@
   },
   {
     "asignatura" : "FM",
+    "externo" : "atenea-ev-23025815",
+    "fecha" : "2026-11-25T22:59:00Z",
+    "hecho" : false,
+    "id" : "5656D0BD-C8D3-494B-BDE7-E5E92845DE43",
+    "notas" : "",
+    "tipo" : "entrega",
+    "titulo" : "Revisió del primer parcial FM",
+    "url" : "https:\/\/atenea.upc.edu\/mod\/choice\/view.php?id=5562671"
+  },
+  {
+    "asignatura" : "FM",
     "fecha" : "2026-12-22T08:00:00Z",
     "hecho" : false,
     "id" : "27DB5E41-DD3A-4018-88A9-59B52DB076C0",
