@@ -912,5 +912,93 @@
     "repeticiones" : 0,
     "respuesta" : "**1.2 V**",
     "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D5B515DD-462F-4871-B129-39E8758BA911",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "Divisor de tensión: Vin = **9 V**, R1 = **10 kΩ** (arriba), R2 = **5 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**3 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "65BA110E-74CD-403D-95DC-7E36E3F35303",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "**27 V** sobre **300 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**90 mA**; **2.43 W**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E3FA9961-1C01-4D16-B88E-802C92BB8071",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "**12 Ω** en paralelo con **4 Ω**. ¿Resistencia equivalente?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**3 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D73506A9-485C-491A-B806-849C8D20F3D5",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "Resistencias en serie: **80 Ω**, **70 Ω** y **30 Ω**. ¿Total?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**180 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D3B35060-FC57-4FFE-88AD-9DB9E3033EFB",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "R = **170 Ω**, I = **9 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**1.53 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "A9AE7D81-0DF2-4CFB-87BE-E5E89D52D826",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "Resistencias en serie: **60 Ω**, **70 Ω** y **50 Ω**. ¿Total?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**180 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "4D2CDB77-B14F-4221-BE24-EFB1E3447E8D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "Resistencias en serie: **30 Ω**, **50 Ω** y **20 Ω**. ¿Total?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**100 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "168E9531-527B-4C36-94B2-E8846FB9A643",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-21",
+    "pregunta" : "R = **200 Ω**, I = **8 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-21T05:47:12Z",
+    "repeticiones" : 0,
+    "respuesta" : "**1.6 V**",
+    "tema" : "Ohm"
   }
 ]
