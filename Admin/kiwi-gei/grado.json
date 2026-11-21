@@ -173,6 +173,17 @@
       "nota" : 0.8,
       "origen" : "atenea|Prova prèvia Pràctica 4",
       "tipo" : "practica"
+    },
+    {
+      "asignatura" : "F",
+      "componente" : "P1",
+      "detalle" : "",
+      "fecha" : "2026-11-21T20:09:37Z",
+      "formato" : "Papel",
+      "id" : "91239BC0-58CB-455C-BEE6-ADEE6734C2CA",
+      "nombre" : "Parcial 1 (temas 1 y 2)",
+      "nota" : 0,
+      "tipo" : "examen"
     }
   ],
   "codigos" : {
@@ -396,6 +407,9 @@
     "PRO1" : "enCurso"
   },
   "examenes" : {
+    "F" : {
+      "parcial" : 0
+    },
     "IC" : {
       "parcial" : 0
     },
