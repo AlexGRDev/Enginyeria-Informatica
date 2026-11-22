@@ -81,7 +81,7 @@
   ],
   "temas" : {
     "Cadenas estilo C (char*)" : {
-      "dominio" : 2.045023000353477,
+      "dominio" : 2.0450230003534764,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -383,7 +383,7 @@
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.5155471351078427,
+      "dominio" : 1.5155471351078424,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -454,7 +454,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.9181103950497085,
+      "dominio" : 2.9394379881262394,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -549,6 +549,12 @@
         {
           "evidencia" : "tarjetas estudiadas",
           "fecha" : "2026-11-21T19:07:26Z",
+          "fuente" : "flashcards",
+          "nota" : 3.229585385313597
+        },
+        {
+          "evidencia" : "tarjetas estudiadas",
+          "fecha" : "2026-11-22T01:09:03Z",
           "fuente" : "flashcards",
           "nota" : 3.229585385313597
         }
