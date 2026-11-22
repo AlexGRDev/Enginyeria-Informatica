@@ -1000,5 +1000,137 @@
     "repeticiones" : 0,
     "respuesta" : "**1.6 V**",
     "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "3A5C335A-2FA2-4168-9006-E09919B8E04E",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Pico a pico ocupa **3 divisiones** a **1 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **3 V**; amplitud = **1.5 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "AE0E4A35-B8E8-4AC6-8E64-013B1C4E71CF",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "**18 V** sobre **600 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**30 mA**; **0.54 W**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "36746E95-FCED-44A2-9669-B987834CEB58",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Pico a pico ocupa **3 divisiones** a **5 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **15 V**; amplitud = **7.5 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "03EFE30B-B784-4577-8FC5-E4CDD5F9F287",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Frecuencia **250 Hz**. ¿Periodo?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**4 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F171E8E8-6A6B-4119-8C44-224320E37A91",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "R = **190 Ω**, I = **3 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.57 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "1363806F-CB1A-4802-80BD-36B2A66603D7",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Resistencias en serie: **70 Ω**, **50 Ω** y **90 Ω**. ¿Total?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**210 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "28FBB6C7-D93B-47B3-B38C-EA586C68A86A",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Periodo **2 ms**. ¿Frecuencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**500 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E4413B1E-D863-4772-A12B-25FC603EB9EF",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Periodo **0.5 ms**. ¿Frecuencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**2000 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "8A0CFBC6-3886-4BB7-876D-9622A88931B9",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "R = **110 Ω**, I = **5 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.55 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "96219639-A685-480A-A6A1-766236AE96E0",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "R = **60 Ω**, I = **6 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.36 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "CF32B2D0-1B76-4692-818B-15FA4CEB2C76",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "Resistencias en serie: **90 Ω**, **10 Ω** y **30 Ω**. ¿Total?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**130 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E60E4269-E1FE-4D6D-87F2-53C123FA60B5",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-22",
+    "pregunta" : "**36 V** sobre **200 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-22T05:50:37Z",
+    "repeticiones" : 0,
+    "respuesta" : "**180 mA**; **6.48 W**",
+    "tema" : "Ohm"
   }
 ]
