@@ -1132,5 +1132,82 @@
     "repeticiones" : 0,
     "respuesta" : "**180 mA**; **6.48 W**",
     "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "B6D73D4E-BB8E-4E85-B3F7-C36410EECDF1",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "Frecuencia **100 Hz**. ¿Periodo?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**10 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D1E006DB-37B4-4C62-8785-6EAE13E73164",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "Frecuencia **400 Hz**. ¿Periodo?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**2.5 ms**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "8F94A67F-9394-4682-9824-295602FEA7F7",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "R = **200 Ω**, I = **2 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.4 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "44565448-3163-45C3-8EE2-E7EAF3CE248C",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "Divisor de tensión: Vin = **6 V**, R1 = **5 kΩ** (arriba), R2 = **5 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**3 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "5998456F-4F9E-48E6-BAEB-2F40A2FBBF8F",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "Resistencias en serie: **20 Ω**, **60 Ω** y **90 Ω**. ¿Total?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**170 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F9FF0F22-99E4-4A02-9DE9-14C37343C20D",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "R = **70 Ω**, I = **7 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.49 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D45D8FCF-A0F8-4CC8-8A32-06049133E3CC",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-23",
+    "pregunta" : "**21 V** sobre **200 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-23T05:47:04Z",
+    "repeticiones" : 0,
+    "respuesta" : "**105 mA**; **2.205 W**",
+    "tema" : "Ohm"
   }
 ]
