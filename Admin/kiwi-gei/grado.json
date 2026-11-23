@@ -614,6 +614,14 @@
       "id" : "06854ED6-427F-48EB-A04F-DCA571DDC0C4",
       "origen" : "2026-11-23|FM|14:00",
       "tipo" : "T"
+    },
+    {
+      "code" : "IC",
+      "fecha" : "2026-11-23T14:00:00Z",
+      "horas" : 2,
+      "id" : "2B7CDD90-A96F-42FD-BA91-9C08F1399BF2",
+      "origen" : "2026-11-23|IC|15:00",
+      "tipo" : "T"
     }
   ],
   "notas" : {
