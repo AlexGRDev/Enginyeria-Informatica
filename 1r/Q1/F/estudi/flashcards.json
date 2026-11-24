@@ -1209,5 +1209,104 @@
     "repeticiones" : 0,
     "respuesta" : "**105 mA**; **2.205 W**",
     "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "95743F91-0904-45D6-9E4D-0835ED0F8AA6",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "Resistencias en serie: **50 Ω**, **30 Ω** y **40 Ω**. ¿Total?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**120 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "5AF0328D-55F5-4906-9DCA-08E726EF8E60",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "Divisor de tensión: Vin = **12 V**, R1 = **1 kΩ** (arriba), R2 = **2 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**8 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F97400FA-9675-4A1F-8B28-3A274D4BA8F1",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "**6 V** sobre **300 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**20 mA**; **0.12 W**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "ABE16609-405A-4210-98E6-18C4B8F6AC9B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "R = **150 Ω**, I = **7 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**1.05 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "F8E64753-074D-4B29-8FE6-F3484A7E06D6",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "R = **90 Ω**, I = **8 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.72 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "E3BACF88-3CBE-4791-870D-AE0970FF34B5",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "Resistencias en serie: **80 Ω**, **30 Ω** y **40 Ω**. ¿Total?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**150 Ω**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "D9B8DECC-9E81-472E-B4EA-D6B587E59589",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "Divisor de tensión: Vin = **16 V**, R1 = **1 kΩ** (arriba), R2 = **3 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**12 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "47F5429B-0F93-47F2-AF34-781B12193B6B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "Periodo **4 ms**. ¿Frecuencia?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**250 Hz**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "FA8DD951-B4CA-4C1E-A1D8-DBC329E5619B",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-24",
+    "pregunta" : "**12 V** sobre **600 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-24T06:17:02Z",
+    "repeticiones" : 0,
+    "respuesta" : "**20 mA**; **0.24 W**",
+    "tema" : "Ohm"
   }
 ]
