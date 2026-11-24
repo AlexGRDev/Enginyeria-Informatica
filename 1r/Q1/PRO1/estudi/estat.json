@@ -241,7 +241,7 @@
       ]
     },
     "Funciones auxiliares" : {
-      "dominio" : 2.453190857248781,
+      "dominio" : 2.4531908572487806,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -383,7 +383,7 @@
       ]
     },
     "Recursividad" : {
-      "dominio" : 1.515547135107843,
+      "dominio" : 1.5155471351078427,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -454,7 +454,7 @@
       ]
     },
     "Tipos básicos" : {
-      "dominio" : 2.958737029724065,
+      "dominio" : 2.976194201942738,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
@@ -563,11 +563,17 @@
           "fecha" : "2026-11-23T06:06:00Z",
           "fuente" : "flashcards",
           "nota" : 3.229585385313597
+        },
+        {
+          "evidencia" : "tarjetas estudiadas",
+          "fecha" : "2026-11-24T07:39:28Z",
+          "fuente" : "flashcards",
+          "nota" : 3.229585385313597
         }
       ]
     },
     "std::string" : {
-      "dominio" : 1.0076922211572124,
+      "dominio" : 1.0076922211572126,
       "evaluaciones" : [
         {
           "evidencia" : "Simulacro Jutge · 9 problemas: 0,0",
