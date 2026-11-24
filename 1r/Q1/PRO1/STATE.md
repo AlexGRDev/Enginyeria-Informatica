@@ -3,13 +3,13 @@
 <!-- kiwi-gei:estat:inici -->
 ## Nota si el examen fuera hoy
 
-Generado por Kiwi GEI el 2026-11-23. Objetivo: **10,0**. Próximo examen: Final PRO1, 2027-01-08 (en 46 días).
+Generado por Kiwi GEI el 2026-11-24. Objetivo: **10,0**. Próximo examen: Final PRO1, 2027-01-08 (en 45 días).
 
 **Estimación: 2,0 / 10** (-8,0 respecto al objetivo). Cobertura del temario evaluada: 100 %. Pesimista (lo no evaluado cuenta 0): 2,0.
 
 | Tema | Peso | Dominio | Evaluaciones | Última |
 |---|---|---|---|---|
-| Tipos básicos | 15 % | 3,0 | 18 | 2026-11-23 (flashcards) |
+| Tipos básicos | 15 % | 3,0 | 19 | 2026-11-24 (flashcards) |
 | Punteros y aritmética de punteros | 20 % | 1,2 | 11 | 2026-10-28 (jutge) |
 | Cadenas estilo C (char*) | 20 % | 2,0 | 12 | 2026-11-19 (ejercicio) |
 | Funciones auxiliares | 15 % | 2,5 | 11 | 2026-10-28 (jutge) |
