@@ -654,7 +654,9 @@
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129194?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/129369?format=json",
     "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128388?format=json",
-    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json"
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/128190?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/130236?format=json",
+    "https:\/\/api.fib.upc.edu\/v2\/jo\/avisos\/adjunt\/130253?format=json"
   ],
   "rutina" : {
     "comida" : "12:30",
