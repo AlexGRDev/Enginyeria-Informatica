@@ -1308,5 +1308,93 @@
     "repeticiones" : 0,
     "respuesta" : "**20 mA**; **0.24 W**",
     "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "10EEB5D1-CD0F-4322-A8D4-2BDB462A2733",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "Pico a pico ocupa **6 divisiones** a **2 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **12 V**; amplitud = **6 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "9F162DEB-6697-4586-8867-47F104F2531C",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "**30 V** sobre **200 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**150 mA**; **4.5 W**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "03567269-AE8C-4C73-A224-A82E37849C35",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "Divisor de tensión: Vin = **12 V**, R1 = **15 kΩ** (arriba), R2 = **5 kΩ** (abajo). ¿Vout?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**3 V**",
+    "tema" : "Circuitos"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "778BF944-B385-417C-9063-BD9B7E093D95",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "**15 V** sobre **600 Ω**. ¿Corriente? ¿Potencia?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**25 mA**; **0.375 W**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "48E3A6CF-ECCF-4525-9E2C-A0E97CD3CA9A",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "R = **30 Ω**, I = **3 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.09 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "59520609-95AB-45E7-A8D3-18F45CE555D2",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "Pico a pico ocupa **5 divisiones** a **1 V\/div**. ¿Vpp y amplitud?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "Vpp = **5 V**; amplitud = **2.5 V**",
+    "tema" : "Oscilograma"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "8F0A609E-54DA-4EB3-82DB-FCF866297A9F",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "R = **20 Ω**, I = **5 mA**. ¿Tensión en la resistencia?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**0.1 V**",
+    "tema" : "Ohm"
+  },
+  {
+    "ease" : 2.5,
+    "id" : "66A19ED7-05BD-4399-B593-95D70C5E78C1",
+    "intervalo" : 0,
+    "origen" : "diaria-2026-11-25",
+    "pregunta" : "Resistencias en serie: **20 Ω**, **10 Ω** y **80 Ω**. ¿Total?",
+    "proxima" : "2026-11-25T05:45:28Z",
+    "repeticiones" : 0,
+    "respuesta" : "**110 Ω**",
+    "tema" : "Circuitos"
   }
 ]
