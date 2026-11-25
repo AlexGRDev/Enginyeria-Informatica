@@ -1,0 +1,18 @@
+Resultats 1r Parcial de Fisica i Revisió d'Examen
+
+En el fitxer adjunt trobareu els resultats del 1r examen parcial. Hi ha el vostre DNI i quatre columnes:
+
+1) Test(sobre 5)
+2) Prob1(sobre 10)
+3) Prob2(sobre 10)
+4) Parcial1 = 0.8*Test1 + 0.3*Prob1 + 0.3*Prob2
+
+La revisió serà el dijous dia 26 de novembre a l'aula B4-212. Per assistir-hi, adjunteu un document .txt o .pdf amb el vostre nom complet a la següent pestanya de pràctiques:
+
+https://raco.fib.upc.edu/practiques/practica.jsp?espai=270003&id=191366
+
+Haureu de venir a l'hora indicada en funció de la primera lletra del vostre cognom, segons el següent horari:
+
+A: 09:30, B: 09:39, C: 09:48, D: 10:09, E: 10:17, F: 10:20, G: 10:31, H: 10:44, I: 10:50, J: 10:51, K: 10:55, L: 10:56, M: 11:06, N: 11:21, O: 11:23, P: 11:26, Q: 11:36, R: 11:36, S: 11:47, T: 12:02, U: 12:08, V: 12:09, W: 12:19, Y: 12:20, Z: 12:21
+
+Grigori Astrakharchik
